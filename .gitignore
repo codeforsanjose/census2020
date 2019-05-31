@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# Exclude editor files from JetBrains products
+.idea
+
+# These files are dynamically created during development
+bundle.js
+public/bundle.js
