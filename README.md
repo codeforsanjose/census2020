@@ -1,5 +1,7 @@
 # About the project - census2020
 
+[Project Proposal for the City of San Jose](https://drive.google.com/open?id=1CvBMkS9AF18NR5vTeiFQrdssHQHXV5xpwWCXEp4cTFE)
+
 Website to inform community members about the Census 2020
 
 Census 2020 Kiosks Project!
