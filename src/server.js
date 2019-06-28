@@ -2,7 +2,7 @@ const app = require('./app');
 const http = require('http');
 const mongoose = require('mongoose');
 
-const uri = (process.env.mongoSecret);
+const uri = ('mongodb://localhost:27017/test' || process.env.mongoSecret);
 mongoose.connect(uri, {useNewUrlParser: true, useFindAndModify: false})
 .then(() => {
 })
