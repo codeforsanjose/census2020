@@ -20,7 +20,7 @@ app.use(express.static(path.resolve('public')));
 
 app.set('view engine', 'ejs');
 
-app.all('/*', (req, res) => {
+app.all('*', (req, res) => {
 	res.render('index', {});
 });
 
