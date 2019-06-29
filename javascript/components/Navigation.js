@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 export default class Navigation extends Component {
-	render() {
-		return (
-			<div className='navigation'>
-			</div>
-		);
-	}
+  render () {
+    return (
+      <div className='navigation'>
+      </div>
+    )
+  }
 }
