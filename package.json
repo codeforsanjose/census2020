@@ -10,7 +10,7 @@
     "build:dev": "./node_modules/.bin/webpack --config ./webpack.config.js -w",
     "server": "NODE_ENV=prod node ./server.js",
     "server:dev": "NODE_ENV=development webpack-dev-server",
-    "extractstrings": "node ./i18n/extract-strings.js"
+    "i18n:extract": "node ./i18n/extract-strings.js"
   },
   "author": "Code for San Jose",
   "license": "MIT",
