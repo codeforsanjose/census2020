@@ -1,11 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import MainContainer from './components/MainContainer'
+import MainContainer from './components/MainContainer';
 
 // We import the SASS/CSS file here
-import '../styles/app.scss'
+import '../styles/app.scss';
 
 // This is where we can insert routing logic
 ReactDOM.render(
@@ -15,4 +15,4 @@ ReactDOM.render(
     </Switch>
   </BrowserRouter>,
   document.getElementById('app-container')
-)
+);

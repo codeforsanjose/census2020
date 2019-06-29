@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import { English } from '../../strings/english.js'
+import { English } from '../../strings/english.js';
 
 export default class DetailViewContainer extends Component {
   render () {
@@ -8,6 +8,6 @@ export default class DetailViewContainer extends Component {
       <div className='main-container'>
         { English.Hello }
       </div>
-    )
+    );
   }
 }

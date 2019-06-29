@@ -1,12 +1,12 @@
 
-const path = require('path')
+const path = require('path');
 
 // Here are different paths we want to use when building our app files
 const paths = {
   entry: path.resolve('javascript', 'index.js'),
   build: path.resolve('public'),
   output: 'bundle.js'
-}
+};
 
 module.exports = {
   mode: 'development',
@@ -30,4 +30,4 @@ module.exports = {
       }
     ]
   }
-}
+};
