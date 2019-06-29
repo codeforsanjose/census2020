@@ -1,6 +1,17 @@
 {
   "components.DetailViewContainer.hello": {
     "english": "Hello world",
-    "translation": "Hola Mundo"
+    "translation": "Hola Mundo",
+    "args": {}
+  },
+  "components.DetailViewContainer.customizedGreeting": {
+    "english": "Hi {name}, you are {age, number} years old",
+    "translation": "Hola {name}, tienes {age, number} años.",
+    "args": {
+      "name": {},
+      "age": {
+        "numeric": true
+      }
+    }
   }
 }

@@ -2,6 +2,18 @@
   "components.DetailViewContainer.hello": {
     "id": "components.DetailViewContainer.hello",
     "description": "Welcome message",
-    "defaultMessage": "Hello world"
+    "defaultMessage": "Hello world",
+    "args": {}
+  },
+  "components.DetailViewContainer.customizedGreeting": {
+    "id": "components.DetailViewContainer.customizedGreeting",
+    "description": "Custom welcome message",
+    "defaultMessage": "Hi {name}, you are {age, number} years old",
+    "args": {
+      "name": {},
+      "age": {
+        "numeric": true
+      }
+    }
   }
 }

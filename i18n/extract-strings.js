@@ -5,6 +5,7 @@ const readdir = require("fs").readdirSync;
 const writeFile = require("fs").writeFileSync;
 const mkdir = require("mkdirp").sync;
 const transformFile = require("@babel/core").transformFileSync;
+const messageParser = require('intl-messageformat-parser').default;
 
 const supportedLocales = require('./supported-locales');
 const webpackPaths = require('../webpack-paths');
@@ -33,6 +34,30 @@ const addJSFiles = (dirPath) => {
 };
 
 addJSFiles(componentDir);
+
+const getMessageArgs = (message) => {
+  const args = {};
+
+  const parsed = messageParser.parse(message);
+
+  for (const element of parsed.elements) {
+    if (element.type === 'argumentElement') {
+      args[element.id] = {
+        numeric: (
+          element.format && element.format.type === "numberFormat"
+        ) || undefined,
+        date: (
+          element.format && element.format.type === "dateFormat"
+        ) || undefined,
+        time: (
+          element.format && element.format.type === "timeFormat"
+        ) || undefined,
+      };
+    }
+  }
+
+  return args;
+};
 
 const outputDir = path.resolve(__dirname, "translations");
 
@@ -65,6 +90,8 @@ for (const file of filesToCheck) {
       messages[message.id].defaultMessage !== message.defaultMessage
     ) {
       messages[message.id] = message;
+      messages[message.id].args = getMessageArgs(message.defaultMessage);
+      
       newMessageIDs.push(message.id);
     }
   }
@@ -94,6 +121,7 @@ supportedLocales.forEach(
             translation: locale === "en" ?
               messages[messageId].defaultMessage :
               null,
+            args: messages[messageId].args,
           };
         }
       }

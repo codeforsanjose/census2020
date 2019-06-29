@@ -12,6 +12,18 @@ export default class DetailViewContainer extends Component {
 					defaultMessage="Hello world"
 					description="Welcome message"
 				/>
+
+				<div>
+					<FormattedMessage
+						id="components.DetailViewContainer.customizedGreeting"
+						defaultMessage="Hi {name}, you are {age, number} years old"
+						description="Custom welcome message"
+						values={{
+							name: 'Turner',
+							age: 34
+						}}
+					/>
+				</div>
 			</div>
 		);
 	}
