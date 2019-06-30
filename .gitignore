@@ -64,5 +64,4 @@ typings/
 .idea
 
 # These files are dynamically created during development
-bundle.js
-public/bundle.js
+build

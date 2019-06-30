@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(logger('dev'));
 
 // We tell express to use the /bundledFiles directory to serve static files
-app.use(express.static(path.resolve('public')));
+app.use(express.static(path.resolve('build')));
 
 app.set('view engine', 'ejs');
 
