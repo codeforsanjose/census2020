@@ -5,9 +5,10 @@ const mongoose = require('mongoose');
 const uri = ('mongodb://localhost:27017/test' || process.env.mongoSecret);
 mongoose.connect(uri, {useNewUrlParser: true, useFindAndModify: false})
 .then(() => {
+  console.log('MongoDB connected')
 })
 .catch((err) => {
-  console.log(err);
+  console.error(err);
 });
 
 const port = normalizePort(process.env.PORT || 3000);

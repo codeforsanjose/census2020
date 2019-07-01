@@ -8,20 +8,18 @@ module.exports = {
     submissionQueries.getAllSubmissions()
     .then((submissions) => {
       let returnData = {
-        statusCode: 200,
         message: 'Success',
         data: submissions
       };
-      res.json(returnData)
+      res.status(200).json(returnData)
     })
     .catch((err) => {
       console.log(err)
       let returnData = {
-        statusCode: 400,
-        message: 'Bad Request',
-        data: err
+        message: 'Internal Server Error',
+        error: err
       };
-      res.json(returnData)
+      res.status(500).json(returnData)
     })
   },
 
@@ -34,11 +32,10 @@ module.exports = {
     submissionQueries.createSubmission(newSubmission)
     .then((submission) => {
       let returnData = {
-        statusCode: 200,
         message: 'Success',
         data: submission
       };
-      res.json(returnData)
+      res.status(200).json(returnData)
       mg.sendText('sender@example.com',
         ['recipient@example.com'],
         'Email Subject',
@@ -54,11 +51,10 @@ module.exports = {
     .catch((err) => {
       console.log(err)
       let returnData = {
-        statusCode: 400,
-        message: 'Bad Request',
-        data: err
+        message: 'Internal Server Error',
+        error: err
       };
-      res.json(returnData)
+      res.status(500).json(returnData)
     })
   },
 
@@ -66,20 +62,18 @@ module.exports = {
     submissionQueries.getSubmission(req.params.id)
     .then((submission) => {
       let returnData = {
-        statusCode: 200,
         message: 'Success',
         data: submission
       };
-      res.json(returnData)
+      res.status(200).json(returnData)
     })
     .catch((err) => {
       console.log(err)
       let returnData = {
-        statusCode: 400,
-        message: 'Bad Request',
-        data: err
+        message: 'Internal Server Error',
+        error: err
       };
-      res.json(returnData)
+      res.status(500).json(returnData)
     })
   },
 }
