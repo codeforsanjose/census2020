@@ -1,32 +1,31 @@
 #!/usr/bin/env nodejs
 
-const path = require("path");
-const readdir = require("fs").readdirSync;
-const writeFile = require("fs").writeFileSync;
-const mkdir = require("mkdirp").sync;
-const transformFile = require("@babel/core").transformFileSync;
+const path = require('path');
+const readdir = require('fs').readdirSync;
+const writeFile = require('fs').writeFileSync;
+const mkdir = require('mkdirp').sync;
+const transformFile = require('@babel/core').transformFileSync;
 
 const supportedLocales = require('./supported-locales');
 const webpackPaths = require('../webpack-paths');
 
 const filesToCheck = [
-  webpackPaths.entry,
+  webpackPaths.entry
 ];
 
-const componentDir = path.resolve(__dirname, "..", "javascript", "components");
+const componentDir = path.resolve(__dirname, '..', 'javascript', 'components');
 
 const addJSFiles = (dirPath) => {
   for (const file of readdir(
     dirPath,
     {
-      encoding: "utf8",
-      withFileTypes: true,
+      encoding: 'utf8',
+      withFileTypes: true
     }
   )) {
     if (file.isFile() && /\.js$/.test(file.name)) {
       filesToCheck.push(path.join(dirPath, file.name));
-    }
-    else if (file.isDirectory()) {
+    } else if (file.isDirectory()) {
       addJSFiles(path.join(dirPath, file.name));
     }
   }
@@ -34,18 +33,17 @@ const addJSFiles = (dirPath) => {
 
 addJSFiles(componentDir);
 
-const outputDir = path.resolve(__dirname, "translations");
+const outputDir = path.resolve(__dirname, 'translations');
 
 mkdir(outputDir);
 
 let messages = {};
 
-const definitionsPath = path.resolve(__dirname, "translations", "definitions.json");
+const definitionsPath = path.resolve(__dirname, 'translations', 'definitions.json');
 
 try {
   messages = require(definitionsPath);
-}
-catch (ex) {}
+} catch (ex) {}
 
 const newMessageIDs = [];
 
@@ -54,11 +52,11 @@ for (const file of filesToCheck) {
     file,
     {
       plugins: [
-        'babel-plugin-react-intl',
-      ],
+        'babel-plugin-react-intl'
+      ]
     }
   );
-  
+
   for (const message of transformed.metadata['react-intl'].messages) {
     if (
       !(message.id in messages) ||
@@ -80,8 +78,7 @@ supportedLocales.forEach(
 
     try {
       translations = require(translationsPath);
-    }
-    catch (ex) {}
+    } catch (ex) {}
 
     Object.keys(messages).forEach(
       (messageId) => {
@@ -91,9 +88,9 @@ supportedLocales.forEach(
         ) {
           translations[messageId] = {
             english: messages[messageId].defaultMessage,
-            translation: locale === "en" ?
-              messages[messageId].defaultMessage :
-              null,
+            translation: locale === 'en'
+              ? messages[messageId].defaultMessage
+              : null
           };
         }
       }
@@ -101,7 +98,7 @@ supportedLocales.forEach(
 
     translationObjects[locale] = {
       path: translationsPath,
-      translations,
+      translations
     };
   }
 );
@@ -114,7 +111,7 @@ writeFile(
     '  '
   ),
   {
-    encoding: 'utf8',
+    encoding: 'utf8'
   }
 );
 
@@ -128,7 +125,7 @@ supportedLocales.forEach(
         '  '
       ),
       {
-        encoding: 'utf8',
+        encoding: 'utf8'
       }
     );
   }

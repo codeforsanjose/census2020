@@ -4,5 +4,5 @@ const path = require('path');
 module.exports = {
   entry: path.resolve('javascript', 'index.js'),
   build: path.resolve('build'),
-  output: 'bundle.js',
+  output: 'bundle.js'
 };

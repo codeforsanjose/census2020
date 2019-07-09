@@ -12,8 +12,7 @@ let definitions;
 
 try {
   definitions = require('./translations/definitions.json');
-}
-catch (ex) {
+} catch (ex) {
   throw new Error(`Error loading translation definitions: ${ex.message}`);
 }
 
@@ -25,7 +24,7 @@ supportedLocales.forEach(
       Object.keys(definitions).forEach(
         (messageId) => {
           if (!(messageId in translations)) {
-            console.error(`Translation file for locale ${locale} is missing an entry for message ID ${messageId}; rerun the i18n extraction script`)
+            console.error(`Translation file for locale ${locale} is missing an entry for message ID ${messageId}; rerun the i18n extraction script`);
             hasErrors = true;
             return;
           }
@@ -35,14 +34,12 @@ supportedLocales.forEach(
             hasErrors = true;
           }
         }
-      )
-    }
-    catch (ex) {
+      );
+    } catch (ex) {
       if (ex.code === 'ENOENT') {
         console.error(`No translation file for locale ${locale}`);
         hasErrors = true;
-      }
-      else {
+      } else {
         throw ex;
       }
     }
@@ -51,7 +48,6 @@ supportedLocales.forEach(
 
 if (hasErrors) {
   process.exit(1);
-}
-else {
+} else {
   process.exit(0);
 }

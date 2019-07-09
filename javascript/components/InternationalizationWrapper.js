@@ -1,5 +1,6 @@
-import React from "react";
-import { IntlProvider, addLocaleData } from "react-intl";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { IntlProvider, addLocaleData } from 'react-intl';
 
 import { LocalePicker } from './LocalePicker';
 import supportedLocales from '../../i18n/supported-locales';
@@ -28,16 +29,20 @@ for (const locale of supportedLocales) {
 }
 
 export class InternationalizationWrapper extends React.PureComponent {
-  state = {
-    locale: "en",
+  static propTypes = {
+    children: PropTypes.element
   }
 
-  constructor(...args) {
+  state = {
+    locale: 'en'
+  }
+
+  constructor (...args) {
     super(...args);
 
     this.setLocale = this.setLocale.bind(this);
 
-    if (process.env.NODE_ENV === "development") {
+    if (process.env.NODE_ENV === 'development') {
       // Expose on `window` for development purposes
       global.setLocale = this.setLocale;
 
@@ -47,11 +52,11 @@ export class InternationalizationWrapper extends React.PureComponent {
     }
   }
 
-  setLocale(locale) {
+  setLocale (locale) {
     this.setState({ locale });
   }
 
-  render() {
+  render () {
     return (
       <IntlProvider
         locale={this.state.locale}
@@ -66,5 +71,5 @@ export class InternationalizationWrapper extends React.PureComponent {
         </div>
       </IntlProvider>
     );
-  }  
+  }
 }

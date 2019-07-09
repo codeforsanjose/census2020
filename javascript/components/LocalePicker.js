@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import supportedLocales from '../../i18n/supported-locales';
 
 const LOCALE_DISPLAY_NAMES = {
-  en: "English",
-  es: "Español",
-  vi: "Tiếng Việt",
+  en: 'English',
+  es: 'Español',
+  vi: 'Tiếng Việt'
 };
 
 export const LocalePicker = ({ currentLocale, onLocaleClicked }) => {
@@ -26,5 +27,10 @@ export const LocalePicker = ({ currentLocale, onLocaleClicked }) => {
         )
       }
     </ul>
-  )
+  );
+};
+
+LocalePicker.propTypes = {
+  currentLocale: PropTypes.oneOf(supportedLocales).isRequired,
+  onLocaleClicked: PropTypes.func.isRequired
 };

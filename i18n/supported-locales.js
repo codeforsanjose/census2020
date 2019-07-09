@@ -1,5 +1,5 @@
 module.exports = [
   'en',
   'es',
-  'vi',
+  'vi'
 ];
