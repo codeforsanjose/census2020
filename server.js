@@ -21,11 +21,11 @@ app.use(express.static(path.resolve('public')));
 app.set('view engine', 'ejs');
 
 app.all('/*', (req, res) => {
-	res.render('index', {});
+  res.render('index', {});
 });
 
 const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
-	console.log('Express server is up on port ' + port);
+  console.log('Express server is up on port ' + port);
 });

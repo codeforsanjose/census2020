@@ -9,10 +9,10 @@ import '../styles/app.scss';
 
 // This is where we can insert routing logic
 ReactDOM.render(
-	<BrowserRouter>
-		<Switch>
-			<Route path='/' component={ MainContainer }/>
-		</Switch>
-	</BrowserRouter>,
-	document.getElementById('app-container')
+  <BrowserRouter>
+    <Switch>
+      <Route path='/' component={ MainContainer }/>
+    </Switch>
+  </BrowserRouter>,
+  document.getElementById('app-container')
 );
