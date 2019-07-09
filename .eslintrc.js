@@ -1,13 +1,8 @@
 module.exports = {
     "extends": [
         "standard",
-        "plugin:react/recommended"
     ],
-    "settings": {
-        "react": {
-            "version": "detect"
-        }
-    },
+    "parser": "babel-eslint",
     "rules": {
         "semi": ["error", "always"],
     }

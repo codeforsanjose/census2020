@@ -1,16 +1,12 @@
 
 const path = require('path');
-
-// Here are different paths we want to use when building our app files
-const paths = {
-  entry: path.resolve('javascript', 'index.js'),
-  build: path.resolve('public'),
-  output: 'bundle.js'
-};
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const paths = require('./webpack-paths');
 
 module.exports = {
   mode: 'development',
   entry: [
+    'babel-polyfill',
     paths.entry
   ],
   output: {
@@ -29,5 +25,11 @@ module.exports = {
         loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'index.template.html')
+    })
+  ],
+  devtool: 'eval-source-map'
 };
