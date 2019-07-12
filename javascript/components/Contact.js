@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import FormInput from './FormInput';
+import TextInput from './TextInput';
+import Dropdown from './Dropdown';
 
 export default class Contact extends Component {
   constructor (props) {
@@ -8,9 +9,9 @@ export default class Contact extends Component {
       name: '',
       organization: '',
       email: '',
-      language: 'english',
+      language: 'English',
       zip: '',
-      interest: 'volunteer',
+      interest: 'Volunteer',
       comment: ''
     };
     this.handleChange = this.handleChange.bind(this);
@@ -35,26 +36,99 @@ export default class Contact extends Component {
       organization,
       email,
       language,
-      zipCode,
+      zip,
       interest,
       comment
     } = this.state;
 
     const fields = [
-      { type: 'text', value: name, name: 'Name', options: [] },
-      { type: 'text', value: organization, name: 'Organization', options: [] },
-      { type: 'text', value: email, name: 'Email', options: [] },
-      { type: 'dropdown', value: language, name: 'Language Spoken', options: ['English', 'Spanish', 'Vietnamese'] },
-      { type: 'text', value: zipCode, name: 'Zip Code', options: [] },
-      { type: 'dropdown', value: interest, name: 'Interest', options: ['Volunteer', 'Work for Census2020', 'Request presentation'] },
-      { type: 'textarea', value: comment, name: 'Comment', options: [] }
+      {
+        name: 'name',
+        value: name,
+        label: 'Name',
+        type: 'text',
+        options: []
+      },
+      {
+        name: 'organization',
+        value: organization,
+        label: 'Organization',
+        type: 'text',
+        options: []
+      },
+      {
+        name: 'email',
+        value: email,
+        label: 'Email',
+        type: 'text',
+        options: []
+      },
+      {
+        name: 'language',
+        value: language,
+        label: 'Language Spoken',
+        type: 'dropdown',
+        options: [
+          'English',
+          'Spanish',
+          'Vietnamese']
+      },
+      {
+        name: 'zip',
+        value: zip,
+        label: 'Zip Code',
+        type: 'text',
+        options: []
+      },
+      {
+        name: 'interest',
+        value: interest,
+        label: 'Interest',
+        type: 'dropdown',
+        options: [
+          'Volunteer',
+          'Work for Census2020',
+          'Request presentation',
+          'Other'
+        ]
+      },
+      {
+        name: 'comment',
+        value: comment,
+        label: 'Comment',
+        type: 'textarea',
+        options: []
+      }
     ];
+
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          {fields.map((field, idx) => (
-            <FormInput inputType={field.type} inputValue={field.value} onChange={this.handleChange} fieldName={field.name} options={field.options} key={idx}/>
-          ))}
+          {
+            fields.map((field, i) => {
+              if (field.type === 'dropdown') {
+                return (
+                  <Dropdown
+                    onChange={this.handleChange}
+                    name={field.name}
+                    value={field.value}
+                    label={field.label}
+                    options={field.options}
+                    key={i}/>
+                );
+              } else {
+                return (
+                  <TextInput
+                    onChange={this.handleChange}
+                    name={field.name}
+                    value={field.value}
+                    label={field.label}
+                    type={field.type}
+                    key={i}/>
+                );
+              }
+            })
+          }
           <input type='submit' value='Submit'/>
         </form>
       </div>
