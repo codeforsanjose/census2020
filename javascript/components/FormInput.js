@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class ContactField extends Component {
+export default class FormInput extends Component {
   render () {
     let formElt;
     const { inputType, inputValue, handleChange, fieldName, options } = this.props;
@@ -34,7 +34,7 @@ export default class ContactField extends Component {
   }
 }
 
-ContactField.propTypes = {
+FormInput.propTypes = {
   inputType: PropTypes.string,
   inputValue: PropTypes.string,
   handleChange: PropTypes.func,

@@ -45,7 +45,7 @@ export default class Contact extends Component {
       { type: 'text', value: organization, name: 'Organization', options: [] },
       { type: 'text', value: email, name: 'Email', options: [] },
       { type: 'dropdown', value: language, name: 'Language Spoken', options: ['English', 'Spanish', 'Vietnamese'] },
-      { type: 'number', value: zipCode, name: 'Zip Code', options: [] },
+      { type: 'text', value: zipCode, name: 'Zip Code', options: [] },
       { type: 'dropdown', value: interest, name: 'Interest', options: ['Volunteer', 'Work for Census2020', 'Request presentation'] },
       { type: 'textarea', value: comment, name: 'Comment', options: [] }
     ];
