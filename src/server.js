@@ -1,8 +1,13 @@
+const path = require('path');
+require('dotenv').config({
+  path: path.resolve(__dirname, '..', '.env')
+});
+
 const app = require('./app');
 const http = require('http');
 const mongoose = require('mongoose');
 
-const uri = ('mongodb://localhost:27017/test' || process.env.mongoSecret);
+const uri = process.env.DB_URL;
 mongoose.connect(uri, { useNewUrlParser: true, useFindAndModify: false })
   .then(() => {
     console.log('MongoDB connected');
