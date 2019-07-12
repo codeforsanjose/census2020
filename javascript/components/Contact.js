@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FormInput from './FormInput';
 
 export default class Contact extends Component {
   constructor (props) {
@@ -8,7 +9,7 @@ export default class Contact extends Component {
       organization: '',
       email: '',
       language: 'english',
-      zipCode: '',
+      zip: '',
       interest: 'volunteer',
       comment: ''
     };
@@ -29,53 +30,31 @@ export default class Contact extends Component {
   }
 
   render () {
+    const {
+      name,
+      organization,
+      email,
+      language,
+      zipCode,
+      interest,
+      comment
+    } = this.state;
+
+    const fields = [
+      { type: 'text', value: name, name: 'Name', options: [] },
+      { type: 'text', value: organization, name: 'Organization', options: [] },
+      { type: 'text', value: email, name: 'Email', options: [] },
+      { type: 'dropdown', value: language, name: 'Language Spoken', options: ['English', 'Spanish', 'Vietnamese'] },
+      { type: 'number', value: zipCode, name: 'Zip Code', options: [] },
+      { type: 'dropdown', value: interest, name: 'Interest', options: ['Volunteer', 'Work for Census2020', 'Request presentation'] },
+      { type: 'textarea', value: comment, name: 'Comment', options: [] }
+    ];
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label>
-            Name:
-          </label>
-          <input type='text' value={this.state.name} onChange={this.handleChange} name='name' />
-          <br/>
-          <label>
-            Organization:
-          </label>
-          <input type='text' value={this.state.organization} onChange={this.handleChange} name='organization' />
-          <br/>
-          <label>
-            Email:
-          </label>
-          <input type='text' value={this.state.email} onChange={this.handleChange} name='email' />
-          <br/>
-          <label>
-            Spoken Language:
-          </label>
-          <select name={'language'} onChange={this.handleChange}>
-            <option value={'english'}>English</option>
-            <option value={'spanish'}>Spanish</option>
-            <option value={'vietnamese'}>Vietnamese</option>
-          </select>
-          <br/>
-          <label>
-            Zip Code:
-          </label>
-          <input type='number' value={this.state.zipCode} onChange={this.handleChange} name='zipCode' />
-          <br/>
-          <label>
-            Interest:
-          </label>
-          <select name={'interest'} onChange={this.handleChange}>
-            <option value={'volunteer'}>Volunteer</option>
-            <option value={'workForCensus'}>Work for Census2020</option>
-            <option value={'requestPresentation'}>Request presentation</option>
-            <option value={'other'}>Other</option>
-          </select>
-          <br/>
-          <label>
-            Comment:
-          </label>
-          <textarea type='number' value={this.state.comment} onChange={this.handleChange} name='comment'></textarea>
-          <br/>
+          {fields.map((field, idx) => (
+            <FormInput inputType={field.type} inputValue={field.value} handleChange={this.handleChange} fieldName={field.name} options={field.options} key={idx}/>
+          ))}
           <input type='submit' value='Submit'/>
         </form>
       </div>
