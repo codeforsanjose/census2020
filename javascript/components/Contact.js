@@ -53,7 +53,7 @@ export default class Contact extends Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           {fields.map((field, idx) => (
-            <FormInput inputType={field.type} inputValue={field.value} handleChange={this.handleChange} fieldName={field.name} options={field.options} key={idx}/>
+            <FormInput inputType={field.type} inputValue={field.value} onChange={this.handleChange} fieldName={field.name} options={field.options} key={idx}/>
           ))}
           <input type='submit' value='Submit'/>
         </form>

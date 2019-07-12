@@ -4,22 +4,22 @@ import PropTypes from 'prop-types';
 export default class FormInput extends Component {
   render () {
     let formElt;
-    const { inputType, inputValue, handleChange, fieldName, options } = this.props;
+    const { inputType, inputValue, onChange, fieldName, options } = this.props;
     if (inputType === 'dropdown') {
       formElt = (
-        <select name={this.props.fieldName.toLowerCase().split(' ')[0]} onChange={handleChange}>
-          {options.map((option, idx) => (
-            <option value={option.toLowerCase()} key={idx}>{option}</option>
+        <select name={this.props.fieldName.toLowerCase().split(' ')[0]} onChange={onChange}>
+          {options.map((option, i) => (
+            <option value={option.toLowerCase()} key={i}>{option}</option>
           ))}
         </select>
       );
     } else if (inputType === 'textarea') {
       formElt = (
-        <textarea value={inputValue} onChange={handleChange} name={this.props.fieldName.toLowerCase().split(' ')[0]}></textarea>
+        <textarea value={inputValue} onChange={onChange} name={this.props.fieldName.toLowerCase().split(' ')[0]}></textarea>
       );
     } else {
       formElt = (
-        <input type={inputType} value={inputValue} onChange={handleChange} name={this.props.fieldName.toLowerCase().split(' ')[0]} />
+        <input type={inputType} value={inputValue} onChange={onChange} name={this.props.fieldName.toLowerCase().split(' ')[0]} />
       );
     }
 
@@ -36,9 +36,8 @@ export default class FormInput extends Component {
 
 FormInput.propTypes = {
   inputType: PropTypes.string,
-  inputValue: PropTypes.string,
-  handleChange: PropTypes.func,
-  fieldName: PropTypes.string,
-  options: PropTypes.arr,
-  key: PropTypes.number
+  inputValue: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  fieldName: PropTypes.string.isRequired,
+  options: PropTypes.array
 };
