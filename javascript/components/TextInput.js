@@ -10,7 +10,9 @@ export default class TextInput extends Component {
       type,
       onChange
     } = this.props;
+
     let textInput;
+
     if (type === 'textarea') {
       textInput = (
         <textarea
@@ -29,6 +31,7 @@ export default class TextInput extends Component {
         />
       );
     }
+
     return (
       <div>
         <label>
