@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import areIntlLocalesSupported from 'intl-locales-supported';
 
 import {
   InternationalizationWrapper
 } from './components/InternationalizationWrapper';
 import MainContainer from './components/MainContainer';
+import Contact from './components/Contact';
 import supportedLocales from '../i18n/supported-locales';
 
 // We import the SASS/CSS file here
@@ -18,8 +19,12 @@ const render = () => {
     (
       <InternationalizationWrapper>
         <BrowserRouter>
+          <Link to="/">Home</Link>
+          <br/>
+          <Link to="/contact">Contact</Link>
           <Switch>
-            <Route path='/' component={ MainContainer }/>
+            <Route exact path='/' component={ MainContainer }/>
+            <Route path='/contact' component={ Contact }/>
           </Switch>
         </BrowserRouter>
       </InternationalizationWrapper>
