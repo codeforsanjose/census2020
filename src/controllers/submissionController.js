@@ -1,3 +1,5 @@
+const debug = require('debug')('census2020:server:submissionController');
+
 const submissionQueries = require('../db/queries.submission.js');
 const { sendToCensusDept } = require('../mail/send-message');
 
@@ -12,7 +14,7 @@ module.exports = {
         res.status(200).json(returnData);
       })
       .catch((err) => {
-        console.log(err);
+        debug(err);
         let returnData = {
           message: 'Internal Server Error',
           error: err
@@ -38,7 +40,7 @@ module.exports = {
         try {
           sendToCensusDept(req.body);
         } catch (ex) {
-          console.error('Error sending email to Census Department:', ex);
+          debug('Error sending email to Census Department:', ex);
         }
       })
       .catch((err) => {
@@ -61,7 +63,7 @@ module.exports = {
         res.status(200).json(returnData);
       })
       .catch((err) => {
-        console.log(err);
+        debug(err);
         let returnData = {
           message: 'Internal Server Error',
           error: err

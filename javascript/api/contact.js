@@ -3,7 +3,10 @@ export const sendContactForm = async (contactData) => {
     '/api/contact',
     {
       method: 'POST',
-      body: JSON.stringify(contactData)
+      body: JSON.stringify(contactData),
+      headers: {
+        'Content-type': 'application/json'
+      }
     }
   );
 

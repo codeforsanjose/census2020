@@ -7,7 +7,6 @@
     "start": "npm run server",
     "prebuild": "rimraf ./build",
     "build": "webpack --config ./webpack.config.js",
-    "build:dev": "webpack --config ./webpack.dev.config.js -w",
     "server": "NODE_ENV=production node ./src/server.js",
     "server:dev": "NODE_ENV=development nodemon ./src/server.js",
     "i18n:extract": "node ./i18n/extract-strings.js",

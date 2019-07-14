@@ -1,6 +1,11 @@
 const nodemailer = require('nodemailer');
 const debug = require('debug')('census2020:server:mail');
 
+debug.error = debug;
+debug.log = console.log.bind(console);
+debug.debug = debug.log;
+debug.info = console.info.bind(console);
+
 const getTransporter = () => {
   return nodemailer.createTransport({
     host: process.env.MAIL_SMTP_SERVER,
@@ -23,6 +28,16 @@ module.exports.sendToCensusDept = async ({
   interest,
   comment
 }) => {
+  debug('sendToCensusDept() called with the following arguments:', {
+    name,
+    organization,
+    email,
+    language,
+    zip,
+    interest,
+    comment
+  });
+
   if (!email) {
     throw new Error('No from email provided; cannot send inquiry email');
   }

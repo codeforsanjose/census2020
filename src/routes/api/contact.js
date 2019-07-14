@@ -6,6 +6,7 @@ const submissionController = require('../../controllers/submissionController');
 
 router.route('/')
   .post(
+    express.json(),
     submissionController.create
   );
 
