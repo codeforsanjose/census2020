@@ -16,16 +16,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(logger('dev'));
 
 // We tell express to use the /bundledFiles directory to serve static files
-app.use(express.static(path.resolve('public')));
+app.use(express.static(path.resolve('build')));
 
 app.set('view engine', 'ejs');
 
-app.all('*', (req, res) => {
-	res.render('index', {});
+app.all('/*', (req, res) => {
+  res.render('index', {});
 });
 
 const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
-	console.log('Express server is up on port ' + port);
+  console.log('Express server is up on port ' + port);
 });

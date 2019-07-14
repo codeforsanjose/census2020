@@ -1,5 +1,5 @@
-import React from "react";
-import { Search } from "react-uswds";
+import React from 'react';
+import { Search } from 'react-uswds';
 
 export const AppHeader = () => {
   return (
