@@ -1,6 +1,5 @@
 const submissionQueries = require('../db/queries.submission.js');
-const Mailgun = require('mailgun').Mailgun;
-const mg = new Mailgun(process.env.mgApi); // Need Mailgun API key
+const { sendToCensusDept } = require('../mail/send-message');
 
 module.exports = {
   index (req, res, next) {
@@ -35,17 +34,12 @@ module.exports = {
           data: submission
         };
         res.status(200).json(returnData);
-        mg.sendText('sender@example.com',
-          ['recipient@example.com'],
-          'Email Subject',
-          `Email message, ${req.body.name}, ${req.body.phone}, ${req.body.email} etc`,
-          'Origin server (if needed)',
-          (err) => {
-            if (err) {
-              console.log('Mailgun error:', err);
-            }
-          }
-        );
+
+        try {
+          sendToCensusDept(req.body);
+        } catch (ex) {
+          console.error('Error sending email to Census Department:', ex);
+        }
       })
       .catch((err) => {
         console.log(err);
