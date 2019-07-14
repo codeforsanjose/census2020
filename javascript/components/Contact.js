@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
+
 import TextInput from './TextInput';
 import Dropdown from './Dropdown';
 
-export default class Contact extends Component {
+class Contact extends Component {
+  static propTypes = {
+    intl: intlShape.isRequired
+  }
+
   constructor (props) {
     super(props);
     this.state = {
@@ -45,57 +51,132 @@ export default class Contact extends Component {
       {
         name: 'name',
         value: name,
-        label: 'Name',
+        label: (
+          <FormattedMessage
+            id="components.Contact.fields.name"
+            defaultMessage="Name"
+            description="Label for the Name field in the Contact form"
+          />
+        ),
         type: 'text',
         options: []
       },
       {
         name: 'organization',
         value: organization,
-        label: 'Organization',
+        label: (
+          <FormattedMessage
+            id="components.Contact.fields.organization"
+            defaultMessage="Organization"
+            description="Label for the Organization field in the Contact form"
+          />
+        ),
         type: 'text',
         options: []
       },
       {
         name: 'email',
         value: email,
-        label: 'Email',
+        label: (
+          <FormattedMessage
+            id="components.Contact.fields.email"
+            defaultMessage="Email"
+            description="Label for the Email field in the Contact form"
+          />
+        ),
         type: 'text',
         options: []
       },
       {
         name: 'language',
         value: language,
-        label: 'Language Spoken',
+        label: (
+          <FormattedMessage
+            id="components.Contact.fields.language"
+            defaultMessage="Language Spoken"
+            description="Label for the Language Spoken field in the Contact form"
+          />
+        ),
         type: 'dropdown',
         options: [
           'English',
-          'Spanish',
-          'Vietnamese']
+          'Español',
+          'Tiếng Việt'
+        ]
       },
       {
         name: 'zip',
         value: zip,
-        label: 'Zip Code',
+        label: (
+          <FormattedMessage
+            id="components.Contact.fields.zip"
+            defaultMessage="Zip Code"
+            description="Label for the Zip Code field in the Contact form"
+          />
+        ),
         type: 'text',
         options: []
       },
       {
         name: 'interest',
         value: interest,
-        label: 'Interest',
+        label: (
+          <FormattedMessage
+            id="components.Contact.fields.interest"
+            defaultMessage="Interest"
+            description="Label for the Interest field in the Contact form"
+          />
+        ),
         type: 'dropdown',
         options: [
-          'Volunteer',
-          'Work for Census2020',
-          'Request presentation',
-          'Other'
+          {
+            value: 'Volunteer',
+            label: this.props.intl.formatMessage({
+              key: 'volunteer',
+              id: 'components.Contact.fields.interest.options.volunteer',
+              defaultMessage: 'Volunteer',
+              description: "'Volunteer' option for the Interest field in the Contact form"
+            })
+          },
+          {
+            value: 'Work for Census2020',
+            label: this.props.intl.formatMessage({
+              key: 'workForCensus',
+              id: 'components.Contact.fields.interest.options.workForCensus',
+              defaultMessage: 'Work for Census2020',
+              description: "'Work for Census' option for the Interest field in the Contact form"
+            })
+          },
+          {
+            value: 'Request presentation',
+            label: this.props.intl.formatMessage({
+              key: 'requestPresentation',
+              id: 'components.Contact.fields.interest.options.requestPresentation',
+              defaultMessage: 'Request presentation',
+              description: "'Request Presentation' option for the Interest field in the Contact form"
+            })
+          },
+          {
+            value: 'Other',
+            label: this.props.intl.formatMessage({
+              key: 'other',
+              id: 'components.Contact.fields.interest.options.other',
+              defaultMessage: 'Other',
+              description: "'Other' option for the Interest field in the Contact form"
+            })
+          }
         ]
       },
       {
         name: 'comment',
         value: comment,
-        label: 'Comment',
+        label: (
+          <FormattedMessage
+            id="components.Contact.fields.comment"
+            defaultMessage="Comment"
+            description="Label for the Comment field in the Contact form"
+          />
+        ),
         type: 'textarea',
         options: []
       }
@@ -135,3 +216,7 @@ export default class Contact extends Component {
     );
   }
 }
+
+const WrappedContact = injectIntl(Contact);
+
+export default WrappedContact;

@@ -2,5 +2,57 @@
   "components.DetailViewContainer.hello": {
     "english": "Hello world",
     "translation": "Hola Mundo"
+  },
+  "components.Contact.fields.name": {
+    "english": "Name",
+    "translation": "Nombre"
+  },
+  "components.Contact.fields.organization": {
+    "english": "Organization",
+    "translation": "Organización"
+  },
+  "components.Contact.fields.email": {
+    "english": "Email",
+    "translation": "Email"
+  },
+  "components.Contact.fields.language": {
+    "english": "Language Spoken",
+    "translation": "Lenguaje hablado"
+  },
+  "components.Contact.fields.zip": {
+    "english": "Zip Code",
+    "translation": "Código postal"
+  },
+  "components.Contact.fields.interest": {
+    "english": "Interest",
+    "translation": "Interés"
+  },
+  "components.Contact.fields.interest.options.volunteer": {
+    "english": "Volunteer",
+    "translation": "Ofrecerse"
+  },
+  "components.Contact.fields.interest.options.workForCensus": {
+    "english": "Work for Census2020",
+    "translation": "Trabajo para el censo"
+  },
+  "components.Contact.fields.interest.options.requestPresentation": {
+    "english": "Request presentation",
+    "translation": "Solicitar una presentación"
+  },
+  "components.Contact.fields.interest.options.other": {
+    "english": "Other",
+    "translation": "Otro"
+  },
+  "components.Contact.fields.comment": {
+    "english": "Comment",
+    "translation": "Comentario"
+  },
+  "navigation.links.home": {
+    "english": "Home",
+    "translation": "Página de inicio"
+  },
+  "navigation.links.contact": {
+    "english": "Contact",
+    "translation": "Pagina de contacto"
   }
 }

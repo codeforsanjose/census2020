@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
 import areIntlLocalesSupported from 'intl-locales-supported';
 
 import {
@@ -19,9 +20,21 @@ const render = () => {
     (
       <InternationalizationWrapper>
         <BrowserRouter>
-          <Link to="/">Home</Link>
+          <Link to="/">
+            <FormattedMessage
+              id="navigation.links.home"
+              defaultMessage="Home"
+              description="'Home' link in the navigation bar"
+            />
+          </Link>
           <br/>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">
+            <FormattedMessage
+              id="navigation.links.contact"
+              defaultMessage="Contact"
+              description="'Contact' link in the navigation bar"
+            />
+          </Link>
           <Switch>
             <Route exact path='/' component={ MainContainer }/>
             <Route path='/contact' component={ Contact }/>
