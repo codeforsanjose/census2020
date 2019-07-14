@@ -1,6 +1,8 @@
 const nodemailer = require('nodemailer');
 const debug = require('debug')('census2020:server:mail');
 
+const Config = require('../config');
+
 debug.error = debug;
 debug.log = console.log.bind(console);
 debug.debug = debug.log;
@@ -8,13 +10,13 @@ debug.info = console.info.bind(console);
 
 const getTransporter = () => {
   return nodemailer.createTransport({
-    host: process.env.MAIL_SMTP_SERVER,
-    port: process.env.MAIL_SMTP_PORT,
+    host: Config.mail.host,
+    port: Config.mail.port,
     auth: {
-      user: process.env.MAIL_SMTP_USERNAME,
-      pass: process.env.MAIL_SMTP_PASSWORD
+      user: Config.mail.username,
+      pass: Config.mail.password
     },
-    secure: Boolean(process.env.MAIL_SMTP_IS_SECURE),
+    secure: Config.mail.isSecure,
     logger: debug
   });
 };
@@ -75,8 +77,8 @@ module.exports.sendToCensusDept = async ({
 
   const sendResults = await transporter.sendMail({
     from: email,
-    to: process.env.MAIL_TO_CENSUS_ADDRESS,
-    subject: process.env.MAIL_TO_CENSUS_SUBJECT,
+    to: Config.mail.inquiryMessage.address,
+    subject: Config.mail.inquiryMessage.subject,
     text: messageText
   });
 

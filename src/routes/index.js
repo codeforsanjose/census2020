@@ -2,6 +2,7 @@ const path = require('path');
 const readFile = require('fs').readFileSync;
 const express = require('express');
 
+const Config = require('../config');
 const { build } = require('../../webpack-paths');
 
 const router = new express.Router();
@@ -11,7 +12,7 @@ router.use('/api', require('./api'));
 const indexContent = readFile(path.join(build, 'index.html'));
 
 // development uses webpack-dev-middleware to serve
-if (process.env.NODE_ENV !== 'development') {
+if (!Config.app.isDev) {
   // Serve bundle etc.
   router.use(express.static(
     build
