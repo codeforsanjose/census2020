@@ -1,34 +1,52 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import { addLocaleData } from 'react-intl';
 import areIntlLocalesSupported from 'intl-locales-supported';
 
-import {
-  InternationalizationWrapper
-} from './components/InternationalizationWrapper';
-import MainContainer from './components/MainContainer';
-import Contact from './components/Contact';
+import App from './components/App';
+import LocaleContext from './components/LocaleContext';
 import supportedLocales from '../i18n/supported-locales';
 
 // We import the SASS/CSS file here
 import '../styles/app.scss';
 
+for (const locale of supportedLocales) {
+  const localeData = require(`react-intl/locale-data/${locale}`);
+  addLocaleData(localeData);
+}
+
+class WrappedApp extends React.PureComponent {
+  state = {
+    currentLocale: 'en'
+  }
+
+  setLocale = (locale) => {
+    this.setState({
+      currentLocale: locale
+    });
+  }
+
+  render () {
+    return (
+      <BrowserRouter>
+        <LocaleContext.Provider
+          value={{
+            currentLocale: this.state.currentLocale,
+            setLocale: this.setLocale
+          }}
+        >
+          <App/>
+        </LocaleContext.Provider>
+      </BrowserRouter>
+    );
+  }
+}
+
 const render = () => {
   // This is where we can insert routing logic
   ReactDOM.render(
-    (
-      <InternationalizationWrapper>
-        <BrowserRouter>
-          <Link to="/">Home</Link>
-          <br/>
-          <Link to="/contact">Contact</Link>
-          <Switch>
-            <Route exact path='/' component={ MainContainer }/>
-            <Route path='/contact' component={ Contact }/>
-          </Switch>
-        </BrowserRouter>
-      </InternationalizationWrapper>
-    ),
+    (<WrappedApp />),
     document.getElementById('app-container')
   );
 };
