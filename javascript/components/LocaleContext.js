@@ -1,6 +1,8 @@
 import React from 'react';
 
+let currentLocale = 'en';
+
 export default React.createContext({
-  currentLocale: 'en',
-  setLocale: () => {}
+  currentLocale,
+  setLocale: (locale) => { currentLocale = locale; }
 });
