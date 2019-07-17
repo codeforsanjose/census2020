@@ -17,7 +17,8 @@ module.exports = {
 
     inquiryMessage: {
       subject: process.env.MAIL_TO_CENSUS_SUBJECT,
-      address: process.env.MAIL_TO_CENSUS_ADDRESS
+      address: process.env.MAIL_TO_CENSUS_ADDRESS,
+      fromAddress: process.env.MAIL_TO_CENSUS_FROM_ADDRESS
     }
   },
   db: {
