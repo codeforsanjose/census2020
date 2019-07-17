@@ -52,7 +52,12 @@ for (const file of filesToCheck) {
     file,
     {
       plugins: [
-        'babel-plugin-react-intl'
+        [
+          'babel-plugin-react-intl',
+          {
+            extractFromFormatMessageCall: true
+          }
+        ]
       ]
     }
   );
