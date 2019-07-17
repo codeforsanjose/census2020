@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextInput from './TextInput';
 import Dropdown from './Dropdown';
+import { sendContactForm } from '../api/contact';
 
 export default class Contact extends Component {
   constructor (props) {
@@ -25,9 +26,8 @@ export default class Contact extends Component {
   }
 
   handleSubmit (event) {
-    const { name } = this.state;
-    alert(`${name}'s information will be sent for processing`);
     event.preventDefault();
+    sendContactForm(this.state);
   }
 
   render () {

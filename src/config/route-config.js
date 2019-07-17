@@ -1,9 +1,7 @@
 module.exports = {
   init (app) {
-    const staticRoutes = require('../routes/static');
-    const submissionRoutes = require('../routes/submissions');
+    const router = require('../routes');
 
-    app.use(staticRoutes);
-    app.use(submissionRoutes);
+    app.use(router);
   }
 };

@@ -1,0 +1,9 @@
+{
+  "verbose": true,
+  "watch": [
+    "./webpack.config.js",
+    "./webpack.paths.js",
+    "./src",
+    "./i18n/translations"
+  ]
+}

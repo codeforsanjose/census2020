@@ -1,9 +1,21 @@
+const path = require('path');
+require('dotenv').config({
+  path: path.resolve(__dirname, '..', '.env')
+});
+
+const Config = require('./config');
+
 const app = require('./app');
 const http = require('http');
 const mongoose = require('mongoose');
 
-const uri = ('mongodb://localhost:27017/test' || process.env.mongoSecret);
-mongoose.connect(uri, { useNewUrlParser: true, useFindAndModify: false })
+mongoose.connect(
+  Config.db.connectionString,
+  {
+    useNewUrlParser: true,
+    useFindAndModify: false
+  }
+)
   .then(() => {
     console.log('MongoDB connected');
   })
@@ -11,7 +23,7 @@ mongoose.connect(uri, { useNewUrlParser: true, useFindAndModify: false })
     console.error(err);
   });
 
-const port = normalizePort(process.env.PORT || 3000);
+const port = normalizePort(Config.app.port);
 app.set('port', port);
 
 const server = http.createServer(app);
