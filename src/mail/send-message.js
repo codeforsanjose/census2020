@@ -49,37 +49,67 @@ module.exports.sendToCensusDept = async ({
   // Will reject (throw error) if config doesn't work
   await transporter.verify();
 
-  const messageText = `Name: ${name || 'Not given'}${
-    organization
-      ? '\nOrganization: ' + organization
-      : ''
-  }${
-    language
-      ? '\nLanguage: ' + language
-      : ''
-  }${
-    zip
-      ? '\nZip code: ' + zip
-      : ''
-  }${
-    interest
-      ? '\nInterest: ' + interest
-      : ''
-  }${
-    comment
-      ? '\n\n' + comment
-      : ''
-  }`;
+  const dataKeys = [
+    'Name',
+    'Organization',
+    'Language',
+    'Zip code',
+    'Interest'
+  ];
 
-  debug('About to send message from', {
-    messageText
+  const data = {
+    Name: name || 'Not given',
+    Organization: organization,
+    Language: language,
+    'Zip code': zip,
+    Interest: interest
+  };
+
+  const rows = [];
+
+  for (const dataKey of dataKeys) {
+    if (data[dataKey]) {
+      rows.push(`<tr>
+<td class="data-item-name">${dataKey}:</td>
+<td>${data[dataKey]}</td>
+</tr>`);
+    }
+  }
+
+  const messageHTML = `<!DOCTYPE html>
+  <html>
+  <head>
+    <style>
+      .data-item-name {
+        font-weight: bold;
+        padding-right: 5px;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        ${rows.join('\n')}
+      </tbody>
+    </table>
+    ${
+  comment
+    ? '\n<p>' + comment + '</p>'
+    : ''
+}
+  </body>
+  </html>`;
+
+  debug('About to send message:', {
+    messageHTML
   });
 
   const sendResults = await transporter.sendMail({
     from: email,
     to: Config.mail.inquiryMessage.address,
     subject: Config.mail.inquiryMessage.subject,
-    text: messageText
+    html: messageHTML
   });
 
   debug('Send mail to Census department result:', sendResults);
