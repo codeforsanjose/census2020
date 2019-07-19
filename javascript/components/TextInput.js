@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import '../../styles/forms/text-input.scss';
+
 export default class TextInput extends Component {
   render () {
     const {

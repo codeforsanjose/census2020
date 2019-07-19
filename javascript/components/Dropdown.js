@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import '../../styles/forms/select.scss';
+
 export default class Dropdown extends Component {
   render () {
     const {

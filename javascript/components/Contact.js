@@ -5,6 +5,8 @@ import TextInput from './TextInput';
 import Dropdown from './Dropdown';
 import { sendContactForm } from '../api/contact';
 
+import '../../styles/forms/form.scss';
+
 class Contact extends Component {
   static propTypes = {
     intl: intlShape.isRequired
