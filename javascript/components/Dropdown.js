@@ -13,6 +13,7 @@ export default class Dropdown extends Component {
 
     let list = (
       <select
+        className="usa-select"
         name={name}
         value={value}
         onChange={onChange}>

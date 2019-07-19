@@ -16,6 +16,7 @@ export default class TextInput extends Component {
     if (type === 'textarea') {
       textInput = (
         <textarea
+          className="usa-textarea"
           name={name}
           value={value}
           onChange={onChange}>
@@ -24,6 +25,7 @@ export default class TextInput extends Component {
     } else {
       textInput = (
         <input
+          className="usa-input"
           name={name}
           value={value}
           type={type}
