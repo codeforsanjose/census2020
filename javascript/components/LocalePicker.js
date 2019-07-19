@@ -17,6 +17,7 @@ export const LocalePicker = ({ currentLocale, onLocaleClicked }) => {
           (locale) => (
             <li key={locale}>
               <button
+                className="usa-button"
                 disabled={locale === currentLocale}
                 onClick={() => onLocaleClicked(locale)}
               >
