@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import '../../styles/forms/text-input.scss';
+
 export default class TextInput extends Component {
   render () {
     const {
@@ -16,6 +18,7 @@ export default class TextInput extends Component {
     if (type === 'textarea') {
       textInput = (
         <textarea
+          className="c_textarea"
           name={name}
           value={value}
           onChange={onChange}>
@@ -24,6 +27,7 @@ export default class TextInput extends Component {
     } else {
       textInput = (
         <input
+          className="c_text-input"
           name={name}
           value={value}
           type={type}
