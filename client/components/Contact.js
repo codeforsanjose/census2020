@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
+import { toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 import TextInput from './TextInput';
 import Dropdown from './Dropdown';
@@ -10,9 +13,8 @@ class Contact extends Component {
     intl: intlShape.isRequired
   }
 
-  constructor (props) {
-    super(props);
-    this.state = {
+  static getInitialState () {
+    return {
       name: '',
       organization: '',
       email: '',
@@ -21,8 +23,29 @@ class Contact extends Component {
       interest: 'Volunteer',
       comment: ''
     };
+  }
+
+  constructor (props) {
+    super(props);
+    this.state = Contact.getInitialState();
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  notifySubmitSuccess () {
+    toast(
+      this.props.intl.formatMessage({
+        id: 'components.Contact.submitSuccessToast',
+        description: 'Message shown to users in a popup when the contact form has been successfully submitted',
+        defaultMessage: 'Your request for information has been submitted'
+      }),
+      {
+        type: toast.TYPE.SUCCESS,
+        position: toast.POSITION.BOTTOM_CENTER,
+        autoClose: 8000,
+        hideProgressBar: true
+      }
+    );
   }
 
   handleChange (event) {
@@ -31,9 +54,16 @@ class Contact extends Component {
     this.setState(change);
   }
 
-  handleSubmit (event) {
+  clearForm () {
+    this.setState(Contact.getInitialState());
+  }
+
+  async handleSubmit (event) {
     event.preventDefault();
-    sendContactForm(this.state);
+    await sendContactForm(this.state);
+
+    this.notifySubmitSuccess();
+    this.clearForm();
   }
 
   render () {
