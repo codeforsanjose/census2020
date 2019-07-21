@@ -1,0 +1,13 @@
+.c_navigation {
+  display: flex;
+  flex-direction: row;
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+
+    > * {
+      margin: 0 0.5em;
+    }
+  }
+}

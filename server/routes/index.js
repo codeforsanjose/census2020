@@ -9,14 +9,14 @@ const router = new express.Router();
 
 router.use('/api', require('./api'));
 
-const indexContent = readFile(path.join(build, 'index.html'));
-
 // development uses webpack-dev-middleware to serve
 if (!Config.app.isDev) {
   // Serve bundle etc.
   router.use(express.static(
     build
   ));
+
+  const indexContent = readFile(path.join(build, 'index.html'));
 
   // Serve other paths for React Router routes
   router.use('*', (req, res) => {
