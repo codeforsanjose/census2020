@@ -54,5 +54,9 @@
   "navigation.links.contact": {
     "english": "Contact",
     "translation": "Pagina de contacto"
+  },
+  "components.Contact.submitButton": {
+    "english": "Submit",
+    "translation": "Enviar"
   }
 }

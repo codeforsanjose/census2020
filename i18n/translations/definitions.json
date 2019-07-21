@@ -68,5 +68,10 @@
     "id": "navigation.links.contact",
     "description": "'Contact' link in the navigation bar",
     "defaultMessage": "Contact"
+  },
+  "components.Contact.submitButton": {
+    "id": "components.Contact.submitButton",
+    "description": "Button that submits the Contact form",
+    "defaultMessage": "Submit"
   }
 }

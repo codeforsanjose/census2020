@@ -240,7 +240,16 @@ class Contact extends Component {
               }
             })
           }
-          <input type='submit' value='Submit'/>
+          <button
+            className="usa-button"
+            type="submit"
+          >
+            <FormattedMessage
+              id="components.Contact.submitButton"
+              description="Button that submits the Contact form"
+              defaultMessage="Submit"
+            />
+          </button>
         </form>
       </div>
     );
