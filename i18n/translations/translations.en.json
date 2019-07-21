@@ -2,5 +2,57 @@
   "components.DetailViewContainer.hello": {
     "english": "Hello world",
     "translation": "Hello world"
+  },
+  "components.Contact.fields.name": {
+    "english": "Name",
+    "translation": "Name"
+  },
+  "components.Contact.fields.organization": {
+    "english": "Organization",
+    "translation": "Organization"
+  },
+  "components.Contact.fields.email": {
+    "english": "Email",
+    "translation": "Email"
+  },
+  "components.Contact.fields.language": {
+    "english": "Language Spoken",
+    "translation": "Language Spoken"
+  },
+  "components.Contact.fields.zip": {
+    "english": "Zip Code",
+    "translation": "Zip Code"
+  },
+  "components.Contact.fields.interest": {
+    "english": "Interest",
+    "translation": "Interest"
+  },
+  "components.Contact.fields.interest.options.volunteer": {
+    "english": "Volunteer",
+    "translation": "Volunteer"
+  },
+  "components.Contact.fields.interest.options.workForCensus": {
+    "english": "Work for Census2020",
+    "translation": "Work for Census2020"
+  },
+  "components.Contact.fields.interest.options.requestPresentation": {
+    "english": "Request presentation",
+    "translation": "Request presentation"
+  },
+  "components.Contact.fields.interest.options.other": {
+    "english": "Other",
+    "translation": "Other"
+  },
+  "components.Contact.fields.comment": {
+    "english": "Comment",
+    "translation": "Comment"
+  },
+  "navigation.links.home": {
+    "english": "Home",
+    "translation": "Home"
+  },
+  "navigation.links.contact": {
+    "english": "Contact",
+    "translation": "Contact"
   }
 }

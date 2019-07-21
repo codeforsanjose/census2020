@@ -2,5 +2,57 @@
   "components.DetailViewContainer.hello": {
     "english": "Hello world",
     "translation": "Chào thế giới"
+  },
+  "components.Contact.fields.name": {
+    "english": "Name",
+    "translation": "Tên"
+  },
+  "components.Contact.fields.organization": {
+    "english": "Organization",
+    "translation": "Cơ quan"
+  },
+  "components.Contact.fields.email": {
+    "english": "Email",
+    "translation": "E-mail"
+  },
+  "components.Contact.fields.language": {
+    "english": "Language Spoken",
+    "translation": "Ngôn ngữ nói"
+  },
+  "components.Contact.fields.zip": {
+    "english": "Zip Code",
+    "translation": "Mã Bưu Chính"
+  },
+  "components.Contact.fields.interest": {
+    "english": "Interest",
+    "translation": "Lãi"
+  },
+  "components.Contact.fields.interest.options.volunteer": {
+    "english": "Volunteer",
+    "translation": "Tình nguyện"
+  },
+  "components.Contact.fields.interest.options.workForCensus": {
+    "english": "Work for Census2020",
+    "translation": "Làm việc cho Tổng điều tra"
+  },
+  "components.Contact.fields.interest.options.requestPresentation": {
+    "english": "Request presentation",
+    "translation": "Yêu cầu thuyết trình"
+  },
+  "components.Contact.fields.interest.options.other": {
+    "english": "Other",
+    "translation": "Khác"
+  },
+  "components.Contact.fields.comment": {
+    "english": "Comment",
+    "translation": "Chú thích"
+  },
+  "navigation.links.home": {
+    "english": "Home",
+    "translation": "Trang chủ"
+  },
+  "navigation.links.contact": {
+    "english": "Contact",
+    "translation": "Trang liên lạc"
   }
 }

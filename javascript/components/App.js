@@ -1,5 +1,6 @@
 import React from 'react';
 import { IntlProvider } from 'react-intl';
+import { ToastContainer } from 'react-toastify';
 import { Switch, Route } from 'react-router-dom';
 
 import Navigation from './Navigation';
@@ -54,6 +55,7 @@ export default class App extends React.PureComponent {
                       <Route path='/contact' component={Contact} />
                     </Switch>
                   </div>
+                  <ToastContainer />
                 </div>
               </IntlProvider>
             );

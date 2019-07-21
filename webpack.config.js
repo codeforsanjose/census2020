@@ -1,3 +1,4 @@
+require('dotenv').config();
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -11,6 +12,7 @@ module.exports = {
   ],
   output: {
     path: paths.build,
+    publicPath: '/',
     filename: paths.output
   },
   module: {
@@ -21,7 +23,7 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.scss$/,
+        test: /\.s?css$/,
         loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
