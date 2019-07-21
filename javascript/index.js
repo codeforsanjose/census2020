@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
+import { ToastContainer } from 'react-toastify';
 import areIntlLocalesSupported from 'intl-locales-supported';
 
 import {
@@ -39,6 +40,7 @@ const render = () => {
             <Route exact path='/' component={ MainContainer }/>
             <Route path='/contact' component={ Contact }/>
           </Switch>
+          <ToastContainer />
         </BrowserRouter>
       </InternationalizationWrapper>
     ),
