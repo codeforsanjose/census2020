@@ -76,7 +76,8 @@ module.exports.sendToCensusDept = async ({
   });
 
   const sendResults = await transporter.sendMail({
-    from: email,
+    from: Config.mail.inquiryMessage.fromAddress,
+    replyTo: email,
     to: Config.mail.inquiryMessage.address,
     subject: Config.mail.inquiryMessage.subject,
     text: messageText
