@@ -1,6 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
+import LocaleContext from './LocaleContext';
 import supportedLocales from '../../i18n/supported-locales';
 
 const LOCALE_DISPLAY_NAMES = {
@@ -9,28 +9,32 @@ const LOCALE_DISPLAY_NAMES = {
   vi: 'Tiếng Việt'
 };
 
-export const LocalePicker = ({ currentLocale, onLocaleClicked }) => {
+export const LocalePicker = () => {
   return (
-    <ul className="c2020__locale-picker__list">
+    <LocaleContext.Consumer>
       {
-        supportedLocales.map(
-          (locale) => (
-            <li key={locale}>
-              <button
-                disabled={locale === currentLocale}
-                onClick={() => onLocaleClicked(locale)}
-              >
-                {LOCALE_DISPLAY_NAMES[locale]}
-              </button>
-            </li>
-          )
+        ({ currentLocale, setLocale }) => (
+          <div className={'c_locale-picker'}>
+            <select
+              value={currentLocale}
+              onChange={({ target }) => setLocale(target.value)}
+            >
+              {
+                supportedLocales.map(
+                  (locale) => (
+                    <option
+                      key={locale}
+                      value={locale}
+                    >
+                      {LOCALE_DISPLAY_NAMES[locale]}
+                    </option>
+                  )
+                )
+              }
+            </select>
+          </div>
         )
       }
-    </ul>
+    </LocaleContext.Consumer>
   );
-};
-
-LocalePicker.propTypes = {
-  currentLocale: PropTypes.oneOf(supportedLocales).isRequired,
-  onLocaleClicked: PropTypes.func.isRequired
 };
