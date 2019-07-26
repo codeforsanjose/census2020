@@ -7,7 +7,7 @@ import Navigation from './Navigation';
 import DetailViewContainer from './DetailViewContainer';
 import Contact from './Contact';
 import LocaleContext from './LocaleContext';
-import supportedLocales from '../../i18n/supported-locales';
+import { supportedLocales } from '../../i18n/supported-locales';
 
 import './App.scss';
 

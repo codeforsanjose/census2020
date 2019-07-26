@@ -6,7 +6,7 @@ import areIntlLocalesSupported from 'intl-locales-supported';
 
 import App from './components/App';
 import LocaleContext from './components/LocaleContext';
-import supportedLocales from '../i18n/supported-locales';
+import { supportedLocales } from '../i18n/supported-locales';
 
 // We import the SASS/CSS file here
 import '../styles/app.scss';

@@ -2,7 +2,7 @@
 
 const path = require('path');
 
-const supportedLocales = require('./supported-locales');
+const { supportedLocales } = require('./supported-locales');
 
 const translationsDir = path.resolve(__dirname, 'translations');
 

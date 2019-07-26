@@ -73,5 +73,10 @@
     "id": "components.Contact.submitButton",
     "description": "Button that submits the Contact form",
     "defaultMessage": "Submit"
+  },
+  "components.Contact.submitSuccessToast": {
+    "id": "components.Contact.submitSuccessToast",
+    "description": "Message shown to users in a popup when the contact form has been successfully submitted",
+    "defaultMessage": "Your request for information has been submitted"
   }
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
 import { toast } from 'react-toastify';
 
@@ -7,27 +8,38 @@ import 'react-toastify/dist/ReactToastify.css';
 import TextInput from './TextInput';
 import Dropdown from './Dropdown';
 import { sendContactForm } from '../api/contact';
+import LocaleContext from './LocaleContext';
+import {
+  supportedLocales,
+  supportedLocaleNames
+} from '../../i18n/supported-locales';
 
 class Contact extends Component {
   static propTypes = {
-    intl: intlShape.isRequired
+    intl: intlShape.isRequired,
+    currentLocale: PropTypes.oneOf(supportedLocales)
   }
 
-  static getInitialState () {
-    return {
-      name: '',
-      organization: '',
-      email: '',
-      language: 'English',
-      zip: '',
-      interest: 'Volunteer',
-      comment: ''
-    };
+  static getInitialState (defaults = {}) {
+    return Object.assign(
+      {
+        name: '',
+        organization: '',
+        email: '',
+        language: 'English',
+        zip: '',
+        interest: 'Volunteer',
+        comment: ''
+      },
+      defaults
+    );
   }
 
   constructor (props) {
     super(props);
-    this.state = Contact.getInitialState();
+    this.state = Contact.getInitialState({
+      language: supportedLocaleNames[props.currentLocale]
+    });
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -49,9 +61,9 @@ class Contact extends Component {
   }
 
   handleChange (event) {
-    let change = {};
-    change[event.target.name] = event.target.value;
-    this.setState(change);
+    this.setState({
+      [event.target.name]: event.target.value
+    });
   }
 
   clearForm () {
@@ -256,6 +268,19 @@ class Contact extends Component {
   }
 }
 
-const WrappedContact = injectIntl(Contact);
+const WrappedContact = injectIntl(
+  (props) => (
+    <LocaleContext.Consumer>
+      {
+        ({ currentLocale }) => (
+          <Contact
+            {...props}
+            currentLocale={currentLocale}
+          />
+        )
+      }
+    </LocaleContext.Consumer>
+  )
+);
 
 export default WrappedContact;
