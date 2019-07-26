@@ -58,5 +58,9 @@
   "components.Contact.submitButton": {
     "english": "Submit",
     "translation": "Gửi mẫu"
+  },
+  "components.Contact.submitSuccessToast": {
+    "english": "Your request for information has been submitted",
+    "translation": "Yêu cầu thông tin của bạn đã được gửi"
   }
 }

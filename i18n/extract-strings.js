@@ -6,14 +6,14 @@ const writeFile = require('fs').writeFileSync;
 const mkdir = require('mkdirp').sync;
 const transformFile = require('@babel/core').transformFileSync;
 
-const supportedLocales = require('./supported-locales');
+const { supportedLocales } = require('./supported-locales');
 const webpackPaths = require('../webpack-paths');
 
 const filesToCheck = [
   webpackPaths.entry
 ];
 
-const componentDir = path.resolve(__dirname, '..', 'javascript', 'components');
+const componentDir = path.resolve(__dirname, '..', 'client', 'components');
 
 const addJSFiles = (dirPath) => {
   for (const file of readdir(

@@ -1,13 +1,10 @@
 import React from 'react';
 
 import LocaleContext from './LocaleContext';
-import supportedLocales from '../../i18n/supported-locales';
-
-const LOCALE_DISPLAY_NAMES = {
-  en: 'English',
-  es: 'Español',
-  vi: 'Tiếng Việt'
-};
+import {
+  supportedLocales,
+  supportedLocaleNames
+} from '../../i18n/supported-locales';
 
 export const LocalePicker = () => {
   return (
@@ -26,7 +23,7 @@ export const LocalePicker = () => {
                       key={locale}
                       value={locale}
                     >
-                      {LOCALE_DISPLAY_NAMES[locale]}
+                      {supportedLocaleNames[locale]}
                     </option>
                   )
                 )
