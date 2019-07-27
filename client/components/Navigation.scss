@@ -1,6 +1,8 @@
 .c_navigation {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  position: relative;
 
   &__links {
     display: flex;
@@ -9,5 +11,11 @@
     > * {
       margin: 0 0.5em;
     }
+  }
+
+  &__census-link {
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
   }
 }

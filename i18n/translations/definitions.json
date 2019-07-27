@@ -78,5 +78,25 @@
     "id": "components.Contact.submitSuccessToast",
     "description": "Message shown to users in a popup when the contact form has been successfully submitted",
     "defaultMessage": "Your request for information has been submitted"
+  },
+  "components.FAQ.header": {
+    "id": "components.FAQ.header",
+    "description": "FAQ page header text",
+    "defaultMessage": "FAQ"
+  },
+  "navigation.links.faq": {
+    "id": "navigation.links.faq",
+    "description": "'FAQ' link in the navigation bar",
+    "defaultMessage": "FAQ"
+  },
+  "navigation.links.sampleCensus": {
+    "id": "navigation.links.sampleCensus",
+    "description": "'Sample Census' link in the navigation bar",
+    "defaultMessage": "Sample Census"
+  },
+  "components.SampleCensus.header": {
+    "id": "components.SampleCensus.header",
+    "description": "Sample Census page header",
+    "defaultMessage": "Sample Census"
   }
 }
