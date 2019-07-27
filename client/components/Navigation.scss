@@ -1,6 +1,7 @@
 .c_navigation {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
   &__links {
     display: flex;
@@ -9,5 +10,9 @@
     > * {
       margin: 0 0.5em;
     }
+  }
+
+  .navlink.active {
+    cursor: default;
   }
 }

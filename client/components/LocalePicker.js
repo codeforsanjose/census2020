@@ -12,23 +12,20 @@ export const LocalePicker = () => {
       {
         ({ currentLocale, setLocale }) => (
           <div className={'c_locale-picker'}>
-            <select
-              value={currentLocale}
-              onChange={({ target }) => setLocale(target.value)}
-            >
-              {
-                supportedLocales.map(
-                  (locale) => (
-                    <option
-                      key={locale}
-                      value={locale}
-                    >
-                      {supportedLocaleNames[locale]}
-                    </option>
-                  )
+            {
+              supportedLocales.map(
+                (locale) => (
+                  <button
+                    key={locale}
+                    disabled={locale === currentLocale}
+                    className="usa-button c_locale-picker__option"
+                    onClick={() => setLocale(locale)}
+                  >
+                    {supportedLocaleNames[locale]}
+                  </button>
                 )
-              }
-            </select>
+              )
+            }
           </div>
         )
       }
