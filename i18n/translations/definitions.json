@@ -98,5 +98,10 @@
     "id": "components.SampleCensus.header",
     "description": "Sample Census page header",
     "defaultMessage": "Sample Census"
+  },
+  "take-the-census-link": {
+    "id": "take-the-census-link",
+    "description": "Link to the Census",
+    "defaultMessage": "Take the Census"
   }
 }

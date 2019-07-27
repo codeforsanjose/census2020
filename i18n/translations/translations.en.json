@@ -78,5 +78,9 @@
   "components.SampleCensus.header": {
     "english": "Sample Census",
     "translation": "Sample Census"
+  },
+  "take-the-census-link": {
+    "english": "Take the Census",
+    "translation": "Take the Census"
   }
 }

@@ -78,5 +78,9 @@
   "components.SampleCensus.header": {
     "english": "Sample Census",
     "translation": "Điều tra dân số mẫu"
+  },
+  "take-the-census-link": {
+    "english": "Take the Census",
+    "translation": "Tham gia điều tra dân số"
   }
 }
