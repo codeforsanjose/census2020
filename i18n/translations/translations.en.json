@@ -62,5 +62,25 @@
   "components.Contact.submitSuccessToast": {
     "english": "Your request for information has been submitted",
     "translation": "Your request for information has been submitted"
+  },
+  "components.FAQ.header": {
+    "english": "FAQ",
+    "translation": "FAQ"
+  },
+  "navigation.links.faq": {
+    "english": "FAQ",
+    "translation": "FAQ"
+  },
+  "navigation.links.sampleCensus": {
+    "english": "Sample Census",
+    "translation": "Sample Census"
+  },
+  "components.SampleCensus.header": {
+    "english": "Sample Census",
+    "translation": "Sample Census"
+  },
+  "take-the-census-link": {
+    "english": "Take the Census",
+    "translation": "Take the Census"
   }
 }

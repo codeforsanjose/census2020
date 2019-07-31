@@ -62,5 +62,25 @@
   "components.Contact.submitSuccessToast": {
     "english": "Your request for information has been submitted",
     "translation": "Yêu cầu thông tin của bạn đã được gửi"
+  },
+  "components.FAQ.header": {
+    "english": "FAQ",
+    "translation": "trang faq"
+  },
+  "navigation.links.faq": {
+    "english": "FAQ",
+    "translation": "trang faq"
+  },
+  "navigation.links.sampleCensus": {
+    "english": "Sample Census",
+    "translation": "Điều tra dân số mẫu"
+  },
+  "components.SampleCensus.header": {
+    "english": "Sample Census",
+    "translation": "Điều tra dân số mẫu"
+  },
+  "take-the-census-link": {
+    "english": "Take the Census",
+    "translation": "Tham gia điều tra dân số"
   }
 }

@@ -1,0 +1,9 @@
+.c_locale-picker {
+  &__option {
+    cursor: pointer;
+
+    &.disabled {
+      cursor: none;
+    }
+  }
+}
