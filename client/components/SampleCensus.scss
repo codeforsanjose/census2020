@@ -1,0 +1,67 @@
+.c_sample-census {
+  &__form {
+    background-color: #E2F4FC;
+    border: 1px solid #34BEF2;
+    padding: 5px;
+    
+    &__preliminary-instructions {
+      background-color: #C6EAFA;
+      border: 1px solid #8CD9F7;
+      padding: 5px;
+    }
+
+    &__question-header {
+      display: inline-block;
+    }
+
+    &__question-instructions {
+      font-style: italic;
+    }
+
+    &__input {
+      --stripe-spacing: 1.8em;
+      --stripe-width: 2px;
+      --stripe-color: #BDE6FA;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      // letter-spacing: 1.5em;
+      border: 2px solid #8FDAF7;
+      width: calc(2em * var(--size));
+      text-align: right;
+      background-size: cover;
+      background: repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent var(--stripe-spacing),
+        var(--stripe-color) calc(var(--stripe-spacing) + var(--stripe-width)),
+        var(--stripe-color) calc(var(--stripe-spacing) + var(--stripe-width))
+      );
+    }
+
+    &__checkbox-list {
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    &__checkbox-container {
+      position: relative;
+    }
+
+    input[type="checkbox"] {
+      margin: 0 0.5em;
+      background: white;
+      -webkit-appearance: none;
+      border: 2px solid #8FDAF7;
+      width: 1em;
+      height: 1em;
+
+      &:checked + span::before {
+        content: "✗";
+        position: absolute;
+        top: 0;
+        left: 0.5em;
+      }
+    }
+  }
+}
