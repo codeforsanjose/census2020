@@ -13,7 +13,7 @@ import './App.scss';
 import FAQ from './FAQ';
 import SampleCensus from './SampleCensus/SampleCensus';
 
-const req = require.context('../../i18n/translations', true, /\.\w{2}(?:-\w+)?\.json$/);
+const req = require.context('../i18n/translations', true, /\.\w{2}(?:-\w+)?\.json$/);
 
 const messages = {};
 

@@ -42,27 +42,27 @@ cd census2020
 
 (3) Install the node modules (libraries) needed to develop on the application
 
-- `--no-shrinkwrap` parameter allows us to update package.json without 
+- `--no-shrinkwrap` parameter allows us to update package.json without
 modifying the package-lock.json file
 ```
 npm install --no-shrinkwrap
 ```
 
-(4) In one terminal run this command. 
+(4) In one terminal run this command.
 
-- This process will build the project. 
+- This process will build the project.
 The process is ongoing until you CONTROL-C to quit the process.
-The `dev` server will rebuild the project anytime it sees saved 
+The `dev` server will rebuild the project anytime it sees saved
 changes in the `javascript` or `styles` directories.
 ```
 npm run build:dev
 ```
 
-(5) In another terminal run this command. 
+(5) In another terminal run this command.
 
-- This process will run an Express server on your localhost. 
+- This process will run an Express server on your localhost.
 The process is ongoing until you CONTROL-C to quit the process.
-The `dev` server will rebuild the project anytime it sees saved 
+The `dev` server will rebuild the project anytime it sees saved
 changes in the `server.js` file.
 
 ```
@@ -71,6 +71,15 @@ npm run server:dev
 
 (6) Open localhost:8080 in your web browser
 
+**Start React App**
+(1) Make sure all dependencies are installed as per previous steps 1 through 3
+
+(2) In terminal run this command.
+
+- This process will initiate `react-scripts start` for the react app.
+
+```
+npm run react-start
+```
+
 **Other notes**
-
-
