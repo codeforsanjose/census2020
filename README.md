@@ -72,6 +72,7 @@ npm run server:dev
 (6) Open localhost:8080 in your web browser
 
 **Start React App**
+
 (1) Make sure all dependencies are installed as per previous steps 1 through 3
 
 (2) In terminal run this command.
