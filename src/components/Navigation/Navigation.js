@@ -4,7 +4,7 @@ import { Link, withRouter } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 
 import './Navigation.scss';
-import { LocalePicker } from './LocalePicker';
+import { LocalePicker } from '../LocalePicker/LocalePicker';
 
 /**
  * @param {object} props

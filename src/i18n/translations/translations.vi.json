@@ -1,0 +1,198 @@
+{
+  "components.DetailViewContainer.hello": {
+    "english": "Hello world",
+    "translation": "Chào thế giới"
+  },
+  "components.Contact.fields.name": {
+    "english": "Name",
+    "translation": "Tên"
+  },
+  "components.Contact.fields.organization": {
+    "english": "Organization",
+    "translation": "Cơ quan"
+  },
+  "components.Contact.fields.email": {
+    "english": "Email",
+    "translation": "E-mail"
+  },
+  "components.Contact.fields.language": {
+    "english": "Language Spoken",
+    "translation": "Ngôn ngữ nói"
+  },
+  "components.Contact.fields.zip": {
+    "english": "Zip Code",
+    "translation": "Mã Bưu Chính"
+  },
+  "components.Contact.fields.interest": {
+    "english": "Interest",
+    "translation": "Lãi"
+  },
+  "components.Contact.fields.interest.options.volunteer": {
+    "english": "Volunteer",
+    "translation": "Tình nguyện"
+  },
+  "components.Contact.fields.interest.options.workForCensus": {
+    "english": "Work for Census2020",
+    "translation": "Làm việc cho Tổng điều tra"
+  },
+  "components.Contact.fields.interest.options.requestPresentation": {
+    "english": "Request presentation",
+    "translation": "Yêu cầu thuyết trình"
+  },
+  "components.Contact.fields.interest.options.other": {
+    "english": "Other",
+    "translation": "Khác"
+  },
+  "components.Contact.fields.comment": {
+    "english": "Comment",
+    "translation": "Chú thích"
+  },
+  "navigation.links.home": {
+    "english": "Home",
+    "translation": "Trang chủ"
+  },
+  "navigation.links.contact": {
+    "english": "Contact",
+    "translation": "Trang liên lạc"
+  },
+  "components.Contact.submitButton": {
+    "english": "Submit",
+    "translation": "Gửi mẫu"
+  },
+  "components.Contact.submitSuccessToast": {
+    "english": "Your request for information has been submitted",
+    "translation": "Yêu cầu thông tin của bạn đã được gửi"
+  },
+  "components.FAQ.header": {
+    "english": "FAQ",
+    "translation": "trang faq"
+  },
+  "navigation.links.faq": {
+    "english": "FAQ",
+    "translation": "trang faq"
+  },
+  "navigation.links.sampleCensus": {
+    "english": "Sample Census",
+    "translation": "Điều tra dân số mẫu"
+  },
+  "components.SampleCensus.header": {
+    "english": "Sample Census",
+    "translation": "Điều tra dân số mẫu"
+  },
+  "take-the-census-link": {
+    "english": "Take the Census",
+    "translation": "Tham gia điều tra dân số"
+  },
+  "components.SampleCensus.form.preliminary-instructions.question1.header": {
+    "english": "Before you answer Question 1, count the people living in this house, apartment, or mobile home using our guidelines.",
+    "translation": null
+  },
+  "components.SampleCensus.form.preliminary-instructions.question1.count-all-people": {
+    "english": "Count all people, including babies, who live and sleep here most of the time.",
+    "translation": null
+  },
+  "components.SampleCensus.form.preliminary-instructions.question1.if-no-one-lives-here": {
+    "english": "If no one lives and sleeps at this address most of the time, go online at {websiteUrl} or call the number on page 8",
+    "translation": null
+  },
+  "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.header": {
+    "english": "The census must also include people without a permanent place to live, so:",
+    "translation": null
+  },
+  "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.include": {
+    "english": "If someone who does not have a permanent place to live is staying here on April 1, 2020, count that person.",
+    "translation": null
+  },
+  "components.SampleCensus.form.preliminary-instructions.dont-include-absent.header": {
+    "english": "The Census Bureau also conducts counts in institutions and other places, so:",
+    "translation": null
+  },
+  "components.SampleCensus.form.preliminary-instructions.dont-include-absent.college-or-armed-forces": {
+    "english": "Do not count anyone living away from here, either at college or in the Armed Forces.",
+    "translation": null
+  },
+  "components.SampleCensus.form.preliminary-instructions.dont-include-absent.prison": {
+    "english": "Do not count anyone in a nursing home, jail, prison, detention facility, etc., on April 1, 2020.",
+    "translation": null
+  },
+  "components.SampleCensus.form.preliminary-instructions.dont-include-absent.even-if-they-return": {
+    "english": "Leave these people off your questionnaire, even if they will return to live here after they leave college, the nursing home, the military, jail, etc. Otherwise, they may be counted twice.",
+    "translation": null
+  },
+  "components.SampleCensus.form.question1.header": {
+    "english": "How many people were living or staying in this house,apartment, or mobile home on April 1, 2020?",
+    "translation": null
+  },
+  "components.SampleCensus.form.question1.input-label": {
+    "english": "Number of people",
+    "translation": null
+  },
+  "components.SampleCensus.form.question2.header": {
+    "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
+    "translation": null
+  },
+  "components.SampleCensus.form.question2.mark-all": {
+    "english": "Mark {markBoxImage} all that apply",
+    "translation": null
+  },
+  "components.SampleCensus.form.question2.fields.related-children": {
+    "english": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children",
+    "translation": null
+  },
+  "components.SampleCensus.form.question2.fields.related-adults": {
+    "english": "Relatives, such as adult children, cousins, or in-laws",
+    "translation": null
+  },
+  "components.SampleCensus.form.question2.fields.nonrelatives": {
+    "english": "Nonrelatives, such as roommates or live-in babysitters",
+    "translation": null
+  },
+  "components.SampleCensus.form.question2.fields.staying-temporarily": {
+    "english": "People staying here temporarily",
+    "translation": null
+  },
+  "components.SampleCensus.form.question2.fields.no-additional": {
+    "english": "No additional people",
+    "translation": null
+  },
+  "components.SampleCensus.form.question3.header": {
+    "english": "Is this house, apartment, or mobile home",
+    "translation": null
+  },
+  "components.SampleCensus.form.markOne": {
+    "english": "Mark {markBoxImage} ONE box",
+    "translation": null
+  },
+  "components.SampleCensus.form.question3.fields.mortgage-or-loan": {
+    "english": "Owned by you or someone in this household with a mortgage or loan? Include home equity loans.",
+    "translation": null
+  },
+  "components.SampleCensus.form.question3.fields.without-mortgage-or-loan": {
+    "english": "Owned by you or someone in this household free and clear (without a mortgage or loan)?",
+    "translation": null
+  },
+  "components.SampleCensus.form.question3.fields.rented": {
+    "english": "Rented?",
+    "translation": null
+  },
+  "components.SampleCensus.form.question3.fields.occupied-without-rent": {
+    "english": "Occupied without payment of rent?",
+    "translation": null
+  },
+  "components.SampleCensus.form.mark-all": {
+    "english": "Mark {markBoxImage} all that apply",
+    "translation": null
+  },
+  "components.SampleCensus.form.question4.header": {
+    "english": "What is your telephone number?",
+    "translation": null
+  },
+  "components.SampleCensus.form.question4.header.phone-disclaimer": {
+    "english": "We will only contact you if needed for official Census Bureau business.",
+    "translation": null
+  },
+  "components.SampleCensus.form.question4.field.label": {
+    "english": "Telephone Number",
+    "translation": null
+  }
+}

@@ -3,15 +3,15 @@ import { IntlProvider } from 'react-intl';
 import { ToastContainer } from 'react-toastify';
 import { Switch, Route } from 'react-router-dom';
 
-import Navigation from './Navigation';
+import Navigation from './Navigation/Navigation';
 import DetailViewContainer from './DetailViewContainer';
 import Contact from './Contact';
 import LocaleContext from './LocaleContext';
-import { supportedLocales } from '../../i18n/supported-locales';
+import { supportedLocales } from '../i18n/supported-locales';
 
 import './App.scss';
 import FAQ from './FAQ';
-import SampleCensus from './SampleCensus';
+import SampleCensus from './SampleCensus/SampleCensus';
 
 const req = require.context('../../i18n/translations', true, /\.\w{2}(?:-\w+)?\.json$/);
 

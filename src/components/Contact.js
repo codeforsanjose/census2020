@@ -12,7 +12,7 @@ import LocaleContext from './LocaleContext';
 import {
   supportedLocales,
   supportedLocaleNames
-} from '../../i18n/supported-locales';
+} from '../i18n/supported-locales';
 
 class Contact extends Component {
   static propTypes = {
