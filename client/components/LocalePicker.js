@@ -5,6 +5,7 @@ import {
   supportedLocales,
   supportedLocaleNames
 } from '../../i18n/supported-locales';
+import './LocalePicker.scss';
 
 export const LocalePicker = () => {
   return (
@@ -18,7 +19,7 @@ export const LocalePicker = () => {
                   <button
                     key={locale}
                     disabled={locale === currentLocale}
-                    className="usa-button c_locale-picker__option"
+                    className="c_locale-picker__option"
                     onClick={() => setLocale(locale)}
                   >
                     {supportedLocaleNames[locale]}
