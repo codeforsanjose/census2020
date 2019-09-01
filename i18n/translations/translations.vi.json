@@ -52,7 +52,7 @@
     "translation": "Trang chủ"
   },
   "navigation.links.contact": {
-    "english": "Contact",
+    "english": "Get Involved",
     "translation": "Trang liên lạc"
   },
   "components.Contact.submitButton": {
@@ -72,7 +72,7 @@
     "translation": "trang faq"
   },
   "navigation.links.sampleCensus": {
-    "english": "Sample Census",
+    "english": "Sample Survey",
     "translation": "Điều tra dân số mẫu"
   },
   "components.SampleCensus.header": {

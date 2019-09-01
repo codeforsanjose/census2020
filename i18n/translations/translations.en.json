@@ -52,8 +52,8 @@
     "translation": "Home"
   },
   "navigation.links.contact": {
-    "english": "Contact",
-    "translation": "Contact"
+    "english": "Get Involved",
+    "translation": "Get Involved"
   },
   "components.Contact.submitButton": {
     "english": "Submit",
@@ -72,8 +72,8 @@
     "translation": "FAQ"
   },
   "navigation.links.sampleCensus": {
-    "english": "Sample Census",
-    "translation": "Sample Census"
+    "english": "Sample Survey",
+    "translation": "Sample Survey"
   },
   "components.SampleCensus.header": {
     "english": "Sample Census",

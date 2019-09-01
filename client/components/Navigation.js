@@ -15,21 +15,13 @@ import { LocalePicker } from './LocalePicker';
  * @param {*} props.children the component children
  */
 let NavLink = ({ location, path, children }) => (
-  location.pathname === path
-    ? (
-      <span
-        className="usa-button usa-button--disabled"
-      >
-        {children}
-      </span>
-    ) : (
-      <Link
-        to={path}
-        className="navlink usa-button"
-      >
-        {children}
-      </Link>
-    )
+  <Link
+    to={path}
+    className="c_navigation__link"
+    disabled={location.pathname === path}
+  >
+    {children}
+  </Link>
 );
 
 NavLink.propTypes = {
@@ -50,24 +42,19 @@ export default class Navigation extends React.PureComponent {
     return (
       <nav className="c_navigation">
         <div className="c_navigation__links">
-          <NavLink
-            path="/"
-          >
-            <FormattedMessage
-              id="navigation.links.home"
-              defaultMessage="Home"
-              description="'Home' link in the navigation bar"
-            />
-          </NavLink>
-          <NavLink
-            path="/contact"
-          >
-            <FormattedMessage
-              id="navigation.links.contact"
-              defaultMessage="Contact"
-              description="'Contact' link in the navigation bar"
-            />
-          </NavLink>
+          <div className="c_navigation__logo">
+            <Link
+              to="/"
+            >
+              <div style={{
+                width: 160,
+                height: 80,
+                background: 'lightgrey'
+              }}>
+                Logo Placeholder
+              </div>
+            </Link>
+          </div>
           <NavLink
             path="/faq"
           >
@@ -82,8 +69,17 @@ export default class Navigation extends React.PureComponent {
           >
             <FormattedMessage
               id="navigation.links.sampleCensus"
-              defaultMessage="Sample Census"
-              description="'Sample Census' link in the navigation bar"
+              defaultMessage="Sample Survey"
+              description="'Sample Survey' link in the navigation bar"
+            />
+          </NavLink>
+          <NavLink
+            path="/contact"
+          >
+            <FormattedMessage
+              id="navigation.links.contact"
+              defaultMessage="Get Involved"
+              description="'Get Involved' link in the navigation bar"
             />
           </NavLink>
         </div>

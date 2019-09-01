@@ -1,9 +1,25 @@
 .c_locale-picker {
   &__option {
     cursor: pointer;
+    color: #0872B9;
+    -webkit-appearance: none;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    padding: 0;
 
-    &.disabled {
-      cursor: none;
+    &:not(:last-child)::after {
+      content: '|';
+      color: #ADADAD;
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    &[disabled] {
+      color: #C9C9C9;
+      cursor: default;
     }
   }
 }
