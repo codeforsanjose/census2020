@@ -141,9 +141,18 @@ class Contact extends Component {
         ),
         type: 'dropdown',
         options: [
-          'English',
-          'Español',
-          'Tiếng Việt'
+          {
+            label: 'English',
+            value: 'English'
+          },
+          {
+            label: 'Español',
+            value: 'Spanish'
+          },
+          {
+            label: 'Tiếng Việt',
+            value: 'Vietnamese'
+          }
         ]
       },
       {
