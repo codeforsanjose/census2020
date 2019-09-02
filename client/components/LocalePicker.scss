@@ -12,6 +12,7 @@
     position: relative;
     margin-right: 20px;
 
+    // Add a separator bar after every item in the locale picker...
     &::after {
       content: '|';
       color: #ADADAD;
@@ -19,6 +20,8 @@
       position: absolute;
       margin: 0 8px;
     }
+
+    // ...except for the last one
     &:last-child {
       margin-right: 0;
 
