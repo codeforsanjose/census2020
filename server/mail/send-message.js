@@ -8,6 +8,39 @@ debug.log = console.log.bind(console);
 debug.debug = debug.log;
 debug.info = console.info.bind(console);
 
+/**
+ * Formats the date into a human-readable string
+ *
+ * @param {Date} date the date to format
+ *
+ * @return {string} the formatted date
+ */
+const formatDate = (date) => {
+  const year = date.getFullYear();
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let amPm = 'AM';
+
+  if (hours >= 12) {
+    amPm = 'PM';
+    if (hours > 12) {
+      hours = hours % 12;
+    }
+  }
+
+  if (hours < 10) {
+    hours = '0' + hours;
+  }
+  if (minutes < 10) {
+    minutes = '0' + minutes;
+  }
+
+  return `${month}/${day}/${year} ${hours}:${minutes}${amPm}`;
+};
+
 const getTransporter = () => {
   return nodemailer.createTransport({
     host: Config.mail.host,
@@ -54,16 +87,22 @@ module.exports.sendToCensusDept = async ({
     'Organization',
     'Language',
     'Zip code',
-    'Interest'
+    'Interest',
+    'Sent at'
   ];
 
   const data = {
+    'Sent at': formatDate(new Date()),
     Name: name || 'Not given',
     Organization: organization,
     Language: language,
     'Zip code': zip,
     Interest: interest
   };
+
+  if (language === 'English') {
+    delete dataKeys.Language;
+  }
 
   const rows = [];
 
@@ -88,6 +127,7 @@ module.exports.sendToCensusDept = async ({
     </style>
   </head>
   <body>
+    ${Config.mail.inquiryMessage.introduction || ''}
     <table>
       <tbody>
         ${rows.join('\n')}
