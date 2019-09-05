@@ -3,19 +3,69 @@
   flex-direction: row;
   justify-content: space-between;
   position: relative;
+  padding: 20px 32px;
+  align-items: center;
+  box-shadow: 0 2px 9px -2px #D9D9D9;
+
+  &__logo {
+    &__image {
+      width: 200px;
+    }
+  }
 
   &__links {
     display: flex;
     flex-direction: row;
-
+    align-items: center;
+    
     > * {
-      margin: 0 0.5em;
+      margin: 0 16px;
+    }
+  }
+  
+  &__link {
+    color: #5B616B;
+    font-size: 24px;
+    font-weight: bold;
+
+    &,
+    &:hover,
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  
+  &__link {
+    color: #5B616B;
+
+    &,
+    &:hover,
+    &:visited {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    &:first-child {
+      margin-left: 0;
     }
   }
 
   &__census-link {
+    background-color: #D83933;
     position: absolute;
-    right: 20px;
-    bottom: -25px;
+    padding: 30px;
+    right: 32px;
+    top: 85%;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .c_locale-picker {
+    align-self: start;
   }
 }

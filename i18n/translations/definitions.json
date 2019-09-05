@@ -66,8 +66,8 @@
   },
   "navigation.links.contact": {
     "id": "navigation.links.contact",
-    "description": "'Contact' link in the navigation bar",
-    "defaultMessage": "Contact"
+    "description": "'Get Involved' link in the navigation bar",
+    "defaultMessage": "Get Involved"
   },
   "components.Contact.submitButton": {
     "id": "components.Contact.submitButton",
@@ -91,8 +91,8 @@
   },
   "navigation.links.sampleCensus": {
     "id": "navigation.links.sampleCensus",
-    "description": "'Sample Census' link in the navigation bar",
-    "defaultMessage": "Sample Census"
+    "description": "'Sample Survey' link in the navigation bar",
+    "defaultMessage": "Sample Survey"
   },
   "components.SampleCensus.header": {
     "id": "components.SampleCensus.header",
