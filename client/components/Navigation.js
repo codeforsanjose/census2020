@@ -5,6 +5,7 @@ import { FormattedMessage } from 'react-intl';
 
 import './Navigation.scss';
 import { LocalePicker } from './LocalePicker';
+import logoUrl from '../images/CityOfSanJose_logo.png';
 
 /**
  * @param {object} props
@@ -45,13 +46,11 @@ export default class Navigation extends React.PureComponent {
           <Link
             to="/"
           >
-            <div style={{
-              width: 160,
-              height: 80,
-              background: 'lightgrey'
-            }}>
-              Logo Placeholder
-            </div>
+            <img
+              className="c_navigation__logo__image"
+              alt="City of San Jose logo"
+              src={logoUrl}
+            />
           </Link>
         </div>
         <div className="c_navigation__links">

@@ -7,6 +7,12 @@
   align-items: center;
   box-shadow: 0 2px 9px -2px #D9D9D9;
 
+  &__logo {
+    &__image {
+      width: 200px;
+    }
+  }
+
   &__links {
     display: flex;
     flex-direction: row;

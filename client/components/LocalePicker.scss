@@ -1,4 +1,15 @@
 .c_locale-picker {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: url('../images/globe.svg');
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+  }
+
   &__option {
     cursor: pointer;
     color: #0872B9;
