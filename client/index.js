@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { addLocaleData } from 'react-intl';
 import areIntlLocalesSupported from 'intl-locales-supported';
+// We import the SASS/CSS file here
+import '../styles/app.scss';
 
 import App from './components/App';
 import LocaleContext from './components/LocaleContext';
 import { supportedLocales } from '../i18n/supported-locales';
-
-// We import the SASS/CSS file here
-import '../styles/app.scss';
 
 for (const locale of supportedLocales) {
   const localeData = require(`react-intl/locale-data/${locale}`);
