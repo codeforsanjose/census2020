@@ -21,8 +21,5 @@ module.exports = {
       fromAddress: process.env.MAIL_TO_CENSUS_FROM_ADDRESS,
       introduction: process.env.MAIL_MESSAGE_INTRODUCTION
     }
-  },
-  db: {
-    connectionString: process.env.DB_URL
   }
 };
