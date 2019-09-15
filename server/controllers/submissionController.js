@@ -1,7 +1,7 @@
 const debug = require('debug')('census2020:server:submissionController');
 
 const submissionQueries = require('../db/queries.submission.js');
-const { sendToCensusDept } = require('../mail/send-message');
+const { sendToCensusDept, sendConfirmation } = require('../mail/send-message');
 
 module.exports = {
   index (req, res, next) {
@@ -41,6 +41,12 @@ module.exports = {
           sendToCensusDept(req.body);
         } catch (ex) {
           debug('Error sending email to Census Department:', ex);
+        }
+
+        try {
+          sendConfirmation(req.body);
+        } catch (ex) {
+          debug('Error sending confirmation mail:', ex);
         }
       })
       .catch((err) => {

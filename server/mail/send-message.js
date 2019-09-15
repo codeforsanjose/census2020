@@ -155,3 +155,80 @@ module.exports.sendToCensusDept = async ({
 
   debug('Send mail to Census department result:', sendResults);
 };
+
+module.exports.sendConfirmation = async ({
+  name,
+  organization,
+  email,
+  language,
+  zip,
+  interest,
+  comment
+}) => {
+  debug('sendConfirmation() called with the following arguments:', {
+    name,
+    organization,
+    email,
+    language,
+    zip,
+    interest,
+    comment
+  });
+
+  if (!email) {
+    throw new Error('No email provided; cannot send confirmation email');
+  }
+
+  const transporter = getTransporter();
+
+  // Will reject (throw error) if config doesn't work
+  await transporter.verify();
+
+  const messageHTML = `
+Hi ${name},
+
+Thank you for your interest in the Census 2020 effort in San Jose.
+
+The following message was sent by you to the City of San Jose Census committee:
+
+<blockquote>
+<p>
+I have an interest in:
+<p>
+${interest}
+</p>
+</p>
+<p>
+${
+  comment
+    ? `
+Additional comments:
+<p>
+${comment}
+    ` : ''
+}
+</p>
+</p>
+</blockquote>
+
+<p>
+Thank you again for your interest. Someone will respond back to you within two business days.
+</p>
+
+-- City of San Jose Census 2020 Committee
+`;
+
+  debug('About to send message:', {
+    messageHTML
+  });
+
+  const sendResults = await transporter.sendMail({
+    from: Config.mail.confirmationMessage.fromAddress,
+    to: email,
+    // TODO: i18n for both subject and message
+    subject: 'Thank you for contacting the San Jose Census Department',
+    html: messageHTML
+  });
+
+  debug('Send confirmation message result:', sendResults);
+};
