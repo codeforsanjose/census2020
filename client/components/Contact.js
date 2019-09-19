@@ -4,9 +4,9 @@ import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
 import { toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import './Contact.scss';
 
 import TextInput from './TextInput';
-import Dropdown from './Dropdown';
 import { sendContactForm } from '../api/contact';
 import LocaleContext from './LocaleContext';
 import {
@@ -23,12 +23,9 @@ class Contact extends Component {
   static getInitialState (defaults = {}) {
     return Object.assign(
       {
-        name: '',
-        organization: '',
+        firstName: '',
+        lastName: '',
         email: '',
-        language: 'English',
-        zip: '',
-        interest: 'Volunteer',
         comment: ''
       },
       defaults
@@ -80,198 +77,161 @@ class Contact extends Component {
 
   render () {
     const {
-      name,
-      organization,
+      firstName,
+      lastName,
       email,
-      language,
-      zip,
-      interest,
       comment
     } = this.state;
 
-    const fields = [
+    /* options: [
       {
-        name: 'name',
-        value: name,
-        label: (
-          <FormattedMessage
-            id="components.Contact.fields.name"
-            defaultMessage="Name"
-            description="Label for the Name field in the Contact form"
-          />
-        ),
-        type: 'text',
-        options: []
+        value: 'Volunteer',
+        label: this.props.intl.formatMessage({
+          key: 'volunteer',
+          id: 'components.Contact.fields.interest.options.volunteer',
+          defaultMessage: 'Volunteer',
+          description: "'Volunteer' option for the Interest field in the Contact form"
+        })
       },
       {
-        name: 'organization',
-        value: organization,
-        label: (
-          <FormattedMessage
-            id="components.Contact.fields.organization"
-            defaultMessage="Organization"
-            description="Label for the Organization field in the Contact form"
-          />
-        ),
-        type: 'text',
-        options: []
+        value: 'Work for Census2020',
+        label: this.props.intl.formatMessage({
+          key: 'workForCensus',
+          id: 'components.Contact.fields.interest.options.workForCensus',
+          defaultMessage: 'Work for Census2020',
+          description: "'Work for Census' option for the Interest field in the Contact form"
+        })
       },
       {
-        name: 'email',
-        value: email,
-        label: (
-          <FormattedMessage
-            id="components.Contact.fields.email"
-            defaultMessage="Email"
-            description="Label for the Email field in the Contact form"
-          />
-        ),
-        type: 'text',
-        options: []
+        value: 'Request presentation',
+        label: this.props.intl.formatMessage({
+          key: 'requestPresentation',
+          id: 'components.Contact.fields.interest.options.requestPresentation',
+          defaultMessage: 'Request presentation',
+          description: "'Request Presentation' option for the Interest field in the Contact form"
+        })
       },
       {
-        name: 'language',
-        value: language,
-        label: (
-          <FormattedMessage
-            id="components.Contact.fields.language"
-            defaultMessage="Language Spoken"
-            description="Label for the Language Spoken field in the Contact form"
-          />
-        ),
-        type: 'dropdown',
-        options: [
-          {
-            label: 'English',
-            value: 'English'
-          },
-          {
-            label: 'Español',
-            value: 'Spanish'
-          },
-          {
-            label: 'Tiếng Việt',
-            value: 'Vietnamese'
-          }
-        ]
-      },
-      {
-        name: 'zip',
-        value: zip,
-        label: (
-          <FormattedMessage
-            id="components.Contact.fields.zip"
-            defaultMessage="Zip Code"
-            description="Label for the Zip Code field in the Contact form"
-          />
-        ),
-        type: 'text',
-        options: []
-      },
-      {
-        name: 'interest',
-        value: interest,
-        label: (
-          <FormattedMessage
-            id="components.Contact.fields.interest"
-            defaultMessage="Interest"
-            description="Label for the Interest field in the Contact form"
-          />
-        ),
-        type: 'dropdown',
-        options: [
-          {
-            value: 'Volunteer',
-            label: this.props.intl.formatMessage({
-              key: 'volunteer',
-              id: 'components.Contact.fields.interest.options.volunteer',
-              defaultMessage: 'Volunteer',
-              description: "'Volunteer' option for the Interest field in the Contact form"
-            })
-          },
-          {
-            value: 'Work for Census2020',
-            label: this.props.intl.formatMessage({
-              key: 'workForCensus',
-              id: 'components.Contact.fields.interest.options.workForCensus',
-              defaultMessage: 'Work for Census2020',
-              description: "'Work for Census' option for the Interest field in the Contact form"
-            })
-          },
-          {
-            value: 'Request presentation',
-            label: this.props.intl.formatMessage({
-              key: 'requestPresentation',
-              id: 'components.Contact.fields.interest.options.requestPresentation',
-              defaultMessage: 'Request presentation',
-              description: "'Request Presentation' option for the Interest field in the Contact form"
-            })
-          },
-          {
-            value: 'Other',
-            label: this.props.intl.formatMessage({
-              key: 'other',
-              id: 'components.Contact.fields.interest.options.other',
-              defaultMessage: 'Other',
-              description: "'Other' option for the Interest field in the Contact form"
-            })
-          }
-        ]
-      },
-      {
-        name: 'comment',
-        value: comment,
-        label: (
-          <FormattedMessage
-            id="components.Contact.fields.comment"
-            defaultMessage="Comment"
-            description="Label for the Comment field in the Contact form"
-          />
-        ),
-        type: 'textarea',
-        options: []
+        value: 'Other',
+        label: this.props.intl.formatMessage({
+          key: 'other',
+          id: 'components.Contact.fields.interest.options.other',
+          defaultMessage: 'Other',
+          description: "'Other' option for the Interest field in the Contact form"
+        })
       }
-    ];
+    ]
+  } */
 
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          {
-            fields.map((field, i) => {
-              if (field.type === 'dropdown') {
-                return (
-                  <Dropdown
-                    onChange={this.handleChange}
-                    name={field.name}
-                    value={field.value}
-                    label={field.label}
-                    options={field.options}
-                    key={i}/>
-                );
-              } else {
-                return (
-                  <TextInput
-                    onChange={this.handleChange}
-                    name={field.name}
-                    value={field.value}
-                    label={field.label}
-                    type={field.type}
-                    key={i}/>
-                );
-              }
-            })
-          }
-          <button
-            className="usa-button"
-            type="submit"
-          >
-            <FormattedMessage
-              id="components.Contact.submitButton"
-              description="Button that submits the Contact form"
-              defaultMessage="Submit"
-            />
-          </button>
-        </form>
+      <div className="c_contact">
+        <h1 className="c_contact__headline">Get Involved</h1>
+        <div className="c_contact__content">
+          <div className="c_contact__content__col">
+            <img className="c_contact__content__col__contact_image" src={require('../images/contact-form.jpg')}></img>
+            <div className="c_contact__content__col__blurb">
+              <h3 className="c_contact__content__col__blurb__headline">
+                Interested in working for the Census?
+              </h3>
+              <p className="c_contact__content__col__blurb__info">
+                Find more information <a className="c_contact__content__col__blurb__info__link" href="https://2020census.gov/en/jobs">here</a>
+              </p>
+            </div>
+            <div className="c_contact__content__col__blurb">
+              <h3 className="c_contact__content__col__blurb__headline">
+                Need more information?
+              </h3>
+              <p className="c_contact__content__col__blurb__info">
+                Visit our <a className="c_contact__content__col__blurb__info__link" href="/faq">FAQ</a> or submit your question and a San Jose Census organizer will get back to you within 2 business days.
+              </p>
+            </div>
+          </div>
+          <div className="c_contact__content__form_col">
+            <h2 className="c_contact__content__form_col__form_title">Contact Form</h2>
+            <form onSubmit={this.handleSubmit}>
+              <div className="c_contact__content__form_col__form">
+                <div className="c_contact__content__form_col__form__row">
+                  <div className="c_contact__content__form_col__form__row__half">
+                    <h6 className="c_contact__content__form_col__form__row__label">
+                      <span className="c_contact__content__form_col__form__row__label__required">* </span>
+                      <FormattedMessage
+                        id="components.Contact.fields.firstName"
+                        defaultMessage="First Name"
+                        description="Label for the First Name field in the Contact form"
+                      />
+                    </h6>
+                    <TextInput
+                      onChange={this.handleChange}
+                      name='first name'
+                      className='c_contact__content__form_col__form__field'
+                      value={firstName}
+                      type='text'
+                    />
+                  </div>
+                  <div className="c_contact__content__form_col__form__row__gutter"></div>
+                  <div className="c_contact__content__form_col__form__row__half">
+                    <h6 className="c_contact__content__form_col__form__row__label">
+                      <span className="c_contact__content__form_col__form__row__label__required">* </span>
+                      <FormattedMessage
+                        id="components.Contact.fields.lastName"
+                        defaultMessage="Last Name"
+                        description="Label for the Last Name field in the Contact form"
+                      />
+                    </h6>
+                    <TextInput
+                      onChange={this.handleChange}
+                      name='last name'
+                      className='c_contact__content__form_col__form__field'
+                      value={lastName}
+                      type='text'
+                    />
+                  </div>
+                </div>
+                <h6 className="c_contact__content__form_col__form__row__label">
+                  <span className="c_contact__content__form_col__form__row__label__required">* </span>
+                  <FormattedMessage
+                    id="components.Contact.fields.email"
+                    defaultMessage="Email"
+                    description="Label for the Email field in the Contact form"
+                  />
+                </h6>
+                <TextInput
+                  onChange={this.handleChange}
+                  name='email'
+                  className='c_contact__content__form_col__form__field'
+                  value={email}
+                  type='text'
+                />
+                <h6 className="c_contact__content__form_col__form__row__label">
+                  <FormattedMessage
+                    id="components.Contact.fields.comment"
+                    defaultMessage="Comment"
+                    description="Label for the Comment field in the Contact form"
+                  />
+                  <span className="c_contact__content__form_col__form__row__label__optional"> (Optional)</span>
+                </h6>
+                <TextInput
+                  onChange={this.handleChange}
+                  name='comment'
+                  className='c_contact__content__form_col__form__textarea'
+                  rows={4}
+                  value={comment}
+                  type='textarea'
+                />
+              </div>
+              <button
+                className="c_contact__content__form_col__form__submit"
+                type="submit"
+              >
+                <FormattedMessage
+                  id="components.Contact.submitButton"
+                  description="Button that submits the Contact form"
+                  defaultMessage="Submit"
+                />
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     );
   }
