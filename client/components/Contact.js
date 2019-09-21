@@ -9,6 +9,7 @@ import './Contact.scss';
 import TextInput from './TextInput';
 import { sendContactForm } from '../api/contact';
 import LocaleContext from './LocaleContext';
+import Checkbox from './Checkbox';
 import {
   supportedLocales,
   supportedLocaleNames
@@ -26,7 +27,13 @@ class Contact extends Component {
         firstName: '',
         lastName: '',
         email: '',
-        comment: ''
+        comment: '',
+        interest: {
+          volunteer: false,
+          presentation: false,
+          information: false,
+          other: false
+        }
       },
       defaults
     );
@@ -39,6 +46,7 @@ class Contact extends Component {
     });
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleCheck = this.handleCheck.bind(this);
   }
 
   notifySubmitSuccess () {
@@ -63,6 +71,14 @@ class Contact extends Component {
     });
   }
 
+  handleCheck (event) {
+    let prevState = Object.assign({}, this.state.interest);
+    prevState[event.target.value] = !prevState[event.target.value];
+    this.setState({
+      interest: prevState
+    });
+  }
+
   clearForm () {
     this.setState(Contact.getInitialState());
   }
@@ -80,9 +96,36 @@ class Contact extends Component {
       firstName,
       lastName,
       email,
-      comment
+      comment,
+      interest
     } = this.state;
 
+    const options = [
+      {
+        value: 'volunteer',
+        label: 'Volunteer to help',
+        name: 'volunteer',
+        checked: interest.volunteer
+      },
+      {
+        value: 'presentation',
+        label: 'Request a presentation',
+        name: 'presentation',
+        checked: interest.presentation
+      },
+      {
+        value: 'information',
+        label: 'Request more information',
+        name: 'information',
+        checked: interest.information
+      },
+      {
+        value: 'other',
+        label: 'Other',
+        name: 'other',
+        checked: interest.other
+      }
+    ];
     /* options: [
       {
         value: 'Volunteer',
@@ -162,7 +205,7 @@ class Contact extends Component {
                     </h6>
                     <TextInput
                       onChange={this.handleChange}
-                      name='first name'
+                      name='firstName'
                       className='c_contact__content__form_col__form__field'
                       value={firstName}
                       type='text'
@@ -180,7 +223,7 @@ class Contact extends Component {
                     </h6>
                     <TextInput
                       onChange={this.handleChange}
-                      name='last name'
+                      name='lastName'
                       className='c_contact__content__form_col__form__field'
                       value={lastName}
                       type='text'
@@ -202,6 +245,29 @@ class Contact extends Component {
                   value={email}
                   type='text'
                 />
+                <h6 className="c_contact__content__form_col__form__row__label">
+                  <span className="c_contact__content__form_col__form__row__label__required">* </span>
+                  <FormattedMessage
+                    id="components.Contact.fields.interest"
+                    defaultMessage="I would like to:"
+                    description="Label for the Interest field in the Contact form"
+                  />
+                </h6>
+                {
+                  options.map((option, i) => {
+                    return (
+                      <Checkbox
+                        className='c_contact__content__form_col__form__checkbox'
+                        onCheck={this.handleCheck}
+                        checked={option.checked}
+                        label={option.label}
+                        name={option.name}
+                        value={option.value}
+                        key={i}
+                      />
+                    );
+                  })
+                }
                 <h6 className="c_contact__content__form_col__form__row__label">
                   <FormattedMessage
                     id="components.Contact.fields.comment"
