@@ -1,0 +1,51 @@
+.c_footer {
+  background-color: #005EA2;
+  color: #FFFFFF;
+  padding: 60px 138px 60px 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__logo {
+    height: 96px;
+  }
+
+  &__link {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  @mixin contact-link($icon) {
+    display: flex;
+
+    &::before {
+      content: url('../images/#{$icon}.svg');
+      filter: invert(1);
+      margin-right: 10px;
+    }
+  }
+  
+  &__contact-us {
+    margin-left: 60px;
+    margin-right: 138px;
+    
+    &__email {
+      @include contact-link('mail');
+      margin-bottom: 18px;
+    }
+
+    &__phone {
+      @include contact-link('phone');
+    }
+  }
+
+  &__nav-links {
+    list-style: none;
+    padding-left: 0;
+    margin-left: auto;
+
+    &__item {
+      margin-bottom: 8px;
+    }
+  }
+}
