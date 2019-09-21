@@ -7,21 +7,6 @@ const Config = require('./config');
 
 const app = require('./app');
 const http = require('http');
-const mongoose = require('mongoose');
-
-mongoose.connect(
-  Config.db.connectionString,
-  {
-    useNewUrlParser: true,
-    useFindAndModify: false
-  }
-)
-  .then(() => {
-    console.log('MongoDB connected');
-  })
-  .catch((err) => {
-    console.error(err);
-  });
 
 const port = normalizePort(Config.app.port);
 app.set('port', port);

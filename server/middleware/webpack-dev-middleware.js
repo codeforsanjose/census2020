@@ -11,28 +11,34 @@ module.exports = (app) => {
     publicPath: webpackConfig.output.publicPath
   });
 
-  middleware.waitUntilValid(
-    () => {
-      const index = middleware.fileSystem.readFileSync(
-        path.resolve(
-          webpackConfig.output.path,
-          middleware.context.options.index || './index.html'
-        ),
-        'utf8'
-      );
+  const initPromise = new Promise(
+    (resolve) => middleware.waitUntilValid(
+      () => {
+        const index = middleware.fileSystem.readFileSync(
+          path.resolve(
+            webpackConfig.output.path,
+            middleware.context.options.index || './index.html'
+          ),
+          'utf8'
+        );
 
-      // Serve index file for all routes not already handled
-      // (makes sure this doesn't break when at a React Router route)
-      app.use(
-        (req, res) => {
-          res.type('text/html').send(index);
-        }
-      );
-    }
+        // Serve index file for all routes not already handled
+        // (makes sure this doesn't break when at a React Router route)
+        app.use(
+          (req, res) => {
+            res.type('text/html').send(index);
+          }
+        );
+
+        resolve();
+      }
+    )
   );
 
   app.use(
     middleware,
     hotMiddleware(compiler)
   );
+
+  return initPromise;
 };

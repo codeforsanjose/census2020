@@ -40,37 +40,28 @@ This project mainly uses React (JavaScript), Node (JavaScript), and SASS (css).
 cd census2020
 ```
 
-(3) Install the node modules (libraries) needed to develop on the application
+(3) Configure the app
 
-- `--no-shrinkwrap` parameter allows us to update package.json without 
-modifying the package-lock.json file
+Copy the [.example.env](./.example.env) file to a new file in the same directory called `.env`. Adjust any configuration variables you want--if you're just working on the frontend, there's nothing you need to do, these variables are mostly around connecting to the IMAP server to send emails from the contact form.
+
+(4) Install the node modules (libraries) needed to develop on the application
+
 ```
-npm install --no-shrinkwrap
+npm install
 ```
 
-(4) In one terminal run this command. 
+(5) In one terminal run this command. 
 
 - This process will build the project. 
 The process is ongoing until you CONTROL-C to quit the process.
-The `dev` server will rebuild the project anytime it sees saved 
-changes in the `javascript` or `styles` directories.
-```
-npm run build:dev
-```
-
-(5) In another terminal run this command. 
-
-- This process will run an Express server on your localhost. 
-The process is ongoing until you CONTROL-C to quit the process.
-The `dev` server will rebuild the project anytime it sees saved 
-changes in the `server.js` file.
+The dev server will rebuild the project anytime a file in the `client` directory changes.
 
 ```
-npm run server:dev
+npm start
 ```
 
-(6) Open localhost:8080 in your web browser
+(6) Open localhost:3000 in your web browser
 
 **Other notes**
 
-
+Some people using Windows find that `npm start` doesn't launch the server; this should get fixed, but in the meantime you can explicitly run `npm run start:development` to get the server running.

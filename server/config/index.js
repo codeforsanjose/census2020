@@ -25,8 +25,5 @@ module.exports = {
     confirmationMessage: {
       fromAddress: process.env.MAIL_CONFIRMATION_FROM_ADDRESS
     }
-  },
-  db: {
-    connectionString: process.env.DB_URL
   }
 };
