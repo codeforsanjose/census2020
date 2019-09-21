@@ -12,6 +12,7 @@ import { supportedLocales } from '../../i18n/supported-locales';
 import './App.scss';
 import FAQ from './FAQ';
 import SampleCensus from './SampleCensus';
+import { Footer } from './Footer';
 
 const req = require.context('../../i18n/translations', true, /\.\w{2}(?:-\w+)?\.json$/);
 
@@ -60,6 +61,7 @@ export default class App extends React.PureComponent {
                     </Switch>
                   </div>
                   <ToastContainer />
+                  <Footer />
                 </div>
               </IntlProvider>
             );

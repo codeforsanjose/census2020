@@ -194,5 +194,33 @@
   "components.SampleCensus.form.question4.field.label": {
     "english": "Telephone Number",
     "translation": null
+  },
+  "components.Contact.fields.firstName": {
+    "english": "First Name",
+    "translation": null
+  },
+  "components.Contact.fields.lastName": {
+    "english": "Last Name",
+    "translation": null
+  },
+  "components.Footer.contactUs.header": {
+    "english": "Contact Us",
+    "translation": null
+  },
+  "components.Footer.links.takeTheCensus": {
+    "english": "Take the Census",
+    "translation": null
+  },
+  "components.Footer.links.faq": {
+    "english": "FAQ",
+    "translation": null
+  },
+  "components.Footer.links.sampleSurvey": {
+    "english": "Sample Survey",
+    "translation": null
+  },
+  "components.Footer.links.contact": {
+    "english": "Get Involved",
+    "translation": null
   }
 }
