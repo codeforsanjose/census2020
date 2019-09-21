@@ -13,18 +13,20 @@ export default class Checkbox extends React.PureComponent {
       onCheck
     } = this.props;
 
+    const id = `checkbox-${value}-${this.props.id}`;
+
     let checkbox = (
       <span className={className}>
         <input
           type="checkbox"
-          id={name}
+          id={id}
           checked={checked}
           readOnly={readOnly}
           name={name}
           value={value}
           onChange={onCheck}
         />
-        <label htmlFor={name}>{label}</label>
+        <label htmlFor={id}>{label}</label>
       </span>
     );
 
@@ -43,6 +45,7 @@ Checkbox.propTypes = {
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   onCheck: PropTypes.func.isRequired
 };
 

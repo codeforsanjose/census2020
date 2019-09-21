@@ -72,10 +72,10 @@ class Contact extends Component {
   }
 
   handleCheck (event) {
-    let prevState = Object.assign({}, this.state.interest);
-    prevState[event.target.value] = !prevState[event.target.value];
+    let prevInterest = Object.assign({}, this.state.interest);
+    prevInterest[event.target.value] = !prevInterest[event.target.value];
     this.setState({
-      interest: prevState
+      interest: prevInterest
     });
   }
 
@@ -126,45 +126,6 @@ class Contact extends Component {
         checked: interest.other
       }
     ];
-    /* options: [
-      {
-        value: 'Volunteer',
-        label: this.props.intl.formatMessage({
-          key: 'volunteer',
-          id: 'components.Contact.fields.interest.options.volunteer',
-          defaultMessage: 'Volunteer',
-          description: "'Volunteer' option for the Interest field in the Contact form"
-        })
-      },
-      {
-        value: 'Work for Census2020',
-        label: this.props.intl.formatMessage({
-          key: 'workForCensus',
-          id: 'components.Contact.fields.interest.options.workForCensus',
-          defaultMessage: 'Work for Census2020',
-          description: "'Work for Census' option for the Interest field in the Contact form"
-        })
-      },
-      {
-        value: 'Request presentation',
-        label: this.props.intl.formatMessage({
-          key: 'requestPresentation',
-          id: 'components.Contact.fields.interest.options.requestPresentation',
-          defaultMessage: 'Request presentation',
-          description: "'Request Presentation' option for the Interest field in the Contact form"
-        })
-      },
-      {
-        value: 'Other',
-        label: this.props.intl.formatMessage({
-          key: 'other',
-          id: 'components.Contact.fields.interest.options.other',
-          defaultMessage: 'Other',
-          description: "'Other' option for the Interest field in the Contact form"
-        })
-      }
-    ]
-  } */
 
     return (
       <div className="c_contact">
@@ -263,6 +224,7 @@ class Contact extends Component {
                         label={option.label}
                         name={option.name}
                         value={option.value}
+                        id={i}
                         key={i}
                       />
                     );
