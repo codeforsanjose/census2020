@@ -186,36 +186,38 @@ module.exports.sendConfirmation = async ({
 
   const messageHTML = `
 Hi ${name},
-
-Thank you for your interest in the Census 2020 effort in San Jose.
-
-The following message was sent by you to the City of San Jose Census committee:
-
-<blockquote>
 <p>
+Thank you for your interest in the 2020 Census effort in San Jose.
+</p>
+<p>
+The following message was sent by you to the City of San Jose Census Office:
+</p>
+<blockquote>
+<h3>
 I have an interest in:
+</h3>
 <p>
 ${interest}
 </p>
-</p>
-<p>
 ${
   comment
     ? `
+<h3>
 Additional comments:
+</h3>
 <p>
 ${comment}
-    ` : ''
+</p>
+    `
+    : ''
 }
-</p>
-</p>
-</blockquote>
+Additional comments:
 
+</blockquote>
 <p>
 Thank you again for your interest. Someone will respond back to you within two business days.
 </p>
-
--- City of San Jose Census 2020 Committee
+&mdash;City of San Jose 2020 Census Office
 `;
 
   debug('About to send message:', {
