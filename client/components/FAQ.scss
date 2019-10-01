@@ -1,0 +1,118 @@
+.c_header{
+    margin-top:84px;
+    width: 607px;
+  height: 56px;
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  color: #01131f;
+  margin-left:64px;
+  margin-right:769px;
+}
+.c_rectangle_general_information{
+    margin-top:80px;
+    width: 862px;
+    height: 640px;
+    margin-left:64px;
+    padding-left:32px;
+    border-radius: 8px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fdfeff;
+    padding-top:40px;
+    margin-bottom:80px;
+}
+.c_gen_information{
+    text-align:left;
+    margin-bottom:24px;
+    width: 288px;
+    height: 40px;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: var(--black);
+}
+ul{
+    padding:0px;
+    margin:0px;
+
+}
+li{
+    list-style-type: none;
+    margin-right:32px;
+}
+button{
+        width: 798px;
+        height: 80px;
+        background-color: #f6f6f7;
+        border-style:none;
+        text-align:left;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        padding-left:24px;
+        margin-bottom:24px;
+
+}
+.c_rectangle_security{
+        width: 862px;
+        height: 536px;
+        border-radius: 8px;
+        box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
+        background-color: #fdfeff;
+        margin-bottom:80px;
+        margin-left:64px;
+        padding-left:32px;
+        padding-top:40px;
+}
+.c_security {
+    width: 119px;
+    height: 40px;
+    margin-bottom:24px;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: var(--black);
+  }
+.c_rectangle_value{ 
+        width: 862px;
+        height: 432px;
+        padding-top:40px;
+        border-radius: 8px;
+        box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
+        background-color: #fdfeff; 
+        margin-left: 64px;
+        padding-left:32px
+       
+}
+.c_value{
+        width: 82px;
+        height: 40px;
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: var(--black);
+        margin-bottom:24px;
+   
+}
+main{
+    padding-bottom:146px;
+}
