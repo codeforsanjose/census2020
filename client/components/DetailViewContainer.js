@@ -78,6 +78,8 @@ export default class DetailViewContainer extends Component {
 Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat.`
 
 
+    let messageString2 = `Voluptate proident laboris anim esse Lorem exercitation sint veniam qui consequat labore cillum irure id.`
+
     return (
       <div 
         className='main-container'
@@ -163,15 +165,32 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
           <li
             style={{
               display: 'flex',
+              flexDirection: 'column',
               justifyContent: 'center',
               alignItems: 'center',
               fontWeight: 'bold',
               width: '30vw',
               height: '30vw',
-              backgroundColor: '#c4c4c4',
+              backgroundColor: '#fdfeff',
               margin: '10px',
+              border: 'solid 1px #005ea2',
+              borderRadius: '8px',
+              boxShadow: '0 0 8px 1px rgb(132, 134, 162)'
             }}>
-            FACTOID
+            <h3>
+              <FormattedMessage
+                id="components.DetailViewContainer.factoid1.header"
+                defaultMessage={"Feeling ready to take the Census?"}
+                description="Ready to take the Census?">
+              </FormattedMessage>
+            </h3>
+            <p style={{textAlign: 'center'}}>
+              <FormattedMessage
+                id="components.DetailViewContainer.factoid1.message"
+                defaultMessage={messageString2}
+                description="describe me">
+              </FormattedMessage>
+            </p>
           </li>
           <li
             style={{
