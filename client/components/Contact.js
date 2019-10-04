@@ -224,7 +224,7 @@ class Contact extends Component {
                         label={option.label}
                         name={option.name}
                         value={option.value}
-                        id={i}
+                        id={`checkbox-${option.value}-${i}`}
                         key={i}
                       />
                     );

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 64px;
+  color: #000000;
 
   &__headline {
     display: block;
@@ -9,7 +10,6 @@
     font-weight: bold;
     margin: 40px 0px;
     line-height: 1.17;
-    color: #000000;
   }
 
   &__content {
@@ -34,13 +34,11 @@
           font-size: 24px;
           font-weight: bold;
           line-height: 1.33;
-          color: #000000;
         }
 
         &__info {
           font-size: 18px;
           line-height: 28px;
-          color: #000000;
 
           &__link {
             font-weight: medium;
@@ -60,7 +58,6 @@
         font-weight: bold;
         margin: 0px 0px 8px 0px;
         line-height: 1.25;
-        color: #000000;
       }
 
       &__form {
@@ -103,7 +100,6 @@
           line-height: 1.56;
           margin: 0px 0px 8px 0px;
           border: solid 1px #c9c9c9;
-          background-color: #ffffff;
           padding: 16px 24px 12px 24px;
         }
 
@@ -114,7 +110,6 @@
           line-height: 1.56;
           margin: 0px 0px 8px 0px;
           border: solid 1px #c9c9c9;
-          background-color: #ffffff;
           padding: 16px 24px 12px 24px;
         }
 
@@ -131,14 +126,12 @@
             padding-left: 22px;
             font-size: 18px;
             line-height: 1.56;
-            color: #000000;
 
             &::before {
               content: "";
               display: inline-block;
               width: 28px;
               height: 28px;
-              background-color: #ffffff;
               border-radius: 2px;
               border: solid 1px #585c62;
               position: absolute;

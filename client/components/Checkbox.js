@@ -10,10 +10,9 @@ export default class Checkbox extends React.PureComponent {
       label,
       name,
       value,
-      onCheck
+      onCheck,
+      id
     } = this.props;
-
-    const id = `checkbox-${value}-${this.props.id}`;
 
     let checkbox = (
       <span className={className}>
@@ -45,7 +44,7 @@ Checkbox.propTypes = {
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   onCheck: PropTypes.func.isRequired
 };
 
