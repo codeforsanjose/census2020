@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
-import { FormattedMessage } from 'react-intl';
+import React, { Component } from 'react'
+import { FormattedMessage } from 'react-intl'
+import YouTube from 'react-youtube'
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css'
 
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from 'react-responsive-carousel'
 
 // import '../messages/DetailViewContainer';
 
@@ -14,11 +15,12 @@ const CarouselItem = ({imgString}) => (
   </div>
 )
 
-
 const carousel = (
   <Carousel
     showThumbs={false}
-    showStatus={false}>
+    showStatus={false}
+    infiniteLoop={true}
+    autoPlay={true}>
     <div style={{width: '100%', height: '60vh', overflow: 'hidden', position: 'relative' }}>
       <img src={require('../images/lifeAbundant.jpg')} style={{
         position: 'absolute',
@@ -62,6 +64,46 @@ const carousel = (
   </Carousel>
 )
 
+const Factoid = ({title, message}) => (
+  <li
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      fontWeight: 'bold',
+      width: '30vw',
+      height: '30vw',
+      backgroundColor: '#fdfeff',
+      margin: '10px',
+      border: 'solid 1px #005ea2',
+      borderRadius: '8px',
+      boxShadow: '0 0 8px 1px rgb(132, 134, 162)'
+    }}>
+    <h3>
+      <FormattedMessage
+        id="components.DetailViewContainer.factoid1.header"
+        defaultMessage={title}
+        description="Ready to take the Census?">
+      </FormattedMessage>
+    </h3>
+    <p style={{textAlign: 'center'}}>
+      <FormattedMessage
+        id="components.DetailViewContainer.factoid1.message"
+        defaultMessage={message}
+        description="describe me">
+      </FormattedMessage>
+    </p>
+  </li>
+)
+
+const opts = {
+  height: '400',
+  width: '650',
+  playerVars: {
+    autoplay: 1,
+  }
+}
 
 export default class DetailViewContainer extends Component {
 
@@ -87,9 +129,7 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
           display: 'flex',
           flexDirection: 'column',
         }}>
-
         { carousel }
-
         <ul
           style={{
             display: 'flex',
@@ -97,7 +137,6 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
             width: '100%',
             padding: '2% 5% 2% 5%',
           }}>
-
           <li
             style={{
                 display: 'flex',
@@ -105,9 +144,9 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
                 width: '50%',
                 marginRight: '30px',
             }}>
-
             <h4
               style={{
+                margin: 0,
                 fontFamily: 'Roboto',
                 fontSize: '48px',
                 fontWeight: 'bold',
@@ -117,11 +156,10 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
               }}>
               <FormattedMessage
                 id="components.DetailViewContainer.header"
-                defaultMessage="Everyone matters"
+                defaultMessage={"Everyone matters"}
                 description="Home page title">
               </FormattedMessage>
             </h4>
-
             <h5
               style={{
                 fontFamily: 'Roboto',
@@ -139,18 +177,12 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
               </FormattedMessage>
             </h5>
           </li>
-
           <li
-            style={{
-              width: '50%',
-              backgroundColor: '#c4c4c4',
-              height: '100%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              fontWeight: 'bold',
-            }}>
-            VIDEO / TESTIMONIALS
+            style={{marginLeft: 'auto'}}>
+            <YouTube
+              videoId="pl4RO5EisCU"
+              opts={opts}
+            />
           </li>
         </ul>
 
@@ -162,62 +194,18 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
             width: '100%',
             padding: '0 5% 5% 5%',
           }}>
-          <li
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
-              fontWeight: 'bold',
-              width: '30vw',
-              height: '30vw',
-              backgroundColor: '#fdfeff',
-              margin: '10px',
-              border: 'solid 1px #005ea2',
-              borderRadius: '8px',
-              boxShadow: '0 0 8px 1px rgb(132, 134, 162)'
-            }}>
-            <h3>
-              <FormattedMessage
-                id="components.DetailViewContainer.factoid1.header"
-                defaultMessage={"Feeling ready to take the Census?"}
-                description="Ready to take the Census?">
-              </FormattedMessage>
-            </h3>
-            <p style={{textAlign: 'center'}}>
-              <FormattedMessage
-                id="components.DetailViewContainer.factoid1.message"
-                defaultMessage={messageString2}
-                description="describe me">
-              </FormattedMessage>
-            </p>
-          </li>
-          <li
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              fontWeight: 'bold',
-              width: '30vw',
-              height: '30vw',
-              backgroundColor: '#c4c4c4',
-              margin: '10px',
-            }}>
-            FACTOID
-          </li>
-          <li
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              fontWeight: 'bold',
-              width: '30vw',
-              height: '30vw',
-              backgroundColor: '#c4c4c4',
-              margin: '10px',
-            }}>
-            FACTOID
-          </li>
+          <Factoid
+            title={"Ready to take the census?"}
+            message={"a whole bunch of text and things here"}>
+          </Factoid>
+          <Factoid
+            title={"Title 2"}
+            message={"more text will probably go in here"}>
+          </Factoid>
+          <Factoid
+            title={"Title 3"}
+            message={"more text will go here"}>
+          </Factoid>
         </ul>
 
       </div>
