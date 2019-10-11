@@ -6,62 +6,25 @@ import styles from 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import { Carousel } from 'react-responsive-carousel'
 
+const lifeAbundant = require('../images/lifeAbundant.jpg')
+const sanJoseMural = require('../images/sanJoseMural.jpg')
+const muralProject = require('../images/muralProject.jpg')
+const sharksMural = require('../images/sharksMural.jpg')
+
 // import '../messages/DetailViewContainer';
 
 
-const CarouselItem = ({imgString}) => (
-  <div style={{display: 'flex', justifyContent: 'center', width: '100%', height: '60vh', overflow: 'hidden' }}>
-    <img src={require(imgString)} style={{flex: 'none'}} />
-  </div>
-)
-
-const carousel = (
-  <Carousel
-    showThumbs={false}
-    showStatus={false}
-    infiniteLoop={true}
-    autoPlay={true}>
-    <div style={{width: '100%', height: '60vh', overflow: 'hidden', position: 'relative' }}>
-      <img src={require('../images/lifeAbundant.jpg')} style={{
-        position: 'absolute',
-        top: '-9999px',
-        right: '-9999px',
-        bottom: '-9999px',
-        left: '-9999px',
-        margin: 'auto'
+const CarouselItem = ({img}) => (
+  <li style={{width: '100%', height: '60vh', overflow: 'hidden', position: 'relative' }}>
+    <img src={img} style={{
+      position: 'absolute',
+      top: '-9999px',
+      right: '-9999px',
+      bottom: '-9999px',
+      left: '-9999px',
+      margin: 'auto'
     }} />
-    </div>
-    <div style={{width: '100%', height: '60vh', overflow: 'hidden', position: 'relative' }}>
-      <img src={require('../images/sanJoseMural.jpg')} style={{
-        position: 'absolute',
-        top: '-9999px',
-        right: '-9999px',
-        bottom: '-9999px',
-        left: '-9999px',
-        margin: 'auto'
-    }} />
-    </div>
-    <div style={{width: '100%', height: '60vh', overflow: 'hidden', position: 'relative' }}>
-      <img src={require('../images/muralProject.jpg')} style={{
-        position: 'absolute',
-        top: '-9999px',
-        right: '-9999px',
-        bottom: '-9999px',
-        left: '-9999px',
-        margin: 'auto'
-    }} />
-    </div>
-    <div style={{width: '100%', height: '60vh', overflow: 'hidden', position: 'relative' }}>
-      <img src={require('../images/sharksMural.jpg')} style={{
-        position: 'absolute',
-        top: '-9999px',
-        right: '-9999px',
-        bottom: '-9999px',
-        left: '-9999px',
-        margin: 'auto'
-    }} />
-    </div>
-  </Carousel>
+  </li>
 )
 
 const Factoid = ({title, message}) => (
@@ -97,13 +60,55 @@ const Factoid = ({title, message}) => (
   </li>
 )
 
-const opts = {
-  height: '400',
-  width: '650',
-  playerVars: {
-    autoplay: 1,
+class YoutubeItem extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      ready: false
+    }
+
+    this.container_ref = React.createRef()
+  }
+
+  componentDidMount() {
+    //force component to rerender once the DOM elements are mounted
+    this.setState({
+      ready: true
+    })
+  }
+
+  render() {
+    let opts
+    if (this.container_ref.current) {
+      let parent_width = this.container_ref.current.offsetWidth
+      //maintain a 16:9 aspect ratio based on the parent width
+      let w = (parent_width * .8).toString()
+      let h = (parent_width * .45).toString() 
+      opts  = {
+        height: h,
+        width: w,
+        playerVars: {
+          autoplay: 1,
+        }
+      }
+    }
+
+    return (
+      <li
+        ref={this.container_ref}
+        style={{display: 'flex', flexDirection: 'row-reverse', width: '50%'}}>
+        { this.container_ref.current && (
+          <YouTube
+            videoId="pl4RO5EisCU"
+            opts={opts}
+          />
+        )}
+      </li>
+    )
   }
 }
+
 
 export default class DetailViewContainer extends Component {
 
@@ -123,19 +128,30 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
     let messageString2 = `Voluptate proident laboris anim esse Lorem exercitation sint veniam qui consequat labore cillum irure id.`
 
     return (
-      <div 
+      <main 
         className='main-container'
         style={{
           display: 'flex',
           flexDirection: 'column',
         }}>
-        { carousel }
+        <Carousel
+          showThumbs={false}
+          showStatus={false}
+          infiniteLoop={true}
+          autoPlay={true}
+          interval={7000}
+          transitionTime={1000}>
+          { [lifeAbundant, sanJoseMural, muralProject, sharksMural].map(img => (
+            <CarouselItem img={img} />
+          ))}
+        </Carousel>
         <ul
           style={{
             display: 'flex',
             flexDirection: 'row',
             width: '100%',
             padding: '2% 5% 2% 5%',
+            listStyle: 'none',
           }}>
           <li
             style={{
@@ -177,13 +193,7 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
               </FormattedMessage>
             </h5>
           </li>
-          <li
-            style={{marginLeft: 'auto'}}>
-            <YouTube
-              videoId="pl4RO5EisCU"
-              opts={opts}
-            />
-          </li>
+          <YoutubeItem />
         </ul>
 
         <ul
@@ -207,8 +217,7 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
             message={"more text will go here"}>
           </Factoid>
         </ul>
-
-      </div>
+      </main>
     );
   }
 }
