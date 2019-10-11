@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
-import { FormattedMessage } from 'react-intl'
 import YouTube from 'react-youtube'
+import { FormattedMessage } from 'react-intl'
+import { Carousel } from 'react-responsive-carousel'
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css'
-
-import { Carousel } from 'react-responsive-carousel'
 
 const lifeAbundant = require('../images/lifeAbundant.jpg')
 const sanJoseMural = require('../images/sanJoseMural.jpg')
 const muralProject = require('../images/muralProject.jpg')
 const sharksMural = require('../images/sharksMural.jpg')
-
-// import '../messages/DetailViewContainer';
-
 
 const CarouselItem = ({img}) => (
   <li style={{width: '100%', height: '60vh', overflow: 'hidden', position: 'relative' }}>
@@ -109,15 +105,10 @@ class YoutubeItem extends Component {
   }
 }
 
-
+//don't really need this to be a class based component but whatevs
 export default class DetailViewContainer extends Component {
-
   constructor(props) {
     super(props)
-
-    this.state = {
-      show_component: true,
-    }
   }
 
   render () {
