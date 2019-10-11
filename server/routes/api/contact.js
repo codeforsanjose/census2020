@@ -1,13 +1,22 @@
 const express = require('express');
+const debug = require('debug')('census2020:server:routes:contact');
+
+const { sendToCensusDept } = require('../../mail/send-message');
 
 const router = new express.Router();
-
-const submissionController = require('../../controllers/submissionController');
 
 router.route('/')
   .post(
     express.json(),
-    submissionController.create
+    (req, res, next) => {
+      try {
+        sendToCensusDept(req.body);
+        res.end();
+      } catch (err) {
+        debug('Error sending email to Census Department:', err);
+        next(err);
+      }
+    }
   );
 
 module.exports = router;

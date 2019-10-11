@@ -5,7 +5,9 @@ export default class TextInput extends Component {
   render () {
     const {
       name,
+      className,
       value,
+      rows,
       label,
       type,
       onChange
@@ -16,8 +18,9 @@ export default class TextInput extends Component {
     if (type === 'textarea') {
       textInput = (
         <textarea
-          className="usa-textarea"
+          className={className}
           name={name}
+          rows={rows}
           value={value}
           onChange={onChange}>
         </textarea>
@@ -25,7 +28,7 @@ export default class TextInput extends Component {
     } else {
       textInput = (
         <input
-          className="usa-input"
+          className={className}
           name={name}
           value={value}
           type={type}
@@ -37,7 +40,7 @@ export default class TextInput extends Component {
     return (
       <div>
         <label>
-          {label}:
+          {label}
           {textInput}
         </label>
       </div>
@@ -47,8 +50,10 @@ export default class TextInput extends Component {
 
 TextInput.propTypes = {
   name: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
-  label: PropTypes.element.isRequired,
+  label: PropTypes.element,
+  rows: PropTypes.number,
   type: PropTypes.string,
   onChange: PropTypes.func.isRequired
 };

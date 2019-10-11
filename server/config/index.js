@@ -20,9 +20,10 @@ module.exports = {
       address: process.env.MAIL_TO_CENSUS_ADDRESS,
       fromAddress: process.env.MAIL_TO_CENSUS_FROM_ADDRESS,
       introduction: process.env.MAIL_MESSAGE_INTRODUCTION
+    },
+
+    confirmationMessage: {
+      fromAddress: process.env.MAIL_CONFIRMATION_FROM_ADDRESS
     }
-  },
-  db: {
-    connectionString: process.env.DB_URL
   }
 };

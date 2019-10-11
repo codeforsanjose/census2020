@@ -215,5 +215,35 @@
   "components.SampleCensus.form.question4.field.label": {
     "id": "components.SampleCensus.form.question4.field.label",
     "defaultMessage": "Telephone Number"
+  },
+  "components.Contact.fields.firstName": {
+    "id": "components.Contact.fields.firstName",
+    "description": "Label for the First Name field in the Contact form",
+    "defaultMessage": "First Name"
+  },
+  "components.Contact.fields.lastName": {
+    "id": "components.Contact.fields.lastName",
+    "description": "Label for the Last Name field in the Contact form",
+    "defaultMessage": "Last Name"
+  },
+  "components.Footer.contactUs.header": {
+    "id": "components.Footer.contactUs.header",
+    "defaultMessage": "Contact Us"
+  },
+  "components.Footer.links.takeTheCensus": {
+    "id": "components.Footer.links.takeTheCensus",
+    "defaultMessage": "Take the Census"
+  },
+  "components.Footer.links.faq": {
+    "id": "components.Footer.links.faq",
+    "defaultMessage": "FAQ"
+  },
+  "components.Footer.links.sampleSurvey": {
+    "id": "components.Footer.links.sampleSurvey",
+    "defaultMessage": "Sample Survey"
+  },
+  "components.Footer.links.contact": {
+    "id": "components.Footer.links.contact",
+    "defaultMessage": "Get Involved"
   }
 }
