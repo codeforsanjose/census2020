@@ -5,7 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const paths = require('./webpack-paths');
 
 module.exports = {
-  mode: 'development',
   entry: [
     'babel-polyfill',
     paths.entry
@@ -42,6 +41,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'index.template.html')
     })
-  ],
-  devtool: 'eval-source-map'
+  ]
 };
