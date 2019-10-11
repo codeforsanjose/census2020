@@ -1,12 +1,13 @@
 .c_navigation {
-  $horizontal-spacing: 32px;
-  $vertical-spacing: 20px;
+  $right-padding: 36px;
+  $vertical-padding: 32px;
+  $left-padding: 64px;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  padding: $vertical-spacing $horizontal-spacing;
+  padding: $vertical-padding $right-padding $vertical-padding $left-padding;
   align-items: center;
   box-shadow: 0 2px 9px -2px #D9D9D9;
 
@@ -23,11 +24,10 @@
   }
   
   &__link {
-    color: #5B616B;
+    color: #005EA2;
     font-size: 36px;
     font-weight: bold;
     margin: 0 16px;
-    color: #000000;
 
     &:first-child {
       margin-left: 0;
@@ -43,6 +43,10 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    &[disabled] {
+      color: #01131F;
+    }
   }
 
   &__census-link {
@@ -57,7 +61,7 @@
 
   .c_locale-picker {
     position: absolute;
-    right: $horizontal-spacing;
-    top: $vertical-spacing;
+    right: $right-padding;
+    top: $vertical-padding;
   }
 }

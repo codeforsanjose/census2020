@@ -12,13 +12,13 @@
 
   &__option {
     cursor: pointer;
-    color: #0872B9;
+    color: #005EA2;
+    font-weight: bold;
     -webkit-appearance: none;
     appearance: none;
     background: none;
     border: none;
     outline: none;
-    font-weight: bold;
     padding: 0;
     position: relative;
     margin-right: 20px;
@@ -42,8 +42,18 @@
     }
 
     &[disabled] {
-      color: #C9C9C9;
+      color: #585C62;
       cursor: default;
+    }
+
+    &:not([disabled]) {
+      &:hover {
+        color: #1A4480;
+      }
+
+      &:active {
+        color: #162E51;
+      }
     }
   }
 }
