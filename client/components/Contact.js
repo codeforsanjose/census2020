@@ -9,6 +9,7 @@ import './Contact.scss';
 import TextInput from './TextInput';
 import { sendContactForm } from '../api/contact';
 import LocaleContext from './LocaleContext';
+import Checkbox from './Checkbox';
 import {
   supportedLocales,
   supportedLocaleNames
@@ -26,7 +27,13 @@ class Contact extends Component {
         firstName: '',
         lastName: '',
         email: '',
-        comment: ''
+        comment: '',
+        interest: {
+          volunteer: false,
+          presentation: false,
+          information: false,
+          other: false
+        }
       },
       defaults
     );
@@ -39,6 +46,7 @@ class Contact extends Component {
     });
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleCheck = this.handleCheck.bind(this);
   }
 
   notifySubmitSuccess () {
@@ -63,6 +71,14 @@ class Contact extends Component {
     });
   }
 
+  handleCheck (event) {
+    let prevInterest = Object.assign({}, this.state.interest);
+    prevInterest[event.target.value] = !prevInterest[event.target.value];
+    this.setState({
+      interest: prevInterest
+    });
+  }
+
   clearForm () {
     this.setState(Contact.getInitialState());
   }
@@ -80,48 +96,36 @@ class Contact extends Component {
       firstName,
       lastName,
       email,
-      comment
+      comment,
+      interest
     } = this.state;
 
-    /* options: [
+    const options = [
       {
-        value: 'Volunteer',
-        label: this.props.intl.formatMessage({
-          key: 'volunteer',
-          id: 'components.Contact.fields.interest.options.volunteer',
-          defaultMessage: 'Volunteer',
-          description: "'Volunteer' option for the Interest field in the Contact form"
-        })
+        value: 'volunteer',
+        label: 'Volunteer to help',
+        name: 'volunteer',
+        checked: interest.volunteer
       },
       {
-        value: 'Work for Census2020',
-        label: this.props.intl.formatMessage({
-          key: 'workForCensus',
-          id: 'components.Contact.fields.interest.options.workForCensus',
-          defaultMessage: 'Work for Census2020',
-          description: "'Work for Census' option for the Interest field in the Contact form"
-        })
+        value: 'presentation',
+        label: 'Request a presentation',
+        name: 'presentation',
+        checked: interest.presentation
       },
       {
-        value: 'Request presentation',
-        label: this.props.intl.formatMessage({
-          key: 'requestPresentation',
-          id: 'components.Contact.fields.interest.options.requestPresentation',
-          defaultMessage: 'Request presentation',
-          description: "'Request Presentation' option for the Interest field in the Contact form"
-        })
+        value: 'information',
+        label: 'Request more information',
+        name: 'information',
+        checked: interest.information
       },
       {
-        value: 'Other',
-        label: this.props.intl.formatMessage({
-          key: 'other',
-          id: 'components.Contact.fields.interest.options.other',
-          defaultMessage: 'Other',
-          description: "'Other' option for the Interest field in the Contact form"
-        })
+        value: 'other',
+        label: 'Other',
+        name: 'other',
+        checked: interest.other
       }
-    ]
-  } */
+    ];
 
     return (
       <div className="c_contact">
@@ -162,7 +166,7 @@ class Contact extends Component {
                     </h6>
                     <TextInput
                       onChange={this.handleChange}
-                      name='first name'
+                      name='firstName'
                       className='c_contact__content__form_col__form__field'
                       value={firstName}
                       type='text'
@@ -180,7 +184,7 @@ class Contact extends Component {
                     </h6>
                     <TextInput
                       onChange={this.handleChange}
-                      name='last name'
+                      name='lastName'
                       className='c_contact__content__form_col__form__field'
                       value={lastName}
                       type='text'
@@ -202,6 +206,30 @@ class Contact extends Component {
                   value={email}
                   type='text'
                 />
+                <h6 className="c_contact__content__form_col__form__row__label">
+                  <span className="c_contact__content__form_col__form__row__label__required">* </span>
+                  <FormattedMessage
+                    id="components.Contact.fields.interest"
+                    defaultMessage="I would like to:"
+                    description="Label for the Interest field in the Contact form"
+                  />
+                </h6>
+                {
+                  options.map((option, i) => {
+                    return (
+                      <Checkbox
+                        className='c_contact__content__form_col__form__checkbox'
+                        onCheck={this.handleCheck}
+                        checked={option.checked}
+                        label={option.label}
+                        name={option.name}
+                        value={option.value}
+                        id={`checkbox-${option.value}-${i}`}
+                        key={i}
+                      />
+                    );
+                  })
+                }
                 <h6 className="c_contact__content__form_col__form__row__label">
                   <FormattedMessage
                     id="components.Contact.fields.comment"

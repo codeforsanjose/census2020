@@ -2,15 +2,14 @@
   display: flex;
   flex-direction: column;
   padding: 64px;
+  color: #000000;
 
   &__headline {
     display: block;
-    font-family: Roboto;
     font-size: 48px;
     font-weight: bold;
     margin: 40px 0px;
     line-height: 1.17;
-    color: var(--black);
   }
 
   &__content {
@@ -32,19 +31,14 @@
         margin-top: 40px;
 
         &__headline {
-          font-family: Roboto;
           font-size: 24px;
           font-weight: bold;
           line-height: 1.33;
-          color: var(--black);
         }
 
         &__info {
-          font-family: Roboto;
           font-size: 18px;
-          font-weight: regular;
           line-height: 28px;
-          color: var(--black);
 
           &__link {
             font-weight: medium;
@@ -60,12 +54,10 @@
       padding-left: 16px;
 
       &__form_title {
-        font-family: Roboto;
         font-size: 32px;
         font-weight: bold;
-        margin: 0px 0px 20px 0px;
+        margin: 0px 0px 8px 0px;
         line-height: 1.25;
-        color: var(--black);
       }
 
       &__form {
@@ -86,9 +78,8 @@
           }
 
           &__label {
-            font-family: Roboto;
             font-size: 16px;
-            margin: 4px 0px;
+            margin: 16px 0px 4px 0px;
             line-height: 1.5;
             color: #585c62;
 
@@ -103,34 +94,80 @@
         }
 
         &__field {
-          font-family: Roboto;
           font-size: 18px;
           width: 100%;
           border-radius: 4px;
           line-height: 1.56;
-          margin: 0px 0px 20px 0px;
+          margin: 0px 0px 8px 0px;
           border: solid 1px #c9c9c9;
-          background-color: var(--white);
           padding: 16px 24px 12px 24px;
         }
 
         &__textarea {
-          font-family: Roboto;
           font-size: 18px;
           width: 100%;
           border-radius: 4px;
           line-height: 1.56;
-          margin: 0px 0px 20px 0px;
+          margin: 0px 0px 8px 0px;
           border: solid 1px #c9c9c9;
-          background-color: var(--white);
           padding: 16px 24px 12px 24px;
+        }
+
+        &__checkbox {
+          display: block;
+          margin: 8px 0px;
+
+          input {
+            opacity: 0;
+          }
+
+          label {
+            position: relative;
+            padding-left: 22px;
+            font-size: 18px;
+            line-height: 1.56;
+
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 28px;
+              height: 28px;
+              border-radius: 2px;
+              border: solid 1px #585c62;
+              position: absolute;
+              top: -5px;
+              left: -12px;
+            }
+
+            &::after {
+              content: none;
+              display: inline-block;
+              height: 10px;
+              width: 18px;
+              border-left: 2px solid;
+              border-bottom: 2px solid;
+              transform: rotate(-45deg);
+              position: absolute;
+              color: #ffffff;
+              left: -7px;
+              top: 2px;
+            }
+          }
+
+          input:checked + label {
+            &::before {
+              background-color: #005ea2;
+            }
+            &::after {
+              content: "";
+            }
+          }
         }
 
         &__submit {
           padding: 16px 32px;
           margin: 12px 8px;
           border-radius: 8px;
-          font-family: Roboto;
           font-size: 24px;
           font-weight: bold;
           letter-spacing: 0.48px;
