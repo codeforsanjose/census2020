@@ -24,8 +24,8 @@
     "translation": "Zip Code"
   },
   "components.Contact.fields.interest": {
-    "english": "Interest",
-    "translation": "Interest"
+    "english": "I would like to:",
+    "translation": "I would like to:"
   },
   "components.Contact.fields.interest.options.volunteer": {
     "english": "Volunteer",
@@ -222,5 +222,33 @@
   "components.Footer.links.contact": {
     "english": "Get Involved",
     "translation": "Get Involved"
+  },
+  "components.DetailViewContainer.header": {
+    "english": "Everyone matters",
+    "translation": "Everyone matters"
+  },
+  "components.DetailViewContainer.message": {
+    "english": "Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur in exercitation voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.\nAdipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat.",
+    "translation": "Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur in exercitation voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.\nAdipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat."
+  },
+  "components.Home.factoids.readyToTakeCensus.title": {
+    "english": "Ready to take the census?",
+    "translation": "Ready to take the census?"
+  },
+  "components.Home.factoids.readyToTakeCensus.message": {
+    "english": "a whole bunch of text and things here",
+    "translation": "a whole bunch of text and things here"
+  },
+  "components.Home.factoids.qr-code.title": {
+    "english": "Learn About the Census From Your Phone",
+    "translation": "Learn About the Census From Your Phone"
+  },
+  "components.Home.factoids.3.title": {
+    "english": "Title 3",
+    "translation": "Title 3"
+  },
+  "components.Home.factoids.3.message": {
+    "english": "more text will go here",
+    "translation": "more text will go here"
   }
 }

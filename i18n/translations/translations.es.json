@@ -24,8 +24,8 @@
     "translation": "Código postal"
   },
   "components.Contact.fields.interest": {
-    "english": "Interest",
-    "translation": "Interés"
+    "english": "I would like to:",
+    "translation": null
   },
   "components.Contact.fields.interest.options.volunteer": {
     "english": "Volunteer",
@@ -221,6 +221,34 @@
   },
   "components.Footer.links.contact": {
     "english": "Get Involved",
+    "translation": null
+  },
+  "components.DetailViewContainer.header": {
+    "english": "Everyone matters",
+    "translation": null
+  },
+  "components.DetailViewContainer.message": {
+    "english": "Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur in exercitation voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.\nAdipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat.",
+    "translation": null
+  },
+  "components.Home.factoids.readyToTakeCensus.title": {
+    "english": "Ready to take the census?",
+    "translation": null
+  },
+  "components.Home.factoids.readyToTakeCensus.message": {
+    "english": "a whole bunch of text and things here",
+    "translation": null
+  },
+  "components.Home.factoids.qr-code.title": {
+    "english": "Learn About the Census From Your Phone",
+    "translation": null
+  },
+  "components.Home.factoids.3.title": {
+    "english": "Title 3",
+    "translation": null
+  },
+  "components.Home.factoids.3.message": {
+    "english": "more text will go here",
     "translation": null
   }
 }

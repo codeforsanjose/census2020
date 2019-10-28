@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import YouTube from 'react-youtube';
 import { FormattedMessage } from 'react-intl';
 import { Carousel } from 'react-responsive-carousel';
+import QRCode from 'qrcode.react';
 
 import lifeAbundant from '../images/lifeAbundant.jpg';
 import sanJoseMural from '../images/sanJoseMural.jpg';
@@ -146,13 +147,12 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
           />
           <Factoid
             title={<FormattedMessage
-              id="components.Home.factoids.2.title"
-              defaultMessage="Title 2"
+              id="components.Home.factoids.qr-code.title"
+              defaultMessage="Learn About the Census From Your Phone"
             />}
-            message={<FormattedMessage
-              id="components.Home.factoids.2.message"
-              defaultMessage="more text will probably go in here"
-            />}
+            message={
+              <QRCode value={document.location.origin} />
+            }
           />
           <Factoid
             title={<FormattedMessage
