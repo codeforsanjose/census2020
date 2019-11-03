@@ -1,5 +1,6 @@
 const nodemailer = require('nodemailer');
 const debug = require('debug')('census2020:server:mail');
+const { supportedLocaleEnglishNames } = require('../../i18n/supported-locales');
 
 const Config = require('../config');
 
@@ -55,21 +56,19 @@ const getTransporter = () => {
 };
 
 module.exports.sendToCensusDept = async ({
-  name,
-  organization,
+  firstName,
+  lastName,
   email,
   language,
-  zip,
-  interest,
+  interests,
   comment
 }) => {
   debug('sendToCensusDept() called with the following arguments:', {
-    name,
-    organization,
+    firstName,
+    lastName,
     email,
     language,
-    zip,
-    interest,
+    interests,
     comment
   });
 
@@ -82,62 +81,50 @@ module.exports.sendToCensusDept = async ({
   // Will reject (throw error) if config doesn't work
   await transporter.verify();
 
-  const dataKeys = [
-    'Name',
-    'Organization',
-    'Language',
-    'Zip code',
-    'Interest',
-    'Sent at'
-  ];
-
-  const data = {
-    'Sent at': formatDate(new Date()),
-    Name: name || 'Not given',
-    Organization: organization,
-    Language: language,
-    'Zip code': zip,
-    Interest: interest
-  };
-
-  if (language === 'English') {
-    delete dataKeys.Language;
-  }
-
-  const rows = [];
-
-  for (const dataKey of dataKeys) {
-    if (data[dataKey]) {
-      rows.push(`<tr>
-<td class="data-item-name">${dataKey}:</td>
-<td>${data[dataKey]}</td>
-</tr>`);
-    }
-  }
-
   const messageHTML = `<!DOCTYPE html>
   <html>
-  <head>
-    <style>
-      .data-item-name {
-        font-weight: bold;
-        padding-right: 5px;
-        text-align: right;
-      }
-    </style>
-  </head>
   <body>
-    ${Config.mail.inquiryMessage.introduction || ''}
-    <table>
-      <tbody>
-        ${rows.join('\n')}
-      </tbody>
-    </table>
+    The following message was submitted via the 2020 Census Get Involved Form:
+
+    <blockquote>
+    Name:
+    <p>
+    ${firstName} ${lastName}
+    </p>
+
+    Email:
+    <p>
+    <a href="mailto:${email}">${email}</a>
+    </p>
+
+    Language:
+    <p>
+    ${supportedLocaleEnglishNames[language] || language}
+    </p>
+
+    Visitor has an interest in:
+    <p>
+    <ul>
+    ${interests.map(
+    (interest) => `<li>${interest}</li>`
+  )}
+    </ul>
+    </p>
     ${
   comment
-    ? '\n<p>' + comment + '</p>'
+    ? `
+        Additional comments:
+        <p>
+        ${comment}
+        </p>
+        `
     : ''
 }
+    </blockquote>
+
+    <p>
+    The visitor is expecting a response within two business days. The response was sent at ${formatDate(new Date())}. Reply back to this email to response to the visitor.
+    </p>
   </body>
   </html>`;
 
@@ -149,7 +136,7 @@ module.exports.sendToCensusDept = async ({
     from: Config.mail.inquiryMessage.fromAddress,
     replyTo: email,
     to: Config.mail.inquiryMessage.address,
-    subject: Config.mail.inquiryMessage.subject,
+    subject: 'New Response to the 2020 Census Get Involved Form',
     html: messageHTML
   });
 
