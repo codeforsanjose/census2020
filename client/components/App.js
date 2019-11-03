@@ -50,18 +50,20 @@ export default class App extends React.PureComponent {
                 >
                   <Navigation
                   />
-                  <div
-                    className="c_app__content"
-                  >
-                    <Switch>
-                      <Route exact path='/' component={DetailViewContainer} />
-                      <Route path='/contact' component={Contact} />
-                      <Route path='/faq' component={FAQ} />
-                      <Route path='/samplecensus' component={SampleCensus} />
-                    </Switch>
+                  <div className="c_app__content-and-footer">
+                    <div
+                      className="c_app__content"
+                    >
+                      <Switch>
+                        <Route exact path='/' component={DetailViewContainer} />
+                        <Route path='/contact' component={Contact} />
+                        <Route path='/faq' component={FAQ} />
+                        <Route path='/samplecensus' component={SampleCensus} />
+                      </Switch>
+                    </div>
+                    <ToastContainer />
+                    <Footer />
                   </div>
-                  <ToastContainer />
-                  <Footer />
                 </div>
               </IntlProvider>
             );
