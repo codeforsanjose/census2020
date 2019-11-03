@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
+import classnames from 'classnames';
 
 import './Navigation.scss';
 import { LocalePicker } from './LocalePicker';
@@ -15,15 +16,24 @@ import logoUrl from '../images/CityOfSanJose_logo.png';
  * @param {string} props.path the path for the nav link
  * @param {*} props.children the component children
  */
-let NavLink = ({ location, path, children }) => (
-  <Link
-    to={path}
-    className="c_navigation__link"
-    disabled={location.pathname === path}
-  >
-    {children}
-  </Link>
-);
+let NavLink = ({ location, path, children }) => {
+  const isActive = location.pathname === path;
+  const className = 'c_navigation__link';
+  return (
+    <Link
+      to={path}
+      className={classnames(
+        className,
+        {
+          [`${className}--active`]: isActive
+        }
+      )}
+      disabled={isActive}
+    >
+      {children}
+    </Link>
+  );
+};
 
 NavLink.propTypes = {
   location: PropTypes.shape({
@@ -43,17 +53,22 @@ export default class Navigation extends React.PureComponent {
     return (
       <nav className="c_navigation">
         <div className="c_navigation__logo">
-          <Link
-            to="/"
-          >
-            <img
-              className="c_navigation__logo__image"
-              alt="City of San Jose logo"
-              src={logoUrl}
-            />
-          </Link>
+          <img
+            className="c_navigation__logo__image"
+            alt="City of San Jose logo"
+            src={logoUrl}
+          />
         </div>
         <div className="c_navigation__links">
+          <NavLink
+            path="/"
+          >
+            <FormattedMessage
+              id="navigation.links.home"
+              defaultMessage="Home"
+              description="'Home' link in the navigation bar"
+            />
+          </NavLink>
           <NavLink
             path="/faq"
           >
@@ -86,7 +101,7 @@ export default class Navigation extends React.PureComponent {
         />
         <a
           href="https://census.gov"
-          className="c_navigation__census-link usa-button usa-button--secondary"
+          className="c_navigation__census-link"
         >
           <FormattedMessage
             id="take-the-census-link"
