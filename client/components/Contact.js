@@ -13,6 +13,7 @@ import Checkbox from './Checkbox';
 import {
   supportedLocales
 } from '../../i18n/supported-locales';
+import contactFormImageSrc from '../images/contact-form.jpg';
 
 class Contact extends Component {
   static propTypes = {
@@ -106,25 +107,45 @@ class Contact extends Component {
     const options = [
       {
         value: 'volunteer',
-        label: 'Volunteer to help',
+        label: this.props.intl.formatMessage({
+          key: 'volunteer',
+          id: 'components.Contact.fields.interest.options.volunteer',
+          defaultMessage: 'Volunteer to help',
+          description: "'Volunteer to help' option for the Interest field in the Contact form"
+        }),
         name: 'volunteer',
         checked: interests.has('volunteer')
       },
       {
         value: 'presentation',
-        label: 'Request a presentation',
+        label: this.props.intl.formatMessage({
+          key: 'requestPresentation',
+          id: 'components.Contact.fields.interest.options.requestPresentation',
+          defaultMessage: 'Request a presentation',
+          description: "'Request a Presentation' option for the Interest field in the Contact form"
+        }),
         name: 'presentation',
         checked: interests.has('presentation')
       },
       {
         value: 'information',
-        label: 'Request more information',
+        label: this.props.intl.formatMessage({
+          key: 'information',
+          id: 'components.Contact.fields.interest.options.information',
+          defaultMessage: 'Request more information',
+          description: "'Request more information' option for the Interest field in the Contact form"
+        }),
         name: 'information',
         checked: interests.has('information')
       },
       {
         value: 'other',
-        label: 'Other',
+        label: this.props.intl.formatMessage({
+          key: 'information',
+          id: 'components.Contact.fields.interest.options.other',
+          defaultMessage: 'Other',
+          description: "'Other' option for the Interest field in the Contact form"
+        }),
         name: 'other',
         checked: interests.has('other')
       }
@@ -132,29 +153,72 @@ class Contact extends Component {
 
     return (
       <div className="c_contact">
-        <h1 className="c_contact__headline">Get Involved</h1>
+        <h1 className="c_contact__headline">
+          <FormattedMessage
+            id="components.Contact.getInvolved.header"
+            defaultMessage="Get Involved"
+          />
+        </h1>
         <div className="c_contact__content">
           <div className="c_contact__content__col">
-            <img className="c_contact__content__col__contact_image" src={require('../images/contact-form.jpg')}></img>
+            <img className="c_contact__content__col__contact_image" src={contactFormImageSrc}></img>
             <div className="c_contact__content__col__blurb">
               <h3 className="c_contact__content__col__blurb__headline">
-                Interested in working for the Census?
+                <FormattedMessage
+                  id="components.Contact.workingForCensus.header"
+                  defaultMessage="Interested in working for the Census?"
+                />
               </h3>
               <p className="c_contact__content__col__blurb__info">
-                Find more information <a className="c_contact__content__col__blurb__info__link" href="https://2020census.gov/en/jobs">here</a>
+                <FormattedMessage
+                  id="components.Contact.workingForCensus"
+                  defaultMessage="Find more information {link}"
+                  values={{
+                    link: (
+                      <a className="c_contact__content__col__blurb__info__link"
+                        href="https://2020census.gov/en/jobs">
+                        <FormattedMessage
+                          id="components.Contact.workingForCensus.link"
+                          defaultMessage="here"
+                        />
+                      </a>
+                    )
+                  }}
+                />
               </p>
             </div>
             <div className="c_contact__content__col__blurb">
               <h3 className="c_contact__content__col__blurb__headline">
-                Need more information?
+                <FormattedMessage
+                  id="components.Contact.needMoreInformation"
+                  defaultMessage="Need more information?"
+                />
               </h3>
               <p className="c_contact__content__col__blurb__info">
-                Visit our <a className="c_contact__content__col__blurb__info__link" href="/faq">FAQ</a> or submit your question and a San Jose Census organizer will get back to you within 2 business days.
+                <FormattedMessage
+                  id="components.Contact.visitFaq"
+                  defaultMessage="Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days."
+                  values={{
+                    link: (
+                      <a className="c_contact__content__col__blurb__info__link" href="/faq">
+                        <FormattedMessage
+                          id="components.Contact.visitFaq.link"
+                          defaultMessage="FAQ"
+                        />
+                      </a>
+                    )
+                  }}
+                />
               </p>
             </div>
           </div>
           <div className="c_contact__content__form_col">
-            <h2 className="c_contact__content__form_col__form_title">Contact Form</h2>
+            <h2 className="c_contact__content__form_col__form_title">
+              <FormattedMessage
+                id="components.Contact.form.title"
+                defaultMessage="Contact Form"
+              />
+            </h2>
             <form onSubmit={this.handleSubmit}>
               <div className="c_contact__content__form_col__form">
                 <div className="c_contact__content__form_col__form__row">
@@ -239,7 +303,10 @@ class Contact extends Component {
                     defaultMessage="Comment"
                     description="Label for the Comment field in the Contact form"
                   />
-                  <span className="c_contact__content__form_col__form__row__label__optional"> (Optional)</span>
+                  <span className="c_contact__content__form_col__form__row__label__optional"> (<FormattedMessage
+                    id="components.Contact.optional"
+                    defaultMessage="Optional"
+                  />)</span>
                 </h6>
                 <TextInput
                   onChange={this.handleChange}
