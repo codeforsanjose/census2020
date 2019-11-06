@@ -9,3 +9,9 @@ module.exports.supportedLocaleNames = {
   es: 'Español',
   vi: 'Tiếng Việt'
 };
+
+module.exports.supportedLocaleEnglishNames = {
+  en: 'English',
+  es: 'Spanish',
+  vi: 'Vietnamese'
+};

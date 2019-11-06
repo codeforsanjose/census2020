@@ -11,8 +11,7 @@ import { sendContactForm } from '../api/contact';
 import LocaleContext from './LocaleContext';
 import Checkbox from './Checkbox';
 import {
-  supportedLocales,
-  supportedLocaleNames
+  supportedLocales
 } from '../../i18n/supported-locales';
 
 class Contact extends Component {
@@ -28,12 +27,7 @@ class Contact extends Component {
         lastName: '',
         email: '',
         comment: '',
-        interest: {
-          volunteer: false,
-          presentation: false,
-          information: false,
-          other: false
-        }
+        interests: new Set()
       },
       defaults
     );
@@ -41,9 +35,7 @@ class Contact extends Component {
 
   constructor (props) {
     super(props);
-    this.state = Contact.getInitialState({
-      language: supportedLocaleNames[props.currentLocale]
-    });
+    this.state = Contact.getInitialState();
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleCheck = this.handleCheck.bind(this);
@@ -72,10 +64,18 @@ class Contact extends Component {
   }
 
   handleCheck (event) {
-    let prevInterest = Object.assign({}, this.state.interest);
-    prevInterest[event.target.value] = !prevInterest[event.target.value];
-    this.setState({
-      interest: prevInterest
+    const interestName = event.target.value;
+    this.setState(({ interests }) => {
+      const newInterests = new Set(interests);
+      if (newInterests.has(interestName)) {
+        newInterests.delete(interestName);
+      } else {
+        newInterests.add(interestName);
+      }
+
+      return {
+        interests: newInterests
+      };
     });
   }
 
@@ -85,7 +85,10 @@ class Contact extends Component {
 
   async handleSubmit (event) {
     event.preventDefault();
-    await sendContactForm(this.state);
+    await sendContactForm({
+      ...this.state,
+      language: this.props.currentLocale
+    });
 
     this.notifySubmitSuccess();
     this.clearForm();
@@ -97,7 +100,7 @@ class Contact extends Component {
       lastName,
       email,
       comment,
-      interest
+      interests
     } = this.state;
 
     const options = [
@@ -105,25 +108,25 @@ class Contact extends Component {
         value: 'volunteer',
         label: 'Volunteer to help',
         name: 'volunteer',
-        checked: interest.volunteer
+        checked: interests.has('volunteer')
       },
       {
         value: 'presentation',
         label: 'Request a presentation',
         name: 'presentation',
-        checked: interest.presentation
+        checked: interests.has('presentation')
       },
       {
         value: 'information',
         label: 'Request more information',
         name: 'information',
-        checked: interest.information
+        checked: interests.has('information')
       },
       {
         value: 'other',
         label: 'Other',
         name: 'other',
-        checked: interest.other
+        checked: interests.has('other')
       }
     ];
 
