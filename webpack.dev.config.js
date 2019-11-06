@@ -2,6 +2,8 @@ const webpack = require('webpack');
 
 const config = require('./webpack.config');
 
+config.mode = 'development';
+config.devtool = 'eval-source-map';
 config.plugins.push(
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NoEmitOnErrorsPlugin()
