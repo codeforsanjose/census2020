@@ -12,13 +12,12 @@
 
   &__option {
     cursor: pointer;
-    color: #0872B9;
+    color: #000000;
     -webkit-appearance: none;
     appearance: none;
     background: none;
     border: none;
     outline: none;
-    font-weight: bold;
     padding: 0;
     position: relative;
     margin-right: 20px;
@@ -26,7 +25,7 @@
     // Add a separator bar after every item in the locale picker...
     &::after {
       content: '|';
-      color: #ADADAD;
+      color: #000000;
       display: inline-block;
       position: absolute;
       margin: 0 8px;
@@ -42,7 +41,8 @@
     }
 
     &[disabled] {
-      color: #C9C9C9;
+      font-weight: bold;
+      color: #2F80ED;
       cursor: default;
     }
   }
