@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
+import './SampleCensus.scss'
+
 const ipsum = `Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. 
 Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis 
 enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. 
@@ -48,24 +50,10 @@ QuestionAnswerBox.PropTypes = {
 const CensusQuestionCard = ({item, index, current_position}) => (
   <li
     key={index}
-    style={{
-      display: (index === current_position) ? 'flex' : 'none',
-      flexDirection: 'column',
-      width: '100%',
-      backgroundColor: 'white',
-      padding: '5vh 5vw',
-      margin: '5vh 5vw',
-      borderRadius: '3px',
-    }}>
-    <h2
-      style={{
-        display: 'inline',
-        margin: '0',
-      }}> 
-      <span
-        style={{
-          color: '#2f80ed'
-        }}> 
+    className="c_sample-census__content__census-questions__card"
+    style={{display: (index === current_position) ? 'flex' : 'none'}}>
+    <h2 className="c_sample-census__content__census-questions__card__question"> 
+      <span className="c_sample-census__content__census-questions__card__question__label"> 
         { "Q" + (index+1).toString() + ": " }
       </span>
       { item.question }
@@ -122,85 +110,49 @@ export default class SampleCensus extends React.Component {
     }
 
     return (
-      <main
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          width: '100%',
-          overflow: 'auto',
-          backgroundColor: '#f2f2f2',
-        }}>
-          <div 
-            style={{
-              width: '100%',
-              height: '10vh',
-              background: 'linear-gradient(to right, rgb(246,188,137), rgb(246,220,139))'
-            }}>
-          </div>
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              width: '80%',
-              alignItems: 'center',
-            }}>
-            <h1
-              style={{
-                margin: '10px',
-                textAlign: 'center',
-              }}> 
-              Preview and learn more about each question on the census 
+      <main className="c_sample-census">
+          <div className="c_sample-census__header"></div>
+          <div className="c_sample-census__content">
+            <h1 className="c_sample-census__content__title">
+              <FormattedMessage
+                 id="components.SampleCenus.title"
+                 defaultMessage="Preview and learn more about each question on the census"
+                 description="Sample Census page title">
+              </FormattedMessage> 
             </h1>
-            <p
-              style={{
-                margin: '10px',
-              }}> 
-              Learn how to answer, how that info is used, and why it's important to answer 
+            <p className="c_sample-census__content__subtitle">
+              <FormattedMessage
+                id="components.SampleCenus.subtitle"
+                defaultMessage="Learn how to answer, how that info is used, and why it's important to answer"
+                description="Sample Census page subtitle">
+              </FormattedMessage>
             </p>
-            <ul
-              style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'center',
-                width: '100%',
-                listStyle: 'none',
-                flexWrap: 'wrap',
-                padding: 0,
-              }}>
+            <ul className="c_sample-census__content__button-row">
               { census_questions.map((item,index) => (
-                <li
-                  style={{
-                    height: '3.5em',
-                    width: '10%',
-                    minWidth: '80px',
-                    maxWidth: '100px',
-                    margin: '5px',
-                  }}>
+                <li className="c_sample-census__content__button-row__item">
                   <button
+                    className="c_sample-census__content__button-row__item__button"
                     onClick={() => this.setState({
                       current_position: index,
                     })}
                     style={{
-                      width: '100%',
-                      height: '100%',
                       backgroundColor: (index === this.state.current_position) ? '#2f80ed' : 'white',
                       color: (index === this.state.current_position) ? 'white' : 'grey',
-                      border: 'none',
-                      borderRadius: '3px',
                     }}>
                     { "Q" + (index+1).toString() }
                   </button>
                 </li>
               ))}
             </ul>
-            { census_questions.map((item,index) => (
-              <CensusQuestionCard
-                item={item}
-                index={index}
-                current_position={this.state.current_position}>
-              </CensusQuestionCard>
-            ))}
+            <ul className="c_sample-census__content__census-questions"> 
+              { census_questions.map((item,index) => (
+                <CensusQuestionCard
+                  item={item}
+                  index={index}
+                  current_position={this.state.current_position}>
+                </CensusQuestionCard>
+              ))}
+            </ul>
           </div>
       </main>
     )
