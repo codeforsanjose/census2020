@@ -23,7 +23,10 @@ const indexToSection = {
 }
 
 const QuestionAnswerBox = ({title, text}) => (
-  <li>
+  <li
+    style={{
+      margin: '10px'
+    }}>
     <h3
       style={{
         padding: '5px',
@@ -45,12 +48,14 @@ const CensusQuestionCard = ({item, index, current_position}) => (
       flexDirection: 'column',
       width: '100%',
       backgroundColor: 'white',
-      padding: '10px 20px',
-      margin: '20px 0 40px 0'
+      padding: '5vh 5vw',
+      margin: '5vh 5vw',
+      borderRadius: '3px',
     }}>
     <h2
       style={{
-        display: 'inline'
+        display: 'inline',
+        margin: '0',
       }}> 
       <span
         style={{
@@ -64,7 +69,7 @@ const CensusQuestionCard = ({item, index, current_position}) => (
     <div 
         style={{
         width:'100%',
-        height:'2px',
+        height:'1px',
         borderRadius: '1px',
         backgroundColor: 'black'
       }}>
@@ -75,6 +80,7 @@ const CensusQuestionCard = ({item, index, current_position}) => (
         flexDirection: 'column',
         width: '100%',
         listStyle: 'none',
+        padding: 0,
       }}>
         { [item.how_to, item.info_use,item.why_answer].map((item,index) => (
           <QuestionAnswerBox
@@ -128,8 +134,19 @@ export default class SampleCensus extends React.Component {
               width: '80%',
               alignItems: 'center',
             }}>
-            <h1> Preview and learn more about each question on the census </h1>
-            <h2> Learn how to answer, how that info is used, and why it's important to answer </h2>
+            <h1
+              style={{
+                margin: '10px',
+                textAlign: 'center',
+              }}> 
+              Preview and learn more about each question on the census 
+            </h1>
+            <p
+              style={{
+                margin: '10px',
+              }}> 
+              Learn how to answer, how that info is used, and why it's important to answer 
+            </p>
             <ul
               style={{
                 display: 'flex',
