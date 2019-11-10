@@ -64,6 +64,11 @@
         display: flex;
         flex-direction: column;
 
+        &__warning {
+          color: #d83933;
+          margin: 16px;
+        }
+
         &__row {
           display: flex;
           flex-direction: row;

@@ -10,7 +10,8 @@ export default class TextInput extends Component {
       rows,
       label,
       type,
-      onChange
+      onChange,
+      validateEmail
     } = this.props;
 
     let textInput;
@@ -24,6 +25,17 @@ export default class TextInput extends Component {
           value={value}
           onChange={onChange}>
         </textarea>
+      );
+    } else if (name === 'email') {
+      textInput = (
+        <input
+          className={className}
+          name={name}
+          value={value}
+          type={type}
+          onChange={onChange}
+          onBlur={validateEmail}
+        />
       );
     } else {
       textInput = (
@@ -55,5 +67,6 @@ TextInput.propTypes = {
   label: PropTypes.element,
   rows: PropTypes.number,
   type: PropTypes.string,
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
+  validateEmail: PropTypes.func
 };
