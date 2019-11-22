@@ -32,6 +32,7 @@ const addJSFiles = (dirPath) => {
 };
 
 addJSFiles(componentDir);
+addJSFiles(path.resolve(__dirname, '..', 'server'));
 
 const outputDir = path.resolve(__dirname, 'translations');
 
@@ -48,6 +49,7 @@ try {
 const newMessageIDs = [];
 
 for (const file of filesToCheck) {
+  console.log('transforming file', file);
   const transformed = transformFile(
     file,
     {
@@ -61,6 +63,7 @@ for (const file of filesToCheck) {
       ]
     }
   );
+  console.log('transformed:', JSON.stringify(transformed.metadata['react-intl'], null, '  '));
 
   for (const message of transformed.metadata['react-intl'].messages) {
     if (

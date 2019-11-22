@@ -1,6 +1,8 @@
 const nodemailer = require('nodemailer');
 const debug = require('debug')('census2020:server:mail');
 const { supportedLocaleEnglishNames } = require('../../i18n/supported-locales');
+const { getConfirmationMessage } = require('./get-mail-body');
+const { getMessage } = require('./utils');
 
 const Config = require('../config');
 
@@ -149,7 +151,7 @@ module.exports.sendConfirmation = async ({
   email,
   language,
   zip,
-  interest,
+  interests,
   comment
 }) => {
   debug('sendConfirmation() called with the following arguments:', {
@@ -158,7 +160,7 @@ module.exports.sendConfirmation = async ({
     email,
     language,
     zip,
-    interest,
+    interests,
     comment
   });
 
@@ -171,41 +173,11 @@ module.exports.sendConfirmation = async ({
   // Will reject (throw error) if config doesn't work
   await transporter.verify();
 
-  const messageHTML = `
-Hi ${name},
-<p>
-Thank you for your interest in the 2020 Census effort in San Jose.
-</p>
-<p>
-The following message was sent by you to the City of San Jose Census Office:
-</p>
-<blockquote>
-<h3>
-I have an interest in:
-</h3>
-<p>
-${interest}
-</p>
-${
-  comment
-    ? `
-<h3>
-Additional comments:
-</h3>
-<p>
-${comment}
-</p>
-    `
-    : ''
-}
-Additional comments:
-
-</blockquote>
-<p>
-Thank you again for your interest. Someone will respond back to you within two business days.
-</p>
-&mdash;City of San Jose 2020 Census Office
-`;
+  const messageHTML = getConfirmationMessage({
+    language,
+    name,
+    interests
+  });
 
   debug('About to send message:', {
     messageHTML
@@ -215,7 +187,10 @@ Thank you again for your interest. Someone will respond back to you within two b
     from: Config.mail.confirmationMessage.fromAddress,
     to: email,
     // TODO: i18n for both subject and message
-    subject: 'Thank you for contacting the San Jose Census Department',
+    subject: getMessage(language, {
+      id: 'mail.messages.confirmation.subject',
+      defaultMessage: 'Thank you for contacting the San Jose Census Department'
+    }),
     html: messageHTML
   });
 

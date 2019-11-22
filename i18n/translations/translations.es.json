@@ -28,16 +28,16 @@
     "translation": null
   },
   "components.Contact.fields.interest.options.volunteer": {
-    "english": "Volunteer",
-    "translation": "Ofrecerse"
+    "english": "Volunteer to help",
+    "translation": null
   },
   "components.Contact.fields.interest.options.workForCensus": {
     "english": "Work for Census2020",
     "translation": "Trabajo para el censo"
   },
   "components.Contact.fields.interest.options.requestPresentation": {
-    "english": "Request presentation",
-    "translation": "Solicitar una presentación"
+    "english": "Request a presentation",
+    "translation": null
   },
   "components.Contact.fields.interest.options.other": {
     "english": "Other",
@@ -249,6 +249,46 @@
   },
   "components.Home.factoids.3.message": {
     "english": "more text will go here",
+    "translation": null
+  },
+  "components.Contact.fields.interest.options.information": {
+    "english": "Request more information",
+    "translation": null
+  },
+  "components.Contact.getInvolved.header": {
+    "english": "Get Involved",
+    "translation": null
+  },
+  "components.Contact.workingForCensus.header": {
+    "english": "Interested in working for the Census?",
+    "translation": null
+  },
+  "components.Contact.workingForCensus": {
+    "english": "Find more information {link}",
+    "translation": null
+  },
+  "components.Contact.workingForCensus.link": {
+    "english": "here",
+    "translation": null
+  },
+  "components.Contact.needMoreInformation": {
+    "english": "Need more information?",
+    "translation": null
+  },
+  "components.Contact.visitFaq": {
+    "english": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days.",
+    "translation": null
+  },
+  "components.Contact.visitFaq.link": {
+    "english": "FAQ",
+    "translation": null
+  },
+  "components.Contact.form.title": {
+    "english": "Contact Form",
+    "translation": null
+  },
+  "components.Contact.optional": {
+    "english": "Optional",
     "translation": null
   }
 }

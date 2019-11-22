@@ -28,16 +28,16 @@
     "translation": "I would like to:"
   },
   "components.Contact.fields.interest.options.volunteer": {
-    "english": "Volunteer",
-    "translation": "Volunteer"
+    "english": "Volunteer to help",
+    "translation": "Volunteer to help"
   },
   "components.Contact.fields.interest.options.workForCensus": {
     "english": "Work for Census2020",
     "translation": "Work for Census2020"
   },
   "components.Contact.fields.interest.options.requestPresentation": {
-    "english": "Request presentation",
-    "translation": "Request presentation"
+    "english": "Request a presentation",
+    "translation": "Request a presentation"
   },
   "components.Contact.fields.interest.options.other": {
     "english": "Other",
@@ -250,5 +250,45 @@
   "components.Home.factoids.3.message": {
     "english": "more text will go here",
     "translation": "more text will go here"
+  },
+  "components.Contact.fields.interest.options.information": {
+    "english": "Request more information",
+    "translation": "Request more information"
+  },
+  "components.Contact.getInvolved.header": {
+    "english": "Get Involved",
+    "translation": "Get Involved"
+  },
+  "components.Contact.workingForCensus.header": {
+    "english": "Interested in working for the Census?",
+    "translation": "Interested in working for the Census?"
+  },
+  "components.Contact.workingForCensus": {
+    "english": "Find more information {link}",
+    "translation": "Find more information {link}"
+  },
+  "components.Contact.workingForCensus.link": {
+    "english": "here",
+    "translation": "here"
+  },
+  "components.Contact.needMoreInformation": {
+    "english": "Need more information?",
+    "translation": "Need more information?"
+  },
+  "components.Contact.visitFaq": {
+    "english": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days.",
+    "translation": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days."
+  },
+  "components.Contact.visitFaq.link": {
+    "english": "FAQ",
+    "translation": "FAQ"
+  },
+  "components.Contact.form.title": {
+    "english": "Contact Form",
+    "translation": "Contact Form"
+  },
+  "components.Contact.optional": {
+    "english": "Optional",
+    "translation": "Optional"
   }
 }
