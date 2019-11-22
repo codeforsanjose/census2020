@@ -30,7 +30,8 @@ class Contact extends Component {
         lastName: '',
         email: '',
         comment: '',
-        interests: new Set()
+        interests: new Set(),
+        validEmail: true
       },
       defaults
     );
@@ -42,6 +43,7 @@ class Contact extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleCheck = this.handleCheck.bind(this);
+    this.validateEmail = this.validateEmail.bind(this);
   }
 
   notifySubmitSuccess () {
@@ -86,15 +88,27 @@ class Contact extends Component {
     this.setState(Contact.getInitialState());
   }
 
+  validateEmail () {
+    const isValidEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this.state.email);
+    if (isValidEmail !== this.state.validEmail) {
+      this.setState({
+        validEmail: isValidEmail
+      });
+    }
+    return isValidEmail;
+  }
+
   async handleSubmit (event) {
     event.preventDefault();
-    await sendContactForm({
-      ...this.state,
-      language: this.props.currentLocale
-    });
+    if (this.state.validEmail && this.state.email.length > 0) {
+      await sendContactForm({
+        ...this.state,
+        language: this.props.currentLocale
+      });
 
-    this.notifySubmitSuccess();
-    this.clearForm();
+      this.notifySubmitSuccess();
+      this.clearForm();
+    }
   }
 
   render () {
@@ -152,6 +166,15 @@ class Contact extends Component {
         checked: interests.has('other')
       }
     ];
+
+    let emailWarning;
+    if (!this.state.validEmail) {
+      emailWarning = (
+        <span className="c_contact__content__form_col__form__warning">Please enter a valid email address</span>
+      );
+    } else {
+      emailWarning = null;
+    }
 
     return (
       <div className="c_contact">
@@ -267,9 +290,11 @@ class Contact extends Component {
                     defaultMessage="Email"
                     description="Label for the Email field in the Contact form"
                   />
+                  {emailWarning}
                 </h6>
                 <TextInput
                   onChange={this.handleChange}
+                  validateEmail={this.validateEmail}
                   name='email'
                   className='c_contact__content__form_col__form__field'
                   value={email}
