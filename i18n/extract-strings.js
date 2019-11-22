@@ -49,7 +49,6 @@ try {
 const newMessageIDs = [];
 
 for (const file of filesToCheck) {
-  console.log('transforming file', file);
   const transformed = transformFile(
     file,
     {
@@ -63,7 +62,6 @@ for (const file of filesToCheck) {
       ]
     }
   );
-  console.log('transformed:', JSON.stringify(transformed.metadata['react-intl'], null, '  '));
 
   for (const message of transformed.metadata['react-intl'].messages) {
     if (

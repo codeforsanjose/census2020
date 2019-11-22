@@ -290,5 +290,45 @@
   "components.Contact.optional": {
     "english": "Optional",
     "translation": null
+  },
+  "components.SampleCenus.title": {
+    "english": "Preview and learn more about each question on the census",
+    "translation": null
+  },
+  "components.SampleCenus.subtitle": {
+    "english": "Learn how to answer, how that info is used, and why it's important to answer",
+    "translation": null
+  },
+  "email.messages.confirmation.greeting": {
+    "english": "Hi {name}",
+    "translation": null
+  },
+  "email.messages.confirmation.thankYou": {
+    "english": "Thank you for your interest in the 2020 Census effort in San Jose.",
+    "translation": null
+  },
+  "email.messages.confirmation.usersMessageIntro": {
+    "english": "The following message was sent by you to the City of San Jose Census Office:",
+    "translation": null
+  },
+  "email.messages.confirmation.interestsHeader": {
+    "english": "I have an interest in:",
+    "translation": null
+  },
+  "email.messages.confirmation.commentsHeader": {
+    "english": "Additional comments:",
+    "translation": null
+  },
+  "email.messages.confirmation.conclusion": {
+    "english": "Thank you again for your interest. Someone will respond back to you within two business days.",
+    "translation": null
+  },
+  "email.messages.confirmation.signature": {
+    "english": "City of San Jose 2020 Census Office",
+    "translation": null
+  },
+  "mail.messages.confirmation.subject": {
+    "english": "Thank you for contacting the San Jose Census Department",
+    "translation": null
   }
 }

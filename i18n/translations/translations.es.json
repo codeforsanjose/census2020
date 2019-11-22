@@ -29,7 +29,7 @@
   },
   "components.Contact.fields.interest.options.volunteer": {
     "english": "Volunteer to help",
-    "translation": null
+    "translation": "Voluntario para ayudar"
   },
   "components.Contact.fields.interest.options.workForCensus": {
     "english": "Work for Census2020",
@@ -37,7 +37,7 @@
   },
   "components.Contact.fields.interest.options.requestPresentation": {
     "english": "Request a presentation",
-    "translation": null
+    "translation": "Solicitar una presentación"
   },
   "components.Contact.fields.interest.options.other": {
     "english": "Other",
@@ -253,7 +253,7 @@
   },
   "components.Contact.fields.interest.options.information": {
     "english": "Request more information",
-    "translation": null
+    "translation": "Pida mas información"
   },
   "components.Contact.getInvolved.header": {
     "english": "Get Involved",
@@ -290,5 +290,45 @@
   "components.Contact.optional": {
     "english": "Optional",
     "translation": null
+  },
+  "components.SampleCenus.title": {
+    "english": "Preview and learn more about each question on the census",
+    "translation": null
+  },
+  "components.SampleCenus.subtitle": {
+    "english": "Learn how to answer, how that info is used, and why it's important to answer",
+    "translation": null
+  },
+  "email.messages.confirmation.greeting": {
+    "english": "Hi {name}",
+    "translation": "Hola {name}"
+  },
+  "email.messages.confirmation.thankYou": {
+    "english": "Thank you for your interest in the 2020 Census effort in San Jose.",
+    "translation": "Gracias por su interés en el esfuerzo del Censo 2020 en San José."
+  },
+  "email.messages.confirmation.usersMessageIntro": {
+    "english": "The following message was sent by you to the City of San Jose Census Office:",
+    "translation": "Usted envió el siguiente mensaje a la Oficina del Censo de la Ciudad de San José:"
+  },
+  "email.messages.confirmation.interestsHeader": {
+    "english": "I have an interest in:",
+    "translation": "Tengo interés en:"
+  },
+  "email.messages.confirmation.commentsHeader": {
+    "english": "Additional comments:",
+    "translation": "Comentarios adicionales:"
+  },
+  "email.messages.confirmation.conclusion": {
+    "english": "Thank you again for your interest. Someone will respond back to you within two business days.",
+    "translation": "Gracias otra vez por su interés. Alguien le responderá dentro de dos días hábiles."
+  },
+  "email.messages.confirmation.signature": {
+    "english": "City of San Jose 2020 Census Office",
+    "translation": "Oficina del Censo de la Ciudad de San José 2020"
+  },
+  "mail.messages.confirmation.subject": {
+    "english": "Thank you for contacting the San Jose Census Department",
+    "translation": "Gracias por contactar al Departamento del Censo de San José."
   }
 }

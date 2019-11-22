@@ -123,3 +123,21 @@ ConfirmationEmail.propTypes = {
   name: PropTypes.string,
   comment: PropTypes.string
 };
+
+export const ConfirmationEmailSubject = ({ locale }) => {
+  return (
+    <IntlProvider
+      locale={locale}
+      messages={messages[locale]}
+    >
+      <FormattedMessage
+        id="mail.messages.confirmation.subject"
+        defaultMessage="Thank you for contacting the San Jose Census Department"
+      />
+    </IntlProvider>
+  );
+};
+
+ConfirmationEmailSubject.propTypes = {
+  locale: PropTypes.string.isRequired
+};

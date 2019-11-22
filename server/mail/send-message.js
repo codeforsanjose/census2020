@@ -1,8 +1,7 @@
 const nodemailer = require('nodemailer');
 const debug = require('debug')('census2020:server:mail');
 const { supportedLocaleEnglishNames } = require('../../i18n/supported-locales');
-const { getConfirmationMessage } = require('./get-mail-body');
-const { getMessage } = require('./utils');
+const { getConfirmationMessage, getConfirmationMessageSubject } = require('./get-mail-body');
 
 const Config = require('../config');
 
@@ -186,11 +185,7 @@ module.exports.sendConfirmation = async ({
   const sendResults = await transporter.sendMail({
     from: Config.mail.confirmationMessage.fromAddress,
     to: email,
-    // TODO: i18n for both subject and message
-    subject: getMessage(language, {
-      id: 'mail.messages.confirmation.subject',
-      defaultMessage: 'Thank you for contacting the San Jose Census Department'
-    }),
+    subject: getConfirmationMessageSubject({ language }),
     html: messageHTML
   });
 
