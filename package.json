@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "per-env",
-    "prebuild": "rimraf ./build",
+    "prebuild": "rimraf ./build && npm run build-server-react",
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.prod.config.js",
     "start:production": "cross-env NODE_ENV=production node --icu-data-dir=node_modules/full-icu ./server/server.js",
     "start:development": "cross-env NODE_ENV=development nodemon --icu-data-dir=node_modules/full-icu ./server/server.js",
