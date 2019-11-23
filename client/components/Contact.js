@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage, injectIntl } from 'react-intl';
+import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
 import { toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,9 +17,7 @@ import contactFormImageSrc from '../images/contact-form.jpg';
 
 class Contact extends Component {
   static propTypes = {
-    intl: PropTypes.shape({
-      formatMessage: PropTypes.func.isRequired
-    }).isRequired,
+    intl: intlShape.isRequired,
     currentLocale: PropTypes.oneOf(supportedLocales)
   }
 
@@ -157,7 +155,7 @@ class Contact extends Component {
       {
         value: 'other',
         label: this.props.intl.formatMessage({
-          key: 'other',
+          key: 'information',
           id: 'components.Contact.fields.interest.options.other',
           defaultMessage: 'Other',
           description: "'Other' option for the Interest field in the Contact form"

@@ -25,39 +25,39 @@
   },
   "components.Contact.fields.interest": {
     "english": "I would like to:",
-    "translation": "Tôi muôn:"
+    "translation": null
   },
   "components.Contact.fields.interest.options.volunteer": {
-    "english": "Volunteer to help",
-    "translation": "Tình nguyện giúp"
+    "english": "Volunteer",
+    "translation": "Tình nguyện"
   },
   "components.Contact.fields.interest.options.workForCensus": {
     "english": "Work for Census2020",
-    "translation": "Làm việc cho điều tra dân số2020"
+    "translation": "Làm việc cho Tổng điều tra"
   },
   "components.Contact.fields.interest.options.requestPresentation": {
-    "english": "Request a presentation",
+    "english": "Request presentation",
     "translation": "Yêu cầu thuyết trình"
   },
   "components.Contact.fields.interest.options.other": {
     "english": "Other",
-    "translation": "Khác"
+    "translation": "Khác"
   },
   "components.Contact.fields.comment": {
     "english": "Comment",
-    "translation": "Bình luận"
+    "translation": "Chú thích"
   },
   "navigation.links.home": {
     "english": "Home",
-    "translation": "Nhà"
+    "translation": "Trang chủ"
   },
   "navigation.links.contact": {
     "english": "Get Involved",
-    "translation": "Tham gia"
+    "translation": "Trang liên lạc"
   },
   "components.Contact.submitButton": {
     "english": "Submit",
-    "translation": "Gửi đi"
+    "translation": "Gửi mẫu"
   },
   "components.Contact.submitSuccessToast": {
     "english": "Your request for information has been submitted",
@@ -65,15 +65,15 @@
   },
   "components.FAQ.header": {
     "english": "FAQ",
-    "translation": "Câu hỏi thường gặp"
+    "translation": "trang faq"
   },
   "navigation.links.faq": {
     "english": "FAQ",
-    "translation": "Câu hỏi thường gặp"
+    "translation": "trang faq"
   },
   "navigation.links.sampleCensus": {
     "english": "Sample Survey",
-    "translation": "Khảo sát mẫu"
+    "translation": "Điều tra dân số mẫu"
   },
   "components.SampleCensus.header": {
     "english": "Sample Census",
@@ -85,250 +85,170 @@
   },
   "components.SampleCensus.form.preliminary-instructions.question1.header": {
     "english": "Before you answer Question 1, count the people living in this house, apartment, or mobile home using our guidelines.",
-    "translation": "Trước khi bạn trả lời Câu hỏi 1, hãy đếm những người sống trong ngôi nhà, căn hộ hoặc nhà di động này theo hướng dẫn của chúng tôi."
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.question1.count-all-people": {
     "english": "Count all people, including babies, who live and sleep here most of the time.",
-    "translation": "Đếm tất cả mọi người, kể cả trẻ sơ sinh, những người sống và ngủ ở đây hầu hết thời gian."
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.question1.if-no-one-lives-here": {
     "english": "If no one lives and sleeps at this address most of the time, go online at {websiteUrl} or call the number on page 8",
-    "translation": "Nếu không có ai sống và ngủ tại địa chỉ này hầu hết thời gian, hãy truy cập trực tuyến tại {websiteUrl} hoặc gọi số ở trang 8"
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.header": {
     "english": "The census must also include people without a permanent place to live, so:",
-    "translation": "Điều tra dân số cũng phải bao gồm những người không có nơi ở cố định, vì vậy:"
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.include": {
     "english": "If someone who does not have a permanent place to live is staying here on April 1, 2020, count that person.",
-    "translation": "Nếu ai đó không có nơi ở cố định sẽ ở lại đây vào ngày 1 tháng 4 năm 2020, hãy tính người đó."
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.header": {
     "english": "The Census Bureau also conducts counts in institutions and other places, so:",
-    "translation": "Cục điều tra dân số cũng tiến hành đếm trong các tổ chức và những nơi khác, vì vậy:"
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.college-or-armed-forces": {
     "english": "Do not count anyone living away from here, either at college or in the Armed Forces.",
-    "translation": "Đừng đếm bất cứ ai sống xa đây, ở trường đại học hoặc trong Lực lượng Vũ trang."
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.prison": {
     "english": "Do not count anyone in a nursing home, jail, prison, detention facility, etc., on April 1, 2020.",
-    "translation": "Không được tính bất cứ ai trong viện dưỡng lão, nhà tù, nhà tù, trại giam, v.v., vào ngày 1 tháng 4 năm 2020."
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.even-if-they-return": {
     "english": "Leave these people off your questionnaire, even if they will return to live here after they leave college, the nursing home, the military, jail, etc. Otherwise, they may be counted twice.",
-    "translation": "Để những người này rời khỏi bảng câu hỏi của bạn, ngay cả khi họ sẽ trở về sống ở đây sau khi họ rời trường đại học, viện dưỡng lão, quân đội, nhà tù, v.v. Nếu không, họ có thể được tính hai lần."
+    "translation": null
   },
   "components.SampleCensus.form.question1.header": {
     "english": "How many people were living or staying in this house,apartment, or mobile home on April 1, 2020?",
-    "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
+    "translation": null
   },
   "components.SampleCensus.form.question1.input-label": {
     "english": "Number of people",
-    "translation": "Số người"
+    "translation": null
   },
   "components.SampleCensus.form.question2.header": {
     "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
-    "translation": "Có bất kỳ người nào ở lại đây vào ngày 1 tháng 4 năm 2020 mà bạn không bao gồm trong Câu hỏi 1 không?"
+    "translation": null
   },
   "components.SampleCensus.form.question2.mark-all": {
     "english": "Mark {markBoxImage} all that apply",
-    "translation": "Đánh dấu {markBoxImage} tất cả những gì áp dụng"
+    "translation": null
   },
   "components.SampleCensus.form.question2.fields.related-children": {
     "english": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children",
-    "translation": "Trẻ em, có liên quan hoặc không liên quan, chẳng hạn như trẻ sơ sinh, cháu, hoặc con nuôi"
+    "translation": null
   },
   "components.SampleCensus.form.question2.fields.related-adults": {
     "english": "Relatives, such as adult children, cousins, or in-laws",
-    "translation": "Người thân, chẳng hạn như trẻ em trưởng thành, anh em họ, hoặc ở rể"
+    "translation": null
   },
   "components.SampleCensus.form.question2.fields.nonrelatives": {
     "english": "Nonrelatives, such as roommates or live-in babysitters",
-    "translation": "Không liên quan, chẳng hạn như bạn cùng phòng hoặc người giữ trẻ sống"
+    "translation": null
   },
   "components.SampleCensus.form.question2.fields.staying-temporarily": {
     "english": "People staying here temporarily",
-    "translation": "Người ở tạm"
+    "translation": null
   },
   "components.SampleCensus.form.question2.fields.no-additional": {
     "english": "No additional people",
-    "translation": "Không có thêm người"
+    "translation": null
   },
   "components.SampleCensus.form.question3.header": {
     "english": "Is this house, apartment, or mobile home",
-    "translation": "Đây là nhà, căn hộ, hay nhà di động"
+    "translation": null
   },
   "components.SampleCensus.form.markOne": {
     "english": "Mark {markBoxImage} ONE box",
-    "translation": "Đánh dấu {markBoxImage} MỘT hộp"
+    "translation": null
   },
   "components.SampleCensus.form.question3.fields.mortgage-or-loan": {
     "english": "Owned by you or someone in this household with a mortgage or loan? Include home equity loans.",
-    "translation": "Thuộc sở hữu của bạn hoặc ai đó trong hộ gia đình này có thế chấp hoặc vay? Bao gồm các khoản vay vốn chủ sở hữu nhà."
+    "translation": null
   },
   "components.SampleCensus.form.question3.fields.without-mortgage-or-loan": {
     "english": "Owned by you or someone in this household free and clear (without a mortgage or loan)?",
-    "translation": "Thuộc sở hữu của bạn hoặc ai đó trong hộ gia đình này miễn phí và rõ ràng (không có thế chấp hoặc khoản vay)?"
+    "translation": null
   },
   "components.SampleCensus.form.question3.fields.rented": {
     "english": "Rented?",
-    "translation": "Cho thuê?"
+    "translation": null
   },
   "components.SampleCensus.form.question3.fields.occupied-without-rent": {
     "english": "Occupied without payment of rent?",
-    "translation": "Chiếm dụng mà không trả tiền thuê nhà?"
+    "translation": null
   },
   "components.SampleCensus.form.mark-all": {
     "english": "Mark {markBoxImage} all that apply",
-    "translation": "Đánh dấu {markBoxImage} tất cả những gì áp dụng"
+    "translation": null
   },
   "components.SampleCensus.form.question4.header": {
     "english": "What is your telephone number?",
-    "translation": "Số điện thoại của bạn là gì?"
+    "translation": null
   },
   "components.SampleCensus.form.question4.header.phone-disclaimer": {
     "english": "We will only contact you if needed for official Census Bureau business.",
-    "translation": "Chúng tôi sẽ chỉ liên lạc với bạn nếu cần cho việc kinh doanh của Cục điều tra dân số chính thức."
+    "translation": null
   },
   "components.SampleCensus.form.question4.field.label": {
     "english": "Telephone Number",
-    "translation": "Số điện thoại"
+    "translation": null
   },
   "components.Contact.fields.firstName": {
     "english": "First Name",
-    "translation": "Tên đầu tiên"
+    "translation": null
   },
   "components.Contact.fields.lastName": {
     "english": "Last Name",
-    "translation": "Họ"
+    "translation": null
   },
   "components.Footer.contactUs.header": {
     "english": "Contact Us",
-    "translation": "Liên hệ chúng tôi"
+    "translation": null
   },
   "components.Footer.links.takeTheCensus": {
     "english": "Take the Census",
-    "translation": "Tham gia điều tra dân số"
+    "translation": null
   },
   "components.Footer.links.faq": {
     "english": "FAQ",
-    "translation": "Câu hỏi thường gặp"
+    "translation": null
   },
   "components.Footer.links.sampleSurvey": {
     "english": "Sample Survey",
-    "translation": "Khảo sát mẫu"
+    "translation": null
   },
   "components.Footer.links.contact": {
     "english": "Get Involved",
-    "translation": "Tham gia"
+    "translation": null
   },
   "components.DetailViewContainer.header": {
     "english": "Everyone matters",
-    "translation": "Mọi người quan trọng"
+    "translation": null
   },
   "components.DetailViewContainer.message": {
     "english": "Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur in exercitation voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.\nAdipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat.",
-    "translation": "Ea irure pariatur aliqua minim cillum consectetur result rep rependerenderit ngồi aliqua sit eiusmod proident. Hàng hóa e pariatur trong tập thể dục voluptate proident anim nisi tối thiểu. Nisi aliqua ipsum non elit nulla pariatur elit tập thể dục enim mollit Vendo incididunt incididunt. Ngoại trừ amet esse sunt velit ut nulla ipsum ea.\nAdipisizing ullamco labis cillum dolor eiusmod nulla Lorem ngồi quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tạm thời lao động eu e hậu quả."
+    "translation": null
   },
   "components.Home.factoids.readyToTakeCensus.title": {
     "english": "Ready to take the census?",
-    "translation": "Sẵn sàng để điều tra dân số?"
+    "translation": null
   },
   "components.Home.factoids.readyToTakeCensus.message": {
     "english": "a whole bunch of text and things here",
-    "translation": "cả đống văn bản và những thứ ở đây"
+    "translation": null
   },
   "components.Home.factoids.qr-code.title": {
     "english": "Learn About the Census From Your Phone",
-    "translation": "Tìm hiểu về điều tra dân số từ điện thoại của bạn"
+    "translation": null
   },
   "components.Home.factoids.3.title": {
     "english": "Title 3",
-    "translation": "Tiêu đề 3"
+    "translation": null
   },
   "components.Home.factoids.3.message": {
     "english": "more text will go here",
-    "translation": "nhiều văn bản sẽ đến đây"
-  },
-  "components.Contact.fields.interest.options.information": {
-    "english": "Request more information",
-    "translation": "Yêu cầu thêm thông tin"
-  },
-  "components.Contact.getInvolved.header": {
-    "english": "Get Involved",
-    "translation": "Tham gia"
-  },
-  "components.Contact.workingForCensus.header": {
-    "english": "Interested in working for the Census?",
-    "translation": "Quan tâm đến việc làm cho Tổng điều tra?"
-  },
-  "components.Contact.workingForCensus": {
-    "english": "Find more information {link}",
-    "translation": "Tìm thêm thông tin {link}"
-  },
-  "components.Contact.workingForCensus.link": {
-    "english": "here",
-    "translation": "đây"
-  },
-  "components.Contact.needMoreInformation": {
-    "english": "Need more information?",
-    "translation": "Cần thêm thông tin chứ?"
-  },
-  "components.Contact.visitFaq": {
-    "english": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days.",
-    "translation": "Truy cập {link} của chúng tôi hoặc gửi câu hỏi của bạn và nhà tổ chức Điều tra dân số San Jose sẽ liên lạc lại với bạn trong vòng 2 ngày làm việc."
-  },
-  "components.Contact.visitFaq.link": {
-    "english": "FAQ",
-    "translation": "Câu hỏi thường gặp"
-  },
-  "components.Contact.form.title": {
-    "english": "Contact Form",
-    "translation": "Mâu liên hệ"
-  },
-  "components.Contact.optional": {
-    "english": "Optional",
-    "translation": "Không bắt buộc"
-  },
-  "components.SampleCenus.title": {
-    "english": "Preview and learn more about each question on the census",
-    "translation": "Xem trước và tìm hiểu thêm về từng câu hỏi trong cuộc điều tra dân số"
-  },
-  "components.SampleCenus.subtitle": {
-    "english": "Learn how to answer, how that info is used, and why it's important to answer",
-    "translation": "Tìm hiểu cách trả lời, cách sử dụng thông tin đó và tại sao cần trả lời"
-  },
-  "email.messages.confirmation.greeting": {
-    "english": "Hi {name}",
-    "translation": "Xin chào tên}"
-  },
-  "email.messages.confirmation.thankYou": {
-    "english": "Thank you for your interest in the 2020 Census effort in San Jose.",
-    "translation": "Cảm ơn bạn đã quan tâm đến nỗ lực Điều tra dân số năm 2020 tại San Jose."
-  },
-  "email.messages.confirmation.usersMessageIntro": {
-    "english": "The following message was sent by you to the City of San Jose Census Office:",
-    "translation": "Tin nhắn sau đây được bạn gửi đến Văn phòng điều tra dân số thành phố San Jose:"
-  },
-  "email.messages.confirmation.interestsHeader": {
-    "english": "I have an interest in:",
-    "translation": "Tôi có hứng thú với:"
-  },
-  "email.messages.confirmation.commentsHeader": {
-    "english": "Additional comments:",
-    "translation": "Ý kiến khác:"
-  },
-  "email.messages.confirmation.conclusion": {
-    "english": "Thank you again for your interest. Someone will respond back to you within two business days.",
-    "translation": "Cảm ơn bạn một lần nữa vì sự quan tâm của bạn. Ai đó sẽ trả lời bạn trong vòng hai ngày làm việc."
-  },
-  "email.messages.confirmation.signature": {
-    "english": "City of San Jose 2020 Census Office",
-    "translation": "Văn phòng điều tra dân số thành phố San Jose 2020"
-  },
-  "mail.messages.confirmation.subject": {
-    "english": "Thank you for contacting the San Jose Census Department",
-    "translation": "Cảm ơn bạn đã liên hệ với Cục điều tra dân số San Jose"
+    "translation": null
   }
 }

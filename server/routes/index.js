@@ -12,7 +12,9 @@ router.use('/api', require('./api'));
 // development uses webpack-dev-middleware to serve
 if (!Config.app.isDev) {
   // Serve bundle etc.
-  router.use(express.static(build));
+  router.use(express.static(
+    build
+  ));
 
   const indexContent = readFile(path.join(build, 'index.html'));
 

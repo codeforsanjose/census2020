@@ -25,18 +25,18 @@
   },
   "components.Contact.fields.interest": {
     "english": "I would like to:",
-    "translation": "Me gustaría:"
+    "translation": null
   },
   "components.Contact.fields.interest.options.volunteer": {
-    "english": "Volunteer to help",
-    "translation": "Voluntario para ayudar"
+    "english": "Volunteer",
+    "translation": "Ofrecerse"
   },
   "components.Contact.fields.interest.options.workForCensus": {
     "english": "Work for Census2020",
-    "translation": "Trabajar para el censo2020"
+    "translation": "Trabajo para el censo"
   },
   "components.Contact.fields.interest.options.requestPresentation": {
-    "english": "Request a presentation",
+    "english": "Request presentation",
     "translation": "Solicitar una presentación"
   },
   "components.Contact.fields.interest.options.other": {
@@ -49,11 +49,11 @@
   },
   "navigation.links.home": {
     "english": "Home",
-    "translation": "Casa"
+    "translation": "Página de inicio"
   },
   "navigation.links.contact": {
     "english": "Get Involved",
-    "translation": "Involucrarse"
+    "translation": "Pagina de contacto"
   },
   "components.Contact.submitButton": {
     "english": "Submit",
@@ -61,19 +61,19 @@
   },
   "components.Contact.submitSuccessToast": {
     "english": "Your request for information has been submitted",
-    "translation": "Su solicitud de información ha sido enviada"
+    "translation": "Su solicitud de información ha sido enviada."
   },
   "components.FAQ.header": {
     "english": "FAQ",
-    "translation": "Preguntas más frecuentes"
+    "translation": "Página de preguntas frecuentes"
   },
   "navigation.links.faq": {
     "english": "FAQ",
-    "translation": "Preguntas más frecuentes"
+    "translation": "Página de preguntas frecuentes"
   },
   "navigation.links.sampleCensus": {
     "english": "Sample Survey",
-    "translation": "Encuesta de muestra"
+    "translation": "Censo de muestra"
   },
   "components.SampleCensus.header": {
     "english": "Sample Census",
@@ -85,250 +85,170 @@
   },
   "components.SampleCensus.form.preliminary-instructions.question1.header": {
     "english": "Before you answer Question 1, count the people living in this house, apartment, or mobile home using our guidelines.",
-    "translation": "Antes de contestar la pregunta 1, cuente las personas que viven en esta casa, departamento o casa móvil siguiendo nuestras pautas."
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.question1.count-all-people": {
     "english": "Count all people, including babies, who live and sleep here most of the time.",
-    "translation": "Cuente a todas las personas, incluidos los bebés, que viven y duermen aquí la mayor parte del tiempo."
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.question1.if-no-one-lives-here": {
     "english": "If no one lives and sleeps at this address most of the time, go online at {websiteUrl} or call the number on page 8",
-    "translation": "Si nadie vive y duerme en esta dirección la mayor parte del tiempo, ingrese en línea en {websiteUrl} o llame al número en la página 8"
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.header": {
     "english": "The census must also include people without a permanent place to live, so:",
-    "translation": "El censo también debe incluir personas sin un lugar permanente para vivir, por lo que:"
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.include": {
     "english": "If someone who does not have a permanent place to live is staying here on April 1, 2020, count that person.",
-    "translation": "Si alguien que no tiene un lugar permanente para vivir se queda aquí el 1 de abril de 2020, cuente a esa persona."
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.header": {
     "english": "The Census Bureau also conducts counts in institutions and other places, so:",
-    "translation": "La Oficina del Censo también realiza recuentos en instituciones y otros lugares, por lo que:"
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.college-or-armed-forces": {
     "english": "Do not count anyone living away from here, either at college or in the Armed Forces.",
-    "translation": "No cuente a nadie que viva fuera de aquí, ya sea en la universidad o en las Fuerzas Armadas."
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.prison": {
     "english": "Do not count anyone in a nursing home, jail, prison, detention facility, etc., on April 1, 2020.",
-    "translation": "No cuente a nadie en un hogar de ancianos, cárcel, prisión, centro de detención, etc., el 1 de abril de 2020."
+    "translation": null
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.even-if-they-return": {
     "english": "Leave these people off your questionnaire, even if they will return to live here after they leave college, the nursing home, the military, jail, etc. Otherwise, they may be counted twice.",
-    "translation": "Deje a estas personas fuera de su cuestionario, incluso si volverán a vivir aquí después de dejar la universidad, el hogar de ancianos, el ejército, la cárcel, etc. De lo contrario, se les puede contar dos veces."
+    "translation": null
   },
   "components.SampleCensus.form.question1.header": {
     "english": "How many people were living or staying in this house,apartment, or mobile home on April 1, 2020?",
-    "translation": "¿Cuántas personas vivían o se hospedaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
+    "translation": null
   },
   "components.SampleCensus.form.question1.input-label": {
     "english": "Number of people",
-    "translation": "Número de personas"
+    "translation": null
   },
   "components.SampleCensus.form.question2.header": {
     "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
-    "translation": "¿Hubo personas adicionales que se quedaron aquí el 1 de abril de 2020 que no incluyó en la Pregunta 1?"
+    "translation": null
   },
   "components.SampleCensus.form.question2.mark-all": {
     "english": "Mark {markBoxImage} all that apply",
-    "translation": "Marque {markBoxImage} todo lo que corresponda"
+    "translation": null
   },
   "components.SampleCensus.form.question2.fields.related-children": {
     "english": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children",
-    "translation": "Hijos, relacionados o no relacionados, como recién nacidos, nietos o hijos adoptivos."
+    "translation": null
   },
   "components.SampleCensus.form.question2.fields.related-adults": {
     "english": "Relatives, such as adult children, cousins, or in-laws",
-    "translation": "Familiares, como hijos adultos, primos o suegros"
+    "translation": null
   },
   "components.SampleCensus.form.question2.fields.nonrelatives": {
     "english": "Nonrelatives, such as roommates or live-in babysitters",
-    "translation": "No parientes, como compañeros de cuarto o niñeras que viven"
+    "translation": null
   },
   "components.SampleCensus.form.question2.fields.staying-temporarily": {
     "english": "People staying here temporarily",
-    "translation": "Personas que se quedan aquí temporalmente"
+    "translation": null
   },
   "components.SampleCensus.form.question2.fields.no-additional": {
     "english": "No additional people",
-    "translation": "No hay personas adicionales"
+    "translation": null
   },
   "components.SampleCensus.form.question3.header": {
     "english": "Is this house, apartment, or mobile home",
-    "translation": "¿Es esta casa, apartamento o casa móvil?"
+    "translation": null
   },
   "components.SampleCensus.form.markOne": {
     "english": "Mark {markBoxImage} ONE box",
-    "translation": "Marque {markBoxImage} UNA caja"
+    "translation": null
   },
   "components.SampleCensus.form.question3.fields.mortgage-or-loan": {
     "english": "Owned by you or someone in this household with a mortgage or loan? Include home equity loans.",
-    "translation": "¿Es propiedad de usted o alguien en este hogar con una hipoteca o préstamo? Incluye préstamos con garantía hipotecaria."
+    "translation": null
   },
   "components.SampleCensus.form.question3.fields.without-mortgage-or-loan": {
     "english": "Owned by you or someone in this household free and clear (without a mortgage or loan)?",
-    "translation": "¿Es propiedad suya o de alguien en este hogar de forma gratuita y clara (sin una hipoteca o préstamo)?"
+    "translation": null
   },
   "components.SampleCensus.form.question3.fields.rented": {
     "english": "Rented?",
-    "translation": "¿Alquilado?"
+    "translation": null
   },
   "components.SampleCensus.form.question3.fields.occupied-without-rent": {
     "english": "Occupied without payment of rent?",
-    "translation": "¿Ocupado sin pago de alquiler?"
+    "translation": null
   },
   "components.SampleCensus.form.mark-all": {
     "english": "Mark {markBoxImage} all that apply",
-    "translation": "Marque {markBoxImage} todo lo que corresponda"
+    "translation": null
   },
   "components.SampleCensus.form.question4.header": {
     "english": "What is your telephone number?",
-    "translation": "¿Cuál es tu número de teléfono?"
+    "translation": null
   },
   "components.SampleCensus.form.question4.header.phone-disclaimer": {
     "english": "We will only contact you if needed for official Census Bureau business.",
-    "translation": "Solo nos comunicaremos con usted si es necesario para asuntos oficiales de la Oficina del Censo."
+    "translation": null
   },
   "components.SampleCensus.form.question4.field.label": {
     "english": "Telephone Number",
-    "translation": "Número de teléfono"
+    "translation": null
   },
   "components.Contact.fields.firstName": {
     "english": "First Name",
-    "translation": "Nombre de pila"
+    "translation": null
   },
   "components.Contact.fields.lastName": {
     "english": "Last Name",
-    "translation": "Apellido"
+    "translation": null
   },
   "components.Footer.contactUs.header": {
     "english": "Contact Us",
-    "translation": "Contáctenos"
+    "translation": null
   },
   "components.Footer.links.takeTheCensus": {
     "english": "Take the Census",
-    "translation": "Haz el censo"
+    "translation": null
   },
   "components.Footer.links.faq": {
     "english": "FAQ",
-    "translation": "Preguntas más frecuentes"
+    "translation": null
   },
   "components.Footer.links.sampleSurvey": {
     "english": "Sample Survey",
-    "translation": "Encuesta de muestra"
+    "translation": null
   },
   "components.Footer.links.contact": {
     "english": "Get Involved",
-    "translation": "Involucrarse"
+    "translation": null
   },
   "components.DetailViewContainer.header": {
     "english": "Everyone matters",
-    "translation": "Todos importan"
+    "translation": null
   },
   "components.DetailViewContainer.message": {
     "english": "Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur in exercitation voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.\nAdipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat.",
-    "translation": "Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur en ejercicio voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.\nAdipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat."
+    "translation": null
   },
   "components.Home.factoids.readyToTakeCensus.title": {
     "english": "Ready to take the census?",
-    "translation": "Listo para hacer el censo?"
+    "translation": null
   },
   "components.Home.factoids.readyToTakeCensus.message": {
     "english": "a whole bunch of text and things here",
-    "translation": "un montón de texto y cosas aquí"
+    "translation": null
   },
   "components.Home.factoids.qr-code.title": {
     "english": "Learn About the Census From Your Phone",
-    "translation": "Aprenda sobre el censo desde su teléfono"
+    "translation": null
   },
   "components.Home.factoids.3.title": {
     "english": "Title 3",
-    "translation": "Título 3"
+    "translation": null
   },
   "components.Home.factoids.3.message": {
     "english": "more text will go here",
-    "translation": "más texto irá aquí"
-  },
-  "components.Contact.fields.interest.options.information": {
-    "english": "Request more information",
-    "translation": "Pida mas información"
-  },
-  "components.Contact.getInvolved.header": {
-    "english": "Get Involved",
-    "translation": "Involucrarse"
-  },
-  "components.Contact.workingForCensus.header": {
-    "english": "Interested in working for the Census?",
-    "translation": "¿Interesado en trabajar para el Censo?"
-  },
-  "components.Contact.workingForCensus": {
-    "english": "Find more information {link}",
-    "translation": "Encuentra más información {link}"
-  },
-  "components.Contact.workingForCensus.link": {
-    "english": "here",
-    "translation": "aquí"
-  },
-  "components.Contact.needMoreInformation": {
-    "english": "Need more information?",
-    "translation": "¿Necesitas más información?"
-  },
-  "components.Contact.visitFaq": {
-    "english": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days.",
-    "translation": "Visite nuestro {link} o envíe su pregunta y un organizador del Censo de San José se comunicará con usted dentro de 2 días hábiles."
-  },
-  "components.Contact.visitFaq.link": {
-    "english": "FAQ",
-    "translation": "Preguntas más frecuentes"
-  },
-  "components.Contact.form.title": {
-    "english": "Contact Form",
-    "translation": "Formulario de contacto"
-  },
-  "components.Contact.optional": {
-    "english": "Optional",
-    "translation": "Opcional"
-  },
-  "components.SampleCenus.title": {
-    "english": "Preview and learn more about each question on the census",
-    "translation": "Obtenga una vista previa y aprenda más sobre cada pregunta en el censo"
-  },
-  "components.SampleCenus.subtitle": {
-    "english": "Learn how to answer, how that info is used, and why it's important to answer",
-    "translation": "Aprenda cómo responder, cómo se usa esa información y por qué es importante responder"
-  },
-  "email.messages.confirmation.greeting": {
-    "english": "Hi {name}",
-    "translation": "Nombre Hola}"
-  },
-  "email.messages.confirmation.thankYou": {
-    "english": "Thank you for your interest in the 2020 Census effort in San Jose.",
-    "translation": "Gracias por su interés en el esfuerzo del Censo 2020 en San José."
-  },
-  "email.messages.confirmation.usersMessageIntro": {
-    "english": "The following message was sent by you to the City of San Jose Census Office:",
-    "translation": "Usted envió el siguiente mensaje a la Oficina del Censo de la Ciudad de San José:"
-  },
-  "email.messages.confirmation.interestsHeader": {
-    "english": "I have an interest in:",
-    "translation": "Tengo interés en:"
-  },
-  "email.messages.confirmation.commentsHeader": {
-    "english": "Additional comments:",
-    "translation": "Comentarios adicionales:"
-  },
-  "email.messages.confirmation.conclusion": {
-    "english": "Thank you again for your interest. Someone will respond back to you within two business days.",
-    "translation": "Gracias otra vez por su interés. Alguien le responderá dentro de dos días hábiles."
-  },
-  "email.messages.confirmation.signature": {
-    "english": "City of San Jose 2020 Census Office",
-    "translation": "Oficina del Censo de la Ciudad de San José 2020"
-  },
-  "mail.messages.confirmation.subject": {
-    "english": "Thank you for contacting the San Jose Census Department",
-    "translation": "Gracias por contactar al Departamento del Censo de San José."
+    "translation": null
   }
 }
