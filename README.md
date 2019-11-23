@@ -66,7 +66,7 @@ npm start
 
 This project supports internationalization (translating text and formatting numbers and dates for different languages and cultures). See the [wiki page](https://github.com/codeforsanjose/census2020/wiki/Internationalization-(i18n)) for an in-depth description of how this works.
 
-To aid development, there is a script you can run to automatically translate text using Google Translate. To use this, you will need to provide credentials for a Google Cloud API Project. See [here](https://cloud.google.com/docs/authentication/production#providing_credentials_to_your_application) for instructions on how to set it up; you can set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable in your .env file for convenience.
+To aid development, there is a script you can run to automatically translate text using Google Translate. To use this, you will need to provide credentials for a Google Cloud API Project. See [here](https://cloud.google.com/docs/authentication/production#providing_credentials_to_your_application) for instructions on how to set it up; you can set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable in your .env file for convenience. Once that's done, run `node i18n/translate-strings.js`.
 
 Note that this automatic translation is intended *only* for development purposes; it is not guaranteed to be completely accurate, and will likely result in some incorrect translations. For deployment to a production version, use an actual, human translator.
 
