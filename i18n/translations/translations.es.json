@@ -25,7 +25,7 @@
   },
   "components.Contact.fields.interest": {
     "english": "I would like to:",
-    "translation": null
+    "translation": "Me gustaría:"
   },
   "components.Contact.fields.interest.options.volunteer": {
     "english": "Volunteer",
@@ -85,170 +85,170 @@
   },
   "components.SampleCensus.form.preliminary-instructions.question1.header": {
     "english": "Before you answer Question 1, count the people living in this house, apartment, or mobile home using our guidelines.",
-    "translation": null
+    "translation": "Antes de contestar la pregunta 1, cuente las personas que viven en esta casa, departamento o casa móvil siguiendo nuestras pautas."
   },
   "components.SampleCensus.form.preliminary-instructions.question1.count-all-people": {
     "english": "Count all people, including babies, who live and sleep here most of the time.",
-    "translation": null
+    "translation": "Cuente a todas las personas, incluidos los bebés, que viven y duermen aquí la mayor parte del tiempo."
   },
   "components.SampleCensus.form.preliminary-instructions.question1.if-no-one-lives-here": {
     "english": "If no one lives and sleeps at this address most of the time, go online at {websiteUrl} or call the number on page 8",
-    "translation": null
+    "translation": "Si nadie vive y duerme en esta dirección la mayor parte del tiempo, ingrese en línea en {websiteUrl} o llame al número en la página 8"
   },
   "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.header": {
     "english": "The census must also include people without a permanent place to live, so:",
-    "translation": null
+    "translation": "El censo también debe incluir personas sin un lugar permanente para vivir, por lo que:"
   },
   "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.include": {
     "english": "If someone who does not have a permanent place to live is staying here on April 1, 2020, count that person.",
-    "translation": null
+    "translation": "Si alguien que no tiene un lugar permanente para vivir se queda aquí el 1 de abril de 2020, cuente a esa persona."
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.header": {
     "english": "The Census Bureau also conducts counts in institutions and other places, so:",
-    "translation": null
+    "translation": "La Oficina del Censo también realiza recuentos en instituciones y otros lugares, por lo que:"
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.college-or-armed-forces": {
     "english": "Do not count anyone living away from here, either at college or in the Armed Forces.",
-    "translation": null
+    "translation": "No cuente a nadie que viva fuera de aquí, ya sea en la universidad o en las Fuerzas Armadas."
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.prison": {
     "english": "Do not count anyone in a nursing home, jail, prison, detention facility, etc., on April 1, 2020.",
-    "translation": null
+    "translation": "No cuente a nadie en un hogar de ancianos, cárcel, prisión, centro de detención, etc., el 1 de abril de 2020."
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.even-if-they-return": {
     "english": "Leave these people off your questionnaire, even if they will return to live here after they leave college, the nursing home, the military, jail, etc. Otherwise, they may be counted twice.",
-    "translation": null
+    "translation": "Deje a estas personas fuera de su cuestionario, incluso si volverán a vivir aquí después de dejar la universidad, el hogar de ancianos, el ejército, la cárcel, etc. De lo contrario, se les puede contar dos veces."
   },
   "components.SampleCensus.form.question1.header": {
     "english": "How many people were living or staying in this house,apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "¿Cuántas personas vivían o se hospedaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
   },
   "components.SampleCensus.form.question1.input-label": {
     "english": "Number of people",
-    "translation": null
+    "translation": "Número de personas"
   },
   "components.SampleCensus.form.question2.header": {
     "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
-    "translation": null
+    "translation": "¿Hubo personas adicionales que se quedaron aquí el 1 de abril de 2020 que no incluyó en la Pregunta 1?"
   },
   "components.SampleCensus.form.question2.mark-all": {
     "english": "Mark {markBoxImage} all that apply",
-    "translation": null
+    "translation": "Marque {markBoxImage} todo lo que corresponda"
   },
   "components.SampleCensus.form.question2.fields.related-children": {
     "english": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children",
-    "translation": null
+    "translation": "Hijos, relacionados o no relacionados, como recién nacidos, nietos o hijos adoptivos."
   },
   "components.SampleCensus.form.question2.fields.related-adults": {
     "english": "Relatives, such as adult children, cousins, or in-laws",
-    "translation": null
+    "translation": "Familiares, como hijos adultos, primos o suegros"
   },
   "components.SampleCensus.form.question2.fields.nonrelatives": {
     "english": "Nonrelatives, such as roommates or live-in babysitters",
-    "translation": null
+    "translation": "No parientes, como compañeros de cuarto o niñeras que viven"
   },
   "components.SampleCensus.form.question2.fields.staying-temporarily": {
     "english": "People staying here temporarily",
-    "translation": null
+    "translation": "Personas que se quedan aquí temporalmente"
   },
   "components.SampleCensus.form.question2.fields.no-additional": {
     "english": "No additional people",
-    "translation": null
+    "translation": "No hay personas adicionales"
   },
   "components.SampleCensus.form.question3.header": {
     "english": "Is this house, apartment, or mobile home",
-    "translation": null
+    "translation": "¿Es esta casa, apartamento o casa móvil?"
   },
   "components.SampleCensus.form.markOne": {
     "english": "Mark {markBoxImage} ONE box",
-    "translation": null
+    "translation": "Marque {markBoxImage} UNA caja"
   },
   "components.SampleCensus.form.question3.fields.mortgage-or-loan": {
     "english": "Owned by you or someone in this household with a mortgage or loan? Include home equity loans.",
-    "translation": null
+    "translation": "¿Es propiedad de usted o alguien en este hogar con una hipoteca o préstamo? Incluye préstamos con garantía hipotecaria."
   },
   "components.SampleCensus.form.question3.fields.without-mortgage-or-loan": {
     "english": "Owned by you or someone in this household free and clear (without a mortgage or loan)?",
-    "translation": null
+    "translation": "¿Es propiedad suya o de alguien en este hogar de forma gratuita y clara (sin una hipoteca o préstamo)?"
   },
   "components.SampleCensus.form.question3.fields.rented": {
     "english": "Rented?",
-    "translation": null
+    "translation": "¿Alquilado?"
   },
   "components.SampleCensus.form.question3.fields.occupied-without-rent": {
     "english": "Occupied without payment of rent?",
-    "translation": null
+    "translation": "¿Ocupado sin pago de alquiler?"
   },
   "components.SampleCensus.form.mark-all": {
     "english": "Mark {markBoxImage} all that apply",
-    "translation": null
+    "translation": "Marque {markBoxImage} todo lo que corresponda"
   },
   "components.SampleCensus.form.question4.header": {
     "english": "What is your telephone number?",
-    "translation": null
+    "translation": "¿Cuál es tu número de teléfono?"
   },
   "components.SampleCensus.form.question4.header.phone-disclaimer": {
     "english": "We will only contact you if needed for official Census Bureau business.",
-    "translation": null
+    "translation": "Solo nos comunicaremos con usted si es necesario para asuntos oficiales de la Oficina del Censo."
   },
   "components.SampleCensus.form.question4.field.label": {
     "english": "Telephone Number",
-    "translation": null
+    "translation": "Número de teléfono"
   },
   "components.Contact.fields.firstName": {
     "english": "First Name",
-    "translation": null
+    "translation": "Nombre de pila"
   },
   "components.Contact.fields.lastName": {
     "english": "Last Name",
-    "translation": null
+    "translation": "Apellido"
   },
   "components.Footer.contactUs.header": {
     "english": "Contact Us",
-    "translation": null
+    "translation": "Contáctenos"
   },
   "components.Footer.links.takeTheCensus": {
     "english": "Take the Census",
-    "translation": null
+    "translation": "Haz el censo"
   },
   "components.Footer.links.faq": {
     "english": "FAQ",
-    "translation": null
+    "translation": "Preguntas más frecuentes"
   },
   "components.Footer.links.sampleSurvey": {
     "english": "Sample Survey",
-    "translation": null
+    "translation": "Encuesta de muestra"
   },
   "components.Footer.links.contact": {
     "english": "Get Involved",
-    "translation": null
+    "translation": "Involucrarse"
   },
   "components.DetailViewContainer.header": {
     "english": "Everyone matters",
-    "translation": null
+    "translation": "Todos importan"
   },
   "components.DetailViewContainer.message": {
     "english": "Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur in exercitation voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.\nAdipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat.",
-    "translation": null
+    "translation": "Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur en ejercicio voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.\nAdipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat."
   },
   "components.Home.factoids.readyToTakeCensus.title": {
     "english": "Ready to take the census?",
-    "translation": null
+    "translation": "Listo para hacer el censo?"
   },
   "components.Home.factoids.readyToTakeCensus.message": {
     "english": "a whole bunch of text and things here",
-    "translation": null
+    "translation": "un montón de texto y cosas aquí"
   },
   "components.Home.factoids.qr-code.title": {
     "english": "Learn About the Census From Your Phone",
-    "translation": null
+    "translation": "Aprenda sobre el censo desde su teléfono"
   },
   "components.Home.factoids.3.title": {
     "english": "Title 3",
-    "translation": null
+    "translation": "Título 3"
   },
   "components.Home.factoids.3.message": {
     "english": "more text will go here",
-    "translation": null
+    "translation": "más texto irá aquí"
   }
 }

@@ -25,7 +25,7 @@
   },
   "components.Contact.fields.interest": {
     "english": "I would like to:",
-    "translation": null
+    "translation": "Tôi muôn:"
   },
   "components.Contact.fields.interest.options.volunteer": {
     "english": "Volunteer",
@@ -85,170 +85,170 @@
   },
   "components.SampleCensus.form.preliminary-instructions.question1.header": {
     "english": "Before you answer Question 1, count the people living in this house, apartment, or mobile home using our guidelines.",
-    "translation": null
+    "translation": "Trước khi bạn trả lời Câu hỏi 1, hãy đếm những người sống trong ngôi nhà, căn hộ hoặc nhà di động này theo hướng dẫn của chúng tôi."
   },
   "components.SampleCensus.form.preliminary-instructions.question1.count-all-people": {
     "english": "Count all people, including babies, who live and sleep here most of the time.",
-    "translation": null
+    "translation": "Đếm tất cả mọi người, kể cả trẻ sơ sinh, những người sống và ngủ ở đây hầu hết thời gian."
   },
   "components.SampleCensus.form.preliminary-instructions.question1.if-no-one-lives-here": {
     "english": "If no one lives and sleeps at this address most of the time, go online at {websiteUrl} or call the number on page 8",
-    "translation": null
+    "translation": "Nếu không có ai sống và ngủ tại địa chỉ này hầu hết thời gian, hãy truy cập trực tuyến tại {websiteUrl} hoặc gọi số ở trang 8"
   },
   "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.header": {
     "english": "The census must also include people without a permanent place to live, so:",
-    "translation": null
+    "translation": "Điều tra dân số cũng phải bao gồm những người không có nơi ở cố định, vì vậy:"
   },
   "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.include": {
     "english": "If someone who does not have a permanent place to live is staying here on April 1, 2020, count that person.",
-    "translation": null
+    "translation": "Nếu ai đó không có nơi ở cố định sẽ ở lại đây vào ngày 1 tháng 4 năm 2020, hãy tính người đó."
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.header": {
     "english": "The Census Bureau also conducts counts in institutions and other places, so:",
-    "translation": null
+    "translation": "Cục điều tra dân số cũng tiến hành đếm trong các tổ chức và những nơi khác, vì vậy:"
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.college-or-armed-forces": {
     "english": "Do not count anyone living away from here, either at college or in the Armed Forces.",
-    "translation": null
+    "translation": "Đừng đếm bất cứ ai sống xa đây, ở trường đại học hoặc trong Lực lượng Vũ trang."
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.prison": {
     "english": "Do not count anyone in a nursing home, jail, prison, detention facility, etc., on April 1, 2020.",
-    "translation": null
+    "translation": "Không được tính bất cứ ai trong viện dưỡng lão, nhà tù, nhà tù, trại giam, v.v., vào ngày 1 tháng 4 năm 2020."
   },
   "components.SampleCensus.form.preliminary-instructions.dont-include-absent.even-if-they-return": {
     "english": "Leave these people off your questionnaire, even if they will return to live here after they leave college, the nursing home, the military, jail, etc. Otherwise, they may be counted twice.",
-    "translation": null
+    "translation": "Để những người này rời khỏi bảng câu hỏi của bạn, ngay cả khi họ sẽ trở về sống ở đây sau khi họ rời trường đại học, viện dưỡng lão, quân đội, nhà tù, v.v. Nếu không, họ có thể được tính hai lần."
   },
   "components.SampleCensus.form.question1.header": {
     "english": "How many people were living or staying in this house,apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.form.question1.input-label": {
     "english": "Number of people",
-    "translation": null
+    "translation": "Số người"
   },
   "components.SampleCensus.form.question2.header": {
     "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
-    "translation": null
+    "translation": "Có bất kỳ người nào ở lại đây vào ngày 1 tháng 4 năm 2020 mà bạn không bao gồm trong Câu hỏi 1 không?"
   },
   "components.SampleCensus.form.question2.mark-all": {
     "english": "Mark {markBoxImage} all that apply",
-    "translation": null
+    "translation": "Đánh dấu {markBoxImage} tất cả những gì áp dụng"
   },
   "components.SampleCensus.form.question2.fields.related-children": {
     "english": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children",
-    "translation": null
+    "translation": "Trẻ em, có liên quan hoặc không liên quan, chẳng hạn như trẻ sơ sinh, cháu, hoặc con nuôi"
   },
   "components.SampleCensus.form.question2.fields.related-adults": {
     "english": "Relatives, such as adult children, cousins, or in-laws",
-    "translation": null
+    "translation": "Người thân, chẳng hạn như trẻ em trưởng thành, anh em họ, hoặc ở rể"
   },
   "components.SampleCensus.form.question2.fields.nonrelatives": {
     "english": "Nonrelatives, such as roommates or live-in babysitters",
-    "translation": null
+    "translation": "Không liên quan, chẳng hạn như bạn cùng phòng hoặc người giữ trẻ sống"
   },
   "components.SampleCensus.form.question2.fields.staying-temporarily": {
     "english": "People staying here temporarily",
-    "translation": null
+    "translation": "Người ở tạm"
   },
   "components.SampleCensus.form.question2.fields.no-additional": {
     "english": "No additional people",
-    "translation": null
+    "translation": "Không có thêm người"
   },
   "components.SampleCensus.form.question3.header": {
     "english": "Is this house, apartment, or mobile home",
-    "translation": null
+    "translation": "Đây là nhà, căn hộ, hay nhà di động"
   },
   "components.SampleCensus.form.markOne": {
     "english": "Mark {markBoxImage} ONE box",
-    "translation": null
+    "translation": "Đánh dấu {markBoxImage} MỘT hộp"
   },
   "components.SampleCensus.form.question3.fields.mortgage-or-loan": {
     "english": "Owned by you or someone in this household with a mortgage or loan? Include home equity loans.",
-    "translation": null
+    "translation": "Thuộc sở hữu của bạn hoặc ai đó trong hộ gia đình này có thế chấp hoặc vay? Bao gồm các khoản vay vốn chủ sở hữu nhà."
   },
   "components.SampleCensus.form.question3.fields.without-mortgage-or-loan": {
     "english": "Owned by you or someone in this household free and clear (without a mortgage or loan)?",
-    "translation": null
+    "translation": "Thuộc sở hữu của bạn hoặc ai đó trong hộ gia đình này miễn phí và rõ ràng (không có thế chấp hoặc khoản vay)?"
   },
   "components.SampleCensus.form.question3.fields.rented": {
     "english": "Rented?",
-    "translation": null
+    "translation": "Cho thuê?"
   },
   "components.SampleCensus.form.question3.fields.occupied-without-rent": {
     "english": "Occupied without payment of rent?",
-    "translation": null
+    "translation": "Chiếm dụng mà không trả tiền thuê nhà?"
   },
   "components.SampleCensus.form.mark-all": {
     "english": "Mark {markBoxImage} all that apply",
-    "translation": null
+    "translation": "Đánh dấu {markBoxImage} tất cả những gì áp dụng"
   },
   "components.SampleCensus.form.question4.header": {
     "english": "What is your telephone number?",
-    "translation": null
+    "translation": "Số điện thoại của bạn là gì?"
   },
   "components.SampleCensus.form.question4.header.phone-disclaimer": {
     "english": "We will only contact you if needed for official Census Bureau business.",
-    "translation": null
+    "translation": "Chúng tôi sẽ chỉ liên lạc với bạn nếu cần cho việc kinh doanh của Cục điều tra dân số chính thức."
   },
   "components.SampleCensus.form.question4.field.label": {
     "english": "Telephone Number",
-    "translation": null
+    "translation": "Số điện thoại"
   },
   "components.Contact.fields.firstName": {
     "english": "First Name",
-    "translation": null
+    "translation": "Tên đầu tiên"
   },
   "components.Contact.fields.lastName": {
     "english": "Last Name",
-    "translation": null
+    "translation": "Họ"
   },
   "components.Footer.contactUs.header": {
     "english": "Contact Us",
-    "translation": null
+    "translation": "Liên hệ chúng tôi"
   },
   "components.Footer.links.takeTheCensus": {
     "english": "Take the Census",
-    "translation": null
+    "translation": "Tham gia điều tra dân số"
   },
   "components.Footer.links.faq": {
     "english": "FAQ",
-    "translation": null
+    "translation": "Câu hỏi thường gặp"
   },
   "components.Footer.links.sampleSurvey": {
     "english": "Sample Survey",
-    "translation": null
+    "translation": "Khảo sát mẫu"
   },
   "components.Footer.links.contact": {
     "english": "Get Involved",
-    "translation": null
+    "translation": "Tham gia"
   },
   "components.DetailViewContainer.header": {
     "english": "Everyone matters",
-    "translation": null
+    "translation": "Mọi người quan trọng"
   },
   "components.DetailViewContainer.message": {
     "english": "Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur in exercitation voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.\nAdipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat.",
-    "translation": null
+    "translation": "Ea irure pariatur aliqua minim cillum consectetur result rep rependerenderit ngồi aliqua sit eiusmod proident. Hàng hóa e pariatur trong tập thể dục voluptate proident anim nisi tối thiểu. Nisi aliqua ipsum non elit nulla pariatur elit tập thể dục enim mollit Vendo incididunt incididunt. Ngoại trừ amet esse sunt velit ut nulla ipsum ea.\nAdipisizing ullamco labis cillum dolor eiusmod nulla Lorem ngồi quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tạm thời lao động eu e hậu quả."
   },
   "components.Home.factoids.readyToTakeCensus.title": {
     "english": "Ready to take the census?",
-    "translation": null
+    "translation": "Sẵn sàng để điều tra dân số?"
   },
   "components.Home.factoids.readyToTakeCensus.message": {
     "english": "a whole bunch of text and things here",
-    "translation": null
+    "translation": "cả đống văn bản và những thứ ở đây"
   },
   "components.Home.factoids.qr-code.title": {
     "english": "Learn About the Census From Your Phone",
-    "translation": null
+    "translation": "Tìm hiểu về điều tra dân số từ điện thoại của bạn"
   },
   "components.Home.factoids.3.title": {
     "english": "Title 3",
-    "translation": null
+    "translation": "Tiêu đề 3"
   },
   "components.Home.factoids.3.message": {
     "english": "more text will go here",
-    "translation": null
+    "translation": "nhiều văn bản sẽ đến đây"
   }
 }
