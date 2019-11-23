@@ -5,10 +5,12 @@ import { FormattedMessage } from 'react-intl';
 import { Carousel } from 'react-responsive-carousel';
 import QRCode from 'qrcode.react';
 
-import lifeAbundant from '../images/lifeAbundant.jpg';
-import sanJoseMural from '../images/sanJoseMural.jpg';
-import muralProject from '../images/muralProject.jpg';
 import sharksMural from '../images/sharksMural.jpg';
+import cityHall from '../images/cityHall.jpg';
+import muralProject from '../images/finishedMuralProject.jpg';
+import sanJoseMural from '../images/newSanJoseMural.jpg';
+import performingArts from '../images/performingArts.jpg';
+import peopleGathering from '../images/peopleGathering.jpg';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './DetailViewContainer.scss';
@@ -19,13 +21,27 @@ const CarouselItem = ({ img }) => (
   >
     <img
       className="c_home__carousel-item__image"
-      src={img}
+      src={img.image}
     />
+    <div className="c_home__overlay">
+      <h1 className="c_home__overlay__tittle">
+        <FormattedMessage
+          id="components.Home.carsouelItem.tittle"
+          defaultMessage="The United States 2020 Census"
+        />
+      </h1>
+      <h1 className="c_home__overlay__message">
+        <FormattedMessage
+          id="components.Home.carsouelItem.message"
+          defaultMessage={img.message}
+        />
+      </h1>
+    </div>
   </div>
 );
 
 CarouselItem.propTypes = {
-  img: PropTypes.string.isRequired
+  img: PropTypes.object.isRequired
 };
 
 const Factoid = ({ title, message }) => (
@@ -105,7 +121,7 @@ export default class DetailViewContainer extends Component {
           autoPlay={true}
           interval={7000}
           transitionTime={1000}>
-          { [lifeAbundant, sanJoseMural, muralProject, sharksMural].map(img => (
+          { [{ image: muralProject, message: 'Learn why everyone counts!' }, { image: sanJoseMural, message: 'When you respond, we all benefit!' }, { image: sharksMural, message: 'Answer online, by phone, or by mail!' }, { image: performingArts, message: 'Your participation affects our congressional representation!' }, { image: peopleGathering, message: 'Easy, quick and confidential!' }, { image: cityHall, message: 'Be counted San Jose!' }].map(img => (
             <CarouselItem key={img} img={img} />
           ))}
         </Carousel>
