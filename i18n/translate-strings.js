@@ -1,21 +1,28 @@
 const path = require('path');
+require('dotenv').config({
+  path: path.resolve(__dirname, '..', '.env')
+});
+/**
+ * Uses Google Translate API to automatically translate strings for i18n.
+ *
+ * NOTE: This should ONLY be used to populate translations for dev
+ * purposes--for actual, production data, use an actual translator.
+ */
+
 const { promisify } = require('util');
 const writeFile = promisify(require('fs').writeFile);
 const { Translate } = require('@google-cloud/translate').v2;
 const { supportedLocales } = require('./supported-locales');
 
 const trans = new Translate({
-  projectId: 'census-2020-1574478662266',
-  keyFilename: path.resolve(__dirname, '..', 'google-api-credentials.json')
 });
 
 const translateText = async (text, language) => {
-  const [translation] = await trans.translate(text, {
+  const [translations] = await trans.translate(text, {
     from: 'en',
     to: language
   });
-
-  return translation;
+  return translations;
 };
 
 const transPromises = [];
@@ -26,17 +33,23 @@ for (const locale of supportedLocales) {
   }
   const translationFilePath = path.join(__dirname, 'translations', `translations.${locale}.json`);
   const messages = require(translationFilePath);
-  const translatedAllPromise = Promise.all(
-    Object.keys(messages).map(
-      (id) => translateText(messages[id].english, locale).then(
-        (translation) => {
-          messages[id].translation = translation;
-        }
-      )
-    )
+  const idsToTranslate = Object.keys(messages).filter(
+    (messageId) => !messages[messageId].translation
   );
+  const messagesToTranslate = idsToTranslate.map(
+    (id) => messages[id].english
+  );
+  if (messagesToTranslate.length === 0) {
+    continue;
+  }
   transPromises.push(
-    translatedAllPromise.then(
+    translateText(messagesToTranslate, locale).then(
+      (translations) => {
+        for (let i = 0; i < idsToTranslate.length; i++) {
+          messages[idsToTranslate[i]].translation = translations[i];
+        }
+      }
+    ).then(
       () => writeFile(translationFilePath, JSON.stringify(messages, null, '  '))
     )
   );
@@ -49,5 +62,6 @@ Promise.all(transPromises).then(
 ).catch(
   (err) => {
     console.error(err);
+    process.exit(1);
   }
 );
