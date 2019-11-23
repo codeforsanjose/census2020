@@ -29,10 +29,10 @@
     align-items: center;
     margin-left: 230px;
   }
-  
+
   &__link {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     margin-right: 40px;
     color: #000000;
     text-transform: uppercase;
@@ -53,7 +53,7 @@
     &:hover,
     &:visited {
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 400;
     }
   }
 
