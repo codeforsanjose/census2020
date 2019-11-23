@@ -39,7 +39,6 @@ for (const locale of supportedLocales) {
   const messagesToTranslate = idsToTranslate.map(
     (id) => messages[id].english
   );
-  console.log(`[${locale}]Translating messages:\n${messagesToTranslate.join('\n')}`);
   transPromises.push(
     translateText(messagesToTranslate, locale).then(
       (translations) => {

@@ -29,35 +29,35 @@
   },
   "components.Contact.fields.interest.options.volunteer": {
     "english": "Volunteer",
-    "translation": "Tình nguyện"
+    "translation": "Tình nguyện"
   },
   "components.Contact.fields.interest.options.workForCensus": {
     "english": "Work for Census2020",
-    "translation": "Làm việc cho Tổng điều tra"
+    "translation": "Làm việc cho điều tra dân số2020"
   },
   "components.Contact.fields.interest.options.requestPresentation": {
     "english": "Request presentation",
-    "translation": "Yêu cầu thuyết trình"
+    "translation": "Yêu cầu trình bày"
   },
   "components.Contact.fields.interest.options.other": {
     "english": "Other",
-    "translation": "Khác"
+    "translation": "Khác"
   },
   "components.Contact.fields.comment": {
     "english": "Comment",
-    "translation": "Chú thích"
+    "translation": "Bình luận"
   },
   "navigation.links.home": {
     "english": "Home",
-    "translation": "Trang chủ"
+    "translation": "Nhà"
   },
   "navigation.links.contact": {
     "english": "Get Involved",
-    "translation": "Trang liên lạc"
+    "translation": "Tham gia"
   },
   "components.Contact.submitButton": {
     "english": "Submit",
-    "translation": "Gửi mẫu"
+    "translation": "Gửi đi"
   },
   "components.Contact.submitSuccessToast": {
     "english": "Your request for information has been submitted",
@@ -65,15 +65,15 @@
   },
   "components.FAQ.header": {
     "english": "FAQ",
-    "translation": "trang faq"
+    "translation": "Câu hỏi thường gặp"
   },
   "navigation.links.faq": {
     "english": "FAQ",
-    "translation": "trang faq"
+    "translation": "Câu hỏi thường gặp"
   },
   "navigation.links.sampleCensus": {
     "english": "Sample Survey",
-    "translation": "Điều tra dân số mẫu"
+    "translation": "Khảo sát mẫu"
   },
   "components.SampleCensus.header": {
     "english": "Sample Census",

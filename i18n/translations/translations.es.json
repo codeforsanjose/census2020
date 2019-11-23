@@ -29,15 +29,15 @@
   },
   "components.Contact.fields.interest.options.volunteer": {
     "english": "Volunteer",
-    "translation": "Ofrecerse"
+    "translation": "Voluntario"
   },
   "components.Contact.fields.interest.options.workForCensus": {
     "english": "Work for Census2020",
-    "translation": "Trabajo para el censo"
+    "translation": "Trabajar para el censo2020"
   },
   "components.Contact.fields.interest.options.requestPresentation": {
     "english": "Request presentation",
-    "translation": "Solicitar una presentación"
+    "translation": "Solicitud de presentación"
   },
   "components.Contact.fields.interest.options.other": {
     "english": "Other",
@@ -49,11 +49,11 @@
   },
   "navigation.links.home": {
     "english": "Home",
-    "translation": "Página de inicio"
+    "translation": "Casa"
   },
   "navigation.links.contact": {
     "english": "Get Involved",
-    "translation": "Pagina de contacto"
+    "translation": "Involucrarse"
   },
   "components.Contact.submitButton": {
     "english": "Submit",
@@ -61,19 +61,19 @@
   },
   "components.Contact.submitSuccessToast": {
     "english": "Your request for information has been submitted",
-    "translation": "Su solicitud de información ha sido enviada."
+    "translation": "Su solicitud de información ha sido enviada"
   },
   "components.FAQ.header": {
     "english": "FAQ",
-    "translation": "Página de preguntas frecuentes"
+    "translation": "Preguntas más frecuentes"
   },
   "navigation.links.faq": {
     "english": "FAQ",
-    "translation": "Página de preguntas frecuentes"
+    "translation": "Preguntas más frecuentes"
   },
   "navigation.links.sampleCensus": {
     "english": "Sample Survey",
-    "translation": "Censo de muestra"
+    "translation": "Encuesta de muestra"
   },
   "components.SampleCensus.header": {
     "english": "Sample Census",
