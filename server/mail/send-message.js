@@ -1,7 +1,10 @@
 const nodemailer = require('nodemailer');
 const debug = require('debug')('census2020:server:mail');
-const { supportedLocaleEnglishNames } = require('../../i18n/supported-locales');
-const { getConfirmationMessage, getConfirmationMessageSubject } = require('./get-mail-body');
+const {
+  getInquiryMessage,
+  getConfirmationMessage,
+  getConfirmationMessageSubject
+} = require('./get-mail-body');
 
 const Config = require('../config');
 
@@ -9,39 +12,6 @@ debug.error = debug;
 debug.log = console.log.bind(console);
 debug.debug = debug.log;
 debug.info = console.info.bind(console);
-
-/**
- * Formats the date into a human-readable string
- *
- * @param {Date} date the date to format
- *
- * @return {string} the formatted date
- */
-const formatDate = (date) => {
-  const year = date.getFullYear();
-  const month = date.getMonth() + 1;
-  const day = date.getDate();
-
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let amPm = 'AM';
-
-  if (hours >= 12) {
-    amPm = 'PM';
-    if (hours > 12) {
-      hours = hours % 12;
-    }
-  }
-
-  if (hours < 10) {
-    hours = '0' + hours;
-  }
-  if (minutes < 10) {
-    minutes = '0' + minutes;
-  }
-
-  return `${month}/${day}/${year} ${hours}:${minutes}${amPm}`;
-};
 
 const getTransporter = () => {
   return nodemailer.createTransport({
@@ -82,52 +52,14 @@ module.exports.sendToCensusDept = async ({
   // Will reject (throw error) if config doesn't work
   await transporter.verify();
 
-  const messageHTML = `<!DOCTYPE html>
-  <html>
-  <body>
-    The following message was submitted via the 2020 Census Get Involved Form:
-
-    <blockquote>
-    Name:
-    <p>
-    ${firstName} ${lastName}
-    </p>
-
-    Email:
-    <p>
-    <a href="mailto:${email}">${email}</a>
-    </p>
-
-    Language:
-    <p>
-    ${supportedLocaleEnglishNames[language] || language}
-    </p>
-
-    Visitor has an interest in:
-    <p>
-    <ul>
-    ${interests.map(
-    (interest) => `<li>${interest}</li>`
-  )}
-    </ul>
-    </p>
-    ${
-  comment
-    ? `
-        Additional comments:
-        <p>
-        ${comment}
-        </p>
-        `
-    : ''
-}
-    </blockquote>
-
-    <p>
-    The visitor is expecting a response within two business days. The response was sent at ${formatDate(new Date())}. Reply back to this email to response to the visitor.
-    </p>
-  </body>
-  </html>`;
+  const messageHTML = getInquiryMessage({
+    language,
+    firstName,
+    lastName,
+    email,
+    interests,
+    comment
+  });
 
   debug('About to send message:', {
     messageHTML
