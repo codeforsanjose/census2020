@@ -36,8 +36,8 @@
   },
   "components.Contact.fields.interest.options.volunteer": {
     "id": "components.Contact.fields.interest.options.volunteer",
-    "description": "'Volunteer' option for the Interest field in the Contact form",
-    "defaultMessage": "Volunteer"
+    "description": "'Volunteer to help' option for the Interest field in the Contact form",
+    "defaultMessage": "Volunteer to help"
   },
   "components.Contact.fields.interest.options.workForCensus": {
     "id": "components.Contact.fields.interest.options.workForCensus",
@@ -46,8 +46,8 @@
   },
   "components.Contact.fields.interest.options.requestPresentation": {
     "id": "components.Contact.fields.interest.options.requestPresentation",
-    "description": "'Request Presentation' option for the Interest field in the Contact form",
-    "defaultMessage": "Request presentation"
+    "description": "'Request a Presentation' option for the Interest field in the Contact form",
+    "defaultMessage": "Request a presentation"
   },
   "components.Contact.fields.interest.options.other": {
     "id": "components.Contact.fields.interest.options.other",
@@ -275,5 +275,88 @@
   "components.Home.factoids.3.message": {
     "id": "components.Home.factoids.3.message",
     "defaultMessage": "more text will go here"
+  },
+  "components.Contact.fields.interest.options.information": {
+    "id": "components.Contact.fields.interest.options.information",
+    "description": "'Request more information' option for the Interest field in the Contact form",
+    "defaultMessage": "Request more information"
+  },
+  "components.Contact.getInvolved.header": {
+    "id": "components.Contact.getInvolved.header",
+    "defaultMessage": "Get Involved"
+  },
+  "components.Contact.workingForCensus.header": {
+    "id": "components.Contact.workingForCensus.header",
+    "defaultMessage": "Interested in working for the Census?"
+  },
+  "components.Contact.workingForCensus": {
+    "id": "components.Contact.workingForCensus",
+    "defaultMessage": "Find more information {link}"
+  },
+  "components.Contact.workingForCensus.link": {
+    "id": "components.Contact.workingForCensus.link",
+    "defaultMessage": "here"
+  },
+  "components.Contact.needMoreInformation": {
+    "id": "components.Contact.needMoreInformation",
+    "defaultMessage": "Need more information?"
+  },
+  "components.Contact.visitFaq": {
+    "id": "components.Contact.visitFaq",
+    "defaultMessage": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days."
+  },
+  "components.Contact.visitFaq.link": {
+    "id": "components.Contact.visitFaq.link",
+    "defaultMessage": "FAQ"
+  },
+  "components.Contact.form.title": {
+    "id": "components.Contact.form.title",
+    "defaultMessage": "Contact Form"
+  },
+  "components.Contact.optional": {
+    "id": "components.Contact.optional",
+    "defaultMessage": "Optional"
+  },
+  "components.SampleCenus.title": {
+    "id": "components.SampleCenus.title",
+    "description": "Sample Census page title",
+    "defaultMessage": "Preview and learn more about each question on the census"
+  },
+  "components.SampleCenus.subtitle": {
+    "id": "components.SampleCenus.subtitle",
+    "description": "Sample Census page subtitle",
+    "defaultMessage": "Learn how to answer, how that info is used, and why it's important to answer"
+  },
+  "email.messages.confirmation.greeting": {
+    "id": "email.messages.confirmation.greeting",
+    "defaultMessage": "Hi {name}"
+  },
+  "email.messages.confirmation.thankYou": {
+    "id": "email.messages.confirmation.thankYou",
+    "defaultMessage": "Thank you for your interest in the 2020 Census effort in San Jose."
+  },
+  "email.messages.confirmation.usersMessageIntro": {
+    "id": "email.messages.confirmation.usersMessageIntro",
+    "defaultMessage": "The following message was sent by you to the City of San Jose Census Office:"
+  },
+  "email.messages.confirmation.interestsHeader": {
+    "id": "email.messages.confirmation.interestsHeader",
+    "defaultMessage": "I have an interest in:"
+  },
+  "email.messages.confirmation.commentsHeader": {
+    "id": "email.messages.confirmation.commentsHeader",
+    "defaultMessage": "Additional comments:"
+  },
+  "email.messages.confirmation.conclusion": {
+    "id": "email.messages.confirmation.conclusion",
+    "defaultMessage": "Thank you again for your interest. Someone will respond back to you within two business days."
+  },
+  "email.messages.confirmation.signature": {
+    "id": "email.messages.confirmation.signature",
+    "defaultMessage": "City of San Jose 2020 Census Office"
+  },
+  "mail.messages.confirmation.subject": {
+    "id": "mail.messages.confirmation.subject",
+    "defaultMessage": "Thank you for contacting the San Jose Census Department"
   }
 }
