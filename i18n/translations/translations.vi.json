@@ -28,16 +28,16 @@
     "translation": "Tôi muôn:"
   },
   "components.Contact.fields.interest.options.volunteer": {
-    "english": "Volunteer to help",
-    "translation": "Tình nguyện giúp"
+    "english": "Volunteer",
+    "translation": "Tình nguyện"
   },
   "components.Contact.fields.interest.options.workForCensus": {
     "english": "Work for Census2020",
     "translation": "Làm việc cho điều tra dân số2020"
   },
   "components.Contact.fields.interest.options.requestPresentation": {
-    "english": "Request a presentation",
-    "translation": "Yêu cầu thuyết trình"
+    "english": "Request presentation",
+    "translation": "Yêu cầu trình bày"
   },
   "components.Contact.fields.interest.options.other": {
     "english": "Other",
@@ -250,85 +250,5 @@
   "components.Home.factoids.3.message": {
     "english": "more text will go here",
     "translation": "nhiều văn bản sẽ đến đây"
-  },
-  "components.Contact.fields.interest.options.information": {
-    "english": "Request more information",
-    "translation": "Yêu cầu thêm thông tin"
-  },
-  "components.Contact.getInvolved.header": {
-    "english": "Get Involved",
-    "translation": "Tham gia"
-  },
-  "components.Contact.workingForCensus.header": {
-    "english": "Interested in working for the Census?",
-    "translation": "Quan tâm đến việc làm cho Tổng điều tra?"
-  },
-  "components.Contact.workingForCensus": {
-    "english": "Find more information {link}",
-    "translation": "Tìm thêm thông tin {link}"
-  },
-  "components.Contact.workingForCensus.link": {
-    "english": "here",
-    "translation": "đây"
-  },
-  "components.Contact.needMoreInformation": {
-    "english": "Need more information?",
-    "translation": "Cần thêm thông tin chứ?"
-  },
-  "components.Contact.visitFaq": {
-    "english": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days.",
-    "translation": "Truy cập {link} của chúng tôi hoặc gửi câu hỏi của bạn và nhà tổ chức Điều tra dân số San Jose sẽ liên lạc lại với bạn trong vòng 2 ngày làm việc."
-  },
-  "components.Contact.visitFaq.link": {
-    "english": "FAQ",
-    "translation": "Câu hỏi thường gặp"
-  },
-  "components.Contact.form.title": {
-    "english": "Contact Form",
-    "translation": "Mâu liên hệ"
-  },
-  "components.Contact.optional": {
-    "english": "Optional",
-    "translation": "Không bắt buộc"
-  },
-  "components.SampleCenus.title": {
-    "english": "Preview and learn more about each question on the census",
-    "translation": "Xem trước và tìm hiểu thêm về từng câu hỏi trong cuộc điều tra dân số"
-  },
-  "components.SampleCenus.subtitle": {
-    "english": "Learn how to answer, how that info is used, and why it's important to answer",
-    "translation": "Tìm hiểu cách trả lời, cách sử dụng thông tin đó và tại sao cần trả lời"
-  },
-  "email.messages.confirmation.greeting": {
-    "english": "Hi {name}",
-    "translation": "Xin chào tên}"
-  },
-  "email.messages.confirmation.thankYou": {
-    "english": "Thank you for your interest in the 2020 Census effort in San Jose.",
-    "translation": "Cảm ơn bạn đã quan tâm đến nỗ lực Điều tra dân số năm 2020 tại San Jose."
-  },
-  "email.messages.confirmation.usersMessageIntro": {
-    "english": "The following message was sent by you to the City of San Jose Census Office:",
-    "translation": "Tin nhắn sau đây được bạn gửi đến Văn phòng điều tra dân số thành phố San Jose:"
-  },
-  "email.messages.confirmation.interestsHeader": {
-    "english": "I have an interest in:",
-    "translation": "Tôi có hứng thú với:"
-  },
-  "email.messages.confirmation.commentsHeader": {
-    "english": "Additional comments:",
-    "translation": "Ý kiến khác:"
-  },
-  "email.messages.confirmation.conclusion": {
-    "english": "Thank you again for your interest. Someone will respond back to you within two business days.",
-    "translation": "Cảm ơn bạn một lần nữa vì sự quan tâm của bạn. Ai đó sẽ trả lời bạn trong vòng hai ngày làm việc."
-  },
-  "email.messages.confirmation.signature": {
-    "english": "City of San Jose 2020 Census Office",
-    "translation": "Văn phòng điều tra dân số thành phố San Jose 2020"
-  },
-  "mail.messages.confirmation.subject": {
-    "english": "Thank you for contacting the San Jose Census Department",
-    "translation": "Cảm ơn bạn đã liên hệ với Cục điều tra dân số San Jose"
   }
 }
