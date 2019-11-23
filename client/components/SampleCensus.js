@@ -4,32 +4,64 @@ import { FormattedMessage } from 'react-intl';
 
 import './SampleCensus.scss';
 
-const ipsum = `Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. 
+const ipsumQuestion = {
+  question: (
+    <FormattedMessage
+      id="components.SampleCensus.ipsumQuestion.whyAnswer"
+      defaultMessage="This is the first question"
+    />
+  ),
+  secondary_text: (
+    <FormattedMessage
+      id="components.SampleCensus.ipsumQuestion.whyAnswer"
+      defaultMessage="More text can go here"
+    />
+  ),
+  how_to: (
+    <FormattedMessage
+      id="components.SampleCensus.ipsumQuestion.howToAnswer"
+      defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. 
 Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis 
 enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. 
-Eligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.`;
-
-const ipsumQuestion = {
-  question: 'This is the first question',
-  secondary_text: 'More text can go here',
-  how_to: ipsum,
-  info_use: ipsum,
-  why_answer: ipsum
+Eligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.`}
+    />
+  ),
+  info_use: (
+    <FormattedMessage
+      id="components.SampleCensus.ipsumQuestion.howIsUsed"
+      defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. 
+Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis 
+enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. 
+Eligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.`}
+    />
+  ),
+  why_answer: (
+    <FormattedMessage
+      id="components.SampleCensus.ipsumQuestion.whyAnswer"
+      defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. 
+Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis 
+enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. 
+Eligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.`}
+    />
+  )
 };
 
 const indexToSection = {
   0: (
     <FormattedMessage
+      id="component.SampleCensus.sectionHeaders.howToAnswer"
       defaultMessage="How to answer this question"
     />
   ),
   1: (
     <FormattedMessage
+      id="component.SampleCensus.sectionHeaders.howInfoIsUsed"
       defaultMessage="How is this info used"
     />
   ),
   2: (
     <FormattedMessage
+      id="component.SampleCensus.sectionHeaders.whyAnswer"
       defaultMessage="Why answer this question"
     />
   )
@@ -54,14 +86,8 @@ const QuestionAnswerBox = ({ title, text }) => (
 );
 
 QuestionAnswerBox.propTypes = {
-  title: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.string
-  ]).isRequired,
-  text: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.string
-  ]).isRequired
+  title: PropTypes.element.isRequired,
+  text: PropTypes.element.isRequired
 };
 
 const CensusQuestionCard = ({ item, index, currentPosition }) => (
@@ -71,7 +97,7 @@ const CensusQuestionCard = ({ item, index, currentPosition }) => (
     style={{ display: (index === currentPosition) ? 'flex' : 'none' }}>
     <h2 className="c_sample-census__content__census-questions__card__question">
       <span className="c_sample-census__content__census-questions__card__question__label">
-        { 'Q' + (index + 1).toString() + ': ' }
+        {`Q${index + 1}: `}
       </span>
       { item.question }
     </h2>
@@ -105,26 +131,11 @@ const CensusQuestionCard = ({ item, index, currentPosition }) => (
 
 CensusQuestionCard.propTypes = {
   item: PropTypes.shape({
-    question: PropTypes.oneOfType([
-      PropTypes.element,
-      PropTypes.string
-    ]).isRequired,
-    secondary_text: PropTypes.oneOfType([
-      PropTypes.element,
-      PropTypes.string
-    ]).isRequired,
-    how_to: PropTypes.oneOfType([
-      PropTypes.element.isRequired,
-      PropTypes.string
-    ]).isRequired,
-    info_use: PropTypes.oneOfType([
-      PropTypes.element.isRequired,
-      PropTypes.string
-    ]).isRequired,
-    why_answer: PropTypes.oneOfType([
-      PropTypes.element.isRequired,
-      PropTypes.string
-    ]).isRequired
+    question: PropTypes.element.isRequired,
+    secondary_text: PropTypes.element.isRequired,
+    how_to: PropTypes.element.isRequired,
+    info_use: PropTypes.element.isRequired,
+    why_answer: PropTypes.element.isRequired
   }).isRequired,
   index: PropTypes.number.isRequired,
   currentPosition: PropTypes.number.isRequired
