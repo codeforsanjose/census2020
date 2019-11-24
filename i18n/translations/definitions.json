@@ -82,7 +82,7 @@
   "components.FAQ.header": {
     "id": "components.FAQ.header",
     "description": "FAQ page header text",
-    "defaultMessage": "FAQ"
+    "defaultMessage": "Frequently Asked Questions"
   },
   "navigation.links.faq": {
     "id": "navigation.links.faq",
@@ -317,6 +317,66 @@
     "id": "components.Contact.optional",
     "defaultMessage": "Optional"
   },
+  "components.Home.carousel.messages.1": {
+    "id": "components.Home.carousel.messages.1",
+    "defaultMessage": "Learn why everyone counts!"
+  },
+  "components.Home.carousel.messages.2": {
+    "id": "components.Home.carousel.messages.2",
+    "defaultMessage": "When you respond, we all benefit!"
+  },
+  "components.Home.carousel.messages.3": {
+    "id": "components.Home.carousel.messages.3",
+    "defaultMessage": "Answer online, by phone, or by mail!"
+  },
+  "components.Home.carousel.messages.4": {
+    "id": "components.Home.carousel.messages.4",
+    "defaultMessage": "Your participation affects our congressional representation!"
+  },
+  "components.Home.carousel.messages.5": {
+    "id": "components.Home.carousel.messages.5",
+    "defaultMessage": "Easy, quick and confidential!"
+  },
+  "components.Home.carousel.messages.6": {
+    "id": "components.Home.carousel.messages.6",
+    "defaultMessage": "Be counted San Jose!"
+  },
+  "components.Home.carsouelItem.tittle": {
+    "id": "components.Home.carsouelItem.tittle",
+    "defaultMessage": "The United States 2020 Census"
+  },
+  "components.SampleCensus.ipsumQuestion.question": {
+    "id": "components.SampleCensus.ipsumQuestion.question",
+    "defaultMessage": "This is the first question"
+  },
+  "components.SampleCensus.ipsumQuestion.secondaryText": {
+    "id": "components.SampleCensus.ipsumQuestion.secondaryText",
+    "defaultMessage": "More text can go here"
+  },
+  "components.SampleCensus.ipsumQuestion.howToAnswer": {
+    "id": "components.SampleCensus.ipsumQuestion.howToAnswer",
+    "defaultMessage": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
+  },
+  "components.SampleCensus.ipsumQuestion.howIsUsed": {
+    "id": "components.SampleCensus.ipsumQuestion.howIsUsed",
+    "defaultMessage": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
+  },
+  "components.SampleCensus.ipsumQuestion.whyAnswer": {
+    "id": "components.SampleCensus.ipsumQuestion.whyAnswer",
+    "defaultMessage": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
+  },
+  "component.SampleCensus.sectionHeaders.howToAnswer": {
+    "id": "component.SampleCensus.sectionHeaders.howToAnswer",
+    "defaultMessage": "How to answer this question"
+  },
+  "component.SampleCensus.sectionHeaders.howInfoIsUsed": {
+    "id": "component.SampleCensus.sectionHeaders.howInfoIsUsed",
+    "defaultMessage": "How is this info used"
+  },
+  "component.SampleCensus.sectionHeaders.whyAnswer": {
+    "id": "component.SampleCensus.sectionHeaders.whyAnswer",
+    "defaultMessage": "Why answer this question"
+  },
   "components.SampleCenus.title": {
     "id": "components.SampleCenus.title",
     "description": "Sample Census page title",
@@ -326,37 +386,5 @@
     "id": "components.SampleCenus.subtitle",
     "description": "Sample Census page subtitle",
     "defaultMessage": "Learn how to answer, how that info is used, and why it's important to answer"
-  },
-  "email.messages.confirmation.greeting": {
-    "id": "email.messages.confirmation.greeting",
-    "defaultMessage": "Hi {name}"
-  },
-  "email.messages.confirmation.thankYou": {
-    "id": "email.messages.confirmation.thankYou",
-    "defaultMessage": "Thank you for your interest in the 2020 Census effort in San Jose."
-  },
-  "email.messages.confirmation.usersMessageIntro": {
-    "id": "email.messages.confirmation.usersMessageIntro",
-    "defaultMessage": "The following message was sent by you to the City of San Jose Census Office:"
-  },
-  "email.messages.confirmation.interestsHeader": {
-    "id": "email.messages.confirmation.interestsHeader",
-    "defaultMessage": "I have an interest in:"
-  },
-  "email.messages.confirmation.commentsHeader": {
-    "id": "email.messages.confirmation.commentsHeader",
-    "defaultMessage": "Additional comments:"
-  },
-  "email.messages.confirmation.conclusion": {
-    "id": "email.messages.confirmation.conclusion",
-    "defaultMessage": "Thank you again for your interest. Someone will respond back to you within two business days."
-  },
-  "email.messages.confirmation.signature": {
-    "id": "email.messages.confirmation.signature",
-    "defaultMessage": "City of San Jose 2020 Census Office"
-  },
-  "mail.messages.confirmation.subject": {
-    "id": "mail.messages.confirmation.subject",
-    "defaultMessage": "Thank you for contacting the San Jose Census Department"
   }
 }

@@ -64,8 +64,8 @@
     "translation": "Your request for information has been submitted"
   },
   "components.FAQ.header": {
-    "english": "FAQ",
-    "translation": "FAQ"
+    "english": "Frequently Asked Questions",
+    "translation": "Frequently Asked Questions"
   },
   "navigation.links.faq": {
     "english": "FAQ",
@@ -291,6 +291,66 @@
     "english": "Optional",
     "translation": "Optional"
   },
+  "components.Home.carousel.messages.1": {
+    "english": "Learn why everyone counts!",
+    "translation": "Learn why everyone counts!"
+  },
+  "components.Home.carousel.messages.2": {
+    "english": "When you respond, we all benefit!",
+    "translation": "When you respond, we all benefit!"
+  },
+  "components.Home.carousel.messages.3": {
+    "english": "Answer online, by phone, or by mail!",
+    "translation": "Answer online, by phone, or by mail!"
+  },
+  "components.Home.carousel.messages.4": {
+    "english": "Your participation affects our congressional representation!",
+    "translation": "Your participation affects our congressional representation!"
+  },
+  "components.Home.carousel.messages.5": {
+    "english": "Easy, quick and confidential!",
+    "translation": "Easy, quick and confidential!"
+  },
+  "components.Home.carousel.messages.6": {
+    "english": "Be counted San Jose!",
+    "translation": "Be counted San Jose!"
+  },
+  "components.Home.carsouelItem.tittle": {
+    "english": "The United States 2020 Census",
+    "translation": "The United States 2020 Census"
+  },
+  "components.SampleCensus.ipsumQuestion.question": {
+    "english": "This is the first question",
+    "translation": "This is the first question"
+  },
+  "components.SampleCensus.ipsumQuestion.secondaryText": {
+    "english": "More text can go here",
+    "translation": "More text can go here"
+  },
+  "components.SampleCensus.ipsumQuestion.howToAnswer": {
+    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
+    "translation": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
+  },
+  "components.SampleCensus.ipsumQuestion.howIsUsed": {
+    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
+    "translation": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
+  },
+  "components.SampleCensus.ipsumQuestion.whyAnswer": {
+    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
+    "translation": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
+  },
+  "component.SampleCensus.sectionHeaders.howToAnswer": {
+    "english": "How to answer this question",
+    "translation": "How to answer this question"
+  },
+  "component.SampleCensus.sectionHeaders.howInfoIsUsed": {
+    "english": "How is this info used",
+    "translation": "How is this info used"
+  },
+  "component.SampleCensus.sectionHeaders.whyAnswer": {
+    "english": "Why answer this question",
+    "translation": "Why answer this question"
+  },
   "components.SampleCenus.title": {
     "english": "Preview and learn more about each question on the census",
     "translation": "Preview and learn more about each question on the census"
@@ -298,37 +358,5 @@
   "components.SampleCenus.subtitle": {
     "english": "Learn how to answer, how that info is used, and why it's important to answer",
     "translation": "Learn how to answer, how that info is used, and why it's important to answer"
-  },
-  "email.messages.confirmation.greeting": {
-    "english": "Hi {name}",
-    "translation": "Hi {name}"
-  },
-  "email.messages.confirmation.thankYou": {
-    "english": "Thank you for your interest in the 2020 Census effort in San Jose.",
-    "translation": "Thank you for your interest in the 2020 Census effort in San Jose."
-  },
-  "email.messages.confirmation.usersMessageIntro": {
-    "english": "The following message was sent by you to the City of San Jose Census Office:",
-    "translation": "The following message was sent by you to the City of San Jose Census Office:"
-  },
-  "email.messages.confirmation.interestsHeader": {
-    "english": "I have an interest in:",
-    "translation": "I have an interest in:"
-  },
-  "email.messages.confirmation.commentsHeader": {
-    "english": "Additional comments:",
-    "translation": "Additional comments:"
-  },
-  "email.messages.confirmation.conclusion": {
-    "english": "Thank you again for your interest. Someone will respond back to you within two business days.",
-    "translation": "Thank you again for your interest. Someone will respond back to you within two business days."
-  },
-  "email.messages.confirmation.signature": {
-    "english": "City of San Jose 2020 Census Office",
-    "translation": "City of San Jose 2020 Census Office"
-  },
-  "mail.messages.confirmation.subject": {
-    "english": "Thank you for contacting the San Jose Census Department",
-    "translation": "Thank you for contacting the San Jose Census Department"
   }
 }
