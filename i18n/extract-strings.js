@@ -32,6 +32,7 @@ const addJSFiles = (dirPath) => {
 };
 
 addJSFiles(componentDir);
+addJSFiles(path.resolve(__dirname, '..', 'server'));
 
 const outputDir = path.resolve(__dirname, 'translations');
 
