@@ -358,5 +358,13 @@
   "components.SampleCenus.subtitle": {
     "english": "Learn how to answer, how that info is used, and why it's important to answer",
     "translation": "Tìm hiểu cách trả lời, cách sử dụng thông tin đó và tại sao cần trả lời"
+  },
+  "components.SampleCensus.title": {
+    "english": "Preview and learn more about each question on the census",
+    "translation": "Xem trước và tìm hiểu thêm về từng câu hỏi trong cuộc điều tra dân số"
+  },
+  "components.SampleCensus.subtitle": {
+    "english": "Learn how to answer, how that info is used, and why it's important to answer",
+    "translation": "Tìm hiểu cách trả lời, cách sử dụng thông tin đó và tại sao cần trả lời"
   }
 }

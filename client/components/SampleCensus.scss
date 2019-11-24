@@ -44,7 +44,7 @@
         height: 3.5em;
         width: 10%;
         min-width: 80px;
-        max_width: 120px;
+        max-width: 120px;
         margin: 5px;
 
         &__button {
@@ -52,6 +52,13 @@
           height: 100%;
           border: none;
           border-radius: 3px;
+          background-color: #FFFFFF;
+          color: grey;
+
+          &--active {
+            background-color: #2F80ED;
+            color: #FFFFFF
+          }
         }
       }
     }
@@ -66,6 +73,15 @@
         background-color: white;
         padding: 5vh 5vw;
         border-radius: 3px;
+        display: none;
+        
+        &--active {
+          display: block;
+        }
+
+        &__header {
+          border-bottom: 1px solid #000000;
+        }
 
         &__question {
           display: inline;
@@ -75,8 +91,26 @@
             color: #2f80ed;
           }
         }
+
+        &__info-list {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          list-style: none;
+          padding: 0;
+        }
       }
     }
 
+    &__answer-box {
+      margin: 10px;
+
+      &__header {
+        padding: 5px;
+        background-color: #F7CB8A;
+        border-radius: 3px;
+        display: inline;
+      }
+    }
   }
 }

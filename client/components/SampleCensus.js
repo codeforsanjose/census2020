@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
+import classnames from 'classnames';
 
 import './SampleCensus.scss';
 
@@ -69,19 +70,14 @@ const indexToSection = {
 
 const QuestionAnswerBox = ({ title, text }) => (
   <li
-    style={{
-      margin: '10px'
-    }}>
+    className="c_sample-census__content__answer-box"
+  >
     <h3
-      style={{
-        padding: '5px',
-        backgroundColor: '#f7cb8a',
-        borderRadius: '3px',
-        display: 'inline'
-      }}>
-      { title }
+      className="c_sample-census__content__answer-box__header"
+    >
+      {title}
     </h3>
-    <p> { text} </p>
+    <p>{text}</p>
   </li>
 );
 
@@ -90,34 +86,28 @@ QuestionAnswerBox.propTypes = {
   text: PropTypes.element.isRequired
 };
 
-const CensusQuestionCard = ({ item, index, currentPosition }) => (
+const CensusQuestionCard = ({ item, className, index }) => (
   <li
     key={index}
-    className="c_sample-census__content__census-questions__card"
-    style={{ display: (index === currentPosition) ? 'flex' : 'none' }}>
-    <h2 className="c_sample-census__content__census-questions__card__question">
-      <span className="c_sample-census__content__census-questions__card__question__label">
-        {`Q${index + 1}: `}
-      </span>
-      { item.question }
-    </h2>
-    <p> { item.secondary_text } </p>
-    <div
-      style={{
-        width: '100%',
-        height: '1px',
-        borderRadius: '1px',
-        backgroundColor: 'black'
-      }}>
-    </div>
+    className={classnames(
+      'c_sample-census__content__census-questions__card',
+      className
+    )}
+  >
+    <header
+      className="c_sample-census__content__census-questions__card__header"
+    >
+      <h2 className="c_sample-census__content__census-questions__card__question">
+        <span className="c_sample-census__content__census-questions__card__question__label">
+          {`Q${index + 1}: `}
+        </span>
+        { item.question }
+      </h2>
+      <p> { item.secondary_text } </p>
+    </header>
     <ul
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: '100%',
-        listStyle: 'none',
-        padding: 0
-      }}>
+      className="c_sample-census__content__census-questions__card__info-list"
+    >
       { [item.how_to, item.info_use, item.why_answer].map((item, index) => (
         <QuestionAnswerBox
           title={indexToSection[index]}
@@ -138,7 +128,7 @@ CensusQuestionCard.propTypes = {
     why_answer: PropTypes.element.isRequired
   }).isRequired,
   index: PropTypes.number.isRequired,
-  currentPosition: PropTypes.number.isRequired
+  className: PropTypes.string
 };
 
 export default class SampleCensus extends React.Component {
@@ -157,20 +147,23 @@ export default class SampleCensus extends React.Component {
       censusQuestions.push(ipsumQuestion);
     }
 
+    const buttonClassName = 'c_sample-census__content__button-row__item__button';
+    const censusQuestionsClassName = 'c_sample-census__content__census-questions';
+
     return (
       <main className="c_sample-census">
         <div className="c_sample-census__header"></div>
         <div className="c_sample-census__content">
           <h1 className="c_sample-census__content__title">
             <FormattedMessage
-              id="components.SampleCenus.title"
+              id="components.SampleCensus.title"
               defaultMessage="Preview and learn more about each question on the census"
               description="Sample Census page title">
             </FormattedMessage>
           </h1>
           <p className="c_sample-census__content__subtitle">
             <FormattedMessage
-              id="components.SampleCenus.subtitle"
+              id="components.SampleCensus.subtitle"
               defaultMessage="Learn how to answer, how that info is used, and why it's important to answer"
               description="Sample Census page subtitle">
             </FormattedMessage>
@@ -181,22 +174,29 @@ export default class SampleCensus extends React.Component {
                 key={index}
                 className="c_sample-census__content__button-row__item">
                 <button
-                  className="c_sample-census__content__button-row__item__button"
+                  className={classnames(
+                    buttonClassName,
+                    {
+                      [`${buttonClassName}--active`]: index === this.state.currentPosition
+                    }
+                  )}
                   onClick={() => this.setState({
                     currentPosition: index
                   })}
-                  style={{
-                    backgroundColor: (index === this.state.currentPosition) ? '#2f80ed' : 'white',
-                    color: (index === this.state.currentPosition) ? 'white' : 'grey'
-                  }}>
-                  { 'Q' + (index + 1).toString() }
+                >
+                  {`Q${index + 1}`}
                 </button>
               </li>
             ))}
           </ul>
-          <ul className="c_sample-census__content__census-questions">
+          <ul className={censusQuestionsClassName}>
             { censusQuestions.map((item, index) => (
               <CensusQuestionCard
+                className={
+                  this.state.currentPosition === index
+                    ? `${censusQuestionsClassName}__card--active`
+                    : undefined
+                }
                 key={index}
                 item={item}
                 index={index}
