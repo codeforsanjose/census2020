@@ -386,5 +386,15 @@
     "id": "components.SampleCenus.subtitle",
     "description": "Sample Census page subtitle",
     "defaultMessage": "Learn how to answer, how that info is used, and why it's important to answer"
+  },
+  "components.SampleCensus.title": {
+    "id": "components.SampleCensus.title",
+    "description": "Sample Census page title",
+    "defaultMessage": "Preview and learn more about each question on the census"
+  },
+  "components.SampleCensus.subtitle": {
+    "id": "components.SampleCensus.subtitle",
+    "description": "Sample Census page subtitle",
+    "defaultMessage": "Learn how to answer, how that info is used, and why it's important to answer"
   }
 }
