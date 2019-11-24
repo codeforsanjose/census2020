@@ -19,7 +19,7 @@ async function init () {
   app.use(
     (req, res, next) => {
       const err = new Error('Not found');
-      err.code = 404;
+      err.status = 404;
       next(err);
     }
   );
@@ -27,8 +27,8 @@ async function init () {
   // General error handler
   app.use(
     (err, req, res, next) => {
-      const status = err.code || 500;
-      console.log(res);
+      const status = err.status || 500;
+      console.error(err);
       res.status(status).send(err.message);
     }
   );
