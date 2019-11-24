@@ -358,5 +358,13 @@
   "components.SampleCenus.subtitle": {
     "english": "Learn how to answer, how that info is used, and why it's important to answer",
     "translation": "Learn how to answer, how that info is used, and why it's important to answer"
+  },
+  "components.SampleCensus.title": {
+    "english": "Preview and learn more about each question on the census",
+    "translation": "Preview and learn more about each question on the census"
+  },
+  "components.SampleCensus.subtitle": {
+    "english": "Learn how to answer, how that info is used, and why it's important to answer",
+    "translation": "Learn how to answer, how that info is used, and why it's important to answer"
   }
 }
