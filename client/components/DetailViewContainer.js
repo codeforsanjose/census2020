@@ -15,6 +15,63 @@ import peopleGathering from '../images/peopleGathering.jpg';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './DetailViewContainer.scss';
 
+const CAROUSEL_IMAGES = [
+  {
+    image: muralProject,
+    message: (
+      <FormattedMessage
+        id="components.Home.carousel.messages.1"
+        defaultMessage="Learn why everyone counts!"
+      />
+    )
+  },
+  {
+    image: sanJoseMural,
+    message: (
+      <FormattedMessage
+        id="components.Home.carousel.messages.2"
+        defaultMessage="When you respond, we all benefit!"
+      />
+    )
+  },
+  {
+    image: sharksMural,
+    message: (
+      <FormattedMessage
+        id="components.Home.carousel.messages.3"
+        defaultMessage="Answer online, by phone, or by mail!"
+      />
+    )
+  },
+  {
+    image: performingArts,
+    message: (
+      <FormattedMessage
+        id="components.Home.carousel.messages.4"
+        defaultMessage="Your participation affects our congressional representation!"
+      />
+    )
+  },
+  {
+    image: peopleGathering,
+    message: (
+      <FormattedMessage
+        id="components.Home.carousel.messages.5"
+        defaultMessage="Easy, quick and confidential!"
+      />
+    )
+  },
+  {
+    image: cityHall,
+    message: (
+      <FormattedMessage
+        id="components.Home.carousel.messages.6"
+        defaultMessage="Be counted San Jose!"
+      />
+    )
+  }
+];
+
 const CarouselItem = ({ img }) => (
   <div
     className="c_home__carousel-item"
@@ -31,17 +88,17 @@ const CarouselItem = ({ img }) => (
         />
       </h1>
       <h1 className="c_home__overlay__message">
-        <FormattedMessage
-          id="components.Home.carsouelItem.message"
-          defaultMessage={img.message}
-        />
+        {img.message}
       </h1>
     </div>
   </div>
 );
 
 CarouselItem.propTypes = {
-  img: PropTypes.object.isRequired
+  img: PropTypes.shape({
+    image: PropTypes.string,
+    message: PropTypes.element
+  }).isRequired
 };
 
 const Factoid = ({ title, message }) => (
@@ -121,7 +178,7 @@ export default class DetailViewContainer extends Component {
           autoPlay={true}
           interval={7000}
           transitionTime={1000}>
-          { [{ image: muralProject, message: 'Learn why everyone counts!' }, { image: sanJoseMural, message: 'When you respond, we all benefit!' }, { image: sharksMural, message: 'Answer online, by phone, or by mail!' }, { image: performingArts, message: 'Your participation affects our congressional representation!' }, { image: peopleGathering, message: 'Easy, quick and confidential!' }, { image: cityHall, message: 'Be counted San Jose!' }].map(img => (
+          { CAROUSEL_IMAGES.map(img => (
             <CarouselItem key={img} img={img} />
           ))}
         </Carousel>

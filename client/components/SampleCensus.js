@@ -7,13 +7,13 @@ import './SampleCensus.scss';
 const ipsumQuestion = {
   question: (
     <FormattedMessage
-      id="components.SampleCensus.ipsumQuestion.whyAnswer"
+      id="components.SampleCensus.ipsumQuestion.question"
       defaultMessage="This is the first question"
     />
   ),
   secondary_text: (
     <FormattedMessage
-      id="components.SampleCensus.ipsumQuestion.whyAnswer"
+      id="components.SampleCensus.ipsumQuestion.secondaryText"
       defaultMessage="More text can go here"
     />
   ),
