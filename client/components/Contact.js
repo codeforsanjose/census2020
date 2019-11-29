@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage, injectIntl } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import { toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,9 +17,6 @@ import contactFormImageSrc from '../images/contact-form.jpg';
 
 class Contact extends Component {
   static propTypes = {
-    intl: PropTypes.shape({
-      formatMessage: PropTypes.func.isRequired
-    }).isRequired,
     currentLocale: PropTypes.oneOf(supportedLocales)
   }
 
@@ -48,11 +45,13 @@ class Contact extends Component {
 
   notifySubmitSuccess () {
     toast(
-      this.props.intl.formatMessage({
-        id: 'components.Contact.submitSuccessToast',
-        description: 'Message shown to users in a popup when the contact form has been successfully submitted',
-        defaultMessage: 'Your request for information has been submitted'
-      }),
+      (
+        <FormattedMessage
+          id="components.Contact.submitSuccessToast"
+          description="Message shown to users in a popup when the contact form has been successfully submitted"
+          defaultMessage="Your request for information has been submitted"
+        />
+      ),
       {
         type: toast.TYPE.SUCCESS,
         position: toast.POSITION.BOTTOM_CENTER,
@@ -123,45 +122,53 @@ class Contact extends Component {
     const options = [
       {
         value: 'volunteer',
-        label: this.props.intl.formatMessage({
-          key: 'volunteer',
-          id: 'components.Contact.fields.interest.options.volunteer',
-          defaultMessage: 'Volunteer to help',
-          description: "'Volunteer to help' option for the Interest field in the Contact form"
-        }),
+        label: (
+          <FormattedMessage
+            key="volunteer"
+            id="components.Contact.fields.interest.options.volunteer"
+            defaultMessage="Volunteer to help"
+            description="'Volunteer to help' option for the Interest field in the Contact form"
+          />
+        ),
         name: 'volunteer',
         checked: interests.has('volunteer')
       },
       {
         value: 'presentation',
-        label: this.props.intl.formatMessage({
-          key: 'requestPresentation',
-          id: 'components.Contact.fields.interest.options.requestPresentation',
-          defaultMessage: 'Request a presentation',
-          description: "'Request a Presentation' option for the Interest field in the Contact form"
-        }),
+        label: (
+          <FormattedMessage
+            key="requestPresentation"
+            id="components.Contact.fields.interest.options.requestPresentation"
+            defaultMessage="Request a presentation"
+            description="'Request a Presentation' option for the Interest field in the Contact form"
+          />
+        ),
         name: 'presentation',
         checked: interests.has('presentation')
       },
       {
         value: 'information',
-        label: this.props.intl.formatMessage({
-          key: 'information',
-          id: 'components.Contact.fields.interest.options.information',
-          defaultMessage: 'Request more information',
-          description: "'Request more information' option for the Interest field in the Contact form"
-        }),
+        label: (
+          <FormattedMessage
+            key="information"
+            id="components.Contact.fields.interest.options.information"
+            defaultMessage="Request more information"
+            description="'Request more information' option for the Interest field in the Contact form"
+          />
+        ),
         name: 'information',
         checked: interests.has('information')
       },
       {
         value: 'other',
-        label: this.props.intl.formatMessage({
-          key: 'other',
-          id: 'components.Contact.fields.interest.options.other',
-          defaultMessage: 'Other',
-          description: "'Other' option for the Interest field in the Contact form"
-        }),
+        label: (
+          <FormattedMessage
+            key="other"
+            id="components.Contact.fields.interest.options.other"
+            defaultMessage="Other"
+            description="'Other' option for the Interest field in the Contact form"
+          />
+        ),
         name: 'other',
         checked: interests.has('other')
       }
@@ -362,19 +369,17 @@ class Contact extends Component {
   }
 }
 
-const WrappedContact = injectIntl(
-  (props) => (
-    <LocaleContext.Consumer>
-      {
-        ({ currentLocale }) => (
-          <Contact
-            {...props}
-            currentLocale={currentLocale}
-          />
-        )
-      }
-    </LocaleContext.Consumer>
-  )
+const WrappedContact = (props) => (
+  <LocaleContext.Consumer>
+    {
+      ({ currentLocale }) => (
+        <Contact
+          {...props}
+          currentLocale={currentLocale}
+        />
+      )
+    }
+  </LocaleContext.Consumer>
 );
 
 export default WrappedContact;

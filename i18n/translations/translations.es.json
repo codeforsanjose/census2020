@@ -366,5 +366,233 @@
   "components.SampleCensus.subtitle": {
     "english": "Learn how to answer, how that info is used, and why it's important to answer",
     "translation": "Aprenda cómo responder, cómo se usa esa información y por qué es importante responder"
+  },
+  "components.FAQ.sections.basics.header": {
+    "english": "Basics",
+    "translation": "Lo esencial"
+  },
+  "components.FAQ.sections.about.header": {
+    "english": "About the Survey",
+    "translation": "Sobre la encuesta"
+  },
+  "components.FAQ.sections.gettingCounted.header": {
+    "english": "Getting Counted",
+    "translation": "Ser contado"
+  },
+  "components.FAQ.sections.language.header": {
+    "english": "Language Access",
+    "translation": "Acceso al idioma"
+  },
+  "components.FAQ.sections.safety.header": {
+    "english": "Safety and Privacy",
+    "translation": "Seguridad y privacidad"
+  },
+  "components.FAQ.entries.whatIsTheCensus.question": {
+    "english": "What is the census?",
+    "translation": "¿Qué es el censo?"
+  },
+  "components.FAQ.entries.whatIsTheCensus.answer": {
+    "english": "The United States Census is a national population count that occurs every ten years. It is mandated by the U.S. Constitution.",
+    "translation": "El censo de los Estados Unidos es un recuento de población nacional que se produce cada diez años. Es obligatorio por la Constitución de los Estados Unidos."
+  },
+  "components.FAQ.entries.whyHaveCensus.question": {
+    "english": "Why do we have a census?",
+    "translation": "¿Por qué tenemos un censo?"
+  },
+  "components.FAQ.entries.whyHaveCensus.answer": {
+    "english": "The data collected from the Census is used to make sure everyone is equally represented in our political system and that government resources are allocated fairly. The Census data determines how many congressional seats a state receives; how much federal funding will be allocated to local communities for public services and infrastructure needs; and provides a picture of the changing demographics of the country.",
+    "translation": "Los datos recopilados del Censo se utilizan para garantizar que todos estén igualmente representados en nuestro sistema político y que los recursos del gobierno se asignen de manera justa. Los datos del censo determinan cuántos escaños del Congreso recibe un estado; cuánto financiamiento federal se asignará a las comunidades locales para servicios públicos y necesidades de infraestructura; y proporciona una imagen de los cambios demográficos del país."
+  },
+  "components.FAQ.entries.whoGetsCounted.question": {
+    "english": "Who gets counted?",
+    "translation": "¿Quién se cuenta?"
+  },
+  "components.FAQ.entries.whoGetsCounted.answer": {
+    "english": "Everyone living in the United States must be counted. Make sure you include everyone living and sleeping in your home on your census survey — regardless of age, gender, relationship to you, or citizenship/immigration status.",
+    "translation": "Todos los que viven en los Estados Unidos deben ser contados. Asegúrese de incluir a todos los que viven y duermen en su hogar en su encuesta censal, independientemente de su edad, sexo, relación con usted o estado de ciudadanía / inmigración."
+  },
+  "components.FAQ.entries.whenGetInvitation.question": {
+    "english": "When should I look for my invitation in the mail?",
+    "translation": "¿Cuándo debo buscar mi invitación por correo?"
+  },
+  "components.FAQ.entries.whenGetInvitation.answer": {
+    "english": "Starting in March 2020, the U.S. Census Bureau will mail letters to every household in the United States inviting them to respond to the Census survey. Every household should receive a letter requesting that they complete a census form online, by mail, or phone by Census Day on April 1, 2020.",
+    "translation": "A partir de marzo de 2020, la Oficina del Censo de EE. UU. Enviará cartas a todos los hogares de los Estados Unidos invitándolos a responder a la encuesta del Censo. Todos los hogares deben recibir una carta solicitando que completen un formulario del censo en línea, por correo o por teléfono antes del Día del Censo el 1 de abril de 2020."
+  },
+  "components.FAQ.entries.whatTypesOfQuestions.question": {
+    "english": "What types of questions are on the 2020 Census?",
+    "translation": "¿Qué tipos de preguntas se encuentran en el Censo 2020?"
+  },
+  "components.FAQ.entries.whatIsHouseholdRelationshipQuestion.question": {
+    "english": "What is the \"Household Relationship Question\"?",
+    "translation": "¿Qué es la \"Pregunta de relación familiar\"?"
+  },
+  "components.FAQ.entries.whatIsHouseholdRelationshipQuestion.answer": {
+    "english": "For the first time, the 2020 Census offers a way for the person filling out the form to indicate a same-sex relationship with another household member. This change is expected to improve national statistics on same-sex couples.",
+    "translation": "Por primera vez, el Censo 2020 ofrece una manera para que la persona que llena el formulario indique una relación entre personas del mismo sexo con otro miembro del hogar. Se espera que este cambio mejore las estadísticas nacionales sobre parejas del mismo sexo."
+  },
+  "components.FAQ.entries.whoCountsAsHousehold.question": {
+    "english": "Who counts as a \"household?\"",
+    "translation": "¿Quién cuenta como un \"hogar\"?"
+  },
+  "components.FAQ.entries.howLongDoesItTake.question": {
+    "english": "How long does it take to complete the census?",
+    "translation": "¿Cuánto tiempo lleva completar el censo?"
+  },
+  "components.FAQ.entries.howLongDoesItTake.answer": {
+    "english": "The census survey is short and on average takes about 10 minutes or less to complete, depending on the number of people living/sleeping in your home.",
+    "translation": "La encuesta del censo es corta y, en promedio, demora aproximadamente 10 minutos o menos en completarse, dependiendo del número de personas que viven / duermen en su hogar."
+  },
+  "components.FAQ.entries.howCanIComplete.question": {
+    "english": "How can I complete the census?",
+    "translation": "¿Cómo puedo completar el censo?"
+  },
+  "components.FAQ.entries.howCanIComplete.answer": {
+    "english": "There are three ways you can fill out the Census survey: online, by telephone, or via mail. Households can answer the questions on the internet or by phone in English and 12 Non-English languages.",
+    "translation": "Hay tres formas de completar la encuesta del Censo: en línea, por teléfono o por correo. Los hogares pueden responder las preguntas en Internet o por teléfono en inglés y en 12 idiomas que no están en inglés."
+  },
+  "components.FAQ.entries.isFirstTimeAvailableOnline.question": {
+    "english": "Is this the first time the census survey will be available online?",
+    "translation": "¿Es la primera vez que la encuesta del censo estará disponible en línea?"
+  },
+  "components.FAQ.entries.isFirstTimeAvailableOnline.answer": {
+    "english": "Yes! The 2020 Census will be the first Census to be almost entirely digital! The survey will be available in English and 12 Non-English languages.",
+    "translation": "¡Sí! ¡El Censo 2020 será el primer censo en ser casi completamente digital! La encuesta estará disponible en inglés y 12 idiomas que no sean inglés."
+  },
+  "components.FAQ.entries.whenCanFillOut.question": {
+    "english": "When can I go online to fill out the census survey?",
+    "translation": "¿Cuándo puedo conectarme en línea para completar la encuesta del censo?"
+  },
+  "components.FAQ.entries.whenCanFillOut.answer": {
+    "english": "Beginning in mid-March 2020, households will receive an invitation in the mail to participate in the census by visiting the U.S. Census Bureau’s 2020 Census website to fill out the online survey.",
+    "translation": "A partir de mediados de marzo de 2020, los hogares recibirán una invitación por correo para participar en el censo visitando el sitio web del Censo 2020 de la Oficina del Censo de EE. UU. Para completar la encuesta en línea."
+  },
+  "components.FAQ.entries.lostCensusId.question": {
+    "english": "I don’t have or lost my census ID. Can I still complete the census?",
+    "translation": "No tengo ni perdí mi identificación del censo. ¿Puedo completar el censo?"
+  },
+  "components.FAQ.entries.lostCensusId.answer": {
+    "english": "Yes. If you did not receive a census ID code or misplaced it, you can still complete the online census survey by using your mailing address. If you don’t want to respond online, you can call Census Questionnaire Assistance at (###) to complete the survey over the phone.",
+    "translation": "Sí. Si no recibió un código de identificación del censo o lo extravió, aún puede completar la encuesta del censo en línea utilizando su dirección postal. Si no desea responder en línea, puede llamar a Asistencia del cuestionario del censo al (###) para completar la encuesta por teléfono."
+  },
+  "components.FAQ.entries.noAccessToComputer.question": {
+    "english": "What if I don’t have access to a computer?",
+    "translation": "¿Qué sucede si no tengo acceso a una computadora?"
+  },
+  "components.FAQ.entries.noAccessToComputer.answer": {
+    "english": "Households that do not have internet access are encouraged to visit a Census Kiosk to get counted in the 2020 Census. These dedicated computer stations will be available at City library branches, community centers and City Hall. In-person assistance will be available at most locations.",
+    "translation": "Se alienta a los hogares que no tienen acceso a Internet a visitar un quiosco del censo para que se les cuente en el censo de 2020. Estas estaciones de computadoras dedicadas estarán disponibles en las sucursales de la biblioteca de la Ciudad, los centros comunitarios y el Ayuntamiento. La asistencia en persona estará disponible en la mayoría de los lugares."
+  },
+  "components.FAQ.entries.whatHappensIfNoResponse.question": {
+    "english": "What happens if I don’t respond to the Census?",
+    "translation": "¿Qué sucede si no respondo al censo?"
+  },
+  "components.FAQ.entries.whatHappensIfNoResponse.answer": {
+    "english": "If your household fails to respond online or by telephone, the U.S. Census Bureau will mail several reminders to your household and will ultimately mail you a printed questionnaire—in English and Spanish—for you to return by mail.",
+    "translation": "Si su hogar no responde en línea o por teléfono, la Oficina del Censo de EE. UU. Enviará por correo varios recordatorios a su hogar y finalmente le enviará un cuestionario impreso, en inglés y español, para que lo devuelva por correo."
+  },
+  "components.FAQ.entries.whatHappensIfNoResponseAtAll.question": {
+    "english": "What happens if I don’t respond to the census at all?",
+    "translation": "¿Qué sucede si no respondo en absoluto al censo?"
+  },
+  "components.FAQ.entries.whatHappensIfNoResponseAtAll.answer": {
+    "english": "If your household does not respond to the Census online, by phone, or via mail by late April 2020, the U.S. Census Bureau will send a Census worker, known as an enumerator, to your address to help you complete the survey. To avoid a visit from a census worker, complete the census survey on your own.",
+    "translation": "Si su hogar no responde al Censo en línea, por teléfono o por correo a fines de abril de 2020, la Oficina del Censo de EE. UU. Enviará a un trabajador del Censo, conocido como enumerador, a su dirección para ayudarlo a completar la encuesta. Para evitar la visita de un trabajador del censo, complete la encuesta del censo por su cuenta."
+  },
+  "components.FAQ.entries.whatWillCensusWorkerAsk.question": {
+    "english": "What will the Census worker ask me?",
+    "translation": "¿Qué me preguntará el trabajador del censo?"
+  },
+  "components.FAQ.entries.whatWillCensusWorkerAsk.answer": {
+    "english": "The Census worker will ask you all the same survey questions that will appear in the online version of the Census.",
+    "translation": "El trabajador del censo le hará las mismas preguntas de la encuesta que aparecerán en la versión en línea del censo."
+  },
+  "components.FAQ.entries.otherLanguages.question": {
+    "english": "I don’t speak English. Will the Census survey be available in other languages?",
+    "translation": "No hablo ingles ¿La encuesta del censo estará disponible en otros idiomas?"
+  },
+  "components.FAQ.entries.otherLanguages.answer": {
+    "english": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print.",
+    "translation": "Sí. La encuesta en línea está disponible en inglés y otros 12 idiomas (español, chino, vietnamita, coreano, ruso, árabe, tagalo, polaco, francés, criollo haitiano, portugués y japonés); La asistencia telefónica también estará disponible en estos idiomas llamando al (####). La encuesta en papel está disponible en inglés y español. Las guías de idiomas impresas y en video estarán disponibles en 59 idiomas que no sean inglés, incluyendo lenguaje de señas americano, braille y letra grande."
+  },
+  "components.FAQ.entries.isCensusSafe.question": {
+    "english": "Is the Census safe?",
+    "translation": "¿Es seguro el censo?"
+  },
+  "components.FAQ.entries.isCensusSafe.answer": {
+    "english": "Under federal census law, your responses are kept confidential and can only be used by the U.S. Census Bureau to produce statistics.",
+    "translation": "Según la ley del censo federal, sus respuestas se mantienen confidenciales y solo pueden ser utilizadas por la Oficina del Censo de los EE. UU. Para producir estadísticas."
+  },
+  "components.FAQ.entries.canOtherAgenciesAccess.question": {
+    "english": "Can another government agency access my census information?",
+    "translation": "¿Puede otra agencia gubernamental acceder a mi información censal?"
+  },
+  "components.FAQ.entries.canOtherAgenciesAccess.answer": {
+    "english": "No. Title 13 of the U.S. Code requires your information to be kept confidential and prevents your responses from being used against you by any government agency--including law enforcement, the Department of Homeland Security, or US Immigration and Customs Enforcement. All Census Bureau employees take an oath of privacy and are sworn for life to protect the confidentiality of the data. The penalty for unlawful disclosure is a fine of up to $250,000, imprisonment of up to 5 years, or both.",
+    "translation": "No. El Título 13 del Código de EE. UU. Requiere que su información se mantenga confidencial y evita que sus respuestas sean utilizadas en su contra por cualquier agencia gubernamental, incluidas las fuerzas del orden público, el Departamento de Seguridad Nacional o el Servicio de Inmigración y Control de Aduanas de EE. UU. Todos los empleados de la Oficina del Censo hacen un juramento de privacidad y juran de por vida para proteger la confidencialidad de los datos. La multa por divulgación ilegal es una multa de hasta $ 250,000, prisión de hasta 5 años, o ambas."
+  },
+  "components.FAQ.entries.howToIdentifyCensusWorker.question": {
+    "english": "How do I identify an official census worker in person?",
+    "translation": "¿Cómo identifico personalmente a un trabajador del censo oficial?"
+  },
+  "components.FAQ.entries.howToAvoidScams.question": {
+    "english": "How can I avoid scams online?",
+    "translation": "¿Cómo puedo evitar las estafas en línea?"
+  },
+  "components.FAQ.entries.howToReportFraud.question": {
+    "english": "How do I report suspected fraud?",
+    "translation": "¿Cómo denuncio la sospecha de fraude?"
+  },
+  "components.FAQ.entries.howToReportFraud.answer": {
+    "english": "If you suspect fraud, call {phoneNumber} and press option 3 to speak with a local Census Bureau representative. If it is determined that the visitor who came to your door does not work for the Census Bureau, contact the Police Department (phone ##).",
+    "translation": "Si sospecha de fraude, llame a {phoneNumber} y presione la opción 3 para hablar con un representante local de la Oficina del Censo. Si se determina que el visitante que llegó a su puerta no trabaja para la Oficina del Censo, comuníquese con el Departamento de Policía (teléfono ##)."
+  },
+  "email.messages.confirmation.greeting": {
+    "english": "Hi {name}",
+    "translation": "Nombre Hola}"
+  },
+  "email.messages.confirmation.thankYou": {
+    "english": "Thank you for your interest in the 2020 Census effort in San Jose.",
+    "translation": "Gracias por su interés en el esfuerzo del Censo 2020 en San José."
+  },
+  "email.messages.confirmation.usersMessageIntro": {
+    "english": "The following message was sent by you to the City of San Jose Census Office:",
+    "translation": "Usted envió el siguiente mensaje a la Oficina del Censo de la Ciudad de San José:"
+  },
+  "email.messages.confirmation.interestsHeader": {
+    "english": "I have an interest in:",
+    "translation": "Tengo interés en:"
+  },
+  "email.messages.confirmation.commentsHeader": {
+    "english": "Additional comments:",
+    "translation": "Comentarios adicionales:"
+  },
+  "email.messages.confirmation.conclusion": {
+    "english": "Thank you again for your interest. Someone will respond back to you within two business days.",
+    "translation": "Gracias otra vez por su interés. Alguien le responderá dentro de dos días hábiles."
+  },
+  "email.messages.confirmation.signature": {
+    "english": "City of San Jose 2020 Census Office",
+    "translation": "Oficina del Censo de la Ciudad de San José 2020"
+  },
+  "mail.messages.confirmation.subject": {
+    "english": "Thank you for contacting the San Jose Census Department",
+    "translation": "Gracias por contactar al Departamento del Censo de San José."
+  },
+  "components.FAQ.entries.whatTypesOfQuestions.answer": {
+    "english": "The Census survey will ask basic information about each household, such as the total number of people living at your address, homeownership (own or rent), your phone number, and the names, gender, race/ethnicity of each individual living or staying with you. This information will not be shared with the City or any other local, state or federal agency. For more information on what you will be asked on the Census go to the URL below.\n            \n{link}",
+    "translation": "La encuesta del Censo solicitará información básica sobre cada hogar, como el número total de personas que viven en su dirección, la propiedad de la vivienda (propia o alquilada), su número de teléfono y los nombres, género, raza / etnia de cada individuo que vive o se queda con tú. Esta información no se compartirá con la Ciudad ni con ninguna otra agencia local, estatal o federal. Para obtener más información sobre lo que se le pedirá en el Censo, vaya a la URL a continuación.\n            \n{enlazar}"
+  },
+  "components.FAQ.entries.whoCountsAsHousehold.answer": {
+    "english": "A household consists of all the people who occupy a housing unit, both related family members and all the unrelated people, if any, such as lodgers, foster children, wards, or employees who share the housing. For more information on who to count on your Census form go to the URL below.\n          \n{link}",
+    "translation": "Un hogar está formado por todas las personas que ocupan una unidad de vivienda, tanto los miembros de la familia relacionados como todas las personas no relacionadas, si las hay, como inquilinos, hijos adoptivos, barrios o empleados que comparten la vivienda. Para obtener más información sobre con quién contar en su formulario del Censo, vaya a la URL a continuación.\n          \n{enlazar}"
+  },
+  "components.FAQ.entries.howToIdentifyCensusWorker.answer": {
+    "english": "If someone visits your home to collect a response for the 2020 Census, there are steps you can take to verify their identity:\n              \n  First, check to make sure that they have a valid ID badge, with their photograph, a Department of Commerce watermark, and an expiration date.\n  Note that they may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo.\n  If you still have questions, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative.\n  \n  Remember that the U.S. Census Bureau will never ask for:\n  \n  - Your Social Security number.\n  - Your bank account or credit card numbers.\n  - Money or donations.\n  \n  In addition, the Census Bureau will not contact you on behalf of a political party.",
+    "translation": "Si alguien visita su hogar para recopilar una respuesta para el Censo 2020, hay pasos que puede seguir para verificar su identidad:\n              \n  Primero, verifique para asegurarse de que tengan una credencial de identificación válida, con su fotografía, una marca de agua del Departamento de Comercio y una fecha de vencimiento.\n  Tenga en cuenta que pueden llevar un teléfono de la Oficina del Censo o una computadora portátil, además de una bolsa con el logotipo de la Oficina del Censo.\n  Si aún tiene preguntas, llame al 855-562-2020 y presione la opción 3 para hablar con un representante local de la Oficina del Censo.\n  \n  Recuerde que la Oficina del Censo de EE. UU. Nunca solicitará:\n  \n  - Su número de seguro social.\n  - Su cuenta bancaria o números de tarjeta de crédito.\n  - Dinero o donaciones.\n  \n  Además, la Oficina del Censo no se comunicará con usted en nombre de un partido político."
+  },
+  "components.FAQ.entries.howToAvoidScams.answer": {
+    "english": "Phishing is the criminal act of trying to get your information by pretending to be an entity that you trust. Phishing emails often direct you to a website that looks real but is fake—and that may be infected with malware.\n\nTo help protect yourself from phishing and other scams, please remember that the U.S. Census Bureau will never ask for:\n\n- Your Social Security number.\n- Your bank account or credit card numbers.\n- Money or donations.\n\nIn addition, the Census Bureau will not contact you on behalf of a political party.",
+    "translation": "El phishing es el acto criminal de tratar de obtener su información fingiendo ser una entidad en la que confía. Los correos electrónicos de phishing a menudo lo dirigen a un sitio web que parece real pero falso, y que puede estar infectado con malware.\n\nPara ayudar a protegerse de la suplantación de identidad (phishing) y otras estafas, recuerde que la Oficina del Censo de EE. UU. Nunca solicitará:\n\n- Su número de seguro social.\n- Su cuenta bancaria o números de tarjeta de crédito.\n- Dinero o donaciones.\n\nAdemás, la Oficina del Censo no se comunicará con usted en nombre de un partido político."
   }
 }
