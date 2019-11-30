@@ -4,7 +4,7 @@ import YouTube from 'react-youtube';
 import { FormattedMessage } from 'react-intl';
 import { Carousel } from 'react-responsive-carousel';
 import QRCode from 'qrcode.react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import sharksMural from '../images/sharksMural.jpg';
 import cityHall from '../images/cityHall.jpg';
@@ -102,7 +102,7 @@ CarouselItem.propTypes = {
   }).isRequired
 };
 
-const Factoid = ({ title, message, headerMessage, headerTittle, path, linkName }) => (
+const Factoid = ({ title, message, headerMessage, headerTittle, link }) => (
   <li
     className="c_home__factoid"
   >
@@ -121,11 +121,7 @@ const Factoid = ({ title, message, headerMessage, headerTittle, path, linkName }
       {message}
     </p>
     <div className="c_home__factoid__line"></div>
-    <Link className= "c_home__factoid__link"
-      to={path}
-    >
-      {linkName}
-    </Link>
+    {link}
   </li>
 );
 
@@ -134,8 +130,7 @@ Factoid.propTypes = {
   message: PropTypes.element.isRequired,
   headerTittle: PropTypes.element.isRequired,
   headerMessage: PropTypes.element.isRequired,
-  path: PropTypes.string.isRequired,
-  linkName: PropTypes.element.isRequired
+  link: PropTypes.element.isRequired
 };
 
 class YoutubeItem extends Component {
@@ -261,12 +256,16 @@ export default class DetailViewContainer extends Component {
               id="components.Home.factoids.readyToTakeCensus.headerMessage"
               defaultMessage="Learn how to participate"
             />}
-            path="/contact"
-            linkName={<FormattedMessage
-              id="components.Home.factoids.readyToTakeCensus.contactLink"
-              defaultMessage="GET INVOLVED"
-            />
-            }
+            link={<Link
+              className="c_home__factoid__link"
+              to="/contact"
+            >
+              {<FormattedMessage
+                id="components.Home.factoids.readyToTakeCensus.contactLink"
+                defaultMessage="GET INVOLVED"
+              />
+              }
+            </Link>}
           />
           <Factoid
             title={<FormattedMessage
@@ -277,19 +276,23 @@ export default class DetailViewContainer extends Component {
               <QRCode value={document.location.origin} />
             }
             headerTittle={<FormattedMessage
-              id="components.Home.factoids.readyToTakeCensus.headerTittle"
+              id="components.Home.factoids.qr-code.headerTittle."
               defaultMessage="Your data is secure"
             />}
             headerMessage={<FormattedMessage
-              id="components.Home.factoids.readyToTakeCensus.headerMessage"
+              id="components.Home.factoids.qr-code.headerMessage."
               defaultMessage="Learn more about privacy"
             />}
-            path="/faq"
-            linkName={<FormattedMessage
-              id="components.Home.factoids.readyToTakeCensus.faqLink"
-              defaultMessage="VIEW ALL FAQs"
-            />
-            }
+            link={<Link
+              className="c_home__factoid__link"
+              to="/faq"
+            >
+              {<FormattedMessage
+                id="components.Home.factoids.qr-code.faqLink"
+                defaultMessage="VIEW ALL FAQs"
+              />
+              }
+            </Link>}
           />
           <Factoid
             title={<FormattedMessage
@@ -301,19 +304,23 @@ export default class DetailViewContainer extends Component {
               defaultMessage="more text will go here"
             />}
             headerTittle={<FormattedMessage
-              id="components.Home.factoids.readyToTakeCensus.headerTittle"
+              id="components.Home.factoids.3.headerTittle"
               defaultMessage="See all census questions"
             />}
             headerMessage={<FormattedMessage
-              id="components.Home.factoids.readyToTakeCensus.headerMessage"
+              id="components.Home.factoids.3.headerMessage"
               defaultMessage="Learn why it's important..."
             />}
-            path="/samplecensus"
-            linkName={<FormattedMessage
-              id="components.Home.factoids.readyToTakeCensus.surveyLink"
-              defaultMessage="VIEW SAMPPLE SURVEY"
-            />
-            }
+            link={<Link
+              className="c_home__factoid__link"
+              to="/samplecensus"
+            >
+              {<FormattedMessage
+                id="components.Home.factoids.3.surveyLink"
+                defaultMessage="VIEW SAMPPLE SURVEY"
+              />
+              }
+            </Link>}
           />
         </ul>
       </main>
