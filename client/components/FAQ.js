@@ -4,6 +4,7 @@ import { FormattedMessage } from 'react-intl';
 import classnames from 'classnames';
 
 import './FAQ.scss';
+import './Headers.scss';
 
 const GENERAL_INFORMATION_SECTION_KEY = 'generalInformation';
 const SECURITY_SECTION_KEY = 'security';
@@ -252,7 +253,7 @@ export default class FAQ extends React.Component {
   render () {
     return (
       <div className="c_faq">
-        <div className="c_faq__page-header"></div>
+        <div className="c_headers__goldHeader"></div>
         <div className="c_faq__body">
           <header className="c_faq__header" >
             <FormattedMessage

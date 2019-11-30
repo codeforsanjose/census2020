@@ -4,6 +4,7 @@ import { FormattedMessage } from 'react-intl';
 import classnames from 'classnames';
 
 import './SampleCensus.scss';
+import './Headers.scss';
 
 const ipsumQuestion = {
   question: (
@@ -21,27 +22,27 @@ const ipsumQuestion = {
   how_to: (
     <FormattedMessage
       id="components.SampleCensus.ipsumQuestion.howToAnswer"
-      defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. 
-Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis 
-enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. 
+      defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.
+Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis
+enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.
 Eligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.`}
     />
   ),
   info_use: (
     <FormattedMessage
       id="components.SampleCensus.ipsumQuestion.howIsUsed"
-      defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. 
-Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis 
-enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. 
+      defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.
+Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis
+enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.
 Eligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.`}
     />
   ),
   why_answer: (
     <FormattedMessage
       id="components.SampleCensus.ipsumQuestion.whyAnswer"
-      defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. 
-Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis 
-enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. 
+      defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.
+Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis
+enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.
 Eligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.`}
     />
   )
@@ -152,7 +153,7 @@ export default class SampleCensus extends React.Component {
 
     return (
       <main className="c_sample-census">
-        <div className="c_sample-census__header"></div>
+        <div className="c_headers__goldHeader"></div>
         <div className="c_sample-census__content">
           <h1 className="c_sample-census__content__title">
             <FormattedMessage

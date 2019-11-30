@@ -4,6 +4,7 @@ import YouTube from 'react-youtube';
 import { FormattedMessage } from 'react-intl';
 import { Carousel } from 'react-responsive-carousel';
 import QRCode from 'qrcode.react';
+import { Link } from 'react-router-dom';
 
 import sharksMural from '../images/sharksMural.jpg';
 import cityHall from '../images/cityHall.jpg';
@@ -101,22 +102,35 @@ CarouselItem.propTypes = {
   }).isRequired
 };
 
-const Factoid = ({ title, message }) => (
+const Factoid = ({ title, message, headerMessage, headerTittle, link }) => (
   <li
     className="c_home__factoid"
   >
+    <div className="c_home__factoid__goldHeader">
+      <p className="c_home__factoid__tittle">
+        {headerTittle}
+      </p>
+      <p className="c_home__factoid__message">
+        {headerMessage}
+      </p>
+    </div>
     <h3>
       {title}
     </h3>
     <p className="c_home__factoid__content">
       {message}
     </p>
+    <div className="c_home__factoid__line"></div>
+    {link}
   </li>
 );
 
 Factoid.propTypes = {
   title: PropTypes.element.isRequired,
-  message: PropTypes.element.isRequired
+  message: PropTypes.element.isRequired,
+  headerTittle: PropTypes.element.isRequired,
+  headerMessage: PropTypes.element.isRequired,
+  link: PropTypes.element.isRequired
 };
 
 class YoutubeItem extends Component {
@@ -197,9 +211,26 @@ export default class DetailViewContainer extends Component {
             className="c_home__content__text"
           >
             <FormattedMessage
-              id="components.DetailViewContainer.message"
-              defaultMessage={`Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur in exercitation voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.
-Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat.`}
+              id="components.DetailViewContainer.message.1"
+              defaultMessage={`The 2020 Census is here. Your participation helps ensure our community will have access to housing, healthcare, schools, community programs, better transportation, and government representation.`}
+              description="Home page message">
+            </FormattedMessage>
+          </p>
+          <p
+            className="c_home__content__text"
+          >
+            <FormattedMessage
+              id="components.DetailViewContainer.message.2"
+              defaultMessage={`Every 10 years, the U.S. Census Bureau sets out to count every person living in the United States — regardless of age, citizenship status, and gender. Getting the 2020 Census right is important for all our communities — particularly those most likely to be undercounted. A 2020 Census undercount could put billions of federal dollars and congressional representation for California at risk!`}
+              description="Home page message">
+            </FormattedMessage>
+          </p>
+          <p
+            className="c_home__content__text"
+          >
+            <FormattedMessage
+              id="components.DetailViewContainer.message.3"
+              defaultMessage={`Complete the census survey online, by phone or mail. The process is easy, quick and confidential! All you need is the ID code mailed to you by the U.S. Census Bureau, or your mailing address. Remember, to include everyone living and sleeping in your house. That means babies, children, teens, roommates, etc. Click the "Take the Census Now" button to get started!`}
               description="Home page message">
             </FormattedMessage>
           </p>
@@ -217,6 +248,24 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
               id="components.Home.factoids.readyToTakeCensus.message"
               defaultMessage="a whole bunch of text and things here"
             />}
+            headerTittle={<FormattedMessage
+              id="components.Home.factoids.readyToTakeCensus.headerTittle"
+              defaultMessage="Census starts in 2020"
+            />}
+            headerMessage={<FormattedMessage
+              id="components.Home.factoids.readyToTakeCensus.headerMessage"
+              defaultMessage="Learn how to participate"
+            />}
+            link={<Link
+              className="c_home__factoid__link"
+              to="/contact"
+            >
+              {<FormattedMessage
+                id="components.Home.factoids.readyToTakeCensus.contactLink"
+                defaultMessage="GET INVOLVED"
+              />
+              }
+            </Link>}
           />
           <Factoid
             title={<FormattedMessage
@@ -226,6 +275,24 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
             message={
               <QRCode value={document.location.origin} />
             }
+            headerTittle={<FormattedMessage
+              id="components.Home.factoids.qr-code.headerTittle."
+              defaultMessage="Your data is secure"
+            />}
+            headerMessage={<FormattedMessage
+              id="components.Home.factoids.qr-code.headerMessage."
+              defaultMessage="Learn more about privacy"
+            />}
+            link={<Link
+              className="c_home__factoid__link"
+              to="/faq"
+            >
+              {<FormattedMessage
+                id="components.Home.factoids.qr-code.faqLink"
+                defaultMessage="VIEW ALL FAQs"
+              />
+              }
+            </Link>}
           />
           <Factoid
             title={<FormattedMessage
@@ -236,6 +303,24 @@ Adipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugi
               id="components.Home.factoids.3.message"
               defaultMessage="more text will go here"
             />}
+            headerTittle={<FormattedMessage
+              id="components.Home.factoids.3.headerTittle"
+              defaultMessage="See all census questions"
+            />}
+            headerMessage={<FormattedMessage
+              id="components.Home.factoids.3.headerMessage"
+              defaultMessage="Learn why it's important..."
+            />}
+            link={<Link
+              className="c_home__factoid__link"
+              to="/samplecensus"
+            >
+              {<FormattedMessage
+                id="components.Home.factoids.3.surveyLink"
+                defaultMessage="VIEW SAMPPLE SURVEY"
+              />
+              }
+            </Link>}
           />
         </ul>
       </main>
