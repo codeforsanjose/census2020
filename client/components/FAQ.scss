@@ -1,27 +1,21 @@
 .c_faq {
-  &__page-header {
-    width: 100%;
-    height: 10vh;
-    background: linear-gradient(to right,
-        rgb(246, 188, 137),
-        rgb(246, 220, 139));
-  }
+  background-color: #f2f2f2;
 
   &__body {
     padding: 63px;
   }
-  
+
   &__header {
     font-size: 48px;
     font-weight: bold;
     color: #01131F;
     margin-bottom: 80px;
   }
-  
-  
+
+
   &__questions {
     margin: 0 64px;
-    
+
     &__section {
       margin-bottom: 80px;
       padding-left:32px;
@@ -31,7 +25,7 @@
       padding-top:40px;
       padding-bottom:12px;
       margin-bottom:80px;
-  
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -40,19 +34,19 @@
         margin-bottom: 24px;
         font-size: 32px;
       }
-      
+
       &__list {
         padding:0px;
-        margin:0px; 
+        margin:0px;
         list-style-type: none;
       }
     }
   }
-  
+
   &__question-item {
     margin-right: 32px;
     font-size: 24px;
-    
+
     &__question {
       width: 100%;
       min-height: 80px;
@@ -63,7 +57,7 @@
       margin-top:12px;
       display: flex;
       flex-direction: row;
-      
+
 
       &::after {
         margin-left: auto;

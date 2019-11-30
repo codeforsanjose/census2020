@@ -1,6 +1,7 @@
 .c_home {
 	display: flex;
 	flex-direction: column;
+	background-color: #f2f2f2;
 
 	&__overlay {
 		display: flex;
@@ -67,6 +68,7 @@
 		&__text {
 			font-size: 18px;
 			margin-right: 32px;
+			max-width: 80vh;;
 		}
 
 		&__video {
@@ -89,7 +91,7 @@
 	&__factoid {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: start;
 		align-items: center;
 		width: 30vw;
 		height: 30vw;
@@ -98,6 +100,46 @@
 		border: solid 1px #005ea2;
 		border-radius: 8px;
 		box-shadow: 0 0 8px 1px rgb(132, 134, 162);
+
+		&__tittle {
+			font-size: 17px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		&__message {
+			font-size: 17px;
+			font-weight: 100;
+			text-align: center;
+		}
+
+		&__link {
+			font-size: 20px;
+			font-weight: bold;
+			text-decoration: none;
+			color: #2F80ED;
+			margin: 25px;
+		}
+
+		&__line {
+			width: 30vw;
+			margin: 30px;
+			border-bottom: 1px solid #bbbbbb;
+			margin: auto 0 0 0;
+		}
+
+		&__goldHeader {
+			border-top-left-radius: 7px;
+			border-top-right-radius: 7px;
+			width: 100%;
+			min-height: 100px;
+			height: 10vh;
+			background: linear-gradient(
+				to right,
+				rgb(246,188,137),
+				rgb(246,220,139)
+			);
+		}
 
 		&__content {
 			text-align: center;

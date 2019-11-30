@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
 
 import './FAQ.scss';
+import './Headers.scss';
 
 const SECTION_KEYS = {
   BASIC: 'basic',
@@ -460,7 +461,7 @@ export default class FAQ extends React.Component {
   render () {
     return (
       <div className="c_faq">
-        <div className="c_faq__page-header"></div>
+        <div className="c_headers__goldHeader"></div>
         <div className="c_faq__body">
           <header className="c_faq__header" >
             <FormattedMarkdownMessage

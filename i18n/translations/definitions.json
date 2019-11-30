@@ -355,15 +355,15 @@
   },
   "components.SampleCensus.ipsumQuestion.howToAnswer": {
     "id": "components.SampleCensus.ipsumQuestion.howToAnswer",
-    "defaultMessage": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
+    "defaultMessage": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
   },
   "components.SampleCensus.ipsumQuestion.howIsUsed": {
     "id": "components.SampleCensus.ipsumQuestion.howIsUsed",
-    "defaultMessage": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
+    "defaultMessage": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
   },
   "components.SampleCensus.ipsumQuestion.whyAnswer": {
     "id": "components.SampleCensus.ipsumQuestion.whyAnswer",
-    "defaultMessage": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
+    "defaultMessage": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
   },
   "component.SampleCensus.sectionHeaders.howToAnswer": {
     "id": "component.SampleCensus.sectionHeaders.howToAnswer",
@@ -396,6 +396,197 @@
     "id": "components.SampleCensus.subtitle",
     "description": "Sample Census page subtitle",
     "defaultMessage": "Learn how to answer, how that info is used, and why it's important to answer"
+  },
+  "components.DetailViewContainer.message.1": {
+    "id": "components.DetailViewContainer.message.1",
+    "description": "Home page message",
+    "defaultMessage": "The 2020 Census is here. Your participation helps ensure our community will have access to housing, healthcare, schools, community programs, better transportation, and government representation."
+  },
+  "components.DetailViewContainer.message.2": {
+    "id": "components.DetailViewContainer.message.2",
+    "description": "Home page message",
+    "defaultMessage": "Every 10 years, the U.S. Census Bureau sets out to count every person living in the United States — regardless of age, citizenship status, and gender. Getting the 2020 Census right is important for all our communities — particularly those most likely to be undercounted. A 2020 Census undercount could put billions of federal dollars and congressional representation for California at risk!"
+  },
+  "components.DetailViewContainer.message.3": {
+    "id": "components.DetailViewContainer.message.3",
+    "description": "Home page message",
+    "defaultMessage": "Complete the census survey online, by phone or mail. The process is easy, quick and confidential! All you need is the ID code mailed to you by the U.S. Census Bureau, or your mailing address. Remember, to include everyone living and sleeping in your house. That means babies, children, teens, roommates, etc. Click the \"Take the Census Now\" button to get started!"
+  },
+  "components.Home.factoids.readyToTakeCensus.headerTittle": {
+    "id": "components.Home.factoids.readyToTakeCensus.headerTittle",
+    "defaultMessage": "Census starts in 2020"
+  },
+  "components.Home.factoids.readyToTakeCensus.headerMessage": {
+    "id": "components.Home.factoids.readyToTakeCensus.headerMessage",
+    "defaultMessage": "Learn how to participate"
+  },
+  "components.Home.factoids.readyToTakeCensus.contactLink": {
+    "id": "components.Home.factoids.readyToTakeCensus.contactLink",
+    "defaultMessage": "GET INVOLVED"
+  },
+  "components.Home.factoids.qr-code.headerTittle.": {
+    "id": "components.Home.factoids.qr-code.headerTittle.",
+    "defaultMessage": "Your data is secure"
+  },
+  "components.Home.factoids.qr-code.headerMessage.": {
+    "id": "components.Home.factoids.qr-code.headerMessage.",
+    "defaultMessage": "Learn more about privacy"
+  },
+  "components.Home.factoids.qr-code.faqLink": {
+    "id": "components.Home.factoids.qr-code.faqLink",
+    "defaultMessage": "VIEW ALL FAQs"
+  },
+  "components.Home.factoids.3.headerTittle": {
+    "id": "components.Home.factoids.3.headerTittle",
+    "defaultMessage": "See all census questions"
+  },
+  "components.Home.factoids.3.headerMessage": {
+    "id": "components.Home.factoids.3.headerMessage",
+    "defaultMessage": "Learn why it's important..."
+  },
+  "components.Home.factoids.3.surveyLink": {
+    "id": "components.Home.factoids.3.surveyLink",
+    "defaultMessage": "VIEW SAMPPLE SURVEY"
+  },
+  "components.FAQ.sections.generalInformation.header": {
+    "id": "components.FAQ.sections.generalInformation.header",
+    "defaultMessage": "General Information"
+  },
+  "components.FAQ.sections.security.header": {
+    "id": "components.FAQ.sections.security.header",
+    "defaultMessage": "Security"
+  },
+  "components.FAQ.sections.value.header": {
+    "id": "components.FAQ.sections.value.header",
+    "defaultMessage": "Value"
+  },
+  "components.FAQ.entries.howCanIComplete.question": {
+    "id": "components.FAQ.entries.howCanIComplete.question",
+    "defaultMessage": "How can I complete the census?"
+  },
+  "components.FAQ.entries.howCanIComplete.answer": {
+    "id": "components.FAQ.entries.howCanIComplete.answer",
+    "defaultMessage": "There are three ways you can fill out the Census survey: online, by telephone, or via mail. Households can answer the questions on the internet or by phone in English and 12 Non-English languages."
+  },
+  "components.FAQ.entries.typesOfQuestions.question": {
+    "id": "components.FAQ.entries.typesOfQuestions.question",
+    "defaultMessage": "What types of questions are on the Census?"
+  },
+  "components.FAQ.entries.typesOfQuestions.answer": {
+    "id": "components.FAQ.entries.typesOfQuestions.answer",
+    "defaultMessage": "The 2020 Census will ask basic information about each household, such as the total number of people living at your address, homeownership (own or rent), your phone number, and the names, gender, race/ethnicity of each individual living or staying with you. This information will not be shared with the City or any other local, state or federal agency."
+  },
+  "components.FAQ.entries.howLong.question": {
+    "id": "components.FAQ.entries.howLong.question",
+    "defaultMessage": "How long will it take to complete?"
+  },
+  "components.FAQ.entries.howLong.answer": {
+    "id": "components.FAQ.entries.howLong.answer",
+    "defaultMessage": "The census survey is short and on average takes about 10 minutes or less to complete, depending on the number of people in the household."
+  },
+  "components.FAQ.entries.otherLanguages.question": {
+    "id": "components.FAQ.entries.otherLanguages.question",
+    "defaultMessage": "I don’t speak English. Will the Census survey be available in other languages?"
+  },
+  "components.FAQ.entries.otherLanguages.answer": {
+    "id": "components.FAQ.entries.otherLanguages.answer",
+    "defaultMessage": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print."
+  },
+  "components.FAQ.entries.forgotId.question": {
+    "id": "components.FAQ.entries.forgotId.question",
+    "defaultMessage": "I forgot my ID. Can I still take the Census?"
+  },
+  "components.FAQ.entries.forgotId.answer": {
+    "id": "components.FAQ.entries.forgotId.answer",
+    "defaultMessage": "Yes. If you did not receive a census ID code or misplaced it, you can still complete the online census survey by using your mailing address. If you don’t want to respond online, you can call Census Questionnaire Assistance at (###) to complete the survey over the phone, or request a paper survey, also using the same unique ID number or providing your home address."
+  },
+  "components.FAQ.entries.willInfoBeShared.question": {
+    "id": "components.FAQ.entries.willInfoBeShared.question",
+    "defaultMessage": "Will my census information be shared with the government?"
+  },
+  "components.FAQ.entries.willInfoBeShared.answer": {
+    "id": "components.FAQ.entries.willInfoBeShared.answer",
+    "defaultMessage": "No. Census information is confidential. Individuals’ responses to the 2020 census are safe, secure and protected by federal law. Your answers can only be used to produce statistics; they cannot be used against you in any way. The Bureau combines your responses with information from other households to produce data, and the data will not identify your household or any person in your household. In addition, all Census Bureau employees take an oath of privacy and are sworn for life to protect the confidentiality of the data. The penalty for unlawful disclosure is a fine of up to $250,000, imprisonment of up to 5 years, or both."
+  },
+  "components.FAQ.entries.howToIdentifyAnOfficial.question": {
+    "id": "components.FAQ.entries.howToIdentifyAnOfficial.question",
+    "defaultMessage": "How do I identify a Census official in person?"
+  },
+  "components.FAQ.entries.howToIdentifyAnOfficial.answer": {
+    "id": "components.FAQ.entries.howToIdentifyAnOfficial.answer",
+    "defaultMessage": "If someone visits your home to collect a response for the 2020 Census, there are steps you can take to verify their identity.First, check to make sure that they have a valid ID badge, with their photograph, a Department of Commerce watermark, and an expiration date. Note that they may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo. If you still have questions, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative."
+  },
+  "components.FAQ.entries.howToAvoidScams.question": {
+    "id": "components.FAQ.entries.howToAvoidScams.question",
+    "defaultMessage": "How can I avoid scams online?"
+  },
+  "components.FAQ.entries.howToAvoidScams.answer": {
+    "id": "components.FAQ.entries.howToAvoidScams.answer",
+    "defaultMessage": "Phishing is the criminal act of trying to get your information by pretending to be an entity that you trust. Phishing emails often direct you to a website that looks real but is fake—and that may be infected with malware.\n\nTo help protect yourself from phishing and other scams, please remember that the U.S. Census Bureau will never ask for:\n\n- Your Social Security number.\n- Your bank account or credit card numbers.\n- Money or donations.\n\nIn addition, the Census Bureau will not contact you on behalf of a political party."
+  },
+  "components.FAQ.entries.howToReportFraud.question": {
+    "id": "components.FAQ.entries.howToReportFraud.question",
+    "defaultMessage": "How do I report suspected fraud?"
+  },
+  "components.FAQ.entries.howToReportFraud.answer": {
+    "id": "components.FAQ.entries.howToReportFraud.answer",
+    "defaultMessage": "If you suspect fraud, call {phoneNumber} and press option 3 to speak with a local Census Bureau representative. If it is determined that the visitor who came to your door does not work for the Census Bureau, contact the Police Department (phone ##)."
+  },
+  "components.FAQ.entries.doINeedToComplete.question": {
+    "id": "components.FAQ.entries.doINeedToComplete.question",
+    "defaultMessage": "Do I need to complete the Census?"
+  },
+  "components.FAQ.entries.doINeedToComplete.answer": {
+    "id": "components.FAQ.entries.doINeedToComplete.answer",
+    "defaultMessage": "Yes, all people living in the United States must be counted. Historically, young children (ages 0-4), teenagers, senior citizens, renters, immigrants, and the homeless population are undercounted in the census."
+  },
+  "components.FAQ.entries.whyImportant.question": {
+    "id": "components.FAQ.entries.whyImportant.question",
+    "defaultMessage": "Why is the census important?"
+  },
+  "components.FAQ.entries.whyImportant.answer": {
+    "id": "components.FAQ.entries.whyImportant.answer",
+    "defaultMessage": "Yes, all people living in the United States must be counted. Historically, young children (ages 0-4), teenagers, senior citizens, renters, immigrants, and the homeless population are undercounted in the census."
+  },
+  "components.FAQ.entries.homeless.question": {
+    "id": "components.FAQ.entries.homeless.question",
+    "defaultMessage": "How will the Census count homeless residents?"
+  },
+  "components.FAQ.entries.homeless.answer": {
+    "id": "components.FAQ.entries.homeless.answer",
+    "defaultMessage": "In late March 2020, the Census Bureau will conduct Service-Based Enumeration (SBE). During this time, Census workers will count people without conventional housing or people experiencing homelessness at places where they receive services (e.g., shelters, soup kitchens, regularly scheduled mobile food van locations, etc.) or at pre-identified outdoor locations where people are known to sleep — such as encampments, under bridges, or in parking lots"
+  },
+  "email.messages.confirmation.greeting": {
+    "id": "email.messages.confirmation.greeting",
+    "defaultMessage": "Hi {name}"
+  },
+  "email.messages.confirmation.thankYou": {
+    "id": "email.messages.confirmation.thankYou",
+    "defaultMessage": "Thank you for your interest in the 2020 Census effort in San Jose."
+  },
+  "email.messages.confirmation.usersMessageIntro": {
+    "id": "email.messages.confirmation.usersMessageIntro",
+    "defaultMessage": "The following message was sent by you to the City of San Jose Census Office:"
+  },
+  "email.messages.confirmation.interestsHeader": {
+    "id": "email.messages.confirmation.interestsHeader",
+    "defaultMessage": "I have an interest in:"
+  },
+  "email.messages.confirmation.commentsHeader": {
+    "id": "email.messages.confirmation.commentsHeader",
+    "defaultMessage": "Additional comments:"
+  },
+  "email.messages.confirmation.conclusion": {
+    "id": "email.messages.confirmation.conclusion",
+    "defaultMessage": "Thank you again for your interest. Someone will respond back to you within two business days."
+  },
+  "email.messages.confirmation.signature": {
+    "id": "email.messages.confirmation.signature",
+    "defaultMessage": "City of San Jose 2020 Census Office"
+  },
+  "mail.messages.confirmation.subject": {
+    "id": "mail.messages.confirmation.subject",
+    "defaultMessage": "Thank you for contacting the San Jose Census Department"
   },
   "components.FAQ.sections.basics.header": {
     "id": "components.FAQ.sections.basics.header",
@@ -453,6 +644,10 @@
     "id": "components.FAQ.entries.whatTypesOfQuestions.question",
     "defaultMessage": "What types of questions are on the 2020 Census?"
   },
+  "components.FAQ.entries.whatTypesOfQuestions.answer": {
+    "id": "components.FAQ.entries.whatTypesOfQuestions.answer",
+    "defaultMessage": "The Census survey will ask basic information about each household, such as the total number of people living at your address, homeownership (own or rent), your phone number, and the names, gender, race/ethnicity of each individual living or staying with you. This information will not be shared with the City or any other local, state or federal agency. For more information on what you will be asked on the Census go to the URL below.\n            \n{link}"
+  },
   "components.FAQ.entries.whatIsHouseholdRelationshipQuestion.question": {
     "id": "components.FAQ.entries.whatIsHouseholdRelationshipQuestion.question",
     "defaultMessage": "What is the \"Household Relationship Question\"?"
@@ -465,6 +660,10 @@
     "id": "components.FAQ.entries.whoCountsAsHousehold.question",
     "defaultMessage": "Who counts as a \"household?\""
   },
+  "components.FAQ.entries.whoCountsAsHousehold.answer": {
+    "id": "components.FAQ.entries.whoCountsAsHousehold.answer",
+    "defaultMessage": "A household consists of all the people who occupy a housing unit, both related family members and all the unrelated people, if any, such as lodgers, foster children, wards, or employees who share the housing. For more information on who to count on your Census form go to the URL below.\n          \n{link}"
+  },
   "components.FAQ.entries.howLongDoesItTake.question": {
     "id": "components.FAQ.entries.howLongDoesItTake.question",
     "defaultMessage": "How long does it take to complete the census?"
@@ -472,14 +671,6 @@
   "components.FAQ.entries.howLongDoesItTake.answer": {
     "id": "components.FAQ.entries.howLongDoesItTake.answer",
     "defaultMessage": "The census survey is short and on average takes about 10 minutes or less to complete, depending on the number of people living/sleeping in your home."
-  },
-  "components.FAQ.entries.howCanIComplete.question": {
-    "id": "components.FAQ.entries.howCanIComplete.question",
-    "defaultMessage": "How can I complete the census?"
-  },
-  "components.FAQ.entries.howCanIComplete.answer": {
-    "id": "components.FAQ.entries.howCanIComplete.answer",
-    "defaultMessage": "There are three ways you can fill out the Census survey: online, by telephone, or via mail. Households can answer the questions on the internet or by phone in English and 12 Non-English languages."
   },
   "components.FAQ.entries.isFirstTimeAvailableOnline.question": {
     "id": "components.FAQ.entries.isFirstTimeAvailableOnline.question",
@@ -537,14 +728,6 @@
     "id": "components.FAQ.entries.whatWillCensusWorkerAsk.answer",
     "defaultMessage": "The Census worker will ask you all the same survey questions that will appear in the online version of the Census."
   },
-  "components.FAQ.entries.otherLanguages.question": {
-    "id": "components.FAQ.entries.otherLanguages.question",
-    "defaultMessage": "I don’t speak English. Will the Census survey be available in other languages?"
-  },
-  "components.FAQ.entries.otherLanguages.answer": {
-    "id": "components.FAQ.entries.otherLanguages.answer",
-    "defaultMessage": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print."
-  },
   "components.FAQ.entries.isCensusSafe.question": {
     "id": "components.FAQ.entries.isCensusSafe.question",
     "defaultMessage": "Is the Census safe?"
@@ -565,64 +748,8 @@
     "id": "components.FAQ.entries.howToIdentifyCensusWorker.question",
     "defaultMessage": "How do I identify an official census worker in person?"
   },
-  "components.FAQ.entries.howToAvoidScams.question": {
-    "id": "components.FAQ.entries.howToAvoidScams.question",
-    "defaultMessage": "How can I avoid scams online?"
-  },
-  "components.FAQ.entries.howToReportFraud.question": {
-    "id": "components.FAQ.entries.howToReportFraud.question",
-    "defaultMessage": "How do I report suspected fraud?"
-  },
-  "components.FAQ.entries.howToReportFraud.answer": {
-    "id": "components.FAQ.entries.howToReportFraud.answer",
-    "defaultMessage": "If you suspect fraud, call {phoneNumber} and press option 3 to speak with a local Census Bureau representative. If it is determined that the visitor who came to your door does not work for the Census Bureau, contact the Police Department (phone ##)."
-  },
-  "email.messages.confirmation.greeting": {
-    "id": "email.messages.confirmation.greeting",
-    "defaultMessage": "Hi {name}"
-  },
-  "email.messages.confirmation.thankYou": {
-    "id": "email.messages.confirmation.thankYou",
-    "defaultMessage": "Thank you for your interest in the 2020 Census effort in San Jose."
-  },
-  "email.messages.confirmation.usersMessageIntro": {
-    "id": "email.messages.confirmation.usersMessageIntro",
-    "defaultMessage": "The following message was sent by you to the City of San Jose Census Office:"
-  },
-  "email.messages.confirmation.interestsHeader": {
-    "id": "email.messages.confirmation.interestsHeader",
-    "defaultMessage": "I have an interest in:"
-  },
-  "email.messages.confirmation.commentsHeader": {
-    "id": "email.messages.confirmation.commentsHeader",
-    "defaultMessage": "Additional comments:"
-  },
-  "email.messages.confirmation.conclusion": {
-    "id": "email.messages.confirmation.conclusion",
-    "defaultMessage": "Thank you again for your interest. Someone will respond back to you within two business days."
-  },
-  "email.messages.confirmation.signature": {
-    "id": "email.messages.confirmation.signature",
-    "defaultMessage": "City of San Jose 2020 Census Office"
-  },
-  "mail.messages.confirmation.subject": {
-    "id": "mail.messages.confirmation.subject",
-    "defaultMessage": "Thank you for contacting the San Jose Census Department"
-  },
-  "components.FAQ.entries.whatTypesOfQuestions.answer": {
-    "id": "components.FAQ.entries.whatTypesOfQuestions.answer",
-    "defaultMessage": "The Census survey will ask basic information about each household, such as the total number of people living at your address, homeownership (own or rent), your phone number, and the names, gender, race/ethnicity of each individual living or staying with you. This information will not be shared with the City or any other local, state or federal agency. For more information on what you will be asked on the Census go to the URL below.\n            \n{link}"
-  },
-  "components.FAQ.entries.whoCountsAsHousehold.answer": {
-    "id": "components.FAQ.entries.whoCountsAsHousehold.answer",
-    "defaultMessage": "A household consists of all the people who occupy a housing unit, both related family members and all the unrelated people, if any, such as lodgers, foster children, wards, or employees who share the housing. For more information on who to count on your Census form go to the URL below.\n          \n{link}"
-  },
   "components.FAQ.entries.howToIdentifyCensusWorker.answer": {
     "id": "components.FAQ.entries.howToIdentifyCensusWorker.answer",
     "defaultMessage": "If someone visits your home to collect a response for the 2020 Census, there are steps you can take to verify their identity:\n              \n  First, check to make sure that they have a valid ID badge, with their photograph, a Department of Commerce watermark, and an expiration date.\n  Note that they may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo.\n  If you still have questions, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative.\n  \n  Remember that the U.S. Census Bureau will never ask for:\n  \n  - Your Social Security number.\n  - Your bank account or credit card numbers.\n  - Money or donations.\n  \n  In addition, the Census Bureau will not contact you on behalf of a political party."
-  },
-  "components.FAQ.entries.howToAvoidScams.answer": {
-    "id": "components.FAQ.entries.howToAvoidScams.answer",
-    "defaultMessage": "Phishing is the criminal act of trying to get your information by pretending to be an entity that you trust. Phishing emails often direct you to a website that looks real but is fake—and that may be infected with malware.\n\nTo help protect yourself from phishing and other scams, please remember that the U.S. Census Bureau will never ask for:\n\n- Your Social Security number.\n- Your bank account or credit card numbers.\n- Money or donations.\n\nIn addition, the Census Bureau will not contact you on behalf of a political party."
   }
 }
