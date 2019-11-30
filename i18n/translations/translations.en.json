@@ -328,16 +328,16 @@
     "translation": "More text can go here"
   },
   "components.SampleCensus.ipsumQuestion.howToAnswer": {
-    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
-    "translation": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
+    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
+    "translation": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
   },
   "components.SampleCensus.ipsumQuestion.howIsUsed": {
-    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
-    "translation": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
+    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
+    "translation": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
   },
   "components.SampleCensus.ipsumQuestion.whyAnswer": {
-    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
-    "translation": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi. \nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis \nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium. \nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
+    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
+    "translation": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
   },
   "component.SampleCensus.sectionHeaders.howToAnswer": {
     "english": "How to answer this question",
@@ -366,5 +366,193 @@
   "components.SampleCensus.subtitle": {
     "english": "Learn how to answer, how that info is used, and why it's important to answer",
     "translation": "Learn how to answer, how that info is used, and why it's important to answer"
+  },
+  "components.DetailViewContainer.message.1": {
+    "english": "The 2020 Census is here. Your participation helps ensure our community will have access to housing, healthcare, schools, community programs, better transportation, and government representation.",
+    "translation": "The 2020 Census is here. Your participation helps ensure our community will have access to housing, healthcare, schools, community programs, better transportation, and government representation."
+  },
+  "components.DetailViewContainer.message.2": {
+    "english": "Every 10 years, the U.S. Census Bureau sets out to count every person living in the United States — regardless of age, citizenship status, and gender. Getting the 2020 Census right is important for all our communities — particularly those most likely to be undercounted. A 2020 Census undercount could put billions of federal dollars and congressional representation for California at risk!",
+    "translation": "Every 10 years, the U.S. Census Bureau sets out to count every person living in the United States — regardless of age, citizenship status, and gender. Getting the 2020 Census right is important for all our communities — particularly those most likely to be undercounted. A 2020 Census undercount could put billions of federal dollars and congressional representation for California at risk!"
+  },
+  "components.DetailViewContainer.message.3": {
+    "english": "Complete the census survey online, by phone or mail. The process is easy, quick and confidential! All you need is the ID code mailed to you by the U.S. Census Bureau, or your mailing address. Remember, to include everyone living and sleeping in your house. That means babies, children, teens, roommates, etc. Click the \"Take the Census Now\" button to get started!",
+    "translation": "Complete the census survey online, by phone or mail. The process is easy, quick and confidential! All you need is the ID code mailed to you by the U.S. Census Bureau, or your mailing address. Remember, to include everyone living and sleeping in your house. That means babies, children, teens, roommates, etc. Click the \"Take the Census Now\" button to get started!"
+  },
+  "components.Home.factoids.readyToTakeCensus.headerTittle": {
+    "english": "Census starts in 2020",
+    "translation": "Census starts in 2020"
+  },
+  "components.Home.factoids.readyToTakeCensus.headerMessage": {
+    "english": "Learn how to participate",
+    "translation": "Learn how to participate"
+  },
+  "components.Home.factoids.readyToTakeCensus.contactLink": {
+    "english": "GET INVOLVED",
+    "translation": "GET INVOLVED"
+  },
+  "components.Home.factoids.qr-code.headerTittle.": {
+    "english": "Your data is secure",
+    "translation": "Your data is secure"
+  },
+  "components.Home.factoids.qr-code.headerMessage.": {
+    "english": "Learn more about privacy",
+    "translation": "Learn more about privacy"
+  },
+  "components.Home.factoids.qr-code.faqLink": {
+    "english": "VIEW ALL FAQs",
+    "translation": "VIEW ALL FAQs"
+  },
+  "components.Home.factoids.3.headerTittle": {
+    "english": "See all census questions",
+    "translation": "See all census questions"
+  },
+  "components.Home.factoids.3.headerMessage": {
+    "english": "Learn why it's important...",
+    "translation": "Learn why it's important..."
+  },
+  "components.Home.factoids.3.surveyLink": {
+    "english": "VIEW SAMPPLE SURVEY",
+    "translation": "VIEW SAMPPLE SURVEY"
+  },
+  "components.FAQ.sections.generalInformation.header": {
+    "english": "General Information",
+    "translation": "General Information"
+  },
+  "components.FAQ.sections.security.header": {
+    "english": "Security",
+    "translation": "Security"
+  },
+  "components.FAQ.sections.value.header": {
+    "english": "Value",
+    "translation": "Value"
+  },
+  "components.FAQ.entries.howCanIComplete.question": {
+    "english": "How can I complete the Census?",
+    "translation": "How can I complete the Census?"
+  },
+  "components.FAQ.entries.howCanIComplete.answer": {
+    "english": "There are four ways you can respond to the census: over the internet, by telephone, by mail (paper questionnaire) or via in-person visit from census workers.",
+    "translation": "There are four ways you can respond to the census: over the internet, by telephone, by mail (paper questionnaire) or via in-person visit from census workers."
+  },
+  "components.FAQ.entries.typesOfQuestions.question": {
+    "english": "What types of questions are on the Census?",
+    "translation": "What types of questions are on the Census?"
+  },
+  "components.FAQ.entries.typesOfQuestions.answer": {
+    "english": "The 2020 Census will ask basic information about each household, such as the total number of people living at your address, homeownership (own or rent), your phone number, and the names, gender, race/ethnicity of each individual living or staying with you. This information will not be shared with the City or any other local, state or federal agency.",
+    "translation": "The 2020 Census will ask basic information about each household, such as the total number of people living at your address, homeownership (own or rent), your phone number, and the names, gender, race/ethnicity of each individual living or staying with you. This information will not be shared with the City or any other local, state or federal agency."
+  },
+  "components.FAQ.entries.howLong.question": {
+    "english": "How long will it take to complete?",
+    "translation": "How long will it take to complete?"
+  },
+  "components.FAQ.entries.howLong.answer": {
+    "english": "The census survey is short and on average takes about 10 minutes or less to complete, depending on the number of people in the household.",
+    "translation": "The census survey is short and on average takes about 10 minutes or less to complete, depending on the number of people in the household."
+  },
+  "components.FAQ.entries.otherLanguages.question": {
+    "english": "Will the census be available in other languages?",
+    "translation": "Will the census be available in other languages?"
+  },
+  "components.FAQ.entries.otherLanguages.answer": {
+    "english": "Yes. The online survey is available in 12 languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Call to request a paper survey./n The U.S. Census Bureau will provide other materials such as languages guides, glossaries, etc. in 59 languages. Residents who need assistance or who do not have computer or internet access can visit a City library or community center for assistance.",
+    "translation": "Yes. The online survey is available in 12 languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Call to request a paper survey./n The U.S. Census Bureau will provide other materials such as languages guides, glossaries, etc. in 59 languages. Residents who need assistance or who do not have computer or internet access can visit a City library or community center for assistance."
+  },
+  "components.FAQ.entries.forgotId.question": {
+    "english": "I forgot my ID. Can I still take the Census?",
+    "translation": "I forgot my ID. Can I still take the Census?"
+  },
+  "components.FAQ.entries.forgotId.answer": {
+    "english": "Yes. If you did not receive a census ID code or misplaced it, you can still complete the online census survey by using your mailing address. If you don’t want to respond online, you can call Census Questionnaire Assistance at (###) to complete the survey over the phone, or request a paper survey, also using the same unique ID number or providing your home address.",
+    "translation": "Yes. If you did not receive a census ID code or misplaced it, you can still complete the online census survey by using your mailing address. If you don’t want to respond online, you can call Census Questionnaire Assistance at (###) to complete the survey over the phone, or request a paper survey, also using the same unique ID number or providing your home address."
+  },
+  "components.FAQ.entries.willInfoBeShared.question": {
+    "english": "Will my census information be shared with the government?",
+    "translation": "Will my census information be shared with the government?"
+  },
+  "components.FAQ.entries.willInfoBeShared.answer": {
+    "english": "No. Census information is confidential. Individuals’ responses to the 2020 census are safe, secure and protected by federal law. Your answers can only be used to produce statistics; they cannot be used against you in any way. The Bureau combines your responses with information from other households to produce data, and the data will not identify your household or any person in your household. In addition, all Census Bureau employees take an oath of privacy and are sworn for life to protect the confidentiality of the data. The penalty for unlawful disclosure is a fine of up to $250,000, imprisonment of up to 5 years, or both.",
+    "translation": "No. Census information is confidential. Individuals’ responses to the 2020 census are safe, secure and protected by federal law. Your answers can only be used to produce statistics; they cannot be used against you in any way. The Bureau combines your responses with information from other households to produce data, and the data will not identify your household or any person in your household. In addition, all Census Bureau employees take an oath of privacy and are sworn for life to protect the confidentiality of the data. The penalty for unlawful disclosure is a fine of up to $250,000, imprisonment of up to 5 years, or both."
+  },
+  "components.FAQ.entries.howToIdentifyAnOfficial.question": {
+    "english": "How do I identify a Census official in person?",
+    "translation": "How do I identify a Census official in person?"
+  },
+  "components.FAQ.entries.howToIdentifyAnOfficial.answer": {
+    "english": "If someone visits your home to collect a response for the 2020 Census, there are steps you can take to verify their identity.First, check to make sure that they have a valid ID badge, with their photograph, a Department of Commerce watermark, and an expiration date. Note that they may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo. If you still have questions, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative.",
+    "translation": "If someone visits your home to collect a response for the 2020 Census, there are steps you can take to verify their identity.First, check to make sure that they have a valid ID badge, with their photograph, a Department of Commerce watermark, and an expiration date. Note that they may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo. If you still have questions, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative."
+  },
+  "components.FAQ.entries.howToAvoidScams.question": {
+    "english": "How can I avoid scams online?",
+    "translation": "How can I avoid scams online?"
+  },
+  "components.FAQ.entries.howToAvoidScams.answer": {
+    "english": "Phishing is the criminal act of trying to get your information by pretending to be an entity that you trust. Phishing emails often direct you to a website that looks real but is fake—and that may be infected with malware.To help protect yourself from phishing and other scams, please remember that the U.S. Census Bureau will never ask for: Your Social Security number. Your bank account or credit card numbers. Money or donations. In addition, the Census Bureau will not contact you on behalf of a political party.",
+    "translation": "Phishing is the criminal act of trying to get your information by pretending to be an entity that you trust. Phishing emails often direct you to a website that looks real but is fake—and that may be infected with malware.To help protect yourself from phishing and other scams, please remember that the U.S. Census Bureau will never ask for: Your Social Security number. Your bank account or credit card numbers. Money or donations. In addition, the Census Bureau will not contact you on behalf of a political party."
+  },
+  "components.FAQ.entries.howToReportFraud.question": {
+    "english": "How do I report suspected fraud?",
+    "translation": "How do I report suspected fraud?"
+  },
+  "components.FAQ.entries.howToReportFraud.answer": {
+    "english": "If you suspect fraud, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative. If it is determined that the visitor who came to your door does not work for the Census Bureau, contact the Police Department (phone ##).",
+    "translation": "If you suspect fraud, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative. If it is determined that the visitor who came to your door does not work for the Census Bureau, contact the Police Department (phone ##)."
+  },
+  "components.FAQ.entries.doINeedToComplete.question": {
+    "english": "Do I need to complete the Census?",
+    "translation": "Do I need to complete the Census?"
+  },
+  "components.FAQ.entries.doINeedToComplete.answer": {
+    "english": "Yes, all people living in the United States must be counted. Historically, young children (ages 0-4), teenagers, senior citizens, renters, immigrants, and the homeless population are undercounted in the census.",
+    "translation": "Yes, all people living in the United States must be counted. Historically, young children (ages 0-4), teenagers, senior citizens, renters, immigrants, and the homeless population are undercounted in the census."
+  },
+  "components.FAQ.entries.whyImportant.question": {
+    "english": "Why is the census important?",
+    "translation": "Why is the census important?"
+  },
+  "components.FAQ.entries.whyImportant.answer": {
+    "english": "Yes, all people living in the United States must be counted. Historically, young children (ages 0-4), teenagers, senior citizens, renters, immigrants, and the homeless population are undercounted in the census.",
+    "translation": "Yes, all people living in the United States must be counted. Historically, young children (ages 0-4), teenagers, senior citizens, renters, immigrants, and the homeless population are undercounted in the census."
+  },
+  "components.FAQ.entries.homeless.question": {
+    "english": "How will the Census count homeless residents?",
+    "translation": "How will the Census count homeless residents?"
+  },
+  "components.FAQ.entries.homeless.answer": {
+    "english": "In late March 2020, the Census Bureau will conduct Service-Based Enumeration (SBE). During this time, Census workers will count people without conventional housing or people experiencing homelessness at places where they receive services (e.g., shelters, soup kitchens, regularly scheduled mobile food van locations, etc.) or at pre-identified outdoor locations where people are known to sleep — such as encampments, under bridges, or in parking lots",
+    "translation": "In late March 2020, the Census Bureau will conduct Service-Based Enumeration (SBE). During this time, Census workers will count people without conventional housing or people experiencing homelessness at places where they receive services (e.g., shelters, soup kitchens, regularly scheduled mobile food van locations, etc.) or at pre-identified outdoor locations where people are known to sleep — such as encampments, under bridges, or in parking lots"
+  },
+  "email.messages.confirmation.greeting": {
+    "english": "Hi {name}",
+    "translation": "Hi {name}"
+  },
+  "email.messages.confirmation.thankYou": {
+    "english": "Thank you for your interest in the 2020 Census effort in San Jose.",
+    "translation": "Thank you for your interest in the 2020 Census effort in San Jose."
+  },
+  "email.messages.confirmation.usersMessageIntro": {
+    "english": "The following message was sent by you to the City of San Jose Census Office:",
+    "translation": "The following message was sent by you to the City of San Jose Census Office:"
+  },
+  "email.messages.confirmation.interestsHeader": {
+    "english": "I have an interest in:",
+    "translation": "I have an interest in:"
+  },
+  "email.messages.confirmation.commentsHeader": {
+    "english": "Additional comments:",
+    "translation": "Additional comments:"
+  },
+  "email.messages.confirmation.conclusion": {
+    "english": "Thank you again for your interest. Someone will respond back to you within two business days.",
+    "translation": "Thank you again for your interest. Someone will respond back to you within two business days."
+  },
+  "email.messages.confirmation.signature": {
+    "english": "City of San Jose 2020 Census Office",
+    "translation": "City of San Jose 2020 Census Office"
+  },
+  "mail.messages.confirmation.subject": {
+    "english": "Thank you for contacting the San Jose Census Department",
+    "translation": "Thank you for contacting the San Jose Census Department"
   }
 }
