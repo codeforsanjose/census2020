@@ -317,7 +317,7 @@ export default class DetailViewContainer extends Component {
             >
               {<FormattedMessage
                 id="components.Home.factoids.3.surveyLink"
-                defaultMessage="VIEW SAMPPLE SURVEY"
+                defaultMessage="VIEW SAMPLE SURVEY"
               />
               }
             </Link>}
