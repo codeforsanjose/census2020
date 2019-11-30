@@ -6,16 +6,6 @@
   overflow: auto;
   background-color: #f2f2f2;
 
-  &__header {
-    width: 100%;
-    height: 10vh;
-    background: linear-gradient(
-      to right, 
-      rgb(246,188,137), 
-      rgb(246,220,139)
-    );
-  }
-
   &__content {
     display: flex;
     flex-direction: column;
@@ -66,7 +56,7 @@
     &__census-questions {
       list-style: none;
       padding: 0;
-      
+
       &__card {
         flex-direction: column;
         width: 100%;
@@ -74,7 +64,7 @@
         padding: 5vh 5vw;
         border-radius: 3px;
         display: none;
-        
+
         &--active {
           display: block;
         }
