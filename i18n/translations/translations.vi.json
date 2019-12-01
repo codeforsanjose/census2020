@@ -329,15 +329,15 @@
   },
   "components.SampleCensus.ipsumQuestion.howToAnswer": {
     "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
-    "translation": null
+    "translation": "Laudantium ngồi veniam tại aut. Ab aut qui tenetur et eos animi.\nFugit kiêm deserunt quia pariatur Praesentium deleniti. Do đó, doloribus fugit est itaque quis\nenim omni autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos Praesentium.\nEligendi quasi magni velit et id in velit. Hàng hóa dolorum aspernatur dociis trong autem dignissimos."
   },
   "components.SampleCensus.ipsumQuestion.howIsUsed": {
     "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
-    "translation": null
+    "translation": "Laudantium ngồi veniam tại aut. Ab aut qui tenetur et eos animi.\nFugit kiêm deserunt quia pariatur Praesentium deleniti. Do đó, doloribus fugit est itaque quis\nenim omni autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos Praesentium.\nEligendi quasi magni velit et id in velit. Hàng hóa dolorum aspernatur dociis trong autem dignissimos."
   },
   "components.SampleCensus.ipsumQuestion.whyAnswer": {
     "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
-    "translation": null
+    "translation": "Laudantium ngồi veniam tại aut. Ab aut qui tenetur et eos animi.\nFugit kiêm deserunt quia pariatur Praesentium deleniti. Do đó, doloribus fugit est itaque quis\nenim omni autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos Praesentium.\nEligendi quasi magni velit et id in velit. Hàng hóa dolorum aspernatur dociis trong autem dignissimos."
   },
   "component.SampleCensus.sectionHeaders.howToAnswer": {
     "english": "How to answer this question",
@@ -428,12 +428,12 @@
     "translation": "Giá trị"
   },
   "components.FAQ.entries.howCanIComplete.question": {
-    "english": "How can I complete the Census?",
-    "translation": "Làm cách nào tôi có thể hoàn thành Tổng điều tra?"
+    "english": "How can I complete the census?",
+    "translation": "Làm thế nào tôi có thể hoàn thành điều tra dân số?"
   },
   "components.FAQ.entries.howCanIComplete.answer": {
-    "english": "There are four ways you can respond to the census: over the internet, by telephone, by mail (paper questionnaire) or via in-person visit from census workers.",
-    "translation": "Có bốn cách bạn có thể trả lời điều tra dân số: qua internet, qua điện thoại, qua thư (bảng câu hỏi trên giấy) hoặc qua gặp trực tiếp từ nhân viên điều tra dân số."
+    "english": "There are three ways you can fill out the Census survey: online, by telephone, or via mail. Households can answer the questions on the internet or by phone in English and 12 Non-English languages.",
+    "translation": "Có ba cách bạn có thể điền vào khảo sát Điều tra dân số: trực tuyến, qua điện thoại hoặc qua thư. Các hộ gia đình có thể trả lời các câu hỏi trên internet hoặc qua điện thoại bằng tiếng Anh và 12 ngôn ngữ không phải tiếng Anh."
   },
   "components.FAQ.entries.typesOfQuestions.question": {
     "english": "What types of questions are on the Census?",
@@ -452,12 +452,12 @@
     "translation": "Khảo sát điều tra dân số ngắn và trung bình mất khoảng 10 phút hoặc ít hơn để hoàn thành, tùy thuộc vào số lượng người trong gia đình."
   },
   "components.FAQ.entries.otherLanguages.question": {
-    "english": "Will the census be available in other languages?",
-    "translation": "Điều tra dân số sẽ có sẵn trong các ngôn ngữ khác?"
+    "english": "I don’t speak English. Will the Census survey be available in other languages?",
+    "translation": "Tôi không nói tiếng Anh. Khảo sát điều tra dân số sẽ có sẵn trong các ngôn ngữ khác?"
   },
   "components.FAQ.entries.otherLanguages.answer": {
-    "english": "Yes. The online survey is available in 12 languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Call to request a paper survey./n The U.S. Census Bureau will provide other materials such as languages guides, glossaries, etc. in 59 languages. Residents who need assistance or who do not have computer or internet access can visit a City library or community center for assistance.",
-    "translation": "Vâng. Khảo sát trực tuyến có sẵn bằng 12 ngôn ngữ (Tây Ban Nha, Trung Quốc, Việt Nam, Hàn Quốc, Nga, Ả Rập, Tagalog, Ba Lan, Pháp, Haiti Creole, Bồ Đào Nha, Nhật Bản); hỗ trợ qua điện thoại cũng sẽ có sẵn bằng các ngôn ngữ này bằng cách gọi (####). Khảo sát giấy có sẵn bằng tiếng Anh và tiếng Tây Ban Nha. Gọi để yêu cầu khảo sát trên giấy. / N Cục điều tra dân số Hoa Kỳ sẽ cung cấp các tài liệu khác như hướng dẫn ngôn ngữ, bảng chú giải, v.v. bằng 59 ngôn ngữ. Cư dân cần hỗ trợ hoặc không có máy tính hoặc truy cập internet có thể đến thư viện Thành phố hoặc trung tâm cộng đồng để được hỗ trợ."
+    "english": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print.",
+    "translation": "Vâng. Khảo sát trực tuyến có sẵn bằng tiếng Anh và 12 ngôn ngữ khác (Tây Ban Nha, Trung Quốc, Việt Nam, Hàn Quốc, Nga, Ả Rập, Tagalog, Ba Lan, Pháp, Haiti Creole, Bồ Đào Nha, Nhật Bản); hỗ trợ qua điện thoại cũng sẽ có sẵn bằng các ngôn ngữ này bằng cách gọi (####). Khảo sát giấy có sẵn bằng tiếng Anh và tiếng Tây Ban Nha. Hướng dẫn ngôn ngữ in và video sẽ có sẵn bằng 59 ngôn ngữ không phải tiếng Anh, bao gồm Ngôn ngữ ký hiệu của Mỹ, Chữ nổi và chữ in lớn."
   },
   "components.FAQ.entries.forgotId.question": {
     "english": "I forgot my ID. Can I still take the Census?",
@@ -488,16 +488,16 @@
     "translation": "Làm thế nào tôi có thể tránh lừa đảo trực tuyến?"
   },
   "components.FAQ.entries.howToAvoidScams.answer": {
-    "english": "Phishing is the criminal act of trying to get your information by pretending to be an entity that you trust. Phishing emails often direct you to a website that looks real but is fake—and that may be infected with malware.To help protect yourself from phishing and other scams, please remember that the U.S. Census Bureau will never ask for: Your Social Security number. Your bank account or credit card numbers. Money or donations. In addition, the Census Bureau will not contact you on behalf of a political party.",
-    "translation": "Lừa đảo là hành vi phạm tội cố gắng lấy thông tin của bạn bằng cách giả vờ là một thực thể mà bạn tin tưởng. Các email lừa đảo thường hướng bạn đến một trang web trông thật nhưng là giả mạo và có thể bị nhiễm phần mềm độc hại. Để giúp bảo vệ bạn khỏi lừa đảo và các trò lừa đảo khác, hãy nhớ rằng Cục điều tra dân số Hoa Kỳ sẽ không bao giờ yêu cầu: Số An sinh xã hội của bạn. Tài khoản ngân hàng hoặc số thẻ tín dụng của bạn. Tiền hoặc quyên góp. Ngoài ra, Cục điều tra dân số sẽ không liên lạc với bạn thay mặt cho một đảng chính trị."
+    "english": "Phishing is the criminal act of trying to get your information by pretending to be an entity that you trust. Phishing emails often direct you to a website that looks real but is fake—and that may be infected with malware.\n\nTo help protect yourself from phishing and other scams, please remember that the U.S. Census Bureau will never ask for:\n\n- Your Social Security number.\n- Your bank account or credit card numbers.\n- Money or donations.\n\nIn addition, the Census Bureau will not contact you on behalf of a political party.",
+    "translation": "Lừa đảo là hành vi phạm tội cố gắng lấy thông tin của bạn bằng cách giả vờ là một thực thể mà bạn tin tưởng. Các email lừa đảo thường hướng bạn đến một trang web trông thật nhưng là giả mạo và có thể bị nhiễm phần mềm độc hại.\n\nĐể giúp bảo vệ bạn khỏi lừa đảo và các trò gian lận khác, vui lòng nhớ rằng Cục điều tra dân số Hoa Kỳ sẽ không bao giờ yêu cầu:\n\n- Số an sinh xã hội của bạn.\n- Số tài khoản ngân hàng hoặc số thẻ tín dụng của bạn.\n- Tiền hoặc quyên góp.\n\nNgoài ra, Cục điều tra dân số sẽ không liên lạc với bạn thay mặt cho một đảng chính trị."
   },
   "components.FAQ.entries.howToReportFraud.question": {
     "english": "How do I report suspected fraud?",
     "translation": "Làm thế nào để tôi báo cáo nghi ngờ gian lận?"
   },
   "components.FAQ.entries.howToReportFraud.answer": {
-    "english": "If you suspect fraud, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative. If it is determined that the visitor who came to your door does not work for the Census Bureau, contact the Police Department (phone ##).",
-    "translation": "Nếu bạn nghi ngờ có gian lận, hãy gọi 855-562-2020 và nhấn tùy chọn 3 để nói chuyện với đại diện của Cục điều tra dân số địa phương. Nếu xác định rằng khách truy cập đến cửa của bạn không làm việc cho Cục điều tra dân số, hãy liên hệ với Sở cảnh sát (điện thoại ##)."
+    "english": "If you suspect fraud, call {phoneNumber} and press option 3 to speak with a local Census Bureau representative. If it is determined that the visitor who came to your door does not work for the Census Bureau, contact the Police Department (phone ##).",
+    "translation": "Nếu bạn nghi ngờ có gian lận, hãy gọi {phoneNumber} và nhấn tùy chọn 3 để nói chuyện với đại diện của Cục điều tra dân số địa phương. Nếu xác định rằng khách truy cập đến cửa của bạn không làm việc cho Cục điều tra dân số, hãy liên hệ với Sở cảnh sát (điện thoại ##)."
   },
   "components.FAQ.entries.doINeedToComplete.question": {
     "english": "Do I need to complete the Census?",
@@ -554,5 +554,169 @@
   "mail.messages.confirmation.subject": {
     "english": "Thank you for contacting the San Jose Census Department",
     "translation": "Cảm ơn bạn đã liên hệ với Cục điều tra dân số San Jose"
+  },
+  "components.FAQ.sections.basics.header": {
+    "english": "Basics",
+    "translation": "Khái niệm cơ bản"
+  },
+  "components.FAQ.sections.about.header": {
+    "english": "About the Survey",
+    "translation": "Về khảo sát"
+  },
+  "components.FAQ.sections.gettingCounted.header": {
+    "english": "Getting Counted",
+    "translation": "Bắt đếm"
+  },
+  "components.FAQ.sections.language.header": {
+    "english": "Language Access",
+    "translation": "Truy cập ngôn ngữ"
+  },
+  "components.FAQ.sections.safety.header": {
+    "english": "Safety and Privacy",
+    "translation": "An toàn và riêng tư"
+  },
+  "components.FAQ.entries.whatIsTheCensus.question": {
+    "english": "What is the census?",
+    "translation": "Điều tra dân số là gì?"
+  },
+  "components.FAQ.entries.whatIsTheCensus.answer": {
+    "english": "The United States Census is a national population count that occurs every ten years. It is mandated by the U.S. Constitution.",
+    "translation": "Tổng điều tra dân số Hoa Kỳ là một số lượng dân số quốc gia xảy ra cứ sau mười năm. Nó được ủy quyền bởi Hiến pháp Hoa Kỳ."
+  },
+  "components.FAQ.entries.whyHaveCensus.question": {
+    "english": "Why do we have a census?",
+    "translation": "Tại sao chúng ta có một cuộc điều tra dân số?"
+  },
+  "components.FAQ.entries.whyHaveCensus.answer": {
+    "english": "The data collected from the Census is used to make sure everyone is equally represented in our political system and that government resources are allocated fairly. The Census data determines how many congressional seats a state receives; how much federal funding will be allocated to local communities for public services and infrastructure needs; and provides a picture of the changing demographics of the country.",
+    "translation": "Dữ liệu được thu thập từ Tổng điều tra được sử dụng để đảm bảo mọi người đều được đại diện như nhau trong hệ thống chính trị của chúng tôi và các nguồn lực của chính phủ được phân bổ công bằng. Dữ liệu điều tra dân số xác định có bao nhiêu ghế quốc hội mà một bang nhận được; bao nhiêu tài trợ của liên bang sẽ được phân bổ cho cộng đồng địa phương cho các dịch vụ công cộng và nhu cầu cơ sở hạ tầng; và cung cấp một bức tranh về nhân khẩu học thay đổi của đất nước."
+  },
+  "components.FAQ.entries.whoGetsCounted.question": {
+    "english": "Who gets counted?",
+    "translation": "Ai được tính?"
+  },
+  "components.FAQ.entries.whoGetsCounted.answer": {
+    "english": "Everyone living in the United States must be counted. Make sure you include everyone living and sleeping in your home on your census survey — regardless of age, gender, relationship to you, or citizenship/immigration status.",
+    "translation": "Mọi người sống ở Hoa Kỳ phải được tính. Đảm bảo bạn bao gồm tất cả mọi người sống và ngủ trong nhà của bạn trong cuộc điều tra điều tra dân số của bạn - bất kể tuổi tác, giới tính, mối quan hệ với bạn, hoặc tình trạng công dân / nhập cư."
+  },
+  "components.FAQ.entries.whenGetInvitation.question": {
+    "english": "When should I look for my invitation in the mail?",
+    "translation": "Khi nào tôi nên tìm lời mời trong thư?"
+  },
+  "components.FAQ.entries.whenGetInvitation.answer": {
+    "english": "Starting in March 2020, the U.S. Census Bureau will mail letters to every household in the United States inviting them to respond to the Census survey. Every household should receive a letter requesting that they complete a census form online, by mail, or phone by Census Day on April 1, 2020.",
+    "translation": "Bắt đầu từ tháng 3 năm 2020, Cục điều tra dân số Hoa Kỳ sẽ gửi thư đến mọi hộ gia đình ở Hoa Kỳ mời họ trả lời khảo sát của Tổng điều tra. Mỗi hộ gia đình sẽ nhận được một lá thư yêu cầu họ hoàn thành mẫu điều tra dân số trực tuyến, qua thư hoặc điện thoại vào Ngày điều tra dân số vào ngày 1 tháng 4 năm 2020."
+  },
+  "components.FAQ.entries.whatTypesOfQuestions.question": {
+    "english": "What types of questions are on the 2020 Census?",
+    "translation": "Những loại câu hỏi nào trong Tổng điều tra dân số năm 2020?"
+  },
+  "components.FAQ.entries.whatTypesOfQuestions.answer": {
+    "english": "The Census survey will ask basic information about each household, such as the total number of people living at your address, homeownership (own or rent), your phone number, and the names, gender, race/ethnicity of each individual living or staying with you. This information will not be shared with the City or any other local, state or federal agency. For more information on what you will be asked on the Census go to the URL below.\n            \n{link}",
+    "translation": "Khảo sát điều tra dân số sẽ hỏi thông tin cơ bản về từng hộ gia đình, chẳng hạn như tổng số người sống tại địa chỉ của bạn, quyền sở hữu nhà (sở hữu hoặc thuê), số điện thoại của bạn và tên, giới tính, chủng tộc / sắc tộc của từng cá nhân sống hoặc ở với bạn. Thông tin này sẽ không được chia sẻ với Thành phố hoặc bất kỳ cơ quan địa phương, tiểu bang hoặc liên bang nào khác. Để biết thêm thông tin về những gì bạn sẽ được hỏi trên Điều tra dân số, hãy truy cập URL bên dưới.\n            \n{liên kết}"
+  },
+  "components.FAQ.entries.whatIsHouseholdRelationshipQuestion.question": {
+    "english": "What is the \"Household Relationship Question\"?",
+    "translation": "\"Câu hỏi về mối quan hệ gia đình\" là gì?"
+  },
+  "components.FAQ.entries.whatIsHouseholdRelationshipQuestion.answer": {
+    "english": "For the first time, the 2020 Census offers a way for the person filling out the form to indicate a same-sex relationship with another household member. This change is expected to improve national statistics on same-sex couples.",
+    "translation": "Lần đầu tiên, Tổng điều tra dân số năm 2020 đưa ra một cách để người điền vào mẫu đơn biểu thị mối quan hệ đồng giới với một thành viên khác trong gia đình. Sự thay đổi này dự kiến sẽ cải thiện số liệu thống kê quốc gia về các cặp đồng giới."
+  },
+  "components.FAQ.entries.whoCountsAsHousehold.question": {
+    "english": "Who counts as a \"household?\"",
+    "translation": "Ai được coi là \"hộ gia đình?\""
+  },
+  "components.FAQ.entries.whoCountsAsHousehold.answer": {
+    "english": "A household consists of all the people who occupy a housing unit, both related family members and all the unrelated people, if any, such as lodgers, foster children, wards, or employees who share the housing. For more information on who to count on your Census form go to the URL below.\n          \n{link}",
+    "translation": "Một hộ gia đình bao gồm tất cả những người chiếm giữ một đơn vị nhà ở, cả các thành viên gia đình có liên quan và tất cả những người không liên quan, nếu có, chẳng hạn như người thuê nhà, trẻ em nuôi dưỡng, phường hoặc nhân viên chia sẻ nhà ở. Để biết thêm thông tin về người sẽ tính vào biểu mẫu Điều tra dân số của bạn, hãy truy cập URL bên dưới.\n          \n{liên kết}"
+  },
+  "components.FAQ.entries.howLongDoesItTake.question": {
+    "english": "How long does it take to complete the census?",
+    "translation": "Mất bao lâu để hoàn thành tổng điều tra?"
+  },
+  "components.FAQ.entries.howLongDoesItTake.answer": {
+    "english": "The census survey is short and on average takes about 10 minutes or less to complete, depending on the number of people living/sleeping in your home.",
+    "translation": "Khảo sát điều tra dân số ngắn và trung bình mất khoảng 10 phút hoặc ít hơn để hoàn thành, tùy thuộc vào số người sống / ngủ trong nhà bạn."
+  },
+  "components.FAQ.entries.isFirstTimeAvailableOnline.question": {
+    "english": "Is this the first time the census survey will be available online?",
+    "translation": "Đây có phải là lần đầu tiên khảo sát điều tra dân số sẽ có sẵn trực tuyến?"
+  },
+  "components.FAQ.entries.isFirstTimeAvailableOnline.answer": {
+    "english": "Yes! The 2020 Census will be the first Census to be almost entirely digital! The survey will be available in English and 12 Non-English languages.",
+    "translation": "Vâng! Tổng điều tra dân số năm 2020 sẽ là Tổng điều tra đầu tiên gần như hoàn toàn bằng kỹ thuật số! Cuộc khảo sát sẽ có sẵn bằng tiếng Anh và 12 ngôn ngữ không phải tiếng Anh."
+  },
+  "components.FAQ.entries.whenCanFillOut.question": {
+    "english": "When can I go online to fill out the census survey?",
+    "translation": "Khi nào tôi có thể lên mạng để điền vào bản khảo sát điều tra dân số?"
+  },
+  "components.FAQ.entries.whenCanFillOut.answer": {
+    "english": "Beginning in mid-March 2020, households will receive an invitation in the mail to participate in the census by visiting the U.S. Census Bureau’s 2020 Census website to fill out the online survey.",
+    "translation": "Bắt đầu từ giữa tháng 3 năm 2020, các hộ gia đình sẽ nhận được thư mời tham gia vào cuộc điều tra dân số bằng cách truy cập trang web của Tổng điều tra dân số Hoa Kỳ năm 2020 để điền vào bản khảo sát trực tuyến."
+  },
+  "components.FAQ.entries.lostCensusId.question": {
+    "english": "I don’t have or lost my census ID. Can I still complete the census?",
+    "translation": "Tôi không có hoặc mất ID điều tra dân số. Tôi vẫn có thể hoàn thành điều tra dân số chứ?"
+  },
+  "components.FAQ.entries.lostCensusId.answer": {
+    "english": "Yes. If you did not receive a census ID code or misplaced it, you can still complete the online census survey by using your mailing address. If you don’t want to respond online, you can call Census Questionnaire Assistance at (###) to complete the survey over the phone.",
+    "translation": "Vâng. Nếu bạn không nhận được mã ID điều tra dân số hoặc đặt sai mã, bạn vẫn có thể hoàn thành khảo sát điều tra dân số trực tuyến bằng cách sử dụng địa chỉ gửi thư của mình. Nếu bạn không muốn trả lời trực tuyến, bạn có thể gọi Hỗ trợ Câu hỏi điều tra dân số theo số (###) để hoàn thành khảo sát qua điện thoại."
+  },
+  "components.FAQ.entries.noAccessToComputer.question": {
+    "english": "What if I don’t have access to a computer?",
+    "translation": "Nếu tôi không có quyền truy cập vào máy tính thì sao?"
+  },
+  "components.FAQ.entries.noAccessToComputer.answer": {
+    "english": "Households that do not have internet access are encouraged to visit a Census Kiosk to get counted in the 2020 Census. These dedicated computer stations will be available at City library branches, community centers and City Hall. In-person assistance will be available at most locations.",
+    "translation": "Các hộ gia đình không có truy cập internet được khuyến khích truy cập Kiosk điều tra dân số để được tính vào Tổng điều tra dân số năm 2020. Các trạm máy tính chuyên dụng này sẽ có sẵn tại các chi nhánh thư viện Thành phố, trung tâm cộng đồng và Tòa thị chính. Hỗ trợ trực tiếp sẽ có sẵn tại hầu hết các địa điểm."
+  },
+  "components.FAQ.entries.whatHappensIfNoResponse.question": {
+    "english": "What happens if I don’t respond to the Census?",
+    "translation": "Điều gì xảy ra nếu tôi không phản ứng với Tổng điều tra?"
+  },
+  "components.FAQ.entries.whatHappensIfNoResponse.answer": {
+    "english": "If your household fails to respond online or by telephone, the U.S. Census Bureau will mail several reminders to your household and will ultimately mail you a printed questionnaire—in English and Spanish—for you to return by mail.",
+    "translation": "Nếu hộ gia đình của bạn không trả lời trực tuyến hoặc qua điện thoại, Cục điều tra dân số Hoa Kỳ sẽ gửi một số lời nhắc đến hộ gia đình của bạn và cuối cùng sẽ gửi cho bạn một bản câu hỏi in bằng tiếng Anh và tiếng Tây Ban Nha để bạn gửi lại qua thư."
+  },
+  "components.FAQ.entries.whatHappensIfNoResponseAtAll.question": {
+    "english": "What happens if I don’t respond to the census at all?",
+    "translation": "Điều gì xảy ra nếu tôi không phản ứng với điều tra dân số?"
+  },
+  "components.FAQ.entries.whatHappensIfNoResponseAtAll.answer": {
+    "english": "If your household does not respond to the Census online, by phone, or via mail by late April 2020, the U.S. Census Bureau will send a Census worker, known as an enumerator, to your address to help you complete the survey. To avoid a visit from a census worker, complete the census survey on your own.",
+    "translation": "Nếu hộ gia đình của bạn không trả lời Điều tra dân số trực tuyến, qua điện thoại hoặc qua thư vào cuối tháng 4 năm 2020, Cục điều tra dân số Hoa Kỳ sẽ gửi một nhân viên điều tra dân số, được gọi là điều tra viên, đến địa chỉ của bạn để giúp bạn hoàn thành khảo sát. Để tránh chuyến thăm của nhân viên điều tra dân số, hãy tự mình hoàn thành khảo sát điều tra dân số."
+  },
+  "components.FAQ.entries.whatWillCensusWorkerAsk.question": {
+    "english": "What will the Census worker ask me?",
+    "translation": "Nhân viên điều tra dân số sẽ hỏi tôi điều gì?"
+  },
+  "components.FAQ.entries.whatWillCensusWorkerAsk.answer": {
+    "english": "The Census worker will ask you all the same survey questions that will appear in the online version of the Census.",
+    "translation": "Nhân viên điều tra dân số sẽ hỏi bạn tất cả các câu hỏi khảo sát tương tự sẽ xuất hiện trong phiên bản trực tuyến của Tổng điều tra."
+  },
+  "components.FAQ.entries.isCensusSafe.question": {
+    "english": "Is the Census safe?",
+    "translation": "Điều tra dân số có an toàn không?"
+  },
+  "components.FAQ.entries.isCensusSafe.answer": {
+    "english": "Under federal census law, your responses are kept confidential and can only be used by the U.S. Census Bureau to produce statistics.",
+    "translation": "Theo luật điều tra dân số liên bang, các câu trả lời của bạn được giữ bí mật và chỉ có thể được Cục điều tra dân số Hoa Kỳ sử dụng để đưa ra số liệu thống kê."
+  },
+  "components.FAQ.entries.canOtherAgenciesAccess.question": {
+    "english": "Can another government agency access my census information?",
+    "translation": "Một cơ quan chính phủ khác có thể truy cập thông tin điều tra dân số của tôi?"
+  },
+  "components.FAQ.entries.canOtherAgenciesAccess.answer": {
+    "english": "No. Title 13 of the U.S. Code requires your information to be kept confidential and prevents your responses from being used against you by any government agency--including law enforcement, the Department of Homeland Security, or US Immigration and Customs Enforcement. All Census Bureau employees take an oath of privacy and are sworn for life to protect the confidentiality of the data. The penalty for unlawful disclosure is a fine of up to $250,000, imprisonment of up to 5 years, or both.",
+    "translation": "Tiêu đề 13 của Bộ luật Hoa Kỳ yêu cầu giữ bí mật thông tin của bạn và ngăn chặn các phản hồi của bạn được sử dụng chống lại bạn bởi bất kỳ cơ quan chính phủ nào - bao gồm cơ quan thực thi pháp luật, Bộ An ninh Nội địa, hoặc Cơ quan Thực thi Di trú và Hải quan Hoa Kỳ. Tất cả nhân viên của Cục điều tra dân số đều tuyên thệ về quyền riêng tư và tuyên thệ trọn đời để bảo vệ tính bảo mật của dữ liệu. Hình phạt cho việc tiết lộ bất hợp pháp là phạt tiền lên tới 250.000 đô la, phạt tù tới 5 năm hoặc cả hai."
+  },
+  "components.FAQ.entries.howToIdentifyCensusWorker.question": {
+    "english": "How do I identify an official census worker in person?",
+    "translation": "Làm thế nào để tôi xác định một nhân viên điều tra dân số chính thức trong người?"
+  },
+  "components.FAQ.entries.howToIdentifyCensusWorker.answer": {
+    "english": "If someone visits your home to collect a response for the 2020 Census, there are steps you can take to verify their identity:\n              \n  First, check to make sure that they have a valid ID badge, with their photograph, a Department of Commerce watermark, and an expiration date.\n  Note that they may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo.\n  If you still have questions, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative.\n  \n  Remember that the U.S. Census Bureau will never ask for:\n  \n  - Your Social Security number.\n  - Your bank account or credit card numbers.\n  - Money or donations.\n  \n  In addition, the Census Bureau will not contact you on behalf of a political party.",
+    "translation": "Nếu ai đó đến thăm nhà bạn để thu thập phản hồi cho Tổng điều tra dân số năm 2020, có những bước bạn có thể thực hiện để xác minh danh tính của họ:\n              \n  Trước tiên, hãy kiểm tra để đảm bảo rằng họ có huy hiệu ID hợp lệ, với ảnh của họ, hình mờ của Bộ Thương mại và ngày hết hạn.\n  Lưu ý rằng họ có thể mang theo điện thoại của Cục điều tra dân số hoặc máy tính xách tay, cộng với một chiếc túi có logo Cục điều tra dân số.\n  Nếu bạn vẫn còn thắc mắc, hãy gọi 855-562-2020 và nhấn tùy chọn 3 để nói chuyện với đại diện Cục điều tra dân số địa phương.\n  \n  Hãy nhớ rằng Cục điều tra dân số Hoa Kỳ sẽ không bao giờ yêu cầu:\n  \n  - Số an sinh xã hội của bạn.\n  - Số tài khoản ngân hàng hoặc số thẻ tín dụng của bạn.\n  - Tiền hoặc quyên góp.\n  \n  Ngoài ra, Cục điều tra dân số sẽ không liên lạc với bạn thay mặt cho một đảng chính trị."
   }
 }
