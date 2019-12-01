@@ -456,8 +456,8 @@
     "translation": "Will the census be available in other languages?"
   },
   "components.FAQ.entries.otherLanguages.answer": {
-    "english": "I don’t speak English. Will the Census survey be available in other languages?",
-    "translation": "I don’t speak English. Will the Census survey be available in other languages?"
+    "english": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print.",
+    "translation": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print."
   },
   "components.FAQ.entries.forgotId.question": {
     "english": "I forgot my ID. Can I still take the Census?",
