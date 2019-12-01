@@ -452,8 +452,8 @@
     "translation": "The census survey is short and on average takes about 10 minutes or less to complete, depending on the number of people in the household."
   },
   "components.FAQ.entries.otherLanguages.question": {
-    "english": "Will the census be available in other languages?",
-    "translation": "Will the census be available in other languages?"
+    "english": "I don’t speak English. Will the Census survey be available in other languages?",
+    "translation": "I don’t speak English. Will the Census survey be available in other languages?"
   },
   "components.FAQ.entries.otherLanguages.answer": {
     "english": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print.",
