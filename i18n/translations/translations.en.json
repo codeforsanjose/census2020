@@ -456,14 +456,8 @@
     "translation": "Will the census be available in other languages?"
   },
   "components.FAQ.entries.otherLanguages.answer": {
-    "english": "Yes. The online survey is available in 12 languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Call to request a paper survey./n The U.S. Census Bureau will provide other materials such as languages guides, glossaries, etc. in 59 languages. Residents who need assistance or who do not have computer or internet access can visit a City library or community center for assistance.",
-    "translation": "Yes. The online survey is available in 12 languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Call to request a paper survey./n The U.S. Census Bureau will provide other materials such as languages guides, glossaries, etc. in 59 languages. Residents who need assistance or who do not have computer or internet access can visit a City library or community center for assistance."
     "english": "I don’t speak English. Will the Census survey be available in other languages?",
     "translation": "I don’t speak English. Will the Census survey be available in other languages?"
-  },
-  "components.FAQ.entries.otherLanguages.answer": {
-    "english": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print.",
-    "translation": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print."
   },
   "components.FAQ.entries.forgotId.question": {
     "english": "I forgot my ID. Can I still take the Census?",
