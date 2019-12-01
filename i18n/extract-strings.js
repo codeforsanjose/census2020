@@ -56,7 +56,9 @@ for (const file of filesToCheck) {
         [
           'babel-plugin-react-intl',
           {
-            extractFromFormatMessageCall: true
+            additionalComponentNames: [
+              'FormattedMarkdownMessage'
+            ]
           }
         ]
       ]
