@@ -14,7 +14,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prebuild-server-react": "rimraf ./server/mail/mail-components/compiled",
-    "build-server-react": "babel --out-dir ./server/mail/mail-components/compiled ./server/mail/mail-components"
+    "build-server-react": "cross-env NODE_ENV=production webpack --config=server/mail/mail-components/webpack.config.js"
   },
   "author": "Code for San Jose",
   "license": "MIT",
@@ -80,7 +80,7 @@
   "devDependencies": {
     "husky": "^2.7.0",
     "lint-staged": "^8.2.1",
-    "nodemon": "^1.19.1",
+    "nodemon": "^1.19.4",
     "webpack-dev-middleware": "^3.7.0",
     "webpack-hot-middleware": "^2.25.0"
   },

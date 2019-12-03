@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl';
 import classnames from 'classnames';
+import { FormattedMessage } from 'react-intl';
+import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
 
 import './SampleCensus.scss';
 import './Headers.scss';
@@ -20,7 +21,7 @@ const ipsumQuestion = {
     />
   ),
   how_to: (
-    <FormattedMessage
+    <FormattedMarkdownMessage
       id="components.SampleCensus.ipsumQuestion.howToAnswer"
       defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.
 Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis
@@ -29,7 +30,7 @@ Eligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis i
     />
   ),
   info_use: (
-    <FormattedMessage
+    <FormattedMarkdownMessage
       id="components.SampleCensus.ipsumQuestion.howIsUsed"
       defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.
 Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis
@@ -38,7 +39,7 @@ Eligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis i
     />
   ),
   why_answer: (
-    <FormattedMessage
+    <FormattedMarkdownMessage
       id="components.SampleCensus.ipsumQuestion.whyAnswer"
       defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.
 Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis
@@ -159,15 +160,13 @@ export default class SampleCensus extends React.Component {
             <FormattedMessage
               id="components.SampleCensus.title"
               defaultMessage="Preview and learn more about each question on the census"
-              description="Sample Census page title">
-            </FormattedMessage>
+              description="Sample Census page title"/>
           </h1>
           <p className="c_sample-census__content__subtitle">
             <FormattedMessage
               id="components.SampleCensus.subtitle"
               defaultMessage="Learn how to answer, how that info is used, and why it's important to answer"
-              description="Sample Census page subtitle">
-            </FormattedMessage>
+              description="Sample Census page subtitle"/>
           </p>
           <ul className="c_sample-census__content__button-row">
             { censusQuestions.map((item, index) => (

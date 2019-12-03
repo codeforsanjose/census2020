@@ -7,31 +7,12 @@ import Navigation from './Navigation';
 import DetailViewContainer from './DetailViewContainer';
 import Contact from './Contact';
 import LocaleContext from './LocaleContext';
-import { supportedLocales } from '../../i18n/supported-locales';
+import { messages } from '../../i18n/translations';
 
 import './App.scss';
 import FAQ from './FAQ';
 import SampleCensus from './SampleCensus';
 import { Footer } from './Footer';
-
-const req = require.context('../../i18n/translations', true, /\.\w{2}(?:-\w+)?\.json$/);
-
-const messages = {};
-
-supportedLocales.forEach(
-  (locale) => {
-    const translations = req(`./translations.${locale}.json`);
-    messages[locale] = Object.keys(translations).reduce(
-      (messageMap, messageId) => {
-        messageMap[messageId] = translations[messageId].translation;
-
-        return messageMap;
-      },
-      {}
-    );
-  }
-);
-
 export default class App extends React.PureComponent {
   render () {
     return (
