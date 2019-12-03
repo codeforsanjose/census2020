@@ -1,7 +1,6 @@
 const { createElement } = require('react');
 const { renderToStaticMarkup } = require('react-dom/server');
-const { ConfirmationEmail, ConfirmationEmailSubject } = require('./mail-components/compiled/ConfirmationEmail');
-const { InquiryEmail } = require('./mail-components/compiled/InquiryEmail');
+const { InquiryEmail, ConfirmationEmail, ConfirmationEmailSubject } = require('./mail-components/compiled/main');
 
 module.exports.getInquiryMessage = ({ language, firstName, lastName, email, interests, comment }) => {
   return renderToStaticMarkup(

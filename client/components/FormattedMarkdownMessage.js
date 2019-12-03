@@ -1,10 +1,9 @@
 import React from 'react';
-import { useIntl } from 'react-intl';
+import { injectIntl } from 'react-intl';
 import PropTypes from 'prop-types';
 import Markdown from 'react-remarkable';
 
-export const FormattedMarkdownMessage = ({ id, description, defaultMessage, values }) => {
-  const intl = useIntl();
+const FormattedMarkdownMessage = ({ intl, id, description, defaultMessage, values }) => {
   const markdown = intl.formatMessage(
     {
       id,
@@ -26,15 +25,22 @@ export const FormattedMarkdownMessage = ({ id, description, defaultMessage, valu
   }
 
   return (
-    <Markdown>
+    <Markdown container={React.Fragment}>
       {markdown}
     </Markdown>
   );
 };
 
 FormattedMarkdownMessage.propTypes = {
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func.isRequired
+  }).isRequired,
   id: PropTypes.string.isRequired,
   description: PropTypes.string,
   defaultMessage: PropTypes.string,
   values: PropTypes.object
 };
+
+const WrappedFormattedMarkdownMessage = injectIntl(FormattedMarkdownMessage);
+
+export { WrappedFormattedMarkdownMessage as FormattedMarkdownMessage };

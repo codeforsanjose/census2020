@@ -21,8 +21,8 @@ const getTransporter = () => {
       user: Config.mail.username,
       pass: Config.mail.password
     },
-    secure: Config.mail.isSecure,
-    logger: debug
+    secure: Config.mail.isSecure
+    // logger: debug
   });
 };
 

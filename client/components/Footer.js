@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 
 import logoSrc from '../images/CityOfSanJose_logo_white.png';
@@ -51,41 +52,41 @@ export class Footer extends React.PureComponent {
           <li
             className="c_footer__nav-links__item"
           >
-            <a
-              href="/faq"
+            <Link
+              to="/faq"
               className="c_footer__link"
             >
               <FormattedMessage
                 id="components.Footer.links.faq"
                 defaultMessage="FAQ"
               />
-            </a>
+            </Link>
           </li>
           <li
             className="c_footer__nav-links__item"
           >
-            <a
-              href="/samplecensus"
+            <Link
+              to="/samplecensus"
               className="c_footer__link"
             >
               <FormattedMessage
                 id="components.Footer.links.sampleSurvey"
                 defaultMessage="Sample Survey"
               />
-            </a>
+            </Link>
           </li>
           <li
             className="c_footer__nav-links__item"
           >
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="c_footer__link"
             >
               <FormattedMessage
                 id="components.Footer.links.contact"
                 defaultMessage="Get Involved"
               />
-            </a>
+            </Link>
           </li>
         </ul>
       </footer>
