@@ -721,6 +721,6 @@
   },
   "components.Contact.emailValidation": {
     "english": "Please enter a valid email address",
-    "translation": null
+    "translation": "Vui lòng nhập một địa chỉ email hợp lệ"
   }
 }
