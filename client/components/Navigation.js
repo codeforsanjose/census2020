@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
-import { FormattedMessage } from 'react-intl';
 import classnames from 'classnames';
+import { FormattedMessage } from 'react-intl';
 
 import './Navigation.scss';
 import { LocalePicker } from './LocalePicker';
