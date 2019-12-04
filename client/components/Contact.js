@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl';
 import { toast } from 'react-toastify';
+import { FormattedMessage } from 'react-intl';
+import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
 
 import 'react-toastify/dist/ReactToastify.css';
 import './Contact.scss';
@@ -47,7 +48,7 @@ class Contact extends Component {
   notifySubmitSuccess () {
     toast(
       (
-        <FormattedMessage
+        <FormattedMarkdownMessage
           id="components.Contact.submitSuccessToast"
           description="Message shown to users in a popup when the contact form has been successfully submitted"
           defaultMessage="Your request for information has been submitted"
@@ -205,7 +206,7 @@ class Contact extends Component {
                   />
                 </h3>
                 <p className="c_contact__content__col__blurb__info">
-                  <FormattedMessage
+                  <FormattedMarkdownMessage
                     id="components.Contact.workingForCensus"
                     defaultMessage="Find more information {link}"
                     values={{
@@ -230,7 +231,7 @@ class Contact extends Component {
                   />
                 </h3>
                 <p className="c_contact__content__col__blurb__info">
-                  <FormattedMessage
+                  <FormattedMarkdownMessage
                     id="components.Contact.visitFaq"
                     defaultMessage="Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days."
                     values={{

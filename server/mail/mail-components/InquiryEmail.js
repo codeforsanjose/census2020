@@ -1,12 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-const path = require('path');
-const i18nDir = path.join(__dirname, '../../../../i18n');
-const {
-  supportedLocales,
-  supportedLocaleEnglishNames
-} = require(path.join(i18nDir, '/supported-locales'));
+import { supportedLocales, supportedLocaleEnglishNames } from '@@i18n/supported-locales';
 
 /**
  * Formats the date into a human-readable string
