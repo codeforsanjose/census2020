@@ -179,7 +179,12 @@ class Contact extends Component {
     let emailWarning;
     if (!this.state.validEmail) {
       emailWarning = (
-        <span className="c_contact__content__form_col__form__warning">Please enter a valid email address</span>
+        <span className="c_contact__content__form_col__form__warning">
+          <FormattedMessage
+            id="components.Contact.emailValidation"
+            defaultMessage="Please enter a valid email address"
+          />
+        </span>
       );
     } else {
       emailWarning = null;
