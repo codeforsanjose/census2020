@@ -315,7 +315,7 @@
     "english": "Be counted San Jose!",
     "translation": "Hãy tính San Jose!"
   },
-  "components.Home.carsouelItem.tittle": {
+  "components.Home.carsouelItem.title": {
     "english": "The United States 2020 Census",
     "translation": "Tổng điều tra dân số Hoa Kỳ năm 2020"
   },
@@ -379,7 +379,7 @@
     "english": "Complete the census survey online, by phone or mail. The process is easy, quick and confidential! All you need is the ID code mailed to you by the U.S. Census Bureau, or your mailing address. Remember, to include everyone living and sleeping in your house. That means babies, children, teens, roommates, etc. Click the \"Take the Census Now\" button to get started!",
     "translation": "Hoàn thành khảo sát điều tra trực tuyến, qua điện thoại hoặc thư. Quá trình này dễ dàng, nhanh chóng và bí mật! Tất cả những gì bạn cần là mã ID được gửi đến bạn bởi Cục điều tra dân số Hoa Kỳ hoặc địa chỉ gửi thư của bạn. Hãy nhớ rằng, bao gồm tất cả mọi người sống và ngủ trong nhà của bạn. Điều đó có nghĩa là trẻ sơ sinh, trẻ em, thanh thiếu niên, bạn cùng phòng, v.v. Nhấp vào nút \"Lấy điều tra dân số ngay bây giờ\" để bắt đầu!"
   },
-  "components.Home.factoids.readyToTakeCensus.headerTittle": {
+  "components.Home.factoids.readyToTakeCensus.headerTitle": {
     "english": "Census starts in 2020",
     "translation": "Điều tra dân số bắt đầu vào năm 2020"
   },
@@ -391,7 +391,7 @@
     "english": "GET INVOLVED",
     "translation": "THAM GIA"
   },
-  "components.Home.factoids.qr-code.headerTittle.": {
+  "components.Home.factoids.qr-code.headerTitle.": {
     "english": "Your data is secure",
     "translation": "Dữ liệu của bạn được an toàn"
   },
@@ -403,7 +403,7 @@
     "english": "VIEW ALL FAQs",
     "translation": "XEM TẤT CẢ CÁC CÂU HỎI"
   },
-  "components.Home.factoids.3.headerTittle": {
+  "components.Home.factoids.3.headerTitle": {
     "english": "See all census questions",
     "translation": "Xem tất cả các câu hỏi điều tra dân số"
   },
@@ -412,7 +412,7 @@
     "translation": "Tìm hiểu tại sao nó quan trọng"
   },
   "components.Home.factoids.3.surveyLink": {
-    "english": "VIEW SAMPPLE SURVEY",
+    "english": "VIEW SAMPLE SURVEY",
     "translation": "XEM MẪU MẪU"
   },
   "components.FAQ.sections.generalInformation.header": {

@@ -10,7 +10,7 @@
 		color: whitesmoke;
 		z-index: 1;
 
-		&__tittle {
+		&__title {
 			position: absolute;
 			font-weight: bold;
 			font-size: 48px;
@@ -68,7 +68,7 @@
 		&__text {
 			font-size: 18px;
 			margin-right: 32px;
-			max-width: 80vh;;
+			max-width: 80vh;
 		}
 
 		&__video {
@@ -101,7 +101,7 @@
 		border-radius: 8px;
 		box-shadow: 0 0 8px 1px rgb(132, 134, 162);
 
-		&__tittle {
+		&__title {
 			font-size: 17px;
 			font-weight: bold;
 			text-align: center;

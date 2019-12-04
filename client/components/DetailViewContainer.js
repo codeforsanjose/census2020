@@ -82,9 +82,9 @@ const CarouselItem = ({ img }) => (
       src={img.image}
     />
     <div className="c_home__overlay">
-      <h1 className="c_home__overlay__tittle">
+      <h1 className="c_home__overlay__title">
         <FormattedMessage
-          id="components.Home.carsouelItem.tittle"
+          id="components.Home.carsouelItem.title"
           defaultMessage="The United States 2020 Census"
         />
       </h1>
@@ -102,13 +102,13 @@ CarouselItem.propTypes = {
   }).isRequired
 };
 
-const Factoid = ({ title, message, headerMessage, headerTittle, link }) => (
+const Factoid = ({ title, message, headerMessage, headerTitle, link }) => (
   <li
     className="c_home__factoid"
   >
     <div className="c_home__factoid__goldHeader">
-      <div className="c_home__factoid__tittle">
-        {headerTittle}
+      <div className="c_home__factoid__title">
+        {headerTitle}
       </div>
       <div className="c_home__factoid__message">
         {headerMessage}
@@ -128,7 +128,7 @@ const Factoid = ({ title, message, headerMessage, headerTittle, link }) => (
 Factoid.propTypes = {
   title: PropTypes.element.isRequired,
   message: PropTypes.element.isRequired,
-  headerTittle: PropTypes.element.isRequired,
+  headerTitle: PropTypes.element.isRequired,
   headerMessage: PropTypes.element.isRequired,
   link: PropTypes.element.isRequired
 };
@@ -248,8 +248,8 @@ export default class DetailViewContainer extends Component {
               id="components.Home.factoids.readyToTakeCensus.message"
               defaultMessage="a whole bunch of text and things here"
             />}
-            headerTittle={<FormattedMessage
-              id="components.Home.factoids.readyToTakeCensus.headerTittle"
+            headerTitle={<FormattedMessage
+              id="components.Home.factoids.readyToTakeCensus.headerTitle"
               defaultMessage="Census starts in 2020"
             />}
             headerMessage={<FormattedMessage
@@ -278,9 +278,9 @@ export default class DetailViewContainer extends Component {
             message={
               <QRCode value={document.location.origin} />
             }
-            headerTittle={
+            headerTitle={
               <FormattedMessage
-                id="components.Home.factoids.qr-code.headerTittle."
+                id="components.Home.factoids.qr-code.headerTitle."
                 defaultMessage="Your data is secure"
               />
             }
@@ -315,9 +315,9 @@ export default class DetailViewContainer extends Component {
                 defaultMessage="more text will go here"
               />
             }
-            headerTittle={
+            headerTitle={
               <FormattedMessage
-                id="components.Home.factoids.3.headerTittle"
+                id="components.Home.factoids.3.headerTitle"
                 defaultMessage="See all census questions"
               />
             }
