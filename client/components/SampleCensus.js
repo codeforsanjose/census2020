@@ -7,17 +7,188 @@ import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
 import './SampleCensus.scss';
 import './Headers.scss';
 
+const questions = [
+  {
+    primary_question: (
+      <FormattedMessage
+        id="components.SampleCensus.primary_question.1"
+        defaultMessage="How many people were living or staring in this house, apartment, or mobile home on April 1, 2020?">
+      </FormattedMessage>
+    ),
+    secondary_information: (
+      <div
+        style={{
+          display: 'flex',
+          flexDirection : 'row',
+          alignItems: 'center',
+        }}>
+        <FormattedMarkdownMessage
+          id="components.SampleCensus.secondary_information.1"
+          defaultMessage="Number of people = <textbox>{text}</textbox>"
+          description="Supporting text for question 1"
+          values={{
+            text: "Enter number here",
+            textbox: text => (
+              <textarea
+                value={text}
+                readonly="True"
+                style={{
+                  resize: 'none',
+                  height: '2em',
+                  border: 'none',
+                  borderRadius: '3px',
+                  padding: '.25em',
+                  backgroundColor: '#2F80ED88',
+                  textAlign: 'center',
+                }}>
+              </textarea>
+            )
+          }}>
+        </FormattedMarkdownMessage>
+      </div>
+    ) 
+  },
+  {
+    primary_question: (
+      <FormattedMessage
+        id="components.SampleCensus.primary_question.2"
+        defaultMessage="Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?">
+      </FormattedMessage>
+    ),
+    secondary_information: (
+      <ul
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          padding: '0',
+        }}>
+        <FormattedMarkdownMessage
+          id="components.SampleCensus.secondary_information.2.1"
+          defaultMessage="<italics>{text}</italics>"
+          description="Supporting text for question 2"
+          values={{
+            text: "Mark all that apply",
+            italics: text => (
+              <i> {text} </i>
+            )
+          }}>
+        </FormattedMarkdownMessage>
+        <li
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'flex-start',
+          }}>
+            <input
+              style={{
+                margin: '.5em',
+              }}
+              type="checkbox"
+              disabled="True">
+            </input>
+            <p>
+              <FormattedMessage
+                id="components.SampleCensus.secondary_information.2.2"
+                defaultMessage="Children, related or unrelated, such as newborn babies, grandchildren, or foster children">
+              </FormattedMessage>
+            </p>
+        </li>
+        <li
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'flex-start',
+          }}>
+            <input
+              style={{
+                margin: '.5em',
+              }}
+              type="checkbox"
+              disabled="True">
+            </input>
+            <p>
+              <FormattedMessage
+                id="components.SampleCensus.secondary_information.2.3"
+                defaultMessage="Relatives, such as adult children, cousins, or in-laws">
+              </FormattedMessage>
+            </p>
+        </li>
+        <li
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'flex-start',
+          }}>
+            <input
+              style={{
+                margin: '.5em',
+              }}
+              type="checkbox"
+              disabled="True">
+            </input>
+            <p>
+              <FormattedMessage
+                id="components.SampleCensus.secondary_information.2.4"
+                defaultMessage="Nonrelatives, such as roommates or live-in babysitters">
+              </FormattedMessage>
+            </p>
+        </li>
+        <li
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'flex-start',
+          }}>
+            <input
+              style={{
+                margin: '.5em',
+              }}
+              type="checkbox"
+              disabled="True">
+            </input>
+            <p>
+              <FormattedMessage
+                id="components.SampleCensus.secondary_information.2.5"
+                defaultMessage="People staying here temporarily">
+              </FormattedMessage>
+            </p>
+        </li>
+        <li
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'flex-start',
+          }}>
+            <input
+              style={{
+                margin: '.5em',
+              }}
+              type="checkbox"
+              disabled="True">
+            </input>
+            <p>
+              <FormattedMessage
+                id="components.SampleCensus.secondary_information.2.6"
+                defaultMessage="No additional people">
+              </FormattedMessage>
+            </p>
+        </li>
+      </ul>
+    )
+  },
+]
+
 const ipsumQuestion = {
   question: (
     <FormattedMessage
       id="components.SampleCensus.ipsumQuestion.question"
-      defaultMessage="This is the first question"
+      defaultMessage="How many people were living or staring in this house, apartment, or mobile home on April 1, 2020?"
     />
   ),
   secondary_text: (
     <FormattedMessage
       id="components.SampleCensus.ipsumQuestion.secondaryText"
-      defaultMessage="More text can go here"
+      defaultMessage="This is secondary text"
     />
   ),
   how_to: (
@@ -103,9 +274,9 @@ const CensusQuestionCard = ({ item, className, index }) => (
         <span className="c_sample-census__content__census-questions__card__question__label">
           {`Q${index + 1}: `}
         </span>
-        { item.question }
+        { item.primary_question }
       </h2>
-      <p> { item.secondary_text } </p>
+      { item.secondary_information }
     </header>
     <ul
       className="c_sample-census__content__census-questions__card__info-list"
@@ -152,6 +323,7 @@ export default class SampleCensus extends React.Component {
 
     const buttonClassName = 'c_sample-census__content__button-row__item__button';
     const censusQuestionsClassName = 'c_sample-census__content__census-questions';
+    const hohhButtonClassName = 'c_sample-census__content__hohh-container__button'
 
     return (
       <main className="c_sample-census">
@@ -160,25 +332,37 @@ export default class SampleCensus extends React.Component {
           <div
             className="c_sample-census__content__hohh-container">
             <button
-              className="c_sample-census__content__hohh-container__button-left"
-              style={{
-                color: (this.state.hohh) ? '#FFFFFF' : '#2F80ED',
-                backgroundColor: (this.state.hohh) ? '#2F80ED' : '#FFFFFF',
-              }}
+              className={classnames(
+                hohhButtonClassName,
+                'c_sample-census__content__hohh-container__button__left',
+                {
+                  [`${hohhButtonClassName}--active`]: this.state.hohh
+                }
+              )}
               onClick={() => this.setState({hohh:true})}>
-                <h4> 
-                  Head of Household
+                <h4>
+                  <FormattedMessage
+                    id="components.SampleCensus.hohh_button"
+                    defaultMessage="Head of Household (HoHH)"
+                    description="Questions for the Head of Household">
+                  </FormattedMessage>
                 </h4> 
             </button>
             <button
-              className="c_sample-census__content__hohh-container__button-right"
-              style={{
-                color: (this.state.hohh) ? '#2F80ED' : '#FFFFFF',
-                backgroundColor: (this.state.hohh) ? '#FFFFFF' : '#2F80ED',
-              }}
+              className={classnames(
+                hohhButtonClassName,
+                'c_sample-census__content__hohh-container__button__right',
+                {
+                  [`${hohhButtonClassName}--active`]: !this.state.hohh
+                }
+              )}
               onClick={() => this.setState({hohh: false})}>
                 <h4>
-                  Non HOHH
+                  <FormattedMessage
+                    id="components.SampleCensus.not_hohh_button"
+                    defaultMessage="Other than HoHH"
+                    description="Questions for individuals other than the Head of Household">
+                  </FormattedMessage>
                 </h4> 
             </button>
           </div>
@@ -195,7 +379,7 @@ export default class SampleCensus extends React.Component {
               description="Sample Census page subtitle"/>
           </p>
           <ul className="c_sample-census__content__button-row">
-            { censusQuestions.map((item, index) => (
+            { questions.map((item, index) => (
               <li
                 key={index}
                 className="c_sample-census__content__button-row__item">
@@ -216,7 +400,7 @@ export default class SampleCensus extends React.Component {
             ))}
           </ul>
           <ul className={censusQuestionsClassName}>
-            { censusQuestions.map((item, index) => (
+            { questions.map((item, index) => (
               <CensusQuestionCard
                 className={
                   this.state.currentPosition === index

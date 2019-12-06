@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Markdown from 'react-remarkable';
 
 const FormattedMarkdownMessage = ({ intl, id, description, defaultMessage, values }) => {
+  console.log(values)
   const markdown = intl.formatMessage(
     {
       id,
@@ -12,6 +13,8 @@ const FormattedMarkdownMessage = ({ intl, id, description, defaultMessage, value
     },
     values
   );
+
+  console.log(markdown)
 
   if (Array.isArray(markdown)) {
     for (let i = 0; i < markdown.length; i++) {
