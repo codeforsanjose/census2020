@@ -315,7 +315,7 @@
     "english": "Be counted San Jose!",
     "translation": "Hãy tính San Jose!"
   },
-  "components.Home.carsouelItem.tittle": {
+  "components.Home.carsouelItem.title": {
     "english": "The United States 2020 Census",
     "translation": "Tổng điều tra dân số Hoa Kỳ năm 2020"
   },
@@ -379,7 +379,7 @@
     "english": "Complete the census survey online, by phone or mail. The process is easy, quick and confidential! All you need is the ID code mailed to you by the U.S. Census Bureau, or your mailing address. Remember, to include everyone living and sleeping in your house. That means babies, children, teens, roommates, etc. Click the \"Take the Census Now\" button to get started!",
     "translation": "Hoàn thành khảo sát điều tra trực tuyến, qua điện thoại hoặc thư. Quá trình này dễ dàng, nhanh chóng và bí mật! Tất cả những gì bạn cần là mã ID được gửi đến bạn bởi Cục điều tra dân số Hoa Kỳ hoặc địa chỉ gửi thư của bạn. Hãy nhớ rằng, bao gồm tất cả mọi người sống và ngủ trong nhà của bạn. Điều đó có nghĩa là trẻ sơ sinh, trẻ em, thanh thiếu niên, bạn cùng phòng, v.v. Nhấp vào nút \"Lấy điều tra dân số ngay bây giờ\" để bắt đầu!"
   },
-  "components.Home.factoids.readyToTakeCensus.headerTittle": {
+  "components.Home.factoids.readyToTakeCensus.headerTitle": {
     "english": "Census starts in 2020",
     "translation": "Điều tra dân số bắt đầu vào năm 2020"
   },
@@ -391,7 +391,7 @@
     "english": "GET INVOLVED",
     "translation": "THAM GIA"
   },
-  "components.Home.factoids.qr-code.headerTittle.": {
+  "components.Home.factoids.qr-code.headerTitle.": {
     "english": "Your data is secure",
     "translation": "Dữ liệu của bạn được an toàn"
   },
@@ -403,7 +403,7 @@
     "english": "VIEW ALL FAQs",
     "translation": "XEM TẤT CẢ CÁC CÂU HỎI"
   },
-  "components.Home.factoids.3.headerTittle": {
+  "components.Home.factoids.3.headerTitle": {
     "english": "See all census questions",
     "translation": "Xem tất cả các câu hỏi điều tra dân số"
   },
@@ -412,7 +412,7 @@
     "translation": "Tìm hiểu tại sao nó quan trọng"
   },
   "components.Home.factoids.3.surveyLink": {
-    "english": "VIEW SAMPPLE SURVEY",
+    "english": "VIEW SAMPLE SURVEY",
     "translation": "XEM MẪU MẪU"
   },
   "components.FAQ.sections.generalInformation.header": {
@@ -718,5 +718,9 @@
   "components.FAQ.entries.howToIdentifyCensusWorker.answer": {
     "english": "If someone visits your home to collect a response for the 2020 Census, there are steps you can take to verify their identity:\n              \n  First, check to make sure that they have a valid ID badge, with their photograph, a Department of Commerce watermark, and an expiration date.\n  Note that they may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo.\n  If you still have questions, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative.\n  \n  Remember that the U.S. Census Bureau will never ask for:\n  \n  - Your Social Security number.\n  - Your bank account or credit card numbers.\n  - Money or donations.\n  \n  In addition, the Census Bureau will not contact you on behalf of a political party.",
     "translation": "Nếu ai đó đến thăm nhà bạn để thu thập phản hồi cho Tổng điều tra dân số năm 2020, có những bước bạn có thể thực hiện để xác minh danh tính của họ:\n              \n  Trước tiên, hãy kiểm tra để đảm bảo rằng họ có huy hiệu ID hợp lệ, với ảnh của họ, hình mờ của Bộ Thương mại và ngày hết hạn.\n  Lưu ý rằng họ có thể mang theo điện thoại của Cục điều tra dân số hoặc máy tính xách tay, cộng với một chiếc túi có logo Cục điều tra dân số.\n  Nếu bạn vẫn còn thắc mắc, hãy gọi 855-562-2020 và nhấn tùy chọn 3 để nói chuyện với đại diện Cục điều tra dân số địa phương.\n  \n  Hãy nhớ rằng Cục điều tra dân số Hoa Kỳ sẽ không bao giờ yêu cầu:\n  \n  - Số an sinh xã hội của bạn.\n  - Số tài khoản ngân hàng hoặc số thẻ tín dụng của bạn.\n  - Tiền hoặc quyên góp.\n  \n  Ngoài ra, Cục điều tra dân số sẽ không liên lạc với bạn thay mặt cho một đảng chính trị."
+  },
+  "components.Contact.emailValidation": {
+    "english": "Please enter a valid email address",
+    "translation": "Vui lòng nhập một địa chỉ email hợp lệ"
   }
 }

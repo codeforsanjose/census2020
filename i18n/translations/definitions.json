@@ -341,8 +341,8 @@
     "id": "components.Home.carousel.messages.6",
     "defaultMessage": "Be counted San Jose!"
   },
-  "components.Home.carsouelItem.tittle": {
-    "id": "components.Home.carsouelItem.tittle",
+  "components.Home.carsouelItem.title": {
+    "id": "components.Home.carsouelItem.title",
     "defaultMessage": "The United States 2020 Census"
   },
   "components.SampleCensus.ipsumQuestion.question": {
@@ -412,8 +412,8 @@
     "description": "Home page message",
     "defaultMessage": "Complete the census survey online, by phone or mail. The process is easy, quick and confidential! All you need is the ID code mailed to you by the U.S. Census Bureau, or your mailing address. Remember, to include everyone living and sleeping in your house. That means babies, children, teens, roommates, etc. Click the \"Take the Census Now\" button to get started!"
   },
-  "components.Home.factoids.readyToTakeCensus.headerTittle": {
-    "id": "components.Home.factoids.readyToTakeCensus.headerTittle",
+  "components.Home.factoids.readyToTakeCensus.headerTitle": {
+    "id": "components.Home.factoids.readyToTakeCensus.headerTitle",
     "defaultMessage": "Census starts in 2020"
   },
   "components.Home.factoids.readyToTakeCensus.headerMessage": {
@@ -424,8 +424,8 @@
     "id": "components.Home.factoids.readyToTakeCensus.contactLink",
     "defaultMessage": "GET INVOLVED"
   },
-  "components.Home.factoids.qr-code.headerTittle.": {
-    "id": "components.Home.factoids.qr-code.headerTittle.",
+  "components.Home.factoids.qr-code.headerTitle.": {
+    "id": "components.Home.factoids.qr-code.headerTitle.",
     "defaultMessage": "Your data is secure"
   },
   "components.Home.factoids.qr-code.headerMessage.": {
@@ -436,8 +436,8 @@
     "id": "components.Home.factoids.qr-code.faqLink",
     "defaultMessage": "VIEW ALL FAQs"
   },
-  "components.Home.factoids.3.headerTittle": {
-    "id": "components.Home.factoids.3.headerTittle",
+  "components.Home.factoids.3.headerTitle": {
+    "id": "components.Home.factoids.3.headerTitle",
     "defaultMessage": "See all census questions"
   },
   "components.Home.factoids.3.headerMessage": {
@@ -446,7 +446,7 @@
   },
   "components.Home.factoids.3.surveyLink": {
     "id": "components.Home.factoids.3.surveyLink",
-    "defaultMessage": "VIEW SAMPPLE SURVEY"
+    "defaultMessage": "VIEW SAMPLE SURVEY"
   },
   "components.FAQ.sections.generalInformation.header": {
     "id": "components.FAQ.sections.generalInformation.header",
@@ -751,5 +751,9 @@
   "components.FAQ.entries.howToIdentifyCensusWorker.answer": {
     "id": "components.FAQ.entries.howToIdentifyCensusWorker.answer",
     "defaultMessage": "If someone visits your home to collect a response for the 2020 Census, there are steps you can take to verify their identity:\n              \n  First, check to make sure that they have a valid ID badge, with their photograph, a Department of Commerce watermark, and an expiration date.\n  Note that they may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo.\n  If you still have questions, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative.\n  \n  Remember that the U.S. Census Bureau will never ask for:\n  \n  - Your Social Security number.\n  - Your bank account or credit card numbers.\n  - Money or donations.\n  \n  In addition, the Census Bureau will not contact you on behalf of a political party."
+  },
+  "components.Contact.emailValidation": {
+    "id": "components.Contact.emailValidation",
+    "defaultMessage": "Please enter a valid email address"
   }
 }
