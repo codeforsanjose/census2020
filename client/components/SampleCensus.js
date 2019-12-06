@@ -138,7 +138,8 @@ export default class SampleCensus extends React.Component {
     super(props);
 
     this.state = {
-      currentPosition: 0
+      currentPosition: 0,
+      hohh: true,
     };
   }
 
@@ -156,6 +157,31 @@ export default class SampleCensus extends React.Component {
       <main className="c_sample-census">
         <div className="c_headers__goldHeader"></div>
         <div className="c_sample-census__content">
+          <div
+            className="c_sample-census__content__hohh-container">
+            <button
+              className="c_sample-census__content__hohh-container__button-left"
+              style={{
+                color: (this.state.hohh) ? '#FFFFFF' : '#2F80ED',
+                backgroundColor: (this.state.hohh) ? '#2F80ED' : '#FFFFFF',
+              }}
+              onClick={() => this.setState({hohh:true})}>
+                <h4> 
+                  Head of Household
+                </h4> 
+            </button>
+            <button
+              className="c_sample-census__content__hohh-container__button-right"
+              style={{
+                color: (this.state.hohh) ? '#2F80ED' : '#FFFFFF',
+                backgroundColor: (this.state.hohh) ? '#FFFFFF' : '#2F80ED',
+              }}
+              onClick={() => this.setState({hohh: false})}>
+                <h4>
+                  Non HOHH
+                </h4> 
+            </button>
+          </div>
           <h1 className="c_sample-census__content__title">
             <FormattedMessage
               id="components.SampleCensus.title"
