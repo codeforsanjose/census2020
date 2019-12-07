@@ -353,7 +353,7 @@ export default class DetailViewContainer extends Component {
               </Link>
             }
           />
-          { screen_width < 800 && (
+          { screen_width <= 800 && (
             <YoutubeItem
               opts={{
                 height: (screen_width *.8 * 9/16).toString(),
@@ -364,11 +364,11 @@ export default class DetailViewContainer extends Component {
               }}>
             </YoutubeItem>
           )}
-          { screen_width < 1280 && (
+          { screen_width < 1200 && (
             <TopReasons />
           )}
         </ul>
-        { screen_width > 800 && screen_width < 1280 && (
+        { screen_width > 800 && screen_width < 1200 && (
           <YoutubeItem
             opts={{
               height: (screen_width *.8 * 9/16).toString(),
@@ -379,7 +379,7 @@ export default class DetailViewContainer extends Component {
             }}>
           </YoutubeItem>
         )}
-        { screen_width > 1280 && (
+        { screen_width >= 1200 && (
           <div
               className="c_home__video-container">
             <YoutubeItem
