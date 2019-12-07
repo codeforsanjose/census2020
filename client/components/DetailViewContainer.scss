@@ -5,25 +5,25 @@
 
 	&__overlay {
 		display: flex;
-		position: relative;
+		flex-direction: column;
+		position: absolute;
 		text-align: left;
 		color: whitesmoke;
 		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
 
 		&__title {
-			position: absolute;
+			margin: 2.75rem 2rem 1rem 2rem;
 			font-weight: bold;
-			font-size: 48px;
-			top: 50px;
-			left: 80px;
+			font-size: 2.5em;
 		}
 
 		&__message {
-			position: absolute;
-			font-size: 48px;
+			margin: 0 2rem;
+			font-size: 1.75em;
 			font-weight: 100;
-			top: 105px;
-			left: 80px;
 		}
 	}
 
@@ -46,8 +46,6 @@
 		}
 	}
 
-
-
 	&__messages {
 		display: flex;
 		flex-direction: row;
@@ -57,35 +55,60 @@
 	}
 
 	&__content {
-		margin: 80px 64px;
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		max-width: 1200px;
+		margin: 2em 2em;
 
 		&__title {
 			margin: 0;
 			font-weight: 400;
-			font-size: 48px;
+			font-size: 2.5em;
 		}
 
 		&__text {
-			font-size: 18px;
-			margin-right: 32px;
-			max-width: 80vh;
+			font-size: 1em;
 		}
 
 		&__video {
 			display: flex;
-			flex-direction: row-reverse;
-			width: 50%;
-			float: right;
-			margin-left: 32px;
+			align-self: center;
+		}
+	}
+
+	&__top-reasons {
+		display: flex;
+		flex-direction: column;
+		background-color: #fdfeff;
+		margin: 10px;
+		border: solid 1px #005ea2;
+		border-radius: 8px;
+		box-shadow: 0 0 8px 1px rgb(132, 134, 162);
+
+		&__small {
+			width: 80vw;
+			min-height: 80vw;
+		}
+
+		&__medium {
+			width: 380px;
+			height: 380px;
+		}
+
+		&__large {
+			flex-grow: 1;
 		}
 	}
 
 	&__factoids {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
-		width: 100%;
-		padding: 0 5% 5% 5%;
+		align-self: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 1200px;
+		padding: 0;
 	}
 
 	&__factoid {
@@ -93,13 +116,21 @@
 		flex-direction: column;
 		justify-content: start;
 		align-items: center;
-		width: 30vw;
-		height: 30vw;
 		background-color: #fdfeff;
 		margin: 10px;
 		border: solid 1px #005ea2;
 		border-radius: 8px;
 		box-shadow: 0 0 8px 1px rgb(132, 134, 162);
+
+		&__desktop {
+			width: 380px;
+			height: 380px;
+		}
+
+		&__mobile {
+			width: 80vw;
+			min-height: 80vw;	
+		}
 
 		&__title {
 			font-size: 17px;
@@ -144,5 +175,13 @@
 		&__content {
 			text-align: center;
 		}
+	}
+
+	&__video-container {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		max-width: 1200px;
+		align-self: center;
 	}
 }

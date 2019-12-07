@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import YouTube from 'react-youtube';
 import { Carousel } from 'react-responsive-carousel';
@@ -102,28 +103,93 @@ CarouselItem.propTypes = {
   }).isRequired
 };
 
-const Factoid = ({ title, message, headerMessage, headerTitle, link }) => (
-  <li
-    className="c_home__factoid"
-  >
-    <div className="c_home__factoid__goldHeader">
-      <div className="c_home__factoid__title">
-        {headerTitle}
+const REASONS = [
+  <FormattedMessage
+    id="components.DetailViewContainer.top_reasons.item.1"
+    defaultMessage="Determines the number of seats in the House of Representatives">
+  </FormattedMessage>,
+  <FormattedMessage
+    id="components.DetailViewContainer.top_reasons.item.2"
+    defaultMessage="Redraw district boundaries">
+  </FormattedMessage>,
+  <FormattedMessage
+    id="components.DetailViewContainer.top_reasons.item.3"
+    defaultMessage="Allocates funds to the state and localities">
+  </FormattedMessage>,
+  <FormattedMessage
+    id="components.DetailViewContainer.top_reasons.item.4"
+    defaultMessage="Infrastructure planning">
+  </FormattedMessage>,
+  <FormattedMessage
+    id="Compnents.DetailViewContainer.top_reasons.item.4"
+    defaultMessage="Emergency response planning">
+  </FormattedMessage>,
+]
+
+const TopReasons = () => {
+  let screen_width = window.innerWidth
+  let size
+  if (screen_width < 1200 ) {
+    size = (screen_width < 800) ? 'small' : 'medium'
+  } else {
+    size = 'large'
+  }
+  let top_reasons_class = "c_home__top-reasons"
+
+  return (
+    <ol
+      className={classnames(
+        top_reasons_class,
+        `${top_reasons_class}__${size}`,
+      )}>
+      <h2>
+        <FormattedMessage
+          id="components.DetailViewContainer.top_reasons.title"
+          defaultMessage="Top 5 Reasons to take the census">
+        </FormattedMessage>
+      </h2>
+      { REASONS.map((item,index) => (
+        <li
+          key={index}>
+          <p>
+            {item}
+          </p>
+        </li>
+      ))}
+    </ol>
+  )
+}
+
+const Factoid = ({ title, message, headerMessage, headerTitle, link }) => {
+  let factoid_size = (window.innerWidth < 800) ? 'mobile' : 'desktop'
+  let factoid_class = "c_home__factoid"
+
+  return (
+    <li
+      className={classnames(
+        factoid_class,
+        `${factoid_class}__${factoid_size}`,
+      )}
+    >
+      <div className="c_home__factoid__goldHeader">
+        <div className="c_home__factoid__title">
+          {headerTitle}
+        </div>
+        <div className="c_home__factoid__message">
+          {headerMessage}
+        </div>
       </div>
-      <div className="c_home__factoid__message">
-        {headerMessage}
+      <h3>
+        {title}
+      </h3>
+      <div className="c_home__factoid__content">
+        {message}
       </div>
-    </div>
-    <h3>
-      {title}
-    </h3>
-    <div className="c_home__factoid__content">
-      {message}
-    </div>
-    <div className="c_home__factoid__line"></div>
-    {link}
-  </li>
-);
+      <div className="c_home__factoid__line"></div>
+      {link}
+    </li>
+  )
+};
 
 Factoid.propTypes = {
   title: PropTypes.element.isRequired,
@@ -133,54 +199,20 @@ Factoid.propTypes = {
   link: PropTypes.element.isRequired
 };
 
-class YoutubeItem extends Component {
-  state = {
-    ready: false
-  }
-
-  containerRef = React.createRef()
-
-  componentDidMount () {
-    // force component to rerender once the DOM elements are mounted
-    this.setState({
-      ready: true
-    });
-  }
-
-  render () {
-    let opts;
-    if (this.containerRef.current) {
-      const parentWidth = this.containerRef.current.offsetWidth;
-      // maintain a 16:9 aspect ratio based on the parent width
-      const width = (parentWidth).toString();
-      const height = (parentWidth * (9 / 16)).toString();
-      opts = {
-        height,
-        width,
-        playerVars: {
-          autoplay: 0
-        }
-      };
-    }
-
-    return (
-      <div
-        className="c_home__content__video"
-        ref={this.containerRef}
-      >
-        { this.containerRef.current && (
-          <YouTube
-            videoId="pl4RO5EisCU"
-            opts={opts}
-          />
-        )}
-      </div>
-    );
-  }
-}
+const YoutubeItem = ({opts}) => (
+  <div
+    className="c_home__content__video"
+  >
+    <YouTube
+      videoId="pl4RO5EisCU"
+      opts={opts}
+    />
+  </div>
+);
 
 export default class DetailViewContainer extends Component {
   render () {
+    let screen_width = window.innerWidth
     return (
       <main
         className='c_home'
@@ -197,13 +229,12 @@ export default class DetailViewContainer extends Component {
           ))}
         </Carousel>
         <div className="c_home__content">
-          <YoutubeItem />
           <h4
             className="c_home__content__title"
           >
             <FormattedMessage
               id="components.DetailViewContainer.header"
-              defaultMessage="Everyone matters"
+              defaultMessage="Participate in the census and represent San Jose"
               description="Home page title"
             />
           </h4>
@@ -212,41 +243,22 @@ export default class DetailViewContainer extends Component {
           >
             <FormattedMessage
               id="components.DetailViewContainer.message.1"
-              defaultMessage={`The 2020 Census is here. Your participation helps ensure our community will have access to housing, healthcare, schools, community programs, better transportation, and government representation.`}
-              description="Home page message"
-            />
-          </p>
-          <p
-            className="c_home__content__text"
-          >
-            <FormattedMessage
-              id="components.DetailViewContainer.message.2"
-              defaultMessage={`Every 10 years, the U.S. Census Bureau sets out to count every person living in the United States — regardless of age, citizenship status, and gender. Getting the 2020 Census right is important for all our communities — particularly those most likely to be undercounted. A 2020 Census undercount could put billions of federal dollars and congressional representation for California at risk!`}
-              description="Home page message"
-            />
-          </p>
-          <p
-            className="c_home__content__text"
-          >
-            <FormattedMessage
-              id="components.DetailViewContainer.message.3"
-              defaultMessage={`Complete the census survey online, by phone or mail. The process is easy, quick and confidential! All you need is the ID code mailed to you by the U.S. Census Bureau, or your mailing address. Remember, to include everyone living and sleeping in your house. That means babies, children, teens, roommates, etc. Click the "Take the Census Now" button to get started!`}
+              defaultMessage="Help California and San Jose get access to important resources"
               description="Home page message"
             />
           </p>
         </div>
-
         <ul
           className="c_home__factoids"
         >
           <Factoid
             title={<FormattedMessage
               id="components.Home.factoids.readyToTakeCensus.title"
-              defaultMessage="Ready to take the census?"
+              defaultMessage="Should I be completing the questionnaire?"
             />}
             message={<FormattedMessage
               id="components.Home.factoids.readyToTakeCensus.message"
-              defaultMessage="a whole bunch of text and things here"
+              defaultMessage=""
             />}
             headerTitle={<FormattedMessage
               id="components.Home.factoids.readyToTakeCensus.headerTitle"
@@ -341,7 +353,47 @@ export default class DetailViewContainer extends Component {
               </Link>
             }
           />
+          { screen_width < 800 && (
+            <YoutubeItem
+              opts={{
+                height: (screen_width *.8 * 9/16).toString(),
+                width: (screen_width * .8).toString(),
+                playerVars: {
+                  autoplay: 0,
+                }
+              }}>
+            </YoutubeItem>
+          )}
+          { screen_width < 1280 && (
+            <TopReasons />
+          )}
         </ul>
+        { screen_width > 800 && screen_width < 1280 && (
+          <YoutubeItem
+            opts={{
+              height: (screen_width *.8 * 9/16).toString(),
+              width: (screen_width * .8).toString(),
+              playerVars: {
+                autoplay: 0,
+              }
+            }}>
+          </YoutubeItem>
+        )}
+        { screen_width > 1280 && (
+          <div
+              className="c_home__video-container">
+            <YoutubeItem
+              opts={{
+                height: (600 * 9/16).toString(),
+                width: (600).toString(),
+                playerVars: {
+                  autoplay: 0,
+                }
+              }}>
+            </YoutubeItem>
+            <TopReasons />
+          </div>
+        )}
       </main>
     );
   }

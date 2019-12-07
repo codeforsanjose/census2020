@@ -12,7 +12,7 @@ const questions = [
     primary_question: (
       <FormattedMessage
         id="components.SampleCensus.primary_question.1"
-        defaultMessage="How many people were living or staring in this house, apartment, or mobile home on April 1, 2020?">
+        defaultMessage="How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?">
       </FormattedMessage>
     ),
     secondary_information: (
@@ -62,7 +62,7 @@ const questions = [
           flexDirection: 'column',
           padding: '0',
         }}>
-        <FormattedMarkdownMessage
+        { /*<FormattedMarkdownMessage
           id="components.SampleCensus.secondary_information.2.1"
           defaultMessage="<italics>{text}</italics>"
           description="Supporting text for question 2"
@@ -73,6 +73,13 @@ const questions = [
             )
           }}>
         </FormattedMarkdownMessage>
+     */ }
+        <i>
+          <FormattedMessage
+            id="components.SampleCensus.secondary_information.2.1"
+            defaultMessage="Mark all that apply">
+          </FormattedMessage>
+        </i>
         <li
           style={{
             display: 'flex',
@@ -343,7 +350,7 @@ export default class SampleCensus extends React.Component {
                 <h4>
                   <FormattedMessage
                     id="components.SampleCensus.hohh_button"
-                    defaultMessage="Head of Household (HoHH)"
+                    defaultMessage="I will answer the census"
                     description="Questions for the Head of Household">
                   </FormattedMessage>
                 </h4> 
@@ -360,7 +367,7 @@ export default class SampleCensus extends React.Component {
                 <h4>
                   <FormattedMessage
                     id="components.SampleCensus.not_hohh_button"
-                    defaultMessage="Other than HoHH"
+                    defaultMessage="Someone else will answer the census for me"
                     description="Questions for individuals other than the Head of Household">
                   </FormattedMessage>
                 </h4> 
@@ -369,13 +376,13 @@ export default class SampleCensus extends React.Component {
           <h1 className="c_sample-census__content__title">
             <FormattedMessage
               id="components.SampleCensus.title"
-              defaultMessage="Preview and learn more about each question on the census"
+              defaultMessage="You should complete the questionnaire as Person 1, if you are responsible for the home. If you live in someone else's home, you will need to provide information to the person completing the questionnaire. "
               description="Sample Census page title"/>
           </h1>
           <p className="c_sample-census__content__subtitle">
             <FormattedMessage
               id="components.SampleCensus.subtitle"
-              defaultMessage="Learn how to answer, how that info is used, and why it's important to answer"
+              defaultMessage="See what information will need to complete the questionnaire"
               description="Sample Census page subtitle"/>
           </p>
           <ul className="c_sample-census__content__button-row">
