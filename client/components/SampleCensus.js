@@ -62,18 +62,6 @@ const questions = [
           flexDirection: 'column',
           padding: '0',
         }}>
-        { /*<FormattedMarkdownMessage
-          id="components.SampleCensus.secondary_information.2.1"
-          defaultMessage="<italics>{text}</italics>"
-          description="Supporting text for question 2"
-          values={{
-            text: "Mark all that apply",
-            italics: text => (
-              <i> {text} </i>
-            )
-          }}>
-        </FormattedMarkdownMessage>
-     */ }
         <i>
           <FormattedMessage
             id="components.SampleCensus.secondary_information.2.1"
