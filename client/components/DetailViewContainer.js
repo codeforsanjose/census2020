@@ -228,26 +228,6 @@ export default class DetailViewContainer extends Component {
             <CarouselItem key={img} img={img} />
           ))}
         </Carousel>
-        <div className="c_home__content">
-          <h4
-            className="c_home__content__title"
-          >
-            <FormattedMessage
-              id="components.DetailViewContainer.header"
-              defaultMessage="Participate in the census and represent San Jose"
-              description="Home page title"
-            />
-          </h4>
-          <p
-            className="c_home__content__text"
-          >
-            <FormattedMessage
-              id="components.DetailViewContainer.message.1"
-              defaultMessage="Help California and San Jose get access to important resources"
-              description="Home page message"
-            />
-          </p>
-        </div>
         <ul
           className="c_home__factoids"
         >
