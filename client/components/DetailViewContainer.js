@@ -234,11 +234,11 @@ export default class DetailViewContainer extends Component {
             />}
             message={<FormattedMessage
               id="components.Home.factoids.readyToTakeCensus.message"
-              defaultMessage=""
+              defaultMessage="Why does your response count?"
             />}
             headerTitle={<FormattedMessage
               id="components.Home.factoids.readyToTakeCensus.headerTitle"
-              defaultMessage="Census starts in 2020"
+              defaultMessage="Is it safe?"
             />}
             headerMessage={<FormattedMessage
               id="components.Home.factoids.readyToTakeCensus.headerMessage"
@@ -259,40 +259,6 @@ export default class DetailViewContainer extends Component {
           <Factoid
             title={
               <FormattedMessage
-                id="components.Home.factoids.qr-code.title"
-                defaultMessage="Learn About the Census From Your Phone"
-              />
-            }
-            message={
-              <QRCode value={document.location.origin} />
-            }
-            headerTitle={
-              <FormattedMessage
-                id="components.Home.factoids.qr-code.headerTitle."
-                defaultMessage="Your data is secure"
-              />
-            }
-            headerMessage={
-              <FormattedMessage
-                id="components.Home.factoids.qr-code.headerMessage."
-                defaultMessage="Learn more about privacy"
-              />
-            }
-            link={<Link
-              className="c_home__factoid__link"
-              to="/faq"
-            >
-              {
-                <FormattedMessage
-                  id="components.Home.factoids.qr-code.faqLink"
-                  defaultMessage="VIEW ALL FAQs"
-                />
-              }
-            </Link>}
-          />
-          <Factoid
-            title={
-              <FormattedMessage
                 id="components.Home.factoids.3.title"
                 defaultMessage="Title 3"
               />
@@ -300,13 +266,13 @@ export default class DetailViewContainer extends Component {
             message={
               <FormattedMessage
                 id="components.Home.factoids.3.message"
-                defaultMessage="more text will go here"
+                defaultMessage="WHAT information do you need to complete the census? See all the questions!"
               />
             }
             headerTitle={
               <FormattedMessage
                 id="components.Home.factoids.3.headerTitle"
-                defaultMessage="See all census questions"
+                defaultMessage="Do I take the census?"
               />
             }
             headerMessage={
@@ -328,6 +294,40 @@ export default class DetailViewContainer extends Component {
                 }
               </Link>
             }
+          />
+          <Factoid
+            title={
+              <FormattedMessage
+                id="components.Home.factoids.qr-code.title"
+                defaultMessage="Learn About the Census From Your Phone"
+              />
+            }
+            message={
+              <QRCode value={document.location.origin} />
+            }
+            headerTitle={
+              <FormattedMessage
+                id="components.Home.factoids.qr-code.headerTitle."
+                defaultMessage="In a hurry, take it to go?"
+              />
+            }
+            headerMessage={
+              <FormattedMessage
+                id="components.Home.factoids.qr-code.headerMessage."
+                defaultMessage="Learn more about privacy"
+              />
+            }
+            link={<Link
+              className="c_home__factoid__link"
+              to={document.location.origin}
+            >
+              {
+                <FormattedMessage
+                  id="components.Home.factoids.qr-code.faqLink"
+                  defaultMessage="TAKE THE CENSUS"
+                />
+              }
+            </Link>}
           />
           { screen_width <= 800 && (
             <YoutubeItem

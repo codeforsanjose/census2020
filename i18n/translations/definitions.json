@@ -258,11 +258,11 @@
   },
   "components.Home.factoids.readyToTakeCensus.title": {
     "id": "components.Home.factoids.readyToTakeCensus.title",
-    "defaultMessage": "Ready to take the census?"
+    "defaultMessage": "Should I be completing the questionnaire?"
   },
   "components.Home.factoids.readyToTakeCensus.message": {
     "id": "components.Home.factoids.readyToTakeCensus.message",
-    "defaultMessage": "a whole bunch of text and things here"
+    "defaultMessage": "Why does your response count?"
   },
   "components.Home.factoids.qr-code.title": {
     "id": "components.Home.factoids.qr-code.title",
@@ -274,7 +274,7 @@
   },
   "components.Home.factoids.3.message": {
     "id": "components.Home.factoids.3.message",
-    "defaultMessage": "more text will go here"
+    "defaultMessage": "WHAT information do you need to complete the census? See all the questions!"
   },
   "components.Contact.fields.interest.options.information": {
     "id": "components.Contact.fields.interest.options.information",
@@ -390,12 +390,12 @@
   "components.SampleCensus.title": {
     "id": "components.SampleCensus.title",
     "description": "Sample Census page title",
-    "defaultMessage": "Preview and learn more about each question on the census"
+    "defaultMessage": "You should complete the questionnaire as Person 1, if you are responsible for the home. If you live in someone else's home, you will need to provide information to the person completing the questionnaire."
   },
   "components.SampleCensus.subtitle": {
     "id": "components.SampleCensus.subtitle",
     "description": "Sample Census page subtitle",
-    "defaultMessage": "Learn how to answer, how that info is used, and why it's important to answer"
+    "defaultMessage": "See what information will need to complete the questionnaire"
   },
   "components.DetailViewContainer.message.1": {
     "id": "components.DetailViewContainer.message.1",
@@ -414,7 +414,7 @@
   },
   "components.Home.factoids.readyToTakeCensus.headerTitle": {
     "id": "components.Home.factoids.readyToTakeCensus.headerTitle",
-    "defaultMessage": "Census starts in 2020"
+    "defaultMessage": "Is it safe?"
   },
   "components.Home.factoids.readyToTakeCensus.headerMessage": {
     "id": "components.Home.factoids.readyToTakeCensus.headerMessage",
@@ -426,7 +426,7 @@
   },
   "components.Home.factoids.qr-code.headerTitle.": {
     "id": "components.Home.factoids.qr-code.headerTitle.",
-    "defaultMessage": "Your data is secure"
+    "defaultMessage": "In a hurry, take it to go?"
   },
   "components.Home.factoids.qr-code.headerMessage.": {
     "id": "components.Home.factoids.qr-code.headerMessage.",
@@ -434,11 +434,11 @@
   },
   "components.Home.factoids.qr-code.faqLink": {
     "id": "components.Home.factoids.qr-code.faqLink",
-    "defaultMessage": "VIEW ALL FAQs"
+    "defaultMessage": "TAKE THE CENSUS"
   },
   "components.Home.factoids.3.headerTitle": {
     "id": "components.Home.factoids.3.headerTitle",
-    "defaultMessage": "See all census questions"
+    "defaultMessage": "Do I take the census?"
   },
   "components.Home.factoids.3.headerMessage": {
     "id": "components.Home.factoids.3.headerMessage",
@@ -755,5 +755,249 @@
   "components.Contact.emailValidation": {
     "id": "components.Contact.emailValidation",
     "defaultMessage": "Please enter a valid email address"
+  },
+  "components.DetailViewContainer.top_reasons.item.1": {
+    "id": "components.DetailViewContainer.top_reasons.item.1",
+    "defaultMessage": "Determines the number of seats in the House of Representatives"
+  },
+  "components.DetailViewContainer.top_reasons.item.2": {
+    "id": "components.DetailViewContainer.top_reasons.item.2",
+    "defaultMessage": "Redraw district boundaries"
+  },
+  "components.DetailViewContainer.top_reasons.item.3": {
+    "id": "components.DetailViewContainer.top_reasons.item.3",
+    "defaultMessage": "Allocates funds to the state and localities"
+  },
+  "components.DetailViewContainer.top_reasons.item.4": {
+    "id": "components.DetailViewContainer.top_reasons.item.4",
+    "defaultMessage": "Infrastructure planning"
+  },
+  "Compnents.DetailViewContainer.top_reasons.item.4": {
+    "id": "Compnents.DetailViewContainer.top_reasons.item.4",
+    "defaultMessage": "Emergency response planning"
+  },
+  "components.DetailViewContainer.top_reasons.title": {
+    "id": "components.DetailViewContainer.top_reasons.title",
+    "defaultMessage": "Top 5 Reasons to take the census"
+  },
+  "components.SampleCensus.primary_question.1": {
+    "id": "components.SampleCensus.primary_question.1",
+    "defaultMessage": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?"
+  },
+  "components.SampleCensus.secondary_information.1": {
+    "id": "components.SampleCensus.secondary_information.1",
+    "description": "Supporting text for question 1",
+    "defaultMessage": "Number of people = <textbox>{text}</textbox>"
+  },
+  "components.SampleCensus.primary_question.2": {
+    "id": "components.SampleCensus.primary_question.2",
+    "defaultMessage": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?"
+  },
+  "components.SampleCensus.secondary_information.2.1": {
+    "id": "components.SampleCensus.secondary_information.2.1",
+    "defaultMessage": "Mark all that apply"
+  },
+  "components.SampleCensus.secondary_information.2.2": {
+    "id": "components.SampleCensus.secondary_information.2.2",
+    "defaultMessage": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children"
+  },
+  "components.SampleCensus.secondary_information.2.3": {
+    "id": "components.SampleCensus.secondary_information.2.3",
+    "defaultMessage": "Relatives, such as adult children, cousins, or in-laws"
+  },
+  "components.SampleCensus.secondary_information.2.4": {
+    "id": "components.SampleCensus.secondary_information.2.4",
+    "defaultMessage": "Nonrelatives, such as roommates or live-in babysitters"
+  },
+  "components.SampleCensus.secondary_information.2.5": {
+    "id": "components.SampleCensus.secondary_information.2.5",
+    "defaultMessage": "People staying here temporarily"
+  },
+  "components.SampleCensus.secondary_information.2.6": {
+    "id": "components.SampleCensus.secondary_information.2.6",
+    "defaultMessage": "No additional people"
+  },
+  "components.SampleCensus.primary_question.3": {
+    "id": "components.SampleCensus.primary_question.3",
+    "defaultMessage": "Is this house, apartment, or mobile home:"
+  },
+  "components.SampleCensus.secondary_information.3.1": {
+    "id": "components.SampleCensus.secondary_information.3.1",
+    "defaultMessage": "Mark ONE box"
+  },
+  "components.SampleCensus.secondary_information.3.2": {
+    "id": "components.SampleCensus.secondary_information.3.2",
+    "defaultMessage": "Owned by you or someone in this household with a mortgage or loan? Include home equity loans."
+  },
+  "components.SampleCensus.secondary_information.3.3": {
+    "id": "components.SampleCensus.secondary_information.3.3",
+    "defaultMessage": "Owned by you or someone in this household free and clear (without a mortgage or loan)?"
+  },
+  "components.SampleCensus.secondary_information.3.4": {
+    "id": "components.SampleCensus.secondary_information.3.4",
+    "defaultMessage": "Rented?"
+  },
+  "components.SampleCensus.secondary_information.3.5": {
+    "id": "components.SampleCensus.secondary_information.3.5",
+    "defaultMessage": "Occupied without payment of rent?"
+  },
+  "components.SampleCensus.primary_question.4": {
+    "id": "components.SampleCensus.primary_question.4",
+    "defaultMessage": "What is your telephone number?"
+  },
+  "components.SampleCensus.secondary_information.4": {
+    "id": "components.SampleCensus.secondary_information.4",
+    "description": "Supporting text for question 4",
+    "defaultMessage": "Telephone Number = <textbox>{text}</textbox>"
+  },
+  "components.SampleCensus.primary_question.5": {
+    "id": "components.SampleCensus.primary_question.5",
+    "defaultMessage": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?"
+  },
+  "components.SampleCensus.secondary_information.5": {
+    "id": "components.SampleCensus.secondary_information.5",
+    "description": "Supporting text for question 5",
+    "defaultMessage": "First Name = <textbox>{text}</textbox> MI = <textbox>{text}</textbox> Last Name(s) = <textbox>{text}</textbox>"
+  },
+  "components.SampleCensus.primary_question.6": {
+    "id": "components.SampleCensus.primary_question.6",
+    "defaultMessage": "What is Person 1’s sex?"
+  },
+  "components.SampleCensus.secondary_information.6.1": {
+    "id": "components.SampleCensus.secondary_information.6.1",
+    "defaultMessage": "Mark ONE box."
+  },
+  "components.SampleCensus.secondary_information.6.2": {
+    "id": "components.SampleCensus.secondary_information.6.2",
+    "defaultMessage": "Male"
+  },
+  "components.SampleCensus.secondary_information.6.3": {
+    "id": "components.SampleCensus.secondary_information.6.3",
+    "defaultMessage": "Female"
+  },
+  "components.SampleCensus.primary_question.7": {
+    "id": "components.SampleCensus.primary_question.7",
+    "defaultMessage": "What is Person 1’s age and what is Person 1’s date of birth?"
+  },
+  "components.SampleCensus.secondary_information.7.1": {
+    "id": "components.SampleCensus.secondary_information.7.1",
+    "description": "Supporting text for question 7",
+    "defaultMessage": "Age on April 1, 2020 = <textbox>{text}</textbox> years"
+  },
+  "components.SampleCensus.secondary_information.7.2": {
+    "id": "components.SampleCensus.secondary_information.7.2",
+    "description": "Supporting text for question 7",
+    "defaultMessage": "Month = <textbox>{text}</textbox> Day = <textbox>{text}</textbox> Year of birth = <textbox>{text}</textbox>"
+  },
+  "components.SampleCensus.primary_question.8": {
+    "id": "components.SampleCensus.primary_question.8",
+    "defaultMessage": "Is Person 1 of Hispanic, Latino, or Spanish origin?"
+  },
+  "components.SampleCensus.secondary_information.8.1": {
+    "id": "components.SampleCensus.secondary_information.8.1",
+    "defaultMessage": "No, not of Hispanic, Latino, or Spanish origin"
+  },
+  "components.SampleCensus.secondary_information.8.2": {
+    "id": "components.SampleCensus.secondary_information.8.2",
+    "defaultMessage": "Yes, Mexican, Mexican Am., Chicano"
+  },
+  "components.SampleCensus.secondary_information.8.3": {
+    "id": "components.SampleCensus.secondary_information.8.3",
+    "defaultMessage": "Yes, Puerto Rican"
+  },
+  "components.SampleCensus.secondary_information.8.4": {
+    "id": "components.SampleCensus.secondary_information.8.4",
+    "defaultMessage": "Yes, Cuban"
+  },
+  "components.SampleCensus.secondary_information.8.5": {
+    "id": "components.SampleCensus.secondary_information.8.5",
+    "defaultMessage": "Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc."
+  },
+  "components.SampleCensus.secondary_information.8.6": {
+    "id": "components.SampleCensus.secondary_information.8.6",
+    "description": "Supporting text for question 8.5",
+    "defaultMessage": "<textbox>{text}</textbox>"
+  },
+  "components.SampleCensus.primary_question.9": {
+    "id": "components.SampleCensus.primary_question.9",
+    "defaultMessage": "What is Person 1’s race?"
+  },
+  "components.SampleCensus.secondary_information.9.1": {
+    "id": "components.SampleCensus.secondary_information.9.1",
+    "defaultMessage": "Mark one or more boxes AND print origins."
+  },
+  "components.SampleCensus.secondary_information.9.2": {
+    "id": "components.SampleCensus.secondary_information.9.2",
+    "defaultMessage": "White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.3": {
+    "id": "components.SampleCensus.secondary_information.9.3",
+    "defaultMessage": "Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.4": {
+    "id": "components.SampleCensus.secondary_information.9.4",
+    "defaultMessage": "American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.5": {
+    "id": "components.SampleCensus.secondary_information.9.5",
+    "defaultMessage": "Chinese"
+  },
+  "components.SampleCensus.secondary_information.9.6": {
+    "id": "components.SampleCensus.secondary_information.9.6",
+    "defaultMessage": "Filipino"
+  },
+  "components.SampleCensus.secondary_information.9.7": {
+    "id": "components.SampleCensus.secondary_information.9.7",
+    "defaultMessage": "Asian Indian"
+  },
+  "components.SampleCensus.secondary_information.9.8": {
+    "id": "components.SampleCensus.secondary_information.9.8",
+    "defaultMessage": "Vietnamese"
+  },
+  "components.SampleCensus.secondary_information.9.9": {
+    "id": "components.SampleCensus.secondary_information.9.9",
+    "defaultMessage": "Korean"
+  },
+  "components.SampleCensus.secondary_information.9.10": {
+    "id": "components.SampleCensus.secondary_information.9.10",
+    "defaultMessage": "Japanese"
+  },
+  "components.SampleCensus.secondary_information.9.11": {
+    "id": "components.SampleCensus.secondary_information.9.11",
+    "defaultMessage": "Native Hawaiian"
+  },
+  "components.SampleCensus.secondary_information.9.12": {
+    "id": "components.SampleCensus.secondary_information.9.12",
+    "defaultMessage": "Samoan"
+  },
+  "components.SampleCensus.secondary_information.9.13": {
+    "id": "components.SampleCensus.secondary_information.9.13",
+    "defaultMessage": "Chamorro"
+  },
+  "components.SampleCensus.secondary_information.9.14": {
+    "id": "components.SampleCensus.secondary_information.9.14",
+    "defaultMessage": "Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.15": {
+    "id": "components.SampleCensus.secondary_information.9.15",
+    "defaultMessage": "Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.16": {
+    "id": "components.SampleCensus.secondary_information.9.16",
+    "defaultMessage": "Some other race – Print race or origin. [Textbox]"
+  },
+  "components.SampleCensus.primary_question.10": {
+    "id": "components.SampleCensus.primary_question.10",
+    "defaultMessage": "This is an ipsum question"
+  },
+  "components.SampleCensus.hohh_button": {
+    "id": "components.SampleCensus.hohh_button",
+    "description": "Questions for the Head of Household",
+    "defaultMessage": "I will answer the census"
+  },
+  "components.SampleCensus.not_hohh_button": {
+    "id": "components.SampleCensus.not_hohh_button",
+    "description": "Questions for individuals other than the Head of Household",
+    "defaultMessage": "Someone else will answer the census for me"
   }
 }
