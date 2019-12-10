@@ -324,6 +324,18 @@ export default class SampleCensus extends React.Component {
       <main className="c_sample-census">
         <div className="c_headers__goldHeader"></div>
         <div className="c_sample-census__content">
+          <h1 className="c_sample-census__content__title">
+            <FormattedMessage
+              id="components.SampleCensus.title"
+              defaultMessage="You should complete the questionnaire as Person 1, if you are responsible for the home. If you live in someone else's home, you will need to provide information to the person completing the questionnaire. "
+              description="Sample Census page title"/>
+          </h1>
+          <p className="c_sample-census__content__subtitle">
+            <FormattedMessage
+              id="components.SampleCensus.subtitle"
+              defaultMessage="See what information will need to complete the questionnaire"
+              description="Sample Census page subtitle"/>
+          </p>
           <div
             className="c_sample-census__content__hohh-container">
             <button
@@ -361,18 +373,6 @@ export default class SampleCensus extends React.Component {
                 </h4> 
             </button>
           </div>
-          <h1 className="c_sample-census__content__title">
-            <FormattedMessage
-              id="components.SampleCensus.title"
-              defaultMessage="You should complete the questionnaire as Person 1, if you are responsible for the home. If you live in someone else's home, you will need to provide information to the person completing the questionnaire. "
-              description="Sample Census page title"/>
-          </h1>
-          <p className="c_sample-census__content__subtitle">
-            <FormattedMessage
-              id="components.SampleCensus.subtitle"
-              defaultMessage="See what information will need to complete the questionnaire"
-              description="Sample Census page subtitle"/>
-          </p>
           <ul className="c_sample-census__content__button-row">
             { questions.map((item, index) => (
               <li

@@ -169,8 +169,7 @@ const Factoid = ({ title, message, headerMessage, headerTitle, link }) => {
       className={classnames(
         factoid_class,
         `${factoid_class}__${factoid_size}`,
-      )}
-    >
+      )}>
       <div className="c_home__factoid__goldHeader">
         <div className="c_home__factoid__title">
           {headerTitle}
@@ -179,9 +178,6 @@ const Factoid = ({ title, message, headerMessage, headerTitle, link }) => {
           {headerMessage}
         </div>
       </div>
-      <h3>
-        {title}
-      </h3>
       <div className="c_home__factoid__content">
         {message}
       </div>
