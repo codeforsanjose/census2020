@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import YouTube from 'react-youtube';
 import { Carousel } from 'react-responsive-carousel';
-import QRCode from 'qrcode.react';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
+import QRCode from 'qrcode.react';
+
+import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
 
 import sharksMural from '../images/sharksMural.jpg';
 import cityHall from '../images/cityHall.jpg';
@@ -102,35 +104,42 @@ CarouselItem.propTypes = {
   }).isRequired
 };
 
-const Factoid = ({ title, message, headerMessage, headerTitle, link }) => (
+const Factoid = ({ className, message, headerMessage, headerTitle, link }) => (
   <li
-    className="c_home__factoid"
+    className={`c_home__factoid ${className}`}
   >
     <div className="c_home__factoid__goldHeader">
-      <div className="c_home__factoid__title">
-        {headerTitle}
-      </div>
-      <div className="c_home__factoid__message">
-        {headerMessage}
+      <div className="c_home__factoid__header-text">
+        <div className="c_home__factoid__title">
+          {headerTitle}
+        </div>
+        <div className="c_home__factoid__message">
+          {headerMessage}
+        </div>
       </div>
     </div>
-    <h3>
-      {title}
-    </h3>
     <div className="c_home__factoid__content">
       {message}
     </div>
-    <div className="c_home__factoid__line"></div>
-    {link}
+    {
+      link
+        ? (
+          <footer className="c_home__factoid__footer">
+            {link}
+          </footer>
+        )
+        : null
+    }
   </li>
 );
 
 Factoid.propTypes = {
-  title: PropTypes.element.isRequired,
+  className: PropTypes.string,
   message: PropTypes.element.isRequired,
   headerTitle: PropTypes.element.isRequired,
   headerMessage: PropTypes.element.isRequired,
-  link: PropTypes.element.isRequired
+  headerIconUrl: PropTypes.string.isRequired,
+  link: PropTypes.element
 };
 
 class YoutubeItem extends Component {
@@ -197,97 +206,57 @@ export default class DetailViewContainer extends Component {
           ))}
         </Carousel>
         <div className="c_home__content">
-          <YoutubeItem />
-          <h4
-            className="c_home__content__title"
-          >
+          <h1 className="c_home__header">
             <FormattedMessage
-              id="components.DetailViewContainer.header"
-              defaultMessage="Everyone matters"
-              description="Home page title"
+              id="components.Home.header"
+              defaultMessage="Participate in the census and represent San Jose"
             />
-          </h4>
-          <p
-            className="c_home__content__text"
-          >
+          </h1>
+          <h2 className="c_home__subheader">
             <FormattedMessage
-              id="components.DetailViewContainer.message.1"
-              defaultMessage={`The 2020 Census is here. Your participation helps ensure our community will have access to housing, healthcare, schools, community programs, better transportation, and government representation.`}
-              description="Home page message"
+              id="components.Home.subheader"
+              defaultMessage="Help California and San Jose get access to important resources"
             />
-          </p>
-          <p
-            className="c_home__content__text"
-          >
-            <FormattedMessage
-              id="components.DetailViewContainer.message.2"
-              defaultMessage={`Every 10 years, the U.S. Census Bureau sets out to count every person living in the United States — regardless of age, citizenship status, and gender. Getting the 2020 Census right is important for all our communities — particularly those most likely to be undercounted. A 2020 Census undercount could put billions of federal dollars and congressional representation for California at risk!`}
-              description="Home page message"
-            />
-          </p>
-          <p
-            className="c_home__content__text"
-          >
-            <FormattedMessage
-              id="components.DetailViewContainer.message.3"
-              defaultMessage={`Complete the census survey online, by phone or mail. The process is easy, quick and confidential! All you need is the ID code mailed to you by the U.S. Census Bureau, or your mailing address. Remember, to include everyone living and sleeping in your house. That means babies, children, teens, roommates, etc. Click the "Take the Census Now" button to get started!`}
-              description="Home page message"
-            />
-          </p>
+          </h2>
         </div>
 
         <ul
           className="c_home__factoids"
         >
           <Factoid
-            title={<FormattedMessage
-              id="components.Home.factoids.readyToTakeCensus.title"
-              defaultMessage="Ready to take the census?"
-            />}
-            message={<FormattedMessage
-              id="components.Home.factoids.readyToTakeCensus.message"
-              defaultMessage="a whole bunch of text and things here"
-            />}
+            className="c_home__factoid__qr-code"
             headerTitle={<FormattedMessage
-              id="components.Home.factoids.readyToTakeCensus.headerTitle"
-              defaultMessage="Census starts in 2020"
+              id="components.Home.factoids.qrCode.headerTitle"
+              defaultMessage="Use the In a hurry, take it to go!"
             />}
             headerMessage={<FormattedMessage
-              id="components.Home.factoids.readyToTakeCensus.headerMessage"
+              id="components.Home.factoids.qrCode.headerMessage"
               defaultMessage="Learn how to participate"
             />}
-            link={<Link
-              className="c_home__factoid__link"
-              to="/contact"
-            >
-              {
-                <FormattedMessage
-                  id="components.Home.factoids.readyToTakeCensus.contactLink"
-                  defaultMessage="GET INVOLVED"
-                />
-              }
-            </Link>}
-          />
-          <Factoid
-            title={
-              <FormattedMessage
-                id="components.Home.factoids.qr-code.title"
-                defaultMessage="Learn About the Census From Your Phone"
+            message={
+              <QRCode
+                value={document.location.origin}
               />
             }
-            message={
-              <QRCode value={document.location.origin} />
-            }
+          />
+          <Factoid
+            className="c_home__factoid__safety"
             headerTitle={
               <FormattedMessage
-                id="components.Home.factoids.qr-code.headerTitle."
-                defaultMessage="Your data is secure"
+                id="components.Home.factoids.safety.headerTitle."
+                defaultMessage="Is it safe?"
               />
             }
             headerMessage={
               <FormattedMessage
-                id="components.Home.factoids.qr-code.headerMessage."
-                defaultMessage="Learn more about privacy"
+                id="components.Home.factoids.safety.headerMessage"
+                defaultMessage="Why should I be counted?"
+              />
+            }
+            message={
+              <FormattedMarkdownMessage
+                id="components.Home.factoids.safety.message"
+                defaultMessage="Get the answers to all your questions about why to take the census and how the information will be used."
               />
             }
             link={<Link
@@ -303,28 +272,23 @@ export default class DetailViewContainer extends Component {
             </Link>}
           />
           <Factoid
-            title={
-              <FormattedMessage
-                id="components.Home.factoids.3.title"
-                defaultMessage="Title 3"
-              />
-            }
-            message={
-              <FormattedMessage
-                id="components.Home.factoids.3.message"
-                defaultMessage="more text will go here"
-              />
-            }
+            className="c_home__factoid__should-i-complete"
             headerTitle={
               <FormattedMessage
-                id="components.Home.factoids.3.headerTitle"
-                defaultMessage="See all census questions"
+                id="components.Home.factoids.shouldIComplete.headerTitle"
+                defaultMessage="Should I be completing the questionnaire?"
               />
             }
             headerMessage={
               <FormattedMessage
-                id="components.Home.factoids.3.headerMessage"
-                defaultMessage="Learn why it's important..."
+                id="components.Home.factoids.shouldIComplete.headerMessage"
+                defaultMessage="What will I be asked?"
+              />
+            }
+            message={
+              <FormattedMarkdownMessage
+                id="components.Home.factoids.shouldIComplete.message"
+                defaultMessage="Learn more about the census questions, and who should be answering the questionnaire."
               />
             }
             link={
@@ -342,6 +306,7 @@ export default class DetailViewContainer extends Component {
             }
           />
         </ul>
+        <YoutubeItem />
       </main>
     );
   }

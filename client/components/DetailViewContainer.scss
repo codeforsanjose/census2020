@@ -1,4 +1,6 @@
 .c_home {
+	$gutter-width: 40px;
+
 	display: flex;
 	flex-direction: column;
 	background-color: #f2f2f2;
@@ -46,18 +48,19 @@
 		}
 	}
 
+	&__header {
+		margin: 0;
+		font-weight: bold;
+		font-size: 36px;
+	}
 
-
-	&__messages {
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		padding: 2% 5% 2% 5%;
-		list-style: none;
+	&__subheader {
+		margin: 0;
+		font-weight: normal;
 	}
 
 	&__content {
-		margin: 80px 64px;
+		margin: $gutter-width;
 
 		&__title {
 			margin: 0;
@@ -83,9 +86,9 @@
 	&__factoids {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		width: 100%;
-		padding: 0 5% 5% 5%;
+		padding: 0 $gutter-width;
 	}
 
 	&__factoid {
@@ -93,8 +96,8 @@
 		flex-direction: column;
 		justify-content: start;
 		align-items: center;
-		width: 30vw;
-		height: 30vw;
+		height: 300px;
+		width: 30%;
 		background-color: #fdfeff;
 		margin: 10px;
 		border: solid 1px #005ea2;
@@ -104,13 +107,11 @@
 		&__title {
 			font-size: 17px;
 			font-weight: bold;
-			text-align: center;
 		}
 
 		&__message {
 			font-size: 17px;
 			font-weight: 100;
-			text-align: center;
 		}
 
 		&__link {
@@ -119,13 +120,6 @@
 			text-decoration: none;
 			color: #2F80ED;
 			margin: 25px;
-		}
-
-		&__line {
-			width: 30vw;
-			margin: 30px;
-			border-bottom: 1px solid #bbbbbb;
-			margin: auto 0 0 0;
 		}
 
 		&__goldHeader {
@@ -139,10 +133,64 @@
 				rgb(246,188,137),
 				rgb(246,220,139)
 			);
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 0 33px;
+		}
+
+		&__header-text {
+			display: flex;
+			flex-direction: column;
 		}
 
 		&__content {
-			text-align: center;
+			padding: 30px;
+
+			// Currently, FormattedMarkdownMessage wraps output with <p> tags--get rid of the
+			// default browser padding
+			p {
+				margin: 0;
+			}
+		}
+
+		&__footer {
+			border-top: 1px solid #bbbbbb;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		$icon-container-size: 66px;
+
+		@mixin factoid-header-icon {
+			content: "";
+			width: $icon-container-size;
+			min-width: $icon-container-size;
+			max-width: $icon-container-size;
+			height: $icon-container-size;
+			min-height: $icon-container-size;
+			max-height: $icon-container-size;
+			background-color: #FFFFFF;
+			border-radius: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 70%;
+		}
+
+		&__safety &__goldHeader::before {
+			@include factoid-header-icon();
+			background-image: url('../images/shield.svg');
+		}
+		
+		&__should-i-complete &__goldHeader::before {
+			@include factoid-header-icon();
+			background-image: url('../images/bar-chart.svg');
 		}
 	}
 }
