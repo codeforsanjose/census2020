@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import YouTube from 'react-youtube';
 import { Carousel } from 'react-responsive-carousel';
@@ -104,34 +105,115 @@ CarouselItem.propTypes = {
   }).isRequired
 };
 
-const Factoid = ({ className, message, headerMessage, headerTitle, link }) => (
-  <li
-    className={`c_home__factoid ${className}`}
-  >
-    <div className="c_home__factoid__goldHeader">
-      <div className="c_home__factoid__header-text">
-        <div className="c_home__factoid__title">
-          {headerTitle}
-        </div>
-        <div className="c_home__factoid__message">
-          {headerMessage}
+const REASONS = [
+  (
+    <FormattedMessage
+      key={1}
+      id="components.Home.top_reasons.item.1"
+      defaultMessage="Determines the number of seats in the House of Representatives">
+    </FormattedMessage>
+  ),
+  (
+    <FormattedMessage
+      key={2}
+      id="components.Home.top_reasons.item.2"
+      defaultMessage="Redraw district boundaries">
+    </FormattedMessage>
+  ),
+  (
+    <FormattedMessage
+      key={3}
+      id="components.Home.top_reasons.item.3"
+      defaultMessage="Allocates funds to the state and localities">
+    </FormattedMessage>
+  ),
+  (
+    <FormattedMessage
+      key={4}
+      id="components.Home.top_reasons.item.4"
+      defaultMessage="Infrastructure planning">
+    </FormattedMessage>
+  ),
+  (
+    <FormattedMessage
+      key={5}
+      id="Compnents.Home.top_reasons.item.4"
+      defaultMessage="Emergency response planning">
+    </FormattedMessage>
+  )
+];
+
+const TopReasons = () => {
+  const screenWidth = window.innerWidth;
+  let size;
+  if (screenWidth < 1200) {
+    size = (screenWidth < 800) ? 'small' : 'medium';
+  } else {
+    size = 'large';
+  }
+  const topReasonsClass = 'c_home__top-reasons';
+
+  return (
+    <ol
+      className={classnames(
+        topReasonsClass,
+        `${topReasonsClass}__${size}`
+      )}>
+      <h2>
+        <FormattedMessage
+          id="components.Home.top_reasons.title"
+          defaultMessage="Top 5 Reasons to take the census">
+        </FormattedMessage>
+      </h2>
+      { REASONS.map((item, index) => (
+        <li
+          key={index}>
+          <p>
+            {item}
+          </p>
+        </li>
+      ))}
+    </ol>
+  );
+};
+
+const Factoid = ({ className, message, headerMessage, headerTitle, link }) => {
+  const factoidSize = (window.innerWidth < 800) ? 'mobile' : 'desktop';
+  const factoidClass = 'c_home__factoid';
+
+  return (
+    <li
+      className={classnames(
+        factoidClass,
+        `${factoidClass}__${factoidSize}`,
+        className
+      )}
+    >
+      <div className="c_home__factoid__goldHeader">
+        <div className="c_home__factoid__header-text">
+          <div className="c_home__factoid__title">
+            {headerTitle}
+          </div>
+          <div className="c_home__factoid__message">
+            {headerMessage}
+          </div>
         </div>
       </div>
-    </div>
-    <div className="c_home__factoid__content">
-      {message}
-    </div>
-    {
-      link
-        ? (
-          <footer className="c_home__factoid__footer">
-            {link}
-          </footer>
-        )
-        : null
-    }
-  </li>
-);
+      <div className="c_home__factoid__content">
+        {message}
+      </div>
+      {
+        link
+          ? (
+            <footer className="c_home__factoid__footer">
+              {link}
+            </footer>
+          )
+          : null
+      }
+    </li>
+  );
+};
 
 Factoid.propTypes = {
   className: PropTypes.string,
@@ -142,54 +224,24 @@ Factoid.propTypes = {
   link: PropTypes.element
 };
 
-class YoutubeItem extends Component {
-  state = {
-    ready: false
-  }
+const YoutubeItem = ({ opts }) => (
+  <div
+    className="c_home__content__video"
+  >
+    <YouTube
+      videoId="pl4RO5EisCU"
+      opts={opts}
+    />
+  </div>
+);
 
-  containerRef = React.createRef()
-
-  componentDidMount () {
-    // force component to rerender once the DOM elements are mounted
-    this.setState({
-      ready: true
-    });
-  }
-
-  render () {
-    let opts;
-    if (this.containerRef.current) {
-      const parentWidth = this.containerRef.current.offsetWidth;
-      // maintain a 16:9 aspect ratio based on the parent width
-      const width = (parentWidth).toString();
-      const height = (parentWidth * (9 / 16)).toString();
-      opts = {
-        height,
-        width,
-        playerVars: {
-          autoplay: 0
-        }
-      };
-    }
-
-    return (
-      <div
-        className="c_home__content__video"
-        ref={this.containerRef}
-      >
-        { this.containerRef.current && (
-          <YouTube
-            videoId="pl4RO5EisCU"
-            opts={opts}
-          />
-        )}
-      </div>
-    );
-  }
-}
+YoutubeItem.propTypes = {
+  opts: PropTypes.object
+};
 
 export default class DetailViewContainer extends Component {
   render () {
+    const screenWidth = window.innerWidth;
     return (
       <main
         className='c_home'
@@ -219,7 +271,6 @@ export default class DetailViewContainer extends Component {
             />
           </h2>
         </div>
-
         <ul
           className="c_home__factoids"
         >
@@ -305,8 +356,47 @@ export default class DetailViewContainer extends Component {
               </Link>
             }
           />
+          { screenWidth < 800 && (
+            <YoutubeItem
+              opts={{
+                height: (screenWidth * 0.8 * 9 / 16).toString(),
+                width: (screenWidth * 0.8).toString(),
+                playerVars: {
+                  autoplay: 0
+                }
+              }}>
+            </YoutubeItem>
+          )}
+          { screenWidth < 1280 && (
+            <TopReasons />
+          )}
         </ul>
-        <YoutubeItem />
+        { screenWidth > 800 && screenWidth < 1280 && (
+          <YoutubeItem
+            opts={{
+              height: (screenWidth * 0.8 * 9 / 16).toString(),
+              width: (screenWidth * 0.8).toString(),
+              playerVars: {
+                autoplay: 0
+              }
+            }}>
+          </YoutubeItem>
+        )}
+        { screenWidth > 1280 && (
+          <div
+            className="c_home__video-container">
+            <YoutubeItem
+              opts={{
+                height: (600 * 9 / 16).toString(),
+                width: (600).toString(),
+                playerVars: {
+                  autoplay: 0
+                }
+              }}>
+            </YoutubeItem>
+            <TopReasons />
+          </div>
+        )}
       </main>
     );
   }

@@ -1,5 +1,5 @@
 .c_navigation {
-  $horizontal-spacing: 25px;
+  $horizontal-spacing: 35px;
   $vertical-spacing: 30px;
 
   display: flex;
@@ -68,6 +68,7 @@
     font-size: 22px;
     z-index: 1;
     border-radius: 5px;
+    width: 260px;
 
     &,
     &:hover,

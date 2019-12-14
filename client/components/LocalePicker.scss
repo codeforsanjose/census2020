@@ -1,6 +1,7 @@
 .c_locale-picker {
   display: flex;
   align-items: center;
+  font-size: 14px;
 
   &::before {
     content: url('../images/globe.svg');
