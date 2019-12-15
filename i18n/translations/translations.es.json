@@ -360,12 +360,12 @@
     "translation": "Aprenda cómo responder, cómo se usa esa información y por qué es importante responder"
   },
   "components.SampleCensus.title": {
-    "english": "Preview and learn more about each question on the census",
-    "translation": "Obtenga una vista previa y aprenda más sobre cada pregunta en el censo"
+    "english": "You should complete the questionnaire as Person 1, if you are responsible for the home. If you live in someone else's home, you will need to provide information to the person completing the questionnaire.",
+    "translation": "Debe completar el cuestionario como Persona 1, si es responsable del hogar. Si vive en la casa de otra persona, deberá proporcionar información a la persona que completa el cuestionario."
   },
   "components.SampleCensus.subtitle": {
-    "english": "Learn how to answer, how that info is used, and why it's important to answer",
-    "translation": "Aprenda cómo responder, cómo se usa esa información y por qué es importante responder"
+    "english": "See what information will need to complete the questionnaire",
+    "translation": "Vea qué información necesitará para completar el cuestionario"
   },
   "components.DetailViewContainer.message.1": {
     "english": "The 2020 Census is here. Your participation helps ensure our community will have access to housing, healthcare, schools, community programs, better transportation, and government representation.",
@@ -722,5 +722,113 @@
   "components.Contact.emailValidation": {
     "english": "Please enter a valid email address",
     "translation": "Por favor, introduce una dirección de correo electrónico válida"
+  },
+  "components.Home.top_reasons.item.1": {
+    "english": "Determines the number of seats in the House of Representatives",
+    "translation": "Determina el número de escaños en la Cámara de Representantes."
+  },
+  "components.Home.top_reasons.item.2": {
+    "english": "Redraw district boundaries",
+    "translation": "Redibujar límites del distrito"
+  },
+  "components.Home.top_reasons.item.3": {
+    "english": "Allocates funds to the state and localities",
+    "translation": "Asigna fondos al estado y localidades"
+  },
+  "components.Home.top_reasons.item.4": {
+    "english": "Infrastructure planning",
+    "translation": "Planificación de la infraestructura"
+  },
+  "Compnents.Home.top_reasons.item.4": {
+    "english": "Emergency response planning",
+    "translation": "Planificación de respuesta a emergencias"
+  },
+  "components.Home.top_reasons.title": {
+    "english": "Top 5 Reasons to take the census",
+    "translation": "Las 5 razones principales para realizar el censo"
+  },
+  "components.Home.header": {
+    "english": "Participate in the census and represent San Jose",
+    "translation": "Participe en el censo y represente a San José"
+  },
+  "components.Home.subheader": {
+    "english": "Help California and San Jose get access to important resources",
+    "translation": "Ayuda a California y San José a obtener acceso a recursos importantes"
+  },
+  "components.Home.factoids.qrCode.headerTitle": {
+    "english": "Use the In a hurry, take it to go!",
+    "translation": "Usa el apuro, ¡tómalo para llevar!"
+  },
+  "components.Home.factoids.qrCode.headerMessage": {
+    "english": "Learn how to participate",
+    "translation": "Aprende a participar"
+  },
+  "components.Home.factoids.safety.headerTitle.": {
+    "english": "Is it safe?",
+    "translation": "¿Es seguro?"
+  },
+  "components.Home.factoids.safety.headerMessage": {
+    "english": "Why should I be counted?",
+    "translation": "¿Por qué debería ser contado?"
+  },
+  "components.Home.factoids.safety.message": {
+    "english": "Get the answers to all your questions about why to take the census and how the information will be used.",
+    "translation": "Obtenga las respuestas a todas sus preguntas sobre por qué realizar el censo y cómo se utilizará la información."
+  },
+  "components.Home.factoids.shouldIComplete.headerTitle": {
+    "english": "Should I be completing the questionnaire?",
+    "translation": "¿Debo completar el cuestionario?"
+  },
+  "components.Home.factoids.shouldIComplete.headerMessage": {
+    "english": "What will I be asked?",
+    "translation": "¿Qué me preguntarán?"
+  },
+  "components.Home.factoids.shouldIComplete.message": {
+    "english": "Learn more about the census questions, and who should be answering the questionnaire.",
+    "translation": "Obtenga más información sobre las preguntas del censo y sobre quién debería responder el cuestionario."
+  },
+  "components.SampleCensus.primary_question.1": {
+    "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
+    "translation": "¿Cuántas personas vivían o se hospedaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
+  },
+  "components.SampleCensus.secondary_information.1": {
+    "english": "Number of people",
+    "translation": "Número de personas"
+  },
+  "components.SampleCensus.primary_question.2": {
+    "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
+    "translation": "¿Hubo personas adicionales que se quedaron aquí el 1 de abril de 2020 que no incluyó en la Pregunta 1?"
+  },
+  "components.SampleCensus.secondary_information.2.1": {
+    "english": "Mark all that apply",
+    "translation": "marque todo lo que corresponda"
+  },
+  "components.SampleCensus.secondary_information.2.2": {
+    "english": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children",
+    "translation": "Hijos, relacionados o no relacionados, como recién nacidos, nietos o hijos adoptivos."
+  },
+  "components.SampleCensus.secondary_information.2.3": {
+    "english": "Relatives, such as adult children, cousins, or in-laws",
+    "translation": "Familiares, como hijos adultos, primos o suegros"
+  },
+  "components.SampleCensus.secondary_information.2.4": {
+    "english": "Nonrelatives, such as roommates or live-in babysitters",
+    "translation": "No parientes, como compañeros de cuarto o niñeras que viven"
+  },
+  "components.SampleCensus.secondary_information.2.5": {
+    "english": "People staying here temporarily",
+    "translation": "Personas que se quedan aquí temporalmente"
+  },
+  "components.SampleCensus.secondary_information.2.6": {
+    "english": "No additional people",
+    "translation": "No hay personas adicionales"
+  },
+  "components.SampleCensus.hohh_button": {
+    "english": "I will answer the census",
+    "translation": "Contestaré el censo"
+  },
+  "components.SampleCensus.not_hohh_button": {
+    "english": "Someone else will answer the census for me",
+    "translation": "Alguien más responderá el censo por mí."
   }
 }
