@@ -2,10 +2,42 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { FormattedMessage } from 'react-intl';
-import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
 
 import './SampleCensus.scss';
 import './Headers.scss';
+
+const CheckboxList = ({ children }) => {
+  return (
+    <ul
+      className="c_sample-census__question__checkbox-list"
+    >
+      {
+        React.Children.map(
+          children,
+          (item, index) => (
+            <li
+              key={index}
+            >
+
+              <label>
+                <input
+                  className="c_sample-census__question__checkbox-list__checkbox"
+                  type="checkbox"
+                  disabled
+                />
+                {item}
+              </label>
+            </li>
+          )
+        )
+      }
+    </ul>
+  );
+};
+
+CheckboxList.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.element.isRequired).isRequired
+};
 
 const questions = [
   {
@@ -17,33 +49,23 @@ const questions = [
     ),
     secondary_information: (
       <div
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center'
-        }}>
-        <FormattedMarkdownMessage
+        className="c_sample-census__question__1__secondary"
+      >
+        <FormattedMessage
           id="components.SampleCensus.secondary_information.1"
-          defaultMessage="Number of people = <textbox>{text}</textbox>"
+          defaultMessage="Number of people = {textbox}"
           description="Supporting text for question 1"
           values={{
             textbox: (
               <textarea
                 value="Enter number here"
-                readOnly="True"
-                style={{
-                  resize: 'none',
-                  height: '2em',
-                  border: 'none',
-                  borderRadius: '3px',
-                  padding: '.25em',
-                  backgroundColor: '#2F80ED88',
-                  textAlign: 'center'
-                }}>
+                readOnly
+                className="c_sample-census__question__textarea"
+              >
               </textarea>
             )
           }}>
-        </FormattedMarkdownMessage>
+        </FormattedMessage>
       </div>
     )
   },
@@ -55,176 +77,39 @@ const questions = [
       </FormattedMessage>
     ),
     secondary_information: (
-      <ul
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          padding: '0'
-        }}>
-        { /* <FormattedMarkdownMessage
-          id="components.SampleCensus.secondary_information.2.1"
-          defaultMessage="<italics>{text}</italics>"
-          description="Supporting text for question 2"
-          values={{
-            text: "Mark all that apply",
-            italics: text => (
-              <i> {text} </i>
-            )
-          }}>
-        </FormattedMarkdownMessage>
-     */ }
-        <i>
+      <div>
+        <em>
           <FormattedMessage
             id="components.SampleCensus.secondary_information.2.1"
             defaultMessage="Mark all that apply">
           </FormattedMessage>
-        </i>
-        <li
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'flex-start'
-          }}>
-          <input
-            style={{
-              margin: '.5em'
-            }}
-            type="checkbox"
-            disabled="True">
-          </input>
-          <p>
-            <FormattedMessage
-              id="components.SampleCensus.secondary_information.2.2"
-              defaultMessage="Children, related or unrelated, such as newborn babies, grandchildren, or foster children">
-            </FormattedMessage>
-          </p>
-        </li>
-        <li
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'flex-start'
-          }}>
-          <input
-            style={{
-              margin: '.5em'
-            }}
-            type="checkbox"
-            disabled="True">
-          </input>
-          <p>
-            <FormattedMessage
-              id="components.SampleCensus.secondary_information.2.3"
-              defaultMessage="Relatives, such as adult children, cousins, or in-laws">
-            </FormattedMessage>
-          </p>
-        </li>
-        <li
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'flex-start'
-          }}>
-          <input
-            style={{
-              margin: '.5em'
-            }}
-            type="checkbox"
-            disabled="True">
-          </input>
-          <p>
-            <FormattedMessage
-              id="components.SampleCensus.secondary_information.2.4"
-              defaultMessage="Nonrelatives, such as roommates or live-in babysitters">
-            </FormattedMessage>
-          </p>
-        </li>
-        <li
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'flex-start'
-          }}>
-          <input
-            style={{
-              margin: '.5em'
-            }}
-            type="checkbox"
-            disabled="True">
-          </input>
-          <p>
-            <FormattedMessage
-              id="components.SampleCensus.secondary_information.2.5"
-              defaultMessage="People staying here temporarily">
-            </FormattedMessage>
-          </p>
-        </li>
-        <li
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'flex-start'
-          }}>
-          <input
-            style={{
-              margin: '.5em'
-            }}
-            type="checkbox"
-            disabled="True">
-          </input>
-          <p>
-            <FormattedMessage
-              id="components.SampleCensus.secondary_information.2.6"
-              defaultMessage="No additional people">
-            </FormattedMessage>
-          </p>
-        </li>
-      </ul>
+        </em>
+        <CheckboxList>
+          <FormattedMessage
+            id="components.SampleCensus.secondary_information.2.2"
+            defaultMessage="Children, related or unrelated, such as newborn babies, grandchildren, or foster children">
+          </FormattedMessage>
+          <FormattedMessage
+            id="components.SampleCensus.secondary_information.2.3"
+            defaultMessage="Relatives, such as adult children, cousins, or in-laws">
+          </FormattedMessage>
+          <FormattedMessage
+            id="components.SampleCensus.secondary_information.2.4"
+            defaultMessage="Nonrelatives, such as roommates or live-in babysitters">
+          </FormattedMessage>
+          <FormattedMessage
+            id="components.SampleCensus.secondary_information.2.5"
+            defaultMessage="People staying here temporarily">
+          </FormattedMessage>
+          <FormattedMessage
+            id="components.SampleCensus.secondary_information.2.6"
+            defaultMessage="No additional people">
+          </FormattedMessage>
+        </CheckboxList>
+      </div>
     )
   }
 ];
-
-const ipsumQuestion = {
-  question: (
-    <FormattedMessage
-      id="components.SampleCensus.ipsumQuestion.question"
-      defaultMessage="How many people were living or staring in this house, apartment, or mobile home on April 1, 2020?"
-    />
-  ),
-  secondary_text: (
-    <FormattedMessage
-      id="components.SampleCensus.ipsumQuestion.secondaryText"
-      defaultMessage="This is secondary text"
-    />
-  ),
-  how_to: (
-    <FormattedMarkdownMessage
-      id="components.SampleCensus.ipsumQuestion.howToAnswer"
-      defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.
-Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis
-enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.
-Eligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.`}
-    />
-  ),
-  info_use: (
-    <FormattedMarkdownMessage
-      id="components.SampleCensus.ipsumQuestion.howIsUsed"
-      defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.
-Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis
-enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.
-Eligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.`}
-    />
-  ),
-  why_answer: (
-    <FormattedMarkdownMessage
-      id="components.SampleCensus.ipsumQuestion.whyAnswer"
-      defaultMessage={`Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.
-Fugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis
-enim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.
-Eligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.`}
-    />
-  )
-};
 
 const indexToSection = {
   0: (
@@ -323,12 +208,6 @@ export default class SampleCensus extends React.Component {
   }
 
   render () {
-    // REMOVE ME
-    let censusQuestions = [];
-    for (var i = 0; i < 9; i++) {
-      censusQuestions.push(ipsumQuestion);
-    }
-
     const buttonClassName = 'c_sample-census__content__button-row__item__button';
     const censusQuestionsClassName = 'c_sample-census__content__census-questions';
     const hohhButtonClassName = 'c_sample-census__content__hohh-container__button';
@@ -378,16 +257,18 @@ export default class SampleCensus extends React.Component {
             <FormattedMessage
               id="components.SampleCensus.title"
               defaultMessage="You should complete the questionnaire as Person 1, if you are responsible for the home. If you live in someone else's home, you will need to provide information to the person completing the questionnaire. "
-              description="Sample Census page title"/>
+              description="Sample Census page title"
+            />
           </h1>
           <p className="c_sample-census__content__subtitle">
             <FormattedMessage
               id="components.SampleCensus.subtitle"
               defaultMessage="See what information will need to complete the questionnaire"
-              description="Sample Census page subtitle"/>
+              description="Sample Census page subtitle"
+            />
           </p>
           <ul className="c_sample-census__content__button-row">
-            { questions.map((item, index) => (
+            { questions.map((_item, index) => (
               <li
                 key={index}
                 className="c_sample-census__content__button-row__item">
