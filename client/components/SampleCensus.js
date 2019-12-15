@@ -39,6 +39,18 @@ CheckboxList.propTypes = {
   children: PropTypes.arrayOf(PropTypes.element.isRequired).isRequired
 };
 
+const FakeTextbox = ({ children }) => {
+  return (
+    <div className="c_sample-census__question__textarea">
+      {children}
+    </div>
+  );
+};
+
+FakeTextbox.propTypes = {
+  children: PropTypes.element.isRequired
+};
+
 const questions = [
   {
     primary_question: (
@@ -55,12 +67,12 @@ const questions = [
           id="components.SampleCensus.secondary_information.1"
           defaultMessage="Number of people"
           description="Label for question 1 input"
-        /> = <textarea
-          value="Enter number here"
-          readOnly
-          className="c_sample-census__question__textarea"
-        >
-        </textarea>
+        /> = <FakeTextbox>
+          <FormattedMessage
+            id="components.SampleCensus.secondary_information.1.textbox-content"
+            defaultMessage="Enter number here"
+          />
+        </FakeTextbox>
       </div>
     )
   },
