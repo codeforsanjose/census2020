@@ -270,93 +270,107 @@ export default class DetailViewContainer extends Component {
               defaultMessage="Help California and San Jose get access to important resources"
             />
           </h2>
-        </div>
-        <ul
-          className="c_home__factoids"
-        >
-          <Factoid
-            className="c_home__factoid__qr-code"
-            headerTitle={<FormattedMessage
-              id="components.Home.factoids.qrCode.headerTitle"
-              defaultMessage="Use the In a hurry, take it to go!"
-            />}
-            headerMessage={<FormattedMessage
-              id="components.Home.factoids.qrCode.headerMessage"
-              defaultMessage="Learn how to participate"
-            />}
-            message={
-              <QRCode
-                value={document.location.origin}
-              />
-            }
-          />
-          <Factoid
-            className="c_home__factoid__safety"
-            headerTitle={
-              <FormattedMessage
-                id="components.Home.factoids.safety.headerTitle."
-                defaultMessage="Is it safe?"
-              />
-            }
-            headerMessage={
-              <FormattedMessage
-                id="components.Home.factoids.safety.headerMessage"
-                defaultMessage="Why should I be counted?"
-              />
-            }
-            message={
-              <FormattedMarkdownMessage
-                id="components.Home.factoids.safety.message"
-                defaultMessage="Get the answers to all your questions about why to take the census and how the information will be used."
-              />
-            }
-            link={<Link
-              className="c_home__factoid__link"
-              to="/faq"
-            >
-              {
-                <FormattedMessage
-                  id="components.Home.factoids.qr-code.faqLink"
-                  defaultMessage="VIEW ALL FAQs"
+          <ul
+            className="c_home__factoids"
+          >
+            <Factoid
+              className="c_home__factoid__qr-code"
+              headerTitle={<FormattedMessage
+                id="components.Home.factoids.qrCode.headerTitle"
+                defaultMessage="Use the In a hurry, take it to go!"
+              />}
+              headerMessage={<FormattedMessage
+                id="components.Home.factoids.qrCode.headerMessage"
+                defaultMessage="Learn how to participate"
+              />}
+              message={
+                <QRCode
+                  value={document.location.origin}
                 />
               }
-            </Link>}
-          />
-          <Factoid
-            className="c_home__factoid__should-i-complete"
-            headerTitle={
-              <FormattedMessage
-                id="components.Home.factoids.shouldIComplete.headerTitle"
-                defaultMessage="Should I be completing the questionnaire?"
-              />
-            }
-            headerMessage={
-              <FormattedMessage
-                id="components.Home.factoids.shouldIComplete.headerMessage"
-                defaultMessage="What will I be asked?"
-              />
-            }
-            message={
-              <FormattedMarkdownMessage
-                id="components.Home.factoids.shouldIComplete.message"
-                defaultMessage="Learn more about the census questions, and who should be answering the questionnaire."
-              />
-            }
-            link={
-              <Link
+            />
+            <Factoid
+              className="c_home__factoid__safety"
+              headerTitle={
+                <FormattedMessage
+                  id="components.Home.factoids.safety.headerTitle."
+                  defaultMessage="Is it safe?"
+                />
+              }
+              headerMessage={
+                <FormattedMessage
+                  id="components.Home.factoids.safety.headerMessage"
+                  defaultMessage="Why should I be counted?"
+                />
+              }
+              message={
+                <FormattedMarkdownMessage
+                  id="components.Home.factoids.safety.message"
+                  defaultMessage="Get the answers to all your questions about why to take the census and how the information will be used."
+                />
+              }
+              link={<Link
                 className="c_home__factoid__link"
-                to="/samplecensus"
+                to="/faq"
               >
                 {
                   <FormattedMessage
-                    id="components.Home.factoids.3.surveyLink"
-                    defaultMessage="VIEW SAMPLE SURVEY"
+                    id="components.Home.factoids.qr-code.faqLink"
+                    defaultMessage="VIEW ALL FAQs"
                   />
                 }
-              </Link>
-            }
-          />
-          { screenWidth < 800 && (
+              </Link>}
+            />
+            <Factoid
+              className="c_home__factoid__should-i-complete"
+              headerTitle={
+                <FormattedMessage
+                  id="components.Home.factoids.shouldIComplete.headerTitle"
+                  defaultMessage="Should I be completing the questionnaire?"
+                />
+              }
+              headerMessage={
+                <FormattedMessage
+                  id="components.Home.factoids.shouldIComplete.headerMessage"
+                  defaultMessage="What will I be asked?"
+                />
+              }
+              message={
+                <FormattedMarkdownMessage
+                  id="components.Home.factoids.shouldIComplete.message"
+                  defaultMessage="Learn more about the census questions, and who should be answering the questionnaire."
+                />
+              }
+              link={
+                <Link
+                  className="c_home__factoid__link"
+                  to="/samplecensus"
+                >
+                  {
+                    <FormattedMessage
+                      id="components.Home.factoids.3.surveyLink"
+                      defaultMessage="VIEW SAMPLE SURVEY"
+                    />
+                  }
+                </Link>
+              }
+            />
+            { screenWidth < 800 && (
+              <YoutubeItem
+                opts={{
+                  height: (screenWidth * 0.8 * 9 / 16).toString(),
+                  width: (screenWidth * 0.8).toString(),
+                  playerVars: {
+                    autoplay: 0
+                  }
+                }}>
+              </YoutubeItem>
+            )}
+            { screenWidth < 1280 && (
+              <TopReasons />
+            )}
+          </ul>
+          { screenWidth > 800 && screenWidth < 1280 && (
             <YoutubeItem
               opts={{
                 height: (screenWidth * 0.8 * 9 / 16).toString(),
@@ -367,36 +381,22 @@ export default class DetailViewContainer extends Component {
               }}>
             </YoutubeItem>
           )}
-          { screenWidth < 1280 && (
-            <TopReasons />
+          { screenWidth > 1280 && (
+            <div
+              className="c_home__video-container">
+              <YoutubeItem
+                opts={{
+                  height: (600 * 9 / 16).toString(),
+                  width: (600).toString(),
+                  playerVars: {
+                    autoplay: 0
+                  }
+                }}>
+              </YoutubeItem>
+              <TopReasons />
+            </div>
           )}
-        </ul>
-        { screenWidth > 800 && screenWidth < 1280 && (
-          <YoutubeItem
-            opts={{
-              height: (screenWidth * 0.8 * 9 / 16).toString(),
-              width: (screenWidth * 0.8).toString(),
-              playerVars: {
-                autoplay: 0
-              }
-            }}>
-          </YoutubeItem>
-        )}
-        { screenWidth > 1280 && (
-          <div
-            className="c_home__video-container">
-            <YoutubeItem
-              opts={{
-                height: (600 * 9 / 16).toString(),
-                width: (600).toString(),
-                playerVars: {
-                  autoplay: 0
-                }
-              }}>
-            </YoutubeItem>
-            <TopReasons />
-          </div>
-        )}
+        </div>
       </main>
     );
   }

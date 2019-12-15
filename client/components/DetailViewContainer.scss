@@ -60,7 +60,7 @@
 	}
 
 	&__content {
-		margin: $gutter-width;
+		margin: $gutter-width auto;
 
 		&__title {
 			margin: 0;
@@ -82,10 +82,8 @@
 		display: flex;
 		flex-direction: column;
 		background-color: #fdfeff;
-		margin: 10px;
-		border: solid 1px #005ea2;
+		margin-left: 10px;
 		border-radius: 8px;
-		box-shadow: 0 0 8px 1px rgb(132, 134, 162);
 
 		&__small {
 			width: 80vw;
@@ -105,9 +103,7 @@
 	&__factoids {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
-		width: 100%;
-		padding: 0 $gutter-width;
+		padding: 0;
 	}
 
 	&__factoid {
@@ -119,9 +115,15 @@
 		width: 30%;
 		background-color: #fdfeff;
 		margin: 10px;
-		border: solid 1px #005ea2;
 		border-radius: 8px;
-		box-shadow: 0 0 8px 1px rgb(132, 134, 162);
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
 
 		&__desktop {
 			width: 380px;
@@ -175,6 +177,7 @@
 
 		&__content {
 			padding: 30px;
+			flex: 1;
 
 			// Currently, FormattedMarkdownMessage wraps output with <p> tags--get rid of the
 			// default browser padding
@@ -210,6 +213,17 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: 70%;
+		}
+
+		&__qr-code &__goldHeader::before {
+			@include factoid-header-icon();
+			background-image: url('../images/qrcode-scan.svg');
+		}
+
+		&__qr-code &__content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 
 		&__safety &__goldHeader::before {
