@@ -123,24 +123,24 @@ const REASONS = [
   <FormattedMessage
     id="Compnents.DetailViewContainer.top_reasons.item.4"
     defaultMessage="Emergency response planning">
-  </FormattedMessage>,
-]
+  </FormattedMessage>
+];
 
 const TopReasons = () => {
-  let screen_width = window.innerWidth
-  let size
-  if (screen_width < 1200 ) {
-    size = (screen_width < 800) ? 'small' : 'medium'
+  let screen_width = window.innerWidth;
+  let size;
+  if (screen_width < 1200) {
+    size = (screen_width < 800) ? 'small' : 'medium';
   } else {
-    size = 'large'
+    size = 'large';
   }
-  let top_reasons_class = "c_home__top-reasons"
+  let top_reasons_class = 'c_home__top-reasons';
 
   return (
     <ol
       className={classnames(
         top_reasons_class,
-        `${top_reasons_class}__${size}`,
+        `${top_reasons_class}__${size}`
       )}>
       <h2>
         <FormattedMessage
@@ -148,7 +148,7 @@ const TopReasons = () => {
           defaultMessage="Top 5 Reasons to take the census">
         </FormattedMessage>
       </h2>
-      { REASONS.map((item,index) => (
+      { REASONS.map((item, index) => (
         <li
           key={index}>
           <p>
@@ -157,18 +157,18 @@ const TopReasons = () => {
         </li>
       ))}
     </ol>
-  )
-}
+  );
+};
 
 const Factoid = ({ title, message, headerMessage, headerTitle, link }) => {
-  let factoid_size = (window.innerWidth < 800) ? 'mobile' : 'desktop'
-  let factoid_class = "c_home__factoid"
+  let factoid_size = (window.innerWidth < 800) ? 'mobile' : 'desktop';
+  let factoid_class = 'c_home__factoid';
 
   return (
     <li
       className={classnames(
         factoid_class,
-        `${factoid_class}__${factoid_size}`,
+        `${factoid_class}__${factoid_size}`
       )}
     >
       <div className="c_home__factoid__goldHeader">
@@ -188,7 +188,7 @@ const Factoid = ({ title, message, headerMessage, headerTitle, link }) => {
       <div className="c_home__factoid__line"></div>
       {link}
     </li>
-  )
+  );
 };
 
 Factoid.propTypes = {
@@ -199,7 +199,7 @@ Factoid.propTypes = {
   link: PropTypes.element.isRequired
 };
 
-const YoutubeItem = ({opts}) => (
+const YoutubeItem = ({ opts }) => (
   <div
     className="c_home__content__video"
   >
@@ -212,7 +212,7 @@ const YoutubeItem = ({opts}) => (
 
 export default class DetailViewContainer extends Component {
   render () {
-    let screen_width = window.innerWidth
+    let screen_width = window.innerWidth;
     return (
       <main
         className='c_home'
@@ -356,10 +356,10 @@ export default class DetailViewContainer extends Component {
           { screen_width < 800 && (
             <YoutubeItem
               opts={{
-                height: (screen_width *.8 * 9/16).toString(),
-                width: (screen_width * .8).toString(),
+                height: (screen_width * 0.8 * 9 / 16).toString(),
+                width: (screen_width * 0.8).toString(),
                 playerVars: {
-                  autoplay: 0,
+                  autoplay: 0
                 }
               }}>
             </YoutubeItem>
@@ -371,23 +371,23 @@ export default class DetailViewContainer extends Component {
         { screen_width > 800 && screen_width < 1280 && (
           <YoutubeItem
             opts={{
-              height: (screen_width *.8 * 9/16).toString(),
-              width: (screen_width * .8).toString(),
+              height: (screen_width * 0.8 * 9 / 16).toString(),
+              width: (screen_width * 0.8).toString(),
               playerVars: {
-                autoplay: 0,
+                autoplay: 0
               }
             }}>
           </YoutubeItem>
         )}
         { screen_width > 1280 && (
           <div
-              className="c_home__video-container">
+            className="c_home__video-container">
             <YoutubeItem
               opts={{
-                height: (600 * 9/16).toString(),
+                height: (600 * 9 / 16).toString(),
                 width: (600).toString(),
                 playerVars: {
-                  autoplay: 0,
+                  autoplay: 0
                 }
               }}>
             </YoutubeItem>
