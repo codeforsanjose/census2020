@@ -27,10 +27,9 @@ const questions = [
           defaultMessage="Number of people = <textbox>{text}</textbox>"
           description="Supporting text for question 1"
           values={{
-            text: 'Enter number here',
-            textbox: text => (
+            textbox: (
               <textarea
-                value={text}
+                value="Enter number here"
                 readOnly="True"
                 style={{
                   resize: 'none',
@@ -301,6 +300,8 @@ const CensusQuestionCard = ({ item, className, index }) => (
 
 CensusQuestionCard.propTypes = {
   item: PropTypes.shape({
+    primary_question: PropTypes.element.isRequired,
+    secondary_information: PropTypes.element.isRequired,
     question: PropTypes.element.isRequired,
     secondary_text: PropTypes.element.isRequired,
     how_to: PropTypes.element.isRequired,

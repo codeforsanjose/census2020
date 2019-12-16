@@ -1,4 +1,6 @@
 .c_home {
+	$gutter-width: 40px;
+
 	display: flex;
 	flex-direction: column;
 	background-color: #f2f2f2;
@@ -46,20 +48,19 @@
 		}
 	}
 
-	&__messages {
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		padding: 2% 5% 2% 5%;
-		list-style: none;
+	&__header {
+		margin: 0;
+		font-weight: bold;
+		font-size: 36px;
+	}
+
+	&__subheader {
+		margin: 0;
+		font-weight: normal;
 	}
 
 	&__content {
-		display: flex;
-		flex-direction: column;
-		align-self: center;
-		max-width: 1200px;
-		margin: 2em 2em;
+		margin: $gutter-width auto;
 
 		&__title {
 			margin: 0;
@@ -81,10 +82,8 @@
 		display: flex;
 		flex-direction: column;
 		background-color: #fdfeff;
-		margin: 10px;
-		border: solid 1px #005ea2;
+		margin-left: 10px;
 		border-radius: 8px;
-		box-shadow: 0 0 8px 1px rgb(132, 134, 162);
 
 		&__small {
 			width: 80vw;
@@ -104,10 +103,6 @@
 	&__factoids {
 		display: flex;
 		flex-direction: row;
-		align-self: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		max-width: 1200px;
 		padding: 0;
 	}
 
@@ -116,11 +111,19 @@
 		flex-direction: column;
 		justify-content: start;
 		align-items: center;
+		height: 300px;
+		width: 30%;
 		background-color: #fdfeff;
 		margin: 10px;
-		border: solid 1px #005ea2;
 		border-radius: 8px;
-		box-shadow: 0 0 8px 1px rgb(132, 134, 162);
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
 
 		&__desktop {
 			width: 380px;
@@ -135,13 +138,11 @@
 		&__title {
 			font-size: 17px;
 			font-weight: bold;
-			text-align: center;
 		}
 
 		&__message {
 			font-size: 17px;
 			font-weight: 100;
-			text-align: center;
 		}
 
 		&__link {
@@ -150,13 +151,6 @@
 			text-decoration: none;
 			color: #2F80ED;
 			margin: 25px;
-		}
-
-		&__line {
-			width: 30vw;
-			margin: 30px;
-			border-bottom: 1px solid #bbbbbb;
-			margin: auto 0 0 0;
 		}
 
 		&__goldHeader {
@@ -170,10 +164,76 @@
 				rgb(246,188,137),
 				rgb(246,220,139)
 			);
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 0 33px;
+		}
+
+		&__header-text {
+			display: flex;
+			flex-direction: column;
 		}
 
 		&__content {
-			text-align: center;
+			padding: 30px;
+			flex: 1;
+
+			// Currently, FormattedMarkdownMessage wraps output with <p> tags--get rid of the
+			// default browser padding
+			p {
+				margin: 0;
+			}
+		}
+
+		&__footer {
+			border-top: 1px solid #bbbbbb;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		$icon-container-size: 66px;
+
+		@mixin factoid-header-icon {
+			content: "";
+			width: $icon-container-size;
+			min-width: $icon-container-size;
+			max-width: $icon-container-size;
+			height: $icon-container-size;
+			min-height: $icon-container-size;
+			max-height: $icon-container-size;
+			background-color: #FFFFFF;
+			border-radius: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 70%;
+		}
+
+		&__qr-code &__goldHeader::before {
+			@include factoid-header-icon();
+			background-image: url('../images/qrcode-scan.svg');
+		}
+
+		&__qr-code &__content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__safety &__goldHeader::before {
+			@include factoid-header-icon();
+			background-image: url('../images/shield.svg');
+		}
+		
+		&__should-i-complete &__goldHeader::before {
+			@include factoid-header-icon();
+			background-image: url('../images/bar-chart.svg');
 		}
 	}
 
