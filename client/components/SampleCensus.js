@@ -19,19 +19,19 @@ const questions = [
       <div
         style={{
           display: 'flex',
-          flexDirection : 'row',
-          alignItems: 'center',
+          flexDirection: 'row',
+          alignItems: 'center'
         }}>
         <FormattedMarkdownMessage
           id="components.SampleCensus.secondary_information.1"
           defaultMessage="Number of people = <textbox>{text}</textbox>"
           description="Supporting text for question 1"
           values={{
-            text: "Enter number here",
+            text: 'Enter number here',
             textbox: text => (
               <textarea
                 value={text}
-                readonly="True"
+                readOnly="True"
                 style={{
                   resize: 'none',
                   height: '2em',
@@ -39,14 +39,14 @@ const questions = [
                   borderRadius: '3px',
                   padding: '.25em',
                   backgroundColor: '#2F80ED88',
-                  textAlign: 'center',
+                  textAlign: 'center'
                 }}>
               </textarea>
             )
           }}>
         </FormattedMarkdownMessage>
       </div>
-    ) 
+    )
   },
   {
     primary_question: (
@@ -60,9 +60,9 @@ const questions = [
         style={{
           display: 'flex',
           flexDirection: 'column',
-          padding: '0',
+          padding: '0'
         }}>
-        { /*<FormattedMarkdownMessage
+        { /* <FormattedMarkdownMessage
           id="components.SampleCensus.secondary_information.2.1"
           defaultMessage="<italics>{text}</italics>"
           description="Supporting text for question 2"
@@ -84,106 +84,106 @@ const questions = [
           style={{
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'flex-start',
+            alignItems: 'flex-start'
           }}>
-            <input
-              style={{
-                margin: '.5em',
-              }}
-              type="checkbox"
-              disabled="True">
-            </input>
-            <p>
-              <FormattedMessage
-                id="components.SampleCensus.secondary_information.2.2"
-                defaultMessage="Children, related or unrelated, such as newborn babies, grandchildren, or foster children">
-              </FormattedMessage>
-            </p>
+          <input
+            style={{
+              margin: '.5em'
+            }}
+            type="checkbox"
+            disabled="True">
+          </input>
+          <p>
+            <FormattedMessage
+              id="components.SampleCensus.secondary_information.2.2"
+              defaultMessage="Children, related or unrelated, such as newborn babies, grandchildren, or foster children">
+            </FormattedMessage>
+          </p>
         </li>
         <li
           style={{
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'flex-start',
+            alignItems: 'flex-start'
           }}>
-            <input
-              style={{
-                margin: '.5em',
-              }}
-              type="checkbox"
-              disabled="True">
-            </input>
-            <p>
-              <FormattedMessage
-                id="components.SampleCensus.secondary_information.2.3"
-                defaultMessage="Relatives, such as adult children, cousins, or in-laws">
-              </FormattedMessage>
-            </p>
+          <input
+            style={{
+              margin: '.5em'
+            }}
+            type="checkbox"
+            disabled="True">
+          </input>
+          <p>
+            <FormattedMessage
+              id="components.SampleCensus.secondary_information.2.3"
+              defaultMessage="Relatives, such as adult children, cousins, or in-laws">
+            </FormattedMessage>
+          </p>
         </li>
         <li
           style={{
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'flex-start',
+            alignItems: 'flex-start'
           }}>
-            <input
-              style={{
-                margin: '.5em',
-              }}
-              type="checkbox"
-              disabled="True">
-            </input>
-            <p>
-              <FormattedMessage
-                id="components.SampleCensus.secondary_information.2.4"
-                defaultMessage="Nonrelatives, such as roommates or live-in babysitters">
-              </FormattedMessage>
-            </p>
+          <input
+            style={{
+              margin: '.5em'
+            }}
+            type="checkbox"
+            disabled="True">
+          </input>
+          <p>
+            <FormattedMessage
+              id="components.SampleCensus.secondary_information.2.4"
+              defaultMessage="Nonrelatives, such as roommates or live-in babysitters">
+            </FormattedMessage>
+          </p>
         </li>
         <li
           style={{
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'flex-start',
+            alignItems: 'flex-start'
           }}>
-            <input
-              style={{
-                margin: '.5em',
-              }}
-              type="checkbox"
-              disabled="True">
-            </input>
-            <p>
-              <FormattedMessage
-                id="components.SampleCensus.secondary_information.2.5"
-                defaultMessage="People staying here temporarily">
-              </FormattedMessage>
-            </p>
+          <input
+            style={{
+              margin: '.5em'
+            }}
+            type="checkbox"
+            disabled="True">
+          </input>
+          <p>
+            <FormattedMessage
+              id="components.SampleCensus.secondary_information.2.5"
+              defaultMessage="People staying here temporarily">
+            </FormattedMessage>
+          </p>
         </li>
         <li
           style={{
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'flex-start',
+            alignItems: 'flex-start'
           }}>
-            <input
-              style={{
-                margin: '.5em',
-              }}
-              type="checkbox"
-              disabled="True">
-            </input>
-            <p>
-              <FormattedMessage
-                id="components.SampleCensus.secondary_information.2.6"
-                defaultMessage="No additional people">
-              </FormattedMessage>
-            </p>
+          <input
+            style={{
+              margin: '.5em'
+            }}
+            type="checkbox"
+            disabled="True">
+          </input>
+          <p>
+            <FormattedMessage
+              id="components.SampleCensus.secondary_information.2.6"
+              defaultMessage="No additional people">
+            </FormattedMessage>
+          </p>
         </li>
       </ul>
     )
-  },
-]
+  }
+];
 
 const ipsumQuestion = {
   question: (
@@ -317,7 +317,7 @@ export default class SampleCensus extends React.Component {
 
     this.state = {
       currentPosition: 0,
-      hohh: true,
+      hohh: true
     };
   }
 
@@ -330,7 +330,7 @@ export default class SampleCensus extends React.Component {
 
     const buttonClassName = 'c_sample-census__content__button-row__item__button';
     const censusQuestionsClassName = 'c_sample-census__content__census-questions';
-    const hohhButtonClassName = 'c_sample-census__content__hohh-container__button'
+    const hohhButtonClassName = 'c_sample-census__content__hohh-container__button';
 
     return (
       <main className="c_sample-census">
@@ -346,14 +346,14 @@ export default class SampleCensus extends React.Component {
                   [`${hohhButtonClassName}--active`]: this.state.hohh
                 }
               )}
-              onClick={() => this.setState({hohh:true})}>
-                <h4>
-                  <FormattedMessage
-                    id="components.SampleCensus.hohh_button"
-                    defaultMessage="I will answer the census"
-                    description="Questions for the Head of Household">
-                  </FormattedMessage>
-                </h4> 
+              onClick={() => this.setState({ hohh: true })}>
+              <h4>
+                <FormattedMessage
+                  id="components.SampleCensus.hohh_button"
+                  defaultMessage="I will answer the census"
+                  description="Questions for the Head of Household">
+                </FormattedMessage>
+              </h4>
             </button>
             <button
               className={classnames(
@@ -363,14 +363,14 @@ export default class SampleCensus extends React.Component {
                   [`${hohhButtonClassName}--active`]: !this.state.hohh
                 }
               )}
-              onClick={() => this.setState({hohh: false})}>
-                <h4>
-                  <FormattedMessage
-                    id="components.SampleCensus.not_hohh_button"
-                    defaultMessage="Someone else will answer the census for me"
-                    description="Questions for individuals other than the Head of Household">
-                  </FormattedMessage>
-                </h4> 
+              onClick={() => this.setState({ hohh: false })}>
+              <h4>
+                <FormattedMessage
+                  id="components.SampleCensus.not_hohh_button"
+                  defaultMessage="Someone else will answer the census for me"
+                  description="Questions for individuals other than the Head of Household">
+                </FormattedMessage>
+              </h4>
             </button>
           </div>
           <h1 className="c_sample-census__content__title">
