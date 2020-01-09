@@ -13,6 +13,7 @@
 		top: 0;
 		left: 0;
 		right: 0;
+		padding: 5% 0 0 10%;
 
 		&__title {
 			margin: 2.75rem 2rem 1rem 2rem;
@@ -32,7 +33,7 @@
 		height: 60vh;
 		overflow: hidden;
 		position: relative;
-		max-height: 370px;
+		max-height: 300px;
 
 		&__image {
 			position: absolute;
@@ -74,6 +75,7 @@
 		&__video {
 			display: flex;
 			align-self: center;
+			padding: 3% 0 3% 0;
 		}
 	}
 
@@ -81,10 +83,10 @@
 		display: flex;
 		flex-direction: column;
 		background-color: #fdfeff;
-		margin: 10px;
-		border: solid 1px #005ea2;
+		margin: 3% 0 3% 3%;
 		border-radius: 8px;
-		box-shadow: 0 0 8px 1px rgb(132, 134, 162);
+		box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
+		box-sizing: border-box;
 
 		&__small {
 			width: 80vw;
@@ -118,9 +120,8 @@
 		align-items: center;
 		background-color: #fdfeff;
 		margin: 10px;
-		border: solid 1px #005ea2;
 		border-radius: 8px;
-		box-shadow: 0 0 8px 1px rgb(132, 134, 162);
+		box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
 
 		&__desktop {
 			width: 380px;
@@ -157,6 +158,7 @@
 			margin: 30px;
 			border-bottom: 1px solid #bbbbbb;
 			margin: auto 0 0 0;
+			width: 100%;
 		}
 
 		&__goldHeader {
@@ -165,6 +167,10 @@
 			width: 100%;
 			min-height: 100px;
 			height: 10vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
 			background: linear-gradient(
 				to right,
 				rgb(246,188,137),
