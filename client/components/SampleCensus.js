@@ -2,10 +2,53 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { FormattedMessage } from 'react-intl';
-import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
 
 import './SampleCensus.scss';
 import './Headers.scss';
+
+const CheckboxList = ({ children }) => {
+  return (
+    <ul
+      className="c_sample-census__question__checkbox-list"
+    >
+      {
+        React.Children.map(
+          children,
+          (item, index) => (
+            <li
+              key={index}
+            >
+              <label>
+                <input
+                  className="c_sample-census__question__checkbox-list__checkbox"
+                  type="checkbox"
+                  disabled
+                />
+                {item}
+              </label>
+            </li>
+          )
+        )
+      }
+    </ul>
+  );
+};
+
+CheckboxList.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.element.isRequired).isRequired
+};
+
+const FakeTextbox = ({ children }) => {
+  return (
+    <div className="c_sample-census__question__textarea">
+      {children}
+    </div>
+  );
+};
+
+FakeTextbox.propTypes = {
+  children: PropTypes.element.isRequired
+};
 
 const questions = [
   {
@@ -17,36 +60,22 @@ const questions = [
     ),
     secondary_information: (
       <div
-        style={{
-          display: 'flex',
-          flexDirection : 'row',
-          alignItems: 'center',
-        }}>
-        <FormattedMarkdownMessage
+        className="c_sample-census__question__1__secondary"
+      >
+        <FormattedMessage
           id="components.SampleCensus.secondary_information.1"
-          defaultMessage="Number of people = <textbox>{text}</textbox>"
-          description="Supporting text for question 1"
-          values={{
-            text: "Enter number here",
-            textbox: text => (
-              <textarea
-                value={text}
-                readonly="True"
-                style={{
-                  resize: 'none',
-                  height: '2em',
-                  border: 'none',
-                  borderRadius: '3px',
-                  padding: '.25em',
-                  backgroundColor: '#2F80ED88',
-                  textAlign: 'center',
-                }}>
-              </textarea>
-            )
-          }}>
-        </FormattedMarkdownMessage>
+          defaultMessage="Number of people"
+          description="Label for question 1 input"
+        /> 
+        = 
+        <FakeTextbox>
+          <FormattedMessage
+            id="components.SampleCensus.secondary_information.1.textbox-content"
+            defaultMessage="Enter number here"
+          />
+        </FakeTextbox>
       </div>
-    ) 
+    )
   },
   {
     primary_question: (
@@ -287,7 +316,7 @@ const questions = [
           flexDirection : 'row',
           alignItems: 'center',
         }}>
-        <FormattedMarkdownMessage
+        <FormattedMessage
           id="components.SampleCensus.secondary_information.4"
           defaultMessage="Telephone Number = <textbox>{text}</textbox>"
           description="Supporting text for question 4"
@@ -309,7 +338,7 @@ const questions = [
               </textarea>
             )
           }}>
-        </FormattedMarkdownMessage>
+        </FormattedMessage>
       </div>
     ) 
   },
@@ -328,7 +357,7 @@ const questions = [
           alignItems: 'center',
         }}>
     <p><i>Print name below.</i></p>
-        <FormattedMarkdownMessage
+        <FormattedMessage
           id="components.SampleCensus.secondary_information.5"
           defaultMessage="First Name = <textbox>{text}</textbox> MI = <textbox>{text}</textbox> Last Name(s) = <textbox>{text}</textbox>"
           description="Supporting text for question 5"
@@ -350,7 +379,7 @@ const questions = [
               </textarea>
             )
           }}>
-        </FormattedMarkdownMessage>
+        </FormattedMessage>
       </div>
     ) 
   },
@@ -432,7 +461,7 @@ const questions = [
           alignItems: 'center',
         }}>
         <p><i>For babies less than 1 year old, do not write the age in months. Write 0 as the age.</i></p>
-        <FormattedMarkdownMessage
+        <FormattedMessage
           id="components.SampleCensus.secondary_information.7.1"
           defaultMessage="Age on April 1, 2020 = <textbox>{text}</textbox> years"
           description="Supporting text for question 7"
@@ -454,7 +483,7 @@ const questions = [
               </textarea>
             )
           }}>
-        </FormattedMarkdownMessage>
+        </FormattedMessage>
       </div>,
       <div
           style={{
@@ -462,7 +491,7 @@ const questions = [
             flexDirection : 'row',
             alignItems: 'center',
           }}>
-          <FormattedMarkdownMessage
+          <FormattedMessage
             id="components.SampleCensus.secondary_information.7.2"
             defaultMessage="Month = <textbox>{text}</textbox> Day = <textbox>{text}</textbox> Year of birth = <textbox>{text}</textbox>"
             description="Supporting text for question 7"
@@ -484,7 +513,7 @@ const questions = [
                 </textarea>
               )
             }}>
-          </FormattedMarkdownMessage>
+          </FormattedMessage>
         </div>
       ]
   },
@@ -600,7 +629,7 @@ const questions = [
                 id="components.SampleCensus.secondary_information.8.5"
                 defaultMessage="Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc. ">
               </FormattedMessage>
-        <FormattedMarkdownMessage
+        <FormattedMessage
           id="components.SampleCensus.secondary_information.8.6"
           defaultMessage="<textbox>{text}</textbox>"
           description="Supporting text for question 8.5"
@@ -622,7 +651,7 @@ const questions = [
               </textarea>
             )
           }}>
-        </FormattedMarkdownMessage>
+        </FormattedMessage>
             </p>
         </li>
     </ul>
@@ -643,6 +672,7 @@ secondary_information: (
           padding: '0',
         }}>
         <i>
+
           <FormattedMessage
             id="components.SampleCensus.secondary_information.9.1"
             defaultMessage="Mark one or more boxes AND print origins.">
@@ -972,6 +1002,7 @@ const ipsumQuestion = {
   ) 
 };
 
+
 const indexToSection = {
   0: (
     <FormattedMessage
@@ -1046,6 +1077,8 @@ const CensusQuestionCard = ({ item, className, index }) => (
 
 CensusQuestionCard.propTypes = {
   item: PropTypes.shape({
+    primary_question: PropTypes.element.isRequired,
+    secondary_information: PropTypes.element.isRequired,
     question: PropTypes.element.isRequired,
     secondary_text: PropTypes.element.isRequired,
     how_to: PropTypes.element.isRequired,
@@ -1062,7 +1095,7 @@ export default class SampleCensus extends React.Component {
 
     this.state = {
       currentPosition: 0,
-      hohh: true,
+      hohh: true
     };
   }
 
@@ -1075,7 +1108,7 @@ export default class SampleCensus extends React.Component {
 
     const buttonClassName = 'c_sample-census__content__button-row__item__button';
     const censusQuestionsClassName = 'c_sample-census__content__census-questions';
-    const hohhButtonClassName = 'c_sample-census__content__hohh-container__button'
+    const hohhButtonClassName = 'c_sample-census__content__hohh-container__button';
 
     return (
       <main className="c_sample-census">
@@ -1114,6 +1147,7 @@ export default class SampleCensus extends React.Component {
                     description="Questions for the Head of Household">
                   </FormattedMessage>
                 </h4> 
+
             </button>
             <button
               className={classnames(
