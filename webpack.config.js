@@ -19,7 +19,10 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        options: {
+          configFile: path.resolve(__dirname, '.babelrc.js')
+        }
       },
       {
         test: /\.s?css$/,

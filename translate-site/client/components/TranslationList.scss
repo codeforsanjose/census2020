@@ -1,0 +1,21 @@
+.c_translation-list {
+  &__list {
+    padding: 0;
+    list-style-type: none;
+
+    &__item {
+      margin: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 10px;
+    }
+  }
+}
+
+.c_translation-item {
+  &__input {
+    min-height: 5em;
+    width: 100%;
+    resize: vertical;
+  }
+}
