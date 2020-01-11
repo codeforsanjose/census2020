@@ -258,37 +258,8 @@ export default class DetailViewContainer extends Component {
           ))}
         </Carousel>
         <div className="c_home__content">
-          <h1 className="c_home__header">
-            <FormattedMessage
-              id="components.Home.header"
-              defaultMessage="Participate in the census and represent San Jose"
-            />
-          </h1>
-          <h2 className="c_home__subheader">
-            <FormattedMessage
-              id="components.Home.subheader"
-              defaultMessage="Help California and San Jose get access to important resources"
-            />
-          </h2>
           <ul
-            className="c_home__factoids"
-          >
-            <Factoid
-              className="c_home__factoid__qr-code"
-              headerTitle={<FormattedMessage
-                id="components.Home.factoids.qrCode.headerTitle"
-                defaultMessage="Use the In a hurry, take it to go!"
-              />}
-              headerMessage={<FormattedMessage
-                id="components.Home.factoids.qrCode.headerMessage"
-                defaultMessage="Learn how to participate"
-              />}
-              message={
-                <QRCode
-                  value={document.location.origin}
-                />
-              }
-            />
+            className="c_home__factoids">
             <Factoid
               className="c_home__factoid__safety"
               headerTitle={
@@ -311,8 +282,7 @@ export default class DetailViewContainer extends Component {
               }
               link={<Link
                 className="c_home__factoid__link"
-                to="/faq"
-              >
+                to="/faq">
                 {
                   <FormattedMessage
                     id="components.Home.factoids.qr-code.faqLink"
@@ -326,7 +296,7 @@ export default class DetailViewContainer extends Component {
               headerTitle={
                 <FormattedMessage
                   id="components.Home.factoids.shouldIComplete.headerTitle"
-                  defaultMessage="Should I be completing the questionnaire?"
+                  defaultMessage="Do I take the census?"
                 />
               }
               headerMessage={
@@ -355,6 +325,22 @@ export default class DetailViewContainer extends Component {
                 </Link>
               }
             />
+            <Factoid
+              className="c_home__factoid__qr-code"
+              headerTitle={<FormattedMessage
+                id="components.Home.factoids.qrCode.headerTitle"
+                defaultMessage="In a hurry, take it to go!"
+              />}
+              headerMessage={<FormattedMessage
+                id="components.Home.factoids.qrCode.headerMessage"
+                defaultMessage="Take a photo of the image to learn more"
+              />}
+              message={
+                <QRCode
+                  value={document.location.origin}
+                />
+              }
+            />
             { screenWidth < 800 && (
               <YoutubeItem
                 opts={{
@@ -372,6 +358,7 @@ export default class DetailViewContainer extends Component {
           </ul>
           { screenWidth > 800 && screenWidth < 1280 && (
             <YoutubeItem
+              style={{alignSelf: 'center'}}
               opts={{
                 height: (screenWidth * 0.8 * 9 / 16).toString(),
                 width: (screenWidth * 0.8).toString(),
