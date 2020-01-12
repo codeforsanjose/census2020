@@ -5,9 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "per-env",
-    "prebuild": "rimraf ./build && npm run build-server-react",
+    "prebuild": "rimraf ./build && npm run build-server-react && npm run translation-site:install-if-enabled",
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.prod.config.js",
-    "postbuild": "if-env-defined CENSUS2020_SERVE_TRANSLATE_SITE && npm run translation-site:install && npm run translation-site:build || exit 0",
     "start:production": "cross-env NODE_ENV=production node --icu-data-dir=node_modules/full-icu ./server/server.js",
     "start:development": "cross-env NODE_ENV=development nodemon --icu-data-dir=node_modules/full-icu ./server/server.js",
     "i18n:extract": "node ./i18n/extract-strings.js",
@@ -17,6 +16,7 @@
     "prebuild-server-react": "rimraf ./server/mail/mail-components/compiled",
     "build-server-react": "cross-env NODE_ENV=production webpack --config=server/mail/mail-components/webpack.config.js",
     "translation-site": "per-env",
+    "translation-site:install-if-enabled": "if-env-defined CENSUS2020_SERVE_TRANSLATE_SITE && npm run translation-site:install && npm run translation-site:build || exit 0",
     "translation-site:install": "npm install --prefix translate-site",
     "translation-site:build": "npm run build --prefix translate-site",
     "translation-site:development": "cross-env npm start --prefix translate-site"
