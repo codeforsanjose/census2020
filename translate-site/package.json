@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "install-parent": "npm install --prefix ..",
+    "prebuild": "npm run install-parent",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
