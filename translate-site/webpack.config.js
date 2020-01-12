@@ -1,18 +1,36 @@
+require('dotenv').config();
+
 const path = require('path');
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const config = require('../webpack.config');
-
-config.entry = [
-  'babel-polyfill',
-  path.join(__dirname, 'client', 'index.js')
-];
-config.output.path = path.join(__dirname, 'dist');
-config.mode = 'development';
-config.devtool = 'eval-source-map';
-config.plugins.push(
-  new webpack.HotModuleReplacementPlugin(),
-  new webpack.NoEmitOnErrorsPlugin()
-);
-
-module.exports = config;
+module.exports = {
+  entry: [
+    'babel-polyfill',
+    './client/index.js'
+  ],
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/_/translations'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
+        options: {
+          configFile: path.resolve(__dirname, '..', '.babelrc.js')
+        }
+      },
+      {
+        test: /\.s?css$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
+      }
+    ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'index.template.html')
+    })
+  ]
+};

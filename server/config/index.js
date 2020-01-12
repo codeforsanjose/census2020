@@ -6,7 +6,8 @@ module.exports = {
   app: {
     environment,
     isDev: environment === 'development',
-    port: process.env.PORT || DEFAULT_PORT
+    port: process.env.PORT || DEFAULT_PORT,
+    serveTranslateAdmin: Boolean(process.env.CENSUS2020_SERVE_TRANSLATE_SITE)
   },
   mail: {
     host: process.env.MAIL_SMTP_SERVER,
