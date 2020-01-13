@@ -1,10 +1,80 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import PropTypes from 'prop-types';
-import Markdown from 'react-remarkable';
+import unified from 'unified';
+import markdown from 'remark-parse';
+import remark2rehype from 'remark-rehype';
+import findAndReplace from 'hast-util-find-and-replace';
+
+function collapse (parts) {
+  if (!Array.isArray(parts)) {
+    return {
+      collapsed: parts,
+      values: null
+    };
+  }
+  parts = [...parts];
+  const values = [];
+  let partIndex = 0;
+  for (let i = 0; i < parts.length; i++) {
+    if (typeof parts[i] === 'string') {
+      continue;
+    }
+    const value = parts[i];
+    parts[i] = `\u001A${partIndex++}\u001A`;
+    values.push([parts[i], value]);
+  }
+
+  return {
+    collapsed: parts.join(''),
+    values
+  };
+}
+
+function compileToReact (node, index = undefined) {
+  const processChildren = (children) => {
+    return (children || []).map(compileToReact);
+  };
+  if (node.type === 'root') {
+    if (node.children.length === 1) {
+      return compileToReact(node.children[0]);
+    } else {
+      return (<React.Fragment>
+        {processChildren(node.children)}
+      </React.Fragment>);
+    }
+  } else if (React.isValidElement(node)) {
+    if (index !== undefined && !node.key) {
+      return React.cloneElement(node, {
+        key: index
+      });
+    }
+    return node;
+  } else if (node.type === 'element') {
+    if (!node.properties.key) {
+      node.properties.key = index;
+    }
+    const children = processChildren(node.children);
+    if (children.length > 0) {
+      return React.createElement(node.tagName, node.properties, children);
+    } else {
+      return React.createElement(node.tagName, node.properties);
+    }
+  } else if (node.type === 'text') {
+    return node.value;
+  }
+}
+
+function replaceWithPlaceholders (valueMap) {
+  return function () {
+    return function transformer (tree) {
+      return findAndReplace(tree, valueMap);
+    };
+  };
+}
 
 const FormattedMarkdownMessage = ({ intl, id, description, defaultMessage, values }) => {
-  const markdown = intl.formatMessage(
+  const translated = intl.formatMessage(
     {
       id,
       description,
@@ -13,22 +83,17 @@ const FormattedMarkdownMessage = ({ intl, id, description, defaultMessage, value
     values
   );
 
-  if (Array.isArray(markdown)) {
-    for (let i = 0; i < markdown.length; i++) {
-      const part = markdown[i];
-      if (React.isValidElement(part) && !part.props.key) {
-        markdown[i] = React.cloneElement(markdown[i], {
-          key: i
-        });
-      }
-    }
-  }
+  const { collapsed, values: valueMap } = collapse(translated);
 
-  return (
-    <Markdown container={React.Fragment}>
-      {markdown}
-    </Markdown>
-  );
+  let processor = unified()
+    .use(markdown)
+    .use(remark2rehype);
+  if (valueMap) {
+    processor = processor.use(replaceWithPlaceholders(valueMap));
+  }
+  processor.Compiler = compileToReact;
+
+  return processor.processSync(collapsed).contents;
 };
 
 FormattedMarkdownMessage.propTypes = {
