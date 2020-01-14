@@ -358,7 +358,7 @@ export default class DetailViewContainer extends Component {
           </ul>
           { screenWidth > 800 && screenWidth < 1280 && (
             <YoutubeItem
-              style={{alignSelf: 'center'}}
+              style={{ alignSelf: 'center' }}
               opts={{
                 height: (screenWidth * 0.8 * 9 / 16).toString(),
                 width: (screenWidth * 0.8).toString(),
