@@ -6,6 +6,8 @@ import markdown from 'remark-parse';
 import remark2rehype from 'remark-rehype';
 import findAndReplace from 'hast-util-find-and-replace';
 
+import { SampleTextbox } from './SampleTextbox';
+
 function collapse (parts) {
   if (!Array.isArray(parts)) {
     return {
@@ -31,13 +33,42 @@ function collapse (parts) {
   };
 }
 
+function textboxTokenizer (eat, value, silent) {
+  const regex = /^\[\|([\w\d\s]*)\|\]/;
+  const matches = regex.exec(value);
+  if (!matches) {
+    return;
+  }
+
+  if (silent) {
+    return true;
+  }
+
+  const [fullMatch, text] = matches;
+  return eat(fullMatch)({
+    type: 'textbox',
+    text
+  });
+}
+
+textboxTokenizer.locator = (value, fromIndex) => {
+  return value.indexOf('[|', fromIndex);
+};
+
 function compileToReact (node, index = undefined) {
   const processChildren = (children) => {
     return (children || []).map(compileToReact);
   };
   if (node.type === 'root') {
     if (node.children.length === 1) {
-      return compileToReact(node.children[0]);
+      let child = node.children[0];
+      if (child.type === 'element' && child.tagName === 'p') {
+        child = {
+          ...child,
+          tagName: React.Fragment
+        };
+      }
+      return compileToReact(child);
     } else {
       return (<React.Fragment>
         {processChildren(node.children)}
@@ -60,6 +91,13 @@ function compileToReact (node, index = undefined) {
     } else {
       return React.createElement(node.tagName, node.properties);
     }
+  } else if (node.type === 'textbox') {
+    return (
+      <SampleTextbox
+        key={index}
+        value={node.text}
+      />
+    );
   } else if (node.type === 'text') {
     return node.value;
   }
@@ -87,7 +125,16 @@ const FormattedMarkdownMessage = ({ intl, id, description, defaultMessage, value
 
   let processor = unified()
     .use(markdown)
-    .use(remark2rehype);
+    .use(function () {
+      this.Parser.prototype.inlineTokenizers.textbox = textboxTokenizer;
+      this.Parser.prototype.inlineMethods.unshift('textbox');
+    })
+    .use(remark2rehype, {
+      handlers: {
+        // Pass textbox through--React plugin will transform it correctly
+        textbox: (h, node) => node
+      }
+    });
   if (valueMap) {
     processor = processor.use(replaceWithPlaceholders(valueMap));
   }
