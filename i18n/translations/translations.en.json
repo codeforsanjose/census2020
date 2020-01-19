@@ -756,12 +756,12 @@
     "translation": "Help California and San Jose get access to important resources"
   },
   "components.Home.factoids.qrCode.headerTitle": {
-    "english": "Use the In a hurry, take it to go!",
-    "translation": "Use the In a hurry, take it to go!"
+    "english": "In a hurry, take it to go!",
+    "translation": "In a hurry, take it to go!"
   },
   "components.Home.factoids.qrCode.headerMessage": {
-    "english": "Learn how to participate",
-    "translation": "Learn how to participate"
+    "english": "Take a photo of the image to learn more",
+    "translation": "Take a photo of the image to learn more"
   },
   "components.Home.factoids.safety.headerTitle.": {
     "english": "Is it safe?",
@@ -776,8 +776,8 @@
     "translation": "Get the answers to all your questions about why to take the census and how the information will be used."
   },
   "components.Home.factoids.shouldIComplete.headerTitle": {
-    "english": "Should I be completing the questionnaire?",
-    "translation": "Should I be completing the questionnaire?"
+    "english": "Do I take the census?",
+    "translation": "Do I take the census?"
   },
   "components.Home.factoids.shouldIComplete.headerMessage": {
     "english": "What will I be asked?",
@@ -792,8 +792,8 @@
     "translation": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?"
   },
   "components.SampleCensus.secondary_information.1": {
-    "english": "Number of people",
-    "translation": "Number of people"
+    "english": "Number of people=[|Enter number here|]",
+    "translation": "Number of people=[|Enter number here|]"
   },
   "components.SampleCensus.primary_question.2": {
     "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
@@ -830,5 +830,181 @@
   "components.SampleCensus.not_hohh_button": {
     "english": "Someone else will answer the census for me",
     "translation": "Someone else will answer the census for me"
+  },
+  "test": {
+    "english": "- [ ] Checkbox1\n  - [x] Checkbox2",
+    "translation": "- [ ] Checkbox1\n  - [x] Checkbox2"
+  },
+  "components.SampleCensus.secondary_information.2": {
+    "english": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people",
+    "translation": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people"
+  },
+  "components.SampleCensus.primary_question.3": {
+    "english": "Is this house, apartment, or mobile home:",
+    "translation": "Is this house, apartment, or mobile home:"
+  },
+  "components.SampleCensus.secondary_information.3": {
+    "english": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?",
+    "translation": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?"
+  },
+  "components.SampleCensus.primary_question.4": {
+    "english": "What is your telephone number?",
+    "translation": "What is your telephone number?"
+  },
+  "components.SampleCensus.secondary_information.4": {
+    "english": "Telephone Number = [|Enter telephone number here|]",
+    "translation": "Telephone Number = [|Enter telephone number here|]"
+  },
+  "components.SampleCensus.primary_question.5": {
+    "english": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?",
+    "translation": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?"
+  },
+  "components.SampleCensus.secondary_information.5": {
+    "english": "Firstname = [||] Last Name(s) = [||]",
+    "translation": "Firstname = [||] Last Name(s) = [||]"
+  },
+  "components.SampleCensus.primary_question.6": {
+    "english": "What is Person 1’s sex?",
+    "translation": "What is Person 1’s sex?"
+  },
+  "components.SampleCensus.secondary_information.6.1": {
+    "english": "Mark ONE box.",
+    "translation": "Mark ONE box."
+  },
+  "components.SampleCensus.secondary_information.6.2": {
+    "english": "Male",
+    "translation": "Male"
+  },
+  "components.SampleCensus.secondary_information.6.3": {
+    "english": "Female",
+    "translation": "Female"
+  },
+  "components.SampleCensus.primary_question.7": {
+    "english": "What is Person 1’s age and what is Person 1’s date of birth?",
+    "translation": "What is Person 1’s age and what is Person 1’s date of birth?"
+  },
+  "components.SampleCensus.secondary_information.7.1": {
+    "english": "Age on April 1, 2020 = <textbox>{text}</textbox> years",
+    "translation": "Age on April 1, 2020 = <textbox>{text}</textbox> years"
+  },
+  "components.SampleCensus.secondary_information.7.2": {
+    "english": "Month = <textbox>{text}</textbox> Day = <textbox>{text}</textbox> Year of birth = <textbox>{text}</textbox>",
+    "translation": "Month = <textbox>{text}</textbox> Day = <textbox>{text}</textbox> Year of birth = <textbox>{text}</textbox>"
+  },
+  "components.SampleCensus.primary_question.8": {
+    "english": "Is Person 1 of Hispanic, Latino, or Spanish origin?",
+    "translation": "Is Person 1 of Hispanic, Latino, or Spanish origin?"
+  },
+  "components.SampleCensus.secondary_information.8.1": {
+    "english": "No, not of Hispanic, Latino, or Spanish origin",
+    "translation": "No, not of Hispanic, Latino, or Spanish origin"
+  },
+  "components.SampleCensus.secondary_information.8.2": {
+    "english": "Yes, Mexican, Mexican Am., Chicano",
+    "translation": "Yes, Mexican, Mexican Am., Chicano"
+  },
+  "components.SampleCensus.secondary_information.8.3": {
+    "english": "Yes, Puerto Rican",
+    "translation": "Yes, Puerto Rican"
+  },
+  "components.SampleCensus.secondary_information.8.4": {
+    "english": "Yes, Cuban",
+    "translation": "Yes, Cuban"
+  },
+  "components.SampleCensus.secondary_information.8.5": {
+    "english": "Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.",
+    "translation": "Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc."
+  },
+  "components.SampleCensus.secondary_information.8.6": {
+    "english": "<textbox>{text}</textbox>",
+    "translation": "<textbox>{text}</textbox>"
+  },
+  "components.SampleCensus.primary_question.9": {
+    "english": "What is Person 1’s race?",
+    "translation": "What is Person 1’s race?"
+  },
+  "components.SampleCensus.secondary_information.9.1": {
+    "english": "Mark one or more boxes AND print origins.",
+    "translation": "Mark one or more boxes AND print origins."
+  },
+  "components.SampleCensus.secondary_information.9.2": {
+    "english": "White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [Textbox]",
+    "translation": "White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.3": {
+    "english": "Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [Textbox]",
+    "translation": "Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.4": {
+    "english": "American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [Textbox]",
+    "translation": "American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.5": {
+    "english": "Chinese",
+    "translation": "Chinese"
+  },
+  "components.SampleCensus.secondary_information.9.6": {
+    "english": "Filipino",
+    "translation": "Filipino"
+  },
+  "components.SampleCensus.secondary_information.9.7": {
+    "english": "Asian Indian",
+    "translation": "Asian Indian"
+  },
+  "components.SampleCensus.secondary_information.9.8": {
+    "english": "Vietnamese",
+    "translation": "Vietnamese"
+  },
+  "components.SampleCensus.secondary_information.9.9": {
+    "english": "Korean",
+    "translation": "Korean"
+  },
+  "components.SampleCensus.secondary_information.9.10": {
+    "english": "Japanese",
+    "translation": "Japanese"
+  },
+  "components.SampleCensus.secondary_information.9.11": {
+    "english": "Native Hawaiian",
+    "translation": "Native Hawaiian"
+  },
+  "components.SampleCensus.secondary_information.9.12": {
+    "english": "Samoan",
+    "translation": "Samoan"
+  },
+  "components.SampleCensus.secondary_information.9.13": {
+    "english": "Chamorro",
+    "translation": "Chamorro"
+  },
+  "components.SampleCensus.secondary_information.9.14": {
+    "english": "Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [Textbox]",
+    "translation": "Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.15": {
+    "english": "Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [Textbox]",
+    "translation": "Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.16": {
+    "english": "Some other race – Print race or origin. [Textbox]",
+    "translation": "Some other race – Print race or origin. [Textbox]"
+  },
+  "components.SampleCensus.primary_question.10": {
+    "english": "This is an ipsum question",
+    "translation": "This is an ipsum question"
+  },
+  "components.SampleCensus.secondary_information.6": {
+    "english": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female",
+    "translation": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female"
+  },
+  "components.SampleCensus.secondary_information.7": {
+    "english": "*For babies less than 1 year olf, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]",
+    "translation": "*For babies less than 1 year olf, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]"
+  },
+  "components.SampleCensus.secondary_information.8": {
+    "english": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]",
+    "translation": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]"
+  },
+  "components.SampleCensus.secondary_information.9": {
+    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]",
+    "translation": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]"
   }
 }

@@ -790,11 +790,11 @@
   },
   "components.Home.factoids.qrCode.headerTitle": {
     "id": "components.Home.factoids.qrCode.headerTitle",
-    "defaultMessage": "Use the In a hurry, take it to go!"
+    "defaultMessage": "In a hurry, take it to go!"
   },
   "components.Home.factoids.qrCode.headerMessage": {
     "id": "components.Home.factoids.qrCode.headerMessage",
-    "defaultMessage": "Learn how to participate"
+    "defaultMessage": "Take a photo of the image to learn more"
   },
   "components.Home.factoids.safety.headerTitle.": {
     "id": "components.Home.factoids.safety.headerTitle.",
@@ -810,7 +810,7 @@
   },
   "components.Home.factoids.shouldIComplete.headerTitle": {
     "id": "components.Home.factoids.shouldIComplete.headerTitle",
-    "defaultMessage": "Should I be completing the questionnaire?"
+    "defaultMessage": "Do I take the census?"
   },
   "components.Home.factoids.shouldIComplete.headerMessage": {
     "id": "components.Home.factoids.shouldIComplete.headerMessage",
@@ -826,8 +826,7 @@
   },
   "components.SampleCensus.secondary_information.1": {
     "id": "components.SampleCensus.secondary_information.1",
-    "description": "Label for question 1 input",
-    "defaultMessage": "Number of people"
+    "defaultMessage": "Number of people=[|Enter number here|]"
   },
   "components.SampleCensus.primary_question.2": {
     "id": "components.SampleCensus.primary_question.2",
@@ -866,5 +865,184 @@
     "id": "components.SampleCensus.not_hohh_button",
     "description": "Questions for individuals other than the Head of Household",
     "defaultMessage": "Someone else will answer the census for me"
+  },
+  "test": {
+    "id": "test",
+    "defaultMessage": "- [ ] Checkbox1\n  - [x] Checkbox2"
+  },
+  "components.SampleCensus.secondary_information.2": {
+    "id": "components.SampleCensus.secondary_information.2",
+    "defaultMessage": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people"
+  },
+  "components.SampleCensus.primary_question.3": {
+    "id": "components.SampleCensus.primary_question.3",
+    "defaultMessage": "Is this house, apartment, or mobile home:"
+  },
+  "components.SampleCensus.secondary_information.3": {
+    "id": "components.SampleCensus.secondary_information.3",
+    "defaultMessage": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?"
+  },
+  "components.SampleCensus.primary_question.4": {
+    "id": "components.SampleCensus.primary_question.4",
+    "defaultMessage": "What is your telephone number?"
+  },
+  "components.SampleCensus.secondary_information.4": {
+    "id": "components.SampleCensus.secondary_information.4",
+    "defaultMessage": "Telephone Number = [|Enter telephone number here|]"
+  },
+  "components.SampleCensus.primary_question.5": {
+    "id": "components.SampleCensus.primary_question.5",
+    "defaultMessage": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?"
+  },
+  "components.SampleCensus.secondary_information.5": {
+    "id": "components.SampleCensus.secondary_information.5",
+    "defaultMessage": "Firstname = [||] Last Name(s) = [||]"
+  },
+  "components.SampleCensus.primary_question.6": {
+    "id": "components.SampleCensus.primary_question.6",
+    "defaultMessage": "What is Person 1’s sex?"
+  },
+  "components.SampleCensus.secondary_information.6.1": {
+    "id": "components.SampleCensus.secondary_information.6.1",
+    "defaultMessage": "Mark ONE box."
+  },
+  "components.SampleCensus.secondary_information.6.2": {
+    "id": "components.SampleCensus.secondary_information.6.2",
+    "defaultMessage": "Male"
+  },
+  "components.SampleCensus.secondary_information.6.3": {
+    "id": "components.SampleCensus.secondary_information.6.3",
+    "defaultMessage": "Female"
+  },
+  "components.SampleCensus.primary_question.7": {
+    "id": "components.SampleCensus.primary_question.7",
+    "defaultMessage": "What is Person 1’s age and what is Person 1’s date of birth?"
+  },
+  "components.SampleCensus.secondary_information.7.1": {
+    "id": "components.SampleCensus.secondary_information.7.1",
+    "description": "Supporting text for question 7",
+    "defaultMessage": "Age on April 1, 2020 = <textbox>{text}</textbox> years"
+  },
+  "components.SampleCensus.secondary_information.7.2": {
+    "id": "components.SampleCensus.secondary_information.7.2",
+    "description": "Supporting text for question 7",
+    "defaultMessage": "Month = <textbox>{text}</textbox> Day = <textbox>{text}</textbox> Year of birth = <textbox>{text}</textbox>"
+  },
+  "components.SampleCensus.primary_question.8": {
+    "id": "components.SampleCensus.primary_question.8",
+    "defaultMessage": "Is Person 1 of Hispanic, Latino, or Spanish origin?"
+  },
+  "components.SampleCensus.secondary_information.8.1": {
+    "id": "components.SampleCensus.secondary_information.8.1",
+    "defaultMessage": "No, not of Hispanic, Latino, or Spanish origin"
+  },
+  "components.SampleCensus.secondary_information.8.2": {
+    "id": "components.SampleCensus.secondary_information.8.2",
+    "defaultMessage": "Yes, Mexican, Mexican Am., Chicano"
+  },
+  "components.SampleCensus.secondary_information.8.3": {
+    "id": "components.SampleCensus.secondary_information.8.3",
+    "defaultMessage": "Yes, Puerto Rican"
+  },
+  "components.SampleCensus.secondary_information.8.4": {
+    "id": "components.SampleCensus.secondary_information.8.4",
+    "defaultMessage": "Yes, Cuban"
+  },
+  "components.SampleCensus.secondary_information.8.5": {
+    "id": "components.SampleCensus.secondary_information.8.5",
+    "defaultMessage": "Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc."
+  },
+  "components.SampleCensus.secondary_information.8.6": {
+    "id": "components.SampleCensus.secondary_information.8.6",
+    "description": "Supporting text for question 8.5",
+    "defaultMessage": "<textbox>{text}</textbox>"
+  },
+  "components.SampleCensus.primary_question.9": {
+    "id": "components.SampleCensus.primary_question.9",
+    "defaultMessage": "What is Person 1’s race?"
+  },
+  "components.SampleCensus.secondary_information.9.1": {
+    "id": "components.SampleCensus.secondary_information.9.1",
+    "defaultMessage": "Mark one or more boxes AND print origins."
+  },
+  "components.SampleCensus.secondary_information.9.2": {
+    "id": "components.SampleCensus.secondary_information.9.2",
+    "defaultMessage": "White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.3": {
+    "id": "components.SampleCensus.secondary_information.9.3",
+    "defaultMessage": "Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.4": {
+    "id": "components.SampleCensus.secondary_information.9.4",
+    "defaultMessage": "American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.5": {
+    "id": "components.SampleCensus.secondary_information.9.5",
+    "defaultMessage": "Chinese"
+  },
+  "components.SampleCensus.secondary_information.9.6": {
+    "id": "components.SampleCensus.secondary_information.9.6",
+    "defaultMessage": "Filipino"
+  },
+  "components.SampleCensus.secondary_information.9.7": {
+    "id": "components.SampleCensus.secondary_information.9.7",
+    "defaultMessage": "Asian Indian"
+  },
+  "components.SampleCensus.secondary_information.9.8": {
+    "id": "components.SampleCensus.secondary_information.9.8",
+    "defaultMessage": "Vietnamese"
+  },
+  "components.SampleCensus.secondary_information.9.9": {
+    "id": "components.SampleCensus.secondary_information.9.9",
+    "defaultMessage": "Korean"
+  },
+  "components.SampleCensus.secondary_information.9.10": {
+    "id": "components.SampleCensus.secondary_information.9.10",
+    "defaultMessage": "Japanese"
+  },
+  "components.SampleCensus.secondary_information.9.11": {
+    "id": "components.SampleCensus.secondary_information.9.11",
+    "defaultMessage": "Native Hawaiian"
+  },
+  "components.SampleCensus.secondary_information.9.12": {
+    "id": "components.SampleCensus.secondary_information.9.12",
+    "defaultMessage": "Samoan"
+  },
+  "components.SampleCensus.secondary_information.9.13": {
+    "id": "components.SampleCensus.secondary_information.9.13",
+    "defaultMessage": "Chamorro"
+  },
+  "components.SampleCensus.secondary_information.9.14": {
+    "id": "components.SampleCensus.secondary_information.9.14",
+    "defaultMessage": "Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.15": {
+    "id": "components.SampleCensus.secondary_information.9.15",
+    "defaultMessage": "Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.16": {
+    "id": "components.SampleCensus.secondary_information.9.16",
+    "defaultMessage": "Some other race – Print race or origin. [Textbox]"
+  },
+  "components.SampleCensus.primary_question.10": {
+    "id": "components.SampleCensus.primary_question.10",
+    "defaultMessage": "This is an ipsum question"
+  },
+  "components.SampleCensus.secondary_information.6": {
+    "id": "components.SampleCensus.secondary_information.6",
+    "defaultMessage": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female"
+  },
+  "components.SampleCensus.secondary_information.7": {
+    "id": "components.SampleCensus.secondary_information.7",
+    "defaultMessage": "*For babies less than 1 year olf, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]"
+  },
+  "components.SampleCensus.secondary_information.8": {
+    "id": "components.SampleCensus.secondary_information.8",
+    "defaultMessage": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]"
+  },
+  "components.SampleCensus.secondary_information.9": {
+    "id": "components.SampleCensus.secondary_information.9",
+    "defaultMessage": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]"
   }
 }
