@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Markdown from 'react-remarkable';
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
-
+import { IntlProvider } from 'react-intl';
 import { supportedLocales, supportedLocaleEnglishNames } from '../../../i18n/supported-locales';
+import { FormattedMarkdownMessage } from '../../../client/components/FormattedMarkdownMessage';
 import { messages } from '../../../i18n/translations';
 import definitions from '../../../i18n/translations/definitions';
 import './TranslationList.scss';
@@ -89,9 +89,9 @@ const TranslationItem = ({ messageId, locale }) => {
         showMarkdown
           ? (
             <div className="c_translation-item__markdown">
-              <Markdown>
-                {translation}
-              </Markdown>
+              <FormattedMarkdownMessage
+                id={messageId}
+              />
             </div>
           )
           : null
@@ -173,23 +173,28 @@ const TranslationList = ({ currentLocale, filterString }) => {
         </label>
       </div>
 
-      <ul className="c_translation-list__list">
-        {
-          messageIds.map(
-            (messageId) => (
-              <li
-                key={messageId}
-                className="c_translation-list__list__item"
-              >
-                <TranslationItem
-                  messageId={messageId}
-                  locale={currentLocale}
-                />
-              </li>
+      <IntlProvider
+        locale={currentLocale}
+        messages={workingMessageCopy[currentLocale]}
+      >
+        <ul className="c_translation-list__list">
+          {
+            messageIds.map(
+              (messageId) => (
+                <li
+                  key={messageId}
+                  className="c_translation-list__list__item"
+                >
+                  <TranslationItem
+                    messageId={messageId}
+                    locale={currentLocale}
+                  />
+                </li>
+              )
             )
-          )
-        }
-      </ul>
+          }
+        </ul>
+      </IntlProvider>
     </div>
   );
 };
