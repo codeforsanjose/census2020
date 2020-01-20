@@ -59,57 +59,65 @@ export default class Navigation extends React.PureComponent {
             src={logoUrl}
           />
         </div>
-        <div className="c_navigation__links">
-          <NavLink
-            path="/"
-          >
-            <FormattedMessage
-              id="navigation.links.home"
-              defaultMessage="Home"
-              description="'Home' link in the navigation bar"
-            />
-          </NavLink>
-          <NavLink
-            path="/faq"
-          >
-            <FormattedMessage
-              id="navigation.links.faq"
-              defaultMessage="FAQ"
-              description="'FAQ' link in the navigation bar"
-            />
-          </NavLink>
-          <NavLink
-            path="/samplecensus"
-          >
-            <FormattedMessage
-              id="navigation.links.sampleCensus"
-              defaultMessage="Sample Survey"
-              description="'Sample Survey' link in the navigation bar"
-            />
-          </NavLink>
-          <NavLink
-            path="/contact"
-          >
-            <FormattedMessage
-              id="navigation.links.contact"
-              defaultMessage="Get Involved"
-              description="'Get Involved' link in the navigation bar"
-            />
-          </NavLink>
-        </div>
+        { window.innerWidth > 800 && (
+          <NavigationLinksLarge />
+        )}
         <LocalePicker
         />
-        <a
-          href="https://census.gov"
-          className="c_navigation__census-link"
-        >
-          <FormattedMessage
-            id="take-the-census-link"
-            description="Link to the Census"
-            defaultMessage="Take the Census"
-          />
-        </a>
+        { window.innerWidth > 800 && (
+          <a
+            href="https://census.gov"
+            className="c_navigation__census-link"
+          >
+            <FormattedMessage
+              id="take-the-census-link"
+              description="Link to the Census"
+              defaultMessage="Take the Census"
+            />
+          </a>
+        )}
       </nav>
     );
   }
 }
+
+const NavigationLinksLarge = () => (
+  <div className="c_navigation__links">
+    <NavLink
+      path="/"
+    >
+      <FormattedMessage
+        id="navigation.links.home"
+        defaultMessage="Home"
+        description="'Home' link in the navigation bar"
+      />
+    </NavLink>
+    <NavLink
+      path="/faq"
+    >
+      <FormattedMessage
+        id="navigation.links.faq"
+        defaultMessage="FAQ"
+        description="'FAQ' link in the navigation bar"
+      />
+    </NavLink>
+    <NavLink
+      path="/samplecensus"
+    >
+      <FormattedMessage
+        id="navigation.links.sampleCensus"
+        defaultMessage="Sample Survey"
+        description="'Sample Survey' link in the navigation bar"
+      />
+    </NavLink>
+    <NavLink
+      path="/contact"
+    >
+      <FormattedMessage
+        id="navigation.links.contact"
+        defaultMessage="Get Involved"
+        description="'Get Involved' link in the navigation bar"
+      />
+    </NavLink>
+  </div>
+)

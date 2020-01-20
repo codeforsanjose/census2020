@@ -1,6 +1,6 @@
 .c_navigation {
-  $horizontal-spacing: 35px;
-  $vertical-spacing: 30px;
+  $horizontal-spacing: 2em;
+  $vertical-spacing: 1.75em;
 
   display: flex;
   flex-direction: row;
@@ -11,15 +11,19 @@
 
   &__logo {
     position: absolute;
-    padding: 45px 0;
-    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+    border-radius: 6em;
     background: white;
-    width: 210px;
+    height: 12em;
+    width: 12em;
     z-index: 1;
     text-align: center;
-
+  
     &__image {
-      height: 75px;
+      width: 60%;
     }
   }
 

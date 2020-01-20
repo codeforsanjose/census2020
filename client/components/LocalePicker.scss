@@ -2,13 +2,18 @@
   display: flex;
   align-items: center;
   font-size: 14px;
+  position: relative;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 
   &::before {
     content: url('../images/globe.svg');
     display: block;
-    width: 24px;
-    height: 24px;
-    margin-right: 15px;
+    width: 2em;
+    height: 2em;
+    margin-right: 1.5em;
   }
 
   &__option {
@@ -20,8 +25,15 @@
     border: none;
     outline: none;
     padding: 0;
-    position: relative;
-    margin-right: 20px;
+    margin-right: 1.75em;
+
+    @media only screen and (max_width: 800px) {
+      position: absolute;
+    }
+
+    @media only screen and (min-width: 800px) {
+      position: relative;
+    }
 
     // Add a separator bar after every item in the locale picker...
     &::after {
@@ -29,7 +41,7 @@
       color: #000000;
       display: inline-block;
       position: absolute;
-      margin: 0 8px;
+      margin: 0 1em;
     }
 
     // ...except for the last one
