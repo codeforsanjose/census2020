@@ -7,6 +7,8 @@ import remark2rehype from 'remark-rehype';
 import findAndReplace from 'hast-util-find-and-replace';
 
 import { SampleTextbox } from './SampleTextbox';
+import { SampleCheckbox } from './SampleCheckbox';
+import './FormattedMarkdownMessage.scss';
 
 function collapse (parts) {
   if (!Array.isArray(parts)) {
@@ -55,25 +57,16 @@ textboxTokenizer.locator = (value, fromIndex) => {
   return value.indexOf('[|', fromIndex);
 };
 
+let checkboxIdNumber = 0;
+
 function compileToReact (node, index = undefined) {
   const processChildren = (children) => {
     return (children || []).map(compileToReact);
   };
   if (node.type === 'root') {
-    if (node.children.length === 1) {
-      let child = node.children[0];
-      if (child.type === 'element' && child.tagName === 'p') {
-        child = {
-          ...child,
-          tagName: React.Fragment
-        };
-      }
-      return compileToReact(child);
-    } else {
-      return (<React.Fragment>
-        {processChildren(node.children)}
-      </React.Fragment>);
-    }
+    return (<div {...node.properties}>
+      {processChildren(node.children)}
+    </div>);
   } else if (React.isValidElement(node)) {
     if (index !== undefined && !node.key) {
       return React.cloneElement(node, {
@@ -82,14 +75,27 @@ function compileToReact (node, index = undefined) {
     }
     return node;
   } else if (node.type === 'element') {
-    if (!node.properties.key) {
-      node.properties.key = index;
+    const props = {
+      ...node.properties
+    };
+    if (!props.key) {
+      props.key = index;
+    }
+    if (node.tagName === 'input' && node.properties.type === 'checkbox') {
+      if (!props.id) {
+        props.id = `_md_generated_checkbox__${checkboxIdNumber++}`;
+      }
+      return (
+        <SampleCheckbox
+          {...props}
+        />
+      );
     }
     const children = processChildren(node.children);
     if (children.length > 0) {
-      return React.createElement(node.tagName, node.properties, children);
+      return React.createElement(node.tagName, props, children);
     } else {
-      return React.createElement(node.tagName, node.properties);
+      return React.createElement(node.tagName, props);
     }
   } else if (node.type === 'textbox') {
     return (
@@ -111,7 +117,7 @@ function replaceWithPlaceholders (valueMap) {
   };
 }
 
-const FormattedMarkdownMessage = ({ intl, id, description, defaultMessage, values }) => {
+const FormattedMarkdownMessage = ({ intl, id, description, defaultMessage, values, className }) => {
   const translated = intl.formatMessage(
     {
       id,
@@ -134,7 +140,18 @@ const FormattedMarkdownMessage = ({ intl, id, description, defaultMessage, value
         // Pass textbox through--React plugin will transform it correctly
         textbox: (h, node) => node
       }
+    }).use(function () {
+      return function (node) {
+        if (!node.properties) {
+          node.properties = {};
+        }
+        node.properties.className = ['c_formatted-markdown-message'];
+        if (className) {
+          node.properties.className.push(className);
+        }
+      };
     });
+
   if (valueMap) {
     processor = processor.use(replaceWithPlaceholders(valueMap));
   }
@@ -150,7 +167,8 @@ FormattedMarkdownMessage.propTypes = {
   id: PropTypes.string.isRequired,
   description: PropTypes.string,
   defaultMessage: PropTypes.string,
-  values: PropTypes.object
+  values: PropTypes.object,
+  className: PropTypes.string
 };
 
 const WrappedFormattedMarkdownMessage = injectIntl(FormattedMarkdownMessage);
