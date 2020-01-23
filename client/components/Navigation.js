@@ -59,7 +59,55 @@ export default class Navigation extends React.PureComponent {
             src={logoUrl}
           />
         </div>
+        <div className={classnames(
+          "c_navigation__links",
+          "c_navigation__links--desktop"
+        )}>
+          <NavLink
+            path="/"
+          >
+            <FormattedMessage
+              id="navigation.links.home"
+              defaultMessage="Home"
+              description="'Home' link in the navigation bar"
+            />
+          </NavLink>
+          <NavLink
+            path="/faq"
+          >
+            <FormattedMessage
+              id="navigation.links.faq"
+              defaultMessage="FAQ"
+              description="'FAQ' link in the navigation bar"
+            />
+          </NavLink>
+          <NavLink
+            path="/samplecensus"
+          >
+            <FormattedMessage
+              id="navigation.links.sampleCensus"
+              defaultMessage="Sample Survey"
+              description="'Sample Survey' link in the navigation bar"
+            />
+          </NavLink>
+          <NavLink
+            path="/contact"
+          >
+            <FormattedMessage
+              id="navigation.links.contact"
+              defaultMessage="Get Involved"
+              description="'Get Involved' link in the navigation bar"
+            />
+          </NavLink>
+        </div>
         <LocalePicker />
+        <MobileMenu />
+      </nav>
+    );
+  }
+}
+
+/*
         { window.innerWidth > 800 && (
           <a
             href="https://census.gov"
@@ -72,19 +120,59 @@ export default class Navigation extends React.PureComponent {
             />
           </a>
         )}
-      </nav>
-    );
-  }
-}
+*/
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false)
   return (
-    <div>
-      <button>
+    <div className="c_mobile-menu">
+      <button 
+        className="c_mobile-menu__hamburger"
+        onClick={() => setOpen(!open)}>
+        =
       </button>
-      <div>
-        <a></a>
+        <div className={classnames(
+          "c_mobile-menu__drawer",
+          {"c_mobile-menu__drawer--active": open}
+        )}>
+          <div className="c_navigation__links">
+            <NavLink
+              path="/"
+            >
+              <FormattedMessage
+                id="navigation.links.home"
+                defaultMessage="Home"
+                description="'Home' link in the navigation bar"
+              />
+            </NavLink>
+            <NavLink
+              path="/faq"
+            >
+              <FormattedMessage
+                id="navigation.links.faq"
+                defaultMessage="FAQ"
+                description="'FAQ' link in the navigation bar"
+              />
+            </NavLink>
+            <NavLink
+              path="/samplecensus"
+            >
+              <FormattedMessage
+                id="navigation.links.sampleCensus"
+                defaultMessage="Sample Survey"
+                description="'Sample Survey' link in the navigation bar"
+              />
+            </NavLink>
+            <NavLink
+              path="/contact"
+            >
+            <FormattedMessage
+              id="navigation.links.contact"
+              defaultMessage="Get Involved"
+              description="'Get Involved' link in the navigation bar"
+            />
+          </NavLink>
+        </div>
       </div>
     </div>
   )

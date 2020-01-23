@@ -5,6 +5,10 @@
   font-size: .8rem;
   padding: .25rem;
 
+  @media (max-width: 800px) {
+    margin-left: auto;
+  }
+
   &__icon {
     width: 2rem;
     height: 2rem;
@@ -111,3 +115,4 @@
 
   }
 }
+

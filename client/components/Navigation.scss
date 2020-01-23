@@ -4,7 +4,6 @@
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   position: relative;
   padding: 1rem 2rem 1rem 2rem;
   box-sizing: border-box;
@@ -36,28 +35,39 @@
 
   &__links {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 230px;
+    padding: 1rem;
+
+    &--desktop {
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 800px){
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+
+    @media (min-width: 800px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: auto;
+    }
   }
 
   &__link {
-    font-size: 18px;
+    font-size: 1.25rem;
     font-weight: 400;
-    margin-right: 40px;
+    text-align: center;
     color: #000000;
     text-transform: uppercase;
+    margin: 0 .8rem 0 .5rem;
+    flex-grow: 1;
 
     &--active {
       color: #2F80ED;
-    }
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
     }
 
     &,
@@ -89,5 +99,30 @@
       text-decoration: none;
     }
   }
+}
 
+.c_mobile-menu {
+  @media (min-width: 800px) {
+    display: none;
+  }
+
+  &__hamburger {
+
+  }
+
+  &__drawer {
+    overflow: hidden;
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    max-width: 300px;
+    background-color: white;
+    z-index: 1;
+
+    &--active {
+      width: 60%;
+    }
+  }
 }
