@@ -756,12 +756,12 @@
     "translation": "Giúp California và San Jose tiếp cận với các tài nguyên quan trọng"
   },
   "components.Home.factoids.qrCode.headerTitle": {
-    "english": "Use the In a hurry, take it to go!",
-    "translation": "Sử dụng vội vàng, mang nó đi!"
+    "english": "In a hurry, take it to go!",
+    "translation": "Trong một vội vàng, mang nó đi!"
   },
   "components.Home.factoids.qrCode.headerMessage": {
-    "english": "Learn how to participate",
-    "translation": "Học cách tham gia"
+    "english": "Take a photo of the image to learn more",
+    "translation": "Chụp ảnh để tìm hiểu thêm"
   },
   "components.Home.factoids.safety.headerTitle.": {
     "english": "Is it safe?",
@@ -776,8 +776,8 @@
     "translation": "Nhận câu trả lời cho tất cả các câu hỏi của bạn về lý do tại sao phải điều tra dân số và làm thế nào thông tin sẽ được sử dụng."
   },
   "components.Home.factoids.shouldIComplete.headerTitle": {
-    "english": "Should I be completing the questionnaire?",
-    "translation": "Tôi có nên hoàn thành bảng câu hỏi?"
+    "english": "Do I take the census?",
+    "translation": "Tôi có điều tra dân số không?"
   },
   "components.Home.factoids.shouldIComplete.headerMessage": {
     "english": "What will I be asked?",
@@ -792,8 +792,8 @@
     "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.secondary_information.1": {
-    "english": "Number of people",
-    "translation": "Số người"
+    "english": "Number of people=[|Enter number here|]",
+    "translation": "Số người = [| Nhập số vào đây |]"
   },
   "components.SampleCensus.primary_question.2": {
     "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
@@ -830,5 +830,181 @@
   "components.SampleCensus.not_hohh_button": {
     "english": "Someone else will answer the census for me",
     "translation": "Một người khác sẽ trả lời điều tra dân số cho tôi"
+  },
+  "test": {
+    "english": "- [ ] Checkbox1\n  - [x] Checkbox2",
+    "translation": "- [] Hộp kiểm1\n  - [x] Hộp kiểm2"
+  },
+  "components.SampleCensus.secondary_information.2": {
+    "english": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people",
+    "translation": "* Đánh dấu tất cả những gì áp dụng *\n\n- [] Trẻ em, có liên quan hoặc không liên quan, chẳng hạn như trẻ sơ sinh, cháu, hoặc con nuôi\n- [] Người thân, chẳng hạn như trẻ em trưởng thành, anh em họ hoặc ở rể\n- [] Không liên quan, chẳng hạn như bạn cùng phòng hoặc người giữ trẻ sống trong nhà\n- [] Người ở đây tạm thời\n- [] Không có thêm người"
+  },
+  "components.SampleCensus.primary_question.3": {
+    "english": "Is this house, apartment, or mobile home:",
+    "translation": "Đây là ngôi nhà, căn hộ hay nhà di động:"
+  },
+  "components.SampleCensus.secondary_information.3": {
+    "english": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?",
+    "translation": "* Đánh dấu MỘT ô *\n\n- [] Được sở hữu bởi bạn hoặc ai đó trong gia đình này có thế chấp hoặc khoản vay? Bao gồm các khoản vay vốn chủ sở hữu nhà.\n- [] Được sở hữu bởi bạn hoặc ai đó trong hộ gia đình này miễn phí và rõ ràng (không thế chấp hoặc cho vay)?\n- [ ] Đã thuê?\n- [] Chiếm dụng mà không trả tiền thuê nhà?"
+  },
+  "components.SampleCensus.primary_question.4": {
+    "english": "What is your telephone number?",
+    "translation": "Số điện thoại của bạn là gì?"
+  },
+  "components.SampleCensus.secondary_information.4": {
+    "english": "Telephone Number = [|Enter telephone number here|]",
+    "translation": "Số điện thoại = [| Nhập số điện thoại tại đây |]"
+  },
+  "components.SampleCensus.primary_question.5": {
+    "english": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?",
+    "translation": "Vui lòng cung cấp thông tin cho từng người sống ở đây. Nếu có ai đó sống ở đây trả tiền thuê nhà hoặc sở hữu nơi cư trú này, hãy bắt đầu bằng cách liệt kê người đó là Người 1. Nếu chủ sở hữu hoặc người trả tiền thuê nhà không sống ở đây, hãy bắt đầu bằng cách liệt kê bất kỳ người lớn nào sống ở đây là Người 1 Tên người 1 là gì?"
+  },
+  "components.SampleCensus.secondary_information.5": {
+    "english": "Firstname = [||] Last Name(s) = [||]",
+    "translation": "Tên = [||] Họ (s) = [||]"
+  },
+  "components.SampleCensus.primary_question.6": {
+    "english": "What is Person 1’s sex?",
+    "translation": "Người 1 sex là gì?"
+  },
+  "components.SampleCensus.secondary_information.6.1": {
+    "english": "Mark ONE box.",
+    "translation": "Đánh dấu MỘT ô."
+  },
+  "components.SampleCensus.secondary_information.6.2": {
+    "english": "Male",
+    "translation": "Nam giới"
+  },
+  "components.SampleCensus.secondary_information.6.3": {
+    "english": "Female",
+    "translation": "Giống cái"
+  },
+  "components.SampleCensus.primary_question.7": {
+    "english": "What is Person 1’s age and what is Person 1’s date of birth?",
+    "translation": "Người 1 tuổi là gì và ngày sinh của Người 1 là gì?"
+  },
+  "components.SampleCensus.secondary_information.7.1": {
+    "english": "Age on April 1, 2020 = <textbox>{text}</textbox> years",
+    "translation": "Tuổi vào ngày 1 tháng 4 năm 2020 = <textbox> {text} </ textbox> năm"
+  },
+  "components.SampleCensus.secondary_information.7.2": {
+    "english": "Month = <textbox>{text}</textbox> Day = <textbox>{text}</textbox> Year of birth = <textbox>{text}</textbox>",
+    "translation": "Tháng = <hộp văn bản> {văn bản} </ hộp văn bản> Ngày = <hộp văn bản> {văn bản} </ hộp văn bản> Năm sinh = <hộp văn bản> {văn bản} </ hộp văn bản>"
+  },
+  "components.SampleCensus.primary_question.8": {
+    "english": "Is Person 1 of Hispanic, Latino, or Spanish origin?",
+    "translation": "Là người 1 gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha?"
+  },
+  "components.SampleCensus.secondary_information.8.1": {
+    "english": "No, not of Hispanic, Latino, or Spanish origin",
+    "translation": "Không, không phải gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha"
+  },
+  "components.SampleCensus.secondary_information.8.2": {
+    "english": "Yes, Mexican, Mexican Am., Chicano",
+    "translation": "Vâng, Mexico, Mexico Am., Chicano"
+  },
+  "components.SampleCensus.secondary_information.8.3": {
+    "english": "Yes, Puerto Rican",
+    "translation": "Vâng, Puerto Rico"
+  },
+  "components.SampleCensus.secondary_information.8.4": {
+    "english": "Yes, Cuban",
+    "translation": "Vâng, Cuba"
+  },
+  "components.SampleCensus.secondary_information.8.5": {
+    "english": "Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.",
+    "translation": "Có, một nguồn gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha khác - In, ví dụ, Salvador, Dominicican, Colombia, Guatemala, Spaniard, Ecuador, v.v."
+  },
+  "components.SampleCensus.secondary_information.8.6": {
+    "english": "<textbox>{text}</textbox>",
+    "translation": "<hộp văn bản> {văn bản} </ hộp văn bản>"
+  },
+  "components.SampleCensus.primary_question.9": {
+    "english": "What is Person 1’s race?",
+    "translation": "Chủng tộc 1 người là gì?"
+  },
+  "components.SampleCensus.secondary_information.9.1": {
+    "english": "Mark one or more boxes AND print origins.",
+    "translation": "Đánh dấu một hoặc nhiều hộp VÀ in nguồn gốc."
+  },
+  "components.SampleCensus.secondary_information.9.2": {
+    "english": "White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [Textbox]",
+    "translation": "Trắng - In, ví dụ: tiếng Đức, tiếng Ailen, tiếng Anh, tiếng Ý, tiếng Lebanon, tiếng Ai Cập, v.v [Hộp văn bản]"
+  },
+  "components.SampleCensus.secondary_information.9.3": {
+    "english": "Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [Textbox]",
+    "translation": "Đen hoặc châu Phi Am. - In, ví dụ, người Mỹ gốc Phi, Jamaica, Haiti, Nigeria, Ethiopia, Somali, v.v ... [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.4": {
+    "english": "American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [Textbox]",
+    "translation": "Người Mỹ bản địa hoặc thổ dân Alaska - Tên in của (các) bộ lạc đã đăng ký hoặc chính, ví dụ, Navajo Nation, Blackfeet Tribe, Maya, Aztec, Bản địa của Chính phủ truyền thống Barrow Inupiat, Cộng đồng Nome Eskimo, v.v. [Textbox]"
+  },
+  "components.SampleCensus.secondary_information.9.5": {
+    "english": "Chinese",
+    "translation": "người Trung Quốc"
+  },
+  "components.SampleCensus.secondary_information.9.6": {
+    "english": "Filipino",
+    "translation": "Tiếng Philipin"
+  },
+  "components.SampleCensus.secondary_information.9.7": {
+    "english": "Asian Indian",
+    "translation": "Ấn Độ châu á"
+  },
+  "components.SampleCensus.secondary_information.9.8": {
+    "english": "Vietnamese",
+    "translation": "Tiếng Việt"
+  },
+  "components.SampleCensus.secondary_information.9.9": {
+    "english": "Korean",
+    "translation": "Hàn Quốc"
+  },
+  "components.SampleCensus.secondary_information.9.10": {
+    "english": "Japanese",
+    "translation": "tiếng Nhật"
+  },
+  "components.SampleCensus.secondary_information.9.11": {
+    "english": "Native Hawaiian",
+    "translation": "Hawaii bản địa"
+  },
+  "components.SampleCensus.secondary_information.9.12": {
+    "english": "Samoan",
+    "translation": "Samoa"
+  },
+  "components.SampleCensus.secondary_information.9.13": {
+    "english": "Chamorro",
+    "translation": "Chamorro"
+  },
+  "components.SampleCensus.secondary_information.9.14": {
+    "english": "Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [Textbox]",
+    "translation": "Khác châu Á - In, ví dụ, tiếng Pakistan, tiếng Campuchia, tiếng H'mông, v.v [Hộp văn bản]"
+  },
+  "components.SampleCensus.secondary_information.9.15": {
+    "english": "Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [Textbox]",
+    "translation": "Đảo Thái Bình Dương khác - In, ví dụ, Tongan, Fijian, Marshallese, v.v [Hộp văn bản]"
+  },
+  "components.SampleCensus.secondary_information.9.16": {
+    "english": "Some other race – Print race or origin. [Textbox]",
+    "translation": "Một số chủng tộc khác - In chủng tộc hoặc nguồn gốc. [Hộp văn bản]"
+  },
+  "components.SampleCensus.primary_question.10": {
+    "english": "This is an ipsum question",
+    "translation": "Đây là một câu hỏi ipsum"
+  },
+  "components.SampleCensus.secondary_information.6": {
+    "english": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female",
+    "translation": "* Đánh dấu MỘT ô *\n\n- [ ] Nam giới\n- [ ] Giống cái"
+  },
+  "components.SampleCensus.secondary_information.7": {
+    "english": "*For babies less than 1 year olf, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]",
+    "translation": "* Đối với trẻ sơ sinh dưới 1 tuổi, không viết tuổi theo tháng. Viết 0 khi bằng tuổi. *\n\nTuổi vào ngày 1 tháng 4 năm 2020 = [||] năm\nTháng = [||] Ngày = [||] Năm sinh = [||]"
+  },
+  "components.SampleCensus.secondary_information.8": {
+    "english": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]",
+    "translation": "- [] Không, không phải gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha\n- [] Vâng, Mexico, Mexico Am., Chicano\n- [] Vâng, Puerto Rico\n- [] Vâng, Cuba\n- [] Có, một nguồn gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha khác - In, ví dụ: Salvadoran, Dominicican, Colombia, Guatemala, Spaniard, Ecuador, v.v.\n[||]"
+  },
+  "components.SampleCensus.secondary_information.9": {
+    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]",
+    "translation": "* Đánh dấu một hoặc nhiều hộp VÀ in nguồn gốc *\n\n- [] Trắng - In, ví dụ: tiếng Đức, tiếng Ailen, tiếng Anh, tiếng Ý, tiếng Lebanon, tiếng Ai Cập, v.v ... [||]\n- [] Đen hoặc Châu Phi Am. - In, ví dụ, người Mỹ gốc Phi, Jamaica, Haiti, Nigeria, Etiopia, Somalia, v.v ... [||]\n. [] ]\n- [ ] Người Trung Quốc\n- [] Tiếng Philipin\n- [] Ấn Độ châu Á\n- [ ] Tiếng Việt\n- [ ] Hàn Quốc\n- [ ] Tiếng Nhật\n- [] Hawaii bản địa\n- [] Samoa\n- [] Chamorro\n- [] Châu Á khác - In, ví dụ: Pakistan, Campuchia, H'mong, v.v ... [||]\n- [] Đảo Thái Bình Dương khác - In, ví dụ, Tongan, Fijian, Marshallese, v.v ... [||]\n- [] Một số chủng tộc khác - In chủng tộc hoặc nguồn gốc. [||]"
   }
 }
