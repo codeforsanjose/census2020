@@ -62,25 +62,27 @@ export const LocalePicker = () => {
                 onClick={() => setOpen(!open)}>
                 { (open) ? '>' : '<'}
               </button>
-              <div
-                className="c_locale-picker__container__dropdown-container">
-                { open && supportedLocales.map(
-                    (locale) => (
-                      <button
-                        key={locale}
-                        disabled={locale === currentLocale}
-                        className={classnames(
-                          "c_locale-picker__container__option",
-                          {"c_locale-picker__container__option--hide": (locale === currentLocale )}
-                        )}
-                        onClick={() => setLocale(locale)}
-                      >
-                        {supportedLocaleNames[locale]}
-                      </button>
+              { open && (
+                <div
+                  className="c_locale-picker__container__dropdown-container">
+                  { supportedLocales.map(
+                      (locale) => (
+                        <button
+                          key={locale}
+                          disabled={locale === currentLocale}
+                          className={classnames(
+                            "c_locale-picker__container__option",
+                            {"c_locale-picker__container__option--hide": (locale === currentLocale )}
+                          )}
+                          onClick={() => setLocale(locale)}
+                        >
+                          {supportedLocaleNames[locale]}
+                        </button>
+                      )
                     )
-                  )
-                }
-              </div>
+                  }
+                </div>
+              )}
             </div>
           </div>
         )
