@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 import classnames from 'classnames';
@@ -59,11 +59,7 @@ export default class Navigation extends React.PureComponent {
             src={logoUrl}
           />
         </div>
-        { window.innerWidth > 800 && (
-          <NavigationLinksLarge />
-        )}
-        <LocalePicker
-        />
+        <LocalePicker />
         { window.innerWidth > 800 && (
           <a
             href="https://census.gov"
@@ -79,6 +75,19 @@ export default class Navigation extends React.PureComponent {
       </nav>
     );
   }
+}
+
+const MobileMenu = () => {
+  const [open, setOpen] = useState(false)
+  return (
+    <div>
+      <button>
+      </button>
+      <div>
+        <a></a>
+      </div>
+    </div>
+  )
 }
 
 const NavigationLinksLarge = () => (
