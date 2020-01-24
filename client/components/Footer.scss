@@ -1,13 +1,15 @@
 .c_footer {
   background-color: #005EA2;
   color: #FFFFFF;
-  padding: 60px 138px 60px 64px;
+  padding: 4rem 6rem 4rem 6rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
   &__logo {
-    height: 96px;
+    height: 6rem;
   }
 
   &__link {
@@ -21,13 +23,12 @@
     &::before {
       content: url('../images/#{$icon}.svg');
       filter: invert(1);
-      margin-right: 10px;
+      margin-right: .8rem;
     }
   }
   
   &__contact-us {
-    margin-left: 60px;
-    margin-right: 138px;
+    margin: 2rem 4rem 2rem 4rem;
     
     &__email {
       @include contact-link('mail');
@@ -42,7 +43,6 @@
   &__nav-links {
     list-style: none;
     padding-left: 0;
-    margin-left: auto;
 
     &__item {
       margin-bottom: 8px;

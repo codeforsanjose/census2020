@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 import classnames from 'classnames';
@@ -7,6 +7,9 @@ import { FormattedMessage } from 'react-intl';
 import './Navigation.scss';
 import { LocalePicker } from './LocalePicker';
 import logoUrl from '../images/CityOfSanJose_logo.png';
+import menu from '../images/menu.svg'
+import close from '../images/close.svg'
+
 
 /**
  * @param {object} props
@@ -59,7 +62,10 @@ export default class Navigation extends React.PureComponent {
             src={logoUrl}
           />
         </div>
-        <div className="c_navigation__links">
+        <div className={classnames(
+          "c_navigation__links",
+          "c_navigation__links--desktop"
+        )}>
           <NavLink
             path="/"
           >
@@ -97,19 +103,109 @@ export default class Navigation extends React.PureComponent {
             />
           </NavLink>
         </div>
-        <LocalePicker
-        />
-        <a
-          href="https://census.gov"
-          className="c_navigation__census-link"
-        >
-          <FormattedMessage
-            id="take-the-census-link"
-            description="Link to the Census"
-            defaultMessage="Take the Census"
-          />
-        </a>
+        <LocalePicker />
+        <MobileMenu />
       </nav>
     );
   }
 }
+
+const MobileMenu = () => {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="c_mobile-menu">
+      <button 
+        className="c_mobile-menu__hamburger"
+        onClick={() => setOpen(!open)}>
+        <img
+          src={(open) ? close : menu}
+          className="c_mobile-menu__hamburger__image"
+        />
+      </button>
+        <div className={classnames(
+          "c_mobile-menu__drawer",
+          {"c_mobile-menu__drawer--active": open}
+        )}>
+          <div className="c_navigation__links">
+            <NavLink
+              path="/"
+            >
+              <FormattedMessage
+                id="navigation.links.home"
+                defaultMessage="Home"
+                description="'Home' link in the navigation bar"
+              />
+            </NavLink>
+            <NavLink
+              path="/faq"
+            >
+              <FormattedMessage
+                id="navigation.links.faq"
+                defaultMessage="FAQ"
+                description="'FAQ' link in the navigation bar"
+              />
+            </NavLink>
+            <NavLink
+              path="/samplecensus"
+            >
+              <FormattedMessage
+                id="navigation.links.sampleCensus"
+                defaultMessage="Sample Survey"
+                description="'Sample Survey' link in the navigation bar"
+              />
+            </NavLink>
+            <NavLink
+              path="/contact"
+            >
+            <FormattedMessage
+              id="navigation.links.contact"
+              defaultMessage="Get Involved"
+              description="'Get Involved' link in the navigation bar"
+            />
+          </NavLink>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const NavigationLinksLarge = () => (
+  <div className="c_navigation__links">
+    <NavLink
+      path="/"
+    >
+      <FormattedMessage
+        id="navigation.links.home"
+        defaultMessage="Home"
+        description="'Home' link in the navigation bar"
+      />
+    </NavLink>
+    <NavLink
+      path="/faq"
+    >
+      <FormattedMessage
+        id="navigation.links.faq"
+        defaultMessage="FAQ"
+        description="'FAQ' link in the navigation bar"
+      />
+    </NavLink>
+    <NavLink
+      path="/samplecensus"
+    >
+      <FormattedMessage
+        id="navigation.links.sampleCensus"
+        defaultMessage="Sample Survey"
+        description="'Sample Survey' link in the navigation bar"
+      />
+    </NavLink>
+    <NavLink
+      path="/contact"
+    >
+      <FormattedMessage
+        id="navigation.links.contact"
+        defaultMessage="Get Involved"
+        description="'Get Involved' link in the navigation bar"
+      />
+    </NavLink>
+  </div>
+)

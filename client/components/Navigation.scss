@@ -1,52 +1,73 @@
 .c_navigation {
-  $horizontal-spacing: 35px;
-  $vertical-spacing: 30px;
+  $horizontal-spacing: 1rem;
+  $vertical-spacing: .75rem;
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   position: relative;
-  padding: $vertical-spacing $horizontal-spacing;
+  padding: 1rem 2rem 1rem 2rem;
+  box-sizing: border-box;
   align-items: center;
+  height: 4rem;
+
+  @media (max-width: 800px) {
+     padding: .25rem;
+  }
 
   &__logo {
-    position: absolute;
-    padding: 45px 0;
-    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: white;
-    width: 210px;
     z-index: 1;
-    text-align: center;
-
+    height: 35vw;
+    width: 35vw;
+    border-radius: 6rem;
+    max-height: 12rem;
+    max-width: 12rem;
+    min-height: 6rem;
+  
     &__image {
-      height: 75px;
+      margin-top: 1rem;
+      width: 60%;
     }
   }
 
   &__links {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 230px;
+    padding: 1rem;
+
+    &--desktop {
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 800px){
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+
+    @media (min-width: 800px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: auto;
+    }
   }
 
   &__link {
-    font-size: 18px;
+    font-size: 1.25rem;
     font-weight: 400;
-    margin-right: 40px;
+    text-align: center;
     color: #000000;
     text-transform: uppercase;
+    margin: 0 .8rem 0 .5rem;
+    flex-grow: 1;
 
     &--active {
       color: #2F80ED;
-    }
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
     }
 
     &,
@@ -78,10 +99,49 @@
       text-decoration: none;
     }
   }
+}
 
-  .c_locale-picker {
-    position: absolute;
-    right: $horizontal-spacing;
-    top: $vertical-spacing;
+.c_mobile-menu {
+  @media (min-width: 800px) {
+    display: none;
+  }
+
+  &__hamburger {
+    height: 2rem;
+    width: 2rem;
+    padding: .25rem;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    &__image {
+      height: 100%;
+      width: 100%;
+      background-color: transparent;
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__drawer {
+    overflow: hidden;
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    max-width: 300px;
+    background-color: white;
+    z-index: 1;
+
+    &--active {
+      width: 60%;
+    }
   }
 }
