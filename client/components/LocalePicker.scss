@@ -1,50 +1,125 @@
 .c_locale-picker {
   display: flex;
+  height: 100%;
   align-items: center;
-  font-size: 14px;
+  font-size: .8rem;
+  padding: .25rem;
+  margin: 0 2rem 0 2rem;
 
-  &::before {
-    content: url('../images/globe.svg');
-    display: block;
-    width: 24px;
-    height: 24px;
-    margin-right: 15px;
+  @media (max-width: 800px) {
+    margin-left: auto;
   }
 
-  &__option {
-    cursor: pointer;
-    color: #000000;
-    -webkit-appearance: none;
-    appearance: none;
-    background: none;
-    border: none;
-    outline: none;
-    padding: 0;
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    padding: .25rem;
+
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
     position: relative;
-    margin-right: 20px;
+    padding: .25rem;
+    box-sizing: border-box;
 
-    // Add a separator bar after every item in the locale picker...
-    &::after {
-      content: '|';
-      color: #000000;
-      display: inline-block;
-      position: absolute;
-      margin: 0 8px;
-    }
+    &--desktop {
+      flex-direction: row;
+      height: 100%;
 
-    // ...except for the last one
-    &:last-child {
-      margin-right: 0;
-
-      &::after {
-        content: none;
+      @media (max-width: 800px) {
+        display: none;
       }
     }
 
-    &[disabled] {
-      font-weight: bold;
-      color: #2F80ED;
-      cursor: default;
+    &--mobile {
+      flex-direction: row;
+      height: 100%;
+      position: relative;
+
+      @media (min-width: 800px) {
+        display: none;
+      }
     }
+
+    &__carrot {
+      background: none;
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      height: 1.5rem;
+      width: 1.5rem;
+      padding: .25rem;
+
+      &__image {
+        width: 60%;
+        height: 60%;
+
+        &--open {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &__dropdown-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 2rem;
+      z-index: 1;
+      padding: 1rem;
+      box-sizing: border-box;
+      background-color: white;
+      border-radius: .25rem;
+    }
+
+    &__option {
+      cursor: pointer;
+      color: #000000;
+      -webkit-appearance: none;
+      appearance: none;
+      background: none;
+      border: none;
+      outline: none;
+      padding: 0;
+      margin: .5rem;
+
+      &--hide {
+        display: none;
+      }
+
+      &--desktop {
+        // Add a separator bar after every item in the locale picker...
+        &::after {
+          content: '|';
+          color: #000000;
+          display: inline-block;
+          position: absolute;
+          margin-left: .5rem;
+        }
+
+        // ...except for the last one
+        &:last-child {
+          margin-right: 0;
+
+          &::after {
+            content: none;
+          }
+        }
+      }
+
+
+      &[disabled] {
+        font-weight: bold;
+        color: #2F80ED;
+        cursor: default;
+      }
+    }
+
   }
 }
+
