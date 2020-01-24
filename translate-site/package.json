@@ -5,11 +5,18 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack",
+    "start:auth-server": "nodemon server/bin/www.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "github-api": "^3.3.0",
+    "http-errors": "^1.7.3",
+    "morgan": "^1.9.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
@@ -21,6 +28,7 @@
     "css-loader": "^3.3.2",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.13.0",
+    "nodemon": "^2.0.2",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.1",
     "webpack-dev-server": "^3.9.0"

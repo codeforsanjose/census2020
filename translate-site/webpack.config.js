@@ -25,6 +25,11 @@ module.exports = {
       {
         test: /\.s?css$/,
         loaders: ['style-loader', 'css-loader', 'sass-loader']
+      },
+
+      {
+        test: /\.(eot|svg|otf|ttf|woff|woff2|png|jpe?g)$/,
+        use: 'file-loader'
       }
     ]
   },
@@ -32,5 +37,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'index.template.html')
     })
-  ]
+  ],
+
+  devtool: 'cheap-eval-sourcemap',
+
+  devServer: {
+    proxy: {
+      '/_/translations/auth': {
+        target: 'http://localhost:3000/'
+      }
+    }
+  }
 };
