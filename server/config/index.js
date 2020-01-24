@@ -24,5 +24,9 @@ module.exports = {
     confirmationMessage: {
       fromAddress: process.env.MAIL_CONFIRMATION_FROM_ADDRESS
     }
+  },
+  github: {
+    appId: process.env.CENSUS2020_GITHUB_APP_ID,
+    appSecret: process.env.CENSUS2020_GITHUB_APP_SECRET
   }
 };
