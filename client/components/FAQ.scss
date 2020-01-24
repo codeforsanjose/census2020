@@ -1,15 +1,19 @@
 .c_faq {
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__body {
-    padding: 63px;
+    padding: 1rem;
+    max-width: 800px; 
   }
 
   &__header {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bold;
     color: #01131F;
-    margin-bottom: 80px;
+    padding: 0;
   }
 
 
