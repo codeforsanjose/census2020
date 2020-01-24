@@ -1,6 +1,7 @@
 const path = require('path');
 const baseWebpackConfig = require('../../../webpack.config');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 baseWebpackConfig.mode = process.env.NODE_ENV || 'development';
 
@@ -16,11 +17,26 @@ baseWebpackConfig.output = {
   libraryTarget: 'commonjs2'
 };
 
+for (const rule of baseWebpackConfig.module.rules) {
+  if (rule.test.toString() === /\.s?css$/.toString()) {
+    rule.loaders = [
+      // This removes the CSS from the compiled components; we are not
+      // currently doing anything with the resulting CSS, since it's
+      // used in email bodies, this is just removing the CSS.
+      MiniCssExtractPlugin.loader,
+      'css-loader',
+      'sass-loader'
+    ];
+  }
+}
+
 baseWebpackConfig.target = 'node';
 
 baseWebpackConfig.plugins = (baseWebpackConfig.plugins || []).filter(
   (plugin) => !(plugin instanceof HtmlWebpackPlugin)
 );
+
+baseWebpackConfig.plugins.push(new MiniCssExtractPlugin());
 
 if (!baseWebpackConfig.resolve) {
   baseWebpackConfig.resolve = {};
@@ -37,5 +53,12 @@ baseWebpackConfig.resolve.alias = Object.assign(
 baseWebpackConfig.externals = [
   /node_modules/
 ];
+
+console.log(`\n\n===================WEBPACK CONFIG======================\n\n`, JSON.stringify(baseWebpackConfig, (key, value) => {
+  if (value instanceof RegExp) {
+    return value.toString();
+  }
+  return value;
+}, '  '));
 
 module.exports = baseWebpackConfig;
