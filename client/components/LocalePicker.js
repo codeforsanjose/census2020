@@ -10,6 +10,7 @@ import './LocalePicker.scss';
 import classnames from 'classnames'
 
 import globe from '../images/globe.svg'
+import triangle from '../images/triangle.svg'
 
 export const LocalePicker = () => {
   const [open, setOpen] = useState(false)
@@ -60,7 +61,13 @@ export const LocalePicker = () => {
               <button
                 className="c_locale-picker__container__carrot"
                 onClick={() => setOpen(!open)}>
-                { (open) ? '>' : '<'}
+                <img
+                  src={triangle}
+                  className={classnames(
+                    "c_locale-picker__container__carrot__image",
+                    {"c_locale-picker__container__carrot__image--open": open}
+                  )} 
+                />
               </button>
               { open && (
                 <div

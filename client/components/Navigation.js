@@ -7,6 +7,9 @@ import { FormattedMessage } from 'react-intl';
 import './Navigation.scss';
 import { LocalePicker } from './LocalePicker';
 import logoUrl from '../images/CityOfSanJose_logo.png';
+import menu from '../images/menu.svg'
+import close from '../images/close.svg'
+
 
 /**
  * @param {object} props
@@ -107,21 +110,6 @@ export default class Navigation extends React.PureComponent {
   }
 }
 
-/*
-        { window.innerWidth > 800 && (
-          <a
-            href="https://census.gov"
-            className="c_navigation__census-link"
-          >
-            <FormattedMessage
-              id="take-the-census-link"
-              description="Link to the Census"
-              defaultMessage="Take the Census"
-            />
-          </a>
-        )}
-*/
-
 const MobileMenu = () => {
   const [open, setOpen] = useState(false)
   return (
@@ -129,7 +117,10 @@ const MobileMenu = () => {
       <button 
         className="c_mobile-menu__hamburger"
         onClick={() => setOpen(!open)}>
-        =
+        <img
+          src={(open) ? close : menu}
+          className="c_mobile-menu__hamburger__image"
+        />
       </button>
         <div className={classnames(
           "c_mobile-menu__drawer",

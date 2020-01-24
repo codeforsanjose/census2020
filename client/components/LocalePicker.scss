@@ -4,6 +4,7 @@
   align-items: center;
   font-size: .8rem;
   padding: .25rem;
+  margin: 0 2rem 0 2rem;
 
   @media (max-width: 800px) {
     margin-left: auto;
@@ -54,7 +55,17 @@
       outline: none;
       height: 1.5rem;
       width: 1.5rem;
-      padding: 0;
+      padding: .25rem;
+
+      &__image {
+        width: 60%;
+        height: 60%;
+        //background-image: url('../images/triangle.svg');
+
+        &--open {
+          transform: rotate(180deg);
+        }
+      }
     }
 
     &__dropdown-container {

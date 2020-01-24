@@ -91,6 +91,10 @@
     border-radius: 5px;
     width: 260px;
 
+    @media (max-width: 800px) {
+
+    }
+
     &,
     &:hover,
     &:active,
@@ -107,7 +111,26 @@
   }
 
   &__hamburger {
+    height: 2rem;
+    width: 2rem;
+    padding: .25rem;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
 
+    &__image {
+      height: 100%;
+      width: 100%;
+      background-color: transparent;
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
   }
 
   &__drawer {
