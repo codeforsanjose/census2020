@@ -1,58 +1,176 @@
 import Github from 'github-api';
 
-const githubClient = localStorage.getItem('GITHUB_TOKEN')
-  ? new Github({
-    token: localStorage.getItem('GITHUB_TOKEN')
-  })
-  : null;
+let githubClient = null;
 
-const REPO_NAME = 'turnerhayes/census2020';
+const BRANCH_LABEL = 'translation_updates';
 
-const [repoUser, repoName] = REPO_NAME.split('/');
+let getRepoPromise;
 
-const getRepoPromise = githubClient
-  ? githubClient.getRepo(repoUser, repoName)
-  : Promise.reject(new Error('Not authenticated to Github'));
+let repoName;
+let repoUser;
 
-export const getPRs = async () => {
-  const repo = await getRepoPromise;
+let getPullRequests;
+let updatePullRequest;
+let makePullRequest;
 
-  const prs = await repo.listPullRequests({
-  });
+if (process.env.GITHUB_REPO) {
+  [repoUser, repoName] = process.env.GITHUB_REPO.split('/');
 
-  return prs;
-};
+  githubClient = localStorage.getItem('GITHUB_TOKEN')
+    ? new Github({
+      token: localStorage.getItem('GITHUB_TOKEN')
+    })
+    : null;
 
-const generateBranchName = async () => {
-  const user = await githubClient.getUser().getProfile();
-  const username = user.data.login;
-  const date = new Date();
-  let month = date.getMonth() + 1;
-  let day = date.getDate();
-  const year = date.getFullYear();
-  if (month < 10) {
-    month = '0' + month;
-  }
-  if (day < 10) {
-    day = '0' + day;
-  }
-  return `translations-${username}-${year}-${month}-${day}`;
-};
+  getRepoPromise = githubClient
+    ? Promise.resolve(githubClient.getRepo(repoUser, repoName))
+    : Promise.reject(new Error('Not authenticated to Github'));
 
-const createBranch = async (base = 'master') => {
-  const repo = await getRepoPromise;
-  const ref = await repo.getRef(`heads/${base}`);
-  console.log('ref:', ref);
-  const branchName = await generateBranchName();
-  const newBranch = await repo.createBranch(base, branchName);
-  console.log(newBranch);
-  return newBranch;
-};
+  const generateBranchName = async () => {
+    if (githubClient === null) {
+      return getRepoPromise;
+    }
+    const { data: user } = await githubClient.getUser().getProfile();
+    const username = user.login;
+    return `translations-${username}-${Date.now()}`;
+  };
 
-export const makePR = async () => {
-  const openPRs = await getPRs();
-  console.log(openPRs);
-  if (openPRs.data.length === 0) {
-    await createBranch();
-  }
-};
+  const createBranch = async (base = 'master') => {
+    const repo = await getRepoPromise;
+    const branchName = await generateBranchName();
+    const newBranch = await repo.createBranch(base, branchName);
+    return newBranch;
+  };
+
+  const writeToBranch = (translations, branchName) => {
+    const locales = Object.keys(translations);
+    function notifier (handler) {
+      notifier.handler = handler;
+    };
+    let completed = 0;
+    const progressEvents = [];
+    const notifyProgress = (locale) => {
+      progressEvents.push({
+        locale,
+        completed: ++completed,
+        total: locales.length
+      });
+      if (notifier.handler) {
+        while (progressEvents.length > 0) {
+          notifier.handler(progressEvents.shift());
+        }
+      }
+    };
+    let promise = Promise.resolve();
+    if (branchName instanceof Promise) {
+      promise = branchName.then((name) => {
+        branchName = name;
+      });
+    }
+    promise = promise.then(() => getRepoPromise.then((repo) => {
+      let nextPromise = Promise.resolve();
+      for (const locale of locales) {
+        const filePath = `i18n/translations/translations.${locale}.json`;
+        // Note: it appears that writes must be sequential; if writing in parallel,
+        // you can get errors, seemingly because the Github API is "busy"
+        nextPromise = nextPromise.then(
+          () => repo.writeFile(
+            branchName,
+            filePath,
+            JSON.stringify(translations[locale], null, '  '),
+            `Translation files updated at ${new Date()}`,
+            {}
+          )
+        );
+        nextPromise.then(
+          () => {
+            notifyProgress(locale);
+          }
+        );
+      }
+      return nextPromise;
+    }));
+
+    return {
+      promise,
+      progressNotifier: notifier
+    };
+  };
+
+  getPullRequests = async () => {
+    if (githubClient === null) {
+      return getRepoPromise;
+    }
+    const { data: user } = await githubClient.getUser().getProfile();
+
+    const prs = await githubClient.search().forIssues({
+      q: [
+        `author:${user.login}`,
+        'type:pr',
+        'state:open',
+        `repo:${process.env.GITHUB_REPO}`,
+        'label:auto_created_translation'
+      ].join(' ')
+    });
+
+    return prs.data;
+  };
+
+  updatePullRequest = ({
+    translations,
+    number
+  }) => {
+    return writeToBranch(translations, getRepoPromise.then(
+      (repo) => repo.getPullRequest(number)
+    ).then(({ data }) => {
+      return data.head.ref;
+    }));
+  };
+
+  makePullRequest = ({
+    translations,
+    branchName
+  }) => {
+    let promise;
+    if (branchName) {
+      promise = Promise.resolve(branchName);
+    } else {
+      promise = createBranch().then((branch) => {
+        branchName = branch.ref.replace(/^refs\/heads\//, '');
+      });
+    }
+
+    const { promise: writePromise, progressNotifier } = writeToBranch(translations, promise);
+    promise = writePromise.then(() => {
+      let writePromise;
+      return writePromise;
+    }).then(async () => {
+      const repo = await getRepoPromise;
+      const { data: pr } = await repo.createPullRequest({
+        title: `Update translations for ${Object.keys(translations).join(', ')}`,
+        head: branchName,
+        base: 'master'
+      });
+      await githubClient.getIssues(pr.user.login, repoName).editIssue(pr.number, {
+        labels: [
+          BRANCH_LABEL
+        ]
+      });
+    });
+
+    return {
+      promise,
+      progressNotifier
+    };
+  };
+} else {
+  getPullRequests = updatePullRequest = makePullRequest = () => {
+    throw new Error('Github integration is not enabled');
+  };
+}
+
+export { getPullRequests };
+
+export { updatePullRequest };
+
+export { makePullRequest };

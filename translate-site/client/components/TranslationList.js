@@ -3,34 +3,31 @@ import PropTypes from 'prop-types';
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
 import { IntlProvider } from 'react-intl';
-import { makePR } from '../github';
+import { toast } from 'react-toastify';
+import * as Immutable from 'immutable';
+
+import { makePullRequest, updatePullRequest, getPullRequests } from '../github';
 import { supportedLocales, supportedLocaleEnglishNames } from '../../../i18n/supported-locales';
 import { FormattedMarkdownMessage } from '../../../client/components/FormattedMarkdownMessage';
 import { messages } from '../../../i18n/translations';
 import definitions from '../../../i18n/translations/definitions';
+import { PullRequestDialog } from './PullRequestDialog';
 import './TranslationList.scss';
+import 'react-toastify/dist/ReactToastify.css';
 
-let globalMessageCopy = JSON.parse(JSON.stringify(messages));
+const immutableMessages = Immutable.fromJS(messages);
+let globalMessageCopy = immutableMessages;
 
 const areMessagesEqual = (obj1, obj2) => {
-  for (const key of Object.keys(obj1)) {
-    const val = obj1[key];
-    if (typeof val !== 'string') {
-      return areMessagesEqual(val, obj2[key]);
-    }
-    if (obj1[key] !== obj2[key]) {
-      return false;
-    }
-  }
-  return true;
+  return Immutable.is(obj1, obj2);
 };
 
 const getUpdatedTranslations = (locale) => {
-  return Object.keys(globalMessageCopy[locale]).reduce(
-    (translations, key) => {
+  return globalMessageCopy.get(locale).reduce(
+    (translations, value, key) => {
       translations[key] = {
-        translation: globalMessageCopy[locale][key],
-        english: messages.en[key]
+        english: messages.en[key],
+        translation: value
       };
       return translations;
     },
@@ -41,9 +38,9 @@ const getUpdatedTranslations = (locale) => {
 const getAllTranslationsZipped = () => {
   const zip = new JSZip();
 
-  for (const locale of Object.keys(globalMessageCopy)) {
+  globalMessageCopy.keySeq().forEach((locale) => {
     zip.file(`translations.${locale}.json`, JSON.stringify(getUpdatedTranslations(locale), null, '  '));
-  }
+  });
   return zip;
 };
 
@@ -87,13 +84,13 @@ const TranslationItem = ({ messageId, locale, onMessageChange, workingMessageCop
           ? null
           : (
             <div>
-              English message: {workingMessageCopy[messageId]}
+              English message: {workingMessageCopy.get(messageId)}
             </div>
           )
       }
       <textarea
         className="c_translation-item__input"
-        value={workingMessageCopy[messageId]}
+        value={workingMessageCopy.get(messageId)}
         onChange={handleInputChange}
       >
       </textarea>
@@ -120,22 +117,21 @@ TranslationItem.propTypes = {
 };
 
 const TranslationList = ({ currentLocale, filterString }) => {
-  const [ workingMessageCopy, setWorkingMessageCopy ] = React.useState(JSON.parse(JSON.stringify(messages[currentLocale])));
+  const [ workingMessageCopy, setWorkingMessageCopy ] = React.useState(immutableMessages.get(currentLocale));
   const [ showTranslated, setShowTranslated ] = React.useState(true);
-  const [ anyLocaleHasChanges, setAnyLocaleHasChanges ] = React.useState(!areMessagesEqual(messages, globalMessageCopy));
+  const [ anyLocaleHasChanges, setAnyLocaleHasChanges ] = React.useState(!areMessagesEqual(immutableMessages, globalMessageCopy));
+  const [ showPullRequestDialog, setShowPullRequestDialog ] = React.useState(false);
+  const [ openPullRequests, setOpenPullRequests ] = React.useState([]);
   const handleShowTranslatedChange = React.useCallback((event) => {
     setShowTranslated(event.target.checked);
   });
   const handleMessageChanged = React.useCallback((messageId, value) => {
-    setWorkingMessageCopy({
-      ...workingMessageCopy,
-      [messageId]: value
-    });
+    setWorkingMessageCopy(workingMessageCopy.set(messageId, value));
   });
 
   React.useEffect(() => {
-    globalMessageCopy[currentLocale] = workingMessageCopy;
-    const anyLocaleHasChanges = !areMessagesEqual(messages, globalMessageCopy);
+    globalMessageCopy = globalMessageCopy.set(currentLocale, workingMessageCopy);
+    const anyLocaleHasChanges = !areMessagesEqual(immutableMessages, globalMessageCopy);
     setAnyLocaleHasChanges(anyLocaleHasChanges);
   });
 
@@ -161,11 +157,63 @@ const TranslationList = ({ currentLocale, filterString }) => {
       });
   });
 
-  const handleMakePRButtonClick = React.useCallback(async () => {
-    await makePR();
+  const createOrUpdatePullRequest = React.useCallback(async ({ number } = {}) => {
+    const translations = {};
+    globalMessageCopy.keySeq().forEach((locale) => {
+      translations[locale] = getUpdatedTranslations(locale);
+    });
+    const toastId = toast('Updating pull request...', {
+      type: toast.TYPE.INFO,
+      position: toast.POSITION.BOTTOM_CENTER,
+      autoClose: false
+    });
+    let promise;
+    let progressNotifier;
+    if (number) {
+      ({ promise, progressNotifier } = updatePullRequest({
+        translations,
+        number
+      }));
+    } else {
+      ({ promise, progressNotifier } = makePullRequest({
+        translations
+      }));
+    }
+    progressNotifier(({ completed, total }) => {
+      toast.update(toastId, {
+        progress: completed / total
+      });
+    });
+    await promise;
+    toast.done(toastId);
   });
 
-  let messageIds = Object.keys(workingMessageCopy).filter(
+  const handleMakePRButtonClick = React.useCallback(async () => {
+    const toastId = toast('Checking existing pull requests...', {
+      type: toast.TYPE.INFO,
+      position: toast.POSITION.BOTTOM_CENTER,
+      autoClose: false
+    });
+    const prs = await getPullRequests();
+    toast.dismiss(toastId);
+    if (prs.length === 0) {
+      createOrUpdatePullRequest();
+      return;
+    }
+    setOpenPullRequests(prs);
+    setShowPullRequestDialog(true);
+  });
+
+  const closePullRequestDialog = React.useCallback(() => {
+    setShowPullRequestDialog(false);
+  });
+
+  const handlePullRequestChosen = React.useCallback((number) => {
+    closePullRequestDialog();
+    createOrUpdatePullRequest({ number });
+  });
+
+  let messageIds = workingMessageCopy.keySeq().filter(
     (messageId) => {
       let isMatch = true;
       if (!showTranslated) {
@@ -182,13 +230,19 @@ const TranslationList = ({ currentLocale, filterString }) => {
 
   return (
     <div>
+      <PullRequestDialog
+        isOpen={showPullRequestDialog}
+        onRequestClose={closePullRequestDialog}
+        onPullRequestChosen={handlePullRequestChosen}
+        pullRequests={openPullRequests}
+      />
       <header className="c_translation-list__header">
         <h2>Translations for {supportedLocaleEnglishNames[currentLocale]}</h2>
 
         <button
           type="button"
           onClick={handleDownloadButtonClick}
-          disabled={areMessagesEqual(messages[currentLocale], workingMessageCopy)}
+          disabled={areMessagesEqual(immutableMessages.get(currentLocale), workingMessageCopy)}
         >
           Download {supportedLocaleEnglishNames[currentLocale]} translations
         </button>
@@ -214,7 +268,7 @@ const TranslationList = ({ currentLocale, filterString }) => {
 
       <IntlProvider
         locale={currentLocale}
-        messages={workingMessageCopy}
+        messages={workingMessageCopy.toJS()}
       >
         <ul className="c_translation-list__list">
           {

@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import { ToastContainer } from 'react-toastify';
 import { TranslationList } from './TranslationList';
 import { AuthenticationScreen } from './AuthenticationScreen';
 
@@ -73,6 +74,7 @@ const App = () => {
           </React.Fragment>
         )
       }
+      <ToastContainer />
     </main>
   );
 };

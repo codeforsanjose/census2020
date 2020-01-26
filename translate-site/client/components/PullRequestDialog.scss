@@ -1,0 +1,14 @@
+.c_pull-request-dialog {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &__close-button {
+      -webkit-appearance: none;
+      background: none;
+      border: none;
+      width: 2em;
+      height: 2em;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import Modal from 'react-modal';
 import { App } from './components/App';
 
 import { supportedLocales } from '../../i18n/supported-locales';
@@ -14,11 +15,13 @@ const WrappedApp = () => {
 };
 
 const render = () => {
+  const rootElement = document.getElementById('app-container');
   // This is where we can insert routing logic
   ReactDOM.render(
     (<WrappedApp />),
-    document.getElementById('app-container')
+    rootElement
   );
+  Modal.setAppElement(rootElement);
 };
 
 async function initialize () {

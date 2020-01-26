@@ -1,7 +1,11 @@
-require('dotenv').config();
-
 const path = require('path');
+require('dotenv').config({
+  path: path.resolve(__dirname, '..', '.env')
+});
+
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Config = require('../server/config');
 
 module.exports = {
   entry: [
@@ -36,10 +40,17 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'index.template.html')
+    }),
+    new webpack.DefinePlugin({
+      'process.env.GITHUB_REPO': JSON.stringify(
+        Config.github.isEnabled
+          ? Config.github.repository
+          : null
+      )
     })
   ],
 
-  devtool: 'cheap-eval-sourcemap',
+  devtool: 'eval-source-map',
 
   devServer: {
     proxy: {
