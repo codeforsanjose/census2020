@@ -9,6 +9,7 @@ router.route('/').get((req, res, next) => {
   const url = new URL('https://github.com/login/oauth/authorize');
   url.searchParams.set('client_id', Config.github.appId);
   url.searchParams.set('redirect_uri', redirectUrl.toString());
+  url.searchParams.set('scope', 'public_repo');
   res.redirect(url);
 });
 

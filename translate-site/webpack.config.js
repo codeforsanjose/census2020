@@ -39,7 +39,7 @@ module.exports = {
     })
   ],
 
-  devtool: 'cheap-eval-sourcemap',
+  devtool: 'eval-source-map',
 
   devServer: {
     proxy: {

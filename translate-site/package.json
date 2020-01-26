@@ -17,6 +17,7 @@
     "github-api": "^3.3.0",
     "http-errors": "^1.7.3",
     "morgan": "^1.9.1",
+    "react-modal": "^3.11.1",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.8",
     "webpack": "^4.41.2",

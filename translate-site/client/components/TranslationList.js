@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
 import { IntlProvider } from 'react-intl';
-import { makePR } from '../github';
+import { makePullRequest, updatePullRequest, getPullRequests } from '../github';
 import { supportedLocales, supportedLocaleEnglishNames } from '../../../i18n/supported-locales';
 import { FormattedMarkdownMessage } from '../../../client/components/FormattedMarkdownMessage';
 import { messages } from '../../../i18n/translations';
 import definitions from '../../../i18n/translations/definitions';
 import './TranslationList.scss';
+import { PullRequestDialog } from './PullRequestDialog';
 
 let globalMessageCopy = JSON.parse(JSON.stringify(messages));
 
@@ -123,6 +124,8 @@ const TranslationList = ({ currentLocale, filterString }) => {
   const [ workingMessageCopy, setWorkingMessageCopy ] = React.useState(JSON.parse(JSON.stringify(messages[currentLocale])));
   const [ showTranslated, setShowTranslated ] = React.useState(true);
   const [ anyLocaleHasChanges, setAnyLocaleHasChanges ] = React.useState(!areMessagesEqual(messages, globalMessageCopy));
+  const [ showPullRequestDialog, setShowPullRequestDialog ] = React.useState(false);
+  const [ openPullRequests, setOpenPullRequests ] = React.useState([]);
   const handleShowTranslatedChange = React.useCallback((event) => {
     setShowTranslated(event.target.checked);
   });
@@ -161,8 +164,40 @@ const TranslationList = ({ currentLocale, filterString }) => {
       });
   });
 
+  const createOrUpdatePullRequest = React.useCallback(async ({ pullRequest } = {}) => {
+    const translations = {};
+    for (const locale of Object.keys(globalMessageCopy)) {
+      translations[locale] = getUpdatedTranslations(locale);
+    }
+    if (!pullRequest) {
+      await makePullRequest({
+        translations
+      });
+    } else {
+      await updatePullRequest({
+        translations,
+        pullRequest
+      });
+    }
+  });
+
   const handleMakePRButtonClick = React.useCallback(async () => {
-    await makePR();
+    const prs = await getPullRequests();
+    if (prs.length === 0) {
+      createOrUpdatePullRequest();
+      return;
+    }
+    setOpenPullRequests(prs);
+    setShowPullRequestDialog(true);
+  });
+
+  const closePullRequestDialog = React.useCallback(() => {
+    setShowPullRequestDialog(false);
+  });
+
+  const handlePullRequestChosen = React.useCallback((pullRequest) => {
+    closePullRequestDialog();
+    createOrUpdatePullRequest({ pullRequest });
   });
 
   let messageIds = Object.keys(workingMessageCopy).filter(
@@ -182,6 +217,12 @@ const TranslationList = ({ currentLocale, filterString }) => {
 
   return (
     <div>
+      <PullRequestDialog
+        isOpen={showPullRequestDialog}
+        onRequestClose={closePullRequestDialog}
+        onPullRequestChosen={handlePullRequestChosen}
+        pullRequests={openPullRequests}
+      />
       <header className="c_translation-list__header">
         <h2>Translations for {supportedLocaleEnglishNames[currentLocale]}</h2>
 
