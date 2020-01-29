@@ -7,9 +7,8 @@ import { FormattedMessage } from 'react-intl';
 import './Navigation.scss';
 import { LocalePicker } from './LocalePicker';
 import logoUrl from '../images/CityOfSanJose_logo.png';
-import menu from '../images/menu.svg'
-import close from '../images/close.svg'
-
+import menu from '../images/menu.svg';
+import close from '../images/close.svg';
 
 /**
  * @param {object} props
@@ -63,8 +62,8 @@ export default class Navigation extends React.PureComponent {
           />
         </div>
         <div className={classnames(
-          "c_navigation__links",
-          "c_navigation__links--desktop"
+          'c_navigation__links',
+          'c_navigation__links--desktop'
         )}>
           <NavLink
             path="/"
@@ -111,10 +110,10 @@ export default class Navigation extends React.PureComponent {
 }
 
 const MobileMenu = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   return (
     <div className="c_mobile-menu">
-      <button 
+      <button
         className="c_mobile-menu__hamburger"
         onClick={() => setOpen(!open)}>
         <img
@@ -122,41 +121,41 @@ const MobileMenu = () => {
           className="c_mobile-menu__hamburger__image"
         />
       </button>
-        <div className={classnames(
-          "c_mobile-menu__drawer",
-          {"c_mobile-menu__drawer--active": open}
-        )}>
-          <div className="c_navigation__links">
-            <NavLink
-              path="/"
-            >
-              <FormattedMessage
-                id="navigation.links.home"
-                defaultMessage="Home"
-                description="'Home' link in the navigation bar"
-              />
-            </NavLink>
-            <NavLink
-              path="/faq"
-            >
-              <FormattedMessage
-                id="navigation.links.faq"
-                defaultMessage="FAQ"
-                description="'FAQ' link in the navigation bar"
-              />
-            </NavLink>
-            <NavLink
-              path="/samplecensus"
-            >
-              <FormattedMessage
-                id="navigation.links.sampleCensus"
-                defaultMessage="Sample Survey"
-                description="'Sample Survey' link in the navigation bar"
-              />
-            </NavLink>
-            <NavLink
-              path="/contact"
-            >
+      <div className={classnames(
+        'c_mobile-menu__drawer',
+        { 'c_mobile-menu__drawer--active': open }
+      )}>
+        <div className="c_navigation__links">
+          <NavLink
+            path="/"
+          >
+            <FormattedMessage
+              id="navigation.links.home"
+              defaultMessage="Home"
+              description="'Home' link in the navigation bar"
+            />
+          </NavLink>
+          <NavLink
+            path="/faq"
+          >
+            <FormattedMessage
+              id="navigation.links.faq"
+              defaultMessage="FAQ"
+              description="'FAQ' link in the navigation bar"
+            />
+          </NavLink>
+          <NavLink
+            path="/samplecensus"
+          >
+            <FormattedMessage
+              id="navigation.links.sampleCensus"
+              defaultMessage="Sample Survey"
+              description="'Sample Survey' link in the navigation bar"
+            />
+          </NavLink>
+          <NavLink
+            path="/contact"
+          >
             <FormattedMessage
               id="navigation.links.contact"
               defaultMessage="Get Involved"
@@ -166,8 +165,8 @@ const MobileMenu = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const NavigationLinksLarge = () => (
   <div className="c_navigation__links">
@@ -208,4 +207,4 @@ const NavigationLinksLarge = () => (
       />
     </NavLink>
   </div>
-)
+);
