@@ -14,6 +14,8 @@ const writeFile = promisify(require('fs').writeFile);
 const { Translate } = require('@google-cloud/translate').v2;
 const { supportedLocales } = require('./supported-locales');
 
+const MAX_TEXT_SEGMENTS = 128;
+
 const trans = new Translate({
 });
 
@@ -42,17 +44,28 @@ for (const locale of supportedLocales) {
   if (messagesToTranslate.length === 0) {
     continue;
   }
-  transPromises.push(
-    translateText(messagesToTranslate, locale).then(
-      (translations) => {
-        for (let i = 0; i < idsToTranslate.length; i++) {
-          messages[idsToTranslate[i]].translation = translations[i];
+  const groupPromises = [];
+  // API enforces a max # of text segments
+  for (let i = 0; i < messagesToTranslate.length;) {
+    const currentOffset = i;
+    const group = messagesToTranslate.slice(i, i + MAX_TEXT_SEGMENTS);
+    groupPromises.push(
+      translateText(group, locale).then(
+        (translations) => {
+          for (let j = 0; j < group.length; j++) {
+            messages[idsToTranslate[currentOffset + j]].translation = translations[j];
+          }
         }
-      }
-    ).then(
-      () => writeFile(translationFilePath, JSON.stringify(messages, null, '  '))
-    )
-  );
+      )
+    );
+    i += group.length;
+  }
+
+  transPromises.push(Promise.all(groupPromises).then(
+    () => {
+      writeFile(translationFilePath, JSON.stringify(messages, null, '  '));
+    }
+  ));
 }
 
 Promise.all(transPromises).then(
