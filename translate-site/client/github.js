@@ -67,7 +67,11 @@ if (process.env.GITHUB_REPO) {
         branchName = name;
       });
     }
-    promise = promise.then(() => getRepoPromise.then((repo) => {
+    promise = promise.then(async () => {
+      if (!branchName) {
+        throw new Error(`Must specify a branch name to write files to`);
+      }
+      const repo = await getRepoPromise;
       let nextPromise = Promise.resolve();
       for (const locale of locales) {
         const filePath = `i18n/translations/translations.${locale}.json`;
@@ -89,7 +93,7 @@ if (process.env.GITHUB_REPO) {
         );
       }
       return nextPromise;
-    }));
+    });
 
     return {
       promise,

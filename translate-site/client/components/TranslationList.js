@@ -15,7 +15,10 @@ import { PullRequestDialog } from './PullRequestDialog';
 import './TranslationList.scss';
 import 'react-toastify/dist/ReactToastify.css';
 
-const immutableMessages = Immutable.fromJS(messages);
+const immutableMessages = Immutable.fromJS(messages, (key, value) => {
+  const isIndexed = Immutable.Iterable.isIndexed(value);
+  return isIndexed ? value.toList() : value.toOrderedMap();
+});
 let globalMessageCopy = immutableMessages;
 
 const areMessagesEqual = (obj1, obj2) => {
