@@ -165,6 +165,7 @@ const TranslationList = ({ currentLocale, filterString }) => {
     globalMessageCopy.keySeq().forEach((locale) => {
       translations[locale] = getUpdatedTranslations(locale);
     });
+    const position = toast.POSITION.BOTTOM_CENTER;
     const toastMessage = `${
       number
         ? 'Updating'
@@ -172,44 +173,101 @@ const TranslationList = ({ currentLocale, filterString }) => {
     } pull request...`;
     const toastId = toast(toastMessage, {
       type: toast.TYPE.INFO,
-      position: toast.POSITION.BOTTOM_CENTER,
+      position,
       autoClose: false
     });
-    let promise;
-    let progressNotifier;
-    if (number) {
-      ({ promise, progressNotifier } = updatePullRequest({
-        translations,
-        number
-      }));
-    } else {
-      ({ promise, progressNotifier } = makePullRequest({
-        translations
-      }));
-    }
-    progressNotifier(({ completed, total }) => {
-      toast.update(toastId, {
-        progress: completed / total
+    try {
+      let promise;
+      let progressNotifier;
+      if (number) {
+        ({ promise, progressNotifier } = updatePullRequest({
+          translations,
+          number
+        }));
+      } else {
+        ({ promise, progressNotifier } = makePullRequest({
+          translations
+        }));
+      }
+      progressNotifier(({ completed, total }) => {
+        toast.update(toastId, {
+          progress: completed / total
+        });
       });
-    });
-    await promise;
-    toast.done(toastId);
+
+      const pullRequest = await promise;
+      toast.done(toastId);
+      toast(
+        (
+          <React.Fragment>
+            {
+              `${
+                number
+                  ? 'Updated'
+                  : 'Created'
+              } pull request`
+            }
+            <a
+              href={pullRequest.html_url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              VIEW
+            </a>
+          </React.Fragment>
+        ),
+        {
+          type: toast.TYPE.SUCCESS,
+          position
+        }
+      );
+    } catch (ex) {
+      toast.dismiss(toastId);
+      toast(`Error ${
+        number
+          ? 'updating'
+          : 'creating'
+      } pull request; try downloading the translated files instead.`,
+      {
+        type: toast.TYPE.ERROR,
+        position
+      });
+    }
   });
 
   const handleMakePRButtonClick = React.useCallback(async () => {
-    const toastId = toast('Checking existing pull requests...', {
-      type: toast.TYPE.INFO,
-      position: toast.POSITION.BOTTOM_CENTER,
-      autoClose: false
-    });
+    let toastId;
+    let creatingNew = false;
+    const onCreateNewClick = () => {
+      createOrUpdatePullRequest();
+      toast.dismiss(toastId);
+      creatingNew = true;
+    };
+
+    toastId = toast(
+      (
+        <React.Fragment>
+          Checking existing pull requests...
+          <button type="button" onClick={onCreateNewClick}>
+            NEW PR
+          </button>
+        </React.Fragment>
+      ), {
+        type: toast.TYPE.INFO,
+        position: toast.POSITION.BOTTOM_CENTER,
+        autoClose: false
+      }
+    );
     const prs = await getPullRequests();
     toast.dismiss(toastId);
-    if (prs.length === 0) {
-      createOrUpdatePullRequest();
-      return;
+    if (!creatingNew) {
+      if (prs.length === 0) {
+        createOrUpdatePullRequest();
+        return;
+      }
+      setOpenPullRequests(prs);
+      setShowPullRequestDialog(true);
     }
-    setOpenPullRequests(prs);
-    setShowPullRequestDialog(true);
   });
 
   const closePullRequestDialog = React.useCallback(() => {

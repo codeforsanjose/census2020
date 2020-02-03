@@ -117,6 +117,10 @@ if (process.env.GITHUB_REPO) {
       ].join(' ')
     });
 
+    await new Promise((resolve) => {
+      setTimeout(resolve, 5000);
+    });
+
     return prs.data;
   };
 
@@ -124,11 +128,20 @@ if (process.env.GITHUB_REPO) {
     translations,
     number
   }) => {
-    return writeToBranch(translations, getRepoPromise.then(
+    const { promise, progressNotifier } = writeToBranch(translations, getRepoPromise.then(
       (repo) => repo.getPullRequest(number)
     ).then(({ data }) => {
       return data.head.ref;
     }));
+
+    return {
+      progressNotifier,
+      promise: promise.then(async () => {
+        const repo = await getRepoPromise;
+        const { data } = await repo.getPullRequest(number);
+        return data;
+      })
+    };
   };
 
   makePullRequest = ({
@@ -141,6 +154,7 @@ if (process.env.GITHUB_REPO) {
     } else {
       promise = createBranch().then((branch) => {
         branchName = branch.ref.replace(/^refs\/heads\//, '');
+        return branchName;
       });
     }
 

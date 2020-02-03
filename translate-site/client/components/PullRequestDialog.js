@@ -24,7 +24,10 @@ export const PullRequestDialog = ({ onRequestClose, onPullRequestChosen, isOpen,
       <ul>
         {pullRequests.map((pr, index) => (
           <li key={index}>
-            <a href={pr.html_url} target="blank">#{pr.number}</a> {pr.title} (created {new Date(pr.created_at).toLocaleDateString()})
+            <a
+              href={pr.html_url}
+              target="_blank"
+              rel="noopener noreferrer">#{pr.number}</a> {pr.title} (created {new Date(pr.created_at).toLocaleDateString()})
             <button type="button" onClick={() => onPullRequestChosen(pr.number)}>Choose</button>
           </li>
         ))}
