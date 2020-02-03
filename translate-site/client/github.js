@@ -22,13 +22,20 @@ if (process.env.GITHUB_REPO) {
     })
     : null;
 
-  getRepoPromise = githubClient
-    ? Promise.resolve(githubClient.getRepo(repoUser, repoName))
-    : Promise.reject(new Error('Not authenticated to Github'));
+  // eslint-disable-next-line no-inner-declarations
+  async function getRepo () {
+    if (!githubClient) {
+      throw new Error('Not authenticated to Github');
+    }
+    if (!getRepoPromise) {
+      getRepoPromise = Promise.resolve(githubClient.getRepo(repoUser, repoName));
+    }
+    return getRepoPromise;
+  }
 
   const generateBranchName = async () => {
     if (githubClient === null) {
-      return getRepoPromise;
+      return getRepo();
     }
     const { data: user } = await githubClient.getUser().getProfile();
     const username = user.login;
@@ -36,7 +43,7 @@ if (process.env.GITHUB_REPO) {
   };
 
   const createBranch = async (base = 'master') => {
-    const repo = await getRepoPromise;
+    const repo = await getRepo();
     const branchName = await generateBranchName();
     const newBranch = await repo.createBranch(base, branchName);
     return newBranch.data;
@@ -71,7 +78,7 @@ if (process.env.GITHUB_REPO) {
       if (!branchName) {
         throw new Error(`Must specify a branch name to write files to`);
       }
-      const repo = await getRepoPromise;
+      const repo = await getRepo();
       let nextPromise = Promise.resolve();
       for (const locale of locales) {
         const filePath = `i18n/translations/translations.${locale}.json`;
@@ -103,7 +110,7 @@ if (process.env.GITHUB_REPO) {
 
   getPullRequests = async () => {
     if (githubClient === null) {
-      return getRepoPromise;
+      return getRepo();
     }
     const { data: user } = await githubClient.getUser().getProfile();
 
@@ -128,7 +135,7 @@ if (process.env.GITHUB_REPO) {
     translations,
     number
   }) => {
-    const { promise, progressNotifier } = writeToBranch(translations, getRepoPromise.then(
+    const { promise, progressNotifier } = writeToBranch(translations, getRepo().then(
       (repo) => repo.getPullRequest(number)
     ).then(({ data }) => {
       return data.head.ref;
@@ -137,7 +144,7 @@ if (process.env.GITHUB_REPO) {
     return {
       progressNotifier,
       promise: promise.then(async () => {
-        const repo = await getRepoPromise;
+        const repo = await getRepo();
         const { data } = await repo.getPullRequest(number);
         return data;
       })
@@ -160,7 +167,7 @@ if (process.env.GITHUB_REPO) {
 
     const { promise: writePromise, progressNotifier } = writeToBranch(translations, promise);
     promise = writePromise.then(async () => {
-      const repo = await getRepoPromise;
+      const repo = await getRepo();
       const { data: pr } = await repo.createPullRequest({
         title: `Update translations for ${Object.keys(translations).join(', ')}`,
         head: branchName,
