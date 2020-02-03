@@ -39,7 +39,7 @@ if (process.env.GITHUB_REPO) {
     const repo = await getRepoPromise;
     const branchName = await generateBranchName();
     const newBranch = await repo.createBranch(base, branchName);
-    return newBranch;
+    return newBranch.data;
   };
 
   const writeToBranch = (translations, branchName) => {
@@ -141,10 +141,7 @@ if (process.env.GITHUB_REPO) {
     }
 
     const { promise: writePromise, progressNotifier } = writeToBranch(translations, promise);
-    promise = writePromise.then(() => {
-      let writePromise;
-      return writePromise;
-    }).then(async () => {
+    promise = writePromise.then(async () => {
       const repo = await getRepoPromise;
       const { data: pr } = await repo.createPullRequest({
         title: `Update translations for ${Object.keys(translations).join(', ')}`,
@@ -156,6 +153,7 @@ if (process.env.GITHUB_REPO) {
           BRANCH_LABEL
         ]
       });
+      return pr;
     });
 
     return {

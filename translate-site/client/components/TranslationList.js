@@ -162,7 +162,12 @@ const TranslationList = ({ currentLocale, filterString }) => {
     globalMessageCopy.keySeq().forEach((locale) => {
       translations[locale] = getUpdatedTranslations(locale);
     });
-    const toastId = toast('Updating pull request...', {
+    const toastMessage = `${
+      number
+        ? 'Updating'
+        : 'Creating'
+    } pull request...`;
+    const toastId = toast(toastMessage, {
       type: toast.TYPE.INFO,
       position: toast.POSITION.BOTTOM_CENTER,
       autoClose: false
