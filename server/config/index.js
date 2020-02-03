@@ -2,6 +2,11 @@ const environment = process.env.NODE_ENV || 'development';
 
 const DEFAULT_PORT = 3000;
 
+const githubRepo = process.env.CENSUS2020_GITHUB_REPO;
+if (githubRepo && !/^\w+\/\w+$/.test(githubRepo)) {
+  throw new Error(`${githubRepo} is not a valid Github repository name`);
+}
+
 module.exports = {
   app: {
     environment,
@@ -24,5 +29,11 @@ module.exports = {
     confirmationMessage: {
       fromAddress: process.env.MAIL_CONFIRMATION_FROM_ADDRESS
     }
+  },
+  github: {
+    isEnabled: Boolean(githubRepo),
+    repository: githubRepo,
+    appId: process.env.CENSUS2020_GITHUB_APP_ID,
+    appSecret: process.env.CENSUS2020_GITHUB_APP_SECRET
   }
 };
