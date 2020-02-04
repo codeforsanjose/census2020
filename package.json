@@ -9,6 +9,7 @@
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.prod.config.js",
     "start:production": "cross-env NODE_ENV=production node --icu-data-dir=node_modules/full-icu ./server/server.js",
     "start:development": "cross-env NODE_ENV=development nodemon --icu-data-dir=node_modules/full-icu ./server/server.js",
+    "start:translation": "cross-env NODE_ENV=production npm run translation-site:install && cross-env NODE_ENV=production npm run translation-site:build && cross-env NODE_ENV=production npm run translation-site",
     "i18n:extract": "node ./i18n/extract-strings.js",
     "i18n:check": "node ./i18n/check-translations.js",
     "lint": "eslint .",
@@ -19,7 +20,8 @@
     "translation-site:install-if-enabled": "if-env-defined CENSUS2020_SERVE_TRANSLATE_SITE && npm run translation-site:install && npm run translation-site:build || exit 0",
     "translation-site:install": "npm install --prefix translate-site",
     "translation-site:build": "npm run build --prefix translate-site",
-    "translation-site:development": "cross-env npm start --prefix translate-site"
+    "translation-site:development": "cross-env NODE_ENV=development npm start --prefix translate-site",
+    "translation-site:production": "cross-env NODE_ENV=production npm start --prefix translate-site"
   },
   "author": "Code for San Jose",
   "license": "MIT",
