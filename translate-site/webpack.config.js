@@ -54,7 +54,7 @@ module.exports = {
 
   devServer: {
     proxy: {
-      '/_/translations/auth': {
+      '/auth': {
         target: 'http://localhost:3000/'
       }
     }
