@@ -54,11 +54,4 @@ baseWebpackConfig.externals = [
   /node_modules/
 ];
 
-console.log(`\n\n===================WEBPACK CONFIG======================\n\n`, JSON.stringify(baseWebpackConfig, (key, value) => {
-  if (value instanceof RegExp) {
-    return value.toString();
-  }
-  return value;
-}, '  '));
-
 module.exports = baseWebpackConfig;

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "per-env",
+    "start:development": "webpack-dev-server",
+    "start:production": "node server/bin/www.js",
     "build": "webpack",
     "start:auth-server": "nodemon server/bin/www.js"
   },

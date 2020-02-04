@@ -14,7 +14,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/_/translations'
+    publicPath: '/'
   },
   module: {
     rules: [
