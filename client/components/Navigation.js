@@ -54,13 +54,15 @@ export default class Navigation extends React.PureComponent {
   render () {
     return (
       <nav className="c_navigation">
-        <div className="c_navigation__logo">
+        <Link
+          to="/" 
+          className="c_navigation__logo">
           <img
             className="c_navigation__logo__image"
             alt="City of San Jose logo"
             src={logoUrl}
           />
-        </div>
+        </Link>
         <div className={classnames(
           'c_navigation__links',
           'c_navigation__links--desktop'
