@@ -415,18 +415,6 @@
     "translation": "VER ENCUESTA DE MUESTRA",
     "english": "VIEW SAMPLE SURVEY"
   },
-  "components.FAQ.sections.generalInformation.header": {
-    "translation": "Información general",
-    "english": "General Information"
-  },
-  "components.FAQ.sections.security.header": {
-    "translation": "Seguridad",
-    "english": "Security"
-  },
-  "components.FAQ.sections.value.header": {
-    "translation": "Valor",
-    "english": "Value"
-  },
   "components.FAQ.entries.howCanIComplete.question": {
     "translation": "¿Cómo puedo completar el censo?",
     "english": "How can I complete the census?"
@@ -456,7 +444,7 @@
     "english": "How will the Census count homeless residents?"
   },
   "components.FAQ.entries.homeless.answer": {
-    "translation": "A fines de marzo de 2020, la Oficina del Censo llevará a cabo la enumeración basada en servicios (SBE). Durante este tiempo, los trabajadores del censo contarán a las personas sin vivienda convencional o personas sin hogar en los lugares donde reciben servicios (por ejemplo, refugios, comedores populares, ubicaciones de furgonetas móviles de comida programadas regularmente, etc.) o en lugares al aire libre previamente identificados donde las personas están que se sabe que duerme, como campamentos, debajo de puentes o en estacionamientos",
+    "translation": "A fines de marzo de 2020, la Oficina del Censo llevará a cabo la enumeración basada en servicios (SBE). Durante este tiempo, los trabajadores del censo contarán a las personas sin vivienda convencional o personas sin hogar en los lugares donde reciben servicios (por ejemplo, refugios, comedores populares, ubicaciones de furgonetas móviles de comida programadas regularmente, etc.) o en lugares al aire libre previamente identificados donde hay personas que se sabe que duerme, como campamentos, debajo de puentes o en estacionamientos",
     "english": "In late March 2020, the Census Bureau will conduct Service-Based Enumeration (SBE). During this time, Census workers will count people without conventional housing or people experiencing homelessness at places where they receive services (e.g., shelters, soup kitchens, regularly scheduled mobile food van locations, etc.) or at pre-identified outdoor locations where people are known to sleep — such as encampments, under bridges, or in parking lots"
   },
   "email.messages.confirmation.greeting": {
@@ -491,22 +479,6 @@
     "translation": "Gracias por contactar al Departamento del Censo de San José.",
     "english": "Thank you for contacting the San Jose Census Department"
   },
-  "components.FAQ.sections.basics.header": {
-    "translation": "Lo esencial",
-    "english": "Basics"
-  },
-  "components.FAQ.sections.about.header": {
-    "translation": "Sobre la encuesta",
-    "english": "About the Survey"
-  },
-  "components.FAQ.sections.gettingCounted.header": {
-    "translation": "Ser contado",
-    "english": "Getting Counted"
-  },
-  "components.FAQ.sections.language.header": {
-    "translation": "Acceso al lenguaje",
-    "english": "Language Access"
-  },
   "components.FAQ.sections.safety.header": {
     "translation": "Seguridad y privacidad",
     "english": "Safety and Privacy"
@@ -540,7 +512,7 @@
     "english": "Who counts as a \"household?\""
   },
   "components.FAQ.entries.whoCountsAsHousehold.answer": {
-    "translation": "Un hogar consta de todas las personas que ocupan una unidad de vivienda, tanto los miembros de la familia relacionados como todas las personas no relacionadas, si las hay, como inquilinos, hijos adoptivos, barrios o empleados que comparten la vivienda. Para obtener más información sobre con quién contar en su formulario del Censo, vaya a la URL a continuación.\n          \n{enlace}",
+    "translation": "Un hogar consiste en todas las personas que ocupan una unidad de vivienda, tanto los miembros de la familia relacionados como todas las personas no relacionadas, si las hay, como los inquilinos, los hijos adoptivos, los barrios o los empleados que comparten la vivienda. Para obtener más información sobre con quién contar en su formulario del Censo, vaya a la URL a continuación.\n          \n{enlace}",
     "english": "A household consists of all the people who occupy a housing unit, both related family members and all the unrelated people, if any, such as lodgers, foster children, wards, or employees who share the housing. For more information on who to count on your Census form go to the URL below.\n          \n{link}"
   },
   "components.FAQ.entries.lostCensusId.question": {
@@ -556,7 +528,7 @@
     "english": "What happens if I don’t respond to the Census?"
   },
   "components.FAQ.entries.whatHappensIfNoResponse.answer": {
-    "translation": "Si su hogar no responde en línea o por teléfono, la Oficina del Censo de EE. UU. Enviará por correo varios recordatorios a su hogar y finalmente le enviará un cuestionario impreso, en inglés y español, para que lo devuelva por correo.",
+    "translation": "Si su hogar no responde en línea o por teléfono, la Oficina del Censo de EE. UU. Enviará por correo varios recordatorios a su hogar y, en última instancia, le enviará un cuestionario impreso, en inglés y español, para que lo devuelva por correo.",
     "english": "If your household fails to respond online or by telephone, the U.S. Census Bureau will mail several reminders to your household and will ultimately mail you a printed questionnaire—in English and Spanish—for you to return by mail."
   },
   "components.FAQ.entries.whatHappensIfNoResponseAtAll.question": {
@@ -580,7 +552,7 @@
     "english": "Can another government agency access my census information?"
   },
   "components.FAQ.entries.canOtherAgenciesAccess.answer": {
-    "translation": "No. El Título 13 del Código de los EE. UU. Requiere que su información se mantenga confidencial y evita que sus respuestas sean utilizadas en su contra por cualquier agencia gubernamental, incluidas las fuerzas del orden, el Departamento de Seguridad Nacional o el Servicio de Inmigración y Control de Aduanas de los EE. UU. Todos los empleados de la Oficina del Censo prestan juramento de privacidad y juran de por vida para proteger la confidencialidad de los datos. La multa por divulgación ilegal es una multa de hasta $ 250,000, prisión de hasta 5 años, o ambas.",
+    "translation": "No. El Título 13 del Código de EE. UU. Requiere que su información se mantenga confidencial y evita que sus respuestas sean utilizadas en su contra por cualquier agencia gubernamental, incluidas las fuerzas del orden público, el Departamento de Seguridad Nacional o el Servicio de Inmigración y Control de Aduanas de EE. UU. Todos los empleados de la Oficina del Censo prestan juramento de privacidad y juran de por vida para proteger la confidencialidad de los datos. La multa por divulgación ilegal es una multa de hasta $ 250,000, prisión de hasta 5 años, o ambas.",
     "english": "No. Title 13 of the U.S. Code requires your information to be kept confidential and prevents your responses from being used against you by any government agency--including law enforcement, the Department of Homeland Security, or US Immigration and Customs Enforcement. All Census Bureau employees take an oath of privacy and are sworn for life to protect the confidentiality of the data. The penalty for unlawful disclosure is a fine of up to $250,000, imprisonment of up to 5 years, or both."
   },
   "components.FAQ.entries.howToIdentifyCensusWorker.question": {
@@ -611,7 +583,7 @@
     "translation": "Planificación de la infraestructura",
     "english": "Infrastructure planning"
   },
-  "Compnents.Home.top_reasons.item.4": {
+  "Compnents.Home.top_reasons.item.5": {
     "translation": "Planificación de respuesta a emergencias",
     "english": "Emergency response planning"
   },
@@ -704,11 +676,11 @@
     "english": "Someone else will answer the census for me"
   },
   "test": {
-    "translation": "- [] Casilla de verificación1\n  - [x] Casilla de verificación 2",
+    "translation": "- [ ] Casilla de verificación1\n  - [x] Casilla de verificación 2",
     "english": "- [ ] Checkbox1\n  - [x] Checkbox2"
   },
   "components.SampleCensus.secondary_information.2": {
-    "translation": "*Marque todo lo que corresponda*\n\n- [] Niños, relacionados o no relacionados, como recién nacidos, nietos o hijos adoptivos\n- [] Familiares, como hijos adultos, primos o suegros\n- [] No familiares, como compañeros de cuarto o niñeras que viven\n- [] Personas que se quedan aquí temporalmente\n- [] No hay personas adicionales",
+    "translation": "*Marque todo lo que corresponda*\n\n- [ ] Niños, relacionados o no relacionados, como recién nacidos, nietos o hijos adoptivos\n- [ ] Familiares, como hijos adultos, primos o suegros\n- [ ] No familiares, como compañeros de cuarto o niñeras que viven\n- [ ] Personas que se quedan aquí temporalmente\n- [ ] No hay personas adicionales",
     "english": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people"
   },
   "components.SampleCensus.primary_question.3": {
@@ -716,7 +688,7 @@
     "english": "Is this house, apartment, or mobile home:"
   },
   "components.SampleCensus.secondary_information.3": {
-    "translation": "* Marque UNA casilla *\n\n- [] ¿Es propiedad de usted o alguien en este hogar con una hipoteca o préstamo? Incluye préstamos con garantía hipotecaria.\n- [] Propiedad de usted o de alguien en este hogar gratis y sin pagar (sin una hipoteca o préstamo)?\n- [] Alquilado?\n- [] ¿Ocupado sin pago de alquiler?",
+    "translation": "* Marque UNA casilla *\n\n- [ ] ¿Es propiedad de usted o alguien en este hogar con una hipoteca o préstamo? Incluye préstamos con garantía hipotecaria.\n- [ ] Propiedad de usted o de alguien en este hogar gratis y sin pagar (sin una hipoteca o préstamo)?\n- [ ] Alquilado?\n- [ ] ¿Ocupado sin pago de alquiler?",
     "english": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?"
   },
   "components.SampleCensus.primary_question.4": {
@@ -864,7 +836,7 @@
     "english": "This is an ipsum question"
   },
   "components.SampleCensus.secondary_information.6": {
-    "translation": "* Marque UNA casilla *\n\n- [ ] Masculino\n- [] Mujer",
+    "translation": "* Marque UNA casilla *\n\n- [ ] Masculino\n- [ ] Mujer",
     "english": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female"
   },
   "components.SampleCensus.secondary_information.7": {
@@ -872,11 +844,11 @@
     "english": "*For babies less than 1 year olf, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]"
   },
   "components.SampleCensus.secondary_information.8": {
-    "translation": "- [] No, no de origen hispano, latino o español\n- [] Sí, mexicano, mexicano am., Chicano\n- [] Sí, puertorriqueño\n- [] Sí, cubano\n- [] Sí, otro origen hispano, latino o español - Imprimir, por ejemplo, salvadoreño, dominicano, colombiano, guatemalteco, español, ecuatoriano, etc.\n[||]",
+    "translation": "- [ ] No, no de origen hispano, latino o español\n- [ ] Sí, mexicano, mexicano am., Chicano\n- [ ] Sí, puertorriqueño\n- [ ] Sí, cubano\n- [ ] Sí, otro origen hispano, latino o español - Imprimir, por ejemplo, salvadoreño, dominicano, colombiano, guatemalteco, español, ecuatoriano, etc.\n[||]",
     "english": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]"
   },
   "components.SampleCensus.secondary_information.9": {
-    "translation": "* Marque una o más cajas e imprima los orígenes *\n\n- [] Blanco - Imprimir, por ejemplo, alemán, irlandés, inglés, italiano, libanés, egipcio, etc. [||]\n- [] Am negro o africano. - Imprimir, por ejemplo, afroamericano, jamaicano, haitiano, nigeriano, etíope, somalí, etc. [||]\n- [] Indio americano o nativo de Alaska - Escriba el nombre de la tribu inscrita o principal, por ejemplo, Nación Navajo, Tribu Pies Negros, Maya, Azteca, Pueblo Tradicional del Gobierno Tradicional Inupiat de la Aldea Barrow, Comunidad Esquimal Nome, etc. [|| ]\n- [] chino\n- [] filipino\n- [] Indio asiático\n- [] vietnamita\n- [] Coreano\n- [] Japonés\n- [] Nativo de Hawai\n- [] samoano\n- [] Chamorro\n- [] Otros asiáticos - Imprimir, por ejemplo, paquistaní, camboyano, hmong, etc. [||]\n- [] Otros isleños del Pacífico - Imprimir, por ejemplo, tongano, fiyiano, mariscal, etc. [||]\n- [] Alguna otra raza - Imprimir raza u origen. [||]",
+    "translation": "* Marque una o más cajas e imprima los orígenes *\n\n- [ ] Blanco - Imprimir, por ejemplo, alemán, irlandés, inglés, italiano, libanés, egipcio, etc. [||]\n- [ ] Am negro o africano. - Imprimir, por ejemplo, afroamericano, jamaicano, haitiano, nigeriano, etíope, somalí, etc. [||]\n- [ ] Indio americano o nativo de Alaska - Escriba el nombre de la tribu inscrita o principal, por ejemplo, Nación Navajo, Tribu Pies Negros, Maya, Azteca, Pueblo Tradicional del Gobierno Tradicional Inupiat de la Aldea Barrow, Comunidad Esquimal Nome, etc. [|| ]\n- [ ] chino\n- [ ] filipino\n- [ ] Indio asiático\n- [ ] vietnamita\n- [ ] Coreano\n- [ ] Japonés\n- [ ] Nativo de Hawai\n- [ ] samoano\n- [ ] Chamorro\n- [ ] Otros asiáticos - Imprimir, por ejemplo, paquistaní, camboyano, hmong, etc. [||]\n- [ ] Otros isleños del Pacífico - Imprimir, por ejemplo, tongano, fiyiano, mariscal, etc. [||]\n- [ ] Alguna otra raza - Imprimir raza u origen. [||]",
     "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]"
   }
 }

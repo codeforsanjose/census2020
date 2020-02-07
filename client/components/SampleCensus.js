@@ -257,27 +257,6 @@ const ipsumQuestion = {
   )
 };
 
-const indexToSection = {
-  0: (
-    <FormattedMessage
-      id="component.SampleCensus.sectionHeaders.howToAnswer"
-      defaultMessage="How to answer this question"
-    />
-  ),
-  1: (
-    <FormattedMessage
-      id="component.SampleCensus.sectionHeaders.howInfoIsUsed"
-      defaultMessage="How is this info used"
-    />
-  ),
-  2: (
-    <FormattedMessage
-      id="component.SampleCensus.sectionHeaders.whyAnswer"
-      defaultMessage="Why answer this question"
-    />
-  )
-};
-
 const QuestionAnswerBox = ({ title, text }) => (
   <li
     className="c_sample-census__content__answer-box"
