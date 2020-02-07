@@ -318,13 +318,6 @@ const CensusQuestionCard = ({ item, className, index }) => (
     <ul
       className="c_sample-census__content__census-questions__card__info-list"
     >
-      { [item.how_to, item.info_use, item.why_answer].map((item, index) => (
-        <QuestionAnswerBox
-          title={indexToSection[index]}
-          text={item}
-          key={index}>
-        </QuestionAnswerBox>
-      ))}
     </ul>
   </li>
 );

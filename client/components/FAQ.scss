@@ -1,30 +1,36 @@
 .c_faq {
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__body {
-    padding: 63px;
+    padding: 1rem;
+    max-width: 800px; 
   }
 
   &__header {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bold;
     color: #01131F;
-    margin-bottom: 80px;
+    padding: 0;
   }
 
 
   &__questions {
-    margin: 0 64px;
+    margin: 0 4rem;
 
     &__section {
       margin-bottom: 80px;
-      padding-left:32px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      box-sizing: border-box;
       border-radius: 8px;
       box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
       background-color: #FDFEFF;
-      padding-top:40px;
-      padding-bottom:12px;
-      margin-bottom:80px;
+      padding-top:2rem;
+      padding-bottom:.8rem;
+      margin-bottom:5rem;
 
       &:last-child {
         margin-bottom: 0;
@@ -44,7 +50,6 @@
   }
 
   &__question-item {
-    margin-right: 32px;
     font-size: 24px;
 
     &__question {
@@ -58,6 +63,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      text-align: left;
 
 
       &::after {

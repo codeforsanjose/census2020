@@ -54,13 +54,15 @@ export default class Navigation extends React.PureComponent {
   render () {
     return (
       <nav className="c_navigation">
-        <div className="c_navigation__logo">
+        <Link
+          to="/" 
+          className="c_navigation__logo">
           <img
             className="c_navigation__logo__image"
             alt="City of San Jose logo"
             src={logoUrl}
           />
-        </div>
+        </Link>
         <div className={classnames(
           'c_navigation__links',
           'c_navigation__links--desktop'
@@ -104,10 +106,23 @@ export default class Navigation extends React.PureComponent {
         </div>
         <LocalePicker />
         <MobileMenu />
+        { window.innerWidth > 800 && (
+          <CensusLink />
+        )}
       </nav>
     );
   }
 }
+
+export const CensusLink = () => (
+  <Link className="c_navigation__census-link">
+    <FormattedMessage
+      id="navigation.externalCensusLink"
+      defaultMessage="TAKE THE CENSUS"
+      description="External link to the 2020 Census portal"
+    />
+  </Link>
+)
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
