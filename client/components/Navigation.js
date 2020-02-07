@@ -106,6 +106,13 @@ export default class Navigation extends React.PureComponent {
         </div>
         <LocalePicker />
         <MobileMenu />
+        <Link className="c_navigation__census-link">
+          <FormattedMessage
+            id="navigation.externalCensusLink"
+            defaultMessage="TAKE THE CENSUS"
+            description="External link to the 2020 Census portal"
+          />
+        </Link>
       </nav>
     );
   }
