@@ -1,15 +1,11 @@
 const express = require('express');
 const request = require('request-promise-native');
-const debug = require('debug')('translate-site:auth');
 const Config = require('../../../server/config');
 const router = express.Router();
 
 router.route('/').get((req, res, next) => {
   const schema = req.secure ? 'https' : 'http';
   const redirectUrl = new URL(req.originalUrl, `${schema}://${req.headers.host}`);
-  debug('Original URL:', req.originalUrl);
-  debug(`Is secure?: ${req.secure}`);
-  debug(`Redirect URL: ${redirectUrl}`);
   redirectUrl.pathname += '/callback';
   const url = new URL('https://github.com/login/oauth/authorize');
   url.searchParams.set('client_id', Config.github.appId);

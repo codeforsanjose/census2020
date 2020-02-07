@@ -173,11 +173,16 @@ if (process.env.GITHUB_REPO) {
         head: branchName,
         base: 'master'
       });
-      await githubClient.getIssues(pr.user.login, repoName).editIssue(pr.number, {
-        labels: [
-          BRANCH_LABEL
-        ]
-      });
+      try {
+        await githubClient.getIssues(pr.user.login, repoName).editIssue(pr.number, {
+          labels: [
+            BRANCH_LABEL
+          ]
+        });
+      } catch (ex) {
+        // Swallow the error; we don't really care too much if the label doesn't get added.
+        console.error(ex);
+      }
       return pr;
     });
 
