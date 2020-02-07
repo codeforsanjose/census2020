@@ -277,7 +277,8 @@ const Factoid = ({ item }) => {
       )}
       { item.cta && (
         <footer className="c_home__factoid__footer">
-          <Link className="c_home__factoid__link">
+          <Link className="c_home__factoid__link"
+            to={item.link}>
             <FormattedMessage id={item.cta} />
           </Link>
         </footer>
@@ -298,6 +299,7 @@ Factoid.propTypes = {
     subtitle: PropTypes.string,
     text: PropTypes.string,
     cta: PropTypes.string,
+    link: PropTypes.string,
     qrcode: PropTypes.string
   }).isRequired
 };
