@@ -244,8 +244,8 @@
     "english": "Learn About the Census From Your Phone"
   },
   "components.Home.factoids.3.title": {
-    "translation": "Title 3",
-    "english": "Title 3"
+    "english": "In a hurry, take it to go!",
+    "translation": "In a hurry, take it to go!"
   },
   "components.Home.factoids.3.message": {
     "translation": "more text will go here",
@@ -986,5 +986,41 @@
   "components.SampleCensus.nonHohh_description": {
     "english": "If you live in someone else's home, you will need to provide information to the person completing the questionnaire.",
     "translation": "If you live in someone else's home, you will need to provide information to the person completing the questionnaire."
+  },
+  "components.Home.factoids.1.title": {
+    "english": "Is it safe?",
+    "translation": "Is it safe?"
+  },
+  "components.Home.factoids.2.title": {
+    "english": "Do I take the census?",
+    "translation": "Do I take the census?"
+  },
+  "components.Home.factoids.1.subtitle": {
+    "english": "Why should I be counted?",
+    "translation": "Why should I be counted?"
+  },
+  "components.Home.factoids.2.subtitle": {
+    "english": "What will I be asked?",
+    "translation": "What will I be asked?"
+  },
+  "components.Home.factoids.3.subtitle": {
+    "english": "Take a photo of the image below to learn more",
+    "translation": "Take a photo of the image below to learn more"
+  },
+  "components.Home.factoids.1.text": {
+    "english": "Get the answers to all your questions about why to take the census and how the information will be used.",
+    "translation": "Get the answers to all your questions about why to take the census and how the information will be used."
+  },
+  "components.Home.factoids.2.text": {
+    "english": "Learn more about the census questions, and who should be answering the questionnaire.",
+    "translation": "Learn more about the census questions, and who should be answering the questionnaire."
+  },
+  "components.Home.factoids.1.cta": {
+    "english": "VIEW ALL FAQs",
+    "translation": "VIEW ALL FAQs"
+  },
+  "components.Home.factoids.2.cta": {
+    "english": "VIEW SAMPLE SURVEY",
+    "translation": "VIEW SAMPLE SURVEY"
   }
 }
