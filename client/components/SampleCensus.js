@@ -68,6 +68,16 @@ const questions = [
           defaultMessage={`Number of people=[|Enter number here|]`}
         />
       </div>
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.1"
+        defaultMessage={`
+Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.
+
+The Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.
+        `}
+      />
     )
   },
   {
@@ -90,6 +100,16 @@ const questions = [
 - [ ] No additional people
 `}
       />
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.2"
+        defaultMessage={`
+The Census Bureau’s goal is to count people once, and only once in the right place according to where they live on Census Day. This question ensures that _everyone_ living at an address is counted, including infants and children under 5, who are one of the largest undercounted groups.  
+
+Help ensure your child or grandchild’s early childhood education program or school meal program is fully funded by including them in your household.
+        `}
+      />
     )
   },
   {
@@ -111,6 +131,16 @@ const questions = [
 - [ ] Occupied without payment of rent?
 `}
       />
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.3"
+        defaultMessage={`
+The Census Bureau asks about whether a home is owned or rented to create statistics about homeownership and renters. Homeownership rates serve as an indicator of a community’s economic strength.  
+
+The Federal Government, as well as State and Local Governments and businesses, use this information to make planning decisions that can bring new businesses, hospitals, or housing to your neighborhood.
+       `}
+      />
     )
   },
   {
@@ -127,6 +157,14 @@ const questions = [
 Telephone Number = [|Enter telephone number here|]
 `}
       />
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.4"
+        defaultMessage={`
+The Census Bureau asks for a phone number in case it needs to contact you. They will _never_ share your number and will _only_ contact you if needed for official Census Bureau business.  
+       `}
+      />
     )
   },
   {
@@ -142,6 +180,14 @@ Telephone Number = [|Enter telephone number here|]
         defaultMessage={`
 Firstname = [||] Last Name(s) = [||]
 `}
+      />
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.5"
+        defaultMessage={`
+The Census Bureau asks for names to ensure everyone in the house is counted. This helps you make sure you have included everyone living and sleeping in your home.  It is easy to skip someone by accident, especially in large households.
+       `}
       />
     )
   },
@@ -162,6 +208,14 @@ Firstname = [||] Last Name(s) = [||]
 - [ ] Female
 `}
       />
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.6"
+        defaultMessage={`
+The Census Bureau asks about the gender of each person for statistical purposes.  The State and Federal government use this information in planning and funding programs, and evaluating programs and policies to ensure they fairly and equitably serve the needs of both men and women.
+       `}
+      />
     )
   },
   {
@@ -180,6 +234,14 @@ Firstname = [||] Last Name(s) = [||]
 Age on April 1, 2020 = [||] years
 Month = [||] Day = [||] Year of birth = [||]
 `}
+      />
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.7"
+        defaultMessage={`
+The Census Bureau asks about age and date of birth to understand the size and characteristics of different age groups in your neighborhood.  Local, state, tribal, and federal agencies use age information to plan and fund government programs that provide assistance or services for specific age groups, such as children, working-age adults, women of childbearing age, and elders.
+       `}
       />
     )
   },
@@ -201,6 +263,16 @@ Month = [||] Day = [||] Year of birth = [||]
 - [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.
 [||]
 `}
+      />
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.8"
+        defaultMessage={`
+The Census Bureau asks whether a person is of Hispanic, Latino or Spanish origin to create statistics about this ethnic group. The information collected in this question is used by Government agencies and community groups in evaluating programs and ensuring compliance with anti-discrimination provisions, such as under the Voting Rights Act and the Civil Rights Act.
+
+**You will need to answer BOTH Question 8 about Hispanic origin and Question 9 about race. For this census, Hispanic origins are not races.**
+       `}
       />
     )
   },
@@ -233,6 +305,14 @@ Month = [||] Day = [||] Year of birth = [||]
 - [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]
 - [ ] Some other race – Print race or origin. [||]
 `}
+      />
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.9"
+        defaultMessage={`
+The Census Bureau asks about a person's race to create statistics about race and to present other estimates by race groups.  Local, state, tribal, and federal programs use this information, and they are critical factors in the basic research behind numerous policies, particularly for civil rights. Race information is used in planning and funding government programs that provide funds or services for specific groups.
+       `}
       />
     )
   }
@@ -294,10 +374,15 @@ const CensusQuestionCard = ({ item, className, index }) => (
       </h2>
     </header>
     { item.secondary_information }
-    <ul
-      className="c_sample-census__content__census-questions__card__info-list"
-    >
-    </ul>
+    <h3 className="c_sample-census__content__census-questions__card__explanation-title">
+      <FormattedMessage
+        id="components.CensusQuestionCard.explanation"
+        defaultMessage="Explanation"
+        />
+    </h3>
+    <p className="c_sample-census__content__census-questions__card__explanation">
+      { item.explanation }
+    </p>
   </li>
 );
 

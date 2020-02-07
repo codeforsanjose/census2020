@@ -126,6 +126,20 @@
           list-style: none;
           padding: 0;
         }
+
+        &__explanation-title {
+          background-color: #F7CB8A;
+          padding: .25rem;
+          max-width: 8rem;
+          text-align: center;
+          border-radius: .25rem;
+          margin: 0;
+          margin-top: 2rem;
+        }
+
+        &__explanation {
+          margin-top: .25rem;
+        }
       }
     }
 
