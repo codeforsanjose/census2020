@@ -6,6 +6,8 @@ import { FormattedMessage } from 'react-intl';
 import './SampleCensus.scss';
 import './Headers.scss';
 import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
+import hohhIcon from '../images/hohhIcon.png';
+import nonHohhIcon from '../images/nonHohhIcon.png';
 
 const CheckboxList = ({ children }) => {
   return (
@@ -337,6 +339,21 @@ const ipsumQuestion = {
   )
 };
 
+const hohhDescriptions = {
+  hohh: (
+    <FormattedMessage
+      id="components.SampleCensus.hohh_description"
+      defaultMessage="If you are responsible for the home, you should complete the survey as person one providing infomation for the others you are responsible for."
+    />
+  ),
+  nonHohh: (
+    <FormattedMessage
+      id="components.SampleCensus.nonHohh_description"
+      defaultMessage="If you live in someone else's home, you will need to provide information to the person completing the questionnaire."
+    />
+  )
+};
+
 const QuestionAnswerBox = ({ title, text }) => (
   <li
     className="c_sample-census__content__answer-box"
@@ -378,7 +395,7 @@ const CensusQuestionCard = ({ item, className, index }) => (
       <FormattedMessage
         id="components.CensusQuestionCard.explanation"
         defaultMessage="Explanation"
-        />
+      />
     </h3>
     <p className="c_sample-census__content__census-questions__card__explanation">
       { item.explanation }
@@ -390,9 +407,7 @@ CensusQuestionCard.propTypes = {
   item: PropTypes.shape({
     primary_question: PropTypes.element.isRequired,
     secondary_information: PropTypes.element.isRequired,
-    how_to: PropTypes.element.isRequired,
-    info_use: PropTypes.element.isRequired,
-    why_answer: PropTypes.element.isRequired
+    explanation: PropTypes.element.isRequired
   }).isRequired,
   index: PropTypes.number.isRequired,
   className: PropTypes.string
@@ -426,13 +441,13 @@ export default class SampleCensus extends React.Component {
           <h1 className="c_sample-census__content__title">
             <FormattedMessage
               id="components.SampleCensus.title"
-              defaultMessage="You should complete the questionnaire as Person 1, if you are responsible for the home. If you live in someone else's home, you will need to provide information to the person completing the questionnaire. "
+              defaultMessage="Preview each question on the survey"
               description="Sample Census page title"/>
           </h1>
           <p className="c_sample-census__content__subtitle">
             <FormattedMessage
               id="components.SampleCensus.subtitle"
-              defaultMessage="See what information will need to complete the questionnaire"
+              defaultMessage="Learn if you should answer, how to answer, and how your info is used."
               description="Sample Census page subtitle"/>
           </p>
           <div
@@ -449,14 +464,22 @@ export default class SampleCensus extends React.Component {
                 hohh: true,
                 currentPosition: 0
               })}>
-              <h4>
+              <div className="c_sample-census__content__hohh-container__button__icon-container">
+                <img
+                  src={hohhIcon}
+                  alt="Head of Household Icon"
+                  className={classnames(
+                    'c_sample-census__content__hohh-container__button__icon-container__hohh-icon'
+                  )}
+                />
+              </div>
+              <p>
                 <FormattedMessage
                   id="components.SampleCensus.hohh_button"
                   defaultMessage="I will answer the census"
                   description="Questions for the Head of Household">
                 </FormattedMessage>
-              </h4>
-
+              </p>
             </button>
             <button
               className={classnames(
@@ -470,15 +493,23 @@ export default class SampleCensus extends React.Component {
                 hohh: false,
                 currentPosition: 0
               })}>
-              <h4>
+              <img
+                src={nonHohhIcon}
+                alt="Head of Household Icon"
+                className="c_sample-census__content__hohh-container__button__nonhohh-icon"
+              />
+              <p>
                 <FormattedMessage
                   id="components.SampleCensus.not_hohh_button"
                   defaultMessage="Someone else will answer the census for me"
                   description="Questions for individuals other than the Head of Household">
                 </FormattedMessage>
-              </h4>
+              </p>
             </button>
           </div>
+          <p className="c_sample-census__content__hohh-description">
+            { (this.state.hohh) ? hohhDescriptions.hohh : hohhDescriptions.nonHohh }
+          </p>
           <ul className="c_sample-census__content__button-row">
             { ((this.state.hohh) ? questions : censusQuestions).map((item, index) => (
               <li
