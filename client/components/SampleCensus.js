@@ -6,6 +6,8 @@ import { FormattedMessage } from 'react-intl';
 import './SampleCensus.scss';
 import './Headers.scss';
 import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
+import hohhIcon from '../images/hohhIcon.png';
+import nonHohhIcon from '../images/nonHohhIcon.png';
 
 const CheckboxList = ({ children }) => {
   return (
@@ -51,7 +53,7 @@ FakeTextbox.propTypes = {
   children: PropTypes.element.isRequired
 };
 
-const questions = [
+const hohh_questions = [
   {
     primary_question: (
       <FormattedMessage
@@ -318,6 +320,205 @@ The Census Bureau asks about a person's race to create statistics about race and
   }
 ];
 
+const nonHohh_questions = [
+  {
+    primary_question: (
+      <FormattedMessage
+        id="components.SampleCensus.primary_question.nonhohh.1"
+        defaultMessage="How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?">
+      </FormattedMessage>
+    ),
+    secondary_information: (
+      <div
+        className="c_sample-census__question__1__secondary"
+      >
+        <FormattedMarkdownMessage
+          id="components.SampleCensus.secondary_information.nonhohh.1"
+          defaultMessage={`Number of people=[|Enter number here|]`}
+        />
+      </div>
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.nonhohh.1"
+        defaultMessage={`
+Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.
+
+The Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.
+        `}
+      />
+    )
+  },
+  {
+    primary_question: (
+      <FormattedMessage
+        id="components.SampleCensus.primary_question.nonhohh.2"
+        defaultMessage="How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?">
+      </FormattedMessage>
+    ),
+    secondary_information: (
+      <div
+        className="c_sample-census__question__1__secondary"
+      >
+        <FormattedMarkdownMessage
+          id="components.SampleCensus.secondary_information.nonhohh.2"
+          defaultMessage={`Number of people=[|Enter number here|]`}
+        />
+      </div>
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.nonhohh.2"
+        defaultMessage={`
+Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.
+
+The Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.
+        `}
+      />
+    )
+  },
+  {
+    primary_question: (
+      <FormattedMessage
+        id="components.SampleCensus.primary_question.nonhohh.3"
+        defaultMessage="How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?">
+      </FormattedMessage>
+    ),
+    secondary_information: (
+      <div
+        className="c_sample-census__question__1__secondary"
+      >
+        <FormattedMarkdownMessage
+          id="components.SampleCensus.secondary_information.nonhohh.3"
+          defaultMessage={`Number of people=[|Enter number here|]`}
+        />
+      </div>
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.nonhohh.3"
+        defaultMessage={`
+Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.
+
+The Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.
+        `}
+      />
+    )
+  },
+  {
+    primary_question: (
+      <FormattedMessage
+        id="components.SampleCensus.primary_question.nonhohh.4"
+        defaultMessage="How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?">
+      </FormattedMessage>
+    ),
+    secondary_information: (
+      <div
+        className="c_sample-census__question__1__secondary"
+      >
+        <FormattedMarkdownMessage
+          id="components.SampleCensus.secondary_information.nonhohh.4"
+          defaultMessage={`Number of people=[|Enter number here|]`}
+        />
+      </div>
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.nonhohh.4"
+        defaultMessage={`
+Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.
+
+The Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.
+        `}
+      />
+    )
+  },
+  {
+    primary_question: (
+      <FormattedMessage
+        id="components.SampleCensus.primary_question.nonhohh.5"
+        defaultMessage="How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?">
+      </FormattedMessage>
+    ),
+    secondary_information: (
+      <div
+        className="c_sample-census__question__1__secondary"
+      >
+        <FormattedMarkdownMessage
+          id="components.SampleCensus.secondary_information.nonhohh.5"
+          defaultMessage={`Number of people=[|Enter number here|]`}
+        />
+      </div>
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.nonhohh.5"
+        defaultMessage={`
+Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.
+
+The Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.
+        `}
+      />
+    )
+  },
+  {
+    primary_question: (
+      <FormattedMessage
+        id="components.SampleCensus.primary_question.nonhohh.6"
+        defaultMessage="How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?">
+      </FormattedMessage>
+    ),
+    secondary_information: (
+      <div
+        className="c_sample-census__question__1__secondary"
+      >
+        <FormattedMarkdownMessage
+          id="components.SampleCensus.secondary_information.nonhohh.6"
+          defaultMessage={`Number of people=[|Enter number here|]`}
+        />
+      </div>
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.nonhohh.6"
+        defaultMessage={`
+Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.
+
+The Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.
+        `}
+      />
+    )
+  },
+  {
+    primary_question: (
+      <FormattedMessage
+        id="components.SampleCensus.primary_question.nonhohh.7"
+        defaultMessage="How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?">
+      </FormattedMessage>
+    ),
+    secondary_information: (
+      <div
+        className="c_sample-census__question__1__secondary"
+      >
+        <FormattedMarkdownMessage
+          id="components.SampleCensus.secondary_information.nonhohh.7"
+          defaultMessage={`Number of people=[|Enter number here|]`}
+        />
+      </div>
+    ),
+    explanation: (
+      <FormattedMarkdownMessage
+        id="components.SampleCensus.explanation.nonhohh.7"
+        defaultMessage={`
+Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.
+
+The Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.
+        `}
+      />
+    )
+  },
+]
+
 const ipsumQuestion = {
   primary_question: (
     <FormattedMessage
@@ -334,6 +535,21 @@ const ipsumQuestion = {
       }}>
       <p> Additional text will go here </p>
     </div>
+  )
+};
+
+const hohhDescriptions = {
+  hohh: (
+    <FormattedMessage
+      id="components.SampleCensus.hohh_description"
+      defaultMessage="If you are responsible for the home, you should complete the survey as person one providing infomation for the others you are responsible for."
+    />
+  ),
+  nonHohh: (
+    <FormattedMessage
+      id="components.SampleCensus.nonHohh_description"
+      defaultMessage="If you live in someone else's home, you will need to provide information to the person completing the questionnaire."
+    />
   )
 };
 
@@ -390,9 +606,7 @@ CensusQuestionCard.propTypes = {
   item: PropTypes.shape({
     primary_question: PropTypes.element.isRequired,
     secondary_information: PropTypes.element.isRequired,
-    how_to: PropTypes.element.isRequired,
-    info_use: PropTypes.element.isRequired,
-    why_answer: PropTypes.element.isRequired
+    explanation: PropTypes.element.isRequired
   }).isRequired,
   index: PropTypes.number.isRequired,
   className: PropTypes.string
@@ -426,13 +640,13 @@ export default class SampleCensus extends React.Component {
           <h1 className="c_sample-census__content__title">
             <FormattedMessage
               id="components.SampleCensus.title"
-              defaultMessage="You should complete the questionnaire as Person 1, if you are responsible for the home. If you live in someone else's home, you will need to provide information to the person completing the questionnaire. "
+              defaultMessage="Preview each question on the survey"
               description="Sample Census page title"/>
           </h1>
           <p className="c_sample-census__content__subtitle">
             <FormattedMessage
               id="components.SampleCensus.subtitle"
-              defaultMessage="See what information will need to complete the questionnaire"
+              defaultMessage="Learn if you should answer, how to answer, and how your info is used."
               description="Sample Census page subtitle"/>
           </p>
           <div
@@ -449,14 +663,22 @@ export default class SampleCensus extends React.Component {
                 hohh: true,
                 currentPosition: 0
               })}>
-              <h4>
+              <div className="c_sample-census__content__hohh-container__button__icon-container">
+                <img
+                  src={hohhIcon}
+                  alt="Head of Household Icon"
+                  className={classnames(
+                    'c_sample-census__content__hohh-container__button__icon-container__hohh-icon'
+                  )}
+                />
+              </div>
+              <p>
                 <FormattedMessage
                   id="components.SampleCensus.hohh_button"
                   defaultMessage="I will answer the census"
                   description="Questions for the Head of Household">
                 </FormattedMessage>
-              </h4>
-
+              </p>
             </button>
             <button
               className={classnames(
@@ -470,17 +692,25 @@ export default class SampleCensus extends React.Component {
                 hohh: false,
                 currentPosition: 0
               })}>
-              <h4>
+              <img
+                src={nonHohhIcon}
+                alt="Head of Household Icon"
+                className="c_sample-census__content__hohh-container__button__nonhohh-icon"
+              />
+              <p>
                 <FormattedMessage
                   id="components.SampleCensus.not_hohh_button"
                   defaultMessage="Someone else will answer the census for me"
                   description="Questions for individuals other than the Head of Household">
                 </FormattedMessage>
-              </h4>
+              </p>
             </button>
           </div>
+          <p className="c_sample-census__content__hohh-description">
+            { (this.state.hohh) ? hohhDescriptions.hohh : hohhDescriptions.nonHohh }
+          </p>
           <ul className="c_sample-census__content__button-row">
-            { ((this.state.hohh) ? questions : censusQuestions).map((item, index) => (
+            { ((this.state.hohh) ? hohh_questions : nonHohh_questions).map((item, index) => (
               <li
                 key={index}
                 className="c_sample-census__content__button-row__item">
@@ -501,7 +731,7 @@ export default class SampleCensus extends React.Component {
             ))}
           </ul>
           <ul className={censusQuestionsClassName}>
-            { ((this.state.hohh) ? questions : censusQuestions).map((item, index) => (
+            { ((this.state.hohh) ? hohh_questions : nonHohh_questions ).map((item, index) => (
               <CensusQuestionCard
                 className={
                   this.state.currentPosition === index

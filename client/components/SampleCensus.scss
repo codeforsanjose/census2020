@@ -13,6 +13,10 @@
     align-items: center;
     max-width: 800px;
 
+    &__hohh-description {
+      margin: 1rem;
+    }
+
     &__hohh-container {
       display: flex;
       flex-direction: row;
@@ -34,6 +38,38 @@
         color: #2F80ED;
         background-color: #FFFFFF;
 
+        &__icon-container {
+          height: 3rem;
+          width: 3rem;
+          background-color: white;
+          border-radius: 1.5rem;
+          padding: .25rem;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: .5rem;
+
+          &__hohh-icon {
+            height: 80%;
+            width: 80%;
+            background-color: inherit;
+          }
+        }
+
+        &__nonhohh-icon {
+          height: 3rem;
+          width: 3rem;
+          border-radius: 1.5rem;
+          padding: .25rem;
+          box-sizing: border-box;
+          margin-right: .5rem;
+
+          &--white {
+            background-color: white;
+          }
+        }
+
         &__left {
           margin-right: 3%;
         }
@@ -50,12 +86,14 @@
     }
 
     &__title {
-      margin: 10px;
-      text-align: center;
+      margin: 1rem;
+      text-align: left;
+      align-self: flex-start;
     }
 
     &__subtitle {
-      margin: 10px;
+      margin: 1rem;
+      align-self: flex-start;
     }
 
     &__button-row {
