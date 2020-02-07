@@ -7,10 +7,12 @@ import { AuthenticationScreen } from './AuthenticationScreen';
 import { supportedLocales, supportedLocaleEnglishNames } from '../../../i18n/supported-locales';
 import './App.scss';
 
+const LOCAL_STORAGE_AUTH_KEY = 'GITHUB_TOKEN';
+
 const params = new URLSearchParams(document.location.search);
 if (params.has('access_token')) {
   const accessToken = params.get('access_token');
-  localStorage.setItem('GITHUB_TOKEN', accessToken);
+  localStorage.setItem(LOCAL_STORAGE_AUTH_KEY, accessToken);
   const url = new URL(document.location);
   url.searchParams.delete('access_token');
   document.location.assign(url);
@@ -33,10 +35,17 @@ const App = () => {
       return handlers;
     }, {}
   );
+  let isLoggedInToGithub = false;
+  try {
+    const storedToken = localStorage.getItem(LOCAL_STORAGE_AUTH_KEY);
+    isLoggedInToGithub = Boolean(storedToken);
+  } catch (ex) {
+    localStorage.removeItem(LOCAL_STORAGE_AUTH_KEY);
+  }
   return (
     <main>
       {
-        !localStorage.getItem('GITHUB_TOKEN') ? (
+        !isLoggedInToGithub ? (
           <AuthenticationScreen/>
         ) : (
           <React.Fragment>
