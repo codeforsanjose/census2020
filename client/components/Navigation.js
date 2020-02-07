@@ -55,7 +55,7 @@ export default class Navigation extends React.PureComponent {
     return (
       <nav className="c_navigation">
         <Link
-          to="/" 
+          to="/"
           className="c_navigation__logo">
           <img
             className="c_navigation__logo__image"
@@ -122,7 +122,7 @@ export const CensusLink = () => (
       description="External link to the 2020 Census portal"
     />
   </Link>
-)
+);
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
