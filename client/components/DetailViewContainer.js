@@ -8,6 +8,7 @@ import { FormattedMessage } from 'react-intl';
 import QRCode from 'qrcode.react';
 
 import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
+import { CensusLink } from './Navigation'
 
 import sharksMural from '../images/sharksMural.jpg';
 import cityHall from '../images/cityHall.jpg';
@@ -91,9 +92,14 @@ const CarouselItem = ({ img }) => (
           defaultMessage="The United States 2020 Census"
         />
       </h1>
-      <h1 className="c_home__overlay__message">
-        {img.message}
-      </h1>
+      { window.innerWidth >= 800 && (
+        <h1 className="c_home__overlay__message">
+          {img.message}
+        </h1>
+      )}
+      { window.innerWidth < 800 && (
+        <CensusLink />
+      )}
     </div>
   </div>
 );

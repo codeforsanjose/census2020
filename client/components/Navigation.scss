@@ -85,15 +85,23 @@
   &__census-link {
     background-color: #2F80ED;
     text-transform: uppercase;
-    position: absolute;
-    padding: 18px 32px;
-    right: 32px;
-    top: 85%;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.125rem;
     z-index: 1;
-    border-radius: 5px;
-    width: 260px;
+    border-radius: .25rem;
+    width: 15rem;
+    text-align: center;
+    padding: 1.25rem 2rem;
+
+    @media (min-width: 800px) {
+      position: absolute;
+      right: 2rem;
+      top: 85%;
+    }
+
+    @media (max-width: 800px) {
+      align-self: center;
+    }
 
     &,
     &:hover,
