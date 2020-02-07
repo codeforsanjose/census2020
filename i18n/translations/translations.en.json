@@ -415,18 +415,6 @@
     "translation": "VIEW SAMPLE SURVEY",
     "english": "VIEW SAMPLE SURVEY"
   },
-  "components.FAQ.sections.generalInformation.header": {
-    "translation": "General Information",
-    "english": "General Information"
-  },
-  "components.FAQ.sections.security.header": {
-    "translation": "Security",
-    "english": "Security"
-  },
-  "components.FAQ.sections.value.header": {
-    "translation": "Value",
-    "english": "Value"
-  },
   "components.FAQ.entries.howCanIComplete.question": {
     "translation": "How do I get Counted!",
     "english": "How can I complete the census?"
@@ -490,22 +478,6 @@
   "mail.messages.confirmation.subject": {
     "translation": "Thank you for contacting the San Jose Census Department",
     "english": "Thank you for contacting the San Jose Census Department"
-  },
-  "components.FAQ.sections.basics.header": {
-    "translation": "Basics",
-    "english": "Basics"
-  },
-  "components.FAQ.sections.about.header": {
-    "translation": "About the Survey",
-    "english": "About the Survey"
-  },
-  "components.FAQ.sections.gettingCounted.header": {
-    "translation": "Getting Counted",
-    "english": "Getting Counted"
-  },
-  "components.FAQ.sections.language.header": {
-    "translation": "Language Access",
-    "english": "Language Access"
   },
   "components.FAQ.sections.safety.header": {
     "translation": "Safety and Privacy",
@@ -611,7 +583,7 @@
     "translation": "Infrastructure planning",
     "english": "Infrastructure planning"
   },
-  "Compnents.Home.top_reasons.item.4": {
+  "Compnents.Home.top_reasons.item.5": {
     "translation": "Emergency response planning",
     "english": "Emergency response planning"
   },

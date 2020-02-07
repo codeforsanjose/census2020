@@ -8,7 +8,7 @@ import { FormattedMessage } from 'react-intl';
 import QRCode from 'qrcode.react';
 
 import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
-import { CensusLink } from './Navigation'
+import { CensusLink } from './Navigation';
 
 import sharksMural from '../images/sharksMural.jpg';
 import cityHall from '../images/cityHall.jpg';
@@ -143,7 +143,7 @@ const REASONS = [
   (
     <FormattedMessage
       key={5}
-      id="Compnents.Home.top_reasons.item.4"
+      id="Compnents.Home.top_reasons.item.5"
       defaultMessage="Emergency response planning">
     </FormattedMessage>
   )
