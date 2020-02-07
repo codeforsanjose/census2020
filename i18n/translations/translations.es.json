@@ -292,8 +292,8 @@
     "english": "Optional"
   },
   "components.Home.carousel.messages.1": {
-    "translation": "¡Aprenda por qué todos cuentan!",
-    "english": "Learn why everyone counts!"
+    "english": "Learn why everyone counts!",
+    "translation": null
   },
   "components.Home.carousel.messages.2": {
     "translation": "Cuando respondes, ¡todos nos beneficiamos!",

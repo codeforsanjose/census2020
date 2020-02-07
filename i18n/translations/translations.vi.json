@@ -292,8 +292,8 @@
     "english": "Optional"
   },
   "components.Home.carousel.messages.1": {
-    "translation": "Tìm hiểu tại sao mọi người đều quan tâm!",
-    "english": "Learn why everyone counts!"
+    "english": "Learn why everyone counts!",
+    "translation": null
   },
   "components.Home.carousel.messages.2": {
     "translation": "Khi bạn trả lời, tất cả chúng ta đều có lợi!",

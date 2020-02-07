@@ -96,6 +96,7 @@
   },
   "components.Home.carousel.messages.1": {
     "id": "components.Home.carousel.messages.1",
+    "description": "Message for first carousel card",
     "defaultMessage": "Learn why everyone counts!"
   },
   "components.Home.carousel.messages.2": {

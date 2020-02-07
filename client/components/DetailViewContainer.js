@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import YouTube from 'react-youtube';
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, defineMessages } from 'react-intl';
 import QRCode from 'qrcode.react';
 
 import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
@@ -20,70 +20,76 @@ import peopleGathering from '../images/peopleGathering.jpg';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './DetailViewContainer.scss';
 
-const CAROUSEL_IMAGES = [
+const CAROUSEL_MESSAGES = defineMessages({
+  carouselMessage1: {
+    id: "components.Home.carousel.messages.1",
+    defaultMessage: 'Learn why everyone counts!',
+    description: 'Message for first carousel card'
+  },
+  carouselMessage2: {
+    id: "components.Home.carousel.messages.2",
+    defaultMessage: 'When you respond, we all benefit!',
+    description: 'Message for second carousel card'
+  },
+  carouselMessage3: {
+    id: "components.Home.carousel.messages.3",
+    defaultMessage: 'Answer online, by phone, or by mail!',
+    description: 'Message for third carousel card'
+  },
+  carouselMessage4: {
+    id: "components.Home.carousel.messages.4",
+    defaultMessage: 'Your participation affects our congressional representation!',
+    description: 'Message for fourth carousel card'
+  },
+  carouselMessage5: {
+    id: "components.Home.carousel.messages.5",
+    defaultMessage: 'Easy, quick and confidential!',
+    description: 'Message for fifth carousel card'
+  },
+  carouselMessage5: {
+    id: "components.Home.carousel.messages.6",
+    defaultMessage: '  Be counted San Jose!',
+    description: 'Message for sixth carousel card'
+  },
+})
+
+const CAROUSEL_ITEMS = [
   {
     image: muralProject,
-    message: (
-      <FormattedMessage
-        id="components.Home.carousel.messages.1"
-        defaultMessage="Learn why everyone counts!"
-      />
-    )
+    message: "components.Home.carousel.messages.1",
   },
   {
     image: sanJoseMural,
-    message: (
-      <FormattedMessage
-        id="components.Home.carousel.messages.2"
-        defaultMessage="When you respond, we all benefit!"
-      />
-    )
+    message: "components.Home.carousel.messages.2",
+
   },
   {
     image: sharksMural,
-    message: (
-      <FormattedMessage
-        id="components.Home.carousel.messages.3"
-        defaultMessage="Answer online, by phone, or by mail!"
-      />
-    )
+    message: "components.Home.carousel.messages.3",
+
   },
   {
     image: performingArts,
-    message: (
-      <FormattedMessage
-        id="components.Home.carousel.messages.4"
-        defaultMessage="Your participation affects our congressional representation!"
-      />
-    )
+    message: "components.Home.carousel.messages.4",
+
   },
   {
     image: peopleGathering,
-    message: (
-      <FormattedMessage
-        id="components.Home.carousel.messages.5"
-        defaultMessage="Easy, quick and confidential!"
-      />
-    )
+    message: "components.Home.carousel.messages.5",
   },
   {
     image: cityHall,
-    message: (
-      <FormattedMessage
-        id="components.Home.carousel.messages.6"
-        defaultMessage="Be counted San Jose!"
-      />
-    )
+    message: "components.Home.carousel.messages.6"
   }
 ];
 
-const CarouselItem = ({ img }) => (
+const CarouselItem = ({ item }) => (
   <div
     className="c_home__carousel-item"
   >
     <img
       className="c_home__carousel-item__image"
-      src={img.image}
+      src={item.image}
     />
     <div className="c_home__overlay">
       <h1 className="c_home__overlay__title">
@@ -94,7 +100,7 @@ const CarouselItem = ({ img }) => (
       </h1>
       { window.innerWidth >= 800 && (
         <h1 className="c_home__overlay__message">
-          {img.message}
+          <FormattedMessage id={item.message} />
         </h1>
       )}
       { window.innerWidth < 800 && (
@@ -105,49 +111,52 @@ const CarouselItem = ({ img }) => (
 );
 
 CarouselItem.propTypes = {
-  img: PropTypes.shape({
+  item: PropTypes.shape({
     image: PropTypes.string,
-    message: PropTypes.element
+    message: PropTypes.string,
   }).isRequired
 };
 
+const REASON_MESSAGES = {
+  title: {
+    id: "components.Home.top_reasons.title",
+    defaultMessage: 'Top 5 Reasons to take the census',
+    description: 'Top reasons to take the census testing'
+  },
+  reason1: {
+    id: "components.Home.top_reasons.item.1",
+    defaultMessage: "Determines the number of seats in the House of Representatives",
+    description: 'Reasons to take the census 1 testing'
+  },
+  reason2: {
+    id: "components.Home.top_reasons.item.2",
+    defaultMessage: "Redraw district boundaries",
+    description: 'Reasons to take the census 2'
+  },
+  reason3: {
+    id: "components.Home.top_reasons.item.3",
+    defaultMessage: "Allocates funds to the state and localities",
+    description: 'Reasons to take the census 3'
+  },
+  reason4: {
+    id: "components.Home.top_reasons.item.4",
+    defaultMessage: "Infrastructure planning",
+    description: 'Reasons to take the census 4'
+  },
+  reason5: {
+    id: "components.Home.top_reasons.item.5",
+    defaultMessage: "Emergency response planning",
+    description: 'Reasons to take the census 5'
+  },
+}
+
 const REASONS = [
-  (
-    <FormattedMessage
-      key={1}
-      id="components.Home.top_reasons.item.1"
-      defaultMessage="Determines the number of seats in the House of Representatives">
-    </FormattedMessage>
-  ),
-  (
-    <FormattedMessage
-      key={2}
-      id="components.Home.top_reasons.item.2"
-      defaultMessage="Redraw district boundaries">
-    </FormattedMessage>
-  ),
-  (
-    <FormattedMessage
-      key={3}
-      id="components.Home.top_reasons.item.3"
-      defaultMessage="Allocates funds to the state and localities">
-    </FormattedMessage>
-  ),
-  (
-    <FormattedMessage
-      key={4}
-      id="components.Home.top_reasons.item.4"
-      defaultMessage="Infrastructure planning">
-    </FormattedMessage>
-  ),
-  (
-    <FormattedMessage
-      key={5}
-      id="Compnents.Home.top_reasons.item.5"
-      defaultMessage="Emergency response planning">
-    </FormattedMessage>
-  )
-];
+    "components.Home.top_reasons.item.1",
+    "components.Home.top_reasons.item.2",
+    "components.Home.top_reasons.item.3",
+    "components.Home.top_reasons.item.4",
+    "components.Home.top_reasons.item.5",
+]
 
 const TopReasons = () => {
   const screenWidth = window.innerWidth;
@@ -168,14 +177,13 @@ const TopReasons = () => {
       <h2>
         <FormattedMessage
           id="components.Home.top_reasons.title"
-          defaultMessage="Top 5 Reasons to take the census">
-        </FormattedMessage>
+        />
       </h2>
-      { REASONS.map((item, index) => (
+      { REASONS.map((id, index) => (
         <li
           key={index}>
           <p>
-            {item}
+            <FormattedMessage id={id} />
           </p>
         </li>
       ))}
@@ -259,8 +267,8 @@ export default class DetailViewContainer extends Component {
           autoPlay={true}
           interval={7000}
           transitionTime={1000}>
-          { CAROUSEL_IMAGES.map(img => (
-            <CarouselItem key={img} img={img} />
+          { CAROUSEL_ITEMS.map(item => (
+            <CarouselItem key={item} item={item} />
           ))}
         </Carousel>
         <div className="c_home__content">
