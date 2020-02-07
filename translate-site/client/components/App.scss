@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.c_app {
+  &__locale-button {
+    appearance: none;
+
+    padding: 0.5em;
+    border: none;
+
+    &--active {
+      outline: 4px solid darkblue;
+      position: relative;
+    }
+  }
+}

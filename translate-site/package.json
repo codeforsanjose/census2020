@@ -1,0 +1,42 @@
+{
+  "name": "translate-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "per-env",
+    "start:development": "webpack-dev-server",
+    "start:production": "node server/bin/www.js",
+    "build": "webpack",
+    "start:auth-server": "nodemon server/bin/www.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "github-api": "^3.3.0",
+    "http-errors": "^1.7.3",
+    "immutable": "^4.0.0-rc.12",
+    "morgan": "^1.9.1",
+    "react-modal": "^3.11.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "css-loader": "^3.3.2",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.13.0",
+    "nodemon": "^2.0.2",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
