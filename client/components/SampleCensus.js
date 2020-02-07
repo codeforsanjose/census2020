@@ -378,7 +378,7 @@ const CensusQuestionCard = ({ item, className, index }) => (
       <FormattedMessage
         id="components.CensusQuestionCard.explanation"
         defaultMessage="Explanation"
-        />
+      />
     </h3>
     <p className="c_sample-census__content__census-questions__card__explanation">
       { item.explanation }
