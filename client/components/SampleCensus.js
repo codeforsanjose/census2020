@@ -53,7 +53,7 @@ FakeTextbox.propTypes = {
   children: PropTypes.element.isRequired
 };
 
-const hohh_questions = [
+const HOHH_QUESTIONS = [
   {
     primary_question: (
       <FormattedMessage
@@ -320,7 +320,7 @@ The Census Bureau asks about a person's race to create statistics about race and
   }
 ];
 
-const nonHohh_questions = [
+const NONHOHH_QUESTIONS = [
   {
     primary_question: (
       <FormattedMessage
@@ -516,8 +516,8 @@ The Constitution ensures equal representation for all by empowering the people o
         `}
       />
     )
-  },
-]
+  }
+];
 
 const ipsumQuestion = {
   primary_question: (
@@ -710,7 +710,7 @@ export default class SampleCensus extends React.Component {
             { (this.state.hohh) ? hohhDescriptions.hohh : hohhDescriptions.nonHohh }
           </p>
           <ul className="c_sample-census__content__button-row">
-            { ((this.state.hohh) ? hohh_questions : nonHohh_questions).map((item, index) => (
+            { ((this.state.hohh) ? HOHH_QUESTIONS : NONHOHH_QUESTIONS).map((item, index) => (
               <li
                 key={index}
                 className="c_sample-census__content__button-row__item">
@@ -731,7 +731,7 @@ export default class SampleCensus extends React.Component {
             ))}
           </ul>
           <ul className={censusQuestionsClassName}>
-            { ((this.state.hohh) ? hohh_questions : nonHohh_questions ).map((item, index) => (
+            { ((this.state.hohh) ? HOHH_QUESTIONS : NONHOHH_QUESTIONS).map((item, index) => (
               <CensusQuestionCard
                 className={
                   this.state.currentPosition === index
