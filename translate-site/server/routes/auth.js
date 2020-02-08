@@ -4,7 +4,8 @@ const Config = require('../../../server/config');
 const router = express.Router();
 
 router.route('/').get((req, res, next) => {
-  const redirectUrl = new URL(req.originalUrl, `http://${req.headers.host}`);
+  const schema = req.secure ? 'https' : 'http';
+  const redirectUrl = new URL(req.originalUrl, `${schema}://${req.headers.host}`);
   redirectUrl.pathname += '/callback';
   const url = new URL('https://github.com/login/oauth/authorize');
   url.searchParams.set('client_id', Config.github.appId);
@@ -27,6 +28,9 @@ router.route('/callback').get(async (req, res, next) => {
       },
       json: true
     });
+    if (response.error) {
+      throw new Error(response.error_description);
+    }
     const url = new URL(req.baseUrl.replace(/\/auth\/?$/, ''), `http://${req.headers.host}`);
     url.searchParams.set('access_token', response.access_token);
     res.redirect(url);
