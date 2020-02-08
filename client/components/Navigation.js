@@ -115,13 +115,13 @@ export default class Navigation extends React.PureComponent {
 }
 
 export const CensusLink = () => (
-  <Link className="c_navigation__census-link">
+  <a className="c_navigation__census-link" href="https://census.gov">
     <FormattedMessage
       id="navigation.externalCensusLink"
       defaultMessage="TAKE THE CENSUS"
       description="External link to the 2020 Census portal"
     />
-  </Link>
+  </a>
 );
 
 const MobileMenu = () => {

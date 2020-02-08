@@ -245,7 +245,7 @@
   },
   "components.Home.factoids.3.title": {
     "english": "In a hurry, take it to go!",
-    "translation": null
+    "translation": "Trong một vội vàng, mang nó đi!"
   },
   "components.Home.factoids.3.message": {
     "translation": "nhiều văn bản sẽ đến đây",
@@ -293,7 +293,7 @@
   },
   "components.Home.carousel.messages.1": {
     "english": "Learn why everyone counts!",
-    "translation": null
+    "translation": "Tìm hiểu tại sao mọi người đều quan tâm!"
   },
   "components.Home.carousel.messages.2": {
     "translation": "Khi bạn trả lời, tất cả chúng ta đều có lợi!",
@@ -361,11 +361,11 @@
   },
   "components.SampleCensus.title": {
     "english": "Preview each question on the survey",
-    "translation": null
+    "translation": "Xem trước từng câu hỏi trong khảo sát"
   },
   "components.SampleCensus.subtitle": {
     "english": "Learn if you should answer, how to answer, and how your info is used.",
-    "translation": null
+    "translation": "Tìm hiểu xem bạn nên trả lời, cách trả lời và cách sử dụng thông tin của bạn."
   },
   "components.DetailViewContainer.message.1": {
     "translation": "Tổng điều tra dân số năm 2020 là đây. Sự tham gia của bạn giúp đảm bảo cộng đồng của chúng tôi sẽ có quyền truy cập vào nhà ở, y tế, trường học, chương trình cộng đồng, giao thông tốt hơn và đại diện chính phủ.",
@@ -853,174 +853,178 @@
   },
   "navigation.externalCensusLink": {
     "english": "TAKE THE CENSUS",
-    "translation": null
+    "translation": "KIẾM TIỀN"
   },
   "components.SampleCensus.explanation.1": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Bao gồm _everyone_ sống và ngủ trong nhà của bạn trong bảng câu hỏi điều tra dân số của bạn - bất kể tuổi tác, giới tính, mối quan hệ với bạn, hoặc tình trạng công dân / nhập cư. Donith quên bao gồm người thuê nhà (bao gồm cả sinh viên), con nuôi, phường hoặc nhân viên.\n\nHiến pháp đảm bảo sự đại diện bình đẳng cho tất cả mọi người bằng cách trao quyền cho người dân Mỹ thông qua quá trình điều tra dân số: đếm tất cả mọi người sống ở Hoa Kỳ cứ sau mười năm. Sự tham gia của bạn đảm bảo cộng đồng của bạn được đại diện đầy đủ ở tất cả các cấp chính quyền và nhận được phần tài trợ theo điều tra dân số, thông qua các chương trình như Cho vay sinh viên, SNAP, Medi-Cal, WIC, Phiếu mua nhà, Chương trình ăn sáng và ăn trưa tại trường, Giáo dục đặc biệt, Dịch vụ nghề nghiệp và đào tạo, Dinh dưỡng cao cấp, và các chương trình phát triển giao thông và cộng đồng."
   },
   "components.SampleCensus.explanation.2": {
     "english": "The Census Bureau’s goal is to count people once, and only once in the right place according to where they live on Census Day. This question ensures that _everyone_ living at an address is counted, including infants and children under 5, who are one of the largest undercounted groups.  \n\nHelp ensure your child or grandchild’s early childhood education program or school meal program is fully funded by including them in your household.",
-    "translation": null
+    "translation": "Mục tiêu của Cục điều tra dân số là để đếm người một lần và chỉ một lần ở đúng nơi theo nơi họ sống trong Ngày điều tra dân số. Câu hỏi này đảm bảo rằng _everyone_ sống tại một địa chỉ được tính, bao gồm trẻ sơ sinh và trẻ em dưới 5 tuổi, là một trong những nhóm có số lượng lớn nhất.\n\nGiúp đảm bảo chương trình giáo dục mầm non cho con hoặc cháu của bạn được tài trợ hoàn toàn bằng cách đưa chúng vào gia đình bạn."
   },
   "components.SampleCensus.explanation.3": {
     "english": "The Census Bureau asks about whether a home is owned or rented to create statistics about homeownership and renters. Homeownership rates serve as an indicator of a community’s economic strength.  \n\nThe Federal Government, as well as State and Local Governments and businesses, use this information to make planning decisions that can bring new businesses, hospitals, or housing to your neighborhood.",
-    "translation": null
+    "translation": "Cục điều tra dân số hỏi về việc một ngôi nhà được sở hữu hoặc thuê để tạo số liệu thống kê về quyền sở hữu nhà và người thuê nhà. Tỷ lệ sở hữu nhà đóng vai trò là một chỉ số về sức mạnh kinh tế của cộng đồng.\n\nChính phủ Liên bang, cũng như các Chính phủ và Doanh nghiệp Nhà nước và Địa phương, sử dụng thông tin này để đưa ra quyết định lập kế hoạch có thể đưa các doanh nghiệp, bệnh viện hoặc nhà ở mới đến khu phố của bạn."
   },
   "components.SampleCensus.explanation.4": {
     "english": "The Census Bureau asks for a phone number in case it needs to contact you. They will _never_ share your number and will _only_ contact you if needed for official Census Bureau business.",
-    "translation": null
+    "translation": "Cục điều tra dân số yêu cầu số điện thoại trong trường hợp cần liên lạc với bạn. Họ sẽ _never_ chia sẻ số của bạn và sẽ _only_ liên hệ với bạn nếu cần cho doanh nghiệp của Cục điều tra dân số chính thức."
   },
   "components.SampleCensus.explanation.5": {
     "english": "The Census Bureau asks for names to ensure everyone in the house is counted. This helps you make sure you have included everyone living and sleeping in your home.  It is easy to skip someone by accident, especially in large households.",
-    "translation": null
+    "translation": "Cục điều tra dân số yêu cầu đặt tên để đảm bảo mọi người trong nhà đều được tính. Điều này giúp bạn đảm bảo rằng bạn đã bao gồm tất cả mọi người sống và ngủ trong nhà của bạn. Thật dễ dàng để bỏ qua một ai đó một cách tình cờ, đặc biệt là trong các hộ gia đình lớn."
   },
   "components.SampleCensus.explanation.6": {
     "english": "The Census Bureau asks about the gender of each person for statistical purposes.  The State and Federal government use this information in planning and funding programs, and evaluating programs and policies to ensure they fairly and equitably serve the needs of both men and women.",
-    "translation": null
+    "translation": "Cục điều tra dân số hỏi về giới tính của mỗi người cho mục đích thống kê. Chính phủ Tiểu bang và Liên bang sử dụng thông tin này trong các chương trình lập kế hoạch và tài trợ, và đánh giá các chương trình và chính sách để đảm bảo chúng phục vụ công bằng và công bằng cho nhu cầu của cả nam và nữ."
   },
   "components.SampleCensus.explanation.7": {
     "english": "The Census Bureau asks about age and date of birth to understand the size and characteristics of different age groups in your neighborhood.  Local, state, tribal, and federal agencies use age information to plan and fund government programs that provide assistance or services for specific age groups, such as children, working-age adults, women of childbearing age, and elders.",
-    "translation": null
+    "translation": "Cục điều tra dân số hỏi về tuổi và ngày sinh để hiểu quy mô và đặc điểm của các nhóm tuổi khác nhau trong khu phố của bạn. Các cơ quan địa phương, tiểu bang, bộ lạc và liên bang sử dụng thông tin về độ tuổi để lập kế hoạch và tài trợ cho các chương trình của chính phủ cung cấp hỗ trợ hoặc dịch vụ cho các nhóm tuổi cụ thể, như trẻ em, người lớn trong độ tuổi lao động, phụ nữ trong độ tuổi sinh đẻ và người lớn tuổi."
   },
   "components.SampleCensus.explanation.8": {
     "english": "The Census Bureau asks whether a person is of Hispanic, Latino or Spanish origin to create statistics about this ethnic group. The information collected in this question is used by Government agencies and community groups in evaluating programs and ensuring compliance with anti-discrimination provisions, such as under the Voting Rights Act and the Civil Rights Act.\n\n**You will need to answer BOTH Question 8 about Hispanic origin and Question 9 about race. For this census, Hispanic origins are not races.**",
-    "translation": null
+    "translation": "Cục điều tra dân số hỏi liệu một người có nguồn gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha để tạo số liệu thống kê về nhóm dân tộc này. Thông tin thu thập trong câu hỏi này được các cơ quan chính phủ và các nhóm cộng đồng sử dụng để đánh giá các chương trình và đảm bảo tuân thủ các quy định chống phân biệt đối xử, như theo Đạo luật Quyền bỏ phiếu và Đạo luật Dân quyền.\n\n** Bạn sẽ cần trả lời CẢ HAI Câu hỏi 8 về nguồn gốc Tây Ban Nha và Câu hỏi 9 về chủng tộc. Đối với điều tra dân số này, nguồn gốc Tây Ban Nha không phải là chủng tộc. **"
   },
   "components.SampleCensus.explanation.9": {
     "english": "The Census Bureau asks about a person's race to create statistics about race and to present other estimates by race groups.  Local, state, tribal, and federal programs use this information, and they are critical factors in the basic research behind numerous policies, particularly for civil rights. Race information is used in planning and funding government programs that provide funds or services for specific groups.",
-    "translation": null
+    "translation": "Cục điều tra dân số hỏi về chủng tộc của một người để tạo số liệu thống kê về chủng tộc và trình bày các ước tính khác của các nhóm chủng tộc. Các chương trình địa phương, tiểu bang, bộ lạc và liên bang sử dụng thông tin này và chúng là những yếu tố quan trọng trong nghiên cứu cơ bản đằng sau nhiều chính sách, đặc biệt là quyền dân sự. Thông tin cuộc đua được sử dụng trong việc lập kế hoạch và tài trợ cho các chương trình của chính phủ cung cấp vốn hoặc dịch vụ cho các nhóm cụ thể."
   },
   "components.CensusQuestionCard.explanation": {
     "english": "Explanation",
-    "translation": null
+    "translation": "Giải trình"
   },
   "components.SampleCensus.primary_question.nonhohh.1": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.1": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Số người = [| Nhập số vào đây |]"
   },
   "components.SampleCensus.explanation.nonhohh.1": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Bao gồm _everyone_ sống và ngủ trong nhà của bạn trong bảng câu hỏi điều tra dân số của bạn - bất kể tuổi tác, giới tính, mối quan hệ với bạn, hoặc tình trạng công dân / nhập cư. Donith quên bao gồm người thuê nhà (bao gồm cả sinh viên), con nuôi, phường hoặc nhân viên.\n\nHiến pháp đảm bảo sự đại diện bình đẳng cho tất cả mọi người bằng cách trao quyền cho người dân Mỹ thông qua quá trình điều tra dân số: đếm số người sống ở Hoa Kỳ cứ sau mười năm. Sự tham gia của bạn đảm bảo cộng đồng của bạn được đại diện đầy đủ ở tất cả các cấp chính quyền và nhận được phần tài trợ theo điều tra dân số, thông qua các chương trình như Cho vay sinh viên, SNAP, Medi-Cal, WIC, Phiếu mua nhà, Chương trình ăn sáng và ăn trưa tại trường, Giáo dục đặc biệt, Dịch vụ nghề nghiệp và đào tạo, Dinh dưỡng cao cấp, và các chương trình phát triển giao thông và cộng đồng."
   },
   "components.SampleCensus.primary_question.nonhohh.2": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.2": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Số người = [| Nhập số vào đây |]"
   },
   "components.SampleCensus.explanation.nonhohh.2": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Bao gồm _everyone_ sống và ngủ trong nhà của bạn trong bảng câu hỏi điều tra dân số của bạn - bất kể tuổi tác, giới tính, mối quan hệ với bạn, hoặc tình trạng công dân / nhập cư. Donith quên bao gồm người thuê nhà (bao gồm cả sinh viên), con nuôi, phường hoặc nhân viên.\n\nHiến pháp đảm bảo sự đại diện bình đẳng cho tất cả mọi người bằng cách trao quyền cho người dân Mỹ thông qua quá trình điều tra dân số: đếm tất cả mọi người sống ở Hoa Kỳ cứ sau mười năm. Sự tham gia của bạn đảm bảo cộng đồng của bạn được đại diện đầy đủ ở tất cả các cấp chính quyền và nhận được phần tài trợ theo điều tra dân số, thông qua các chương trình như Cho vay sinh viên, SNAP, Medi-Cal, WIC, Phiếu mua nhà, Chương trình ăn sáng và ăn trưa tại trường, Giáo dục đặc biệt, Dịch vụ nghề nghiệp và đào tạo, Dinh dưỡng cao cấp, và các chương trình phát triển giao thông và cộng đồng."
   },
   "components.SampleCensus.primary_question.nonhohh.3": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.3": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Số người = [| Nhập số vào đây |]"
   },
   "components.SampleCensus.explanation.nonhohh.3": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Bao gồm _everyone_ sống và ngủ trong nhà của bạn trong bảng câu hỏi điều tra dân số của bạn - bất kể tuổi tác, giới tính, mối quan hệ với bạn, hoặc tình trạng công dân / nhập cư. Donith quên bao gồm người thuê nhà (bao gồm cả sinh viên), con nuôi, phường hoặc nhân viên.\n\nHiến pháp đảm bảo sự đại diện bình đẳng cho tất cả mọi người bằng cách trao quyền cho người dân Mỹ thông qua quá trình điều tra dân số: đếm tất cả mọi người sống ở Hoa Kỳ cứ sau mười năm. Sự tham gia của bạn đảm bảo cộng đồng của bạn được đại diện đầy đủ ở tất cả các cấp chính quyền và nhận được phần tài trợ theo điều tra dân số, thông qua các chương trình như Cho vay sinh viên, SNAP, Medi-Cal, WIC, Phiếu mua nhà, Chương trình ăn sáng và ăn trưa tại trường, Giáo dục đặc biệt, Dịch vụ nghề nghiệp và đào tạo, Dinh dưỡng cao cấp, và các chương trình phát triển giao thông và cộng đồng."
   },
   "components.SampleCensus.primary_question.nonhohh.4": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.4": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Số người = [| Nhập số vào đây |]"
   },
   "components.SampleCensus.explanation.nonhohh.4": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Bao gồm _everyone_ sống và ngủ trong nhà của bạn trong bảng câu hỏi điều tra dân số của bạn - bất kể tuổi tác, giới tính, mối quan hệ với bạn, hoặc tình trạng công dân / nhập cư. Donith quên bao gồm người thuê nhà (bao gồm cả sinh viên), con nuôi, phường hoặc nhân viên.\n\nHiến pháp đảm bảo sự đại diện bình đẳng cho tất cả mọi người bằng cách trao quyền cho người dân Mỹ thông qua quá trình điều tra dân số: đếm tất cả mọi người sống ở Hoa Kỳ cứ sau mười năm. Sự tham gia của bạn đảm bảo cộng đồng của bạn được đại diện đầy đủ ở tất cả các cấp chính quyền và nhận được phần tài trợ theo điều tra dân số, thông qua các chương trình như Cho vay sinh viên, SNAP, Medi-Cal, WIC, Phiếu mua nhà, Chương trình ăn sáng và ăn trưa tại trường, Giáo dục đặc biệt, Dịch vụ nghề nghiệp và đào tạo, Dinh dưỡng cao cấp, và các chương trình phát triển giao thông và cộng đồng."
   },
   "components.SampleCensus.primary_question.nonhohh.5": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.5": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Số người = [| Nhập số vào đây |]"
   },
   "components.SampleCensus.explanation.nonhohh.5": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Bao gồm _everyone_ sống và ngủ trong nhà của bạn trong bảng câu hỏi điều tra dân số của bạn - bất kể tuổi tác, giới tính, mối quan hệ với bạn, hoặc tình trạng công dân / nhập cư. Donith quên bao gồm người thuê nhà (bao gồm cả sinh viên), con nuôi, phường hoặc nhân viên.\n\nHiến pháp đảm bảo sự đại diện bình đẳng cho tất cả mọi người bằng cách trao quyền cho người dân Mỹ thông qua quá trình điều tra dân số: đếm tất cả mọi người sống ở Hoa Kỳ cứ sau mười năm. Sự tham gia của bạn đảm bảo cộng đồng của bạn được đại diện đầy đủ ở tất cả các cấp chính quyền và nhận được phần tài trợ theo điều tra dân số, thông qua các chương trình như Cho vay sinh viên, SNAP, Medi-Cal, WIC, Phiếu mua nhà, Chương trình ăn sáng và ăn trưa tại trường, Giáo dục đặc biệt, Dịch vụ nghề nghiệp và đào tạo, Dinh dưỡng cao cấp, và các chương trình phát triển giao thông và cộng đồng."
   },
   "components.SampleCensus.primary_question.nonhohh.6": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.6": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Số người = [| Nhập số vào đây |]"
   },
   "components.SampleCensus.explanation.nonhohh.6": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Bao gồm _everyone_ sống và ngủ trong nhà của bạn trong bảng câu hỏi điều tra dân số của bạn - bất kể tuổi tác, giới tính, mối quan hệ với bạn, hoặc tình trạng công dân / nhập cư. Donith quên bao gồm người thuê nhà (bao gồm cả sinh viên), con nuôi, phường hoặc nhân viên.\n\nHiến pháp đảm bảo sự đại diện bình đẳng cho tất cả mọi người bằng cách trao quyền cho người dân Mỹ thông qua quá trình điều tra dân số: đếm tất cả mọi người sống ở Hoa Kỳ cứ sau mười năm. Sự tham gia của bạn đảm bảo cộng đồng của bạn được đại diện đầy đủ ở tất cả các cấp chính quyền và nhận được phần tài trợ theo điều tra dân số, thông qua các chương trình như Cho vay sinh viên, SNAP, Medi-Cal, WIC, Phiếu mua nhà, Chương trình ăn sáng và ăn trưa tại trường, Giáo dục đặc biệt, Dịch vụ nghề nghiệp và đào tạo, Dinh dưỡng cao cấp, và các chương trình phát triển giao thông và cộng đồng."
   },
   "components.SampleCensus.primary_question.nonhohh.7": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.7": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Số người = [| Nhập số vào đây |]"
   },
   "components.SampleCensus.explanation.nonhohh.7": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Bao gồm _everyone_ sống và ngủ trong nhà của bạn trong bảng câu hỏi điều tra dân số của bạn - bất kể tuổi tác, giới tính, mối quan hệ với bạn, hoặc tình trạng công dân / nhập cư. Donith quên bao gồm người thuê nhà (bao gồm cả sinh viên), con nuôi, phường hoặc nhân viên.\n\nHiến pháp đảm bảo sự đại diện bình đẳng cho tất cả mọi người bằng cách trao quyền cho người dân Mỹ thông qua quá trình điều tra dân số: đếm tất cả mọi người sống ở Hoa Kỳ cứ sau mười năm. Sự tham gia của bạn đảm bảo cộng đồng của bạn được đại diện đầy đủ ở tất cả các cấp chính quyền và nhận được phần tài trợ theo điều tra dân số, thông qua các chương trình như Cho vay sinh viên, SNAP, Medi-Cal, WIC, Phiếu mua nhà, Chương trình ăn sáng và ăn trưa tại trường, Giáo dục đặc biệt, Dịch vụ nghề nghiệp và đào tạo, Dinh dưỡng cao cấp, và các chương trình phát triển giao thông và cộng đồng."
   },
   "components.SampleCensus.hohh_description": {
     "english": "If you are responsible for the home, you should complete the survey as person one providing infomation for the others you are responsible for.",
-    "translation": null
+    "translation": "Nếu bạn chịu trách nhiệm về ngôi nhà, bạn nên hoàn thành khảo sát với tư cách là người cung cấp thông tin cho những người khác mà bạn chịu trách nhiệm."
   },
   "components.SampleCensus.nonHohh_description": {
     "english": "If you live in someone else's home, you will need to provide information to the person completing the questionnaire.",
-    "translation": null
+    "translation": "Nếu bạn sống trong nhà của người khác, bạn sẽ cần cung cấp thông tin cho người hoàn thành bảng câu hỏi."
   },
   "components.Home.factoids.1.title": {
     "english": "Is it safe?",
-    "translation": null
+    "translation": "Nó có an toàn không?"
   },
   "components.Home.factoids.2.title": {
     "english": "Do I take the census?",
-    "translation": null
+    "translation": "Tôi có điều tra dân số không?"
   },
   "components.Home.factoids.1.subtitle": {
     "english": "Why should I be counted?",
-    "translation": null
+    "translation": "Tại sao tôi nên được tính?"
   },
   "components.Home.factoids.2.subtitle": {
     "english": "What will I be asked?",
-    "translation": null
+    "translation": "Tôi sẽ được hỏi gì?"
   },
   "components.Home.factoids.3.subtitle": {
     "english": "Take a photo of the image below to learn more",
-    "translation": null
+    "translation": "Chụp ảnh hình ảnh dưới đây để tìm hiểu thêm"
   },
   "components.Home.factoids.1.text": {
     "english": "Get the answers to all your questions about why to take the census and how the information will be used.",
-    "translation": null
+    "translation": "Nhận câu trả lời cho tất cả các câu hỏi của bạn về lý do tại sao phải điều tra dân số và làm thế nào thông tin sẽ được sử dụng."
   },
   "components.Home.factoids.2.text": {
     "english": "Learn more about the census questions, and who should be answering the questionnaire.",
-    "translation": null
+    "translation": "Tìm hiểu thêm về các câu hỏi điều tra dân số và ai sẽ trả lời bảng câu hỏi."
   },
   "components.Home.factoids.1.cta": {
     "english": "VIEW ALL FAQs",
-    "translation": null
+    "translation": "XEM TẤT CẢ Câu hỏi thường gặp"
   },
   "components.Home.factoids.2.cta": {
     "english": "VIEW SAMPLE SURVEY",
-    "translation": null
+    "translation": "XEM MẪU MẪU"
+  },
+  "components.Home.top_reasons.item.5": {
+    "english": "Emergency response planning",
+    "translation": "Lập kế hoạch ứng phó khẩn cấp"
   }
 }
