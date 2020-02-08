@@ -670,5 +670,10 @@
     "id": "components.Home.factoids.2.cta",
     "description": "Second factoid cta text",
     "defaultMessage": "VIEW SAMPLE SURVEY"
+  },
+  "components.Home.top_reasons.item.5": {
+    "id": "components.Home.top_reasons.item.5",
+    "description": "Reasons to take the census 5",
+    "defaultMessage": "Emergency response planning"
   }
 }

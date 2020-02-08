@@ -1022,5 +1022,9 @@
   "components.Home.factoids.2.cta": {
     "english": "VIEW SAMPLE SURVEY",
     "translation": "VIEW SAMPLE SURVEY"
+  },
+  "components.Home.top_reasons.item.5": {
+    "english": "Emergency response planning",
+    "translation": "Emergency response planning"
   }
 }
