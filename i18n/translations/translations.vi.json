@@ -244,8 +244,8 @@
     "english": "Learn About the Census From Your Phone"
   },
   "components.Home.factoids.3.title": {
-    "translation": "Tiêu đề 3",
-    "english": "Title 3"
+    "english": "In a hurry, take it to go!",
+    "translation": null
   },
   "components.Home.factoids.3.message": {
     "translation": "nhiều văn bản sẽ đến đây",
@@ -292,8 +292,8 @@
     "english": "Optional"
   },
   "components.Home.carousel.messages.1": {
-    "translation": "Tìm hiểu tại sao mọi người đều quan tâm!",
-    "english": "Learn why everyone counts!"
+    "english": "Learn why everyone counts!",
+    "translation": null
   },
   "components.Home.carousel.messages.2": {
     "translation": "Khi bạn trả lời, tất cả chúng ta đều có lợi!",
@@ -985,6 +985,42 @@
   },
   "components.SampleCensus.nonHohh_description": {
     "english": "If you live in someone else's home, you will need to provide information to the person completing the questionnaire.",
+    "translation": null
+  },
+  "components.Home.factoids.1.title": {
+    "english": "Is it safe?",
+    "translation": null
+  },
+  "components.Home.factoids.2.title": {
+    "english": "Do I take the census?",
+    "translation": null
+  },
+  "components.Home.factoids.1.subtitle": {
+    "english": "Why should I be counted?",
+    "translation": null
+  },
+  "components.Home.factoids.2.subtitle": {
+    "english": "What will I be asked?",
+    "translation": null
+  },
+  "components.Home.factoids.3.subtitle": {
+    "english": "Take a photo of the image below to learn more",
+    "translation": null
+  },
+  "components.Home.factoids.1.text": {
+    "english": "Get the answers to all your questions about why to take the census and how the information will be used.",
+    "translation": null
+  },
+  "components.Home.factoids.2.text": {
+    "english": "Learn more about the census questions, and who should be answering the questionnaire.",
+    "translation": null
+  },
+  "components.Home.factoids.1.cta": {
+    "english": "VIEW ALL FAQs",
+    "translation": null
+  },
+  "components.Home.factoids.2.cta": {
+    "english": "VIEW SAMPLE SURVEY",
     "translation": null
   }
 }
