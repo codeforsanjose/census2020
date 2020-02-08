@@ -5,10 +5,10 @@ import './SampleTextbox.scss';
 
 export const SampleTextbox = ({ value }) => {
   return (
-    <textarea
-      className="c_sample-textbox"
-      value={value}
-      readOnly></textarea>
+    <div
+      className="c_sample-textbox">
+      {value}
+    </div>
   );
 };
 
