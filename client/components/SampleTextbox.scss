@@ -1,9 +1,10 @@
 .c_sample-textbox {
-  resize: none;
   height: 2em;
   border: none;
   border-radius: 3px;
   padding: .25em;
   background-color: #2F80ED88;
   text-align: center;
+  display: inline-block;
+  min-width: 10em;
 }
