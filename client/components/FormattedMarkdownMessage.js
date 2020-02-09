@@ -64,9 +64,9 @@ function compileToReact (node, index = undefined) {
     return (children || []).map(compileToReact);
   };
   if (node.type === 'root') {
-    return (<div {...node.properties}>
+    return (<span {...node.properties}>
       {processChildren(node.children)}
-    </div>);
+    </span>);
   } else if (React.isValidElement(node)) {
     if (index !== undefined && !node.key) {
       return React.cloneElement(node, {
@@ -141,6 +141,7 @@ const FormattedMarkdownMessage = ({ intl, id, description, defaultMessage, value
         textbox: (h, node) => node
       }
     }).use(function () {
+      // Adds class to root node of message
       return function (node) {
         if (!node.properties) {
           node.properties = {};

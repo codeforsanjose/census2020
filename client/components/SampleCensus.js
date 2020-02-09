@@ -562,7 +562,7 @@ const QuestionAnswerBox = ({ title, text }) => (
     >
       {title}
     </h3>
-    <p>{text}</p>
+    <div>{text}</div>
   </li>
 );
 
@@ -596,9 +596,9 @@ const CensusQuestionCard = ({ item, className, index }) => (
         defaultMessage="Explanation"
       />
     </h3>
-    <p className="c_sample-census__content__census-questions__card__explanation">
+    <div className="c_sample-census__content__census-questions__card__explanation">
       { item.explanation }
-    </p>
+    </div>
   </li>
 );
 

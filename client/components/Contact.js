@@ -210,7 +210,7 @@ class Contact extends Component {
                     defaultMessage="Interested in working for the Census?"
                   />
                 </h3>
-                <p className="c_contact__content__col__blurb__info">
+                <div className="c_contact__content__col__blurb__info">
                   <FormattedMarkdownMessage
                     id="components.Contact.workingForCensus"
                     defaultMessage="Find more information {link}"
@@ -226,7 +226,7 @@ class Contact extends Component {
                       )
                     }}
                   />
-                </p>
+                </div>
               </div>
               <div className="c_contact__content__col__blurb">
                 <h3 className="c_contact__content__col__blurb__headline">
@@ -235,7 +235,7 @@ class Contact extends Component {
                     defaultMessage="Need more information?"
                   />
                 </h3>
-                <p className="c_contact__content__col__blurb__info">
+                <div className="c_contact__content__col__blurb__info">
                   <FormattedMarkdownMessage
                     id="components.Contact.visitFaq"
                     defaultMessage="Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days."
@@ -250,7 +250,7 @@ class Contact extends Component {
                       )
                     }}
                   />
-                </p>
+                </div>
               </div>
             </div>
             <div className="c_contact__content__form_col">

@@ -245,7 +245,7 @@
   },
   "components.Home.factoids.3.title": {
     "english": "In a hurry, take it to go!",
-    "translation": null
+    "translation": "¡A toda prisa, tómalo para llevar!"
   },
   "components.Home.factoids.3.message": {
     "translation": "más texto irá aquí",
@@ -293,7 +293,7 @@
   },
   "components.Home.carousel.messages.1": {
     "english": "Learn why everyone counts!",
-    "translation": null
+    "translation": "¡Aprenda por qué todos cuentan!"
   },
   "components.Home.carousel.messages.2": {
     "translation": "Cuando respondes, ¡todos nos beneficiamos!",
@@ -361,11 +361,11 @@
   },
   "components.SampleCensus.title": {
     "english": "Preview each question on the survey",
-    "translation": null
+    "translation": "Vista previa de cada pregunta en la encuesta"
   },
   "components.SampleCensus.subtitle": {
     "english": "Learn if you should answer, how to answer, and how your info is used.",
-    "translation": null
+    "translation": "Aprenda si debe responder, cómo responder y cómo se usa su información."
   },
   "components.DetailViewContainer.message.1": {
     "translation": "El censo 2020 está aquí. Su participación ayuda a garantizar que nuestra comunidad tenga acceso a vivienda, atención médica, escuelas, programas comunitarios, mejor transporte y representación gubernamental.",
@@ -853,174 +853,178 @@
   },
   "navigation.externalCensusLink": {
     "english": "TAKE THE CENSUS",
-    "translation": null
+    "translation": "TOMA EL CENSO"
   },
   "components.SampleCensus.explanation.1": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Incluya a todos los que viven y duermen en su hogar en su cuestionario del censo, independientemente de su edad, sexo, relación con usted o estado de ciudadanía / inmigración. No olvide incluir inquilinos (incluidos estudiantes), niños de crianza, barrios o empleados.\n\nLa Constitución garantiza una representación equitativa para todos al empoderar a la gente de América a través del proceso del censo: el recuento de todos los que viven en los Estados Unidos cada diez años. Su participación asegura que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba su parte justa de fondos guiados por el censo, a través de programas como préstamos estudiantiles, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, Servicios de carrera y capacitación, nutrición para personas mayores y programas de desarrollo comunitario y de transporte."
   },
   "components.SampleCensus.explanation.2": {
     "english": "The Census Bureau’s goal is to count people once, and only once in the right place according to where they live on Census Day. This question ensures that _everyone_ living at an address is counted, including infants and children under 5, who are one of the largest undercounted groups.  \n\nHelp ensure your child or grandchild’s early childhood education program or school meal program is fully funded by including them in your household.",
-    "translation": null
+    "translation": "El objetivo de la Oficina del Censo es contar a las personas una vez, y solo una vez en el lugar correcto de acuerdo con el lugar donde viven el Día del Censo. Esta pregunta garantiza que se cuenta a todos los que viven en una dirección, incluidos los bebés y niños menores de 5 años, que son uno de los grupos más grandes que no cuentan.\n\nAyude a garantizar que el programa de educación de la primera infancia de su hijo o nieto o el programa de comidas escolares estén totalmente financiados al incluirlos en su hogar."
   },
   "components.SampleCensus.explanation.3": {
     "english": "The Census Bureau asks about whether a home is owned or rented to create statistics about homeownership and renters. Homeownership rates serve as an indicator of a community’s economic strength.  \n\nThe Federal Government, as well as State and Local Governments and businesses, use this information to make planning decisions that can bring new businesses, hospitals, or housing to your neighborhood.",
-    "translation": null
+    "translation": "La Oficina del Censo pregunta si una casa es propiedad o está alquilada para crear estadísticas sobre la propiedad de la vivienda y los inquilinos. Las tasas de propiedad de vivienda sirven como un indicador de la fortaleza económica de una comunidad.\n\nEl Gobierno Federal, así como los gobiernos estatales y locales y las empresas, utilizan esta información para tomar decisiones de planificación que pueden traer nuevos negocios, hospitales o viviendas a su vecindario."
   },
   "components.SampleCensus.explanation.4": {
     "english": "The Census Bureau asks for a phone number in case it needs to contact you. They will _never_ share your number and will _only_ contact you if needed for official Census Bureau business.",
-    "translation": null
+    "translation": "La Oficina del Censo solicita un número de teléfono en caso de que necesite contactarlo. Nunca compartirán su número y solo se comunicarán con usted si es necesario para asuntos oficiales de la Oficina del Censo."
   },
   "components.SampleCensus.explanation.5": {
     "english": "The Census Bureau asks for names to ensure everyone in the house is counted. This helps you make sure you have included everyone living and sleeping in your home.  It is easy to skip someone by accident, especially in large households.",
-    "translation": null
+    "translation": "La Oficina del Censo solicita nombres para asegurarse de que todos en la casa sean contados. Esto le ayuda a asegurarse de incluir a todos los que viven y duermen en su hogar. Es fácil saltear a alguien por accidente, especialmente en hogares grandes."
   },
   "components.SampleCensus.explanation.6": {
     "english": "The Census Bureau asks about the gender of each person for statistical purposes.  The State and Federal government use this information in planning and funding programs, and evaluating programs and policies to ensure they fairly and equitably serve the needs of both men and women.",
-    "translation": null
+    "translation": "La Oficina del Censo pregunta sobre el género de cada persona con fines estadísticos. El gobierno estatal y federal utiliza esta información para planificar y financiar programas, y evaluar programas y políticas para garantizar que satisfagan de manera justa y equitativa las necesidades de hombres y mujeres."
   },
   "components.SampleCensus.explanation.7": {
     "english": "The Census Bureau asks about age and date of birth to understand the size and characteristics of different age groups in your neighborhood.  Local, state, tribal, and federal agencies use age information to plan and fund government programs that provide assistance or services for specific age groups, such as children, working-age adults, women of childbearing age, and elders.",
-    "translation": null
+    "translation": "La Oficina del Censo pregunta sobre la edad y la fecha de nacimiento para comprender el tamaño y las características de los diferentes grupos de edad en su vecindario. Las agencias locales, estatales, tribales y federales utilizan información sobre la edad para planificar y financiar programas gubernamentales que brindan asistencia o servicios para grupos de edad específicos, como niños, adultos en edad laboral, mujeres en edad fértil y ancianos."
   },
   "components.SampleCensus.explanation.8": {
     "english": "The Census Bureau asks whether a person is of Hispanic, Latino or Spanish origin to create statistics about this ethnic group. The information collected in this question is used by Government agencies and community groups in evaluating programs and ensuring compliance with anti-discrimination provisions, such as under the Voting Rights Act and the Civil Rights Act.\n\n**You will need to answer BOTH Question 8 about Hispanic origin and Question 9 about race. For this census, Hispanic origins are not races.**",
-    "translation": null
+    "translation": "La Oficina del Censo pregunta si una persona es de origen hispano, latino o español para crear estadísticas sobre este grupo étnico. Las agencias gubernamentales y los grupos comunitarios utilizan la información recopilada en esta pregunta para evaluar los programas y garantizar el cumplimiento de las disposiciones contra la discriminación, como la Ley de derechos de voto y la Ley de derechos civiles.\n\n** Deberá responder AMBAS preguntas 8 sobre origen hispano y preguntas 9 sobre raza. Para este censo, los orígenes hispanos no son razas. **"
   },
   "components.SampleCensus.explanation.9": {
     "english": "The Census Bureau asks about a person's race to create statistics about race and to present other estimates by race groups.  Local, state, tribal, and federal programs use this information, and they are critical factors in the basic research behind numerous policies, particularly for civil rights. Race information is used in planning and funding government programs that provide funds or services for specific groups.",
-    "translation": null
+    "translation": "La Oficina del Censo pregunta sobre la raza de una persona para crear estadísticas sobre la raza y presentar otras estimaciones por grupos raciales. Los programas locales, estatales, tribales y federales utilizan esta información, y son factores críticos en la investigación básica detrás de numerosas políticas, particularmente para los derechos civiles. La información sobre la raza se utiliza para planificar y financiar programas gubernamentales que proporcionan fondos o servicios para grupos específicos."
   },
   "components.CensusQuestionCard.explanation": {
     "english": "Explanation",
-    "translation": null
+    "translation": "Explicación"
   },
   "components.SampleCensus.primary_question.nonhohh.1": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "¿Cuántas personas vivían o se hospedaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.1": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Número de personas = [| Ingrese el número aquí |]"
   },
   "components.SampleCensus.explanation.nonhohh.1": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Incluya a todos los que viven y duermen en su hogar en su cuestionario del censo, independientemente de su edad, sexo, relación con usted o estado de ciudadanía / inmigración. No olvide incluir inquilinos (incluidos estudiantes), niños de crianza, barrios o empleados.\n\nLa Constitución garantiza una representación equitativa para todos al empoderar a la gente de América a través del proceso del censo: el recuento de todos los que viven en los Estados Unidos cada diez años. Su participación asegura que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba su parte justa de fondos guiados por el censo, a través de programas como préstamos estudiantiles, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, Servicios de carrera y capacitación, nutrición para personas mayores y programas de desarrollo comunitario y de transporte."
   },
   "components.SampleCensus.primary_question.nonhohh.2": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "¿Cuántas personas vivían o se hospedaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.2": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Número de personas = [| Ingrese el número aquí |]"
   },
   "components.SampleCensus.explanation.nonhohh.2": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Incluya a todos los que viven y duermen en su hogar en su cuestionario del censo, independientemente de su edad, sexo, relación con usted o estado de ciudadanía / inmigración. No olvide incluir inquilinos (incluidos estudiantes), niños de crianza, barrios o empleados.\n\nLa Constitución garantiza una representación equitativa para todos al empoderar a la gente de América a través del proceso del censo: el recuento de todos los que viven en los Estados Unidos cada diez años. Su participación asegura que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba su parte justa de fondos guiados por el censo, a través de programas como préstamos estudiantiles, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, Servicios de carrera y capacitación, nutrición para personas mayores y programas de desarrollo comunitario y de transporte."
   },
   "components.SampleCensus.primary_question.nonhohh.3": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "¿Cuántas personas vivían o se hospedaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.3": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Número de personas = [| Ingrese el número aquí |]"
   },
   "components.SampleCensus.explanation.nonhohh.3": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Incluya a todos los que viven y duermen en su hogar en su cuestionario del censo, independientemente de su edad, sexo, relación con usted o estado de ciudadanía / inmigración. No olvide incluir inquilinos (incluidos estudiantes), niños de crianza, barrios o empleados.\n\nLa Constitución garantiza una representación equitativa para todos al empoderar a la gente de América a través del proceso del censo: el recuento de todos los que viven en los Estados Unidos cada diez años. Su participación asegura que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba su parte justa de fondos guiados por el censo, a través de programas como préstamos estudiantiles, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, Servicios de carrera y capacitación, nutrición para personas mayores y programas de desarrollo comunitario y de transporte."
   },
   "components.SampleCensus.primary_question.nonhohh.4": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "¿Cuántas personas vivían o se hospedaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.4": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Número de personas = [| Ingrese el número aquí |]"
   },
   "components.SampleCensus.explanation.nonhohh.4": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Incluya a todos los que viven y duermen en su hogar en su cuestionario del censo, independientemente de su edad, sexo, relación con usted o estado de ciudadanía / inmigración. No olvide incluir inquilinos (incluidos estudiantes), niños de crianza, barrios o empleados.\n\nLa Constitución garantiza una representación equitativa para todos al empoderar a la gente de América a través del proceso del censo: el recuento de todos los que viven en los Estados Unidos cada diez años. Su participación asegura que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba su parte justa de fondos guiados por el censo, a través de programas como préstamos estudiantiles, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, Servicios de carrera y capacitación, nutrición para personas mayores y programas de desarrollo comunitario y de transporte."
   },
   "components.SampleCensus.primary_question.nonhohh.5": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "¿Cuántas personas vivían o se hospedaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.5": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Número de personas = [| Ingrese el número aquí |]"
   },
   "components.SampleCensus.explanation.nonhohh.5": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Incluya a todos los que viven y duermen en su hogar en su cuestionario del censo, independientemente de su edad, sexo, relación con usted o estado de ciudadanía / inmigración. No olvide incluir inquilinos (incluidos estudiantes), niños de crianza, barrios o empleados.\n\nLa Constitución garantiza una representación equitativa para todos al empoderar a la gente de América a través del proceso del censo: el recuento de todos los que viven en los Estados Unidos cada diez años. Su participación asegura que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba su parte justa de fondos guiados por el censo, a través de programas como préstamos estudiantiles, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, Servicios de carrera y capacitación, nutrición para personas mayores y programas de desarrollo comunitario y de transporte."
   },
   "components.SampleCensus.primary_question.nonhohh.6": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "¿Cuántas personas vivían o se hospedaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.6": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Número de personas = [| Ingrese el número aquí |]"
   },
   "components.SampleCensus.explanation.nonhohh.6": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Incluya a todos los que viven y duermen en su hogar en su cuestionario del censo, independientemente de su edad, sexo, relación con usted o estado de ciudadanía / inmigración. No olvide incluir inquilinos (incluidos estudiantes), niños de crianza, barrios o empleados.\n\nLa Constitución garantiza una representación equitativa para todos al empoderar a la gente de América a través del proceso del censo: el recuento de todos los que viven en los Estados Unidos cada diez años. Su participación asegura que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba su parte justa de fondos guiados por el censo, a través de programas como préstamos estudiantiles, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, Servicios de carrera y capacitación, nutrición para personas mayores y programas de desarrollo comunitario y de transporte."
   },
   "components.SampleCensus.primary_question.nonhohh.7": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": null
+    "translation": "¿Cuántas personas vivían o se hospedaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.7": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": null
+    "translation": "Número de personas = [| Ingrese el número aquí |]"
   },
   "components.SampleCensus.explanation.nonhohh.7": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": null
+    "translation": "Incluya a todos los que viven y duermen en su hogar en su cuestionario del censo, independientemente de su edad, sexo, relación con usted o estado de ciudadanía / inmigración. No olvide incluir inquilinos (incluidos estudiantes), niños de crianza, barrios o empleados.\n\nLa Constitución garantiza una representación equitativa para todos al empoderar a la gente de América a través del proceso del censo: el recuento de todos los que viven en los Estados Unidos cada diez años. Su participación asegura que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba su parte justa de fondos guiados por el censo, a través de programas como préstamos estudiantiles, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, Servicios de carrera y capacitación, nutrición para personas mayores y programas de desarrollo comunitario y de transporte."
   },
   "components.SampleCensus.hohh_description": {
     "english": "If you are responsible for the home, you should complete the survey as person one providing infomation for the others you are responsible for.",
-    "translation": null
+    "translation": "Si usted es responsable del hogar, debe completar la encuesta como la persona que proporciona información para los demás de los que es responsable."
   },
   "components.SampleCensus.nonHohh_description": {
     "english": "If you live in someone else's home, you will need to provide information to the person completing the questionnaire.",
-    "translation": null
+    "translation": "Si vive en la casa de otra persona, deberá proporcionar información a la persona que completa el cuestionario."
   },
   "components.Home.factoids.1.title": {
     "english": "Is it safe?",
-    "translation": null
+    "translation": "¿Es seguro?"
   },
   "components.Home.factoids.2.title": {
     "english": "Do I take the census?",
-    "translation": null
+    "translation": "¿Realizo el censo?"
   },
   "components.Home.factoids.1.subtitle": {
     "english": "Why should I be counted?",
-    "translation": null
+    "translation": "¿Por qué debería ser contado?"
   },
   "components.Home.factoids.2.subtitle": {
     "english": "What will I be asked?",
-    "translation": null
+    "translation": "¿Qué se me preguntará?"
   },
   "components.Home.factoids.3.subtitle": {
     "english": "Take a photo of the image below to learn more",
-    "translation": null
+    "translation": "Tome una foto de la imagen a continuación para obtener más información."
   },
   "components.Home.factoids.1.text": {
     "english": "Get the answers to all your questions about why to take the census and how the information will be used.",
-    "translation": null
+    "translation": "Obtenga las respuestas a todas sus preguntas sobre por qué realizar el censo y cómo se utilizará la información."
   },
   "components.Home.factoids.2.text": {
     "english": "Learn more about the census questions, and who should be answering the questionnaire.",
-    "translation": null
+    "translation": "Obtenga más información sobre las preguntas del censo y quién debe responder el cuestionario."
   },
   "components.Home.factoids.1.cta": {
     "english": "VIEW ALL FAQs",
-    "translation": null
+    "translation": "VER TODAS LAS PREGUNTAS FRECUENTES"
   },
   "components.Home.factoids.2.cta": {
     "english": "VIEW SAMPLE SURVEY",
-    "translation": null
+    "translation": "VER ENCUESTA DE MUESTRA"
+  },
+  "components.Home.top_reasons.item.5": {
+    "english": "Emergency response planning",
+    "translation": "Planificación de respuesta a emergencias"
   }
 }
