@@ -528,7 +528,7 @@ const sampleCensusButtons = [
     button: 'components.SampleCensus.preliminary_button',
     description: 'components.SampleCensus.preliminary_description',
     questions: PRELIMINARY_QUESTIONS,
-    icon: '',
+    icon: ''
   },
   {
     button: 'components.SampleCensus.hohh_button',
@@ -631,7 +631,7 @@ export default class SampleCensus extends React.Component {
 
     this.state = {
       questionPosition: 0,
-      questionsType: 0,
+      questionsType: 0
     };
   }
 
@@ -697,7 +697,7 @@ export default class SampleCensus extends React.Component {
                   className={classnames(
                     buttonClassName,
                     {
-                      [`${buttonClassName}--active`]: index === this.state.questionPosition,
+                      [`${buttonClassName}--active`]: index === this.state.questionPosition
                     }
                   )}
                   onClick={() => this.setState({

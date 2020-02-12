@@ -20,6 +20,7 @@ export default class App extends React.PureComponent {
         {
           (context) => {
             const { currentLocale } = context;
+            document.documentElement.lang = currentLocale;
 
             return (
               <IntlProvider
