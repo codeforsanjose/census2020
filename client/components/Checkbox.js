@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl'
 
 export default class Checkbox extends React.PureComponent {
   render () {
@@ -25,7 +26,9 @@ export default class Checkbox extends React.PureComponent {
           value={value}
           onChange={onCheck}
         />
-        <label htmlFor={id}>{label}</label>
+        <label htmlFor={id}>
+          <FormattedMessage id={label} />
+        </label>
       </span>
     );
 

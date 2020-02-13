@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, defineMessages } from 'react-intl';
 import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
 
 import 'react-toastify/dist/ReactToastify.css';
@@ -16,6 +16,61 @@ import {
   supportedLocales
 } from '../../i18n/supported-locales';
 import contactFormImageSrc from '../images/contact-form.jpg';
+
+defineMessages({
+  header: {
+    id: "components.Contact.getInvolved.header",
+    defaultMessage: "Get Involved",
+  },
+  toastMessage: {
+    id: "components.Contact.submitSuccessToast",
+    description: "Message shown to users in a popup when the contact form has been successfully submitted",
+    defaultMessage: "Your request for information has been submitted",
+  },
+  checkbox1: {
+    id: "components.Contact.fields.interest.options.volunteer",
+    defaultMessage: "Volunteer to help",
+    description:"'Volunteer to help' option for the Interest field in the Contact form",
+  },
+  checkbox2: {
+    id: "components.Contact.fields.interest.options.requestPresentation",
+    defaultMessage: "Request a presentation",
+    description: "'Request a Presentation' option for the Interest field in the Contact form",
+  },
+  checkbox3: {
+    id: "components.Contact.fields.interest.options.information",
+    defaultMessage: "Request more information",
+    description: "'Request more information' option for the Interest field in the Contact form",
+  },
+  checkbox4: {
+    id: "components.Contact.fields.interest.options.other",
+    defaultMessage: "Other",
+    description: "'Other' option for the Interest field in the Contact form",
+  },
+})
+
+const options = [
+      {
+        value: 'volunteer',
+        label: "components.Contact.fields.interest.options.volunteer",
+        name: 'volunteer',
+      },
+      {
+        value: 'presentation',
+        label: "components.Contact.fields.interest.options.requestPresentation",
+        name: 'presentation',
+      },
+      {
+        value: 'information',
+        label: "components.Contact.fields.interest.options.information",
+        name: 'information',
+      },
+      {
+        value: 'other',
+        label: "components.Contact.fields.interest.options.other",
+        name: 'other',
+      }
+    ];
 
 class Contact extends Component {
   static propTypes = {
@@ -50,8 +105,6 @@ class Contact extends Component {
       (
         <FormattedMarkdownMessage
           id="components.Contact.submitSuccessToast"
-          description="Message shown to users in a popup when the contact form has been successfully submitted"
-          defaultMessage="Your request for information has been submitted"
         />
       ),
       {
@@ -71,7 +124,7 @@ class Contact extends Component {
 
   handleCheck (event) {
     const interestName = event.target.value;
-    this.setState(({ interests }) => {
+    this.setState( ({interests}) => {
       const newInterests = new Set(interests);
       if (newInterests.has(interestName)) {
         newInterests.delete(interestName);
@@ -113,91 +166,13 @@ class Contact extends Component {
   }
 
   render () {
-    const {
-      firstName,
-      lastName,
-      email,
-      comment,
-      interests
-    } = this.state;
-
-    const options = [
-      {
-        value: 'volunteer',
-        label: (
-          <FormattedMessage
-            key="volunteer"
-            id="components.Contact.fields.interest.options.volunteer"
-            defaultMessage="Volunteer to help"
-            description="'Volunteer to help' option for the Interest field in the Contact form"
-          />
-        ),
-        name: 'volunteer',
-        checked: interests.has('volunteer')
-      },
-      {
-        value: 'presentation',
-        label: (
-          <FormattedMessage
-            key="requestPresentation"
-            id="components.Contact.fields.interest.options.requestPresentation"
-            defaultMessage="Request a presentation"
-            description="'Request a Presentation' option for the Interest field in the Contact form"
-          />
-        ),
-        name: 'presentation',
-        checked: interests.has('presentation')
-      },
-      {
-        value: 'information',
-        label: (
-          <FormattedMessage
-            key="information"
-            id="components.Contact.fields.interest.options.information"
-            defaultMessage="Request more information"
-            description="'Request more information' option for the Interest field in the Contact form"
-          />
-        ),
-        name: 'information',
-        checked: interests.has('information')
-      },
-      {
-        value: 'other',
-        label: (
-          <FormattedMessage
-            key="other"
-            id="components.Contact.fields.interest.options.other"
-            defaultMessage="Other"
-            description="'Other' option for the Interest field in the Contact form"
-          />
-        ),
-        name: 'other',
-        checked: interests.has('other')
-      }
-    ];
-
-    let emailWarning;
-    if (!this.state.validEmail) {
-      emailWarning = (
-        <span className="c_contact__content__form_col__form__warning">
-          <FormattedMessage
-            id="components.Contact.emailValidation"
-            defaultMessage="Please enter a valid email address"
-          />
-        </span>
-      );
-    } else {
-      emailWarning = null;
-    }
-
     return (
-      <div>
+      <div className="c_contact">
         <div className="c_headers__goldHeader"></div>
         <div className="c_contact">
           <h1 className="c_contact__headline">
             <FormattedMessage
               id="components.Contact.getInvolved.header"
-              defaultMessage="Get Involved"
             />
           </h1>
           <div className="c_contact__content">
@@ -207,7 +182,6 @@ class Contact extends Component {
                 <h3 className="c_contact__content__col__blurb__headline">
                   <FormattedMessage
                     id="components.Contact.workingForCensus.header"
-                    defaultMessage="Interested in working for the Census?"
                   />
                 </h3>
                 <div className="c_contact__content__col__blurb__info">
@@ -276,7 +250,7 @@ class Contact extends Component {
                         onChange={this.handleChange}
                         name='firstName'
                         className='c_contact__content__form_col__form__field'
-                        value={firstName}
+                        value={this.state.firstName}
                         type='text'
                       />
                     </div>
@@ -294,7 +268,7 @@ class Contact extends Component {
                         onChange={this.handleChange}
                         name='lastName'
                         className='c_contact__content__form_col__form__field'
-                        value={lastName}
+                        value={this.state.lastName}
                         type='text'
                       />
                     </div>
@@ -306,14 +280,21 @@ class Contact extends Component {
                       defaultMessage="Email"
                       description="Label for the Email field in the Contact form"
                     />
-                    {emailWarning}
+                    { !this.state.validEmail && (       
+                      <span className="c_contact__content__form_col__form__warning">
+                        <FormattedMessage
+                          id="components.Contact.emailValidation"
+                          defaultMessage="Please enter a valid email address"
+                        />
+                      </span>
+                  )}
                   </h6>
                   <TextInput
                     onChange={this.handleChange}
                     validateEmail={this.validateEmail}
                     name='email'
                     className='c_contact__content__form_col__form__field'
-                    value={email}
+                    value={this.state.email}
                     type='text'
                   />
                   <h6 className="c_contact__content__form_col__form__row__label">
@@ -330,7 +311,7 @@ class Contact extends Component {
                         <Checkbox
                           className='c_contact__content__form_col__form__checkbox'
                           onCheck={this.handleCheck}
-                          checked={option.checked}
+                          checked={this.state.interests.has(option.value)}
                           label={option.label}
                           name={option.name}
                           value={option.value}
@@ -356,7 +337,7 @@ class Contact extends Component {
                     name='comment'
                     className='c_contact__content__form_col__form__textarea'
                     rows={4}
-                    value={comment}
+                    value={this.state.comment}
                     type='textarea'
                   />
                 </div>
