@@ -19,58 +19,58 @@ import contactFormImageSrc from '../images/contact-form.jpg';
 
 defineMessages({
   header: {
-    id: "components.Contact.getInvolved.header",
-    defaultMessage: "Get Involved",
+    id: 'components.Contact.getInvolved.header',
+    defaultMessage: 'Get Involved'
   },
   toastMessage: {
-    id: "components.Contact.submitSuccessToast",
-    description: "Message shown to users in a popup when the contact form has been successfully submitted",
-    defaultMessage: "Your request for information has been submitted",
+    id: 'components.Contact.submitSuccessToast',
+    description: 'Message shown to users in a popup when the contact form has been successfully submitted',
+    defaultMessage: 'Your request for information has been submitted'
   },
   checkbox1: {
-    id: "components.Contact.fields.interest.options.volunteer",
-    defaultMessage: "Volunteer to help",
-    description:"'Volunteer to help' option for the Interest field in the Contact form",
+    id: 'components.Contact.fields.interest.options.volunteer',
+    defaultMessage: 'Volunteer to help',
+    description: "'Volunteer to help' option for the Interest field in the Contact form"
   },
   checkbox2: {
-    id: "components.Contact.fields.interest.options.requestPresentation",
-    defaultMessage: "Request a presentation",
-    description: "'Request a Presentation' option for the Interest field in the Contact form",
+    id: 'components.Contact.fields.interest.options.requestPresentation',
+    defaultMessage: 'Request a presentation',
+    description: "'Request a Presentation' option for the Interest field in the Contact form"
   },
   checkbox3: {
-    id: "components.Contact.fields.interest.options.information",
-    defaultMessage: "Request more information",
-    description: "'Request more information' option for the Interest field in the Contact form",
+    id: 'components.Contact.fields.interest.options.information',
+    defaultMessage: 'Request more information',
+    description: "'Request more information' option for the Interest field in the Contact form"
   },
   checkbox4: {
-    id: "components.Contact.fields.interest.options.other",
-    defaultMessage: "Other",
-    description: "'Other' option for the Interest field in the Contact form",
-  },
-})
+    id: 'components.Contact.fields.interest.options.other',
+    defaultMessage: 'Other',
+    description: "'Other' option for the Interest field in the Contact form"
+  }
+});
 
 const options = [
-      {
-        value: 'volunteer',
-        label: "components.Contact.fields.interest.options.volunteer",
-        name: 'volunteer',
-      },
-      {
-        value: 'presentation',
-        label: "components.Contact.fields.interest.options.requestPresentation",
-        name: 'presentation',
-      },
-      {
-        value: 'information',
-        label: "components.Contact.fields.interest.options.information",
-        name: 'information',
-      },
-      {
-        value: 'other',
-        label: "components.Contact.fields.interest.options.other",
-        name: 'other',
-      }
-    ];
+  {
+    value: 'volunteer',
+    label: 'components.Contact.fields.interest.options.volunteer',
+    name: 'volunteer'
+  },
+  {
+    value: 'presentation',
+    label: 'components.Contact.fields.interest.options.requestPresentation',
+    name: 'presentation'
+  },
+  {
+    value: 'information',
+    label: 'components.Contact.fields.interest.options.information',
+    name: 'information'
+  },
+  {
+    value: 'other',
+    label: 'components.Contact.fields.interest.options.other',
+    name: 'other'
+  }
+];
 
 class Contact extends Component {
   static propTypes = {
@@ -124,7 +124,7 @@ class Contact extends Component {
 
   handleCheck (event) {
     const interestName = event.target.value;
-    this.setState( ({interests}) => {
+    this.setState(({ interests }) => {
       const newInterests = new Set(interests);
       if (newInterests.has(interestName)) {
         newInterests.delete(interestName);
@@ -280,14 +280,14 @@ class Contact extends Component {
                       defaultMessage="Email"
                       description="Label for the Email field in the Contact form"
                     />
-                    { !this.state.validEmail && (       
+                    { !this.state.validEmail && (
                       <span className="c_contact__content__form_col__form__warning">
                         <FormattedMessage
                           id="components.Contact.emailValidation"
                           defaultMessage="Please enter a valid email address"
                         />
                       </span>
-                  )}
+                    )}
                   </h6>
                   <TextInput
                     onChange={this.handleChange}
