@@ -55,29 +55,35 @@ defineMessages({
 const CAROUSEL_ITEMS = [
   {
     image: muralProject,
+    alt: 'Mural in San Jose of many different squares of content',
     message: 'components.Home.carousel.messages.1'
   },
   {
     image: sanJoseMural,
+    alt: 'Mural of text "San Jose" with flowers',
     message: 'components.Home.carousel.messages.2'
 
   },
   {
     image: sharksMural,
+    alt: 'Mural in San Jose depicting sharks',
     message: 'components.Home.carousel.messages.3'
 
   },
   {
     image: performingArts,
+    alt: 'Mural depicting performing arts in San Jose',
     message: 'components.Home.carousel.messages.4'
 
   },
   {
     image: peopleGathering,
+    alt: 'Photograph of many bicyclists gathering',
     message: 'components.Home.carousel.messages.5'
   },
   {
     image: cityHall,
+    alt: 'Photograph of San Jose City Hall',
     message: 'components.Home.carousel.messages.6'
   }
 ];
@@ -88,6 +94,7 @@ const CarouselItem = ({ item }) => (
   >
     <img
       className="c_home__carousel-item__image"
+      alt={item.alt}
       src={item.image}
     />
     <div className="c_home__overlay">
@@ -109,8 +116,9 @@ const CarouselItem = ({ item }) => (
 
 CarouselItem.propTypes = {
   item: PropTypes.shape({
-    image: PropTypes.string,
-    message: PropTypes.string
+    image: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+    message: PropTypes.string.isRequired
   }).isRequired
 };
 

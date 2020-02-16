@@ -9,7 +9,7 @@ export class Footer extends React.PureComponent {
   render () {
     return (
       <footer className="c_footer">
-        <img src={logoSrc} className="c_footer__logo" />
+        <img src={logoSrc} className="c_footer__logo" alt="City of San Jose logo" />
         <div className="c_footer__contact-us">
           <h3
             className="c_footer__contact-us__header"
