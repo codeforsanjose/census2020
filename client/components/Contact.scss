@@ -1,7 +1,7 @@
 .c_contact {
   display: flex;
   flex-direction: column;
-  padding: 64px;
+  align-items: center;
   color: #000000;
   background-color: #f2f2f2;
 
@@ -16,12 +16,24 @@
   &__content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    padding: 1rem;
+    max-width: 1000px;
 
     &__col {
-      width: 50%;
-      flex: 1;
-      padding-right: 16px;
+
+      @media (max-width: 800px) {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      @media (min-width: 800px) {
+        width: 50%;
+        flex: 1;
+      }
+
+      padding-right: 1rem;
 
       &__contact_image {
         width: 100%;
