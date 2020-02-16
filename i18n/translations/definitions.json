@@ -543,75 +543,93 @@
   },
   "components.SampleCensus.primary_question.nonhohh.2": {
     "id": "components.SampleCensus.primary_question.nonhohh.2",
-    "defaultMessage": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?"
+    "description": "Second sample question from the census - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.secondary_information.nonhohh.2": {
     "id": "components.SampleCensus.secondary_information.nonhohh.2",
-    "defaultMessage": "Number of people=[|Enter number here|]"
+    "description": "Second sample response field  - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.explanation.nonhohh.2": {
     "id": "components.SampleCensus.explanation.nonhohh.2",
-    "defaultMessage": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs."
+    "description": "Second sample question explanation  - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.primary_question.nonhohh.3": {
     "id": "components.SampleCensus.primary_question.nonhohh.3",
-    "defaultMessage": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?"
+    "description": "Third sample question from the census - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.secondary_information.nonhohh.3": {
     "id": "components.SampleCensus.secondary_information.nonhohh.3",
-    "defaultMessage": "Number of people=[|Enter number here|]"
+    "description": "Third sample response field  - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.explanation.nonhohh.3": {
     "id": "components.SampleCensus.explanation.nonhohh.3",
-    "defaultMessage": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs."
+    "description": "Third sample question explanation  - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.primary_question.nonhohh.4": {
     "id": "components.SampleCensus.primary_question.nonhohh.4",
-    "defaultMessage": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?"
+    "description": "Fourth sample question from the census - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.secondary_information.nonhohh.4": {
     "id": "components.SampleCensus.secondary_information.nonhohh.4",
-    "defaultMessage": "Number of people=[|Enter number here|]"
+    "description": "Fourth sample response field  - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.explanation.nonhohh.4": {
     "id": "components.SampleCensus.explanation.nonhohh.4",
-    "defaultMessage": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs."
+    "description": "Fourth sample question explanation  - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.primary_question.nonhohh.5": {
     "id": "components.SampleCensus.primary_question.nonhohh.5",
-    "defaultMessage": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?"
+    "description": "Fifth sample question from the census - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.secondary_information.nonhohh.5": {
     "id": "components.SampleCensus.secondary_information.nonhohh.5",
-    "defaultMessage": "Number of people=[|Enter number here|]"
+    "description": "Fifth sample response field  - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.explanation.nonhohh.5": {
     "id": "components.SampleCensus.explanation.nonhohh.5",
-    "defaultMessage": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs."
+    "description": "Fifth sample question explanation  - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.primary_question.nonhohh.6": {
     "id": "components.SampleCensus.primary_question.nonhohh.6",
-    "defaultMessage": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?"
+    "description": "Sixth sample question from the census - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.secondary_information.nonhohh.6": {
     "id": "components.SampleCensus.secondary_information.nonhohh.6",
-    "defaultMessage": "Number of people=[|Enter number here|]"
+    "description": "Sixth sample response field  - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.explanation.nonhohh.6": {
     "id": "components.SampleCensus.explanation.nonhohh.6",
-    "defaultMessage": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs."
+    "description": "Sixth sample question explanation  - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.primary_question.nonhohh.7": {
     "id": "components.SampleCensus.primary_question.nonhohh.7",
-    "defaultMessage": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?"
+    "description": "Seventh sample question from the census - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.secondary_information.nonhohh.7": {
     "id": "components.SampleCensus.secondary_information.nonhohh.7",
-    "defaultMessage": "Number of people=[|Enter number here|]"
+    "description": "Seventh sample response field  - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.explanation.nonhohh.7": {
     "id": "components.SampleCensus.explanation.nonhohh.7",
-    "defaultMessage": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs."
+    "description": "Seventh sample question explanation  - not head of household",
+    "defaultMessage": "This is a placeholder"
   },
   "components.SampleCensus.hohh_description": {
     "id": "components.SampleCensus.hohh_description",
@@ -675,5 +693,65 @@
     "id": "components.Home.top_reasons.item.5",
     "description": "Reasons to take the census 5",
     "defaultMessage": "Emergency response planning"
+  },
+  "components.SampleCensus.preliminary_button": {
+    "id": "components.SampleCensus.preliminary_button",
+    "description": "Preliminary questions button",
+    "defaultMessage": "Before you begin"
+  },
+  "components.SampleCensus.preliminary_description": {
+    "id": "components.SampleCensus.preliminary_description",
+    "description": "This is default text",
+    "defaultMessage": "This is default text"
+  },
+  "components.SampleCensus.primary_question.preliminary.1": {
+    "id": "components.SampleCensus.primary_question.preliminary.1",
+    "description": "First sample question from the census - prelimiary questions",
+    "defaultMessage": "This is a placeholder"
+  },
+  "components.SampleCensus.secondary_information.preliminary.1": {
+    "id": "components.SampleCensus.secondary_information.preliminary.1",
+    "description": "First sample response field  - prelimiary questions",
+    "defaultMessage": "This is a placeholder"
+  },
+  "components.SampleCensus.explanation.preliminary.1": {
+    "id": "components.SampleCensus.explanation.preliminary.1",
+    "description": "First sample question explanation  - prelimiary questions",
+    "defaultMessage": "This is a placeholder"
+  },
+  "components.SampleCensus.primary_question.preliminary.2": {
+    "id": "components.SampleCensus.primary_question.preliminary.2",
+    "description": "Second sample question from the census - prelimiary questions",
+    "defaultMessage": "This is a placeholder"
+  },
+  "components.SampleCensus.secondary_information.preliminary.2": {
+    "id": "components.SampleCensus.secondary_information.preliminary.2",
+    "description": "Second sample response field  - prelimiary questions",
+    "defaultMessage": "This is a placeholder"
+  },
+  "components.SampleCensus.explanation.preliminary.2": {
+    "id": "components.SampleCensus.explanation.preliminary.2",
+    "description": "Second sample question explanation  - prelimiary questions",
+    "defaultMessage": "This is a placeholder"
+  },
+  "components.SampleCensus.primary_question.preliminary.3": {
+    "id": "components.SampleCensus.primary_question.preliminary.3",
+    "description": "Third sample question from the census - prelimiary questions",
+    "defaultMessage": "This is a placeholder"
+  },
+  "components.SampleCensus.secondary_information.preliminary.3": {
+    "id": "components.SampleCensus.secondary_information.preliminary.3",
+    "description": "Third sample response field  - prelimiary questions",
+    "defaultMessage": "This is a placeholder"
+  },
+  "components.SampleCensus.explanation.preliminary.3": {
+    "id": "components.SampleCensus.explanation.preliminary.3",
+    "description": "Third sample question explanation  - prelimiary questions",
+    "defaultMessage": "This is a placeholder"
+  },
+  "components.SampleCensus.nonHohh_button": {
+    "id": "components.SampleCensus.nonHohh_button",
+    "description": "Non head of household questions button",
+    "defaultMessage": "Someone else will answer the census for me"
   }
 }
