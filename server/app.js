@@ -1,12 +1,10 @@
 const express = require('express');
-const compression = require('compression');
 const appConfig = require('./config/main-config.js');
 const Config = require('./config');
 const router = require('./routes');
 
 const app = express();
 
-app.use(compression());
 appConfig.init(app, express);
 app.use(router);
 
