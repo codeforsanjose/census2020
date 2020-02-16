@@ -16,7 +16,6 @@ import {
   supportedLocales
 } from '../../i18n/supported-locales';
 import contactFormImageSrc from '../images/contact-form.jpg';
-import contactFormImageWebpSrc from '../images/contact-form.webp';
 
 defineMessages({
   header: {
@@ -178,11 +177,7 @@ class Contact extends Component {
           </h1>
           <div className="c_contact__content">
             <div className="c_contact__content__col">
-              <img
-                className="c_contact__content__col__contact_image"
-                src={contactFormImageSrc}
-                srcSet={contactFormImageWebpSrc}
-              />
+              <img className="c_contact__content__col__contact_image" src={contactFormImageSrc}></img>
               <div className="c_contact__content__col__blurb">
                 <h3 className="c_contact__content__col__blurb__headline">
                   <FormattedMessage

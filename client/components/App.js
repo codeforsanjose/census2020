@@ -4,17 +4,15 @@ import { ToastContainer } from 'react-toastify';
 import { Switch, Route } from 'react-router-dom';
 
 import Navigation from './Navigation';
+import DetailViewContainer from './DetailViewContainer';
+import Contact from './Contact';
 import LocaleContext from './LocaleContext';
-import LoadingPage from './LoadingPage';
 import { messages } from '../../i18n/translations';
 
 import './App.scss';
-
+import FAQ from './FAQ';
+import SampleCensus from './SampleCensus';
 import { Footer } from './Footer';
-const Home = React.lazy(() => import('./DetailViewContainer'));
-const FAQ = React.lazy(() => import('./FAQ'));
-const SampleCensus = React.lazy(() => import('./SampleCensus'));
-const Contact = React.lazy(() => import('./Contact'));
 export default class App extends React.PureComponent {
   render () {
     return (
@@ -38,14 +36,12 @@ export default class App extends React.PureComponent {
                     <div
                       className="c_app__content"
                     >
-                      <React.Suspense fallback={<LoadingPage />}>
-                        <Switch>
-                          <Route exact path='/' component={Home} />
-                          <Route path='/contact' component={Contact} />
-                          <Route path='/faq' component={FAQ} />
-                          <Route path='/samplecensus' component={SampleCensus} />
-                        </Switch>
-                      </React.Suspense>
+                      <Switch>
+                        <Route exact path='/' component={DetailViewContainer} />
+                        <Route path='/contact' component={Contact} />
+                        <Route path='/faq' component={FAQ} />
+                        <Route path='/samplecensus' component={SampleCensus} />
+                      </Switch>
                     </div>
                     <ToastContainer />
                     <Footer />
