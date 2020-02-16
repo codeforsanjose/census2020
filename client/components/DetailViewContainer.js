@@ -157,22 +157,25 @@ const REASONS = [
 
 const TopReasons = () => {
   return (
-    <ol
-      className="c_home__top-reasons">
-      <h2>
+    <div
+      className="c_home__top-reasons"
+    >
+      <h2 className="c_home__top-reasons__header">
         <FormattedMessage
           id="components.Home.top_reasons.title"
         />
       </h2>
-      { REASONS.map((id, index) => (
-        <li
-          key={index}>
-          <p>
-            <FormattedMessage id={id} />
-          </p>
-        </li>
-      ))}
-    </ol>
+      <ol>
+        { REASONS.map((id, index) => (
+          <li
+            key={index}>
+            <p>
+              <FormattedMessage id={id} />
+            </p>
+          </li>
+        ))}
+      </ol>
+    </div>
   );
 };
 
@@ -256,7 +259,7 @@ const FACTOIDS = [
 
 const Factoid = ({ item }) => {
   return (
-    <li className={classnames(
+    <div className={classnames(
       'c_home__factoid',
       item.className)}
     >
@@ -288,7 +291,7 @@ const Factoid = ({ item }) => {
           <QRCode value={item.qrcode} />
         </div>
       )}
-    </li>
+    </div>
   );
 };
 
@@ -341,7 +344,7 @@ export default class DetailViewContainer extends Component {
           ))}
         </Carousel>
         <div className="c_home__content">
-          <ul
+          <div
             className="c_home__factoids">
             { FACTOIDS.map((item, index) => (
               <Factoid
@@ -352,7 +355,7 @@ export default class DetailViewContainer extends Component {
             <YoutubeItem>
             </YoutubeItem>
             <TopReasons />
-          </ul>
+          </div>
         </div>
       </main>
     );
