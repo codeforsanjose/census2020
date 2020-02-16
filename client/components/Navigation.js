@@ -7,6 +7,7 @@ import { FormattedMessage } from 'react-intl';
 import './Navigation.scss';
 import { LocalePicker } from './LocalePicker';
 import logoUrl from '../images/CityOfSanJose_logo.png';
+import logoUrlWebp from '../images/CityOfSanJose_logo.webp';
 import menu from '../images/menu.svg';
 import close from '../images/close.svg';
 
@@ -60,6 +61,7 @@ export default class Navigation extends React.PureComponent {
           <img
             className="c_navigation__logo__image"
             alt="City of San Jose logo"
+            srcSet={logoUrlWebp}
             src={logoUrl}
           />
         </Link>

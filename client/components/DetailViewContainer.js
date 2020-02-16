@@ -11,11 +11,17 @@ import QRCode from 'qrcode.react';
 import { CensusLink } from './Navigation';
 
 import sharksMural from '../images/sharksMural.jpg';
+import sharksMuralWebp from '../images/sharksMural.webp';
 import cityHall from '../images/cityHall.jpg';
+import cityHallWebp from '../images/cityHall.webp';
 import muralProject from '../images/finishedMuralProject.jpg';
+import muralProjectWebp from '../images/finishedMuralProject.webp';
 import sanJoseMural from '../images/newSanJoseMural.jpg';
+import sanJoseMuralWebp from '../images/newSanJoseMural.webp';
 import performingArts from '../images/performingArts.jpg';
+import performingArtsWebp from '../images/performingArts.webp';
 import peopleGathering from '../images/peopleGathering.jpg';
+import peopleGatheringWebp from '../images/peopleGathering.webp';
 
 import './DetailViewContainer.scss';
 
@@ -55,34 +61,40 @@ defineMessages({
 const CAROUSEL_ITEMS = [
   {
     image: muralProject,
+    webp: muralProjectWebp,
     alt: 'Mural in San Jose of many different squares of content',
     message: 'components.Home.carousel.messages.1'
   },
   {
     image: sanJoseMural,
+    webp: sanJoseMuralWebp,
     alt: 'Mural of text "San Jose" with flowers',
     message: 'components.Home.carousel.messages.2'
 
   },
   {
     image: sharksMural,
+    webp: sharksMuralWebp,
     alt: 'Mural in San Jose depicting sharks',
     message: 'components.Home.carousel.messages.3'
 
   },
   {
     image: performingArts,
+    webp: performingArtsWebp,
     alt: 'Mural depicting performing arts in San Jose',
     message: 'components.Home.carousel.messages.4'
 
   },
   {
     image: peopleGathering,
+    webp: peopleGatheringWebp,
     alt: 'Photograph of many bicyclists gathering',
     message: 'components.Home.carousel.messages.5'
   },
   {
     image: cityHall,
+    webp: cityHallWebp,
     alt: 'Photograph of San Jose City Hall',
     message: 'components.Home.carousel.messages.6'
   }
@@ -95,6 +107,7 @@ const CarouselItem = ({ item }) => (
     <img
       className="c_home__carousel-item__image"
       alt={item.alt}
+      srcSet={item.webp}
       src={item.image}
     />
     <div className="c_home__overlay">
@@ -117,6 +130,7 @@ const CarouselItem = ({ item }) => (
 CarouselItem.propTypes = {
   item: PropTypes.shape({
     image: PropTypes.string.isRequired,
+    webp: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     message: PropTypes.string.isRequired
   }).isRequired
