@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 
-import logoSrc from '../images/CityOfSanJose_logo_white.png';
-import logoSrcWebp from '../images/CityOfSanJose_logo_white.webp';
+import * as logo from '../images/CityOfSanJose_logo_white.png';
 import './Footer.scss';
 
 export class Footer extends React.PureComponent {
@@ -11,8 +10,7 @@ export class Footer extends React.PureComponent {
     return (
       <footer className="c_footer">
         <img
-          srcSet={logoSrcWebp}
-          src={logoSrc}
+          src={`${logo}?w=170`}
           className="c_footer__logo"
           alt="City of San Jose logo"
         />

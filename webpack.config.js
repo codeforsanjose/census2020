@@ -35,9 +35,18 @@ module.exports = {
       },
 
       {
-        test: /\.(jpg|png|gif|webp)$/,
+        // test: /\.(webp)$/,
+        test: /\.(webp|jpe?g|png)$/,
         use: 'file-loader'
-      }
+      }// ,
+
+      // {
+      //   test: /\.(jpg|png)$/,
+      //   loader: 'responsive-loader',
+      //   options: {
+      //     adapter: require('responsive-loader/sharp')
+      //   }
+      // }
     ]
   },
   plugins: [

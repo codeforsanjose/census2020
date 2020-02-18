@@ -10,18 +10,12 @@ import QRCode from 'qrcode.react';
 
 import { CensusLink } from './Navigation';
 
-import sharksMural from '../images/sharksMural.jpg';
-import sharksMuralWebp from '../images/sharksMural.webp';
-import cityHall from '../images/cityHall.jpg';
-import cityHallWebp from '../images/cityHall.webp';
-import muralProject from '../images/finishedMuralProject.jpg';
-import muralProjectWebp from '../images/finishedMuralProject.webp';
-import sanJoseMural from '../images/newSanJoseMural.jpg';
-import sanJoseMuralWebp from '../images/newSanJoseMural.webp';
-import performingArts from '../images/performingArts.jpg';
-import performingArtsWebp from '../images/performingArts.webp';
-import peopleGathering from '../images/peopleGathering.jpg';
-import peopleGatheringWebp from '../images/peopleGathering.webp';
+import sharksMural from '../images/sharksMural.jpg?sizes[]=1280,sizes[]=1905';
+import cityHall from '../images/cityHall.jpg?sizes[]=100,sizes[]=200,sizes[]=300,sizes[]=1280';
+import muralProject from '../images/finishedMuralProject.jpg?sizes[]=1280,sizes[]=1905';
+import sanJoseMural from '../images/newSanJoseMural.jpg?sizes[]=1280,sizes[]=1905';
+import performingArts from '../images/performingArts.jpg?sizes[]=1280,sizes[]=1905';
+import peopleGathering from '../images/peopleGathering.jpg?sizes[]=1280,sizes[]=1905';
 
 import './DetailViewContainer.scss';
 
@@ -61,40 +55,34 @@ defineMessages({
 const CAROUSEL_ITEMS = [
   {
     image: muralProject,
-    webp: muralProjectWebp,
     alt: 'Mural in San Jose of many different squares of content',
     message: 'components.Home.carousel.messages.1'
   },
   {
     image: sanJoseMural,
-    webp: sanJoseMuralWebp,
     alt: 'Mural of text "San Jose" with flowers',
     message: 'components.Home.carousel.messages.2'
 
   },
   {
     image: sharksMural,
-    webp: sharksMuralWebp,
     alt: 'Mural in San Jose depicting sharks',
     message: 'components.Home.carousel.messages.3'
 
   },
   {
     image: performingArts,
-    webp: performingArtsWebp,
     alt: 'Mural depicting performing arts in San Jose',
     message: 'components.Home.carousel.messages.4'
 
   },
   {
     image: peopleGathering,
-    webp: peopleGatheringWebp,
     alt: 'Photograph of many bicyclists gathering',
     message: 'components.Home.carousel.messages.5'
   },
   {
     image: cityHall,
-    webp: cityHallWebp,
     alt: 'Photograph of San Jose City Hall',
     message: 'components.Home.carousel.messages.6'
   }
@@ -107,7 +95,6 @@ const CarouselItem = ({ item }) => (
     <img
       className="c_home__carousel-item__image"
       alt={item.alt}
-      srcSet={item.webp}
       src={item.image}
     />
     <div className="c_home__overlay">
@@ -130,7 +117,6 @@ const CarouselItem = ({ item }) => (
 CarouselItem.propTypes = {
   item: PropTypes.shape({
     image: PropTypes.string.isRequired,
-    webp: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     message: PropTypes.string.isRequired
   }).isRequired
@@ -354,6 +340,13 @@ export default class DetailViewContainer extends Component {
   render () {
     return (
       <main className='c_home'>
+        <link rel="dns-prefetch" href="https://s.ytimg.com" />
+        <link rel="dns-prefetch" href="https://i.ytimg.com" />
+        <link rel="dns-prefetch" href="https://yt3.ggpht.com" />
+        <link rel="dns-prefetch" href="https://static.doubleclick.net" />
+        <link rel="dns-prefetch" href="https://googleads.g.doubleclick.net" />
+        <link rel="dns-prefetch" href="https://www.youtube.com" />
+
         <Carousel
           showThumbs={false}
           showStatus={false}
