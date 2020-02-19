@@ -2,14 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 
-import logoSrc from '../images/CityOfSanJose_logo_white.png';
+import * as logo from '../images/CityOfSanJose_logo_white.png';
 import './Footer.scss';
 
 export class Footer extends React.PureComponent {
   render () {
     return (
       <footer className="c_footer">
-        <img src={logoSrc} className="c_footer__logo" alt="City of San Jose logo" />
+        <img
+          src={`${logo}?w=170`}
+          className="c_footer__logo"
+          alt="City of San Jose logo"
+        />
         <div className="c_footer__contact-us">
           <h3
             className="c_footer__contact-us__header"

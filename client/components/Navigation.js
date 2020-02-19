@@ -60,7 +60,7 @@ export default class Navigation extends React.PureComponent {
           <img
             className="c_navigation__logo__image"
             alt="City of San Jose logo"
-            src={logoUrl}
+            src={`${logoUrl}?w=138`}
           />
         </Link>
         <div className={classnames(

@@ -10,12 +10,12 @@ import QRCode from 'qrcode.react';
 
 import { CensusLink } from './Navigation';
 
-import sharksMural from '../images/sharksMural.jpg';
-import cityHall from '../images/cityHall.jpg';
-import muralProject from '../images/finishedMuralProject.jpg';
-import sanJoseMural from '../images/newSanJoseMural.jpg';
-import performingArts from '../images/performingArts.jpg';
-import peopleGathering from '../images/peopleGathering.jpg';
+import sharksMural from '../images/sharksMural.jpg?sizes[]=1280,sizes[]=1905';
+import cityHall from '../images/cityHall.jpg?sizes[]=100,sizes[]=200,sizes[]=300,sizes[]=1280';
+import muralProject from '../images/finishedMuralProject.jpg?sizes[]=1280,sizes[]=1905';
+import sanJoseMural from '../images/newSanJoseMural.jpg?sizes[]=1280,sizes[]=1905';
+import performingArts from '../images/performingArts.jpg?sizes[]=1280,sizes[]=1905';
+import peopleGathering from '../images/peopleGathering.jpg?sizes[]=1280,sizes[]=1905';
 
 import './DetailViewContainer.scss';
 
@@ -340,6 +340,13 @@ export default class DetailViewContainer extends Component {
   render () {
     return (
       <main className='c_home'>
+        <link rel="dns-prefetch" href="https://s.ytimg.com" />
+        <link rel="dns-prefetch" href="https://i.ytimg.com" />
+        <link rel="dns-prefetch" href="https://yt3.ggpht.com" />
+        <link rel="dns-prefetch" href="https://static.doubleclick.net" />
+        <link rel="dns-prefetch" href="https://googleads.g.doubleclick.net" />
+        <link rel="dns-prefetch" href="https://www.youtube.com" />
+
         <Carousel
           showThumbs={false}
           showStatus={false}
