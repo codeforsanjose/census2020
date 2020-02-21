@@ -355,9 +355,9 @@ const HOHH_QUESTIONS = [
     explanation: 'components.SampleCensus.explanation.8'
   },
   {
-    primary: 'components.SampleCensus.primary_question.8',
-    secondary: 'components.SampleCensus.secondary_information.8',
-    explanation: 'components.SampleCensus.explanation.8'
+    primary: 'components.SampleCensus.primary_question.9',
+    secondary: 'components.SampleCensus.secondary_information.9',
+    explanation: 'components.SampleCensus.explanation.9'
   }
 ];
 
