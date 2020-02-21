@@ -52,22 +52,22 @@ defineMessages({
 const options = [
   {
     value: 'volunteer',
-    label: 'components.Contact.fields.interest.options.volunteer',
+    labelMessageId: 'components.Contact.fields.interest.options.volunteer',
     name: 'volunteer'
   },
   {
     value: 'presentation',
-    label: 'components.Contact.fields.interest.options.requestPresentation',
+    labelMessageId: 'components.Contact.fields.interest.options.requestPresentation',
     name: 'presentation'
   },
   {
     value: 'information',
-    label: 'components.Contact.fields.interest.options.information',
+    labelMessageId: 'components.Contact.fields.interest.options.information',
     name: 'information'
   },
   {
     value: 'other',
-    label: 'components.Contact.fields.interest.options.other',
+    labelMessageId: 'components.Contact.fields.interest.options.other',
     name: 'other'
   }
 ];
@@ -315,7 +315,7 @@ class Contact extends Component {
                           className='c_contact__content__form_col__form__checkbox'
                           onCheck={this.handleCheck}
                           checked={this.state.interests.has(option.value)}
-                          label={option.label}
+                          labelMessageId={option.labelMessageId}
                           name={option.name}
                           value={option.value}
                           id={`checkbox-${option.value}-${i}`}

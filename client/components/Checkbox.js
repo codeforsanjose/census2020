@@ -8,7 +8,7 @@ export default class Checkbox extends React.PureComponent {
       className,
       checked,
       readOnly,
-      label,
+      labelMessageId,
       name,
       value,
       onCheck,
@@ -27,7 +27,7 @@ export default class Checkbox extends React.PureComponent {
           onChange={onCheck}
         />
         <label htmlFor={id}>
-          <FormattedMessage id={label} />
+          <FormattedMessage id={labelMessageId} />
         </label>
       </span>
     );
@@ -44,7 +44,7 @@ Checkbox.propTypes = {
   checked: PropTypes.bool,
   readOnly: PropTypes.bool,
   className: PropTypes.string.isRequired,
-  label: PropTypes.element.isRequired,
+  labelMessageId: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
