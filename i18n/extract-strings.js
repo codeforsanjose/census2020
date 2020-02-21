@@ -104,6 +104,14 @@ supportedLocales.forEach(
       }
     );
 
+    // Remove any messages that are not currently used
+    const missingIds = Object.keys(translations).filter((id) => !(id in messages));
+    if (missingIds.length > 0) {
+      for (const id of missingIds) {
+        delete translations[id];
+      }
+    }
+
     translationObjects[locale] = {
       path: translationsPath,
       translations

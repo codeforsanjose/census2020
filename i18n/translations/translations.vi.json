@@ -1,27 +1,7 @@
 {
-  "components.DetailViewContainer.hello": {
-    "translation": "Chào thế giới",
-    "english": "Hello world"
-  },
-  "components.Contact.fields.name": {
-    "translation": "Tên",
-    "english": "Name"
-  },
-  "components.Contact.fields.organization": {
-    "translation": "Cơ quan",
-    "english": "Organization"
-  },
   "components.Contact.fields.email": {
     "translation": "E-mail",
     "english": "Email"
-  },
-  "components.Contact.fields.language": {
-    "translation": "Ngôn ngữ nói",
-    "english": "Language Spoken"
-  },
-  "components.Contact.fields.zip": {
-    "translation": "Mã Bưu Chính",
-    "english": "Zip Code"
   },
   "components.Contact.fields.interest": {
     "translation": "Tôi muốn:",
@@ -30,10 +10,6 @@
   "components.Contact.fields.interest.options.volunteer": {
     "translation": "Tình nguyện giúp",
     "english": "Volunteer to help"
-  },
-  "components.Contact.fields.interest.options.workForCensus": {
-    "translation": "Làm việc cho điều tra dân số2020",
-    "english": "Work for Census2020"
   },
   "components.Contact.fields.interest.options.requestPresentation": {
     "translation": "Yêu cầu thuyết trình",
@@ -75,126 +51,6 @@
     "translation": "Khảo sát mẫu",
     "english": "Sample Survey"
   },
-  "components.SampleCensus.header": {
-    "translation": "Điều tra dân số mẫu",
-    "english": "Sample Census"
-  },
-  "take-the-census-link": {
-    "translation": "Tham gia điều tra dân số",
-    "english": "Take the Census"
-  },
-  "components.SampleCensus.form.preliminary-instructions.question1.header": {
-    "translation": "Trước khi bạn trả lời Câu hỏi 1, hãy đếm những người sống trong ngôi nhà, căn hộ hoặc nhà di động này theo hướng dẫn của chúng tôi.",
-    "english": "Before you answer Question 1, count the people living in this house, apartment, or mobile home using our guidelines."
-  },
-  "components.SampleCensus.form.preliminary-instructions.question1.count-all-people": {
-    "translation": "Đếm tất cả mọi người, kể cả trẻ sơ sinh, những người sống và ngủ ở đây hầu hết thời gian.",
-    "english": "Count all people, including babies, who live and sleep here most of the time."
-  },
-  "components.SampleCensus.form.preliminary-instructions.question1.if-no-one-lives-here": {
-    "translation": "Nếu không có ai sống và ngủ tại địa chỉ này hầu hết thời gian, hãy truy cập trực tuyến tại {websiteUrl} hoặc gọi số ở trang 8",
-    "english": "If no one lives and sleeps at this address most of the time, go online at {websiteUrl} or call the number on page 8"
-  },
-  "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.header": {
-    "translation": "Điều tra dân số cũng phải bao gồm những người không có nơi ở cố định, vì vậy:",
-    "english": "The census must also include people without a permanent place to live, so:"
-  },
-  "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.include": {
-    "translation": "Nếu ai đó không có nơi ở cố định sẽ ở đây vào ngày 1 tháng 4 năm 2020, hãy tính người đó.",
-    "english": "If someone who does not have a permanent place to live is staying here on April 1, 2020, count that person."
-  },
-  "components.SampleCensus.form.preliminary-instructions.dont-include-absent.header": {
-    "translation": "Cục điều tra dân số cũng tiến hành đếm trong các tổ chức và những nơi khác, vì vậy:",
-    "english": "The Census Bureau also conducts counts in institutions and other places, so:"
-  },
-  "components.SampleCensus.form.preliminary-instructions.dont-include-absent.college-or-armed-forces": {
-    "translation": "Đừng đếm bất cứ ai sống xa đây, ở trường đại học hoặc trong Lực lượng Vũ trang.",
-    "english": "Do not count anyone living away from here, either at college or in the Armed Forces."
-  },
-  "components.SampleCensus.form.preliminary-instructions.dont-include-absent.prison": {
-    "translation": "Không được tính bất cứ ai trong viện dưỡng lão, nhà tù, nhà tù, trại giam, v.v., vào ngày 1 tháng 4 năm 2020.",
-    "english": "Do not count anyone in a nursing home, jail, prison, detention facility, etc., on April 1, 2020."
-  },
-  "components.SampleCensus.form.preliminary-instructions.dont-include-absent.even-if-they-return": {
-    "translation": "Để những người này rời khỏi bảng câu hỏi của bạn, ngay cả khi họ sẽ trở về sống ở đây sau khi họ rời trường đại học, viện dưỡng lão, quân đội, nhà tù, v.v. Nếu không, họ có thể được tính hai lần.",
-    "english": "Leave these people off your questionnaire, even if they will return to live here after they leave college, the nursing home, the military, jail, etc. Otherwise, they may be counted twice."
-  },
-  "components.SampleCensus.form.question1.header": {
-    "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?",
-    "english": "How many people were living or staying in this house,apartment, or mobile home on April 1, 2020?"
-  },
-  "components.SampleCensus.form.question1.input-label": {
-    "translation": "Số người",
-    "english": "Number of people"
-  },
-  "components.SampleCensus.form.question2.header": {
-    "translation": "Có thêm người nào ở lại đây vào ngày 1 tháng 4 năm 2020 mà bạn không bao gồm trong Câu hỏi 1 không?",
-    "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?"
-  },
-  "components.SampleCensus.form.question2.fields.related-children": {
-    "translation": "Trẻ em, có liên quan hoặc không liên quan, chẳng hạn như trẻ sơ sinh, cháu, hoặc con nuôi",
-    "english": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children"
-  },
-  "components.SampleCensus.form.question2.fields.related-adults": {
-    "translation": "Người thân, chẳng hạn như trẻ em trưởng thành, anh em họ, hoặc ở rể",
-    "english": "Relatives, such as adult children, cousins, or in-laws"
-  },
-  "components.SampleCensus.form.question2.fields.nonrelatives": {
-    "translation": "Không liên quan, chẳng hạn như bạn cùng phòng hoặc người giữ trẻ sống",
-    "english": "Nonrelatives, such as roommates or live-in babysitters"
-  },
-  "components.SampleCensus.form.question2.fields.staying-temporarily": {
-    "translation": "Người ở lại tạm thời",
-    "english": "People staying here temporarily"
-  },
-  "components.SampleCensus.form.question2.fields.no-additional": {
-    "translation": "Không có thêm người",
-    "english": "No additional people"
-  },
-  "components.SampleCensus.form.question3.header": {
-    "translation": "Đây là nhà, căn hộ, hay nhà di động",
-    "english": "Is this house, apartment, or mobile home"
-  },
-  "components.SampleCensus.form.markOne": {
-    "translation": "Đánh dấu {markBoxImage} MỘT hộp",
-    "english": "Mark {markBoxImage} ONE box"
-  },
-  "components.SampleCensus.form.question3.fields.mortgage-or-loan": {
-    "translation": "Thuộc sở hữu của bạn hoặc ai đó trong hộ gia đình này có thế chấp hoặc vay? Bao gồm các khoản vay vốn chủ sở hữu nhà.",
-    "english": "Owned by you or someone in this household with a mortgage or loan? Include home equity loans."
-  },
-  "components.SampleCensus.form.question3.fields.without-mortgage-or-loan": {
-    "translation": "Thuộc sở hữu của bạn hoặc ai đó trong hộ gia đình này miễn phí và rõ ràng (không thế chấp hoặc cho vay)?",
-    "english": "Owned by you or someone in this household free and clear (without a mortgage or loan)?"
-  },
-  "components.SampleCensus.form.question3.fields.rented": {
-    "translation": "Đã thuê?",
-    "english": "Rented?"
-  },
-  "components.SampleCensus.form.question3.fields.occupied-without-rent": {
-    "translation": "Chiếm dụng mà không trả tiền thuê nhà?",
-    "english": "Occupied without payment of rent?"
-  },
-  "components.SampleCensus.form.question2.mark-all": {
-    "translation": "Đánh dấu {markBoxImage} tất cả những gì áp dụng",
-    "english": "Mark {markBoxImage} all that apply"
-  },
-  "components.SampleCensus.form.mark-all": {
-    "translation": "Đánh dấu {markBoxImage} tất cả những gì áp dụng",
-    "english": "Mark {markBoxImage} all that apply"
-  },
-  "components.SampleCensus.form.question4.header": {
-    "translation": "Số điện thoại của bạn là gì?",
-    "english": "What is your telephone number?"
-  },
-  "components.SampleCensus.form.question4.header.phone-disclaimer": {
-    "translation": "Chúng tôi sẽ chỉ liên lạc với bạn nếu cần cho việc kinh doanh của Cục điều tra dân số chính thức.",
-    "english": "We will only contact you if needed for official Census Bureau business."
-  },
-  "components.SampleCensus.form.question4.field.label": {
-    "translation": "Số điện thoại",
-    "english": "Telephone Number"
-  },
   "components.Contact.fields.firstName": {
     "translation": "Tên đầu tiên",
     "english": "First Name"
@@ -223,33 +79,9 @@
     "translation": "Tham gia vào",
     "english": "Get Involved"
   },
-  "components.DetailViewContainer.header": {
-    "translation": "Mọi người quan trọng",
-    "english": "Everyone matters"
-  },
-  "components.DetailViewContainer.message": {
-    "translation": "Ea irure pariatur aliqua minim cillum consectetur result rep rependerenderit ngồi aliqua sit eiusmod proident. Hàng hóa e pariatur trong tập thể dục voluptate proident anim nisi tối thiểu. Nisi aliqua ipsum non elit nulla pariatur elit tập thể dục enim mollit Vendo incididunt incididunt. Ngoại trừ amet esse sunt velit ut nulla ipsum ea.\nAdipisizing ullamco labis cillum dolor eiusmod nulla Lorem ngồi quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tạm thời lao động eu e hậu quả.",
-    "english": "Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur in exercitation voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.\nAdipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat."
-  },
-  "components.Home.factoids.readyToTakeCensus.title": {
-    "translation": "Sẵn sàng để điều tra dân số?",
-    "english": "Ready to take the census?"
-  },
-  "components.Home.factoids.readyToTakeCensus.message": {
-    "translation": "cả đống văn bản và những thứ ở đây",
-    "english": "a whole bunch of text and things here"
-  },
-  "components.Home.factoids.qr-code.title": {
-    "translation": "Tìm hiểu về điều tra dân số từ điện thoại của bạn",
-    "english": "Learn About the Census From Your Phone"
-  },
   "components.Home.factoids.3.title": {
     "english": "In a hurry, take it to go!",
     "translation": "Trong một vội vàng, mang nó đi!"
-  },
-  "components.Home.factoids.3.message": {
-    "translation": "nhiều văn bản sẽ đến đây",
-    "english": "more text will go here"
   },
   "components.Contact.fields.interest.options.information": {
     "translation": "Yêu cầu thêm thông tin",
@@ -319,26 +151,6 @@
     "translation": "Tổng điều tra dân số Hoa Kỳ năm 2020",
     "english": "The United States 2020 Census"
   },
-  "components.SampleCensus.ipsumQuestion.question": {
-    "translation": "Đây là câu hỏi đầu tiên",
-    "english": "This is the first question"
-  },
-  "components.SampleCensus.ipsumQuestion.secondaryText": {
-    "translation": "Thêm văn bản có thể vào đây",
-    "english": "More text can go here"
-  },
-  "components.SampleCensus.ipsumQuestion.howToAnswer": {
-    "translation": "Laudantium ngồi veniam tại aut. Ab aut qui tenetur et eos animi.\nFugit kiêm deserunt quia pariatur Praesentium deleniti. Do đó, doloribus fugit est itaque quis\nenim omni autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos Praesentium.\nEligendi quasi magni velit et id in velit. Hàng hóa dolorum aspernatur dociis trong autem dignissimos.",
-    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
-  },
-  "components.SampleCensus.ipsumQuestion.howIsUsed": {
-    "translation": "Laudantium ngồi veniam tại aut. Ab aut qui tenetur et eos animi.\nFugit kiêm deserunt quia pariatur Praesentium deleniti. Do đó, doloribus fugit est itaque quis\nenim omni autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos Praesentium.\nEligendi quasi magni velit et id in velit. Hàng hóa dolorum aspernatur dociis trong autem dignissimos.",
-    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
-  },
-  "components.SampleCensus.ipsumQuestion.whyAnswer": {
-    "translation": "Laudantium ngồi veniam tại aut. Ab aut qui tenetur et eos animi.\nFugit kiêm deserunt quia pariatur Praesentium deleniti. Do đó, doloribus fugit est itaque quis\nenim omni autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos Praesentium.\nEligendi quasi magni velit et id in velit. Hàng hóa dolorum aspernatur dociis trong autem dignissimos.",
-    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
-  },
   "component.SampleCensus.sectionHeaders.howToAnswer": {
     "translation": "Làm thế nào để trả lời câu hỏi này",
     "english": "How to answer this question"
@@ -351,14 +163,6 @@
     "translation": "Tại sao trả lời câu hỏi này",
     "english": "Why answer this question"
   },
-  "components.SampleCenus.title": {
-    "translation": "Xem trước và tìm hiểu thêm về từng câu hỏi trong cuộc điều tra dân số",
-    "english": "Preview and learn more about each question on the census"
-  },
-  "components.SampleCenus.subtitle": {
-    "translation": "Tìm hiểu cách trả lời, cách sử dụng thông tin đó và tại sao cần trả lời",
-    "english": "Learn how to answer, how that info is used, and why it's important to answer"
-  },
   "components.SampleCensus.title": {
     "english": "Preview each question on the survey",
     "translation": "Xem trước từng câu hỏi trong khảo sát"
@@ -367,49 +171,9 @@
     "english": "Learn if you should answer, how to answer, and how your info is used.",
     "translation": "Tìm hiểu xem bạn nên trả lời, cách trả lời và cách sử dụng thông tin của bạn."
   },
-  "components.DetailViewContainer.message.1": {
-    "translation": "Tổng điều tra dân số năm 2020 là đây. Sự tham gia của bạn giúp đảm bảo cộng đồng của chúng tôi sẽ có quyền truy cập vào nhà ở, y tế, trường học, chương trình cộng đồng, giao thông tốt hơn và đại diện chính phủ.",
-    "english": "The 2020 Census is here. Your participation helps ensure our community will have access to housing, healthcare, schools, community programs, better transportation, and government representation."
-  },
-  "components.DetailViewContainer.message.2": {
-    "translation": "Cứ sau 10 năm, Cục điều tra dân số Hoa Kỳ đặt ra để đếm từng người sống ở Hoa Kỳ - bất kể tuổi tác, tình trạng công dân và giới tính. Có được Tổng điều tra dân số năm 2020 rất quan trọng đối với tất cả các cộng đồng của chúng tôi - đặc biệt là những cộng đồng có khả năng bị thiếu. Một cuộc điều tra dân số năm 2020 có thể khiến hàng tỷ đô la liên bang và đại diện quốc hội cho California gặp rủi ro!",
-    "english": "Every 10 years, the U.S. Census Bureau sets out to count every person living in the United States — regardless of age, citizenship status, and gender. Getting the 2020 Census right is important for all our communities — particularly those most likely to be undercounted. A 2020 Census undercount could put billions of federal dollars and congressional representation for California at risk!"
-  },
-  "components.DetailViewContainer.message.3": {
-    "translation": "Hoàn thành khảo sát điều tra dân số trực tuyến, qua điện thoại hoặc thư. Quá trình này dễ dàng, nhanh chóng và bí mật! Tất cả những gì bạn cần là mã ID được gửi đến bạn bởi Cục điều tra dân số Hoa Kỳ hoặc địa chỉ gửi thư của bạn. Hãy nhớ rằng, bao gồm tất cả mọi người sống và ngủ trong nhà của bạn. Điều đó có nghĩa là trẻ sơ sinh, trẻ em, thanh thiếu niên, bạn cùng phòng, v.v. Nhấp vào nút \"Thực hiện điều tra dân số ngay bây giờ\" để bắt đầu!",
-    "english": "Complete the census survey online, by phone or mail. The process is easy, quick and confidential! All you need is the ID code mailed to you by the U.S. Census Bureau, or your mailing address. Remember, to include everyone living and sleeping in your house. That means babies, children, teens, roommates, etc. Click the \"Take the Census Now\" button to get started!"
-  },
-  "components.Home.factoids.readyToTakeCensus.headerTitle": {
-    "translation": "Điều tra dân số bắt đầu vào năm 2020",
-    "english": "Census starts in 2020"
-  },
-  "components.Home.factoids.readyToTakeCensus.headerMessage": {
-    "translation": "Học cách tham gia",
-    "english": "Learn how to participate"
-  },
-  "components.Home.factoids.readyToTakeCensus.contactLink": {
-    "translation": "THAM GIA VÀO",
-    "english": "GET INVOLVED"
-  },
-  "components.Home.factoids.qr-code.headerTitle.": {
-    "translation": "Dữ liệu của bạn được an toàn",
-    "english": "Your data is secure"
-  },
-  "components.Home.factoids.qr-code.headerMessage.": {
-    "translation": "Tìm hiểu thêm về quyền riêng tư",
-    "english": "Learn more about privacy"
-  },
   "components.Home.factoids.qr-code.faqLink": {
     "translation": "XEM TẤT CẢ Câu hỏi thường gặp",
     "english": "VIEW ALL FAQs"
-  },
-  "components.Home.factoids.3.headerTitle": {
-    "translation": "Xem tất cả các câu hỏi điều tra dân số",
-    "english": "See all census questions"
-  },
-  "components.Home.factoids.3.headerMessage": {
-    "translation": "Tìm hiểu tại sao nó quan trọng ...",
-    "english": "Learn why it's important..."
   },
   "components.Home.factoids.3.surveyLink": {
     "translation": "XEM MẪU MẪU",
@@ -478,10 +242,6 @@
   "mail.messages.confirmation.subject": {
     "translation": "Cảm ơn bạn đã liên hệ với Cục điều tra dân số San Jose",
     "english": "Thank you for contacting the San Jose Census Department"
-  },
-  "components.FAQ.sections.safety.header": {
-    "translation": "An toàn và riêng tư",
-    "english": "Safety and Privacy"
   },
   "components.FAQ.entries.whyHaveCensus.question": {
     "translation": "Tại sao chúng ta có một cuộc điều tra dân số?",
@@ -591,14 +351,6 @@
     "translation": "5 lý do hàng đầu để điều tra dân số",
     "english": "Top 5 Reasons to take the census"
   },
-  "components.Home.header": {
-    "translation": "Tham gia vào cuộc điều tra dân số và đại diện cho San Jose",
-    "english": "Participate in the census and represent San Jose"
-  },
-  "components.Home.subheader": {
-    "translation": "Giúp California và San Jose tiếp cận với các tài nguyên quan trọng",
-    "english": "Help California and San Jose get access to important resources"
-  },
   "components.Home.factoids.qrCode.headerTitle": {
     "translation": "Trong một vội vàng, mang nó đi!",
     "english": "In a hurry, take it to go!"
@@ -643,30 +395,6 @@
     "translation": "Có thêm người nào ở lại đây vào ngày 1 tháng 4 năm 2020 mà bạn không bao gồm trong Câu hỏi 1 không?",
     "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?"
   },
-  "components.SampleCensus.secondary_information.2.1": {
-    "translation": "Đánh dấu tất cả những gì áp dụng",
-    "english": "Mark all that apply"
-  },
-  "components.SampleCensus.secondary_information.2.2": {
-    "translation": "Trẻ em, có liên quan hoặc không liên quan, chẳng hạn như trẻ sơ sinh, cháu, hoặc con nuôi",
-    "english": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children"
-  },
-  "components.SampleCensus.secondary_information.2.3": {
-    "translation": "Người thân, chẳng hạn như trẻ em trưởng thành, anh em họ, hoặc ở rể",
-    "english": "Relatives, such as adult children, cousins, or in-laws"
-  },
-  "components.SampleCensus.secondary_information.2.4": {
-    "translation": "Không liên quan, chẳng hạn như bạn cùng phòng hoặc người giữ trẻ sống",
-    "english": "Nonrelatives, such as roommates or live-in babysitters"
-  },
-  "components.SampleCensus.secondary_information.2.5": {
-    "translation": "Người ở lại tạm thời",
-    "english": "People staying here temporarily"
-  },
-  "components.SampleCensus.secondary_information.2.6": {
-    "translation": "Không có thêm người",
-    "english": "No additional people"
-  },
   "components.SampleCensus.hohh_button": {
     "translation": "Tôi sẽ trả lời điều tra dân số",
     "english": "I will answer the census"
@@ -674,10 +402,6 @@
   "components.SampleCensus.not_hohh_button": {
     "translation": "Một người khác sẽ trả lời điều tra dân số cho tôi",
     "english": "Someone else will answer the census for me"
-  },
-  "test": {
-    "translation": "- [ ] Hộp kiểm1\n  - [x] Hộp kiểm2",
-    "english": "- [ ] Checkbox1\n  - [x] Checkbox2"
   },
   "components.SampleCensus.secondary_information.2": {
     "translation": "* Đánh dấu tất cả những gì áp dụng *\n\n- [ ] Trẻ em, có liên quan hoặc không liên quan, chẳng hạn như trẻ sơ sinh, cháu, hoặc con nuôi\n- [ ] Người thân, chẳng hạn như trẻ em trưởng thành, anh em họ hoặc ở rể\n- [ ] Không liên quan, chẳng hạn như bạn cùng phòng hoặc người giữ trẻ sống trong nhà\n- [ ] Người ở đây tạm thời\n- [ ] Không có thêm người",
@@ -711,125 +435,17 @@
     "translation": "Người 1 sex là gì?",
     "english": "What is Person 1’s sex?"
   },
-  "components.SampleCensus.secondary_information.6.1": {
-    "translation": "Đánh dấu MỘT ô.",
-    "english": "Mark ONE box."
-  },
-  "components.SampleCensus.secondary_information.6.2": {
-    "translation": "Nam giới",
-    "english": "Male"
-  },
-  "components.SampleCensus.secondary_information.6.3": {
-    "translation": "Giống cái",
-    "english": "Female"
-  },
   "components.SampleCensus.primary_question.7": {
     "translation": "Người 1 tuổi là gì và ngày sinh của Người 1 là gì?",
     "english": "What is Person 1’s age and what is Person 1’s date of birth?"
-  },
-  "components.SampleCensus.secondary_information.7.1": {
-    "translation": "Tuổi vào ngày 1 tháng 4 năm 2020 = <textbox> {text} </ textbox> năm",
-    "english": "Age on April 1, 2020 = <textbox>{text}</textbox> years"
-  },
-  "components.SampleCensus.secondary_information.7.2": {
-    "translation": "Tháng = <hộp văn bản> {văn bản} </ hộp văn bản> Ngày = <hộp văn bản> {văn bản} </ hộp văn bản> Năm sinh = <hộp văn bản> {văn bản} </ hộp văn bản>",
-    "english": "Month = <textbox>{text}</textbox> Day = <textbox>{text}</textbox> Year of birth = <textbox>{text}</textbox>"
   },
   "components.SampleCensus.primary_question.8": {
     "translation": "Là người 1 gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha?",
     "english": "Is Person 1 of Hispanic, Latino, or Spanish origin?"
   },
-  "components.SampleCensus.secondary_information.8.1": {
-    "translation": "Không, không phải gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha",
-    "english": "No, not of Hispanic, Latino, or Spanish origin"
-  },
-  "components.SampleCensus.secondary_information.8.2": {
-    "translation": "Vâng, Mexico, Mexico Am., Chicano",
-    "english": "Yes, Mexican, Mexican Am., Chicano"
-  },
-  "components.SampleCensus.secondary_information.8.3": {
-    "translation": "Vâng, Puerto Rico",
-    "english": "Yes, Puerto Rican"
-  },
-  "components.SampleCensus.secondary_information.8.4": {
-    "translation": "Vâng, Cuba",
-    "english": "Yes, Cuban"
-  },
-  "components.SampleCensus.secondary_information.8.5": {
-    "translation": "Có, một nguồn gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha khác - In, ví dụ: Salvadoran, Dominicican, Colombia, Guatemala, Spaniard, Ecuador, v.v.",
-    "english": "Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc."
-  },
-  "components.SampleCensus.secondary_information.8.6": {
-    "translation": "<hộp văn bản> {văn bản} </ hộp văn bản>",
-    "english": "<textbox>{text}</textbox>"
-  },
   "components.SampleCensus.primary_question.9": {
     "translation": "Chủng tộc 1 người là gì?",
     "english": "What is Person 1’s race?"
-  },
-  "components.SampleCensus.secondary_information.9.1": {
-    "translation": "Đánh dấu một hoặc nhiều hộp VÀ in nguồn gốc.",
-    "english": "Mark one or more boxes AND print origins."
-  },
-  "components.SampleCensus.secondary_information.9.2": {
-    "translation": "Trắng - In, ví dụ: tiếng Đức, tiếng Ailen, tiếng Anh, tiếng Ý, tiếng Lebanon, tiếng Ai Cập, v.v [Hộp văn bản]",
-    "english": "White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [Textbox]"
-  },
-  "components.SampleCensus.secondary_information.9.3": {
-    "translation": "Đen hoặc châu Phi Am. - In, ví dụ, người Mỹ gốc Phi, Jamaica, Haiti, Nigeria, Etiopia, Somali, v.v ... [Textbox]",
-    "english": "Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [Textbox]"
-  },
-  "components.SampleCensus.secondary_information.9.4": {
-    "translation": "Người Mỹ bản địa hoặc thổ dân Alaska - Tên in của (các) bộ lạc đã đăng ký hoặc chính, ví dụ, Navajo Nation, Blackfeet Tribe, Maya, Aztec, Bản địa của Chính phủ truyền thống Barrow Inupiat, Cộng đồng Nome Eskimo, v.v. [Textbox]",
-    "english": "American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [Textbox]"
-  },
-  "components.SampleCensus.secondary_information.9.5": {
-    "translation": "người Trung Quốc",
-    "english": "Chinese"
-  },
-  "components.SampleCensus.secondary_information.9.6": {
-    "translation": "Tiếng Philipin",
-    "english": "Filipino"
-  },
-  "components.SampleCensus.secondary_information.9.7": {
-    "translation": "Ấn Độ châu á",
-    "english": "Asian Indian"
-  },
-  "components.SampleCensus.secondary_information.9.8": {
-    "translation": "Tiếng Việt",
-    "english": "Vietnamese"
-  },
-  "components.SampleCensus.secondary_information.9.9": {
-    "translation": "Hàn Quốc",
-    "english": "Korean"
-  },
-  "components.SampleCensus.secondary_information.9.10": {
-    "translation": "tiếng Nhật",
-    "english": "Japanese"
-  },
-  "components.SampleCensus.secondary_information.9.11": {
-    "translation": "Hawaii bản địa",
-    "english": "Native Hawaiian"
-  },
-  "components.SampleCensus.secondary_information.9.12": {
-    "translation": "Samoa",
-    "english": "Samoan"
-  },
-  "components.SampleCensus.secondary_information.9.13": {
-    "translation": "Chamorro",
-    "english": "Chamorro"
-  },
-  "components.SampleCensus.secondary_information.9.14": {
-    "translation": "Khác châu Á - In, ví dụ, tiếng Pakistan, tiếng Campuchia, tiếng H'mông, v.v [Hộp văn bản]",
-    "english": "Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [Textbox]"
-  },
-  "components.SampleCensus.secondary_information.9.15": {
-    "translation": "Đảo Thái Bình Dương khác - In, ví dụ, Tongan, Fijian, Marshallese, v.v [Hộp văn bản]",
-    "english": "Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [Textbox]"
-  },
-  "components.SampleCensus.secondary_information.9.16": {
-    "translation": "Một số chủng tộc khác - In chủng tộc hoặc nguồn gốc. [Hộp văn bản]",
-    "english": "Some other race – Print race or origin. [Textbox]"
   },
   "components.SampleCensus.primary_question.10": {
     "translation": "Đây là một câu hỏi ipsum",
