@@ -1,167 +1,167 @@
 {
   "components.Contact.fields.email": {
-    "translation": "Email",
-    "english": "Email"
+    "english": "Email",
+    "translation": "Email"
   },
   "components.Contact.fields.interest": {
-    "translation": "I would like to:",
-    "english": "I would like to:"
+    "english": "I would like to:",
+    "translation": "I would like to:"
   },
   "components.Contact.fields.interest.options.volunteer": {
-    "translation": "Volunteer to help",
-    "english": "Volunteer to help"
+    "english": "Volunteer to help",
+    "translation": "Volunteer to help"
   },
   "components.Contact.fields.interest.options.requestPresentation": {
-    "translation": "Request a presentation",
-    "english": "Request a presentation"
+    "english": "Request a presentation",
+    "translation": "Request a presentation"
   },
   "components.Contact.fields.interest.options.other": {
-    "translation": "Other",
-    "english": "Other"
+    "english": "Other",
+    "translation": "Other"
   },
   "components.Contact.fields.comment": {
-    "translation": "Comment",
-    "english": "Comment"
+    "english": "Comment",
+    "translation": "Comment"
   },
   "navigation.links.home": {
-    "translation": "Home",
-    "english": "Home"
+    "english": "Home",
+    "translation": "Home"
   },
   "navigation.links.contact": {
-    "translation": "Get Involved",
-    "english": "Get Involved"
+    "english": "Get Involved",
+    "translation": "Get Involved"
   },
   "components.Contact.submitButton": {
-    "translation": "Submit",
-    "english": "Submit"
+    "english": "Submit",
+    "translation": "Submit"
   },
   "components.Contact.submitSuccessToast": {
-    "translation": "Your request for information has been submitted",
-    "english": "Your request for information has been submitted"
+    "english": "Your request for information has been submitted",
+    "translation": "Your request for information has been submitted"
   },
   "components.FAQ.header": {
-    "translation": "Frequently Asked Questions",
-    "english": "Frequently Asked Questions"
+    "english": "Frequently Asked Questions",
+    "translation": "Frequently Asked Questions"
   },
   "navigation.links.faq": {
-    "translation": "FAQ",
-    "english": "FAQ"
+    "english": "FAQ",
+    "translation": "FAQ"
   },
   "navigation.links.sampleCensus": {
-    "translation": "Sample Survey",
-    "english": "Sample Survey"
+    "english": "Sample Survey",
+    "translation": "Sample Survey"
   },
   "components.Contact.fields.firstName": {
-    "translation": "First Name",
-    "english": "First Name"
+    "english": "First Name",
+    "translation": "First Name"
   },
   "components.Contact.fields.lastName": {
-    "translation": "Last Name",
-    "english": "Last Name"
+    "english": "Last Name",
+    "translation": "Last Name"
   },
   "components.Footer.contactUs.header": {
-    "translation": "Contact Us",
-    "english": "Contact Us"
+    "english": "Contact Us",
+    "translation": "Contact Us"
   },
   "components.Footer.links.takeTheCensus": {
-    "translation": "Take the Census",
-    "english": "Take the Census"
+    "english": "Take the Census",
+    "translation": "Take the Census"
   },
   "components.Footer.links.faq": {
-    "translation": "FAQ",
-    "english": "FAQ"
+    "english": "FAQ",
+    "translation": "FAQ"
   },
   "components.Footer.links.sampleSurvey": {
-    "translation": "Sample Survey",
-    "english": "Sample Survey"
+    "english": "Sample Survey",
+    "translation": "Sample Survey"
   },
   "components.Footer.links.contact": {
-    "translation": "Get Involved",
-    "english": "Get Involved"
+    "english": "Get Involved",
+    "translation": "Get Involved"
   },
   "components.Home.factoids.3.title": {
     "english": "In a hurry, take it to go!",
     "translation": "In a hurry, take it to go!"
   },
   "components.Contact.fields.interest.options.information": {
-    "translation": "Request more information",
-    "english": "Request more information"
+    "english": "Request more information",
+    "translation": "Request more information"
   },
   "components.Contact.getInvolved.header": {
-    "translation": "Get Involved",
-    "english": "Get Involved"
+    "english": "Get Involved",
+    "translation": "Get Involved"
   },
   "components.Contact.workingForCensus.header": {
-    "translation": "Interested in working for the Census?",
-    "english": "Interested in working for the Census?"
+    "english": "Interested in working for the Census?",
+    "translation": "Interested in working for the Census?"
   },
   "components.Contact.workingForCensus": {
-    "translation": "Find more information {link}",
-    "english": "Find more information {link}"
+    "english": "Find more information {link}",
+    "translation": "Find more information {link}"
   },
   "components.Contact.workingForCensus.link": {
-    "translation": "here",
-    "english": "here"
+    "english": "here",
+    "translation": "here"
   },
   "components.Contact.needMoreInformation": {
-    "translation": "Need more information?",
-    "english": "Need more information?"
+    "english": "Need more information?",
+    "translation": "Need more information?"
   },
   "components.Contact.visitFaq": {
-    "translation": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days.",
-    "english": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days."
+    "english": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days.",
+    "translation": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days."
   },
   "components.Contact.visitFaq.link": {
-    "translation": "FAQ",
-    "english": "FAQ"
+    "english": "FAQ",
+    "translation": "FAQ"
   },
   "components.Contact.form.title": {
-    "translation": "Contact Form",
-    "english": "Contact Form"
+    "english": "Contact Form",
+    "translation": "Contact Form"
   },
   "components.Contact.optional": {
-    "translation": "Optional",
-    "english": "Optional"
+    "english": "Optional",
+    "translation": "Optional"
   },
   "components.Home.carousel.messages.1": {
     "english": "Learn why everyone counts!",
     "translation": "Learn why everyone counts!"
   },
   "components.Home.carousel.messages.2": {
-    "translation": "When you respond, we all benefit!",
-    "english": "When you respond, we all benefit!"
+    "english": "When you respond, we all benefit!",
+    "translation": "When you respond, we all benefit!"
   },
   "components.Home.carousel.messages.3": {
-    "translation": "Answer online, by phone, or by mail!",
-    "english": "Answer online, by phone, or by mail!"
+    "english": "Answer online, by phone, or by mail!",
+    "translation": "Answer online, by phone, or by mail!"
   },
   "components.Home.carousel.messages.4": {
-    "translation": "Your participation affects our congressional representation!",
-    "english": "Your participation affects our congressional representation!"
+    "english": "Your participation affects our congressional representation!",
+    "translation": "Your participation affects our congressional representation!"
   },
   "components.Home.carousel.messages.5": {
-    "translation": "Easy, quick and confidential!",
-    "english": "Easy, quick and confidential!"
+    "english": "Easy, quick and confidential!",
+    "translation": "Easy, quick and confidential!"
   },
   "components.Home.carousel.messages.6": {
-    "translation": "Be counted San Jose!",
-    "english": "Be counted San Jose!"
+    "english": "Be counted San Jose!",
+    "translation": "Be counted San Jose!"
   },
   "components.Home.carsouelItem.title": {
-    "translation": "The United States 2020 Census",
-    "english": "The United States 2020 Census"
+    "english": "The United States 2020 Census",
+    "translation": "The United States 2020 Census"
   },
   "component.SampleCensus.sectionHeaders.howToAnswer": {
-    "translation": "How to answer this question",
-    "english": "How to answer this question"
+    "english": "How to answer this question",
+    "translation": "How to answer this question"
   },
   "component.SampleCensus.sectionHeaders.howInfoIsUsed": {
-    "translation": "How is this info used",
-    "english": "How is this info used"
+    "english": "How is this info used",
+    "translation": "How is this info used"
   },
   "component.SampleCensus.sectionHeaders.whyAnswer": {
-    "translation": "Why answer this question",
-    "english": "Why answer this question"
+    "english": "Why answer this question",
+    "translation": "Why answer this question"
   },
   "components.SampleCensus.title": {
     "english": "Preview each question on the survey",
@@ -172,300 +172,300 @@
     "translation": "Learn if you should answer, how to answer, and how your info is used."
   },
   "components.Home.factoids.qr-code.faqLink": {
-    "translation": "VIEW ALL FAQs",
-    "english": "VIEW ALL FAQs"
+    "english": "VIEW ALL FAQs",
+    "translation": "VIEW ALL FAQs"
   },
   "components.Home.factoids.3.surveyLink": {
-    "translation": "VIEW SAMPLE SURVEY",
-    "english": "VIEW SAMPLE SURVEY"
+    "english": "VIEW SAMPLE SURVEY",
+    "translation": "VIEW SAMPLE SURVEY"
   },
   "components.FAQ.entries.howCanIComplete.question": {
-    "translation": "How do I get Counted!",
-    "english": "How can I complete the census?"
+    "english": "How do I get Counted!",
+    "translation": "How do I get Counted!"
   },
   "components.FAQ.entries.howCanIComplete.answer": {
-    "translation": " - You complete the census questionnaire NOW.  [click here] \n - You can return the census form mailed to your home. \n - You can complete the census by phone with a census worker who speaks your language:\n\n**LANGUAGE LINES and TOLL-FREE NUMBERS**\n - English: 844-330-2020\n - Spanish: 844-468-2020\n - Chinese (Mandarin): 844-391-2020\n - Chinese (Cantonese): 844-398-2020\n - Vietnamese: 844-461-2020\n - Korean: 844-392-2020\n - Russian: 844-417-2020\n - Arabic: 844-416-2020\n - Tagalog: 844-478-2020\n - Polish: 844-479-2020\n - French: 844-494-2020\n - Haitian Creole: 844-477-2020\n - Portuguese: 844-474-2020\n - Japanese: 844-460-2020\n - English (Puerto Rico residents): 844-418-2020\n - Spanish (Puerto Rico residents): 844-426-2020\n - Telephone Display Device (TDD): 844-467-2020",
-    "english": "There are three ways you can fill out the Census survey: online, by telephone, or via mail. Households can answer the questions on the internet or by phone in English and 12 Non-English languages."
+    "english": " - You complete the census questionnaire NOW.  [click here] \n - You can return the census form mailed to your home. \n - You can complete the census by phone with a census worker who speaks your language:\n\n**LANGUAGE LINES and TOLL-FREE NUMBERS**\n - English: 844-330-2020\n - Spanish: 844-468-2020\n - Chinese (Mandarin): 844-391-2020\n - Chinese (Cantonese): 844-398-2020\n - Vietnamese: 844-461-2020\n - Korean: 844-392-2020\n - Russian: 844-417-2020\n - Arabic: 844-416-2020\n - Tagalog: 844-478-2020\n - Polish: 844-479-2020\n - French: 844-494-2020\n - Haitian Creole: 844-477-2020\n - Portuguese: 844-474-2020\n - Japanese: 844-460-2020\n - English (Puerto Rico residents): 844-418-2020\n - Spanish (Puerto Rico residents): 844-426-2020\n - Telephone Display Device (TDD): 844-467-2020",
+    "translation": " - You complete the census questionnaire NOW.  [click here] \n - You can return the census form mailed to your home. \n - You can complete the census by phone with a census worker who speaks your language:\n\n**LANGUAGE LINES and TOLL-FREE NUMBERS**\n - English: 844-330-2020\n - Spanish: 844-468-2020\n - Chinese (Mandarin): 844-391-2020\n - Chinese (Cantonese): 844-398-2020\n - Vietnamese: 844-461-2020\n - Korean: 844-392-2020\n - Russian: 844-417-2020\n - Arabic: 844-416-2020\n - Tagalog: 844-478-2020\n - Polish: 844-479-2020\n - French: 844-494-2020\n - Haitian Creole: 844-477-2020\n - Portuguese: 844-474-2020\n - Japanese: 844-460-2020\n - English (Puerto Rico residents): 844-418-2020\n - Spanish (Puerto Rico residents): 844-426-2020\n - Telephone Display Device (TDD): 844-467-2020"
   },
   "components.FAQ.entries.otherLanguages.question": {
-    "translation": "I don’t speak English. Will the Census survey be available in other languages?",
-    "english": "I don’t speak English. Will the Census survey be available in other languages?"
+    "english": "I don’t speak English. Will the Census survey be available in other languages?",
+    "translation": "I don’t speak English. Will the Census survey be available in other languages?"
   },
   "components.FAQ.entries.otherLanguages.answer": {
-    "translation": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese)  Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print. \n\nContact the U.S. Census Bureau at (855) 562-2020.",
-    "english": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print."
+    "english": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese)  Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print. \n\nContact the U.S. Census Bureau at (855) 562-2020.",
+    "translation": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese)  Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print. \n\nContact the U.S. Census Bureau at (855) 562-2020."
   },
   "components.FAQ.entries.howToAvoidScams.question": {
-    "translation": "How can I avoid scams or report suspected fraud?",
-    "english": "How can I avoid scams online?"
+    "english": "How can I avoid scams or report suspected fraud?",
+    "translation": "How can I avoid scams or report suspected fraud?"
   },
   "components.FAQ.entries.howToAvoidScams.answer": {
-    "translation": "- Census workers will **NEVER** ask for your Social Security Number, bank account or credit card number! \n- Census workers will **NEVER** ask you for money or a donation or contact you on behalf of a political party.\n \nIf you are in doubt about a visitor or suspect fraud, call the U.S. Census Bureau at (855) 562-2020.",
-    "english": "Phishing is the criminal act of trying to get your information by pretending to be an entity that you trust. Phishing emails often direct you to a website that looks real but is fake—and that may be infected with malware.\n\nTo help protect yourself from phishing and other scams, please remember that the U.S. Census Bureau will never ask for:\n\n- Your Social Security number.\n- Your bank account or credit card numbers.\n- Money or donations.\n\nIn addition, the Census Bureau will not contact you on behalf of a political party."
+    "english": "- Census workers will **NEVER** ask for your Social Security Number, bank account or credit card number! \n- Census workers will **NEVER** ask you for money or a donation or contact you on behalf of a political party.\n \nIf you are in doubt about a visitor or suspect fraud, call the U.S. Census Bureau at (855) 562-2020.",
+    "translation": "- Census workers will **NEVER** ask for your Social Security Number, bank account or credit card number! \n- Census workers will **NEVER** ask you for money or a donation or contact you on behalf of a political party.\n \nIf you are in doubt about a visitor or suspect fraud, call the U.S. Census Bureau at (855) 562-2020."
   },
   "components.FAQ.entries.homeless.question": {
-    "translation": "I am living in a non-traditional home or don’t have an address, do I count?",
-    "english": "How will the Census count homeless residents?"
+    "english": "I am living in a non-traditional home or don’t have an address, do I count?",
+    "translation": "I am living in a non-traditional home or don’t have an address, do I count?"
   },
   "components.FAQ.entries.homeless.answer": {
-    "translation": "Yes, you do!  If you or your family is living in a non-traditional home or do not have a usual residence (including if you are experiencing homelessness), you should still answer the census survey. \n\nIf you take it online, choose the option for “did not receive a 12-digit code” and follow the prompts. Or, you can call and complete the census by phone. See \"How do I get Counted!\" below.",
-    "english": "In late March 2020, the Census Bureau will conduct Service-Based Enumeration (SBE). During this time, Census workers will count people without conventional housing or people experiencing homelessness at places where they receive services (e.g., shelters, soup kitchens, regularly scheduled mobile food van locations, etc.) or at pre-identified outdoor locations where people are known to sleep — such as encampments, under bridges, or in parking lots"
+    "english": "Yes, you do!  If you or your family is living in a non-traditional home or do not have a usual residence (including if you are experiencing homelessness), you should still answer the census survey. \n\nIf you take it online, choose the option for “did not receive a 12-digit code” and follow the prompts. Or, you can call and complete the census by phone. See \"How do I get Counted!\" below.",
+    "translation": "Yes, you do!  If you or your family is living in a non-traditional home or do not have a usual residence (including if you are experiencing homelessness), you should still answer the census survey. \n\nIf you take it online, choose the option for “did not receive a 12-digit code” and follow the prompts. Or, you can call and complete the census by phone. See \"How do I get Counted!\" below."
   },
   "email.messages.confirmation.greeting": {
-    "translation": "Hi {name}",
-    "english": "Hi {name}"
+    "english": "Hi {name}",
+    "translation": "Hi {name}"
   },
   "email.messages.confirmation.thankYou": {
-    "translation": "Thank you for your interest in the 2020 Census effort in San Jose.",
-    "english": "Thank you for your interest in the 2020 Census effort in San Jose."
+    "english": "Thank you for your interest in the 2020 Census effort in San Jose.",
+    "translation": "Thank you for your interest in the 2020 Census effort in San Jose."
   },
   "email.messages.confirmation.usersMessageIntro": {
-    "translation": "The following message was sent by you to the City of San Jose Census Office:",
-    "english": "The following message was sent by you to the City of San Jose Census Office:"
+    "english": "The following message was sent by you to the City of San Jose Census Office:",
+    "translation": "The following message was sent by you to the City of San Jose Census Office:"
   },
   "email.messages.confirmation.interestsHeader": {
-    "translation": "I have an interest in:",
-    "english": "I have an interest in:"
+    "english": "I have an interest in:",
+    "translation": "I have an interest in:"
   },
   "email.messages.confirmation.commentsHeader": {
-    "translation": "Additional comments:",
-    "english": "Additional comments:"
+    "english": "Additional comments:",
+    "translation": "Additional comments:"
   },
   "email.messages.confirmation.conclusion": {
-    "translation": "Thank you again for your interest. Someone will respond back to you within two business days.",
-    "english": "Thank you again for your interest. Someone will respond back to you within two business days."
+    "english": "Thank you again for your interest. Someone will respond back to you within two business days.",
+    "translation": "Thank you again for your interest. Someone will respond back to you within two business days."
   },
   "email.messages.confirmation.signature": {
-    "translation": "City of San Jose 2020 Census Office",
-    "english": "City of San Jose 2020 Census Office"
+    "english": "City of San Jose 2020 Census Office",
+    "translation": "City of San Jose 2020 Census Office"
   },
   "mail.messages.confirmation.subject": {
-    "translation": "Thank you for contacting the San Jose Census Department",
-    "english": "Thank you for contacting the San Jose Census Department"
+    "english": "Thank you for contacting the San Jose Census Department",
+    "translation": "Thank you for contacting the San Jose Census Department"
   },
   "components.FAQ.entries.whyHaveCensus.question": {
-    "translation": "Why do we have a census?",
-    "english": "Why do we have a census?"
+    "english": "Why do we have a census?",
+    "translation": "Why do we have a census?"
   },
   "components.FAQ.entries.whyHaveCensus.answer": {
-    "translation": "The U.S. Constitution requires the counting of everyone living in the United States every ten years. The census process empowers the people of America by ensuring equal representation for all.\n\nMake sure your voice is heard by counting everyone in your household!",
-    "english": "The data collected from the Census is used to make sure everyone is equally represented in our political system and that government resources are allocated fairly. The Census data determines how many congressional seats a state receives; how much federal funding will be allocated to local communities for public services and infrastructure needs; and provides a picture of the changing demographics of the country."
+    "english": "The U.S. Constitution requires the counting of everyone living in the United States every ten years. The census process empowers the people of America by ensuring equal representation for all.\n\nMake sure your voice is heard by counting everyone in your household!",
+    "translation": "The U.S. Constitution requires the counting of everyone living in the United States every ten years. The census process empowers the people of America by ensuring equal representation for all.\n\nMake sure your voice is heard by counting everyone in your household!"
   },
   "components.FAQ.entries.whoGetsCounted.question": {
-    "translation": "Who gets counted?",
-    "english": "Who gets counted?"
+    "english": "Who gets counted?",
+    "translation": "Who gets counted?"
   },
   "components.FAQ.entries.whoGetsCounted.answer": {
-    "translation": "Everyone living in the United States must be counted. Make sure you include everyone living and sleeping in your home on your census survey — regardless of age, gender, relationship to you, or citizenship/immigration status.",
-    "english": "Everyone living in the United States must be counted. Make sure you include everyone living and sleeping in your home on your census survey — regardless of age, gender, relationship to you, or citizenship/immigration status."
+    "english": "Everyone living in the United States must be counted. Make sure you include everyone living and sleeping in your home on your census survey — regardless of age, gender, relationship to you, or citizenship/immigration status.",
+    "translation": "Everyone living in the United States must be counted. Make sure you include everyone living and sleeping in your home on your census survey — regardless of age, gender, relationship to you, or citizenship/immigration status."
   },
   "components.FAQ.entries.whatTypesOfQuestions.question": {
-    "translation": "What information is the Census Bureau collecting?",
-    "english": "What types of questions are on the 2020 Census?"
+    "english": "What information is the Census Bureau collecting?",
+    "translation": "What information is the Census Bureau collecting?"
   },
   "components.FAQ.entries.whatTypesOfQuestions.answer": {
-    "translation": "You can see all the questions here [Sample Survey](/samplecensus).\nYou will be asked to give basic information about each individual living or staying with you. The questions on Informational Census Questionnaire include:\n-   The total number of people living at your address\n-   If you own or rent your home\n-   Each person’s name, gender, and race/ethnicity\n\nNO QUESTIONS ABOUT CITIZENSHIP OR IMMIGRATION STATUS ARE INCLUDED IN THE CENSUS",
-    "english": "The Census survey will ask basic information about each household, such as the total number of people living at your address, homeownership (own or rent), your phone number, and the names, gender, race/ethnicity of each individual living or staying with you. This information will not be shared with the City or any other local, state or federal agency. For more information on what you will be asked on the Census go to the URL below.\n            \n{link}"
+    "english": "You can see all the questions here [Sample Survey](/samplecensus).\nYou will be asked to give basic information about each individual living or staying with you. The questions on Informational Census Questionnaire include:\n-   The total number of people living at your address\n-   If you own or rent your home\n-   Each person’s name, gender, and race/ethnicity\n\nNO QUESTIONS ABOUT CITIZENSHIP OR IMMIGRATION STATUS ARE INCLUDED IN THE CENSUS",
+    "translation": "You can see all the questions here [Sample Survey](/samplecensus).\nYou will be asked to give basic information about each individual living or staying with you. The questions on Informational Census Questionnaire include:\n-   The total number of people living at your address\n-   If you own or rent your home\n-   Each person’s name, gender, and race/ethnicity\n\nNO QUESTIONS ABOUT CITIZENSHIP OR IMMIGRATION STATUS ARE INCLUDED IN THE CENSUS"
   },
   "components.FAQ.entries.whoCountsAsHousehold.question": {
-    "translation": "Who counts as a “household?”",
-    "english": "Who counts as a \"household?\""
+    "english": "Who counts as a “household?”",
+    "translation": "Who counts as a “household?”"
   },
   "components.FAQ.entries.whoCountsAsHousehold.answer": {
-    "translation": "A household consists of **all** the people - *both related family members and any unrelated people* - who live and sleep in the same “home”. Don’t forget to include renters (including students), foster children, wards, or employees.",
-    "english": "A household consists of all the people who occupy a housing unit, both related family members and all the unrelated people, if any, such as lodgers, foster children, wards, or employees who share the housing. For more information on who to count on your Census form go to the URL below.\n          \n{link}"
+    "english": "A household consists of **all** the people - *both related family members and any unrelated people* - who live and sleep in the same “home”. Don’t forget to include renters (including students), foster children, wards, or employees.",
+    "translation": "A household consists of **all** the people - *both related family members and any unrelated people* - who live and sleep in the same “home”. Don’t forget to include renters (including students), foster children, wards, or employees."
   },
   "components.FAQ.entries.lostCensusId.question": {
-    "translation": "I don’t have or lost my 12-digit code census. Can I still complete the census?",
-    "english": "I don’t have or lost my census ID. Can I still complete the census?"
+    "english": "I don’t have or lost my 12-digit code census. Can I still complete the census?",
+    "translation": "I don’t have or lost my 12-digit code census. Can I still complete the census?"
   },
   "components.FAQ.entries.lostCensusId.answer": {
-    "translation": "Yes. If you did not receive a 12-digit code census code or misplaced it, you can still complete the online census survey by using your mailing address. If you do not have a residential address, you can still complete the census online **or** call and complete the census by phone.  See \"How do I get Counted!\" below.",
-    "english": "Yes. If you did not receive a census ID code or misplaced it, you can still complete the online census survey by using your mailing address. If you don’t want to respond online, you can call Census Questionnaire Assistance at (###) to complete the survey over the phone."
+    "english": "Yes. If you did not receive a 12-digit code census code or misplaced it, you can still complete the online census survey by using your mailing address. If you do not have a residential address, you can still complete the census online **or** call and complete the census by phone.  See \"How do I get Counted!\" below.",
+    "translation": "Yes. If you did not receive a 12-digit code census code or misplaced it, you can still complete the online census survey by using your mailing address. If you do not have a residential address, you can still complete the census online **or** call and complete the census by phone.  See \"How do I get Counted!\" below."
   },
   "components.FAQ.entries.whatHappensIfNoResponse.question": {
-    "translation": "Why should I respond?",
-    "english": "What happens if I don’t respond to the Census?"
+    "english": "Why should I respond?",
+    "translation": "Why should I respond?"
   },
   "components.FAQ.entries.whatHappensIfNoResponse.answer": {
-    "translation": "Completing the census questionnaire makes a difference for the next ten years! \n\nYour participation ensures:\n- That our community will have access to housing, healthcare, schools, and community programs.\n- That our community is represented fully at all levels of governments.\n- That our community receives our fair share of census-guided funding for programs such as Medi-Cal, SNAP and other nutrition programs, housing assistance, highway improvements, education programs, and emergency preparedness and public safety services.",
-    "english": "If your household fails to respond online or by telephone, the U.S. Census Bureau will mail several reminders to your household and will ultimately mail you a printed questionnaire—in English and Spanish—for you to return by mail."
+    "english": "Completing the census questionnaire makes a difference for the next ten years! \n\nYour participation ensures:\n- That our community will have access to housing, healthcare, schools, and community programs.\n- That our community is represented fully at all levels of governments.\n- That our community receives our fair share of census-guided funding for programs such as Medi-Cal, SNAP and other nutrition programs, housing assistance, highway improvements, education programs, and emergency preparedness and public safety services.",
+    "translation": "Completing the census questionnaire makes a difference for the next ten years! \n\nYour participation ensures:\n- That our community will have access to housing, healthcare, schools, and community programs.\n- That our community is represented fully at all levels of governments.\n- That our community receives our fair share of census-guided funding for programs such as Medi-Cal, SNAP and other nutrition programs, housing assistance, highway improvements, education programs, and emergency preparedness and public safety services."
   },
   "components.FAQ.entries.whatHappensIfNoResponseAtAll.question": {
-    "translation": "What happens if I don’t respond?",
-    "english": "What happens if I don’t respond to the census at all?"
+    "english": "What happens if I don’t respond?",
+    "translation": "What happens if I don’t respond?"
   },
   "components.FAQ.entries.whatHappensIfNoResponseAtAll.answer": {
-    "translation": "Ultimately, fewer dollars will be allocated to programs that you or your family might rely on, such as student loans, SNAP, Medi-Cal, WIC, housing vouchers, school breakfast and lunch programs, special education, career services and training, senior nutrition, and a number of community and transportation development programs.\n\nMore immediately, if your household fails to respond online or by telephone, the U.S. Census Bureau will mail you a printed questionnaire, in English and Spanish, for you to return by mail. \n\nIf you don’t respond to the census by the end of April, a census worker will visit your home to ask you all the same survey questions that will appear in the online version of the Census. \n\nDo your part to make sure everyone is counted in your household!",
-    "english": "If your household does not respond to the Census online, by phone, or via mail by late April 2020, the U.S. Census Bureau will send a Census worker, known as an enumerator, to your address to help you complete the survey. To avoid a visit from a census worker, complete the census survey on your own."
+    "english": "Ultimately, fewer dollars will be allocated to programs that you or your family might rely on, such as student loans, SNAP, Medi-Cal, WIC, housing vouchers, school breakfast and lunch programs, special education, career services and training, senior nutrition, and a number of community and transportation development programs.\n\nMore immediately, if your household fails to respond online or by telephone, the U.S. Census Bureau will mail you a printed questionnaire, in English and Spanish, for you to return by mail. \n\nIf you don’t respond to the census by the end of April, a census worker will visit your home to ask you all the same survey questions that will appear in the online version of the Census. \n\nDo your part to make sure everyone is counted in your household!",
+    "translation": "Ultimately, fewer dollars will be allocated to programs that you or your family might rely on, such as student loans, SNAP, Medi-Cal, WIC, housing vouchers, school breakfast and lunch programs, special education, career services and training, senior nutrition, and a number of community and transportation development programs.\n\nMore immediately, if your household fails to respond online or by telephone, the U.S. Census Bureau will mail you a printed questionnaire, in English and Spanish, for you to return by mail. \n\nIf you don’t respond to the census by the end of April, a census worker will visit your home to ask you all the same survey questions that will appear in the online version of the Census. \n\nDo your part to make sure everyone is counted in your household!"
   },
   "components.FAQ.entries.isCensusSafe.question": {
-    "translation": "Is the Census safe?",
-    "english": "Is the Census safe?"
+    "english": "Is the Census safe?",
+    "translation": "Is the Census safe?"
   },
   "components.FAQ.entries.isCensusSafe.answer": {
-    "translation": "The Census Bureau is required by law to protect and keep your information confidential. Your responses can **only** be used by the U.S. Census Bureau to produce statistics. \n\nLearn more about your protection under Title 13 of the U.S. Code to keep your information confidential.",
-    "english": "Under federal census law, your responses are kept confidential and can only be used by the U.S. Census Bureau to produce statistics."
+    "english": "The Census Bureau is required by law to protect and keep your information confidential. Your responses can **only** be used by the U.S. Census Bureau to produce statistics. \n\nLearn more about your protection under Title 13 of the U.S. Code to keep your information confidential.",
+    "translation": "The Census Bureau is required by law to protect and keep your information confidential. Your responses can **only** be used by the U.S. Census Bureau to produce statistics. \n\nLearn more about your protection under Title 13 of the U.S. Code to keep your information confidential."
   },
   "components.FAQ.entries.canOtherAgenciesAccess.question": {
-    "translation": "Can another government agency access my census information?",
-    "english": "Can another government agency access my census information?"
+    "english": "Can another government agency access my census information?",
+    "translation": "Can another government agency access my census information?"
   },
   "components.FAQ.entries.canOtherAgenciesAccess.answer": {
-    "translation": "All identifiable information about you, your home, and the people in your household will not be released to  **anyone**; including your landlord, the City of San José, the Internal Revenue Service (IRS), Immigration and Customs Enforcement (ICE), or law enforcement. The Census Bureau is required by law to protect and keep your information confidential",
-    "english": "No. Title 13 of the U.S. Code requires your information to be kept confidential and prevents your responses from being used against you by any government agency--including law enforcement, the Department of Homeland Security, or US Immigration and Customs Enforcement. All Census Bureau employees take an oath of privacy and are sworn for life to protect the confidentiality of the data. The penalty for unlawful disclosure is a fine of up to $250,000, imprisonment of up to 5 years, or both."
+    "english": "All identifiable information about you, your home, and the people in your household will not be released to  **anyone**; including your landlord, the City of San José, the Internal Revenue Service (IRS), Immigration and Customs Enforcement (ICE), or law enforcement. The Census Bureau is required by law to protect and keep your information confidential",
+    "translation": "All identifiable information about you, your home, and the people in your household will not be released to  **anyone**; including your landlord, the City of San José, the Internal Revenue Service (IRS), Immigration and Customs Enforcement (ICE), or law enforcement. The Census Bureau is required by law to protect and keep your information confidential"
   },
   "components.FAQ.entries.howToIdentifyCensusWorker.question": {
-    "translation": "How do I identify an official census worker in person?",
-    "english": "How do I identify an official census worker in person?"
+    "english": "How do I identify an official census worker in person?",
+    "translation": "How do I identify an official census worker in person?"
   },
   "components.FAQ.entries.howToIdentifyCensusWorker.answer": {
-    "translation": "Every census worker will have an ID badge, with their photograph, a Department of Commerce watermark, and an expiration date. They may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo. \n\nCensus workers will **NEVER** ask for your Social Security Number, bank account, or credit card number. Census workers will not ask you for money or a donation or contact you on behalf of a political party. \n\nIf you are in doubt about a visitor or suspect fraud, call the U.S. Census Bureau at (855) 562-2020.\n",
-    "english": "If someone visits your home to collect a response for the 2020 Census, there are steps you can take to verify their identity:\n              \n  First, check to make sure that they have a valid ID badge, with their photograph, a Department of Commerce watermark, and an expiration date.\n  Note that they may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo.\n  If you still have questions, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative.\n  \n  Remember that the U.S. Census Bureau will never ask for:\n  \n  - Your Social Security number.\n  - Your bank account or credit card numbers.\n  - Money or donations.\n  \n  In addition, the Census Bureau will not contact you on behalf of a political party."
+    "english": "Every census worker will have an ID badge, with their photograph, a Department of Commerce watermark, and an expiration date. They may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo. \n\nCensus workers will **NEVER** ask for your Social Security Number, bank account, or credit card number. Census workers will not ask you for money or a donation or contact you on behalf of a political party. \n\nIf you are in doubt about a visitor or suspect fraud, call the U.S. Census Bureau at (855) 562-2020.\n",
+    "translation": "Every census worker will have an ID badge, with their photograph, a Department of Commerce watermark, and an expiration date. They may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo. \n\nCensus workers will **NEVER** ask for your Social Security Number, bank account, or credit card number. Census workers will not ask you for money or a donation or contact you on behalf of a political party. \n\nIf you are in doubt about a visitor or suspect fraud, call the U.S. Census Bureau at (855) 562-2020.\n"
   },
   "components.Contact.emailValidation": {
-    "translation": "Please enter a valid email address",
-    "english": "Please enter a valid email address"
+    "english": "Please enter a valid email address",
+    "translation": "Please enter a valid email address"
   },
   "components.Home.top_reasons.item.1": {
-    "translation": "Determines the number of seats in the House of Representatives",
-    "english": "Determines the number of seats in the House of Representatives"
+    "english": "Determines the number of seats in the House of Representatives",
+    "translation": "It determines our number of seats in the House of Representatives."
   },
   "components.Home.top_reasons.item.2": {
-    "translation": "Redraw district boundaries",
-    "english": "Redraw district boundaries"
+    "english": "Redraw district boundaries",
+    "translation": "It can lead to redrawing district boundaries."
   },
   "components.Home.top_reasons.item.3": {
-    "translation": "Allocates funds to the state and localities",
-    "english": "Allocates funds to the state and localities"
+    "english": "Allocates funds to the state and localities",
+    "translation": "It's used to allocate funds to cities and states."
   },
   "components.Home.top_reasons.item.4": {
-    "translation": "Infrastructure planning",
-    "english": "Infrastructure planning"
+    "english": "Infrastructure planning",
+    "translation": "Government needs it for infrastructure planning."
   },
   "Compnents.Home.top_reasons.item.5": {
-    "translation": "Emergency response planning",
-    "english": "Emergency response planning"
+    "english": "Emergency response planning",
+    "translation": "Government needs it for emergency response planning."
   },
   "components.Home.top_reasons.title": {
-    "translation": "Top 5 Reasons to take the census",
-    "english": "Top 5 Reasons to take the census"
+    "english": "Top 5 Reasons to take the census",
+    "translation": "Top 5 Reasons to Take the Census\n\n"
   },
   "components.Home.factoids.qrCode.headerTitle": {
-    "translation": "In a hurry, take it to go!",
-    "english": "In a hurry, take it to go!"
+    "english": "In a hurry, take it to go!",
+    "translation": "In a hurry, take it to go!"
   },
   "components.Home.factoids.qrCode.headerMessage": {
-    "translation": "Take a photo of the image to learn more",
-    "english": "Take a photo of the image to learn more"
+    "english": "Take a photo of the image to learn more",
+    "translation": "Take a photo of the image to learn more"
   },
   "components.Home.factoids.safety.headerTitle.": {
-    "translation": "Is it safe?",
-    "english": "Is it safe?"
+    "english": "Is it safe?",
+    "translation": "Is it safe?"
   },
   "components.Home.factoids.safety.headerMessage": {
-    "translation": "Why should I be counted?",
-    "english": "Why should I be counted?"
+    "english": "Why should I be counted?",
+    "translation": "Why should I be counted?"
   },
   "components.Home.factoids.safety.message": {
-    "translation": "Get the answers to all your questions about why to take the census and how the information will be used.",
-    "english": "Get the answers to all your questions about why to take the census and how the information will be used."
+    "english": "Get the answers to all your questions about why to take the census and how the information will be used.",
+    "translation": "Get the answers to all your questions about why to take the census and how the information will be used."
   },
   "components.Home.factoids.shouldIComplete.headerTitle": {
-    "translation": "Do I take the census?",
-    "english": "Do I take the census?"
+    "english": "Do I take the census?",
+    "translation": "Do I take the census?"
   },
   "components.Home.factoids.shouldIComplete.headerMessage": {
-    "translation": "What will I be asked?",
-    "english": "What will I be asked?"
+    "english": "What will I be asked?",
+    "translation": "What will I be asked?"
   },
   "components.Home.factoids.shouldIComplete.message": {
-    "translation": "Learn more about the census questions, and who should be answering the questionnaire.",
-    "english": "Learn more about the census questions, and who should be answering the questionnaire."
+    "english": "Learn more about the census questions, and who should be answering the questionnaire.",
+    "translation": "Learn more about the census questions, and who should be answering the questionnaire."
   },
   "components.SampleCensus.primary_question.1": {
-    "translation": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?"
+    "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
+    "translation": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?"
   },
   "components.SampleCensus.secondary_information.1": {
-    "translation": "Number of people=[|Enter number here|]",
-    "english": "Number of people=[|Enter number here|]"
+    "english": "Number of people=[|Enter number here|]",
+    "translation": "Number of people=[|Enter number here|]"
   },
   "components.SampleCensus.primary_question.2": {
-    "translation": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
-    "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?"
+    "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
+    "translation": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?"
   },
   "components.SampleCensus.hohh_button": {
-    "translation": "I will answer the census",
-    "english": "I will answer the census"
+    "english": "I will answer the census",
+    "translation": "I will answer the census"
   },
   "components.SampleCensus.not_hohh_button": {
-    "translation": "Someone else will answer the census for me",
-    "english": "Someone else will answer the census for me"
+    "english": "Someone else will answer the census for me",
+    "translation": "Someone else will answer the census for me"
   },
   "components.SampleCensus.secondary_information.2": {
-    "translation": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people",
-    "english": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people"
+    "english": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people",
+    "translation": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people"
   },
   "components.SampleCensus.primary_question.3": {
-    "translation": "Is this house, apartment, or mobile home:",
-    "english": "Is this house, apartment, or mobile home:"
+    "english": "Is this house, apartment, or mobile home:",
+    "translation": "Is this house, apartment, or mobile home:"
   },
   "components.SampleCensus.secondary_information.3": {
-    "translation": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?",
-    "english": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?"
+    "english": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?",
+    "translation": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?"
   },
   "components.SampleCensus.primary_question.4": {
-    "translation": "What is your telephone number?",
-    "english": "What is your telephone number?"
+    "english": "What is your telephone number?",
+    "translation": "What is your telephone number?"
   },
   "components.SampleCensus.secondary_information.4": {
-    "translation": "Telephone Number = [|Enter telephone number here|]",
-    "english": "Telephone Number = [|Enter telephone number here|]"
+    "english": "Telephone Number = [|Enter telephone number here|]",
+    "translation": "Telephone Number = [|Enter telephone number here|]"
   },
   "components.SampleCensus.primary_question.5": {
-    "translation": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?",
-    "english": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?"
+    "english": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?",
+    "translation": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?"
   },
   "components.SampleCensus.secondary_information.5": {
-    "translation": "Firstname = [||] Last Name(s) = [||]",
-    "english": "Firstname = [||] Last Name(s) = [||]"
+    "english": "Firstname = [||] Last Name(s) = [||]",
+    "translation": "Firstname = [||] Last Name(s) = [||]"
   },
   "components.SampleCensus.primary_question.6": {
-    "translation": "What is Person 1’s sex?",
-    "english": "What is Person 1’s sex?"
+    "english": "What is Person 1’s sex?",
+    "translation": "What is Person 1’s sex?"
   },
   "components.SampleCensus.primary_question.7": {
-    "translation": "What is Person 1’s age and what is Person 1’s date of birth?",
-    "english": "What is Person 1’s age and what is Person 1’s date of birth?"
+    "english": "What is Person 1’s age and what is Person 1’s date of birth?",
+    "translation": "What is Person 1’s age and what is Person 1’s date of birth?"
   },
   "components.SampleCensus.primary_question.8": {
-    "translation": "Is Person 1 of Hispanic, Latino, or Spanish origin?",
-    "english": "Is Person 1 of Hispanic, Latino, or Spanish origin?"
+    "english": "Is Person 1 of Hispanic, Latino, or Spanish origin?",
+    "translation": "Is Person 1 of Hispanic, Latino, or Spanish origin?"
   },
   "components.SampleCensus.primary_question.9": {
-    "translation": "What is Person 1’s race?",
-    "english": "What is Person 1’s race?"
+    "english": "What is Person 1’s race?",
+    "translation": "What is Person 1’s race?"
   },
   "components.SampleCensus.primary_question.10": {
-    "translation": "This is an ipsum question",
-    "english": "This is an ipsum question"
+    "english": "This is an ipsum question",
+    "translation": "This is an ipsum question"
   },
   "components.SampleCensus.secondary_information.6": {
-    "translation": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female",
-    "english": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female"
+    "english": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female",
+    "translation": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female"
   },
   "components.SampleCensus.secondary_information.7": {
-    "translation": "*For babies less than 1 year olf, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]",
-    "english": "*For babies less than 1 year olf, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]"
+    "english": "*For babies less than 1 year olf, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]",
+    "translation": "*For babies less than 1 year olf, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]"
   },
   "components.SampleCensus.secondary_information.8": {
-    "translation": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]",
-    "english": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]"
+    "english": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]",
+    "translation": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]"
   },
   "components.SampleCensus.secondary_information.9": {
-    "translation": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]",
-    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]"
+    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]",
+    "translation": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]"
   },
   "navigation.externalCensusLink": {
     "english": "TAKE THE CENSUS",

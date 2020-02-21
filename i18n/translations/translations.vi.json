@@ -1,167 +1,167 @@
 {
   "components.Contact.fields.email": {
-    "translation": "E-mail",
-    "english": "Email"
+    "english": "Email",
+    "translation": "E-mail"
   },
   "components.Contact.fields.interest": {
-    "translation": "Tôi muốn:",
-    "english": "I would like to:"
+    "english": "I would like to:",
+    "translation": "Tôi muốn:"
   },
   "components.Contact.fields.interest.options.volunteer": {
-    "translation": "Tình nguyện giúp",
-    "english": "Volunteer to help"
+    "english": "Volunteer to help",
+    "translation": "Tình nguyện giúp"
   },
   "components.Contact.fields.interest.options.requestPresentation": {
-    "translation": "Yêu cầu thuyết trình",
-    "english": "Request a presentation"
+    "english": "Request a presentation",
+    "translation": "Yêu cầu thuyết trình"
   },
   "components.Contact.fields.interest.options.other": {
-    "translation": "Khác",
-    "english": "Other"
+    "english": "Other",
+    "translation": "Khác"
   },
   "components.Contact.fields.comment": {
-    "translation": "Bình luận",
-    "english": "Comment"
+    "english": "Comment",
+    "translation": "Bình luận"
   },
   "navigation.links.home": {
-    "translation": "Trang Chủ",
-    "english": "Home"
+    "english": "Home",
+    "translation": "Trang Chủ"
   },
   "navigation.links.contact": {
-    "translation": "Tham gia vào",
-    "english": "Get Involved"
+    "english": "Get Involved",
+    "translation": "Tham gia vào"
   },
   "components.Contact.submitButton": {
-    "translation": "Gửi đi",
-    "english": "Submit"
+    "english": "Submit",
+    "translation": "Gửi đi"
   },
   "components.Contact.submitSuccessToast": {
-    "translation": "Yêu cầu thông tin của bạn đã được gửi",
-    "english": "Your request for information has been submitted"
+    "english": "Your request for information has been submitted",
+    "translation": "Yêu cầu thông tin của bạn đã được gửi"
   },
   "components.FAQ.header": {
-    "translation": "Các câu hỏi thường gặp",
-    "english": "Frequently Asked Questions"
+    "english": "Frequently Asked Questions",
+    "translation": "Các câu hỏi thường gặp"
   },
   "navigation.links.faq": {
-    "translation": "Câu hỏi thường gặp",
-    "english": "FAQ"
+    "english": "FAQ",
+    "translation": "Câu hỏi thường gặp"
   },
   "navigation.links.sampleCensus": {
-    "translation": "Khảo sát mẫu",
-    "english": "Sample Survey"
+    "english": "Sample Survey",
+    "translation": "Khảo sát mẫu"
   },
   "components.Contact.fields.firstName": {
-    "translation": "Tên đầu tiên",
-    "english": "First Name"
+    "english": "First Name",
+    "translation": "Tên đầu tiên"
   },
   "components.Contact.fields.lastName": {
-    "translation": "Họ",
-    "english": "Last Name"
+    "english": "Last Name",
+    "translation": "Họ"
   },
   "components.Footer.contactUs.header": {
-    "translation": "Liên hệ chúng tôi",
-    "english": "Contact Us"
+    "english": "Contact Us",
+    "translation": "Liên hệ chúng tôi"
   },
   "components.Footer.links.takeTheCensus": {
-    "translation": "Tham gia điều tra dân số",
-    "english": "Take the Census"
+    "english": "Take the Census",
+    "translation": "Tham gia điều tra dân số"
   },
   "components.Footer.links.faq": {
-    "translation": "Câu hỏi thường gặp",
-    "english": "FAQ"
+    "english": "FAQ",
+    "translation": "Câu hỏi thường gặp"
   },
   "components.Footer.links.sampleSurvey": {
-    "translation": "Khảo sát mẫu",
-    "english": "Sample Survey"
+    "english": "Sample Survey",
+    "translation": "Khảo sát mẫu"
   },
   "components.Footer.links.contact": {
-    "translation": "Tham gia vào",
-    "english": "Get Involved"
+    "english": "Get Involved",
+    "translation": "Tham gia vào"
   },
   "components.Home.factoids.3.title": {
     "english": "In a hurry, take it to go!",
     "translation": "Trong một vội vàng, mang nó đi!"
   },
   "components.Contact.fields.interest.options.information": {
-    "translation": "Yêu cầu thêm thông tin",
-    "english": "Request more information"
+    "english": "Request more information",
+    "translation": "Yêu cầu thêm thông tin"
   },
   "components.Contact.getInvolved.header": {
-    "translation": "Tham gia vào",
-    "english": "Get Involved"
+    "english": "Get Involved",
+    "translation": "Tham gia vào"
   },
   "components.Contact.workingForCensus.header": {
-    "translation": "Quan tâm đến việc làm cho Tổng điều tra?",
-    "english": "Interested in working for the Census?"
+    "english": "Interested in working for the Census?",
+    "translation": "Quan tâm đến việc làm cho Tổng điều tra?"
   },
   "components.Contact.workingForCensus": {
-    "translation": "Tìm thêm thông tin {link}",
-    "english": "Find more information {link}"
+    "english": "Find more information {link}",
+    "translation": "Tìm thêm thông tin {link}"
   },
   "components.Contact.workingForCensus.link": {
-    "translation": "đây",
-    "english": "here"
+    "english": "here",
+    "translation": "đây"
   },
   "components.Contact.needMoreInformation": {
-    "translation": "Cần thêm thông tin?",
-    "english": "Need more information?"
+    "english": "Need more information?",
+    "translation": "Cần thêm thông tin?"
   },
   "components.Contact.visitFaq": {
-    "translation": "Truy cập {link} của chúng tôi hoặc gửi câu hỏi của bạn và nhà tổ chức Điều tra dân số San Jose sẽ liên lạc lại với bạn trong vòng 2 ngày làm việc.",
-    "english": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days."
+    "english": "Visit our {link} or submit your question and a San Jose Census organizer will get back to you within 2 business days.",
+    "translation": "Truy cập {link} của chúng tôi hoặc gửi câu hỏi của bạn và nhà tổ chức Điều tra dân số San Jose sẽ liên lạc lại với bạn trong vòng 2 ngày làm việc."
   },
   "components.Contact.visitFaq.link": {
-    "translation": "Câu hỏi thường gặp",
-    "english": "FAQ"
+    "english": "FAQ",
+    "translation": "Câu hỏi thường gặp"
   },
   "components.Contact.form.title": {
-    "translation": "Mâu liên hệ",
-    "english": "Contact Form"
+    "english": "Contact Form",
+    "translation": "Mâu liên hệ"
   },
   "components.Contact.optional": {
-    "translation": "Không bắt buộc",
-    "english": "Optional"
+    "english": "Optional",
+    "translation": "Không bắt buộc"
   },
   "components.Home.carousel.messages.1": {
     "english": "Learn why everyone counts!",
     "translation": "Tìm hiểu tại sao mọi người đều quan tâm!"
   },
   "components.Home.carousel.messages.2": {
-    "translation": "Khi bạn trả lời, tất cả chúng ta đều có lợi!",
-    "english": "When you respond, we all benefit!"
+    "english": "When you respond, we all benefit!",
+    "translation": "Khi bạn trả lời, tất cả chúng ta đều có lợi!"
   },
   "components.Home.carousel.messages.3": {
-    "translation": "Trả lời trực tuyến, qua điện thoại hoặc qua thư!",
-    "english": "Answer online, by phone, or by mail!"
+    "english": "Answer online, by phone, or by mail!",
+    "translation": "Trả lời trực tuyến, qua điện thoại hoặc qua thư!"
   },
   "components.Home.carousel.messages.4": {
-    "translation": "Sự tham gia của bạn ảnh hưởng đến đại diện quốc hội của chúng tôi!",
-    "english": "Your participation affects our congressional representation!"
+    "english": "Your participation affects our congressional representation!",
+    "translation": "Sự tham gia của bạn ảnh hưởng đến đại diện quốc hội của chúng tôi!"
   },
   "components.Home.carousel.messages.5": {
-    "translation": "Dễ dàng, nhanh chóng và bảo mật!",
-    "english": "Easy, quick and confidential!"
+    "english": "Easy, quick and confidential!",
+    "translation": "Dễ dàng, nhanh chóng và bảo mật!"
   },
   "components.Home.carousel.messages.6": {
-    "translation": "Hãy tính San Jose!",
-    "english": "Be counted San Jose!"
+    "english": "Be counted San Jose!",
+    "translation": "Hãy tính San Jose!"
   },
   "components.Home.carsouelItem.title": {
-    "translation": "Tổng điều tra dân số Hoa Kỳ năm 2020",
-    "english": "The United States 2020 Census"
+    "english": "The United States 2020 Census",
+    "translation": "Tổng điều tra dân số Hoa Kỳ năm 2020"
   },
   "component.SampleCensus.sectionHeaders.howToAnswer": {
-    "translation": "Làm thế nào để trả lời câu hỏi này",
-    "english": "How to answer this question"
+    "english": "How to answer this question",
+    "translation": "Làm thế nào để trả lời câu hỏi này"
   },
   "component.SampleCensus.sectionHeaders.howInfoIsUsed": {
-    "translation": "Thông tin này được sử dụng như thế nào",
-    "english": "How is this info used"
+    "english": "How is this info used",
+    "translation": "Thông tin này được sử dụng như thế nào"
   },
   "component.SampleCensus.sectionHeaders.whyAnswer": {
-    "translation": "Tại sao trả lời câu hỏi này",
-    "english": "Why answer this question"
+    "english": "Why answer this question",
+    "translation": "Tại sao trả lời câu hỏi này"
   },
   "components.SampleCensus.title": {
     "english": "Preview each question on the survey",
@@ -172,300 +172,300 @@
     "translation": "Tìm hiểu xem bạn nên trả lời, cách trả lời và cách sử dụng thông tin của bạn."
   },
   "components.Home.factoids.qr-code.faqLink": {
-    "translation": "XEM TẤT CẢ Câu hỏi thường gặp",
-    "english": "VIEW ALL FAQs"
+    "english": "VIEW ALL FAQs",
+    "translation": "XEM TẤT CẢ Câu hỏi thường gặp"
   },
   "components.Home.factoids.3.surveyLink": {
-    "translation": "XEM MẪU MẪU",
-    "english": "VIEW SAMPLE SURVEY"
+    "english": "VIEW SAMPLE SURVEY",
+    "translation": "XEM MẪU MẪU"
   },
   "components.FAQ.entries.howCanIComplete.question": {
-    "translation": "Làm thế nào tôi có thể hoàn thành điều tra dân số?",
-    "english": "How can I complete the census?"
+    "english": "How do I get Counted!",
+    "translation": "Làm thế nào tôi có thể hoàn thành điều tra dân số?"
   },
   "components.FAQ.entries.howCanIComplete.answer": {
-    "translation": "Có ba cách bạn có thể điền vào khảo sát Điều tra dân số: trực tuyến, qua điện thoại hoặc qua thư. Các hộ gia đình có thể trả lời các câu hỏi trên internet hoặc qua điện thoại bằng tiếng Anh và 12 ngôn ngữ không phải tiếng Anh.",
-    "english": "There are three ways you can fill out the Census survey: online, by telephone, or via mail. Households can answer the questions on the internet or by phone in English and 12 Non-English languages."
+    "english": " - You complete the census questionnaire NOW.  [click here] \n - You can return the census form mailed to your home. \n - You can complete the census by phone with a census worker who speaks your language:\n\n**LANGUAGE LINES and TOLL-FREE NUMBERS**\n - English: 844-330-2020\n - Spanish: 844-468-2020\n - Chinese (Mandarin): 844-391-2020\n - Chinese (Cantonese): 844-398-2020\n - Vietnamese: 844-461-2020\n - Korean: 844-392-2020\n - Russian: 844-417-2020\n - Arabic: 844-416-2020\n - Tagalog: 844-478-2020\n - Polish: 844-479-2020\n - French: 844-494-2020\n - Haitian Creole: 844-477-2020\n - Portuguese: 844-474-2020\n - Japanese: 844-460-2020\n - English (Puerto Rico residents): 844-418-2020\n - Spanish (Puerto Rico residents): 844-426-2020\n - Telephone Display Device (TDD): 844-467-2020",
+    "translation": "Có ba cách bạn có thể điền vào khảo sát Điều tra dân số: trực tuyến, qua điện thoại hoặc qua thư. Các hộ gia đình có thể trả lời các câu hỏi trên internet hoặc qua điện thoại bằng tiếng Anh và 12 ngôn ngữ không phải tiếng Anh."
   },
   "components.FAQ.entries.otherLanguages.question": {
-    "translation": "Tôi không nói tiếng Anh. Khảo sát điều tra dân số sẽ có sẵn trong các ngôn ngữ khác?",
-    "english": "I don’t speak English. Will the Census survey be available in other languages?"
+    "english": "I don’t speak English. Will the Census survey be available in other languages?",
+    "translation": "Tôi không nói tiếng Anh. Khảo sát điều tra dân số sẽ có sẵn trong các ngôn ngữ khác?"
   },
   "components.FAQ.entries.otherLanguages.answer": {
-    "translation": "Đúng. Khảo sát trực tuyến có sẵn bằng tiếng Anh và 12 ngôn ngữ khác (Tây Ban Nha, Trung Quốc, Việt Nam, Hàn Quốc, Nga, Ả Rập, Tagalog, Ba Lan, Pháp, Haiti Creole, Bồ Đào Nha, Nhật Bản); hỗ trợ qua điện thoại cũng sẽ có sẵn bằng các ngôn ngữ này bằng cách gọi (####). Khảo sát giấy có sẵn bằng tiếng Anh và tiếng Tây Ban Nha. Hướng dẫn ngôn ngữ in và video sẽ có sẵn bằng 59 ngôn ngữ không phải tiếng Anh, bao gồm Ngôn ngữ ký hiệu của Mỹ, Chữ nổi và chữ in lớn.",
-    "english": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese); phone assistance will also be available in these languages by calling (####). The paper survey is available in English and Spanish. Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print."
+    "english": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese)  Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print. \n\nContact the U.S. Census Bureau at (855) 562-2020.",
+    "translation": "Đúng. Khảo sát trực tuyến có sẵn bằng tiếng Anh và 12 ngôn ngữ khác (Tây Ban Nha, Trung Quốc, Việt Nam, Hàn Quốc, Nga, Ả Rập, Tagalog, Ba Lan, Pháp, Haiti Creole, Bồ Đào Nha, Nhật Bản); hỗ trợ qua điện thoại cũng sẽ có sẵn bằng các ngôn ngữ này bằng cách gọi (####). Khảo sát giấy có sẵn bằng tiếng Anh và tiếng Tây Ban Nha. Hướng dẫn ngôn ngữ in và video sẽ có sẵn bằng 59 ngôn ngữ không phải tiếng Anh, bao gồm Ngôn ngữ ký hiệu của Mỹ, Chữ nổi và chữ in lớn."
   },
   "components.FAQ.entries.howToAvoidScams.question": {
-    "translation": "Làm thế nào tôi có thể tránh lừa đảo trực tuyến?",
-    "english": "How can I avoid scams online?"
+    "english": "How can I avoid scams or report suspected fraud?",
+    "translation": "Làm thế nào tôi có thể tránh lừa đảo trực tuyến?"
   },
   "components.FAQ.entries.howToAvoidScams.answer": {
-    "translation": "Lừa đảo là hành vi phạm tội cố gắng lấy thông tin của bạn bằng cách giả vờ là một thực thể mà bạn tin tưởng. Các email lừa đảo thường hướng bạn đến một trang web trông giống thật nhưng là giả mạo và có thể bị nhiễm phần mềm độc hại.\n\nĐể giúp bảo vệ bạn khỏi lừa đảo và các trò gian lận khác, vui lòng nhớ rằng Cục điều tra dân số Hoa Kỳ sẽ không bao giờ yêu cầu:\n\n- Số an sinh xã hội của bạn.\n- Số tài khoản ngân hàng hoặc số thẻ tín dụng của bạn.\n- Tiền hoặc quyên góp.\n\nNgoài ra, Cục điều tra dân số sẽ không liên lạc với bạn thay mặt cho một đảng chính trị.",
-    "english": "Phishing is the criminal act of trying to get your information by pretending to be an entity that you trust. Phishing emails often direct you to a website that looks real but is fake—and that may be infected with malware.\n\nTo help protect yourself from phishing and other scams, please remember that the U.S. Census Bureau will never ask for:\n\n- Your Social Security number.\n- Your bank account or credit card numbers.\n- Money or donations.\n\nIn addition, the Census Bureau will not contact you on behalf of a political party."
+    "english": "- Census workers will **NEVER** ask for your Social Security Number, bank account or credit card number! \n- Census workers will **NEVER** ask you for money or a donation or contact you on behalf of a political party.\n \nIf you are in doubt about a visitor or suspect fraud, call the U.S. Census Bureau at (855) 562-2020.",
+    "translation": "Lừa đảo là hành vi phạm tội cố gắng lấy thông tin của bạn bằng cách giả vờ là một thực thể mà bạn tin tưởng. Các email lừa đảo thường hướng bạn đến một trang web trông giống thật nhưng là giả mạo và có thể bị nhiễm phần mềm độc hại.\n\nĐể giúp bảo vệ bạn khỏi lừa đảo và các trò gian lận khác, vui lòng nhớ rằng Cục điều tra dân số Hoa Kỳ sẽ không bao giờ yêu cầu:\n\n- Số an sinh xã hội của bạn.\n- Số tài khoản ngân hàng hoặc số thẻ tín dụng của bạn.\n- Tiền hoặc quyên góp.\n\nNgoài ra, Cục điều tra dân số sẽ không liên lạc với bạn thay mặt cho một đảng chính trị."
   },
   "components.FAQ.entries.homeless.question": {
-    "translation": "Điều tra dân số sẽ tính cư dân vô gia cư như thế nào?",
-    "english": "How will the Census count homeless residents?"
+    "english": "I am living in a non-traditional home or don’t have an address, do I count?",
+    "translation": "Điều tra dân số sẽ tính cư dân vô gia cư như thế nào?"
   },
   "components.FAQ.entries.homeless.answer": {
-    "translation": "Vào cuối tháng 3 năm 2020, Cục điều tra dân số sẽ tiến hành liệt kê dựa trên dịch vụ (SBE). Trong thời gian này, nhân viên điều tra dân số sẽ đếm những người không có nhà ở thông thường hoặc người vô gia cư ở những nơi họ nhận dịch vụ (ví dụ: nhà chờ, bếp nấu súp, địa điểm xe thức ăn di động được lên lịch thường xuyên, v.v.) hoặc tại các địa điểm ngoài trời được xác định trước nơi mọi người ở được biết là ngủ - chẳng hạn như đóng gói, dưới cầu, hoặc trong bãi đậu xe",
-    "english": "In late March 2020, the Census Bureau will conduct Service-Based Enumeration (SBE). During this time, Census workers will count people without conventional housing or people experiencing homelessness at places where they receive services (e.g., shelters, soup kitchens, regularly scheduled mobile food van locations, etc.) or at pre-identified outdoor locations where people are known to sleep — such as encampments, under bridges, or in parking lots"
+    "english": "Yes, you do!  If you or your family is living in a non-traditional home or do not have a usual residence (including if you are experiencing homelessness), you should still answer the census survey. \n\nIf you take it online, choose the option for “did not receive a 12-digit code” and follow the prompts. Or, you can call and complete the census by phone. See \"How do I get Counted!\" below.",
+    "translation": "Vào cuối tháng 3 năm 2020, Cục điều tra dân số sẽ tiến hành liệt kê dựa trên dịch vụ (SBE). Trong thời gian này, nhân viên điều tra dân số sẽ đếm những người không có nhà ở thông thường hoặc người vô gia cư ở những nơi họ nhận dịch vụ (ví dụ: nhà chờ, bếp nấu súp, địa điểm xe thức ăn di động được lên lịch thường xuyên, v.v.) hoặc tại các địa điểm ngoài trời được xác định trước nơi mọi người ở được biết là ngủ - chẳng hạn như đóng gói, dưới cầu, hoặc trong bãi đậu xe"
   },
   "email.messages.confirmation.greeting": {
-    "translation": "Xin chào tên}",
-    "english": "Hi {name}"
+    "english": "Hi {name}",
+    "translation": "Xin chào tên}"
   },
   "email.messages.confirmation.thankYou": {
-    "translation": "Cảm ơn bạn đã quan tâm đến nỗ lực Điều tra dân số năm 2020 tại San Jose.",
-    "english": "Thank you for your interest in the 2020 Census effort in San Jose."
+    "english": "Thank you for your interest in the 2020 Census effort in San Jose.",
+    "translation": "Cảm ơn bạn đã quan tâm đến nỗ lực Điều tra dân số năm 2020 tại San Jose."
   },
   "email.messages.confirmation.usersMessageIntro": {
-    "translation": "Tin nhắn sau đây được bạn gửi đến Văn phòng điều tra dân số thành phố San Jose:",
-    "english": "The following message was sent by you to the City of San Jose Census Office:"
+    "english": "The following message was sent by you to the City of San Jose Census Office:",
+    "translation": "Tin nhắn sau đây được bạn gửi đến Văn phòng điều tra dân số thành phố San Jose:"
   },
   "email.messages.confirmation.interestsHeader": {
-    "translation": "Tôi có hứng thú với:",
-    "english": "I have an interest in:"
+    "english": "I have an interest in:",
+    "translation": "Tôi có hứng thú với:"
   },
   "email.messages.confirmation.commentsHeader": {
-    "translation": "Ý kiến khác:",
-    "english": "Additional comments:"
+    "english": "Additional comments:",
+    "translation": "Ý kiến khác:"
   },
   "email.messages.confirmation.conclusion": {
-    "translation": "Cảm ơn bạn một lần nữa vì sự quan tâm của bạn. Ai đó sẽ trả lời bạn trong vòng hai ngày làm việc.",
-    "english": "Thank you again for your interest. Someone will respond back to you within two business days."
+    "english": "Thank you again for your interest. Someone will respond back to you within two business days.",
+    "translation": "Cảm ơn bạn một lần nữa vì sự quan tâm của bạn. Ai đó sẽ trả lời bạn trong vòng hai ngày làm việc."
   },
   "email.messages.confirmation.signature": {
-    "translation": "Văn phòng điều tra dân số thành phố San Jose 2020",
-    "english": "City of San Jose 2020 Census Office"
+    "english": "City of San Jose 2020 Census Office",
+    "translation": "Văn phòng điều tra dân số thành phố San Jose 2020"
   },
   "mail.messages.confirmation.subject": {
-    "translation": "Cảm ơn bạn đã liên hệ với Cục điều tra dân số San Jose",
-    "english": "Thank you for contacting the San Jose Census Department"
+    "english": "Thank you for contacting the San Jose Census Department",
+    "translation": "Cảm ơn bạn đã liên hệ với Cục điều tra dân số San Jose"
   },
   "components.FAQ.entries.whyHaveCensus.question": {
-    "translation": "Tại sao chúng ta có một cuộc điều tra dân số?",
-    "english": "Why do we have a census?"
+    "english": "Why do we have a census?",
+    "translation": "Tại sao chúng ta có một cuộc điều tra dân số?"
   },
   "components.FAQ.entries.whyHaveCensus.answer": {
-    "translation": "Dữ liệu được thu thập từ Tổng điều tra được sử dụng để đảm bảo mọi người đều được đại diện như nhau trong hệ thống chính trị của chúng tôi và các nguồn lực của chính phủ được phân bổ công bằng. Dữ liệu điều tra dân số xác định có bao nhiêu ghế quốc hội mà một bang nhận được; bao nhiêu tài trợ liên bang sẽ được phân bổ cho cộng đồng địa phương cho các dịch vụ công cộng và nhu cầu cơ sở hạ tầng; và cung cấp một bức tranh về nhân khẩu học thay đổi của đất nước.",
-    "english": "The data collected from the Census is used to make sure everyone is equally represented in our political system and that government resources are allocated fairly. The Census data determines how many congressional seats a state receives; how much federal funding will be allocated to local communities for public services and infrastructure needs; and provides a picture of the changing demographics of the country."
+    "english": "The U.S. Constitution requires the counting of everyone living in the United States every ten years. The census process empowers the people of America by ensuring equal representation for all.\n\nMake sure your voice is heard by counting everyone in your household!",
+    "translation": "Dữ liệu được thu thập từ Tổng điều tra được sử dụng để đảm bảo mọi người đều được đại diện như nhau trong hệ thống chính trị của chúng tôi và các nguồn lực của chính phủ được phân bổ công bằng. Dữ liệu điều tra dân số xác định có bao nhiêu ghế quốc hội mà một bang nhận được; bao nhiêu tài trợ liên bang sẽ được phân bổ cho cộng đồng địa phương cho các dịch vụ công cộng và nhu cầu cơ sở hạ tầng; và cung cấp một bức tranh về nhân khẩu học thay đổi của đất nước."
   },
   "components.FAQ.entries.whoGetsCounted.question": {
-    "translation": "Ai được tính?",
-    "english": "Who gets counted?"
+    "english": "Who gets counted?",
+    "translation": "Ai được tính?"
   },
   "components.FAQ.entries.whoGetsCounted.answer": {
-    "translation": "Mọi người sống ở Hoa Kỳ phải được tính. Hãy chắc chắn rằng bạn bao gồm tất cả mọi người sống và ngủ trong nhà của bạn trong cuộc khảo sát điều tra dân số của bạn - bất kể tuổi tác, giới tính, mối quan hệ với bạn, hoặc tình trạng công dân / nhập cư.",
-    "english": "Everyone living in the United States must be counted. Make sure you include everyone living and sleeping in your home on your census survey — regardless of age, gender, relationship to you, or citizenship/immigration status."
+    "english": "Everyone living in the United States must be counted. Make sure you include everyone living and sleeping in your home on your census survey — regardless of age, gender, relationship to you, or citizenship/immigration status.",
+    "translation": "Mọi người sống ở Hoa Kỳ phải được tính. Hãy chắc chắn rằng bạn bao gồm tất cả mọi người sống và ngủ trong nhà của bạn trong cuộc khảo sát điều tra dân số của bạn - bất kể tuổi tác, giới tính, mối quan hệ với bạn, hoặc tình trạng công dân / nhập cư."
   },
   "components.FAQ.entries.whatTypesOfQuestions.question": {
-    "translation": "Những loại câu hỏi nào trong Tổng điều tra dân số năm 2020?",
-    "english": "What types of questions are on the 2020 Census?"
+    "english": "What information is the Census Bureau collecting?",
+    "translation": "Những loại câu hỏi nào trong Tổng điều tra dân số năm 2020?"
   },
   "components.FAQ.entries.whatTypesOfQuestions.answer": {
-    "translation": "Khảo sát điều tra dân số sẽ hỏi thông tin cơ bản về từng hộ gia đình, chẳng hạn như tổng số người sống tại địa chỉ của bạn, quyền sở hữu nhà (sở hữu hoặc thuê), số điện thoại của bạn và tên, giới tính, chủng tộc / dân tộc của mỗi cá nhân sống hoặc ở với bạn. Thông tin này sẽ không được chia sẻ với Thành phố hoặc bất kỳ cơ quan địa phương, tiểu bang hoặc liên bang nào khác. Để biết thêm thông tin về những gì bạn sẽ được hỏi trên Điều tra dân số, hãy truy cập URL bên dưới.\n            \n{liên kết}",
-    "english": "The Census survey will ask basic information about each household, such as the total number of people living at your address, homeownership (own or rent), your phone number, and the names, gender, race/ethnicity of each individual living or staying with you. This information will not be shared with the City or any other local, state or federal agency. For more information on what you will be asked on the Census go to the URL below.\n            \n{link}"
+    "english": "You can see all the questions here [Sample Survey](/samplecensus).\nYou will be asked to give basic information about each individual living or staying with you. The questions on Informational Census Questionnaire include:\n-   The total number of people living at your address\n-   If you own or rent your home\n-   Each person’s name, gender, and race/ethnicity\n\nNO QUESTIONS ABOUT CITIZENSHIP OR IMMIGRATION STATUS ARE INCLUDED IN THE CENSUS",
+    "translation": "Khảo sát điều tra dân số sẽ hỏi thông tin cơ bản về từng hộ gia đình, chẳng hạn như tổng số người sống tại địa chỉ của bạn, quyền sở hữu nhà (sở hữu hoặc thuê), số điện thoại của bạn và tên, giới tính, chủng tộc / dân tộc của mỗi cá nhân sống hoặc ở với bạn. Thông tin này sẽ không được chia sẻ với Thành phố hoặc bất kỳ cơ quan địa phương, tiểu bang hoặc liên bang nào khác. Để biết thêm thông tin về những gì bạn sẽ được hỏi trên Điều tra dân số, hãy truy cập URL bên dưới.\n            \n{liên kết}"
   },
   "components.FAQ.entries.whoCountsAsHousehold.question": {
-    "translation": "Ai được coi là \"hộ gia đình?\"",
-    "english": "Who counts as a \"household?\""
+    "english": "Who counts as a “household?”",
+    "translation": "Ai được coi là \"hộ gia đình?\""
   },
   "components.FAQ.entries.whoCountsAsHousehold.answer": {
-    "translation": "Một hộ gia đình bao gồm tất cả những người chiếm một đơn vị nhà ở, cả các thành viên gia đình có liên quan và tất cả những người không liên quan, nếu có, chẳng hạn như người thuê nhà, con nuôi, phường hoặc nhân viên chia sẻ nhà ở. Để biết thêm thông tin về người sẽ tính vào biểu mẫu Điều tra dân số của bạn, hãy truy cập URL bên dưới.\n          \n{liên kết}",
-    "english": "A household consists of all the people who occupy a housing unit, both related family members and all the unrelated people, if any, such as lodgers, foster children, wards, or employees who share the housing. For more information on who to count on your Census form go to the URL below.\n          \n{link}"
+    "english": "A household consists of **all** the people - *both related family members and any unrelated people* - who live and sleep in the same “home”. Don’t forget to include renters (including students), foster children, wards, or employees.",
+    "translation": "Một hộ gia đình bao gồm tất cả những người chiếm một đơn vị nhà ở, cả các thành viên gia đình có liên quan và tất cả những người không liên quan, nếu có, chẳng hạn như người thuê nhà, con nuôi, phường hoặc nhân viên chia sẻ nhà ở. Để biết thêm thông tin về người sẽ tính vào biểu mẫu Điều tra dân số của bạn, hãy truy cập URL bên dưới.\n          \n{liên kết}"
   },
   "components.FAQ.entries.lostCensusId.question": {
-    "translation": "Tôi không có hoặc mất ID điều tra dân số. Tôi vẫn có thể hoàn thành điều tra dân số chứ?",
-    "english": "I don’t have or lost my census ID. Can I still complete the census?"
+    "english": "I don’t have or lost my 12-digit code census. Can I still complete the census?",
+    "translation": "Tôi không có hoặc mất ID điều tra dân số. Tôi vẫn có thể hoàn thành điều tra dân số chứ?"
   },
   "components.FAQ.entries.lostCensusId.answer": {
-    "translation": "Đúng. Nếu bạn không nhận được mã ID điều tra dân số hoặc đặt sai mã, bạn vẫn có thể hoàn thành khảo sát điều tra dân số trực tuyến bằng cách sử dụng địa chỉ gửi thư của mình. Nếu bạn không muốn trả lời trực tuyến, bạn có thể gọi Hỗ trợ Câu hỏi điều tra dân số theo số (###) để hoàn thành khảo sát qua điện thoại.",
-    "english": "Yes. If you did not receive a census ID code or misplaced it, you can still complete the online census survey by using your mailing address. If you don’t want to respond online, you can call Census Questionnaire Assistance at (###) to complete the survey over the phone."
+    "english": "Yes. If you did not receive a 12-digit code census code or misplaced it, you can still complete the online census survey by using your mailing address. If you do not have a residential address, you can still complete the census online **or** call and complete the census by phone.  See \"How do I get Counted!\" below.",
+    "translation": "Đúng. Nếu bạn không nhận được mã ID điều tra dân số hoặc đặt sai mã, bạn vẫn có thể hoàn thành khảo sát điều tra dân số trực tuyến bằng cách sử dụng địa chỉ gửi thư của mình. Nếu bạn không muốn trả lời trực tuyến, bạn có thể gọi Hỗ trợ Câu hỏi điều tra dân số theo số (###) để hoàn thành khảo sát qua điện thoại."
   },
   "components.FAQ.entries.whatHappensIfNoResponse.question": {
-    "translation": "Điều gì xảy ra nếu tôi không phản ứng với Tổng điều tra?",
-    "english": "What happens if I don’t respond to the Census?"
+    "english": "Why should I respond?",
+    "translation": "Điều gì xảy ra nếu tôi không phản ứng với Tổng điều tra?"
   },
   "components.FAQ.entries.whatHappensIfNoResponse.answer": {
-    "translation": "Nếu hộ gia đình của bạn không trả lời trực tuyến hoặc qua điện thoại, Cục điều tra dân số Hoa Kỳ sẽ gửi một số lời nhắc đến hộ gia đình của bạn và cuối cùng sẽ gửi cho bạn một bản câu hỏi in bằng tiếng Anh và tiếng Tây Ban Nha để bạn gửi lại qua thư.",
-    "english": "If your household fails to respond online or by telephone, the U.S. Census Bureau will mail several reminders to your household and will ultimately mail you a printed questionnaire—in English and Spanish—for you to return by mail."
+    "english": "Completing the census questionnaire makes a difference for the next ten years! \n\nYour participation ensures:\n- That our community will have access to housing, healthcare, schools, and community programs.\n- That our community is represented fully at all levels of governments.\n- That our community receives our fair share of census-guided funding for programs such as Medi-Cal, SNAP and other nutrition programs, housing assistance, highway improvements, education programs, and emergency preparedness and public safety services.",
+    "translation": "Nếu hộ gia đình của bạn không trả lời trực tuyến hoặc qua điện thoại, Cục điều tra dân số Hoa Kỳ sẽ gửi một số lời nhắc đến hộ gia đình của bạn và cuối cùng sẽ gửi cho bạn một bản câu hỏi in bằng tiếng Anh và tiếng Tây Ban Nha để bạn gửi lại qua thư."
   },
   "components.FAQ.entries.whatHappensIfNoResponseAtAll.question": {
-    "translation": "Điều gì xảy ra nếu tôi không phản ứng với điều tra dân số?",
-    "english": "What happens if I don’t respond to the census at all?"
+    "english": "What happens if I don’t respond?",
+    "translation": "Điều gì xảy ra nếu tôi không phản ứng với điều tra dân số?"
   },
   "components.FAQ.entries.whatHappensIfNoResponseAtAll.answer": {
-    "translation": "Nếu hộ gia đình của bạn không trả lời Điều tra dân số trực tuyến, qua điện thoại hoặc qua thư vào cuối tháng 4 năm 2020, Cục điều tra dân số Hoa Kỳ sẽ gửi một nhân viên điều tra dân số, được gọi là điều tra viên, đến địa chỉ của bạn để giúp bạn hoàn thành khảo sát. Để tránh chuyến thăm của nhân viên điều tra dân số, hãy tự mình hoàn thành khảo sát điều tra dân số.",
-    "english": "If your household does not respond to the Census online, by phone, or via mail by late April 2020, the U.S. Census Bureau will send a Census worker, known as an enumerator, to your address to help you complete the survey. To avoid a visit from a census worker, complete the census survey on your own."
+    "english": "Ultimately, fewer dollars will be allocated to programs that you or your family might rely on, such as student loans, SNAP, Medi-Cal, WIC, housing vouchers, school breakfast and lunch programs, special education, career services and training, senior nutrition, and a number of community and transportation development programs.\n\nMore immediately, if your household fails to respond online or by telephone, the U.S. Census Bureau will mail you a printed questionnaire, in English and Spanish, for you to return by mail. \n\nIf you don’t respond to the census by the end of April, a census worker will visit your home to ask you all the same survey questions that will appear in the online version of the Census. \n\nDo your part to make sure everyone is counted in your household!",
+    "translation": "Nếu hộ gia đình của bạn không trả lời Điều tra dân số trực tuyến, qua điện thoại hoặc qua thư vào cuối tháng 4 năm 2020, Cục điều tra dân số Hoa Kỳ sẽ gửi một nhân viên điều tra dân số, được gọi là điều tra viên, đến địa chỉ của bạn để giúp bạn hoàn thành khảo sát. Để tránh chuyến thăm của nhân viên điều tra dân số, hãy tự mình hoàn thành khảo sát điều tra dân số."
   },
   "components.FAQ.entries.isCensusSafe.question": {
-    "translation": "Điều tra dân số có an toàn không?",
-    "english": "Is the Census safe?"
+    "english": "Is the Census safe?",
+    "translation": "Điều tra dân số có an toàn không?"
   },
   "components.FAQ.entries.isCensusSafe.answer": {
-    "translation": "Theo luật điều tra dân số liên bang, các câu trả lời của bạn được giữ bí mật và chỉ có thể được Cục điều tra dân số Hoa Kỳ sử dụng để đưa ra số liệu thống kê.",
-    "english": "Under federal census law, your responses are kept confidential and can only be used by the U.S. Census Bureau to produce statistics."
+    "english": "The Census Bureau is required by law to protect and keep your information confidential. Your responses can **only** be used by the U.S. Census Bureau to produce statistics. \n\nLearn more about your protection under Title 13 of the U.S. Code to keep your information confidential.",
+    "translation": "Theo luật điều tra dân số liên bang, các câu trả lời của bạn được giữ bí mật và chỉ có thể được Cục điều tra dân số Hoa Kỳ sử dụng để đưa ra số liệu thống kê."
   },
   "components.FAQ.entries.canOtherAgenciesAccess.question": {
-    "translation": "Một cơ quan chính phủ khác có thể truy cập thông tin điều tra dân số của tôi?",
-    "english": "Can another government agency access my census information?"
+    "english": "Can another government agency access my census information?",
+    "translation": "Một cơ quan chính phủ khác có thể truy cập thông tin điều tra dân số của tôi?"
   },
   "components.FAQ.entries.canOtherAgenciesAccess.answer": {
-    "translation": "Tiêu đề số 13 của Bộ luật Hoa Kỳ yêu cầu giữ bí mật thông tin của bạn và ngăn chặn các phản hồi của bạn được sử dụng chống lại bạn bởi bất kỳ cơ quan chính phủ nào - bao gồm cơ quan thực thi pháp luật, Bộ An ninh Nội địa, hoặc Cơ quan Thực thi Di trú và Hải quan Hoa Kỳ. Tất cả nhân viên của Cục điều tra dân số đều tuyên thệ về quyền riêng tư và tuyên thệ trọn đời để bảo vệ tính bảo mật của dữ liệu. Hình phạt cho hành vi tiết lộ bất hợp pháp là phạt tiền lên tới 250.000 đô la, phạt tù tới 5 năm hoặc cả hai.",
-    "english": "No. Title 13 of the U.S. Code requires your information to be kept confidential and prevents your responses from being used against you by any government agency--including law enforcement, the Department of Homeland Security, or US Immigration and Customs Enforcement. All Census Bureau employees take an oath of privacy and are sworn for life to protect the confidentiality of the data. The penalty for unlawful disclosure is a fine of up to $250,000, imprisonment of up to 5 years, or both."
+    "english": "All identifiable information about you, your home, and the people in your household will not be released to  **anyone**; including your landlord, the City of San José, the Internal Revenue Service (IRS), Immigration and Customs Enforcement (ICE), or law enforcement. The Census Bureau is required by law to protect and keep your information confidential",
+    "translation": "Tiêu đề số 13 của Bộ luật Hoa Kỳ yêu cầu giữ bí mật thông tin của bạn và ngăn chặn các phản hồi của bạn được sử dụng chống lại bạn bởi bất kỳ cơ quan chính phủ nào - bao gồm cơ quan thực thi pháp luật, Bộ An ninh Nội địa, hoặc Cơ quan Thực thi Di trú và Hải quan Hoa Kỳ. Tất cả nhân viên của Cục điều tra dân số đều tuyên thệ về quyền riêng tư và tuyên thệ trọn đời để bảo vệ tính bảo mật của dữ liệu. Hình phạt cho hành vi tiết lộ bất hợp pháp là phạt tiền lên tới 250.000 đô la, phạt tù tới 5 năm hoặc cả hai."
   },
   "components.FAQ.entries.howToIdentifyCensusWorker.question": {
-    "translation": "Làm thế nào để tôi xác định một nhân viên điều tra dân số chính thức trong người?",
-    "english": "How do I identify an official census worker in person?"
+    "english": "How do I identify an official census worker in person?",
+    "translation": "Làm thế nào để tôi xác định một nhân viên điều tra dân số chính thức trong người?"
   },
   "components.FAQ.entries.howToIdentifyCensusWorker.answer": {
-    "translation": "Nếu ai đó đến thăm nhà bạn để thu thập phản hồi cho Tổng điều tra dân số năm 2020, có những bước bạn có thể thực hiện để xác minh danh tính của họ:\n              \n  Trước tiên, hãy kiểm tra để đảm bảo rằng họ có huy hiệu ID hợp lệ, với ảnh của họ, hình mờ của Bộ Thương mại và ngày hết hạn.\n  Lưu ý rằng họ có thể mang theo điện thoại của Cục điều tra dân số hoặc máy tính xách tay, cộng với một chiếc túi có logo Cục điều tra dân số.\n  Nếu bạn vẫn còn thắc mắc, hãy gọi 855-562-2020 và nhấn tùy chọn 3 để nói chuyện với đại diện Cục điều tra dân số địa phương.\n  \n  Hãy nhớ rằng Cục điều tra dân số Hoa Kỳ sẽ không bao giờ yêu cầu:\n  \n  - Số an sinh xã hội của bạn.\n  - Số tài khoản ngân hàng hoặc số thẻ tín dụng của bạn.\n  - Tiền hoặc quyên góp.\n  \n  Ngoài ra, Cục điều tra dân số sẽ không liên lạc với bạn thay mặt cho một đảng chính trị.",
-    "english": "If someone visits your home to collect a response for the 2020 Census, there are steps you can take to verify their identity:\n              \n  First, check to make sure that they have a valid ID badge, with their photograph, a Department of Commerce watermark, and an expiration date.\n  Note that they may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo.\n  If you still have questions, call 855-562-2020 and press option 3 to speak with a local Census Bureau representative.\n  \n  Remember that the U.S. Census Bureau will never ask for:\n  \n  - Your Social Security number.\n  - Your bank account or credit card numbers.\n  - Money or donations.\n  \n  In addition, the Census Bureau will not contact you on behalf of a political party."
+    "english": "Every census worker will have an ID badge, with their photograph, a Department of Commerce watermark, and an expiration date. They may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo. \n\nCensus workers will **NEVER** ask for your Social Security Number, bank account, or credit card number. Census workers will not ask you for money or a donation or contact you on behalf of a political party. \n\nIf you are in doubt about a visitor or suspect fraud, call the U.S. Census Bureau at (855) 562-2020.\n",
+    "translation": "Nếu ai đó đến thăm nhà bạn để thu thập phản hồi cho Tổng điều tra dân số năm 2020, có những bước bạn có thể thực hiện để xác minh danh tính của họ:\n              \n  Trước tiên, hãy kiểm tra để đảm bảo rằng họ có huy hiệu ID hợp lệ, với ảnh của họ, hình mờ của Bộ Thương mại và ngày hết hạn.\n  Lưu ý rằng họ có thể mang theo điện thoại của Cục điều tra dân số hoặc máy tính xách tay, cộng với một chiếc túi có logo Cục điều tra dân số.\n  Nếu bạn vẫn còn thắc mắc, hãy gọi 855-562-2020 và nhấn tùy chọn 3 để nói chuyện với đại diện Cục điều tra dân số địa phương.\n  \n  Hãy nhớ rằng Cục điều tra dân số Hoa Kỳ sẽ không bao giờ yêu cầu:\n  \n  - Số an sinh xã hội của bạn.\n  - Số tài khoản ngân hàng hoặc số thẻ tín dụng của bạn.\n  - Tiền hoặc quyên góp.\n  \n  Ngoài ra, Cục điều tra dân số sẽ không liên lạc với bạn thay mặt cho một đảng chính trị."
   },
   "components.Contact.emailValidation": {
-    "translation": "Vui lòng nhập một địa chỉ email hợp lệ",
-    "english": "Please enter a valid email address"
+    "english": "Please enter a valid email address",
+    "translation": "Vui lòng nhập một địa chỉ email hợp lệ"
   },
   "components.Home.top_reasons.item.1": {
-    "translation": "Xác định số lượng ghế trong Hạ viện",
-    "english": "Determines the number of seats in the House of Representatives"
+    "english": "Determines the number of seats in the House of Representatives",
+    "translation": "Xác định số lượng ghế trong Hạ viện"
   },
   "components.Home.top_reasons.item.2": {
-    "translation": "Vẽ lại ranh giới huyện",
-    "english": "Redraw district boundaries"
+    "english": "Redraw district boundaries",
+    "translation": "Vẽ lại ranh giới huyện"
   },
   "components.Home.top_reasons.item.3": {
-    "translation": "Phân bổ vốn cho nhà nước và địa phương",
-    "english": "Allocates funds to the state and localities"
+    "english": "Allocates funds to the state and localities",
+    "translation": "Phân bổ vốn cho nhà nước và địa phương"
   },
   "components.Home.top_reasons.item.4": {
-    "translation": "Quy hoạch cơ sở hạ tầng",
-    "english": "Infrastructure planning"
+    "english": "Infrastructure planning",
+    "translation": "Quy hoạch cơ sở hạ tầng"
   },
   "Compnents.Home.top_reasons.item.5": {
-    "translation": "Lập kế hoạch ứng phó khẩn cấp",
-    "english": "Emergency response planning"
+    "english": "Emergency response planning",
+    "translation": "Lập kế hoạch ứng phó khẩn cấp"
   },
   "components.Home.top_reasons.title": {
-    "translation": "5 lý do hàng đầu để điều tra dân số",
-    "english": "Top 5 Reasons to take the census"
+    "english": "Top 5 Reasons to take the census",
+    "translation": "5 lý do hàng đầu để điều tra dân số"
   },
   "components.Home.factoids.qrCode.headerTitle": {
-    "translation": "Trong một vội vàng, mang nó đi!",
-    "english": "In a hurry, take it to go!"
+    "english": "In a hurry, take it to go!",
+    "translation": "Trong một vội vàng, mang nó đi!"
   },
   "components.Home.factoids.qrCode.headerMessage": {
-    "translation": "Chụp ảnh để tìm hiểu thêm",
-    "english": "Take a photo of the image to learn more"
+    "english": "Take a photo of the image to learn more",
+    "translation": "Chụp ảnh để tìm hiểu thêm"
   },
   "components.Home.factoids.safety.headerTitle.": {
-    "translation": "Nó có an toàn không?",
-    "english": "Is it safe?"
+    "english": "Is it safe?",
+    "translation": "Nó có an toàn không?"
   },
   "components.Home.factoids.safety.headerMessage": {
-    "translation": "Tại sao tôi nên được tính?",
-    "english": "Why should I be counted?"
+    "english": "Why should I be counted?",
+    "translation": "Tại sao tôi nên được tính?"
   },
   "components.Home.factoids.safety.message": {
-    "translation": "Nhận câu trả lời cho tất cả các câu hỏi của bạn về lý do tại sao phải điều tra dân số và làm thế nào thông tin sẽ được sử dụng.",
-    "english": "Get the answers to all your questions about why to take the census and how the information will be used."
+    "english": "Get the answers to all your questions about why to take the census and how the information will be used.",
+    "translation": "Nhận câu trả lời cho tất cả các câu hỏi của bạn về lý do tại sao phải điều tra dân số và làm thế nào thông tin sẽ được sử dụng."
   },
   "components.Home.factoids.shouldIComplete.headerTitle": {
-    "translation": "Tôi có điều tra dân số không?",
-    "english": "Do I take the census?"
+    "english": "Do I take the census?",
+    "translation": "Tôi có điều tra dân số không?"
   },
   "components.Home.factoids.shouldIComplete.headerMessage": {
-    "translation": "Tôi sẽ được hỏi gì?",
-    "english": "What will I be asked?"
+    "english": "What will I be asked?",
+    "translation": "Tôi sẽ được hỏi gì?"
   },
   "components.Home.factoids.shouldIComplete.message": {
-    "translation": "Tìm hiểu thêm về các câu hỏi điều tra dân số và ai sẽ trả lời bảng câu hỏi.",
-    "english": "Learn more about the census questions, and who should be answering the questionnaire."
+    "english": "Learn more about the census questions, and who should be answering the questionnaire.",
+    "translation": "Tìm hiểu thêm về các câu hỏi điều tra dân số và ai sẽ trả lời bảng câu hỏi."
   },
   "components.SampleCensus.primary_question.1": {
-    "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?",
-    "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?"
+    "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
+    "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.secondary_information.1": {
-    "translation": "Số người = [| Nhập số vào đây |]",
-    "english": "Number of people=[|Enter number here|]"
+    "english": "Number of people=[|Enter number here|]",
+    "translation": "Số người = [| Nhập số vào đây |]"
   },
   "components.SampleCensus.primary_question.2": {
-    "translation": "Có thêm người nào ở lại đây vào ngày 1 tháng 4 năm 2020 mà bạn không bao gồm trong Câu hỏi 1 không?",
-    "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?"
+    "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
+    "translation": "Có thêm người nào ở lại đây vào ngày 1 tháng 4 năm 2020 mà bạn không bao gồm trong Câu hỏi 1 không?"
   },
   "components.SampleCensus.hohh_button": {
-    "translation": "Tôi sẽ trả lời điều tra dân số",
-    "english": "I will answer the census"
+    "english": "I will answer the census",
+    "translation": "Tôi sẽ trả lời điều tra dân số"
   },
   "components.SampleCensus.not_hohh_button": {
-    "translation": "Một người khác sẽ trả lời điều tra dân số cho tôi",
-    "english": "Someone else will answer the census for me"
+    "english": "Someone else will answer the census for me",
+    "translation": "Một người khác sẽ trả lời điều tra dân số cho tôi"
   },
   "components.SampleCensus.secondary_information.2": {
-    "translation": "* Đánh dấu tất cả những gì áp dụng *\n\n- [ ] Trẻ em, có liên quan hoặc không liên quan, chẳng hạn như trẻ sơ sinh, cháu, hoặc con nuôi\n- [ ] Người thân, chẳng hạn như trẻ em trưởng thành, anh em họ hoặc ở rể\n- [ ] Không liên quan, chẳng hạn như bạn cùng phòng hoặc người giữ trẻ sống trong nhà\n- [ ] Người ở đây tạm thời\n- [ ] Không có thêm người",
-    "english": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people"
+    "english": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people",
+    "translation": "* Đánh dấu tất cả những gì áp dụng *\n\n- [ ] Trẻ em, có liên quan hoặc không liên quan, chẳng hạn như trẻ sơ sinh, cháu, hoặc con nuôi\n- [ ] Người thân, chẳng hạn như trẻ em trưởng thành, anh em họ hoặc ở rể\n- [ ] Không liên quan, chẳng hạn như bạn cùng phòng hoặc người giữ trẻ sống trong nhà\n- [ ] Người ở đây tạm thời\n- [ ] Không có thêm người"
   },
   "components.SampleCensus.primary_question.3": {
-    "translation": "Đây là ngôi nhà, căn hộ hay nhà di động:",
-    "english": "Is this house, apartment, or mobile home:"
+    "english": "Is this house, apartment, or mobile home:",
+    "translation": "Đây là ngôi nhà, căn hộ hay nhà di động:"
   },
   "components.SampleCensus.secondary_information.3": {
-    "translation": "* Đánh dấu MỘT ô *\n\n- [ ] Được sở hữu bởi bạn hoặc ai đó trong hộ gia đình này có thế chấp hoặc khoản vay? Bao gồm các khoản vay vốn chủ sở hữu nhà.\n- [ ] Được sở hữu bởi bạn hoặc ai đó trong hộ gia đình này miễn phí và rõ ràng (không thế chấp hoặc cho vay)?\n- [ ] Đã thuê?\n- [ ] Chiếm dụng mà không trả tiền thuê nhà?",
-    "english": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?"
+    "english": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?",
+    "translation": "* Đánh dấu MỘT ô *\n\n- [ ] Được sở hữu bởi bạn hoặc ai đó trong hộ gia đình này có thế chấp hoặc khoản vay? Bao gồm các khoản vay vốn chủ sở hữu nhà.\n- [ ] Được sở hữu bởi bạn hoặc ai đó trong hộ gia đình này miễn phí và rõ ràng (không thế chấp hoặc cho vay)?\n- [ ] Đã thuê?\n- [ ] Chiếm dụng mà không trả tiền thuê nhà?"
   },
   "components.SampleCensus.primary_question.4": {
-    "translation": "Số điện thoại của bạn là gì?",
-    "english": "What is your telephone number?"
+    "english": "What is your telephone number?",
+    "translation": "Số điện thoại của bạn là gì?"
   },
   "components.SampleCensus.secondary_information.4": {
-    "translation": "Số điện thoại = [| Nhập số điện thoại tại đây |]",
-    "english": "Telephone Number = [|Enter telephone number here|]"
+    "english": "Telephone Number = [|Enter telephone number here|]",
+    "translation": "Số điện thoại = [| Nhập số điện thoại tại đây |]"
   },
   "components.SampleCensus.primary_question.5": {
-    "translation": "Vui lòng cung cấp thông tin cho từng người sống ở đây. Nếu có ai đó sống ở đây trả tiền thuê nhà hoặc sở hữu nơi cư trú này, hãy bắt đầu bằng cách liệt kê người đó là Người 1. Nếu chủ sở hữu hoặc người trả tiền thuê nhà không sống ở đây, hãy bắt đầu bằng cách liệt kê bất kỳ người lớn nào sống ở đây là Người 1 Tên người 1 là gì?",
-    "english": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?"
+    "english": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?",
+    "translation": "Vui lòng cung cấp thông tin cho từng người sống ở đây. Nếu có ai đó sống ở đây trả tiền thuê nhà hoặc sở hữu nơi cư trú này, hãy bắt đầu bằng cách liệt kê người đó là Người 1. Nếu chủ sở hữu hoặc người trả tiền thuê nhà không sống ở đây, hãy bắt đầu bằng cách liệt kê bất kỳ người lớn nào sống ở đây là Người 1 Tên người 1 là gì?"
   },
   "components.SampleCensus.secondary_information.5": {
-    "translation": "Tên = [||] Họ (s) = [||]",
-    "english": "Firstname = [||] Last Name(s) = [||]"
+    "english": "Firstname = [||] Last Name(s) = [||]",
+    "translation": "Tên = [||] Họ (s) = [||]"
   },
   "components.SampleCensus.primary_question.6": {
-    "translation": "Người 1 sex là gì?",
-    "english": "What is Person 1’s sex?"
+    "english": "What is Person 1’s sex?",
+    "translation": "Người 1 sex là gì?"
   },
   "components.SampleCensus.primary_question.7": {
-    "translation": "Người 1 tuổi là gì và ngày sinh của Người 1 là gì?",
-    "english": "What is Person 1’s age and what is Person 1’s date of birth?"
+    "english": "What is Person 1’s age and what is Person 1’s date of birth?",
+    "translation": "Người 1 tuổi là gì và ngày sinh của Người 1 là gì?"
   },
   "components.SampleCensus.primary_question.8": {
-    "translation": "Là người 1 gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha?",
-    "english": "Is Person 1 of Hispanic, Latino, or Spanish origin?"
+    "english": "Is Person 1 of Hispanic, Latino, or Spanish origin?",
+    "translation": "Là người 1 gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha?"
   },
   "components.SampleCensus.primary_question.9": {
-    "translation": "Chủng tộc 1 người là gì?",
-    "english": "What is Person 1’s race?"
+    "english": "What is Person 1’s race?",
+    "translation": "Chủng tộc 1 người là gì?"
   },
   "components.SampleCensus.primary_question.10": {
-    "translation": "Đây là một câu hỏi ipsum",
-    "english": "This is an ipsum question"
+    "english": "This is an ipsum question",
+    "translation": "Đây là một câu hỏi ipsum"
   },
   "components.SampleCensus.secondary_information.6": {
-    "translation": "* Đánh dấu MỘT ô *\n\n- [ ] Nam giới\n- [ ] Giống cái",
-    "english": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female"
+    "english": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female",
+    "translation": "* Đánh dấu MỘT ô *\n\n- [ ] Nam giới\n- [ ] Giống cái"
   },
   "components.SampleCensus.secondary_information.7": {
-    "translation": "* Đối với trẻ sơ sinh dưới 1 tuổi, không viết tuổi theo tháng. Viết 0 khi bằng tuổi. *\n\nTuổi vào ngày 1 tháng 4 năm 2020 = [||] năm\nTháng = [||] Ngày = [||] Năm sinh = [||]",
-    "english": "*For babies less than 1 year olf, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]"
+    "english": "*For babies less than 1 year olf, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]",
+    "translation": "* Đối với trẻ sơ sinh dưới 1 tuổi, không viết tuổi theo tháng. Viết 0 khi bằng tuổi. *\n\nTuổi vào ngày 1 tháng 4 năm 2020 = [||] năm\nTháng = [||] Ngày = [||] Năm sinh = [||]"
   },
   "components.SampleCensus.secondary_information.8": {
-    "translation": "- [ ] Không, không phải gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha\n- [ ] Vâng, Mexico, Mexico Am., Chicano\n- [ ] Vâng, Puerto Rico\n- [ ] Vâng, Cuba\n- [ ] Có, một nguồn gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha khác - In, ví dụ: Salvadoran, Dominicican, Colombia, Guatemala, Spaniard, Ecuador, v.v.\n[||]",
-    "english": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]"
+    "english": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]",
+    "translation": "- [ ] Không, không phải gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha\n- [ ] Vâng, Mexico, Mexico Am., Chicano\n- [ ] Vâng, Puerto Rico\n- [ ] Vâng, Cuba\n- [ ] Có, một nguồn gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha khác - In, ví dụ: Salvadoran, Dominicican, Colombia, Guatemala, Spaniard, Ecuador, v.v.\n[||]"
   },
   "components.SampleCensus.secondary_information.9": {
-    "translation": "* Đánh dấu một hoặc nhiều hộp VÀ in nguồn gốc *\n\n- [ ] Trắng - In, ví dụ: tiếng Đức, tiếng Ailen, tiếng Anh, tiếng Ý, tiếng Lebanon, tiếng Ai Cập, v.v ... [||]\n- [ ] Đen hoặc Châu Phi Am. - In, ví dụ, người Mỹ gốc Phi, Jamaica, Haiti, Nigeria, Ethiopia, Somalia, v.v ... [||]\n- [ ] Người Mỹ bản địa hoặc thổ dân Alaska - Tên in của (các) bộ lạc đã đăng ký hoặc chính, ví dụ, Navajo Nation, Blackfeet Tribe, Maya, Aztec, Bản địa của Chính phủ truyền thống Barrow Inupiat, Cộng đồng Nome Eskimo, v.v. [|| ]\n- [ ] Người Trung Quốc\n- [ ] Tiếng Philipin\n- [ ] Ấn Độ châu Á\n- [ ] Tiếng Việt\n- [ ] Hàn Quốc\n- [ ] Tiếng Nhật\n- [ ] Hawaii bản địa\n- [ ] Samoa\n- [ ] Chamorro\n- [ ] Châu Á khác - In, ví dụ: Pakistan, Campuchia, H'mong, v.v ... [||]\n- [ ] Đảo Thái Bình Dương khác - In, ví dụ, Tongan, Fijian, Marshallese, v.v ... [||]\n- [ ] Một số chủng tộc khác - In chủng tộc hoặc nguồn gốc. [||]",
-    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]"
+    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]",
+    "translation": "* Đánh dấu một hoặc nhiều hộp VÀ in nguồn gốc *\n\n- [ ] Trắng - In, ví dụ: tiếng Đức, tiếng Ailen, tiếng Anh, tiếng Ý, tiếng Lebanon, tiếng Ai Cập, v.v ... [||]\n- [ ] Đen hoặc Châu Phi Am. - In, ví dụ, người Mỹ gốc Phi, Jamaica, Haiti, Nigeria, Ethiopia, Somalia, v.v ... [||]\n- [ ] Người Mỹ bản địa hoặc thổ dân Alaska - Tên in của (các) bộ lạc đã đăng ký hoặc chính, ví dụ, Navajo Nation, Blackfeet Tribe, Maya, Aztec, Bản địa của Chính phủ truyền thống Barrow Inupiat, Cộng đồng Nome Eskimo, v.v. [|| ]\n- [ ] Người Trung Quốc\n- [ ] Tiếng Philipin\n- [ ] Ấn Độ châu Á\n- [ ] Tiếng Việt\n- [ ] Hàn Quốc\n- [ ] Tiếng Nhật\n- [ ] Hawaii bản địa\n- [ ] Samoa\n- [ ] Chamorro\n- [ ] Châu Á khác - In, ví dụ: Pakistan, Campuchia, H'mong, v.v ... [||]\n- [ ] Đảo Thái Bình Dương khác - In, ví dụ, Tongan, Fijian, Marshallese, v.v ... [||]\n- [ ] Một số chủng tộc khác - In chủng tộc hoặc nguồn gốc. [||]"
   },
   "navigation.externalCensusLink": {
     "english": "TAKE THE CENSUS",
@@ -525,75 +525,75 @@
   },
   "components.SampleCensus.primary_question.nonhohh.2": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.2": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.2": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.nonhohh.3": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.3": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.3": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.nonhohh.4": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.4": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.4": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.nonhohh.5": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.5": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.5": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.nonhohh.6": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.6": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.6": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.nonhohh.7": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.7": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.7": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.hohh_description": {
     "english": "If you are responsible for the home, you should complete the survey as person one providing infomation for the others you are responsible for.",
@@ -645,50 +645,50 @@
   },
   "components.SampleCensus.preliminary_button": {
     "english": "Before you begin",
-    "translation": null
+    "translation": "Trước khi bắt đầu"
   },
   "components.SampleCensus.preliminary_description": {
     "english": "This is default text",
-    "translation": null
+    "translation": "Đây là văn bản mặc định"
   },
   "components.SampleCensus.primary_question.preliminary.1": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.preliminary.1": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.preliminary.1": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.preliminary.2": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.preliminary.2": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.preliminary.2": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.preliminary.3": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.preliminary.3": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.preliminary.3": {
     "english": "This is a placeholder",
-    "translation": null
+    "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.nonHohh_button": {
     "english": "Someone else will answer the census for me",
-    "translation": null
+    "translation": "Một người khác sẽ trả lời điều tra dân số cho tôi"
   }
 }
