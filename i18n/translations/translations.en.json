@@ -1,27 +1,7 @@
 {
-  "components.DetailViewContainer.hello": {
-    "english": "Hello world",
-    "translation": "Hello world"
-  },
-  "components.Contact.fields.name": {
-    "english": "Name",
-    "translation": "Name"
-  },
-  "components.Contact.fields.organization": {
-    "english": "Organization",
-    "translation": "Organization"
-  },
   "components.Contact.fields.email": {
     "english": "Email",
     "translation": "Email"
-  },
-  "components.Contact.fields.language": {
-    "english": "Language Spoken",
-    "translation": "Language Spoken"
-  },
-  "components.Contact.fields.zip": {
-    "english": "Zip Code",
-    "translation": "Zip Code"
   },
   "components.Contact.fields.interest": {
     "english": "I would like to:",
@@ -30,10 +10,6 @@
   "components.Contact.fields.interest.options.volunteer": {
     "english": "Volunteer to help",
     "translation": "Volunteer to help"
-  },
-  "components.Contact.fields.interest.options.workForCensus": {
-    "english": "Work for Census2020",
-    "translation": "Work for Census2020"
   },
   "components.Contact.fields.interest.options.requestPresentation": {
     "english": "Request a presentation",
@@ -75,126 +51,6 @@
     "english": "Sample Survey",
     "translation": "Sample Survey"
   },
-  "components.SampleCensus.header": {
-    "english": "Sample Census",
-    "translation": "Sample Census"
-  },
-  "take-the-census-link": {
-    "english": "Take the Census",
-    "translation": "Take the Census"
-  },
-  "components.SampleCensus.form.preliminary-instructions.question1.header": {
-    "english": "Before you answer Question 1, count the people living in this house, apartment, or mobile home using our guidelines.",
-    "translation": "Before you answer Question 1, count the people living in this house, apartment, or mobile home using our guidelines."
-  },
-  "components.SampleCensus.form.preliminary-instructions.question1.count-all-people": {
-    "english": "Count all people, including babies, who live and sleep here most of the time.",
-    "translation": "Count all people, including babies, who live and sleep here most of the time."
-  },
-  "components.SampleCensus.form.preliminary-instructions.question1.if-no-one-lives-here": {
-    "english": "If no one lives and sleeps at this address most of the time, go online at {websiteUrl} or call the number on page 8",
-    "translation": "If no one lives and sleeps at this address most of the time, go online at {websiteUrl} or call the number on page 8"
-  },
-  "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.header": {
-    "english": "The census must also include people without a permanent place to live, so:",
-    "translation": "The census must also include people without a permanent place to live, so:"
-  },
-  "components.SampleCensus.form.preliminary-instructions.includeWithoutPermanent.include": {
-    "english": "If someone who does not have a permanent place to live is staying here on April 1, 2020, count that person.",
-    "translation": "If someone who does not have a permanent place to live is staying here on April 1, 2020, count that person."
-  },
-  "components.SampleCensus.form.preliminary-instructions.dont-include-absent.header": {
-    "english": "The Census Bureau also conducts counts in institutions and other places, so:",
-    "translation": "The Census Bureau also conducts counts in institutions and other places, so:"
-  },
-  "components.SampleCensus.form.preliminary-instructions.dont-include-absent.college-or-armed-forces": {
-    "english": "Do not count anyone living away from here, either at college or in the Armed Forces.",
-    "translation": "Do not count anyone living away from here, either at college or in the Armed Forces."
-  },
-  "components.SampleCensus.form.preliminary-instructions.dont-include-absent.prison": {
-    "english": "Do not count anyone in a nursing home, jail, prison, detention facility, etc., on April 1, 2020.",
-    "translation": "Do not count anyone in a nursing home, jail, prison, detention facility, etc., on April 1, 2020."
-  },
-  "components.SampleCensus.form.preliminary-instructions.dont-include-absent.even-if-they-return": {
-    "english": "Leave these people off your questionnaire, even if they will return to live here after they leave college, the nursing home, the military, jail, etc. Otherwise, they may be counted twice.",
-    "translation": "Leave these people off your questionnaire, even if they will return to live here after they leave college, the nursing home, the military, jail, etc. Otherwise, they may be counted twice."
-  },
-  "components.SampleCensus.form.question1.header": {
-    "english": "How many people were living or staying in this house,apartment, or mobile home on April 1, 2020?",
-    "translation": "How many people were living or staying in this house,apartment, or mobile home on April 1, 2020?"
-  },
-  "components.SampleCensus.form.question1.input-label": {
-    "english": "Number of people",
-    "translation": "Number of people"
-  },
-  "components.SampleCensus.form.question2.header": {
-    "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
-    "translation": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?"
-  },
-  "components.SampleCensus.form.question2.fields.related-children": {
-    "english": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children",
-    "translation": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children"
-  },
-  "components.SampleCensus.form.question2.fields.related-adults": {
-    "english": "Relatives, such as adult children, cousins, or in-laws",
-    "translation": "Relatives, such as adult children, cousins, or in-laws"
-  },
-  "components.SampleCensus.form.question2.fields.nonrelatives": {
-    "english": "Nonrelatives, such as roommates or live-in babysitters",
-    "translation": "Nonrelatives, such as roommates or live-in babysitters"
-  },
-  "components.SampleCensus.form.question2.fields.staying-temporarily": {
-    "english": "People staying here temporarily",
-    "translation": "People staying here temporarily"
-  },
-  "components.SampleCensus.form.question2.fields.no-additional": {
-    "english": "No additional people",
-    "translation": "No additional people"
-  },
-  "components.SampleCensus.form.question3.header": {
-    "english": "Is this house, apartment, or mobile home",
-    "translation": "Is this house, apartment, or mobile home"
-  },
-  "components.SampleCensus.form.markOne": {
-    "english": "Mark {markBoxImage} ONE box",
-    "translation": "Mark {markBoxImage} ONE box"
-  },
-  "components.SampleCensus.form.question3.fields.mortgage-or-loan": {
-    "english": "Owned by you or someone in this household with a mortgage or loan? Include home equity loans.",
-    "translation": "Owned by you or someone in this household with a mortgage or loan? Include home equity loans."
-  },
-  "components.SampleCensus.form.question3.fields.without-mortgage-or-loan": {
-    "english": "Owned by you or someone in this household free and clear (without a mortgage or loan)?",
-    "translation": "Owned by you or someone in this household free and clear (without a mortgage or loan)?"
-  },
-  "components.SampleCensus.form.question3.fields.rented": {
-    "english": "Rented?",
-    "translation": "Rented?"
-  },
-  "components.SampleCensus.form.question3.fields.occupied-without-rent": {
-    "english": "Occupied without payment of rent?",
-    "translation": "Occupied without payment of rent?"
-  },
-  "components.SampleCensus.form.question2.mark-all": {
-    "english": "Mark {markBoxImage} all that apply",
-    "translation": "Mark {markBoxImage} all that apply"
-  },
-  "components.SampleCensus.form.mark-all": {
-    "english": "Mark {markBoxImage} all that apply",
-    "translation": "Mark {markBoxImage} all that apply"
-  },
-  "components.SampleCensus.form.question4.header": {
-    "english": "What is your telephone number?",
-    "translation": "What is your telephone number?"
-  },
-  "components.SampleCensus.form.question4.header.phone-disclaimer": {
-    "english": "We will only contact you if needed for official Census Bureau business.",
-    "translation": "We will only contact you if needed for official Census Bureau business."
-  },
-  "components.SampleCensus.form.question4.field.label": {
-    "english": "Telephone Number",
-    "translation": "Telephone Number"
-  },
   "components.Contact.fields.firstName": {
     "english": "First Name",
     "translation": "First Name"
@@ -223,33 +79,9 @@
     "english": "Get Involved",
     "translation": "Get Involved"
   },
-  "components.DetailViewContainer.header": {
-    "english": "Everyone matters",
-    "translation": "Everyone matters"
-  },
-  "components.DetailViewContainer.message": {
-    "english": "Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur in exercitation voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.\nAdipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat.",
-    "translation": "Ea irure pariatur aliqua minim cillum consectetur consequat reprehenderit sit aliqua sit eiusmod proident. Commodo ea pariatur in exercitation voluptate proident anim nisi minim. Nisi aliqua ipsum non elit nulla pariatur elit exercitation enim mollit commodo incididunt incididunt. Excepteur amet esse sunt velit ut nulla ipsum ea.\nAdipisicing ullamco laboris cillum dolor eiusmod nulla Lorem sit quis velit fugiat dolor ullamco aute. Cupidatat cupidatat ullamco ullamco ea quis. Tempor laborum eu ea consequat."
-  },
-  "components.Home.factoids.readyToTakeCensus.title": {
-    "english": "Ready to take the census?",
-    "translation": "Ready to take the census?"
-  },
-  "components.Home.factoids.readyToTakeCensus.message": {
-    "english": "a whole bunch of text and things here",
-    "translation": "a whole bunch of text and things here"
-  },
-  "components.Home.factoids.qr-code.title": {
-    "english": "Learn About the Census From Your Phone",
-    "translation": "Learn About the Census From Your Phone"
-  },
   "components.Home.factoids.3.title": {
     "english": "In a hurry, take it to go!",
     "translation": "In a hurry, take it to go!"
-  },
-  "components.Home.factoids.3.message": {
-    "english": "more text will go here",
-    "translation": "more text will go here"
   },
   "components.Contact.fields.interest.options.information": {
     "english": "Request more information",
@@ -319,26 +151,6 @@
     "english": "The United States 2020 Census",
     "translation": "The United States 2020 Census"
   },
-  "components.SampleCensus.ipsumQuestion.question": {
-    "english": "This is the first question",
-    "translation": "This is the first question"
-  },
-  "components.SampleCensus.ipsumQuestion.secondaryText": {
-    "english": "More text can go here",
-    "translation": "More text can go here"
-  },
-  "components.SampleCensus.ipsumQuestion.howToAnswer": {
-    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
-    "translation": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
-  },
-  "components.SampleCensus.ipsumQuestion.howIsUsed": {
-    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
-    "translation": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
-  },
-  "components.SampleCensus.ipsumQuestion.whyAnswer": {
-    "english": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos.",
-    "translation": "Laudantium sit veniam at aut. Ab aut qui tenetur et eos animi.\nFugit cum deserunt quia pariatur praesentium deleniti. Consequatur doloribus fugit est itaque quis\nenim omnis autem. Voluptatibus ut et recusandae. Perferendis esse incidunt ullam quos praesentium.\nEligendi quasi magni velit et id in velit. Commodi dolorum aspernatur officiis in autem dignissimos."
-  },
   "component.SampleCensus.sectionHeaders.howToAnswer": {
     "english": "How to answer this question",
     "translation": "How to answer this question"
@@ -351,14 +163,6 @@
     "english": "Why answer this question",
     "translation": "Why answer this question"
   },
-  "components.SampleCenus.title": {
-    "english": "Preview and learn more about each question on the census",
-    "translation": "Preview and learn more about each question on the census"
-  },
-  "components.SampleCenus.subtitle": {
-    "english": "Learn how to answer, how that info is used, and why it's important to answer",
-    "translation": "Learn how to answer, how that info is used, and why it's important to answer"
-  },
   "components.SampleCensus.title": {
     "english": "Preview each question on the survey",
     "translation": "Preview each question on the survey"
@@ -367,49 +171,9 @@
     "english": "Learn if you should answer, how to answer, and how your info is used.",
     "translation": "Learn if you should answer, how to answer, and how your info is used."
   },
-  "components.DetailViewContainer.message.1": {
-    "english": "The 2020 Census is here. Your participation helps ensure our community will have access to housing, healthcare, schools, community programs, better transportation, and government representation.",
-    "translation": "The 2020 Census is here. Your participation helps ensure our community will have access to housing, healthcare, schools, community programs, better transportation, and government representation."
-  },
-  "components.DetailViewContainer.message.2": {
-    "english": "Every 10 years, the U.S. Census Bureau sets out to count every person living in the United States — regardless of age, citizenship status, and gender. Getting the 2020 Census right is important for all our communities — particularly those most likely to be undercounted. A 2020 Census undercount could put billions of federal dollars and congressional representation for California at risk!",
-    "translation": "Every 10 years, the U.S. Census Bureau sets out to count every person living in the United States — regardless of age, citizenship status, and gender. Getting the 2020 Census right is important for all our communities — particularly those most likely to be undercounted. A 2020 Census undercount could put billions of federal dollars and congressional representation for California at risk!"
-  },
-  "components.DetailViewContainer.message.3": {
-    "english": "Complete the census survey online, by phone or mail. The process is easy, quick and confidential! All you need is the ID code mailed to you by the U.S. Census Bureau, or your mailing address. Remember, to include everyone living and sleeping in your house. That means babies, children, teens, roommates, etc. Click the \"Take the Census Now\" button to get started!",
-    "translation": "Complete the census survey online, by phone or mail. The process is easy, quick and confidential! All you need is the ID code mailed to you by the U.S. Census Bureau, or your mailing address. Remember, to include everyone living and sleeping in your house. That means babies, children, teens, roommates, etc. Click the \"Take the Census Now\" button to get started!"
-  },
-  "components.Home.factoids.readyToTakeCensus.headerTitle": {
-    "english": "Census starts in 2020",
-    "translation": "Census starts in 2020"
-  },
-  "components.Home.factoids.readyToTakeCensus.headerMessage": {
-    "english": "Learn how to participate",
-    "translation": "Learn how to participate"
-  },
-  "components.Home.factoids.readyToTakeCensus.contactLink": {
-    "english": "GET INVOLVED",
-    "translation": "GET INVOLVED"
-  },
-  "components.Home.factoids.qr-code.headerTitle.": {
-    "english": "Your data is secure",
-    "translation": "Your data is secure"
-  },
-  "components.Home.factoids.qr-code.headerMessage.": {
-    "english": "Learn more about privacy",
-    "translation": "Learn more about privacy"
-  },
   "components.Home.factoids.qr-code.faqLink": {
     "english": "VIEW ALL FAQs",
     "translation": "VIEW ALL FAQs"
-  },
-  "components.Home.factoids.3.headerTitle": {
-    "english": "See all census questions",
-    "translation": "See all census questions"
-  },
-  "components.Home.factoids.3.headerMessage": {
-    "english": "Learn why it's important...",
-    "translation": "Learn why it's important..."
   },
   "components.Home.factoids.3.surveyLink": {
     "english": "VIEW SAMPLE SURVEY",
@@ -478,10 +242,6 @@
   "mail.messages.confirmation.subject": {
     "english": "Thank you for contacting the San Jose Census Department",
     "translation": "Thank you for contacting the San Jose Census Department"
-  },
-  "components.FAQ.sections.safety.header": {
-    "english": "Safety and Privacy",
-    "translation": "Safety and Privacy"
   },
   "components.FAQ.entries.whyHaveCensus.question": {
     "english": "Why do we have a census?",
@@ -591,14 +351,6 @@
     "english": "Top 5 Reasons to take the census",
     "translation": "Top 5 Reasons to take the census"
   },
-  "components.Home.header": {
-    "english": "Participate in the census and represent San Jose",
-    "translation": "Participate in the census and represent San Jose"
-  },
-  "components.Home.subheader": {
-    "english": "Help California and San Jose get access to important resources",
-    "translation": "Help California and San Jose get access to important resources"
-  },
   "components.Home.factoids.qrCode.headerTitle": {
     "english": "In a hurry, take it to go!",
     "translation": "In a hurry, take it to go!"
@@ -643,30 +395,6 @@
     "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
     "translation": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?"
   },
-  "components.SampleCensus.secondary_information.2.1": {
-    "english": "Mark all that apply",
-    "translation": "Mark all that apply"
-  },
-  "components.SampleCensus.secondary_information.2.2": {
-    "english": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children",
-    "translation": "Children, related or unrelated, such as newborn babies, grandchildren, or foster children"
-  },
-  "components.SampleCensus.secondary_information.2.3": {
-    "english": "Relatives, such as adult children, cousins, or in-laws",
-    "translation": "Relatives, such as adult children, cousins, or in-laws"
-  },
-  "components.SampleCensus.secondary_information.2.4": {
-    "english": "Nonrelatives, such as roommates or live-in babysitters",
-    "translation": "Nonrelatives, such as roommates or live-in babysitters"
-  },
-  "components.SampleCensus.secondary_information.2.5": {
-    "english": "People staying here temporarily",
-    "translation": "People staying here temporarily"
-  },
-  "components.SampleCensus.secondary_information.2.6": {
-    "english": "No additional people",
-    "translation": "No additional people"
-  },
   "components.SampleCensus.hohh_button": {
     "english": "I will answer the census",
     "translation": "I will answer the census"
@@ -674,10 +402,6 @@
   "components.SampleCensus.not_hohh_button": {
     "english": "Someone else will answer the census for me",
     "translation": "Someone else will answer the census for me"
-  },
-  "test": {
-    "english": "- [ ] Checkbox1\n  - [x] Checkbox2",
-    "translation": "- [ ] Checkbox1\n  - [x] Checkbox2"
   },
   "components.SampleCensus.secondary_information.2": {
     "english": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people",
@@ -711,125 +435,17 @@
     "english": "What is Person 1’s sex?",
     "translation": "What is Person 1’s sex?"
   },
-  "components.SampleCensus.secondary_information.6.1": {
-    "english": "Mark ONE box.",
-    "translation": "Mark ONE box."
-  },
-  "components.SampleCensus.secondary_information.6.2": {
-    "english": "Male",
-    "translation": "Male"
-  },
-  "components.SampleCensus.secondary_information.6.3": {
-    "english": "Female",
-    "translation": "Female"
-  },
   "components.SampleCensus.primary_question.7": {
     "english": "What is Person 1’s age and what is Person 1’s date of birth?",
     "translation": "What is Person 1’s age and what is Person 1’s date of birth?"
-  },
-  "components.SampleCensus.secondary_information.7.1": {
-    "english": "Age on April 1, 2020 = <textbox>{text}</textbox> years",
-    "translation": "Age on April 1, 2020 = <textbox>{text}</textbox> years"
-  },
-  "components.SampleCensus.secondary_information.7.2": {
-    "english": "Month = <textbox>{text}</textbox> Day = <textbox>{text}</textbox> Year of birth = <textbox>{text}</textbox>",
-    "translation": "Month = <textbox>{text}</textbox> Day = <textbox>{text}</textbox> Year of birth = <textbox>{text}</textbox>"
   },
   "components.SampleCensus.primary_question.8": {
     "english": "Is Person 1 of Hispanic, Latino, or Spanish origin?",
     "translation": "Is Person 1 of Hispanic, Latino, or Spanish origin?"
   },
-  "components.SampleCensus.secondary_information.8.1": {
-    "english": "No, not of Hispanic, Latino, or Spanish origin",
-    "translation": "No, not of Hispanic, Latino, or Spanish origin"
-  },
-  "components.SampleCensus.secondary_information.8.2": {
-    "english": "Yes, Mexican, Mexican Am., Chicano",
-    "translation": "Yes, Mexican, Mexican Am., Chicano"
-  },
-  "components.SampleCensus.secondary_information.8.3": {
-    "english": "Yes, Puerto Rican",
-    "translation": "Yes, Puerto Rican"
-  },
-  "components.SampleCensus.secondary_information.8.4": {
-    "english": "Yes, Cuban",
-    "translation": "Yes, Cuban"
-  },
-  "components.SampleCensus.secondary_information.8.5": {
-    "english": "Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.",
-    "translation": "Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc."
-  },
-  "components.SampleCensus.secondary_information.8.6": {
-    "english": "<textbox>{text}</textbox>",
-    "translation": "<textbox>{text}</textbox>"
-  },
   "components.SampleCensus.primary_question.9": {
     "english": "What is Person 1’s race?",
     "translation": "What is Person 1’s race?"
-  },
-  "components.SampleCensus.secondary_information.9.1": {
-    "english": "Mark one or more boxes AND print origins.",
-    "translation": "Mark one or more boxes AND print origins."
-  },
-  "components.SampleCensus.secondary_information.9.2": {
-    "english": "White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [Textbox]",
-    "translation": "White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [Textbox]"
-  },
-  "components.SampleCensus.secondary_information.9.3": {
-    "english": "Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [Textbox]",
-    "translation": "Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [Textbox]"
-  },
-  "components.SampleCensus.secondary_information.9.4": {
-    "english": "American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [Textbox]",
-    "translation": "American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [Textbox]"
-  },
-  "components.SampleCensus.secondary_information.9.5": {
-    "english": "Chinese",
-    "translation": "Chinese"
-  },
-  "components.SampleCensus.secondary_information.9.6": {
-    "english": "Filipino",
-    "translation": "Filipino"
-  },
-  "components.SampleCensus.secondary_information.9.7": {
-    "english": "Asian Indian",
-    "translation": "Asian Indian"
-  },
-  "components.SampleCensus.secondary_information.9.8": {
-    "english": "Vietnamese",
-    "translation": "Vietnamese"
-  },
-  "components.SampleCensus.secondary_information.9.9": {
-    "english": "Korean",
-    "translation": "Korean"
-  },
-  "components.SampleCensus.secondary_information.9.10": {
-    "english": "Japanese",
-    "translation": "Japanese"
-  },
-  "components.SampleCensus.secondary_information.9.11": {
-    "english": "Native Hawaiian",
-    "translation": "Native Hawaiian"
-  },
-  "components.SampleCensus.secondary_information.9.12": {
-    "english": "Samoan",
-    "translation": "Samoan"
-  },
-  "components.SampleCensus.secondary_information.9.13": {
-    "english": "Chamorro",
-    "translation": "Chamorro"
-  },
-  "components.SampleCensus.secondary_information.9.14": {
-    "english": "Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [Textbox]",
-    "translation": "Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [Textbox]"
-  },
-  "components.SampleCensus.secondary_information.9.15": {
-    "english": "Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [Textbox]",
-    "translation": "Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [Textbox]"
-  },
-  "components.SampleCensus.secondary_information.9.16": {
-    "english": "Some other race – Print race or origin. [Textbox]",
-    "translation": "Some other race – Print race or origin. [Textbox]"
   },
   "components.SampleCensus.primary_question.10": {
     "english": "This is an ipsum question",
