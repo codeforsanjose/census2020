@@ -15,8 +15,7 @@ import Checkbox from './Checkbox';
 import {
   supportedLocales
 } from '../../i18n/supported-locales';
-import contactFormImageSrc from '../images/contact-form.jpg';
-import contactFormImageWebpSrc from '../images/contact-form.webp';
+import contactForm from '../images/contact-form.jpg';
 
 defineMessages({
   header: {
@@ -180,8 +179,7 @@ class Contact extends Component {
             <div className="c_contact__content__col">
               <img
                 className="c_contact__content__col__contact_image"
-                src={contactFormImageSrc}
-                srcSet={contactFormImageWebpSrc}
+                src={`${contactForm}?w=468`}
               />
               <div className="c_contact__content__col__blurb">
                 <h3 className="c_contact__content__col__blurb__headline">
