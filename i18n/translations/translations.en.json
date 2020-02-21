@@ -569,27 +569,27 @@
   },
   "components.Home.top_reasons.item.1": {
     "english": "Determines the number of seats in the House of Representatives",
-    "translation": "It determines our number of seats in the House of Representatives."
+    "translation": "Determines the number of seats in the House of Representatives"
   },
   "components.Home.top_reasons.item.2": {
     "english": "Redraw district boundaries",
-    "translation": "It can lead to redrawing district boundaries."
+    "translation": "Redraw district boundaries"
   },
   "components.Home.top_reasons.item.3": {
     "english": "Allocates funds to the state and localities",
-    "translation": "It's used to allocate funds to cities and states."
+    "translation": "Allocates funds to the state and localities"
   },
   "components.Home.top_reasons.item.4": {
     "english": "Infrastructure planning",
-    "translation": "Government needs it for infrastructure planning."
+    "translation": "Infrastructure planning"
   },
   "Compnents.Home.top_reasons.item.5": {
     "english": "Emergency response planning",
-    "translation": "Government needs it for emergency response planning."
+    "translation": "Emergency response planning"
   },
   "components.Home.top_reasons.title": {
     "english": "Top 5 Reasons to take the census",
-    "translation": "Top 5 Reasons to Take the Census\n\n"
+    "translation": "Top 5 Reasons to take the census"
   },
   "components.Home.header": {
     "english": "Participate in the census and represent San Jose",
@@ -689,7 +689,7 @@
   },
   "components.SampleCensus.secondary_information.3": {
     "english": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?",
-    "translation": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?"
+    "translation": "Mark ONE box.\n- [ ] Opposite-sex husband/wife/spouse\n- [ ] Opposite-sex unmarried partner\n- [ ] Same-sex husband/wife/spouse\n- [ ] Same-sex unmarried partner\n- [ ] Biological son or daughter\n- [ ] Adopted son or daughter\n- [ ] Stepson or stepdaughter\n- [ ] Brother or sister\n- [ ] Father or mother\n- [ ] Grandchild\n- [ ] Parent-in-law\n- [ ] Son-in-law or daughter-in-law\n- [ ] Other relative\n- [ ] Roommate or housemate\n- [ ] Foster child\n- [ ] Other nonrelative"
   },
   "components.SampleCensus.primary_question.4": {
     "english": "What is your telephone number?",
