@@ -690,5 +690,9 @@
   "components.SampleCensus.nonHohh_button": {
     "english": "Someone else will answer the census for me",
     "translation": "Someone else will answer the census for me"
+  },
+  "components.SampleCensus.answerFormat": {
+    "english": "Answer format:",
+    "translation": "Answer format:"
   }
 }

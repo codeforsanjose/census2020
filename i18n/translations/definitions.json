@@ -753,5 +753,10 @@
     "id": "components.SampleCensus.nonHohh_button",
     "description": "Non head of household questions button",
     "defaultMessage": "Someone else will answer the census for me"
+  },
+  "components.SampleCensus.answerFormat": {
+    "id": "components.SampleCensus.answerFormat",
+    "description": "Text that labels the answer format box on the sample survey",
+    "defaultMessage": "Answer format:"
   }
 }
