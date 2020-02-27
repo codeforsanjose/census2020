@@ -367,6 +367,11 @@ defineMessages({
     defaultMessage: 'Someone else will answer the census for me',
     description: 'Non head of household questions button'
   },
+  answerFormat: {
+    id: 'components.SampleCensus.answerFormat',
+    defaultMessage: 'Answer format:',
+    description: 'Text that labels the answer format box on the sample survey'
+  },
   nonHohhDescription: {
     id: 'components.SampleCensus.nonHohh_description',
     defaultMessage: "If you live in someone else's home, you will need to provide information to the person completing the questionnaire.",
@@ -544,46 +549,6 @@ const sampleCensusButtons = [
   }
 ];
 
-const CheckboxList = ({ children }) => {
-  return (
-    <ul className="c_sample-census__question__checkbox-list">
-      {
-        React.Children.map(
-          children,
-          (item, index) => (
-            <li key={index}>
-              <label>
-                <input
-                  className="c_sample-census__question__checkbox-list__checkbox"
-                  type="checkbox"
-                  disabled
-                />
-                {item}
-              </label>
-            </li>
-          )
-        )
-      }
-    </ul>
-  );
-};
-
-CheckboxList.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element.isRequired).isRequired
-};
-
-const FakeTextbox = ({ children }) => {
-  return (
-    <div className="c_sample-census__question__textarea">
-      {children}
-    </div>
-  );
-};
-
-FakeTextbox.propTypes = {
-  children: PropTypes.element.isRequired
-};
-
 const CensusQuestionCard = ({ item, className, index }) => (
   <li
     key={index}
@@ -592,25 +557,36 @@ const CensusQuestionCard = ({ item, className, index }) => (
       className
     )}
   >
-    <header
-      className="c_sample-census__content__census-questions__card__header"
-    >
-      <h2 className="c_sample-census__content__census-questions__card__question">
-        <span className="c_sample-census__content__census-questions__card__question__label">
-          {`Q${index + 1}: `}
-        </span>
-        <FormattedMessage id={item.primary} />
-      </h2>
-    </header>
-    <FormattedMarkdownMessage id={item.secondary} />
-    <h3 className="c_sample-census__content__census-questions__card__explanation-title">
-      <FormattedMessage
-        id="components.CensusQuestionCard.explanation"
-        defaultMessage="Explanation"
-      />
-    </h3>
-    <div className="c_sample-census__content__census-questions__card__explanation">
-      <FormattedMarkdownMessage id={item.explanation} />
+    <div className="c_sample-census__content__census-questions__card__section">
+      <header
+        className="c_sample-census__content__census-questions__card__header"
+      >
+        <h2 className="c_sample-census__content__census-questions__card__question">
+          <span className="c_sample-census__content__census-questions__card__question__label">
+            {`Q${index + 1}: `}
+          </span>
+          <FormattedMessage id={item.primary} />
+        </h2>
+      </header>
+      <div className="c_sample-census__content__census-questions__card__answer-format">
+        <div className="c_sample-census__content__census-questions__card__answer-format__label">
+          <FormattedMessage id="components.SampleCensus.answerFormat"/>
+        </div>
+        <div className="c_sample-census__content__census-questions__card__answer-format__box">
+          <FormattedMarkdownMessage id={item.secondary} />
+        </div>
+      </div>
+    </div>
+    <div className="c_sample-census__content__census-questions__card__section">
+      <h3 className="c_sample-census__content__census-questions__card__explanation-title">
+        <FormattedMessage
+          id="components.CensusQuestionCard.explanation"
+          defaultMessage="Explanation"
+        />
+      </h3>
+      <div className="c_sample-census__content__census-questions__card__explanation">
+        <FormattedMarkdownMessage id={item.explanation} />
+      </div>
     </div>
   </li>
 );

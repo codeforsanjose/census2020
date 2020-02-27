@@ -690,5 +690,9 @@
   "components.SampleCensus.nonHohh_button": {
     "english": "Someone else will answer the census for me",
     "translation": "Một người khác sẽ trả lời điều tra dân số cho tôi"
+  },
+  "components.SampleCensus.answerFormat": {
+    "english": "Answer format:",
+    "translation": "Định dạng câu trả lời:"
   }
 }
