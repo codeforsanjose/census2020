@@ -412,7 +412,7 @@
     "translation": "Đây là ngôi nhà, căn hộ hay nhà di động:"
   },
   "components.SampleCensus.secondary_information.3": {
-    "english": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?",
+    "english": "Mark ONE box.\n- [ ] Opposite-sex husband/wife/spouse\n- [ ] Opposite-sex unmarried partner\n- [ ] Same-sex husband/wife/spouse\n- [ ] Same-sex unmarried partner\n- [ ] Biological son or daughter\n- [ ] Adopted son or daughter\n- [ ] Stepson or stepdaughter\n- [ ] Brother or sister\n- [ ] Father or mother\n- [ ] Grandchild\n- [ ] Parent-in-law\n- [ ] Son-in-law or daughter-in-law\n- [ ] Other relative\n- [ ] Roommate or housemate\n- [ ] Foster child\n- [ ] Other nonrelative",
     "translation": "* Đánh dấu MỘT ô *\n\n- [ ] Được sở hữu bởi bạn hoặc ai đó trong hộ gia đình này có thế chấp hoặc khoản vay? Bao gồm các khoản vay vốn chủ sở hữu nhà.\n- [ ] Được sở hữu bởi bạn hoặc ai đó trong hộ gia đình này miễn phí và rõ ràng (không thế chấp hoặc cho vay)?\n- [ ] Đã thuê?\n- [ ] Chiếm dụng mà không trả tiền thuê nhà?"
   },
   "components.SampleCensus.primary_question.4": {

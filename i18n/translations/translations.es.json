@@ -412,7 +412,7 @@
     "translation": "¿Es esta casa, apartamento o casa móvil:"
   },
   "components.SampleCensus.secondary_information.3": {
-    "english": "*Mark ONE box*\n\n- [ ] Owned by you or someone in this household with a mortgage or loan? Include home equity loans.\n- [ ] Owned by you or someone in this household free and clear (without a mortgage or loan)?\n- [ ] Rented?\n- [ ] Occupied without payment of rent?",
+    "english": "Mark ONE box.\n- [ ] Opposite-sex husband/wife/spouse\n- [ ] Opposite-sex unmarried partner\n- [ ] Same-sex husband/wife/spouse\n- [ ] Same-sex unmarried partner\n- [ ] Biological son or daughter\n- [ ] Adopted son or daughter\n- [ ] Stepson or stepdaughter\n- [ ] Brother or sister\n- [ ] Father or mother\n- [ ] Grandchild\n- [ ] Parent-in-law\n- [ ] Son-in-law or daughter-in-law\n- [ ] Other relative\n- [ ] Roommate or housemate\n- [ ] Foster child\n- [ ] Other nonrelative",
     "translation": "* Marque UNA casilla *\n\n- [ ] ¿Es propiedad de usted o alguien en este hogar con una hipoteca o préstamo? Incluye préstamos con garantía hipotecaria.\n- [ ] Propiedad de usted o de alguien en este hogar gratis y sin pagar (sin una hipoteca o préstamo)?\n- [ ] Alquilado?\n- [ ] ¿Ocupado sin pago de alquiler?"
   },
   "components.SampleCensus.primary_question.4": {
