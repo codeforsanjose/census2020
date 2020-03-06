@@ -10,15 +10,15 @@ import hohhIcon from '../images/hohhIcon.png';
 import nonHohhIcon from '../images/nonHohhIcon.png';
 
 defineMessages({
-  preliminaryButton: {
-    id: 'components.SampleCensus.preliminary_button',
-    defaultMessage: 'Before you begin',
-    description: 'Preliminary questions button'
+  hohhButton: {
+    id: 'components.SampleCensus.hohh_button',
+    defaultMessage: 'I will answer the census',
+    description: 'Head of household questions button'
   },
-  preliminaryDescription: {
-    id: 'components.SampleCensus.preliminary_description',
-    defaultMessage: 'This is default text',
-    description: 'This is default text'
+  hohhDescription: {
+    id: 'components.SampleCensus.hohh_description',
+    defaultMessage: 'If you are responsible for the home, you should complete the survey as person one providing infomation for the others you are responsible for.',
+    description: 'Head of household census description'
   },
   preliminaryPrimary1: {
     id: 'components.SampleCensus.primary_question.preliminary.1',
@@ -64,37 +64,6 @@ defineMessages({
     id: 'components.SampleCensus.explanation.preliminary.3',
     defaultMessage: 'This is a placeholder',
     description: 'Third sample question explanation  - prelimiary questions'
-  }
-});
-
-const PRELIMINARY_QUESTIONS = [
-  {
-    primary: 'components.SampleCensus.primary_question.preliminary.1',
-    secondary: 'components.SampleCensus.secondary_information.preliminary.1',
-    explanation: 'components.SampleCensus.explanation.preliminary.1'
-  },
-  {
-    primary: 'components.SampleCensus.primary_question.preliminary.2',
-    secondary: 'components.SampleCensus.secondary_information.preliminary.2',
-    explanation: 'components.SampleCensus.explanation.preliminary.2'
-  },
-  {
-    primary: 'components.SampleCensus.primary_question.preliminary.3',
-    secondary: 'components.SampleCensus.secondary_information.preliminary.3',
-    explanation: 'components.SampleCensus.explanation.preliminary.3'
-  }
-];
-
-defineMessages({
-  hohhButton: {
-    id: 'components.SampleCensus.hohh_button',
-    defaultMessage: 'I will answer the census',
-    description: 'Head of household questions button'
-  },
-  hohhDescription: {
-    id: 'components.SampleCensus.hohh_description',
-    defaultMessage: 'If you are responsible for the home, you should complete the survey as person one providing infomation for the others you are responsible for.',
-    description: 'Head of household census description'
   },
   hohhPrimary1: {
     id: 'components.SampleCensus.primary_question.1',
@@ -315,46 +284,73 @@ The Census Bureau asks about a person's race to create statistics about race and
 
 const HOHH_QUESTIONS = [
   {
+    label: 'B1',
+    primary: 'components.SampleCensus.primary_question.preliminary.1',
+    secondary: 'components.SampleCensus.secondary_information.preliminary.1',
+    explanation: 'components.SampleCensus.explanation.preliminary.1'
+  },
+  {
+    label: 'B2a',
+    primary: 'components.SampleCensus.primary_question.preliminary.2',
+    secondary: 'components.SampleCensus.secondary_information.preliminary.2',
+    explanation: 'components.SampleCensus.explanation.preliminary.2'
+  },
+  {
+    label: 'B2b',
+    primary: 'components.SampleCensus.primary_question.preliminary.3',
+    secondary: 'components.SampleCensus.secondary_information.preliminary.3',
+    explanation: 'components.SampleCensus.explanation.preliminary.3'
+  },
+  {
+    label: 'Q1',
     primary: 'components.SampleCensus.primary_question.1',
     secondary: 'components.SampleCensus.secondary_information.1',
     explanation: 'components.SampleCensus.explanation.1'
   },
   {
+    label: 'Q2',
     primary: 'components.SampleCensus.primary_question.2',
     secondary: 'components.SampleCensus.secondary_information.2',
     explanation: 'components.SampleCensus.explanation.2'
   },
   {
+    label: 'Q3',
     primary: 'components.SampleCensus.primary_question.3',
     secondary: 'components.SampleCensus.secondary_information.3',
     explanation: 'components.SampleCensus.explanation.3'
   },
   {
+    label: 'Q4',
     primary: 'components.SampleCensus.primary_question.4',
     secondary: 'components.SampleCensus.secondary_information.4',
     explanation: 'components.SampleCensus.explanation.4'
   },
   {
+    label: 'Q5',
     primary: 'components.SampleCensus.primary_question.5',
     secondary: 'components.SampleCensus.secondary_information.5',
     explanation: 'components.SampleCensus.explanation.5'
   },
   {
+    label: 'Q6',
     primary: 'components.SampleCensus.primary_question.6',
     secondary: 'components.SampleCensus.secondary_information.6',
     explanation: 'components.SampleCensus.explanation.6'
   },
   {
+    label: 'Q7',
     primary: 'components.SampleCensus.primary_question.7',
     secondary: 'components.SampleCensus.secondary_information.7',
     explanation: 'components.SampleCensus.explanation.7'
   },
   {
+    label: 'Q8',
     primary: 'components.SampleCensus.primary_question.8',
     secondary: 'components.SampleCensus.secondary_information.8',
     explanation: 'components.SampleCensus.explanation.8'
   },
   {
+    label: 'Q9',
     primary: 'components.SampleCensus.primary_question.9',
     secondary: 'components.SampleCensus.secondary_information.9',
     explanation: 'components.SampleCensus.explanation.9'
@@ -530,12 +526,6 @@ const NONHOHH_QUESTIONS = [
 
 const sampleCensusButtons = [
   {
-    button: 'components.SampleCensus.preliminary_button',
-    description: 'components.SampleCensus.preliminary_description',
-    questions: PRELIMINARY_QUESTIONS,
-    icon: ''
-  },
-  {
     button: 'components.SampleCensus.hohh_button',
     description: 'components.SampleCensus.hohh_description',
     questions: HOHH_QUESTIONS,
@@ -680,7 +670,7 @@ export default class SampleCensus extends React.Component {
                     questionPosition: index
                   })}
                 >
-                  {`Q${index + 1}`}
+                  { (item.label) ? `${item.label}` : `Q${index + 1}` }
                 </button>
               </li>
             ))}
