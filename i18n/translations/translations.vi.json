@@ -328,27 +328,27 @@
     "translation": "Vui lòng nhập một địa chỉ email hợp lệ"
   },
   "components.Home.top_reasons.item.1": {
-    "english": "Determines the number of seats in the House of Representatives",
+    "english": "It determines our number of seats in the House of Representatives.",
     "translation": "Xác định số lượng ghế trong Hạ viện"
   },
   "components.Home.top_reasons.item.2": {
-    "english": "Redraw district boundaries",
+    "english": "It is used to redraw district boundaries (making elections more fair).",
     "translation": "Vẽ lại ranh giới huyện"
   },
   "components.Home.top_reasons.item.3": {
-    "english": "Allocates funds to the state and localities",
+    "english": "It's used to fairly allocate funds to state and local governments (and by other organizations too).",
     "translation": "Phân bổ vốn cho nhà nước và địa phương"
   },
   "components.Home.top_reasons.item.4": {
-    "english": "Infrastructure planning",
+    "english": "It assists in infrastructure planning (like schools and transportation).",
     "translation": "Quy hoạch cơ sở hạ tầng"
   },
   "Compnents.Home.top_reasons.item.5": {
-    "english": "Emergency response planning",
+    "english": "It better enables emergency response planning.",
     "translation": "Lập kế hoạch ứng phó khẩn cấp"
   },
   "components.Home.top_reasons.title": {
-    "english": "Top 5 Reasons to take the census",
+    "english": "Top 5 Reasons to Take the Census",
     "translation": "5 lý do hàng đầu để điều tra dân số"
   },
   "components.Home.factoids.qrCode.headerTitle": {
@@ -428,7 +428,7 @@
     "translation": "Vui lòng cung cấp thông tin cho từng người sống ở đây. Nếu có ai đó sống ở đây trả tiền thuê nhà hoặc sở hữu nơi cư trú này, hãy bắt đầu bằng cách liệt kê người đó là Người 1. Nếu chủ sở hữu hoặc người trả tiền thuê nhà không sống ở đây, hãy bắt đầu bằng cách liệt kê bất kỳ người lớn nào sống ở đây là Người 1 Tên người 1 là gì?"
   },
   "components.SampleCensus.secondary_information.5": {
-    "english": "Firstname = [||] Last Name(s) = [||]",
+    "english": "First Name = [||] Last Name(s) = [||]",
     "translation": "Tên = [||] Họ (s) = [||]"
   },
   "components.SampleCensus.primary_question.6": {
@@ -456,7 +456,7 @@
     "translation": "* Đánh dấu MỘT ô *\n\n- [ ] Nam giới\n- [ ] Giống cái"
   },
   "components.SampleCensus.secondary_information.7": {
-    "english": "*For babies less than 1 year olf, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]",
+    "english": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]",
     "translation": "* Đối với trẻ sơ sinh dưới 1 tuổi, không viết tuổi theo tháng. Viết 0 khi bằng tuổi. *\n\nTuổi vào ngày 1 tháng 4 năm 2020 = [||] năm\nTháng = [||] Ngày = [||] Năm sinh = [||]"
   },
   "components.SampleCensus.secondary_information.8": {
@@ -512,87 +512,87 @@
     "translation": "Giải trình"
   },
   "components.SampleCensus.primary_question.nonhohh.1": {
-    "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
+    "english": "Print name of Person 2",
     "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.1": {
-    "english": "Number of people=[|Enter number here|]",
+    "english": "First Name = [||] Last Name(s) = [||]",
     "translation": "Số người = [| Nhập số vào đây |]"
   },
   "components.SampleCensus.explanation.nonhohh.1": {
-    "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
+    "english": "The Census Bureau asks for names to ensure everyone in the house is counted. This helps you make sure you have included everyone living and sleeping in your home.  It is easy to skip someone by accident, especially in large households.",
     "translation": "Bao gồm _everyone_ sống và ngủ trong nhà của bạn trong bảng câu hỏi điều tra dân số của bạn - bất kể tuổi tác, giới tính, mối quan hệ với bạn, hoặc tình trạng công dân / nhập cư. Donith quên bao gồm người thuê nhà (bao gồm cả sinh viên), con nuôi, phường hoặc nhân viên.\n\nHiến pháp đảm bảo sự đại diện bình đẳng cho tất cả mọi người bằng cách trao quyền cho người dân Mỹ thông qua quá trình điều tra dân số: đếm số người sống ở Hoa Kỳ cứ sau mười năm. Sự tham gia của bạn đảm bảo cộng đồng của bạn được đại diện đầy đủ ở tất cả các cấp chính quyền và nhận được phần tài trợ theo điều tra dân số, thông qua các chương trình như Cho vay sinh viên, SNAP, Medi-Cal, WIC, Phiếu mua nhà, Chương trình ăn sáng và ăn trưa tại trường, Giáo dục đặc biệt, Dịch vụ nghề nghiệp và đào tạo, Dinh dưỡng cao cấp, và các chương trình phát triển giao thông và cộng đồng."
   },
   "components.SampleCensus.primary_question.nonhohh.2": {
-    "english": "This is a placeholder",
+    "english": "Does this person usually live or stay somewhere else?",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.2": {
-    "english": "This is a placeholder",
+    "english": "_Mark all that apply._\n- [ ] No\n- [ ] Yes, for college\n- [ ] Yes, for a military assignment\n- [ ] Yes, for a job or business\n- [ ] Yes, in a nursing home\n- [ ] Yes, with a parent or other relative\n- [ ] Yes, at a seasonal or second residence\n- [ ] Yes, in a jail or prison\n- [ ] Yes, for another reason",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.2": {
-    "english": "This is a placeholder",
+    "english": "People living away from home may be counted in other ways or accidentally not counted. Answering this question ensures everyone in your household is counted.",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.nonhohh.3": {
-    "english": "This is a placeholder",
+    "english": "How is this person related to Person 1?",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.3": {
-    "english": "This is a placeholder",
+    "english": "_Mark ONE box._\n- [ ] Opposite-sex husband/wife/spouse\n- [ ] Opposite-sex unmarried partner\n- [ ] Same-sex husband/wife/spouse\n- [ ] Same-sex unmarried partner\n- [ ] Biological son or daughter\n- [ ] Adopted son or daughter\n- [ ] Stepson or stepdaughter\n- [ ] Brother or sister\n- [ ] Father or mother\n- [ ] Grandchild\n- [ ] Parent-in-law\n- [ ] Son-in-law or daughter-in-law\n- [ ] Other relative\n- [ ] Roommate or housemate\n- [ ] Foster child\n- [ ] Other nonrelative",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.3": {
-    "english": "This is a placeholder",
+    "english": "Questions about the relationship of each person in a household to one central person help to create estimates about families, households, and other groups, at a household level.  \n\nLocal, state, tribal, and federal agencies use relationship information to plan and fund government programs that provide funds or services for families, people living or raising children alone, grandparents living with grandchildren, or other households that qualify for additional assistance. \n\nFor the first time, the 2020 Census offers a way for the person filling out the form to indicate a same-sex relationship with another household member.  This change is expected to improve national statistics on same-sex couples.",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.nonhohh.4": {
-    "english": "This is a placeholder",
+    "english": "What is this person’s sex?",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.4": {
-    "english": "This is a placeholder",
+    "english": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.4": {
-    "english": "This is a placeholder",
+    "english": "The Census Bureau asks about the gender of each person for statistical purposes.  The State and Federal government use this information in planning and funding programs, and evaluating programs and policies to ensure they fairly and equitably serve the needs of both men and women.",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.nonhohh.5": {
-    "english": "This is a placeholder",
+    "english": "What is this person’s age and what is this person’s date of birth?",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.5": {
-    "english": "This is a placeholder",
+    "english": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.5": {
-    "english": "This is a placeholder",
+    "english": "The Census Bureau asks about age and date of birth to understand the size and characteristics of different age groups in your neighborhood.  Local, state, tribal, and federal agencies use age information to plan and fund government programs that provide assistance or services for specific age groups, such as children, working-age adults, women of childbearing age, and elders.",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.nonhohh.6": {
-    "english": "This is a placeholder",
+    "english": "Is this person of Hispanic, Latino, or Spanish origin?",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.6": {
-    "english": "This is a placeholder",
+    "english": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.6": {
-    "english": "This is a placeholder",
+    "english": "The Census Bureau asks whether a person is of Hispanic, Latino or Spanish origin to create statistics about this ethnic group. The information collected in this question is used by Government agencies and community groups in evaluating programs and ensuring compliance with anti-discrimination provisions, such as under the Voting Rights Act and the Civil Rights Act.\n\n**You will need to answer BOTH Question 8 about Hispanic origin and Question 9 about race. For this census, Hispanic origins are not races.**",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.nonhohh.7": {
-    "english": "This is a placeholder",
+    "english": "What is this person’s race?",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.7": {
-    "english": "This is a placeholder",
+    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.7": {
-    "english": "This is a placeholder",
+    "english": "The Census Bureau asks about a person's race to create statistics about race and to present other estimates by race groups.  Local, state, tribal, and federal programs use this information, and they are critical factors in the basic research behind numerous policies, particularly for civil rights. Race information is used in planning and funding government programs that provide funds or services for specific groups.",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.hohh_description": {
@@ -640,7 +640,7 @@
     "translation": "XEM MẪU MẪU"
   },
   "components.Home.top_reasons.item.5": {
-    "english": "Emergency response planning",
+    "english": "It better enables emergency response planning.",
     "translation": "Lập kế hoạch ứng phó khẩn cấp"
   },
   "components.SampleCensus.preliminary_button": {
@@ -648,43 +648,43 @@
     "translation": "Trước khi bắt đầu"
   },
   "components.SampleCensus.preliminary_description": {
-    "english": "This is default text",
+    "english": "Prior to filling out the census online, you will be asked to enter your Census code, or otherwise identify your household.",
     "translation": "Đây là văn bản mặc định"
   },
   "components.SampleCensus.primary_question.preliminary.1": {
-    "english": "This is a placeholder",
+    "english": "Please enter the 12-digit Census ID found in the materials we mailed to you or left at your door.",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.preliminary.1": {
-    "english": "This is a placeholder",
+    "english": "[||] - [||] - [||] - [||]\nIf you do not have a Census ID, click here.",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.preliminary.1": {
-    "english": "This is a placeholder",
+    "english": "Starting in March 2020, the U.S. Census Bureau will mail letters to every household in the United States inviting them to respond to the Census survey. Every household should receive a letter requesting that they complete a census form online, by mail, or phone by *Census Day on April 1, 2020*. If you lose or do not receive your letter, you can still fill out the survey by entering your address.",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.preliminary.2": {
-    "english": "This is a placeholder",
+    "english": "(If you have 12-digit code) Are you completing the 2020 Census Questionnaire for the address below?",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.preliminary.2": {
-    "english": "This is a placeholder",
+    "english": "*Mark ONE box*\n\n- [ ] Yes\n- [ ] No",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.preliminary.2": {
-    "english": "This is a placeholder",
+    "english": "Your home address should appear on the screen.",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.primary_question.preliminary.3": {
-    "english": "This is a placeholder",
+    "english": "(If you do not have 12-digit code) Please provide a city and state, or ZIP code where you will be living on April 1, 2020.  Also, Describe the physical location in the space provided.",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.preliminary.3": {
-    "english": "This is a placeholder",
+    "english": "City [||]  State[||]  ZIP Code [||]\n\n[||] \n\n**Please provide as much information as possible.**\nFor example:\n-   A location description such as “the apartment over the gas station” or “the brick house with the screened porch on the northeast corner of Farm Road and HC 46”\n-   A name of a park, street intersection or shelter, if you will be experiencing homelessness on April 2, 2020, as well as the name of the city and state. For example, “Friendship Park, Anywhere, PA”\n",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.preliminary.3": {
-    "english": "This is a placeholder",
+    "english": "For individuals and families, who did not receive a 12-digit code, living in non-traditional homes or do not have a usual residence (including those experiencing homelessness), this option allows individuals and families to be counted by self-reporting.",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.nonHohh_button": {
