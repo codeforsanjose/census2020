@@ -71,6 +71,11 @@
     padding: 0 1.25rem;
     flex-grow: 1;
 
+    @media (max-width: 800px) {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
     &--active {
       color: #2F80ED;
     }
@@ -133,6 +138,10 @@
     border: none;
     outline: none;
     background-color: transparent;
+
+    &:focus{
+      outline: none !important;
+    };
 
     &__image {
       height: 100%;
