@@ -63,12 +63,12 @@
   }
 
   &__link {
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 800;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
-    padding: 0 .8rem 0 .5rem;
+    padding: 0 1.25rem;
     flex-grow: 1;
 
     &--active {
@@ -79,8 +79,12 @@
     &:hover,
     &:visited {
       text-decoration: none;
-      font-weight: 400;
+      font-weight: 800;
     }
+
+    &:focus {
+      outline: none;
+    };
   }
 
   &__census-link {
