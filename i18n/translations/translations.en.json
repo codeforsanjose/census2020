@@ -389,7 +389,7 @@
   },
   "components.SampleCensus.secondary_information.1": {
     "english": "Number of people=[|Enter number here|]",
-    "translation": "Number of people=[|Enter number here|]"
+    "translation": "Number of people=\n\n[|Enter number here|]"
   },
   "components.SampleCensus.primary_question.2": {
     "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
@@ -421,7 +421,7 @@
   },
   "components.SampleCensus.secondary_information.4": {
     "english": "Telephone Number = [|Enter telephone number here|]",
-    "translation": "Telephone Number = [|Enter telephone number here|]"
+    "translation": "Telephone Number = \n\n[|Enter telephone number here|]"
   },
   "components.SampleCensus.primary_question.5": {
     "english": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?",
@@ -429,7 +429,7 @@
   },
   "components.SampleCensus.secondary_information.5": {
     "english": "First Name = [||] Last Name(s) = [||]",
-    "translation": "First Name = [||] Last Name(s) = [||]"
+    "translation": "First Name = \n\n[||] \n\nLast Name(s) = \n\n[||]"
   },
   "components.SampleCensus.primary_question.6": {
     "english": "What is Person 1’s sex?",
@@ -457,7 +457,7 @@
   },
   "components.SampleCensus.secondary_information.7": {
     "english": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]",
-    "translation": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]"
+    "translation": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = \n\n[||] years\n\nMonth = \n\n[||] \n\nDay = \n\n[||] \n\nYear of birth = \n\n[||]"
   },
   "components.SampleCensus.secondary_information.8": {
     "english": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]",
@@ -517,7 +517,7 @@
   },
   "components.SampleCensus.secondary_information.nonhohh.1": {
     "english": "First Name = [||] Last Name(s) = [||]",
-    "translation": "First Name = [||] Last Name(s) = [||]"
+    "translation": "First Name = \n\n[||] \n\nLast Name(s) = \n\n[||]"
   },
   "components.SampleCensus.explanation.nonhohh.1": {
     "english": "The Census Bureau asks for names to ensure everyone in the house is counted. This helps you make sure you have included everyone living and sleeping in your home.  It is easy to skip someone by accident, especially in large households.",
@@ -565,7 +565,7 @@
   },
   "components.SampleCensus.secondary_information.nonhohh.5": {
     "english": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]",
-    "translation": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]"
+    "translation": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = \n\n[||] years\n\nMonth = \n\n[||] \n\nDay = \n\n[||] \n\nYear of birth = \n\n[||]"
   },
   "components.SampleCensus.explanation.nonhohh.5": {
     "english": "The Census Bureau asks about age and date of birth to understand the size and characteristics of different age groups in your neighborhood.  Local, state, tribal, and federal agencies use age information to plan and fund government programs that provide assistance or services for specific age groups, such as children, working-age adults, women of childbearing age, and elders.",
@@ -589,7 +589,7 @@
   },
   "components.SampleCensus.secondary_information.nonhohh.7": {
     "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]",
-    "translation": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]"
+    "translation": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. \n\n[||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. \n\n[||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. \n\n[||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. \n\n[||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. \n\n[||]\n- [ ] Some other race – Print race or origin. \n\n[||]"
   },
   "components.SampleCensus.explanation.nonhohh.7": {
     "english": "The Census Bureau asks about a person's race to create statistics about race and to present other estimates by race groups.  Local, state, tribal, and federal programs use this information, and they are critical factors in the basic research behind numerous policies, particularly for civil rights. Race information is used in planning and funding government programs that provide funds or services for specific groups.",
@@ -681,7 +681,7 @@
   },
   "components.SampleCensus.secondary_information.preliminary.3": {
     "english": "City [||]  State[||]  ZIP Code [||]\n\n[||] \n\n**Please provide as much information as possible.**\nFor example:\n-   A location description such as “the apartment over the gas station” or “the brick house with the screened porch on the northeast corner of Farm Road and HC 46”\n-   A name of a park, street intersection or shelter, if you will be experiencing homelessness on April 2, 2020, as well as the name of the city and state. For example, “Friendship Park, Anywhere, PA”\n",
-    "translation": "City\n\n[||]\n\nState\n\n[||]\n\nZIP Code\n\n[||]\n\n[||] \n\n**Please provide as much information as possible.**\nFor example:\n-   A location description such as “the apartment over the gas station” or “the brick house with the screened porch on the northeast corner of Farm Road and HC 46”\n-   A name of a park, street intersection or shelter, if you will be experiencing homelessness on April 2, 2020, as well as the name of the city and state. For example, “Friendship Park, Anywhere, PA”\n"
+    "translation": "City\n\n[||]\n\nState\n\n[||]\n\nZIP Code\n\n[||]\n\nDescription\n\n[||] \n\n**Please provide as much information as possible.**\nFor example:\n-   A location description such as “the apartment over the gas station” or “the brick house with the screened porch on the northeast corner of Farm Road and HC 46”\n-   A name of a park, street intersection or shelter, if you will be experiencing homelessness on April 2, 2020, as well as the name of the city and state. For example, “Friendship Park, Anywhere, PA”\n"
   },
   "components.SampleCensus.explanation.preliminary.3": {
     "english": "For individuals and families, who did not receive a 12-digit code, living in non-traditional homes or do not have a usual residence (including those experiencing homelessness), this option allows individuals and families to be counted by self-reporting.",
@@ -693,6 +693,6 @@
   },
   "components.SampleCensus.answerFormat": {
     "english": "Answer format:",
-    "translation": "Answer format:"
+    "translation": "Answer format (SAMPLE):"
   }
 }
