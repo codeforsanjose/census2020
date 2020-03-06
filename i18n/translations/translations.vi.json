@@ -388,7 +388,7 @@
     "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.secondary_information.1": {
-    "english": "Number of people=[|Enter number here|]",
+    "english": "Number of people=\n\n[|Enter number here|]",
     "translation": "Số người = [| Nhập số vào đây |]"
   },
   "components.SampleCensus.primary_question.2": {
@@ -420,7 +420,7 @@
     "translation": "Số điện thoại của bạn là gì?"
   },
   "components.SampleCensus.secondary_information.4": {
-    "english": "Telephone Number = [|Enter telephone number here|]",
+    "english": "Telephone Number = \n\n[|Enter telephone number here|]",
     "translation": "Số điện thoại = [| Nhập số điện thoại tại đây |]"
   },
   "components.SampleCensus.primary_question.5": {
@@ -428,7 +428,7 @@
     "translation": "Vui lòng cung cấp thông tin cho từng người sống ở đây. Nếu có ai đó sống ở đây trả tiền thuê nhà hoặc sở hữu nơi cư trú này, hãy bắt đầu bằng cách liệt kê người đó là Người 1. Nếu chủ sở hữu hoặc người trả tiền thuê nhà không sống ở đây, hãy bắt đầu bằng cách liệt kê bất kỳ người lớn nào sống ở đây là Người 1 Tên người 1 là gì?"
   },
   "components.SampleCensus.secondary_information.5": {
-    "english": "First Name = [||] Last Name(s) = [||]",
+    "english": "First Name = \n\n[||] \n\nLast Name(s) = \n\n[||]",
     "translation": "Tên = [||] Họ (s) = [||]"
   },
   "components.SampleCensus.primary_question.6": {
@@ -456,7 +456,7 @@
     "translation": "* Đánh dấu MỘT ô *\n\n- [ ] Nam giới\n- [ ] Giống cái"
   },
   "components.SampleCensus.secondary_information.7": {
-    "english": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]",
+    "english": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = \n\n[||] years\n\nMonth = \n\n[||] \n\nDay = \n\n[||] \n\nYear of birth = \n\n[||]",
     "translation": "* Đối với trẻ sơ sinh dưới 1 tuổi, không viết tuổi theo tháng. Viết 0 khi bằng tuổi. *\n\nTuổi vào ngày 1 tháng 4 năm 2020 = [||] năm\nTháng = [||] Ngày = [||] Năm sinh = [||]"
   },
   "components.SampleCensus.secondary_information.8": {
@@ -516,7 +516,7 @@
     "translation": "Có bao nhiêu người đang sống hoặc ở trong ngôi nhà, căn hộ hoặc nhà di động này vào ngày 1 tháng 4 năm 2020?"
   },
   "components.SampleCensus.secondary_information.nonhohh.1": {
-    "english": "First Name = [||] Last Name(s) = [||]",
+    "english": "First Name = \n\n[||] \n\nLast Name(s) = \n\n[||]",
     "translation": "Số người = [| Nhập số vào đây |]"
   },
   "components.SampleCensus.explanation.nonhohh.1": {
@@ -564,7 +564,7 @@
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.5": {
-    "english": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = [||] years\nMonth = [||] Day = [||] Year of birth = [||]",
+    "english": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = \n\n[||] years\n\nMonth = \n\n[||] \n\nDay = \n\n[||] \n\nYear of birth = \n\n[||]",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.5": {
@@ -588,7 +588,7 @@
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.nonhohh.7": {
-    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]",
+    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. \n\n[||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. \n\n[||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. \n\n[||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. \n\n[||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. \n\n[||]\n- [ ] Some other race – Print race or origin. \n\n[||]",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.nonhohh.7": {
@@ -656,7 +656,7 @@
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.preliminary.1": {
-    "english": "[||] - [||] - [||] - [||]\nIf you do not have a Census ID, click here.",
+    "english": "[|XXXX-XXXX-XXXX-XXXX|]\n\nIf you do not have a Census ID, click here.",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.preliminary.1": {
@@ -680,7 +680,7 @@
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.secondary_information.preliminary.3": {
-    "english": "City [||]  State[||]  ZIP Code [||]\n\n[||] \n\n**Please provide as much information as possible.**\nFor example:\n-   A location description such as “the apartment over the gas station” or “the brick house with the screened porch on the northeast corner of Farm Road and HC 46”\n-   A name of a park, street intersection or shelter, if you will be experiencing homelessness on April 2, 2020, as well as the name of the city and state. For example, “Friendship Park, Anywhere, PA”\n",
+    "english": "City\n\n[||]\n\nState\n\n[||]\n\nZIP Code\n\n[||]\n\nDescription\n\n[||] \n\n**Please provide as much information as possible.**\nFor example:\n-   A location description such as “the apartment over the gas station” or “the brick house with the screened porch on the northeast corner of Farm Road and HC 46”\n-   A name of a park, street intersection or shelter, if you will be experiencing homelessness on April 2, 2020, as well as the name of the city and state. For example, “Friendship Park, Anywhere, PA”\n",
     "translation": "Đây là một giữ chỗ"
   },
   "components.SampleCensus.explanation.preliminary.3": {
@@ -692,7 +692,7 @@
     "translation": "Một người khác sẽ trả lời điều tra dân số cho tôi"
   },
   "components.SampleCensus.answerFormat": {
-    "english": "Answer format:",
+    "english": "Answer format (SAMPLE):",
     "translation": "Định dạng câu trả lời:"
   }
 }
