@@ -15,7 +15,7 @@ import Checkbox from './Checkbox';
 import {
   supportedLocales
 } from '../../i18n/supported-locales';
-import contactForm from '../images/contact-form.jpg';
+import contactForm from '../images/getInvolved.jpg';
 
 defineMessages({
   header: {
