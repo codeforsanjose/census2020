@@ -23,7 +23,6 @@
       justify-content: center;
       flex-wrap: wrap;
       width: 100%;
-      padding: 1em;
       box-sizing: border-box;
 
       &__button {
@@ -40,6 +39,7 @@
         font-size: 1em;
         color: #2F80ED;
         background-color: #FFFFFF;
+        width: 48%;
 
         &__icon-container {
           height: 3rem;
