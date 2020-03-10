@@ -1,3 +1,5 @@
+$breakpoint: 1000px;
+
 .c_navigation {
   $horizontal-spacing: 1rem;
   $vertical-spacing: .75rem;
@@ -10,8 +12,8 @@
   align-items: center;
   height: 4rem;
 
-  @media (max-width: 800px) {
-     padding: .25rem;
+  @media (max-width: $breakpoint) {
+     padding: .25rem 1rem;
   }
 
   &__logo {
@@ -43,18 +45,18 @@
     padding: 1rem;
 
     &--desktop {
-      @media (max-width: 800px) {
+      @media (max-width: $breakpoint) {
         display: none;
       }
     }
 
-    @media (max-width: 800px){
+    @media (max-width: $breakpoint){
       flex-direction: column;
       width: 100%;
       align-items: center;
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: $breakpoint) {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
@@ -71,7 +73,7 @@
     padding: 0 1.25rem;
     flex-grow: 1;
 
-    @media (max-width: 800px) {
+    @media (max-width: $breakpoint) {
       padding-top: 1rem;
       padding-bottom: 1rem;
     }
@@ -103,14 +105,22 @@
     text-align: center;
     padding: 1.25rem 2rem;
 
-    @media (min-width: 800px) {
+    &--desktop {
       position: absolute;
       right: 2rem;
       top: 85%;
+
+      @media (max-width: $breakpoint) {
+        display: none;
+      }
     }
 
-    @media (max-width: 800px) {
+    &--mobile {
       align-self: center;
+
+      @media (min-width: $breakpoint) {
+        display: none;
+      }
     }
 
     &,
@@ -124,7 +134,7 @@
 }
 
 .c_mobile-menu {
-  @media (min-width: 800px) {
+  @media (min-width: $breakpoint) {
     display: none;
   }
 

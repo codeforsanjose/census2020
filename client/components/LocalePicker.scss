@@ -1,3 +1,5 @@
+$breakpoint: 1200px;
+
 .c_locale-picker {
   display: flex;
   height: 100%;
@@ -7,7 +9,7 @@
   margin: 0 2rem 0 2rem;
   margin-left: auto;
 
-  @media (max-width: 800px) {
+  @media (max-width: $breakpoint) {
     margin-left: auto;
   }
 
@@ -29,7 +31,7 @@
       flex-direction: row;
       height: 100%;
 
-      @media (max-width: 800px) {
+      @media (max-width: $breakpoint) {
         display: none;
       }
     }
@@ -39,7 +41,7 @@
       height: 100%;
       position: relative;
 
-      @media (min-width: 800px) {
+      @media (min-width: $breakpoint) {
         display: none;
       }
     }

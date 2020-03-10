@@ -107,9 +107,7 @@ const CarouselItem = ({ item }) => (
       <h2 className="c_home__overlay__message">
         <FormattedMessage id={item.message} />
       </h2>
-      { window.innerWidth < 800 && (
-        <CensusLink />
-      )}
+      <CensusLink />
     </div>
   </div>
 );
