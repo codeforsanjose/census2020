@@ -488,36 +488,43 @@ The Constitution ensures equal representation for all by empowering the people o
 
 const NONHOHH_QUESTIONS = [
   {
+    label: 'Q1',
     primary: 'components.SampleCensus.primary_question.nonhohh.1',
     secondary: 'components.SampleCensus.secondary_information.nonhohh.1',
     explanation: 'components.SampleCensus.explanation.nonhohh.1'
   },
   {
+    label: 'Q2',
     primary: 'components.SampleCensus.primary_question.nonhohh.2',
     secondary: 'components.SampleCensus.secondary_information.nonhohh.2',
     explanation: 'components.SampleCensus.explanation.nonhohh.2'
   },
   {
+    label: 'Q3',
     primary: 'components.SampleCensus.primary_question.nonhohh.3',
     secondary: 'components.SampleCensus.secondary_information.nonhohh.3',
     explanation: 'components.SampleCensus.explanation.nonhohh.3'
   },
   {
+    label: 'Q4',
     primary: 'components.SampleCensus.primary_question.nonhohh.4',
     secondary: 'components.SampleCensus.secondary_information.nonhohh.4',
     explanation: 'components.SampleCensus.explanation.nonhohh.4'
   },
   {
+    label: 'Q5',
     primary: 'components.SampleCensus.primary_question.nonhohh.5',
     secondary: 'components.SampleCensus.secondary_information.nonhohh.5',
     explanation: 'components.SampleCensus.explanation.nonhohh.5'
   },
   {
+    label: 'Q6',
     primary: 'components.SampleCensus.primary_question.nonhohh.6',
     secondary: 'components.SampleCensus.secondary_information.nonhohh.6',
     explanation: 'components.SampleCensus.explanation.nonhohh.6'
   },
   {
+    label: 'Q7',
     primary: 'components.SampleCensus.primary_question.nonhohh.7',
     secondary: 'components.SampleCensus.secondary_information.nonhohh.7',
     explanation: 'components.SampleCensus.explanation.nonhohh.7'
@@ -553,7 +560,7 @@ const CensusQuestionCard = ({ item, className, index }) => (
       >
         <h2 className="c_sample-census__content__census-questions__card__question">
           <span className="c_sample-census__content__census-questions__card__question__label">
-            {`Q${index + 1}: `}
+            { `${item.label}: `}
           </span>
           <FormattedMessage id={item.primary} />
         </h2>
@@ -670,7 +677,7 @@ export default class SampleCensus extends React.Component {
                     questionPosition: index
                   })}
                 >
-                  { (item.label) ? `${item.label}` : `Q${index + 1}` }
+                  { `${item.label}` }
                 </button>
               </li>
             ))}
