@@ -20,6 +20,7 @@ const immutableMessages = Immutable.fromJS(messages, (key, value) => {
   return isIndexed ? value.toList() : value.toOrderedMap();
 });
 let globalMessageCopy = immutableMessages;
+// const workingCopiesByLocale = immutableMessages.toObject();
 
 const areMessagesEqual = (obj1, obj2) => {
   return Immutable.is(obj1, obj2);
