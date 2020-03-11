@@ -20,7 +20,7 @@ const immutableMessages = Immutable.fromJS(messages, (key, value) => {
   return isIndexed ? value.toList() : value.toOrderedMap();
 });
 let globalMessageCopy = immutableMessages;
-// const workingCopiesByLocale = immutableMessages.toObject();
+const workingCopiesByLocale = immutableMessages.toObject();
 
 const areMessagesEqual = (obj1, obj2) => {
   return Immutable.is(obj1, obj2);
@@ -88,7 +88,7 @@ const TranslationItem = ({ messageId, locale, onMessageChange, workingMessageCop
           ? null
           : (
             <div>
-              English message: {workingMessageCopy.get(messageId)}
+              English message: {workingCopiesByLocale.en.get(messageId)}
             </div>
           )
       }
@@ -121,6 +121,7 @@ TranslationItem.propTypes = {
 };
 
 const TranslationList = ({ currentLocale, filterString }) => {
+  const localeRef = React.useRef(currentLocale);
   const [ workingMessageCopy, setWorkingMessageCopy ] = React.useState(immutableMessages.get(currentLocale));
   const [ showTranslated, setShowTranslated ] = React.useState(true);
   const [ anyLocaleHasChanges, setAnyLocaleHasChanges ] = React.useState(!areMessagesEqual(immutableMessages, globalMessageCopy));
@@ -130,13 +131,18 @@ const TranslationList = ({ currentLocale, filterString }) => {
     setShowTranslated(event.target.checked);
   });
   const handleMessageChanged = React.useCallback((messageId, value) => {
-    setWorkingMessageCopy(workingMessageCopy.set(messageId, value));
+    workingCopiesByLocale[currentLocale] = workingMessageCopy.set(messageId, value);
+    setWorkingMessageCopy(workingCopiesByLocale[currentLocale]);
   });
 
   React.useEffect(() => {
     globalMessageCopy = globalMessageCopy.set(currentLocale, workingMessageCopy);
     const anyLocaleHasChanges = !areMessagesEqual(immutableMessages, globalMessageCopy);
     setAnyLocaleHasChanges(anyLocaleHasChanges);
+    if (currentLocale !== localeRef.current) {
+      setWorkingMessageCopy(workingCopiesByLocale[currentLocale]);
+      localeRef.current = currentLocale;
+    }
   });
 
   const handleDownloadButtonClick = React.useCallback(() => {
