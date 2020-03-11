@@ -20,6 +20,7 @@
     "http-errors": "^1.7.3",
     "immutable": "^4.0.0-rc.12",
     "morgan": "^1.9.1",
+    "per-env": "^1.0.2",
     "react-modal": "^3.11.1",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.8",
