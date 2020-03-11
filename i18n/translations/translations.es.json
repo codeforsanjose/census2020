@@ -81,7 +81,7 @@
   },
   "components.Home.factoids.3.title": {
     "english": "In a hurry, take it to go!",
-    "translation": "¡A toda prisa, tómalo para llevar!"
+    "translation": "¿Tiene prisa, lléveselo?"
   },
   "components.Contact.fields.interest.options.information": {
     "english": "Request more information",
@@ -129,7 +129,7 @@
   },
   "components.Home.carousel.messages.2": {
     "english": "When you respond, we all benefit!",
-    "translation": "Cuando respondes, ¡todos nos beneficiamos!"
+    "translation": "Cuando responde, ¡todos nos beneficiamos!"
   },
   "components.Home.carousel.messages.3": {
     "english": "Answer online, by phone, or by mail!",
@@ -149,7 +149,7 @@
   },
   "components.Home.carsouelItem.title": {
     "english": "The United States 2020 Census",
-    "translation": "El censo 2020 de Estados Unidos"
+    "translation": "El Censo 2020 de Estados Unidos"
   },
   "component.SampleCensus.sectionHeaders.howToAnswer": {
     "english": "How to answer this question",
@@ -328,32 +328,32 @@
     "translation": "Por favor, introduce una dirección de correo electrónico válida"
   },
   "components.Home.top_reasons.item.1": {
-    "english": "It determines our number of seats in the House of Representatives.",
-    "translation": "Determina el número de escaños en la Cámara de Representantes."
+    "english": "Access to affordable housing and medical care.",
+    "translation": "Acceso a vivienda asequible y atención médica."
   },
   "components.Home.top_reasons.item.2": {
-    "english": "It is used to redraw district boundaries (making elections more fair).",
-    "translation": "Redibujar límites del distrito"
+    "english": "Meal programs for children, seniors, and new mothers.",
+    "translation": "Programas de comidas para niños, adultos mayores y nuevas madres."
   },
   "components.Home.top_reasons.item.3": {
-    "english": "It's used to fairly allocate funds to state and local governments (and by other organizations too).",
-    "translation": "Asigna fondos al estado y localidades"
+    "english": "Head Start and Special Education programs.",
+    "translation": "Programas Head Start y de educación especial."
   },
   "components.Home.top_reasons.item.4": {
-    "english": "It assists in infrastructure planning (like schools and transportation).",
-    "translation": "Planificación de la infraestructura"
+    "english": "Funding for emergency services and public safety.",
+    "translation": "Financiamiento para servicios de emergencia y seguridad pública."
   },
   "Compnents.Home.top_reasons.item.5": {
-    "english": "It better enables emergency response planning.",
-    "translation": "Planificación de respuesta a emergencias"
+    "english": "Representation at all levels of government.",
+    "translation": "Representación en todos los niveles de los gobiernos."
   },
   "components.Home.top_reasons.title": {
-    "english": "Top 5 Reasons to Take the Census",
-    "translation": "Las 5 razones principales para realizar el censo"
+    "english": "Top 5 Reasons to Complete the Census",
+    "translation": "¿Principales 5 Razones Para Completar El Censo?"
   },
   "components.Home.factoids.qrCode.headerTitle": {
     "english": "In a hurry, take it to go!",
-    "translation": "¡A toda prisa, tómalo para llevar!"
+    "translation": "¿Tiene prisa, lléveselo?"
   },
   "components.Home.factoids.qrCode.headerMessage": {
     "english": "Take a photo of the image to learn more",
@@ -369,7 +369,7 @@
   },
   "components.Home.factoids.safety.message": {
     "english": "Get the answers to all your questions about why to take the census and how the information will be used.",
-    "translation": "Obtenga las respuestas a todas sus preguntas sobre por qué realizar el censo y cómo se utilizará la información."
+    "translation": "Obtenga las respuestas a todas sus preguntas sobre por qué realizar el Censo y cómo se utilizará la información."
   },
   "components.Home.factoids.shouldIComplete.headerTitle": {
     "english": "Do I take the census?",
@@ -381,7 +381,7 @@
   },
   "components.Home.factoids.shouldIComplete.message": {
     "english": "Learn more about the census questions, and who should be answering the questionnaire.",
-    "translation": "Obtenga más información sobre las preguntas del censo y quién debe responder el cuestionario."
+    "translation": "Obtenga más información sobre las preguntas del censo y quién debe responder la encuesta."
   },
   "components.SampleCensus.primary_question.1": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
@@ -617,7 +617,7 @@
   },
   "components.Home.factoids.2.subtitle": {
     "english": "What will I be asked?",
-    "translation": "¿Qué se me preguntará?"
+    "translation": "¿Qué me preguntarán?"
   },
   "components.Home.factoids.3.subtitle": {
     "english": "Take a photo of the image below to learn more",
@@ -640,8 +640,8 @@
     "translation": "VER ENCUESTA DE MUESTRA"
   },
   "components.Home.top_reasons.item.5": {
-    "english": "It better enables emergency response planning.",
-    "translation": "Planificación de respuesta a emergencias"
+    "english": "Representation at all levels of government.",
+    "translation": "Representación en todos los niveles de los gobiernos."
   },
   "components.SampleCensus.preliminary_button": {
     "english": "Before you begin",
