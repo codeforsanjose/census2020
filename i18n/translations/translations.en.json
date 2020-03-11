@@ -328,27 +328,27 @@
     "translation": "Please enter a valid email address"
   },
   "components.Home.top_reasons.item.1": {
-    "english": "It determines our number of seats in the House of Representatives.",
+    "english": "Access to affordable housing and medical care.",
     "translation": "Access to affordable housing and medical care."
   },
   "components.Home.top_reasons.item.2": {
-    "english": "It is used to redraw district boundaries (making elections more fair).",
+    "english": "Meal programs for children, seniors, and new mothers.",
     "translation": "Meal programs for children, seniors, and new mothers."
   },
   "components.Home.top_reasons.item.3": {
-    "english": "It's used to fairly allocate funds to state and local governments (and by other organizations too).",
+    "english": "Head Start and Special Education programs.",
     "translation": "Head Start and Special Education programs."
   },
   "components.Home.top_reasons.item.4": {
-    "english": "It assists in infrastructure planning (like schools and transportation).",
+    "english": "Funding for emergency services and public safety.",
     "translation": "Funding for emergency services and public safety."
   },
   "Compnents.Home.top_reasons.item.5": {
-    "english": "It better enables emergency response planning.",
+    "english": "Representation at all levels of government.",
     "translation": "Representation at all levels of government."
   },
   "components.Home.top_reasons.title": {
-    "english": "Top 5 Reasons to Take the Census",
+    "english": "Top 5 Reasons to Complete the Census",
     "translation": "Top 5 Reasons to Complete the Census"
   },
   "components.Home.factoids.qrCode.headerTitle": {
@@ -640,7 +640,7 @@
     "translation": "VIEW SAMPLE SURVEY"
   },
   "components.Home.top_reasons.item.5": {
-    "english": "It better enables emergency response planning.",
+    "english": "Representation at all levels of government.",
     "translation": "Representation at all levels of government."
   },
   "components.SampleCensus.preliminary_button": {
