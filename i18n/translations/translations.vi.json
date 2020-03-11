@@ -400,7 +400,7 @@
     "translation": "Tôi sẽ trả lời điều tra dân số"
   },
   "components.SampleCensus.not_hohh_button": {
-    "english": "Someone else will answer the census for me",
+    "english": "Someone will answer for me",
     "translation": "Một người khác sẽ trả lời điều tra dân số cho tôi"
   },
   "components.SampleCensus.secondary_information.2": {
@@ -464,7 +464,7 @@
     "translation": "- [ ] Không, không phải gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha\n- [ ] Vâng, Mexico, Mexico Am., Chicano\n- [ ] Vâng, Puerto Rico\n- [ ] Vâng, Cuba\n- [ ] Có, một nguồn gốc Tây Ban Nha, La tinh hoặc Tây Ban Nha khác - In, ví dụ: Salvadoran, Dominicican, Colombia, Guatemala, Spaniard, Ecuador, v.v.\n[||]"
   },
   "components.SampleCensus.secondary_information.9": {
-    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]",
+    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. \n\n[||]\n\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. \n\n[||]\n\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. \n\n[||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. \n\n[||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. \n\n[||]\n- [ ] Some other race – Print race or origin. \n\n[||]",
     "translation": "* Đánh dấu một hoặc nhiều hộp VÀ in nguồn gốc *\n\n- [ ] Trắng - In, ví dụ: tiếng Đức, tiếng Ailen, tiếng Anh, tiếng Ý, tiếng Lebanon, tiếng Ai Cập, v.v ... [||]\n- [ ] Đen hoặc Châu Phi Am. - In, ví dụ, người Mỹ gốc Phi, Jamaica, Haiti, Nigeria, Ethiopia, Somalia, v.v ... [||]\n- [ ] Người Mỹ bản địa hoặc thổ dân Alaska - Tên in của (các) bộ lạc đã đăng ký hoặc chính, ví dụ, Navajo Nation, Blackfeet Tribe, Maya, Aztec, Bản địa của Chính phủ truyền thống Barrow Inupiat, Cộng đồng Nome Eskimo, v.v. [|| ]\n- [ ] Người Trung Quốc\n- [ ] Tiếng Philipin\n- [ ] Ấn Độ châu Á\n- [ ] Tiếng Việt\n- [ ] Hàn Quốc\n- [ ] Tiếng Nhật\n- [ ] Hawaii bản địa\n- [ ] Samoa\n- [ ] Chamorro\n- [ ] Châu Á khác - In, ví dụ: Pakistan, Campuchia, H'mong, v.v ... [||]\n- [ ] Đảo Thái Bình Dương khác - In, ví dụ, Tongan, Fijian, Marshallese, v.v ... [||]\n- [ ] Một số chủng tộc khác - In chủng tộc hoặc nguồn gốc. [||]"
   },
   "navigation.externalCensusLink": {

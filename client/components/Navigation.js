@@ -106,16 +106,20 @@ export default class Navigation extends React.PureComponent {
         </div>
         <LocalePicker />
         <MobileMenu />
-        { window.innerWidth > 800 && (
-          <CensusLink />
-        )}
+        <CensusLink desktop />
       </nav>
     );
   }
 }
 
-export const CensusLink = () => (
-  <a className="c_navigation__census-link" href="https://census.gov">
+export const CensusLink = ({ desktop }) => (
+  <a
+    className={ classnames(
+      'c_navigation__census-link',
+      { 'c_navigation__census-link--desktop': desktop },
+      { 'c_navigation__census-link--mobile': !desktop }
+    )}
+    href="http://my2020census.gov">
     <FormattedMessage
       id="navigation.externalCensusLink"
       defaultMessage="TAKE THE CENSUS"
@@ -123,6 +127,10 @@ export const CensusLink = () => (
     />
   </a>
 );
+
+CensusLink.propTypes = {
+  desktop: PropTypes.boolean
+};
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);

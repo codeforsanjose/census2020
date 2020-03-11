@@ -103,7 +103,7 @@
 		box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
 		box-sizing: border-box;
 		border-radius: 8px;
-		padding-right: 5px;
+		padding-right: .5rem;
 		max-width: 600px;
 
 		@media (max-width: 800px) {
@@ -113,7 +113,7 @@
 
 		@media (min-width: 800px) and (max-width: 1200px) {
 			width: 380px;
-			height: 380px;
+			min-height: 380px;
 			order: 0;
 		}
 
