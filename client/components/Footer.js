@@ -44,7 +44,7 @@ export class Footer extends React.PureComponent {
           >
             <a
               // TODO: Refactor census link into external constants
-              href="https://census.gov"
+              href="http://my2020census.gov"
               className="c_footer__link"
             >
               <FormattedMessage
