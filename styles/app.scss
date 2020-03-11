@@ -34,3 +34,33 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+
+a {
+  &:focus {
+    outline: none;
+  };
+
+  &[href] {
+    &:focus{
+      outline: none;
+    };
+  }
+}
+
+button {
+  &:not([disabled]) {
+    &:focus{
+      outline: none !important;
+    };
+  };
+}
+
+textarea,
+input {
+  &:not([disabled]) {
+    &:focus {
+      outline: none !important;
+    };
+  }
+}
