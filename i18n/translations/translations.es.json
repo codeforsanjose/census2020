@@ -41,11 +41,11 @@
   },
   "components.FAQ.header": {
     "english": "Frequently Asked Questions",
-    "translation": "Preguntas frecuentes"
+    "translation": "Preguntas Frecuentes"
   },
   "navigation.links.faq": {
     "english": "FAQ",
-    "translation": "Preguntas más frecuentes"
+    "translation": "Preguntas Frecuentes"
   },
   "navigation.links.sampleCensus": {
     "english": "Sample Survey",
@@ -69,7 +69,7 @@
   },
   "components.Footer.links.faq": {
     "english": "FAQ",
-    "translation": "Preguntas más frecuentes"
+    "translation": "Preguntas Frecuentes"
   },
   "components.Footer.links.sampleSurvey": {
     "english": "Sample Survey",
@@ -113,7 +113,7 @@
   },
   "components.Contact.visitFaq.link": {
     "english": "FAQ",
-    "translation": "Preguntas más frecuentes"
+    "translation": "Preguntas Frecuentes"
   },
   "components.Contact.form.title": {
     "english": "Contact Form",
@@ -181,11 +181,11 @@
   },
   "components.FAQ.entries.howCanIComplete.question": {
     "english": "How do I get Counted!",
-    "translation": "¿Cómo puedo completar el censo?"
+    "translation": "¿Cómo me cuentan?"
   },
   "components.FAQ.entries.howCanIComplete.answer": {
     "english": " - You complete the census questionnaire NOW.  [click here] \n - You can return the census form mailed to your home. \n - You can complete the census by phone with a census worker who speaks your language:\n\n**LANGUAGE LINES and TOLL-FREE NUMBERS**\n - English: 844-330-2020\n - Spanish: 844-468-2020\n - Chinese (Mandarin): 844-391-2020\n - Chinese (Cantonese): 844-398-2020\n - Vietnamese: 844-461-2020\n - Korean: 844-392-2020\n - Russian: 844-417-2020\n - Arabic: 844-416-2020\n - Tagalog: 844-478-2020\n - Polish: 844-479-2020\n - French: 844-494-2020\n - Haitian Creole: 844-477-2020\n - Portuguese: 844-474-2020\n - Japanese: 844-460-2020\n - English (Puerto Rico residents): 844-418-2020\n - Spanish (Puerto Rico residents): 844-426-2020\n - Telephone Display Device (TDD): 844-467-2020",
-    "translation": "Hay tres formas de completar la encuesta del Censo: en línea, por teléfono o por correo. Los hogares pueden responder las preguntas en Internet o por teléfono en inglés y en 12 idiomas distintos del inglés."
+    "translation": "- Usted completa el cuestionario del censo AHORA.  [https://my2020census.gov] (https://my2020census.gov)\n- Puede devolver el formulario del censo enviado por correo a su hogar.\n- Puede completar el censo por teléfono con un trabajador del censo que hable su idioma:\n\n**LÍNEA DE IDIOMAS y NÚMERO GRATUITO**\n- Inglés: 844-330-2020\n- Español: 844-468-2020\n- Chino (mandarín): 844-391-2020\n- Chino (cantonés): 844-398-2020\n- Vietnamita: 844-461-2020\n- Coreano: 844-392-2020\n- Ruso: 844-417-2020\n- Árabe: 844-416-2020\n- Tagalo: 844-478-2020\n- Polaco: 844-479-2020\n- Francés: 844-494-2020\n- Criollo Haitiano: 844-477-2020\n- Portugués: 844-474-2020\n- Japonés: 844-460-2020\n- Inglés (residentes de Puerto Rico): 844-418-2020\n- Español (residentes de Puerto Rico): 844-426-2020\n- Dispositivo de telecomunicación (TDD): 844-467-2020"
   },
   "components.FAQ.entries.otherLanguages.question": {
     "english": "I don’t speak English. Will the Census survey be available in other languages?",
@@ -193,23 +193,23 @@
   },
   "components.FAQ.entries.otherLanguages.answer": {
     "english": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese)  Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print. \n\nContact the U.S. Census Bureau at (855) 562-2020.",
-    "translation": "Si. La encuesta en línea está disponible en inglés y otros 12 idiomas (español, chino, vietnamita, coreano, ruso, árabe, tagalo, polaco, francés, criollo haitiano, portugués y japonés); La asistencia telefónica también estará disponible en estos idiomas llamando al (####). La encuesta en papel está disponible en inglés y español. Las guías de idiomas impresas y en video estarán disponibles en 59 idiomas que no sean inglés, incluyendo lenguaje de señas americano, braille y letra grande."
+    "translation": "Si. La encuesta en línea está disponible en inglés y en otros 12 idiomas (español, chino, vietnamita, coreano, ruso, árabe, tagalo, polaco, francés, criollo haitiano, portugués, japonés). Las guías de idiomas impresas y en video estarán disponibles en 59 idiomas diferentes al inglés, incluyendo lenguaje de señas americano, braille y letras grandes. Comuníquese con la Oficina del Censo de EE. UU. al (855) 562-2020."
   },
   "components.FAQ.entries.howToAvoidScams.question": {
     "english": "How can I avoid scams or report suspected fraud?",
-    "translation": "¿Cómo puedo evitar las estafas en línea?"
+    "translation": "¿Cómo puedo evitar estafas o reportar sospechas de fraude? "
   },
   "components.FAQ.entries.howToAvoidScams.answer": {
     "english": "- Census workers will **NEVER** ask for your Social Security Number, bank account or credit card number! \n- Census workers will **NEVER** ask you for money or a donation or contact you on behalf of a political party.\n \nIf you are in doubt about a visitor or suspect fraud, call the U.S. Census Bureau at (855) 562-2020.",
-    "translation": "El phishing es el acto criminal de tratar de obtener su información fingiendo ser una entidad en la que confía. Los correos electrónicos de phishing a menudo lo dirigen a un sitio web que parece real pero falso, y que puede estar infectado con malware.\n\nPara ayudar a protegerse del phishing y otras estafas, recuerde que la Oficina del Censo de EE. UU. Nunca solicitará:\n\n- Su número de seguro social.\n- Su cuenta bancaria o números de tarjeta de crédito.\n- Dinero o donaciones.\n\nAdemás, la Oficina del Censo no se comunicará con usted en nombre de un partido político."
+    "translation": "Los trabajadores del censo **NUNCA** pedirán su número de seguro social, cuenta bancaria o número de tarjeta de crédito. Los trabajadores del censo no le pedirán dinero/donación ni lo contactarán en nombre de un partido político. \n\nSi tiene dudas sobre un visitante o un sospechoso de fraude, llame a la Oficina del Censo de EE. UU. al (800)923-8282."
   },
   "components.FAQ.entries.homeless.question": {
     "english": "I am living in a non-traditional home or don’t have an address, do I count?",
-    "translation": "¿Cómo contará el censo a los residentes sin hogar?"
+    "translation": "Estoy viviendo en una casa no tradicional o no tengo una dirección, ¿cuento?"
   },
   "components.FAQ.entries.homeless.answer": {
     "english": "Yes, you do!  If you or your family is living in a non-traditional home or do not have a usual residence (including if you are experiencing homelessness), you should still answer the census survey. \n\nIf you take it online, choose the option for “did not receive a 12-digit code” and follow the prompts. Or, you can call and complete the census by phone. See \"How do I get Counted!\" below.",
-    "translation": "A fines de marzo de 2020, la Oficina del Censo llevará a cabo la enumeración basada en servicios (SBE). Durante este tiempo, los trabajadores del censo contarán a las personas sin vivienda convencional o personas sin hogar en los lugares donde reciben servicios (por ejemplo, refugios, comedores populares, ubicaciones de furgonetas móviles de comida programadas regularmente, etc.) o en lugares al aire libre previamente identificados donde hay personas que se sabe que duerme, como campamentos, debajo de puentes o en estacionamientos"
+    "translation": "¡Sí, si cuenta! Si usted o su familia viven en un hogar no tradicional o no tienen una residencia habitual (incluso si está experimentando la falta de hogar); elija la opción para \"no recibió un código de 12 dígitos\" y siga las indicaciones O llame y complete el censo por teléfono. Ver \"¿Cómo me cuentan?\" de abajo."
   },
   "email.messages.confirmation.greeting": {
     "english": "Hi {name}",
@@ -249,23 +249,23 @@
   },
   "components.FAQ.entries.whyHaveCensus.answer": {
     "english": "The U.S. Constitution requires the counting of everyone living in the United States every ten years. The census process empowers the people of America by ensuring equal representation for all.\n\nMake sure your voice is heard by counting everyone in your household!",
-    "translation": "Los datos recopilados del Censo se utilizan para garantizar que todos estén igualmente representados en nuestro sistema político y que los recursos del gobierno se asignen de manera justa. Los datos del censo determinan cuántos escaños del Congreso recibe un estado; cuánto financiamiento federal se asignará a las comunidades locales para servicios públicos y necesidades de infraestructura; y proporciona una imagen de los cambios demográficos del país."
+    "translation": "La Constitución de EE. UU. exige contar a todas las personas que viven en los Estados Unidos cada diez años. El proceso del censo empodera a las personas en América al garantizar una representación igual para todos.\n\n¡Asegúrese de que su voz se escuche contando a todos en su hogar!"
   },
   "components.FAQ.entries.whoGetsCounted.question": {
     "english": "Who gets counted?",
-    "translation": "¿Quién se cuenta?"
+    "translation": "¿Quién es contado?"
   },
   "components.FAQ.entries.whoGetsCounted.answer": {
     "english": "Everyone living in the United States must be counted. Make sure you include everyone living and sleeping in your home on your census survey — regardless of age, gender, relationship to you, or citizenship/immigration status.",
-    "translation": "Todos los que viven en los Estados Unidos deben ser contados. Asegúrese de incluir a todos los que viven y duermen en su hogar en su encuesta censal, independientemente de su edad, sexo, relación con usted o estado de ciudadanía / inmigración."
+    "translation": "Todos los que viven en los Estados Unidos deben ser contados. Asegúrese de incluir a todos los que viven y duermen en su hogar en su cuestionario del censo, independientemente de su edad, sexo, relación con usted o estado de ciudadanía/inmigración."
   },
   "components.FAQ.entries.whatTypesOfQuestions.question": {
     "english": "What information is the Census Bureau collecting?",
-    "translation": "¿Qué tipos de preguntas se encuentran en el Censo 2020?"
+    "translation": "¿Qué información está recopilando la Oficina del Censo?"
   },
   "components.FAQ.entries.whatTypesOfQuestions.answer": {
     "english": "You can see all the questions here [Sample Survey](/samplecensus).\nYou will be asked to give basic information about each individual living or staying with you. The questions on Informational Census Questionnaire include:\n-   The total number of people living at your address\n-   If you own or rent your home\n-   Each person’s name, gender, and race/ethnicity\n\nNO QUESTIONS ABOUT CITIZENSHIP OR IMMIGRATION STATUS ARE INCLUDED IN THE CENSUS",
-    "translation": "La encuesta del Censo le pedirá información básica sobre cada hogar, como el número total de personas que viven en su dirección, la propiedad de la vivienda (propia o alquilada), su número de teléfono y los nombres, género, raza / etnia de cada individuo que vive o se queda con tú. Esta información no se compartirá con la Ciudad ni con ninguna otra agencia local, estatal o federal. Para obtener más información sobre lo que se le pedirá en el Censo, vaya a la URL a continuación.\n            \n{enlace}"
+    "translation": "Puede ver todas las preguntas aquí: [Sample Survey](/samplecensus).\n\nSe le pedirá que brinde información básica cobre cada persona que vive o se quede con usted. Las preguntas en el Cuestionario Informativo del Censo incluyen:\n-   El número total de personas que viven en su dirección\n-   Si usted es dueño o alquila su casa\n-   Nombre, género y raza/etnia de cada persona\n\nNO HAY PREGUNTAS SOBRE EL ESTADO DE CIUDADANIA O INMIGRACION INCLUIDAS EN EL CENSO"
   },
   "components.FAQ.entries.whoCountsAsHousehold.question": {
     "english": "Who counts as a “household?”",
@@ -273,31 +273,31 @@
   },
   "components.FAQ.entries.whoCountsAsHousehold.answer": {
     "english": "A household consists of **all** the people - *both related family members and any unrelated people* - who live and sleep in the same “home”. Don’t forget to include renters (including students), foster children, wards, or employees.",
-    "translation": "Un hogar consiste en todas las personas que ocupan una unidad de vivienda, tanto los miembros de la familia relacionados como todas las personas no relacionadas, si las hay, como los inquilinos, los hijos adoptivos, los barrios o los empleados que comparten la vivienda. Para obtener más información sobre con quién contar en su formulario del Censo, vaya a la URL a continuación.\n          \n{enlace}"
+    "translation": "Un hogar está formado por todas las personas, tanto miembros de la familia relacionados como todas las personas no relacionadas, que viven y duermen en el mismo \"hogar\", y no se olviden de incluir inquilinos (incluidos los estudiantes), niños de crianza, tutelas o empleados."
   },
   "components.FAQ.entries.lostCensusId.question": {
     "english": "I don’t have or lost my 12-digit code census. Can I still complete the census?",
-    "translation": "No tengo ni perdí mi identificación del censo. ¿Puedo completar el censo?"
+    "translation": "No tengo o he perdido mi código del censo de 12 dígitos. ¿Puedo completar el censo?"
   },
   "components.FAQ.entries.lostCensusId.answer": {
     "english": "Yes. If you did not receive a 12-digit code census code or misplaced it, you can still complete the online census survey by using your mailing address. If you do not have a residential address, you can still complete the census online **or** call and complete the census by phone.  See \"How do I get Counted!\" below.",
-    "translation": "Si. Si no recibió un código de identificación del censo o lo extravió, aún puede completar la encuesta del censo en línea utilizando su dirección postal. Si no desea responder en línea, puede llamar a Asistencia del cuestionario del censo al (###) para completar la encuesta por teléfono."
+    "translation": "Si. Si no recibió un código del censo de 12 dígitos o lo extravió, aún puede completar la encuesta del censo en línea utilizando su dirección postal. Si no tiene una dirección residencial, aún puede completar el censo en línea O llamar y completar el censo por teléfono. Ver \"¿Cómo me cuentan?\" de abajo."
   },
   "components.FAQ.entries.whatHappensIfNoResponse.question": {
     "english": "Why should I respond?",
-    "translation": "¿Qué sucede si no respondo al censo?"
+    "translation": "¿Por qué debería responder?"
   },
   "components.FAQ.entries.whatHappensIfNoResponse.answer": {
     "english": "Completing the census questionnaire makes a difference for the next ten years! \n\nYour participation ensures:\n- That our community will have access to housing, healthcare, schools, and community programs.\n- That our community is represented fully at all levels of governments.\n- That our community receives our fair share of census-guided funding for programs such as Medi-Cal, SNAP and other nutrition programs, housing assistance, highway improvements, education programs, and emergency preparedness and public safety services.",
-    "translation": "Si su hogar no responde en línea o por teléfono, la Oficina del Censo de EE. UU. Enviará por correo varios recordatorios a su hogar y, en última instancia, le enviará un cuestionario impreso, en inglés y español, para que lo devuelva por correo."
+    "translation": "¡Completar el cuestionario del censo marca la diferencia para los próximos diez años!\n\nSu participación asegura que nuestra comunidad tendrá acceso a vivienda, atención médica, escuelas y programas comunitarios. Su participación garantiza que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba una parte justa de los fondos guiados por el Censo para programas como Medi-Cal, SNAP y otros programas de nutrición, asistencia de vivienda, mejoras de carreteras, programas educativos y preparación para emergencias y servicios de seguridad pública."
   },
   "components.FAQ.entries.whatHappensIfNoResponseAtAll.question": {
     "english": "What happens if I don’t respond?",
-    "translation": "¿Qué sucede si no respondo en absoluto al censo?"
+    "translation": "¿Qué pasa si no respondo?"
   },
   "components.FAQ.entries.whatHappensIfNoResponseAtAll.answer": {
     "english": "Ultimately, fewer dollars will be allocated to programs that you or your family might rely on, such as student loans, SNAP, Medi-Cal, WIC, housing vouchers, school breakfast and lunch programs, special education, career services and training, senior nutrition, and a number of community and transportation development programs.\n\nMore immediately, if your household fails to respond online or by telephone, the U.S. Census Bureau will mail you a printed questionnaire, in English and Spanish, for you to return by mail. \n\nIf you don’t respond to the census by the end of April, a census worker will visit your home to ask you all the same survey questions that will appear in the online version of the Census. \n\nDo your part to make sure everyone is counted in your household!",
-    "translation": "Si su hogar no responde al Censo en línea, por teléfono o por correo a fines de abril de 2020, la Oficina del Censo de EE. UU. Enviará a un trabajador del Censo, conocido como enumerador, a su dirección para ayudarlo a completar la encuesta. Para evitar la visita de un trabajador del censo, complete la encuesta del censo por su cuenta."
+    "translation": "En última instancia, se asignarán menos dólares a los programas en los que usted y su familia pueden confiar, tales como préstamos para estudiantes, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, servicios y capacitación profesional, Nutrición para personas mayores y una serie de programas de desarrollo comunitario y de transporte.\n\nMás inmediatamente, si su hogar no responde en línea o por teléfono, la Oficina del Censo de EE. UU. le enviará un cuestionario impreso, en inglés y español, para que lo devuelva por correo. Si no responde al censo a fines de abril, un trabajador del censo visitará su hogar para hacerle las mismas preguntas de la encuesta que aparecerán en la versión en línea del Censo. Haga su parte para asegurarse de que todos se cuenten en su hogar."
   },
   "components.FAQ.entries.isCensusSafe.question": {
     "english": "Is the Census safe?",
@@ -305,23 +305,23 @@
   },
   "components.FAQ.entries.isCensusSafe.answer": {
     "english": "The Census Bureau is required by law to protect and keep your information confidential. Your responses can **only** be used by the U.S. Census Bureau to produce statistics. \n\nLearn more about your protection under Title 13 of the U.S. Code to keep your information confidential.",
-    "translation": "Según la ley del censo federal, sus respuestas se mantienen confidenciales y solo pueden ser utilizadas por la Oficina del Censo de los EE. UU. Para producir estadísticas."
+    "translation": "La Oficina del Censo está obligada por ley a proteger y mantener su información confidencial. Sus respuestas **solo** pueden ser utilizadas por la Oficina del Censo de EE. UU. para producir estadísticas. Obtenga más información sobre su protección bajo el Título 13 del Código de EE. UU para mantener su información confidencial."
   },
   "components.FAQ.entries.canOtherAgenciesAccess.question": {
     "english": "Can another government agency access my census information?",
-    "translation": "¿Puede otra agencia gubernamental acceder a mi información censal?"
+    "translation": "¿Puede otra agencia gubernamental acceder mi información en el censo?"
   },
   "components.FAQ.entries.canOtherAgenciesAccess.answer": {
     "english": "All identifiable information about you, your home, and the people in your household will not be released to  **anyone**; including your landlord, the City of San José, the Internal Revenue Service (IRS), Immigration and Customs Enforcement (ICE), or law enforcement. The Census Bureau is required by law to protect and keep your information confidential",
-    "translation": "No. El Título 13 del Código de EE. UU. Requiere que su información se mantenga confidencial y evita que sus respuestas sean utilizadas en su contra por cualquier agencia gubernamental, incluidas las fuerzas del orden público, el Departamento de Seguridad Nacional o el Servicio de Inmigración y Control de Aduanas de EE. UU. Todos los empleados de la Oficina del Censo prestan juramento de privacidad y juran de por vida para proteger la confidencialidad de los datos. La multa por divulgación ilegal es una multa de hasta $ 250,000, prisión de hasta 5 años, o ambas."
+    "translation": "Toda la información identificable sobre usted, su hogar y las personas de su hogar no se divulgará a  **nadie**; incluido su arrendador, la Ciudad de San José, el Servicio de Impuestos Internos (IRS), el Servicio de Inmigración y Control de Aduanas (ICE) o la policía. La Oficina del Censo está obligada por ley a proteger y mantener su información confidencial."
   },
   "components.FAQ.entries.howToIdentifyCensusWorker.question": {
     "english": "How do I identify an official census worker in person?",
-    "translation": "¿Cómo identifico personalmente a un trabajador del censo oficial?"
+    "translation": "¿Cómo identifico personalmente a un trabajador oficial del censo?"
   },
   "components.FAQ.entries.howToIdentifyCensusWorker.answer": {
     "english": "Every census worker will have an ID badge, with their photograph, a Department of Commerce watermark, and an expiration date. They may be carrying a Census Bureau phone or a laptop, plus a bag with a Census Bureau logo. \n\nCensus workers will **NEVER** ask for your Social Security Number, bank account, or credit card number. Census workers will not ask you for money or a donation or contact you on behalf of a political party. \n\nIf you are in doubt about a visitor or suspect fraud, call the U.S. Census Bureau at (855) 562-2020.\n",
-    "translation": "Si alguien visita su hogar para recopilar una respuesta para el Censo 2020, hay pasos que puede seguir para verificar su identidad:\n              \n  Primero, verifique para asegurarse de que tengan una credencial de identificación válida, con su fotografía, una marca de agua del Departamento de Comercio y una fecha de vencimiento.\n  Tenga en cuenta que pueden llevar un teléfono de la Oficina del Censo o una computadora portátil, además de una bolsa con el logotipo de la Oficina del Censo.\n  Si aún tiene preguntas, llame al 855-562-2020 y presione la opción 3 para hablar con un representante local de la Oficina del Censo.\n  \n  Recuerde que la Oficina del Censo de EE. UU. Nunca solicitará:\n  \n  - Su número de seguro social.\n  - Su cuenta bancaria o números de tarjeta de crédito.\n  - Dinero o donaciones.\n  \n  Además, la Oficina del Censo no se comunicará con usted en nombre de un partido político."
+    "translation": "Cada trabajador del censo tendrá una credencial de identificación, con su fotografía, una marca de agua del Departamento de Comercio de EE. UU. Los trabajadores del censo **NUNCA** pedirán su número de seguro social, cuenta bancaria o número de tarjeta de crédito.  Los trabajadores del censo no le pedirán dinero/donación ni lo contactarán en nombre de un partido político.\n\nSi tiene dudas sobre un visitante o un sospechoso de fraude, llame a la Oficina del Censo de EE. UU. al (800)923-8282."
   },
   "components.Contact.emailValidation": {
     "english": "Please enter a valid email address",
@@ -400,7 +400,7 @@
     "translation": "Contestaré el censo"
   },
   "components.SampleCensus.not_hohh_button": {
-    "english": "Someone else will answer the census for me",
+    "english": "Someone will answer for me",
     "translation": "Alguien más responderá el censo por mí."
   },
   "components.SampleCensus.secondary_information.2": {
@@ -464,7 +464,7 @@
     "translation": "- [ ] No, no de origen hispano, latino o español\n- [ ] Sí, mexicano, mexicano am., Chicano\n- [ ] Sí, puertorriqueño\n- [ ] Sí, cubano\n- [ ] Sí, otro origen hispano, latino o español - Imprimir, por ejemplo, salvadoreño, dominicano, colombiano, guatemalteco, español, ecuatoriano, etc.\n[||]"
   },
   "components.SampleCensus.secondary_information.9": {
-    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. [||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. [||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. [||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. [||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. [||]\n- [ ] Some other race – Print race or origin. [||]",
+    "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. \n\n[||]\n\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. \n\n[||]\n\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. \n\n[||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. \n\n[||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. \n\n[||]\n- [ ] Some other race – Print race or origin. \n\n[||]",
     "translation": "* Marque una o más cajas e imprima los orígenes *\n\n- [ ] Blanco - Imprimir, por ejemplo, alemán, irlandés, inglés, italiano, libanés, egipcio, etc. [||]\n- [ ] Am negro o africano. - Imprimir, por ejemplo, afroamericano, jamaicano, haitiano, nigeriano, etíope, somalí, etc. [||]\n- [ ] Indio americano o nativo de Alaska - Escriba el nombre de la tribu inscrita o principal, por ejemplo, Nación Navajo, Tribu Pies Negros, Maya, Azteca, Pueblo Tradicional del Gobierno Tradicional Inupiat de la Aldea Barrow, Comunidad Esquimal Nome, etc. [|| ]\n- [ ] chino\n- [ ] filipino\n- [ ] Indio asiático\n- [ ] vietnamita\n- [ ] Coreano\n- [ ] Japonés\n- [ ] Nativo de Hawai\n- [ ] samoano\n- [ ] Chamorro\n- [ ] Otros asiáticos - Imprimir, por ejemplo, paquistaní, camboyano, hmong, etc. [||]\n- [ ] Otros isleños del Pacífico - Imprimir, por ejemplo, tongano, fiyiano, mariscal, etc. [||]\n- [ ] Alguna otra raza - Imprimir raza u origen. [||]"
   },
   "navigation.externalCensusLink": {
