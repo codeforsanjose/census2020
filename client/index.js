@@ -35,8 +35,27 @@ class WrappedApp extends React.PureComponent {
   }
 }
 
+const handleTabbing = (e) => {
+  if (e.keyCode === 9) { //user has started tabbing - add a class to body to alter :focus styles
+    document.body.classList.add('user-is-tabbing')
+    window.removeEventListener('keydown', handleTabbing)
+  }
+}
+
+const resetTabbingFlag = (e) => {
+  console.log('clicking')
+  if (document.body.classList.contains('user-is-tabbing')) {
+    document.body.classList.remove('user-is-tabbing')
+    window.addEventListener('keydown', handleTabbing)
+  }
+}
+
 const render = () => {
+  window.addEventListener('keydown', handleTabbing )
+  
+  window.addEventListener('mousedown', resetTabbingFlag )
   // This is where we can insert routing logic
+
   ReactDOM.render(
     (<WrappedApp />),
     document.getElementById('app-container')
