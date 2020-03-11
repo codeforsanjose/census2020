@@ -329,27 +329,27 @@
   },
   "components.Home.top_reasons.item.1": {
     "english": "It determines our number of seats in the House of Representatives.",
-    "translation": "It determines our number of seats in the House of Representatives."
+    "translation": "Access to affordable housing and medical care."
   },
   "components.Home.top_reasons.item.2": {
     "english": "It is used to redraw district boundaries (making elections more fair).",
-    "translation": "It is used to redraw district boundaries (making elections more fair)."
+    "translation": "Meal programs for children, seniors, and new mothers."
   },
   "components.Home.top_reasons.item.3": {
     "english": "It's used to fairly allocate funds to state and local governments (and by other organizations too).",
-    "translation": "It's used to fairly allocate funds to state and local governments (and by other organizations too)."
+    "translation": "Head Start and Special Education programs."
   },
   "components.Home.top_reasons.item.4": {
     "english": "It assists in infrastructure planning (like schools and transportation).",
-    "translation": "It assists in infrastructure planning (like schools and transportation)."
+    "translation": "Funding for emergency services and public safety."
   },
   "Compnents.Home.top_reasons.item.5": {
     "english": "It better enables emergency response planning.",
-    "translation": "It better enables emergency response planning."
+    "translation": "Representation at all levels of government."
   },
   "components.Home.top_reasons.title": {
     "english": "Top 5 Reasons to Take the Census",
-    "translation": "Top 5 Reasons to Take the Census"
+    "translation": "Top 5 Reasons to Complete the Census"
   },
   "components.Home.factoids.qrCode.headerTitle": {
     "english": "In a hurry, take it to go!",
@@ -641,7 +641,7 @@
   },
   "components.Home.top_reasons.item.5": {
     "english": "It better enables emergency response planning.",
-    "translation": "It better enables emergency response planning."
+    "translation": "Representation at all levels of government."
   },
   "components.SampleCensus.preliminary_button": {
     "english": "Before you begin",
