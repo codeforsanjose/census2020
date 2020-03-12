@@ -38,6 +38,15 @@
     &__phone {
       @include contact-link('phone');
     }
+
+    &__social-links {
+      line-height: 1.5rem;
+      font-size: 1.1rem;
+
+      a {
+        color: white;
+      }
+    }
   }
 
   &__nav-links {

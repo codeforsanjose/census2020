@@ -1,9 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, defineMessages} from 'react-intl';
+import { FormattedMarkdownMessage } from './FormattedMarkdownMessage'
 
 import * as logo from '../images/CityOfSanJose_logo_white.png';
 import './Footer.scss';
+
+defineMessages({
+  socialMediaLinks: {
+    id: 'components.Footer.contactUs.socialLinks',
+    defaultMessage: `**Stay Informed!** Follow us on [Facebook](https://www.facebook.com/SJcensus/), [Instagram](https://www.instagram.com/sjcensus/), and Twitter @cityofsanjose  
+    #SJcensus #census2020 #2020census  
+    `,
+    description: 'Links for City of San Jose social media'
+  }
+})
 
 export class Footer extends React.PureComponent {
   render () {
@@ -35,6 +46,11 @@ export class Footer extends React.PureComponent {
           >
             (408) 535-5602
           </a>
+          <p className="c_footer__contact-us__social-links">
+            <FormattedMarkdownMessage
+              id="components.Footer.contactUs.socialLinks">
+            </FormattedMarkdownMessage>
+          </p>
         </div>
         <ul
           className="c_footer__nav-links"

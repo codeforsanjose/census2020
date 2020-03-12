@@ -758,5 +758,10 @@
     "id": "components.SampleCensus.answerFormat",
     "description": "Text that labels the answer format box on the sample survey",
     "defaultMessage": "Answer format:"
+  },
+  "components.Footer.contactUs.socialLinks": {
+    "id": "components.Footer.contactUs.socialLinks",
+    "description": "Links for City of San Jose social media",
+    "defaultMessage": "**Stay Informed!** Follow us on [Facebook](https://www.facebook.com/SJcensus/), [Instagram](https://www.instagram.com/sjcensus/), and Twitter @cityofsanjose  \n    #SJcensus #census2020 #2020census"
   }
 }
