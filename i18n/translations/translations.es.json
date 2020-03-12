@@ -385,11 +385,11 @@
   },
   "components.SampleCensus.primary_question.1": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": "¿Cuántas personas vivían o se hospedaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
+    "translation": "¿Cuántas personas vivían o se alojaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
   },
   "components.SampleCensus.secondary_information.1": {
     "english": "Number of people=\n\n[|Enter number here|]",
-    "translation": "Número de personas = [| Ingrese el número aquí |]"
+    "translation": "Número de personas\n\n[|  |]"
   },
   "components.SampleCensus.primary_question.2": {
     "english": "Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?",
@@ -405,7 +405,7 @@
   },
   "components.SampleCensus.secondary_information.2": {
     "english": "*Mark all that apply*\n\n- [ ] Children, related or unrelated, such as newborn babies, grandchildren, or foster children\n- [ ] Relatives, such as adult children, cousins, or in-laws\n- [ ] Nonrelatives, such as roommates or live-in babysitters\n- [ ] People staying here temporarily\n- [ ] No additional people",
-    "translation": "*Marque todo lo que corresponda*\n\n- [ ] Niños, relacionados o no relacionados, como recién nacidos, nietos o hijos adoptivos\n- [ ] Familiares, como hijos adultos, primos o suegros\n- [ ] No familiares, como compañeros de cuarto o niñeras que viven\n- [ ] Personas que se quedan aquí temporalmente\n- [ ] No hay personas adicionales"
+    "translation": "*Marque todo lo que corresponda*\n- [ ] Niños, relacionados o no relacionados, como bebés recién nacidos, nietos, hijos de crianza.\n- [ ] Parientes, como hijos adultos, primos o suegro, cuñado, nuera, yerno\n- [ ] No parientes, como compañeros de cuarto o niñeras internas\n- [ ] Personas que se quedan aquí temporalmente\n- [ ] No hay personas adicionales"
   },
   "components.SampleCensus.primary_question.3": {
     "english": "Is this house, apartment, or mobile home:",
@@ -413,27 +413,27 @@
   },
   "components.SampleCensus.secondary_information.3": {
     "english": "Mark ONE box.\n- [ ] Opposite-sex husband/wife/spouse\n- [ ] Opposite-sex unmarried partner\n- [ ] Same-sex husband/wife/spouse\n- [ ] Same-sex unmarried partner\n- [ ] Biological son or daughter\n- [ ] Adopted son or daughter\n- [ ] Stepson or stepdaughter\n- [ ] Brother or sister\n- [ ] Father or mother\n- [ ] Grandchild\n- [ ] Parent-in-law\n- [ ] Son-in-law or daughter-in-law\n- [ ] Other relative\n- [ ] Roommate or housemate\n- [ ] Foster child\n- [ ] Other nonrelative",
-    "translation": "* Marque UNA casilla *\n\n- [ ] ¿Es propiedad de usted o alguien en este hogar con una hipoteca o préstamo? Incluye préstamos con garantía hipotecaria.\n- [ ] Propiedad de usted o de alguien en este hogar gratis y sin pagar (sin una hipoteca o préstamo)?\n- [ ] Alquilado?\n- [ ] ¿Ocupado sin pago de alquiler?"
+    "translation": "_Marque UNA casilla_\n\n- [ ] ¿Propiedad suya o de alguien en el hogar con una hipoteca o préstamo? _Incluye préstamos con garantía hipotecaria._\n- [ ] ¿Propiedad suya o de alguien en este hogar libre y sin deuda (sin una hipoteca o préstamo)?\n- [ ] ¿Alquilada?\n- [ ] ¿Ocupado sin pago de alquiler?"
   },
   "components.SampleCensus.primary_question.4": {
     "english": "What is your telephone number?",
-    "translation": "¿Cuál es tu número de teléfono?"
+    "translation": "¿Cuál es su número de teléfono?"
   },
   "components.SampleCensus.secondary_information.4": {
     "english": "Telephone Number = \n\n[|Enter telephone number here|]",
-    "translation": "Número de teléfono = [| Ingrese el número de teléfono aquí |]"
+    "translation": "Número de teléfono\n\n[| |]"
   },
   "components.SampleCensus.primary_question.5": {
     "english": "Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not live here, start by listing any adult living here as Person 1. What is Person 1's name?",
-    "translation": "Proporcione información para cada persona que vive aquí. Si hay alguien que vive aquí que paga el alquiler o es propietario de esta residencia, comience enumerándolo como Persona 1. Si el propietario o la persona que paga el alquiler no vive aquí, comience enumerando a cualquier adulto que viva aquí como Persona 1 ¿Cuál es el nombre de la persona 1?"
+    "translation": "Proporcione información para cada persona que vive aquí. Si hay alguien que vive aquí que paga el alquiler o es propietario de esta residencia, comience enumerándolo como Persona 1. Si el propietario o la persona que paga el alquiler no vive aquí, comience enumerando a cualquier adulto que viva aquí como Persona 1."
   },
   "components.SampleCensus.secondary_information.5": {
     "english": "First Name = \n\n[||] \n\nLast Name(s) = \n\n[||]",
-    "translation": "Nombre = [||] Apellido (s) = [||]"
+    "translation": "Nombre de pila\n\n[||]\n\nApellido(s)\n\n[||]"
   },
   "components.SampleCensus.primary_question.6": {
     "english": "What is Person 1’s sex?",
-    "translation": "¿Cuál es el sexo de la persona 1?"
+    "translation": "¿Cuál es el sexo de la Persona 1?"
   },
   "components.SampleCensus.primary_question.7": {
     "english": "What is Person 1’s age and what is Person 1’s date of birth?",
@@ -441,11 +441,11 @@
   },
   "components.SampleCensus.primary_question.8": {
     "english": "Is Person 1 of Hispanic, Latino, or Spanish origin?",
-    "translation": "¿La persona 1 es de origen hispano, latino o español?"
+    "translation": "¿La Persona 1 es de origen hispano, latino o español?"
   },
   "components.SampleCensus.primary_question.9": {
     "english": "What is Person 1’s race?",
-    "translation": "¿Cuál es la raza de la persona 1?"
+    "translation": "¿Cuál es la raza de la Persona 1?"
   },
   "components.SampleCensus.primary_question.10": {
     "english": "This is an ipsum question",
@@ -453,19 +453,19 @@
   },
   "components.SampleCensus.secondary_information.6": {
     "english": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female",
-    "translation": "* Marque UNA casilla *\n\n- [ ] Masculino\n- [ ] Mujer"
+    "translation": "*Marque UNA casilla*\n- [ ] Masculino\n- [ ] Femenino"
   },
   "components.SampleCensus.secondary_information.7": {
     "english": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = \n\n[||] years\n\nMonth = \n\n[||] \n\nDay = \n\n[||] \n\nYear of birth = \n\n[||]",
-    "translation": "* Para bebés de menos de 1 año de edad, no escriba la edad en meses. Escriba 0 como la edad. *\n\nEdad el 1 de abril de 2020 = [||] años\nMes = [||] Día = [||] Año de nacimiento = [||]"
+    "translation": "*Para bebés de menos de 1 año, no escribe la edad en meses. Escriba 0 como la edad.*\n\nEdad el 1 de abril de 2020 \n\n[||]\n\nAños\n\n[||]\n\nMes\n\n[||]\n\nDía \n\n[||]\n\nAño de nacimiento \n\n[||]"
   },
   "components.SampleCensus.secondary_information.8": {
     "english": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban\n- [ ] Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominicican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc.\n[||]",
-    "translation": "- [ ] No, no de origen hispano, latino o español\n- [ ] Sí, mexicano, mexicano am., Chicano\n- [ ] Sí, puertorriqueño\n- [ ] Sí, cubano\n- [ ] Sí, otro origen hispano, latino o español - Imprimir, por ejemplo, salvadoreño, dominicano, colombiano, guatemalteco, español, ecuatoriano, etc.\n[||]"
+    "translation": "_Marque una o más casillas y escriba los orígenes._\n\n- [ ] No, no de origen hispano, latino o español\n- [ ] Sí, mexicano, mexicano americano, chicano\n- [ ] Sí, puertorriqueño\n- [ ] Sí, cubano\n- [ ] Sí, otro origen hispano, latino o español - _Imprimir, por ejemplo, salvadoreño, dominicano, colombiano, guatemalteco, español, ecuatoriano, etc._\n\n[||]"
   },
   "components.SampleCensus.secondary_information.9": {
     "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. \n\n[||]\n\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. \n\n[||]\n\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. \n\n[||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. \n\n[||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. \n\n[||]\n- [ ] Some other race – Print race or origin. \n\n[||]",
-    "translation": "* Marque una o más cajas e imprima los orígenes *\n\n- [ ] Blanco - Imprimir, por ejemplo, alemán, irlandés, inglés, italiano, libanés, egipcio, etc. [||]\n- [ ] Am negro o africano. - Imprimir, por ejemplo, afroamericano, jamaicano, haitiano, nigeriano, etíope, somalí, etc. [||]\n- [ ] Indio americano o nativo de Alaska - Escriba el nombre de la tribu inscrita o principal, por ejemplo, Nación Navajo, Tribu Pies Negros, Maya, Azteca, Pueblo Tradicional del Gobierno Tradicional Inupiat de la Aldea Barrow, Comunidad Esquimal Nome, etc. [|| ]\n- [ ] chino\n- [ ] filipino\n- [ ] Indio asiático\n- [ ] vietnamita\n- [ ] Coreano\n- [ ] Japonés\n- [ ] Nativo de Hawai\n- [ ] samoano\n- [ ] Chamorro\n- [ ] Otros asiáticos - Imprimir, por ejemplo, paquistaní, camboyano, hmong, etc. [||]\n- [ ] Otros isleños del Pacífico - Imprimir, por ejemplo, tongano, fiyiano, mariscal, etc. [||]\n- [ ] Alguna otra raza - Imprimir raza u origen. [||]"
+    "translation": "_Marque una o más cajas e imprima los orígenes._\n- [ ] Blanco\n\n_Imprimir, por ejemplo, alemán, irlandés, inglés, italiano, libanés, egipcio, etc._ \n\n[||]\n- [ ] Negro o africano americano.\n\n_Imprima, por ejemplo, africano americano, jamaicano, haitiano, nigeriano, etíope, somalí, etc._\n\n[||]\n- [ ] Indio americano o nativo de Alaska\n\n_Imprima el nombre de la tribu (s) inscrita o principal, por ejemplo, Nación Navajo, Tribu Blackfeet, Maya, Azteca, Gobierno Tradicional del Pueblo Nativo de Barrow Inupiat, Comunidad esquimal de Nome, etc._\n\n[||]\n- [ ] Chino\n- [ ] Filipino\n- [ ] Indio asiático\n- [ ] Vietnamita\n- [ ] Coreano\n- [ ] Japonés\n- [ ] Hawaiano nativo\n- [ ] Samoano\n- [ ] Chamorro\n- [ ] Otros asiáticos\n\n_Imprimir, por ejemplo, paquistaní, camboyano, hmong, etc._ \n\n[||]\n- [ ] Otros isleños del Pacífico\n\n_Imprimir, por ejemplo, tongano, fiyiano, mariscal, etc._\n\n[||]\n- [ ] Alguna otra raza\n\n_Imprimir raza u origen._\n\n[||]"
   },
   "navigation.externalCensusLink": {
     "english": "TAKE THE CENSUS",
@@ -473,23 +473,23 @@
   },
   "components.SampleCensus.explanation.1": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": "Incluya a todos los que viven y duermen en su hogar en su cuestionario del censo, independientemente de su edad, sexo, relación con usted o estado de ciudadanía / inmigración. No olvide incluir inquilinos (incluidos estudiantes), niños de crianza, barrios o empleados.\n\nLa Constitución garantiza una representación equitativa para todos al empoderar a la gente de América a través del proceso del censo: el recuento de todos los que viven en los Estados Unidos cada diez años. Su participación asegura que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba su parte justa de fondos guiados por el censo, a través de programas como préstamos estudiantiles, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, Servicios de carrera y capacitación, nutrición para personas mayores y programas de desarrollo comunitario y de transporte."
+    "translation": "Incluya a todas las personas que viven y duermen en su hogar en su cuestionario del censo, independientemente de su edad, sexo, relación con usted o estado de ciudadanía/inmigración. No olvide incluir inquilinos (incluidos estudiantes), niños de crianza, tutelas o empleados.\n\nLa Constitución garantiza una representación equitativa para todos al empoderar a la gente de Estados Unidos a través del proceso del censo: el recuento de todos los que viven en los Estados Unidos cada diez años. Su participación asegura que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba su parte justa de fondos guiados por el censo, a través de programas como préstamos estudiantiles, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, Servicios de carrera y capacitación, Nutrición para personas mayores y programas de desarrollo comunitario y de transporte.\n\nLa Constitución garantiza una representación equitativa para todos al empoderar a la gente de América a través del proceso del censo: el recuento de todos los que viven en los Estados Unidos cada diez años. Su participación asegura que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba su parte justa de fondos guiados por el censo, a través de programas como préstamos estudiantiles, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, Servicios de carrera y capacitación, nutrición para personas mayores y programas de desarrollo comunitario y de transporte."
   },
   "components.SampleCensus.explanation.2": {
     "english": "The Census Bureau’s goal is to count people once, and only once in the right place according to where they live on Census Day. This question ensures that _everyone_ living at an address is counted, including infants and children under 5, who are one of the largest undercounted groups.  \n\nHelp ensure your child or grandchild’s early childhood education program or school meal program is fully funded by including them in your household.",
-    "translation": "El objetivo de la Oficina del Censo es contar a las personas una vez, y solo una vez en el lugar correcto de acuerdo con el lugar donde viven el Día del Censo. Esta pregunta garantiza que se cuenta a todos los que viven en una dirección, incluidos los bebés y niños menores de 5 años, que son uno de los grupos más grandes que no cuentan.\n\nAyude a garantizar que el programa de educación de la primera infancia de su hijo o nieto o el programa de comidas escolares estén totalmente financiados al incluirlos en su hogar."
+    "translation": "El objetivo de la Oficina del Censo es contar a las personas una vez, y solo una vez en el lugar correcto de acuerdo con el lugar donde viven el Día del Censo. Esta pregunta garantiza que se cuente a todos los que viven en una dirección, incluidos los bebés y niños menores de 5 años, que son uno de los grupos menos contados más grandes. Ayude a garantizar que el programa de educación de la primera infancia de su hijo o nieto o el programa de comidas escolares estén totalmente financiados al incluirlos en su hogar."
   },
   "components.SampleCensus.explanation.3": {
     "english": "The Census Bureau asks about whether a home is owned or rented to create statistics about homeownership and renters. Homeownership rates serve as an indicator of a community’s economic strength.  \n\nThe Federal Government, as well as State and Local Governments and businesses, use this information to make planning decisions that can bring new businesses, hospitals, or housing to your neighborhood.",
-    "translation": "La Oficina del Censo pregunta si una casa es propiedad o está alquilada para crear estadísticas sobre la propiedad de la vivienda y los inquilinos. Las tasas de propiedad de vivienda sirven como un indicador de la fortaleza económica de una comunidad.\n\nEl Gobierno Federal, así como los gobiernos estatales y locales y las empresas, utilizan esta información para tomar decisiones de planificación que pueden traer nuevos negocios, hospitales o viviendas a su vecindario."
+    "translation": "La Oficina del Censo pregunta si una casa es propiedad o está alquilada para crear estadísticas sobre la propiedad de la vivienda y los inquilinos. Las tasas de propiedad de vivienda sirven como un indicador de la fortaleza económica de una comunidad. \n\nEl Gobierno Federal, así como los gobiernos estatales y locales y las empresas, utilizan esta información para tomar decisiones de planificación que pueden traer nuevos negocios, hospitales o viviendas a su vecindario."
   },
   "components.SampleCensus.explanation.4": {
     "english": "The Census Bureau asks for a phone number in case it needs to contact you. They will _never_ share your number and will _only_ contact you if needed for official Census Bureau business.",
-    "translation": "La Oficina del Censo solicita un número de teléfono en caso de que necesite contactarlo. Nunca compartirán su número y solo se comunicarán con usted si es necesario para asuntos oficiales de la Oficina del Censo."
+    "translation": "La Oficina del Censo solicita un número de teléfono en caso de que necesite contactarlo. _Nunca_ compartirán su número y _solo_ se comunicarán con usted si es necesario para asuntos oficiales de la Oficina del Censo."
   },
   "components.SampleCensus.explanation.5": {
     "english": "The Census Bureau asks for names to ensure everyone in the house is counted. This helps you make sure you have included everyone living and sleeping in your home.  It is easy to skip someone by accident, especially in large households.",
-    "translation": "La Oficina del Censo solicita nombres para asegurarse de que todos en la casa sean contados. Esto le ayuda a asegurarse de incluir a todos los que viven y duermen en su hogar. Es fácil saltear a alguien por accidente, especialmente en hogares grandes."
+    "translation": "La Oficina del Censo solicita nombres para asegurarse de que todos en la casa sean contados. Esto le ayuda a asegurarse de incluir a todos los que viven y duermen en su hogar. Es fácil omitir a alguien por accidente, especialmente en hogares grandes."
   },
   "components.SampleCensus.explanation.6": {
     "english": "The Census Bureau asks about the gender of each person for statistical purposes.  The State and Federal government use this information in planning and funding programs, and evaluating programs and policies to ensure they fairly and equitably serve the needs of both men and women.",
@@ -497,15 +497,15 @@
   },
   "components.SampleCensus.explanation.7": {
     "english": "The Census Bureau asks about age and date of birth to understand the size and characteristics of different age groups in your neighborhood.  Local, state, tribal, and federal agencies use age information to plan and fund government programs that provide assistance or services for specific age groups, such as children, working-age adults, women of childbearing age, and elders.",
-    "translation": "La Oficina del Censo pregunta sobre la edad y la fecha de nacimiento para comprender el tamaño y las características de los diferentes grupos de edad en su vecindario. Las agencias locales, estatales, tribales y federales utilizan información sobre la edad para planificar y financiar programas gubernamentales que brindan asistencia o servicios para grupos de edad específicos, como niños, adultos en edad laboral, mujeres en edad fértil y ancianos."
+    "translation": "La Oficina del Censo pregunta sobre la edad y la fecha de nacimiento para comprender el tamaño y las características de los diferentes grupos de edad en su vecindario. Las agencias locales, estatales, tribales y federales utilizan la información sobre la edad para planificar y financiar programas gubernamentales que brindan asistencia o servicios para grupos de edad específicos, como niños, adultos en edad laboral, mujeres en edad fértil y ancianos."
   },
   "components.SampleCensus.explanation.8": {
     "english": "The Census Bureau asks whether a person is of Hispanic, Latino or Spanish origin to create statistics about this ethnic group. The information collected in this question is used by Government agencies and community groups in evaluating programs and ensuring compliance with anti-discrimination provisions, such as under the Voting Rights Act and the Civil Rights Act.\n\n**You will need to answer BOTH Question 8 about Hispanic origin and Question 9 about race. For this census, Hispanic origins are not races.**",
-    "translation": "La Oficina del Censo pregunta si una persona es de origen hispano, latino o español para crear estadísticas sobre este grupo étnico. Las agencias gubernamentales y los grupos comunitarios utilizan la información recopilada en esta pregunta para evaluar los programas y garantizar el cumplimiento de las disposiciones contra la discriminación, como la Ley de derechos de voto y la Ley de derechos civiles.\n\n** Deberá responder AMBAS preguntas 8 sobre origen hispano y preguntas 9 sobre raza. Para este censo, los orígenes hispanos no son razas. **"
+    "translation": "La Oficina del Censo pregunta si una persona es de origen hispano, latino o español para crear estadísticas sobre este grupo étnico. Las agencias gubernamentales y los grupos comunitarios utilizan la información recopilada en esta pregunta para evaluar los programas y garantizar el cumplimiento de las disposiciones contra la discriminación, como la Ley de derechos de voto y la Ley de derechos civiles.\n\n**Deberá responder AMBAS, la pregunta 8 sobre el origen hispano y la pregunta 9 sobre la raza. Para este censo, los orígenes hispanos no son razas.**"
   },
   "components.SampleCensus.explanation.9": {
     "english": "The Census Bureau asks about a person's race to create statistics about race and to present other estimates by race groups.  Local, state, tribal, and federal programs use this information, and they are critical factors in the basic research behind numerous policies, particularly for civil rights. Race information is used in planning and funding government programs that provide funds or services for specific groups.",
-    "translation": "La Oficina del Censo pregunta sobre la raza de una persona para crear estadísticas sobre la raza y presentar otras estimaciones por grupos raciales. Los programas locales, estatales, tribales y federales utilizan esta información, y son factores críticos en la investigación básica detrás de numerosas políticas, particularmente para los derechos civiles. La información sobre la raza se utiliza para planificar y financiar programas gubernamentales que proporcionan fondos o servicios para grupos específicos."
+    "translation": "La Oficina del Censo pregunta sobre la raza de una persona para crear estadísticas sobre la raza y presentar otras estimaciones por grupos raciales. Los programas locales, estatales, tribales y federales utilizan esta información, y son factores críticos en la investigación básica detrás de numerosas políticas, particularmente para los derechos civiles. La información sobre la raza se utiliza para planificar y financiar  programas gubernamentales que proporcionan fondos o servicios para grupos específicos."
   },
   "components.CensusQuestionCard.explanation": {
     "english": "Explanation",
@@ -513,87 +513,87 @@
   },
   "components.SampleCensus.primary_question.nonhohh.1": {
     "english": "Print name of Person 2",
-    "translation": "¿Cuántas personas vivían o se hospedaban en esta casa, apartamento o casa móvil el 1 de abril de 2020?"
+    "translation": "Escriba el nombre de la Persona 2"
   },
   "components.SampleCensus.secondary_information.nonhohh.1": {
     "english": "First Name = \n\n[||] \n\nLast Name(s) = \n\n[||]",
-    "translation": "Número de personas = [| Ingrese el número aquí |]"
+    "translation": "Nombre de pila\n\n[||]\n\nApellido(s)\n\n[||]"
   },
   "components.SampleCensus.explanation.nonhohh.1": {
     "english": "The Census Bureau asks for names to ensure everyone in the house is counted. This helps you make sure you have included everyone living and sleeping in your home.  It is easy to skip someone by accident, especially in large households.",
-    "translation": "Incluya a todos los que viven y duermen en su hogar en su cuestionario del censo, independientemente de su edad, sexo, relación con usted o estado de ciudadanía / inmigración. No olvide incluir inquilinos (incluidos estudiantes), niños de crianza, barrios o empleados.\n\nLa Constitución garantiza una representación equitativa para todos al empoderar a la gente de América a través del proceso del censo: el recuento de todos los que viven en los Estados Unidos cada diez años. Su participación asegura que su comunidad esté totalmente representada en todos los niveles de los gobiernos y reciba su parte justa de fondos guiados por el censo, a través de programas como préstamos estudiantiles, SNAP, Medi-Cal, WIC, vales de vivienda, programas de desayuno y almuerzo escolar, educación especial, Servicios de carrera y capacitación, nutrición para personas mayores y programas de desarrollo comunitario y de transporte."
+    "translation": "La Oficina del Censo solicita nombres para asegurarse de que todos en la casa sean contados. Esto le ayuda a asegurarse de incluir a todos los que viven y duermen en su hogar. Es fácil saltear a alguien por accidente, especialmente en hogares grandes."
   },
   "components.SampleCensus.primary_question.nonhohh.2": {
     "english": "Does this person usually live or stay somewhere else?",
-    "translation": "Este es un marcador de posición"
+    "translation": "¿Esta persona suele vivir o quedarse en otro lugar?"
   },
   "components.SampleCensus.secondary_information.nonhohh.2": {
     "english": "_Mark all that apply._\n- [ ] No\n- [ ] Yes, for college\n- [ ] Yes, for a military assignment\n- [ ] Yes, for a job or business\n- [ ] Yes, in a nursing home\n- [ ] Yes, with a parent or other relative\n- [ ] Yes, at a seasonal or second residence\n- [ ] Yes, in a jail or prison\n- [ ] Yes, for another reason",
-    "translation": "Este es un marcador de posición"
+    "translation": "_Marque todo lo que corresponda._\n- [ ] No\n- [ ] Sí, para la Universidad\n- [ ] Sí, para una asignación militar\n- [ ] Sí, para un trabajo o negocio\n- [ ] Sí, en un hogar para convalecientes\n- [ ] Sí, con un padre u otro pariente\n- [ ] Sí, en una residencia de temporada o segunda\n- [ ] Sí, en una cárcel o prisión\n- [ ] Sí, por otra razón"
   },
   "components.SampleCensus.explanation.nonhohh.2": {
     "english": "People living away from home may be counted in other ways or accidentally not counted. Answering this question ensures everyone in your household is counted.",
-    "translation": "Este es un marcador de posición"
+    "translation": "Las personas que viven fuera de casa pueden contarse de otras maneras o no contarse accidentalmente. Responder esta pregunta asegura que todos en su hogar sean contados."
   },
   "components.SampleCensus.primary_question.nonhohh.3": {
     "english": "How is this person related to Person 1?",
-    "translation": "Este es un marcador de posición"
+    "translation": "¿Cómo se relaciona esta persona con la Persona 1?"
   },
   "components.SampleCensus.secondary_information.nonhohh.3": {
     "english": "_Mark ONE box._\n- [ ] Opposite-sex husband/wife/spouse\n- [ ] Opposite-sex unmarried partner\n- [ ] Same-sex husband/wife/spouse\n- [ ] Same-sex unmarried partner\n- [ ] Biological son or daughter\n- [ ] Adopted son or daughter\n- [ ] Stepson or stepdaughter\n- [ ] Brother or sister\n- [ ] Father or mother\n- [ ] Grandchild\n- [ ] Parent-in-law\n- [ ] Son-in-law or daughter-in-law\n- [ ] Other relative\n- [ ] Roommate or housemate\n- [ ] Foster child\n- [ ] Other nonrelative",
-    "translation": "Este es un marcador de posición"
+    "translation": "_Marque UNA casilla._\n- [ ] Esposo/esposa/cónyuge de sexo opuesto\n- [ ] Pareja soltera de sexo opuesto\n- [ ] Esposo/esposa/cónyuge del mismo sexo\n- [ ] Pareja soltera del mismo sexo\n- [ ] Hijo o hija biológica\n- [ ] Hijo o hija adoptada\n- [ ] Hijastro o hijastra\n- [ ] Hermano o hermana\n- [ ] Padre o madre\n- [ ] Nieto\n- [ ] Suegro\n- [ ] Yerno o nuera\n- [ ] Otro pariente\n- [ ] Compañero de cuarto o compañero de casa\n- [ ] Hijo de crianza\n- [ ] Otros sin ningún parentesco"
   },
   "components.SampleCensus.explanation.nonhohh.3": {
     "english": "Questions about the relationship of each person in a household to one central person help to create estimates about families, households, and other groups, at a household level.  \n\nLocal, state, tribal, and federal agencies use relationship information to plan and fund government programs that provide funds or services for families, people living or raising children alone, grandparents living with grandchildren, or other households that qualify for additional assistance. \n\nFor the first time, the 2020 Census offers a way for the person filling out the form to indicate a same-sex relationship with another household member.  This change is expected to improve national statistics on same-sex couples.",
-    "translation": "Este es un marcador de posición"
+    "translation": "Las preguntas sobre la relación de cada persona en un hogar con una persona central ayudan a crear estimaciones sobre familias, hogares y otros grupos, a nivel de hogar.\n\nLas agencias locales, estatales, tribales y federales utilizan la información de la relación para planificar y financiar programas gubernamentales que proporcionan fondos o servicios para familias, personas que viven o crían niños solos, abuelos que viven con nietos u otros hogares que califican para asistencia adicional.\n\nPor primera vez, el Censo 2020 ofrece una forma para que la persona que llena el formulario indique una relación entre personas del mismo sexo con otro miembro del hogar. Se espera que este cambio mejore las estadísticas nacionales sobre parejas del mismo sexo."
   },
   "components.SampleCensus.primary_question.nonhohh.4": {
     "english": "What is this person’s sex?",
-    "translation": "Este es un marcador de posición"
+    "translation": "¿Cuál es el sexo de esta persona?"
   },
   "components.SampleCensus.secondary_information.nonhohh.4": {
     "english": "*Mark ONE box*\n\n- [ ] Male\n- [ ] Female",
-    "translation": "Este es un marcador de posición"
+    "translation": "*Marque UNA casilla*\n- [ ] Masculino\n- [ ] Femenino"
   },
   "components.SampleCensus.explanation.nonhohh.4": {
     "english": "The Census Bureau asks about the gender of each person for statistical purposes.  The State and Federal government use this information in planning and funding programs, and evaluating programs and policies to ensure they fairly and equitably serve the needs of both men and women.",
-    "translation": "Este es un marcador de posición"
+    "translation": "La Oficina del Censo pregunta sobre el género de cada persona con fines estadísticos. El gobierno estatal y federal utiliza esta información para planificar y financiar programas, y evaluar programas y políticas para garantizar que satisfagan de manera justa y equitativa las necesidades de hombres y mujeres."
   },
   "components.SampleCensus.primary_question.nonhohh.5": {
     "english": "What is this person’s age and what is this person’s date of birth?",
-    "translation": "Este es un marcador de posición"
+    "translation": "¿Cuál es la edad de esta persona y cuál es la fecha de nacimiento de esta persona?"
   },
   "components.SampleCensus.secondary_information.nonhohh.5": {
     "english": "*For babies less than 1 year old, do not write the age in months. Write 0 as the age.*\n\nAge on April 1, 2020 = \n\n[||] years\n\nMonth = \n\n[||] \n\nDay = \n\n[||] \n\nYear of birth = \n\n[||]",
-    "translation": "Este es un marcador de posición"
+    "translation": "*Para bebés de menos de 1 año, no escribe la edad en meses. Escriba 0 como la edad.*\n\nEdad el 1 de abril de 2020 \n\n[||]\n\nAños\n\n[||]\n\nMes\n\n[||]\n\nDía \n\n[||]\n\nAño de nacimiento \n\n[||]"
   },
   "components.SampleCensus.explanation.nonhohh.5": {
     "english": "The Census Bureau asks about age and date of birth to understand the size and characteristics of different age groups in your neighborhood.  Local, state, tribal, and federal agencies use age information to plan and fund government programs that provide assistance or services for specific age groups, such as children, working-age adults, women of childbearing age, and elders.",
-    "translation": "Este es un marcador de posición"
+    "translation": "La Oficina del Censo pregunta sobre la edad y la fecha de nacimiento para comprender el tamaño y las características de los diferentes grupos de edad en su vecindario. Las agencias locales, estatales, tribales y federales utilizan la información sobre la edad para planificar y financiar programas gubernamentales que brindan asistencia o servicios para grupos de edad específicos, como niños, adultos en edad laboral, mujeres en edad fértil y ancianos."
   },
   "components.SampleCensus.primary_question.nonhohh.6": {
     "english": "Is this person of Hispanic, Latino, or Spanish origin?",
-    "translation": "Este es un marcador de posición"
+    "translation": "¿Es esta persona de origen hispano, latino o español?"
   },
   "components.SampleCensus.secondary_information.nonhohh.6": {
     "english": "- [ ] No, not of Hispanic, Latino, or Spanish origin\n- [ ] Yes, Mexican, Mexican Am., Chicano\n- [ ] Yes, Puerto Rican\n- [ ] Yes, Cuban",
-    "translation": "Este es un marcador de posición"
+    "translation": "_Marque una o más casillas y escriba los orígenes._\n\n- [ ] No, no de origen hispano, latino o español\n- [ ] Sí, mexicano, mexicano americano, chicano\n- [ ] Sí, puertorriqueño\n- [ ] Sí, cubano\n- [ ] Sí, otro origen hispano, latino o español - _Imprimir, por ejemplo, salvadoreño, dominicano, colombiano, guatemalteco, español, ecuatoriano, etc._\n\n[||]"
   },
   "components.SampleCensus.explanation.nonhohh.6": {
     "english": "The Census Bureau asks whether a person is of Hispanic, Latino or Spanish origin to create statistics about this ethnic group. The information collected in this question is used by Government agencies and community groups in evaluating programs and ensuring compliance with anti-discrimination provisions, such as under the Voting Rights Act and the Civil Rights Act.\n\n**You will need to answer BOTH Question 8 about Hispanic origin and Question 9 about race. For this census, Hispanic origins are not races.**",
-    "translation": "Este es un marcador de posición"
+    "translation": "La Oficina del Censo pregunta si una persona es de origen hispano, latino o español para crear estadísticas sobre este grupo étnico. Las agencias gubernamentales y los grupos comunitarios utilizan la información recopilada en esta pregunta para evaluar los programas y garantizar el cumplimiento de las disposiciones contra la discriminación, como la Ley de derechos de voto y la Ley de derechos civiles.\n\n**Deberá responder AMBAS, la pregunta 8 sobre el origen hispano y la pregunta 9 sobre la raza. Para este censo, los orígenes hispanos no son razas.**"
   },
   "components.SampleCensus.primary_question.nonhohh.7": {
     "english": "What is this person’s race?",
-    "translation": "Este es un marcador de posición"
+    "translation": "¿Cuál es la raza de esta persona?"
   },
   "components.SampleCensus.secondary_information.nonhohh.7": {
     "english": "*Mark one or more boxes AND print origins*\n\n- [ ] White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. \n\n[||]\n- [ ] Black or African Am. – Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. \n\n[||]\n- [ ] American Indian or Alaska Native – Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. \n\n[||]\n- [ ] Chinese\n- [ ] Filipino\n- [ ] Asian Indian\n- [ ] Vietnamese\n- [ ] Korean\n- [ ] Japanese\n- [ ] Native Hawaiian\n- [ ] Samoan\n- [ ] Chamorro\n- [ ] Other Asian – Print, for example, Pakistani, Cambodian, Hmong, etc. \n\n[||]\n- [ ] Other Pacific Islander – Print, for example, Tongan, Fijian, Marshallese, etc. \n\n[||]\n- [ ] Some other race – Print race or origin. \n\n[||]",
-    "translation": "Este es un marcador de posición"
+    "translation": "_Marque una o más cajas e imprima los orígenes._\n- [ ] Blanco\n\n_Imprimir, por ejemplo, alemán, irlandés, inglés, italiano, libanés, egipcio, etc._ \n\n[||]\n- [ ] Negro o africano americano.\n\n_Imprima, por ejemplo, africano americano, jamaicano, haitiano, nigeriano, etíope, somalí, etc._\n\n[||]\n- [ ] Indio americano o nativo de Alaska\n\n_Imprima el nombre de la tribu (s) inscrita o principal, por ejemplo, Nación Navajo, Tribu Blackfeet, Maya, Azteca, Gobierno Tradicional del Pueblo Nativo de Barrow Inupiat, Comunidad esquimal de Nome, etc._\n\n[||]\n- [ ] Chino\n- [ ] Filipino\n- [ ] Indio asiático\n- [ ] Vietnamita\n- [ ] Coreano\n- [ ] Japonés\n- [ ] Hawaiano nativo\n- [ ] Samoano\n- [ ] Chamorro\n- [ ] Otros asiáticos\n\n_Imprimir, por ejemplo, paquistaní, camboyano, hmong, etc._ \n\n[||]\n- [ ] Otros isleños del Pacífico\n\n_Imprimir, por ejemplo, tongano, fiyiano, mariscal, etc._\n\n[||]\n- [ ] Alguna otra raza\n\n_Imprimir raza u origen._\n\n[||]"
   },
   "components.SampleCensus.explanation.nonhohh.7": {
     "english": "The Census Bureau asks about a person's race to create statistics about race and to present other estimates by race groups.  Local, state, tribal, and federal programs use this information, and they are critical factors in the basic research behind numerous policies, particularly for civil rights. Race information is used in planning and funding government programs that provide funds or services for specific groups.",
-    "translation": "Este es un marcador de posición"
+    "translation": "La Oficina del Censo pregunta sobre la raza de una persona para crear estadísticas sobre la raza y presentar otras estimaciones por grupos raciales. Los programas locales, estatales, tribales y federales utilizan esta información, y son factores críticos en la investigación básica detrás de numerosas políticas, particularmente para los derechos civiles. La información sobre la raza se utiliza para planificar y financiar  programas gubernamentales que proporcionan fondos o servicios para grupos específicos."
   },
   "components.SampleCensus.hohh_description": {
     "english": "If you are responsible for the home, you should complete the survey as person one providing infomation for the others you are responsible for.",
@@ -653,39 +653,39 @@
   },
   "components.SampleCensus.primary_question.preliminary.1": {
     "english": "Please enter the 12-digit Census ID found in the materials we mailed to you or left at your door.",
-    "translation": "Este es un marcador de posición"
+    "translation": "Ingrese la identificación del censo de 12 dígitos que se encuentra en los materiales que le enviamos por correo o que dejamos en su puerta."
   },
   "components.SampleCensus.secondary_information.preliminary.1": {
     "english": "[|XXXX-XXXX-XXXX-XXXX|]\n\nIf you do not have a Census ID, click here.",
-    "translation": "Este es un marcador de posición"
+    "translation": "[|XXXX XXXX XXXX|]\n\nSi no tiene una identificación del censo, haga clic aquí."
   },
   "components.SampleCensus.explanation.preliminary.1": {
     "english": "Starting in March 2020, the U.S. Census Bureau will mail letters to every household in the United States inviting them to respond to the Census survey. Every household should receive a letter requesting that they complete a census form online, by mail, or phone by *Census Day on April 1, 2020*. If you lose or do not receive your letter, you can still fill out the survey by entering your address.",
-    "translation": "Este es un marcador de posición"
+    "translation": "A partir de marzo de 2020, la Oficina del Censo de EE. UU. Enviará cartas a todos los hogares de los Estados Unidos invitándolos a responder a la encuesta del censo. Todos los hogares deben recibir una carta solicitando que completen un formulario del censo en línea, por correo o por teléfono antes del **Día del Censo el 1 de abril de 2020**."
   },
   "components.SampleCensus.primary_question.preliminary.2": {
     "english": "(If you have 12-digit code) Are you completing the 2020 Census Questionnaire for the address below?",
-    "translation": "Este es un marcador de posición"
+    "translation": "(_Si tiene un código de 12 dígitos_) ¿Está completando el Cuestionario del Censo 2020 para la siguiente dirección? "
   },
   "components.SampleCensus.secondary_information.preliminary.2": {
     "english": "*Mark ONE box*\n\n- [ ] Yes\n- [ ] No",
-    "translation": "Este es un marcador de posición"
+    "translation": "*Marque UNA casilla*\n- [ ] Sí\n- [ ] No"
   },
   "components.SampleCensus.explanation.preliminary.2": {
     "english": "Your home address should appear on the screen.",
-    "translation": "Este es un marcador de posición"
+    "translation": "La dirección de su casa debe aparecer en la ventana."
   },
   "components.SampleCensus.primary_question.preliminary.3": {
     "english": "(If you do not have 12-digit code) Please provide a city and state, or ZIP code where you will be living on April 1, 2020.  Also, Describe the physical location in the space provided.",
-    "translation": "Este es un marcador de posición"
+    "translation": "(_Si no tiene un código de 12 dígitos_) Proporcione la ciudad y el estado, o el código postal donde vivirá el 1 de abril de 2020. Además, describa la ubicación física en el espacio provisto."
   },
   "components.SampleCensus.secondary_information.preliminary.3": {
     "english": "City\n\n[||]\n\nState\n\n[||]\n\nZIP Code\n\n[||]\n\nDescription\n\n[||] \n\n**Please provide as much information as possible.**\nFor example:\n-   A location description such as “the apartment over the gas station” or “the brick house with the screened porch on the northeast corner of Farm Road and HC 46”\n-   A name of a park, street intersection or shelter, if you will be experiencing homelessness on April 2, 2020, as well as the name of the city and state. For example, “Friendship Park, Anywhere, PA”\n",
-    "translation": "Este es un marcador de posición"
+    "translation": "Ciudad \n\n[||]\n\nEstado \n\n[||]\n\nCódigo postal \n\n[||]\n\nDescripción\n\n[||]\n\n**Por favor, proporcione tanta información como sea posible.**\nPor ejemplo:\n - Una descripción de la ubicación como \"el apartamento sobre la estación de servicio\" o \"la casa de ladrillo con el porche cubierto en la esquina noreste de Farm Road y HC 46\"\n - El nombre de un parque, intersección de calles o refugio, si va a estar sin hogar el 2 de abril de 2020, así como el nombre de la ciudad y el estado. Por ejemplo, \"Friendship Park, Anywhere, PA\""
   },
   "components.SampleCensus.explanation.preliminary.3": {
     "english": "For individuals and families, who did not receive a 12-digit code, living in non-traditional homes or do not have a usual residence (including those experiencing homelessness), this option allows individuals and families to be counted by self-reporting.",
-    "translation": "Este es un marcador de posición"
+    "translation": "Para individuos y familias, que no recibieron un código de 12 dígitos, que viven en hogares no tradicionales o que no tienen una residencia habitual (incluidos los que están experimentando la falta de hogar). Esta opción permite que los individuos y las familias sean contados por autoinforme."
   },
   "components.SampleCensus.nonHohh_button": {
     "english": "Someone else will answer the census for me",
