@@ -34,3 +34,19 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) a:focus {
+  outline: none;
+};
+
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: 1px solid #aaa;
+};
+
+body.user-is-tabbing *:focus {
+  outline: 2px solid #2491ff;
+};
+
