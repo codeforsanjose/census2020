@@ -694,5 +694,9 @@
   "components.SampleCensus.answerFormat": {
     "english": "Answer format (SAMPLE):",
     "translation": "Answer format (SAMPLE):"
+  },
+  "components.Footer.contactUs.socialLinks": {
+    "english": "**Stay Informed!** Follow us on [Facebook](https://www.facebook.com/SJcensus/), [Instagram](https://www.instagram.com/sjcensus/), and Twitter @cityofsanjose  \n    #SJcensus #census2020 #2020census",
+    "translation": "**Stay Informed!** Follow us on [Facebook](https://www.facebook.com/SJcensus/), [Instagram](https://www.instagram.com/sjcensus/), and Twitter @cityofsanjose  \n    #SJcensus #census2020 #2020census"
   }
 }
