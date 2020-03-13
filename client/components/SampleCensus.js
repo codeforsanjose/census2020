@@ -592,7 +592,8 @@ CensusQuestionCard.propTypes = {
   item: PropTypes.shape({
     primary: PropTypes.element.isRequired,
     secondary: PropTypes.element.isRequired,
-    explanation: PropTypes.element.isRequired
+    explanation: PropTypes.element.isRequired,
+    label: PropTypes.string.isRequired
   }).isRequired,
   index: PropTypes.number.isRequired,
   className: PropTypes.string
