@@ -14,7 +14,7 @@ import { Footer } from './Footer';
 const Home = React.lazy(() => import('./DetailViewContainer'));
 const FAQ = React.lazy(() => import('./FAQ'));
 const SampleCensus = React.lazy(() => import('./SampleCensus'));
-const Contact = React.lazy(() => import('./Contact'));
+// const Contact = React.lazy(() => import('./Contact'));
 export default class App extends React.PureComponent {
   render () {
     return (
@@ -41,7 +41,7 @@ export default class App extends React.PureComponent {
                       <React.Suspense fallback={<LoadingPage />}>
                         <Switch>
                           <Route exact path='/' component={Home} />
-                          <Route path='/contact' component={Contact} />
+                          {/* <Route path='/contact' component={Contact} /> */}
                           <Route path='/faq' component={FAQ} />
                           <Route path='/samplecensus' component={SampleCensus} />
                         </Switch>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FormattedMessage, defineMessages} from 'react-intl';
-import { FormattedMarkdownMessage } from './FormattedMarkdownMessage'
+import { FormattedMessage, defineMessages } from 'react-intl';
+import { FormattedMarkdownMessage } from './FormattedMarkdownMessage';
 
 import * as logo from '../images/CityOfSanJose_logo_white.png';
 import './Footer.scss';
@@ -14,7 +14,7 @@ defineMessages({
     `,
     description: 'Links for City of San Jose social media'
   }
-})
+});
 
 export class Footer extends React.PureComponent {
   render () {
@@ -95,7 +95,7 @@ export class Footer extends React.PureComponent {
               />
             </Link>
           </li>
-          <li
+          {/* <li
             className="c_footer__nav-links__item"
           >
             <Link
@@ -107,7 +107,7 @@ export class Footer extends React.PureComponent {
                 defaultMessage="Get Involved"
               />
             </Link>
-          </li>
+          </li> */}
         </ul>
       </footer>
     );
