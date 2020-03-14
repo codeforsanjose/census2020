@@ -95,7 +95,7 @@ export class Footer extends React.PureComponent {
               />
             </Link>
           </li>
-          <li
+          {/* <li
             className="c_footer__nav-links__item"
           >
             <Link
@@ -107,7 +107,7 @@ export class Footer extends React.PureComponent {
                 defaultMessage="Get Involved"
               />
             </Link>
-          </li>
+          </li> */}
         </ul>
       </footer>
     );
