@@ -12,8 +12,18 @@ const router = new express.Router();
 
 router.use('/api', require('./api'));
 
+const forceSslRedirect = (req, res, next) => {
+  if (req.header('x-forwarded-proto') !== 'https') {
+    res.redirect(`https://${req.header('host')}${req.url}`);
+  } else {
+    next();
+  }
+};
+
 // development uses webpack-dev-middleware to serve
 if (!Config.app.isDev) {
+  router.get('*', forceSslRedirect);
+
   router.use(responsiveImages({
     // express-responsive-images automatically appends staticDir to cwd
     staticDir: path.relative(process.cwd(), build),
