@@ -14,7 +14,7 @@ router.use('/api', require('./api'));
 
 const forceSslRedirect = (req, res, next) => {
   if (req.header('x-forwarded-proto') !== 'https') {
-    res.redirect(`https://${req.header('host')}${req.url}`);
+    res.redirect(301, `https://${req.header('host')}${req.url}`);
   } else {
     next();
   }
