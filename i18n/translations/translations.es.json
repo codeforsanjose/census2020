@@ -1,7 +1,7 @@
 {
   "components.Contact.fields.email": {
     "english": "Email",
-    "translation": "Email"
+    "translation": "Correo Electrónico (Email)"
   },
   "components.Contact.fields.interest": {
     "english": "I would like to:",
@@ -9,7 +9,7 @@
   },
   "components.Contact.fields.interest.options.volunteer": {
     "english": "Volunteer to help",
-    "translation": "Voluntario para ayudar"
+    "translation": "Servir como voluntario(a)"
   },
   "components.Contact.fields.interest.options.requestPresentation": {
     "english": "Request a presentation",
@@ -85,7 +85,7 @@
   },
   "components.Contact.fields.interest.options.information": {
     "english": "Request more information",
-    "translation": "Pida mas información"
+    "translation": "Solicitar más información"
   },
   "components.Contact.getInvolved.header": {
     "english": "Get Involved",
@@ -184,7 +184,7 @@
     "translation": "¿Cómo me cuentan?"
   },
   "components.FAQ.entries.howCanIComplete.answer": {
-    "english": " - You complete the census questionnaire NOW.  [click here] \n - You can return the census form mailed to your home. \n - You can complete the census by phone with a census worker who speaks your language:\n\n**LANGUAGE LINES and TOLL-FREE NUMBERS**\n - English: 844-330-2020\n - Spanish: 844-468-2020\n - Chinese (Mandarin): 844-391-2020\n - Chinese (Cantonese): 844-398-2020\n - Vietnamese: 844-461-2020\n - Korean: 844-392-2020\n - Russian: 844-417-2020\n - Arabic: 844-416-2020\n - Tagalog: 844-478-2020\n - Polish: 844-479-2020\n - French: 844-494-2020\n - Haitian Creole: 844-477-2020\n - Portuguese: 844-474-2020\n - Japanese: 844-460-2020\n - English (Puerto Rico residents): 844-418-2020\n - Spanish (Puerto Rico residents): 844-426-2020\n - Telephone Display Device (TDD): 844-467-2020",
+    "english": " - You complete the census questionnaire NOW.  [https://my2020census.gov] (https://my2020census.gov) \n - You can return the census form mailed to your home. \n - You can complete the census by phone with a census worker who speaks your language:\n\n**LANGUAGE LINES and TOLL-FREE NUMBERS**\n - English: 844-330-2020\n - Spanish: 844-468-2020\n - Chinese (Mandarin): 844-391-2020\n - Chinese (Cantonese): 844-398-2020\n - Vietnamese: 844-461-2020\n - Korean: 844-392-2020\n - Russian: 844-417-2020\n - Arabic: 844-416-2020\n - Tagalog: 844-478-2020\n - Polish: 844-479-2020\n - French: 844-494-2020\n - Haitian Creole: 844-477-2020\n - Portuguese: 844-474-2020\n - Japanese: 844-460-2020\n - English (Puerto Rico residents): 844-418-2020\n - Spanish (Puerto Rico residents): 844-426-2020\n - Telephone Display Device (TDD): 844-467-2020",
     "translation": "- Usted completa el cuestionario del censo AHORA.  [https://my2020census.gov] (https://my2020census.gov)\n- Puede devolver el formulario del censo enviado por correo a su hogar.\n- Puede completar el censo por teléfono con un trabajador del censo que hable su idioma:\n\n**LÍNEA DE IDIOMAS y NÚMERO GRATUITO**\n- Inglés: 844-330-2020\n- Español: 844-468-2020\n- Chino (mandarín): 844-391-2020\n- Chino (cantonés): 844-398-2020\n- Vietnamita: 844-461-2020\n- Coreano: 844-392-2020\n- Ruso: 844-417-2020\n- Árabe: 844-416-2020\n- Tagalo: 844-478-2020\n- Polaco: 844-479-2020\n- Francés: 844-494-2020\n- Criollo Haitiano: 844-477-2020\n- Portugués: 844-474-2020\n- Japonés: 844-460-2020\n- Inglés (residentes de Puerto Rico): 844-418-2020\n- Español (residentes de Puerto Rico): 844-426-2020\n- Dispositivo de telecomunicación (TDD): 844-467-2020"
   },
   "components.FAQ.entries.otherLanguages.question": {
@@ -325,7 +325,7 @@
   },
   "components.Contact.emailValidation": {
     "english": "Please enter a valid email address",
-    "translation": "Por favor, introduce una dirección de correo electrónico válida"
+    "translation": "Por favor, proporcione una dirección de correo electrónico válida"
   },
   "components.Home.top_reasons.item.1": {
     "english": "Access to affordable housing and medical care.",
