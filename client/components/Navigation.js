@@ -94,7 +94,7 @@ export default class Navigation extends React.PureComponent {
               description="'Sample Survey' link in the navigation bar"
             />
           </NavLink>
-          {/* <NavLink
+          <NavLink
             path="/contact"
           >
             <FormattedMessage
@@ -102,7 +102,7 @@ export default class Navigation extends React.PureComponent {
               defaultMessage="Get Involved"
               description="'Get Involved' link in the navigation bar"
             />
-          </NavLink> */}
+          </NavLink>
         </div>
         <LocalePicker />
         <MobileMenu />
@@ -176,7 +176,7 @@ const MobileMenu = () => {
               description="'Sample Survey' link in the navigation bar"
             />
           </NavLink>
-          {/* <NavLink
+          <NavLink
             path="/contact"
           >
             <FormattedMessage
@@ -184,7 +184,7 @@ const MobileMenu = () => {
               defaultMessage="Get Involved"
               description="'Get Involved' link in the navigation bar"
             />
-          </NavLink> */}
+          </NavLink>
         </div>
       </div>
     </div>
