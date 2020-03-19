@@ -213,7 +213,7 @@
   },
   "email.messages.confirmation.greeting": {
     "english": "Hi {name}",
-    "translation": "Nombre Hola}"
+    "translation": "{name} Hola"
   },
   "email.messages.confirmation.thankYou": {
     "english": "Thank you for your interest in the 2020 Census effort in San Jose.",
