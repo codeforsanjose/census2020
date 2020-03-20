@@ -22,7 +22,12 @@ const getTransporter = () => {
       pass: Config.mail.password
     },
     secure: Config.mail.isSecure,
-    logger: debug
+    logger: debug,
+    tls: Config.mail.useSSLv3
+      ? {
+        ciphers: 'SSLv3'
+      }
+      : undefined
   });
 };
 
