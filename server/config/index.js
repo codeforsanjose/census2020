@@ -20,6 +20,7 @@ module.exports = {
     username: process.env.MAIL_SMTP_USERNAME,
     password: process.env.MAIL_SMTP_PASSWORD,
     isSecure: Boolean(process.env.MAIL_SMTP_IS_SECURE),
+    useSSLv3: Boolean(process.env.MAIL_USE_SSLv3),
 
     inquiryMessage: {
       address: process.env.MAIL_TO_CENSUS_ADDRESS,
