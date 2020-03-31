@@ -15,13 +15,6 @@ module.exports = {
     serveTranslateAdmin: Boolean(process.env.CENSUS2020_SERVE_TRANSLATE_SITE)
   },
   mail: {
-    host: process.env.MAIL_SMTP_SERVER,
-    port: process.env.MAIL_SMTP_PORT,
-    username: process.env.MAIL_SMTP_USERNAME,
-    password: process.env.MAIL_SMTP_PASSWORD,
-    isSecure: Boolean(process.env.MAIL_SMTP_IS_SECURE),
-    useSSLv3: Boolean(process.env.MAIL_USE_SSLv3),
-
     inquiryMessage: {
       address: process.env.MAIL_TO_CENSUS_ADDRESS,
       fromAddress: process.env.MAIL_TO_CENSUS_FROM_ADDRESS
@@ -29,6 +22,11 @@ module.exports = {
 
     confirmationMessage: {
       fromAddress: process.env.MAIL_CONFIRMATION_FROM_ADDRESS
+    },
+
+    mailgun: {
+      domain: process.env.MAILGUN_DOMAIN,
+      apiKey: process.env.MAILGUN_API_KEY
     }
   },
   github: {

@@ -1,33 +1,30 @@
-const nodemailer = require('nodemailer');
+const mailgun = require('mailgun-js');
 const debug = require('debug')('census2020:server:mail');
 const {
   getInquiryMessage,
   getConfirmationMessage,
   getConfirmationMessageSubject
 } = require('./get-mail-body');
-
 const Config = require('../config');
+
+const mg = mailgun({
+  apiKey: Config.mail.mailgun.apiKey,
+  domain: Config.mail.mailgun.domain
+});
 
 debug.error = debug;
 debug.log = console.log.bind(console);
 debug.debug = debug.log;
 debug.info = console.info.bind(console);
 
-const getTransporter = () => {
-  return nodemailer.createTransport({
-    host: Config.mail.host,
-    port: Config.mail.port,
-    auth: {
-      user: Config.mail.username,
-      pass: Config.mail.password
-    },
-    secure: Config.mail.isSecure,
-    logger: debug,
-    tls: Config.mail.useSSLv3
-      ? {
-        ciphers: 'SSLv3'
+const sendMessage = (message) => {
+  return new Promise((resolve, reject) => {
+    mg.messages().send(message, (err, body) => {
+      if (err) {
+        return reject(err);
       }
-      : undefined
+      resolve(body);
+    });
   });
 };
 
@@ -52,11 +49,6 @@ module.exports.sendToCensusDept = async ({
     throw new Error('No from email provided; cannot send inquiry email');
   }
 
-  const transporter = getTransporter();
-
-  // Will reject (throw error) if config doesn't work
-  await transporter.verify();
-
   const messageHTML = getInquiryMessage({
     language,
     firstName,
@@ -70,7 +62,7 @@ module.exports.sendToCensusDept = async ({
     messageHTML
   });
 
-  const sendResults = await transporter.sendMail({
+  const sendResults = await sendMessage({
     from: Config.mail.inquiryMessage.fromAddress,
     replyTo: email,
     to: Config.mail.inquiryMessage.address,
@@ -104,11 +96,6 @@ module.exports.sendConfirmation = async ({
     throw new Error('No email provided; cannot send confirmation email');
   }
 
-  const transporter = getTransporter();
-
-  // Will reject (throw error) if config doesn't work
-  await transporter.verify();
-
   const messageHTML = getConfirmationMessage({
     language,
     name,
@@ -119,7 +106,7 @@ module.exports.sendConfirmation = async ({
     messageHTML
   });
 
-  const sendResults = await transporter.sendMail({
+  const sendResults = await sendMessage({
     from: Config.mail.confirmationMessage.fromAddress,
     to: email,
     subject: getConfirmationMessageSubject({ language }),
