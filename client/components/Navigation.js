@@ -10,6 +10,20 @@ import logoUrl from '../images/CityOfSanJose_logo.png';
 import menu from '../images/menu.svg';
 import close from '../images/close.svg';
 
+function ContactLink () {
+  return (
+    <NavLink
+      path="/contact"
+    >
+      <FormattedMessage
+        id="navigation.links.contact"
+        defaultMessage="Get Involved"
+        description="'Get Involved' link in the navigation bar"
+      />
+    </NavLink>
+  );
+}
+
 /**
  * @param {object} props
  * @param {object} props.location the current location of the app
@@ -94,15 +108,11 @@ export default class Navigation extends React.PureComponent {
               description="'Sample Survey' link in the navigation bar"
             />
           </NavLink>
-          <NavLink
-            path="/contact"
-          >
-            <FormattedMessage
-              id="navigation.links.contact"
-              defaultMessage="Get Involved"
-              description="'Get Involved' link in the navigation bar"
-            />
-          </NavLink>
+          {
+            process.env.IS_EMAIL_ENABLED ? (
+              <ContactLink />
+            ) : null
+          }
         </div>
         <LocalePicker />
         <MobileMenu />
@@ -129,7 +139,7 @@ export const CensusLink = ({ desktop }) => (
 );
 
 CensusLink.propTypes = {
-  desktop: PropTypes.boolean
+  desktop: PropTypes.bool
 };
 
 const MobileMenu = () => {
@@ -176,15 +186,11 @@ const MobileMenu = () => {
               description="'Sample Survey' link in the navigation bar"
             />
           </NavLink>
-          <NavLink
-            path="/contact"
-          >
-            <FormattedMessage
-              id="navigation.links.contact"
-              defaultMessage="Get Involved"
-              description="'Get Involved' link in the navigation bar"
-            />
-          </NavLink>
+          {
+            process.env.IS_EMAIL_ENABLED ? (
+              <ContactLink />
+            ) : null
+          }
         </div>
       </div>
     </div>

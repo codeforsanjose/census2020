@@ -14,7 +14,23 @@ import { Footer } from './Footer';
 const Home = React.lazy(() => import('./DetailViewContainer'));
 const FAQ = React.lazy(() => import('./FAQ'));
 const SampleCensus = React.lazy(() => import('./SampleCensus'));
-const Contact = React.lazy(() => import('./Contact'));
+
+const routes = [
+  (
+    <Route exact key="/" path='/' component={Home} />
+  ),
+  (
+    <Route key="/faq" path='/faq' component={FAQ} />
+  ),
+  (
+    <Route key="/samplecensus" path='/samplecensus' component={SampleCensus} />
+  )
+];
+if (process.env.IS_EMAIL_ENABLED) {
+  const Contact = React.lazy(() => import('./Contact'));
+  routes.push(<Route key="/contact" path='/contact' component={Contact} />);
+}
+
 export default class App extends React.PureComponent {
   render () {
     return (
@@ -40,10 +56,7 @@ export default class App extends React.PureComponent {
                     >
                       <React.Suspense fallback={<LoadingPage />}>
                         <Switch>
-                          <Route exact path='/' component={Home} />
-                          <Route path='/contact' component={Contact} />
-                          <Route path='/faq' component={FAQ} />
-                          <Route path='/samplecensus' component={SampleCensus} />
+                          {routes}
                         </Switch>
                       </React.Suspense>
                     </div>

@@ -95,19 +95,23 @@ export class Footer extends React.PureComponent {
               />
             </Link>
           </li>
-          <li
-            className="c_footer__nav-links__item"
-          >
-            <Link
-              to="/contact"
-              className="c_footer__link"
-            >
-              <FormattedMessage
-                id="components.Footer.links.contact"
-                defaultMessage="Get Involved"
-              />
-            </Link>
-          </li>
+          {
+            process.env.IS_EMAIL_ENABLED && (
+              <li
+                className="c_footer__nav-links__item"
+              >
+                <Link
+                  to="/contact"
+                  className="c_footer__link"
+                >
+                  <FormattedMessage
+                    id="components.Footer.links.contact"
+                    defaultMessage="Get Involved"
+                  />
+                </Link>
+              </li>
+            )
+          }
         </ul>
       </footer>
     );

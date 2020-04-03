@@ -1,7 +1,10 @@
 const express = require('express');
+const Config = require('../../config');
 
 const router = new express.Router();
 
-router.use('/contact', require('./contact'));
+if (Config.mail.mailgun.apiKey) {
+  router.use('/contact', require('./contact'));
+}
 
 module.exports = router;
