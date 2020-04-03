@@ -1,8 +1,10 @@
 require('dotenv').config();
 
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const paths = require('./webpack-paths');
+const Config = require('./server/config');
 
 module.exports = {
   entry: [
@@ -35,23 +37,17 @@ module.exports = {
       },
 
       {
-        // test: /\.(webp)$/,
         test: /\.(webp|jpe?g|png)$/,
         use: 'file-loader'
-      }// ,
-
-      // {
-      //   test: /\.(jpg|png)$/,
-      //   loader: 'responsive-loader',
-      //   options: {
-      //     adapter: require('responsive-loader/sharp')
-      //   }
-      // }
+      }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'index.template.html')
+    }),
+    new webpack.EnvironmentPlugin({
+      IS_EMAIL_ENABLED: Boolean(Config.mail.mailgun.apiKey)
     })
   ]
 };
