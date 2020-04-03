@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-class ScrollToTop extends React.Component {
-  componentDidUpdate (prevProps) {
-    if (this.props.location.pathname !== prevProps.location.pathname) {
+var ScrollToTop = ({ location }) => {
+  useEffect(
+    () => {
       let e = document.getElementById('scroll-placeholder');
       e.scrollIntoView();
-    }
-  }
+    },
+    [ location.pathname ]
+  );
 
-  render () {
-    return <div id="scroll-placeholder"></div>;
-  }
-}
+  return (
+    <div id="scroll-placeholder"></div>
+  );
+};
 
 ScrollToTop.propTypes = {
   location: PropTypes.shape({
