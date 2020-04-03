@@ -12,7 +12,7 @@ import './App.scss';
 
 import { Footer } from './Footer';
 
-import ScrollToTop from './ScrollToTop'
+import ScrollToTop from './ScrollToTop';
 
 const Home = React.lazy(() => import('./DetailViewContainer'));
 const FAQ = React.lazy(() => import('./FAQ'));
