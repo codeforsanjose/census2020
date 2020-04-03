@@ -42,8 +42,8 @@
         width: 48%;
 
         &__icon-container {
-          height: 3rem;
-          width: 3rem;
+          min-height: 3rem;
+          min-width: 3rem;
           background-color: white;
           border-radius: 1.5rem;
           padding: .25rem;
