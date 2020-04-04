@@ -11,6 +11,9 @@ import { messages } from '../../i18n/translations';
 import './App.scss';
 
 import { Footer } from './Footer';
+
+import ScrollToTop from './ScrollToTop';
+
 const Home = React.lazy(() => import('./DetailViewContainer'));
 const FAQ = React.lazy(() => import('./FAQ'));
 const SampleCensus = React.lazy(() => import('./SampleCensus'));
@@ -54,6 +57,7 @@ export default class App extends React.PureComponent {
                     <div
                       className="c_app__content"
                     >
+                      <ScrollToTop />
                       <React.Suspense fallback={<LoadingPage />}>
                         <Switch>
                           {routes}
