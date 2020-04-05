@@ -257,7 +257,7 @@
   },
   "components.FAQ.entries.whoGetsCounted.answer": {
     "english": "Everyone living in the United States must be counted. Make sure you include everyone living and sleeping in your home on your census survey — regardless of age, gender, relationship to you, or citizenship/immigration status.",
-    "translation": "Mọi người sống ở Hoa Kỳ cần được tính. Hãy chắc chắn rằng quý vị bao gồm tất cả mọi người ở và ngủ trong nhà của quý vị trong bản câu hỏi thống kê dân số của quý vị – bất kể tuổi tác, giới tính, mối quan hệ với quý vị, hoặc tình trạng công dân / nhập cư."
+    "translation": "Mọi người sống ở Hoa Kỳ cần được tính. Hãy chắc chắn rằng quý vị bao gồm tất cả mọi người sống và ngủ đêm trong nhà của quý vị trong bản câu hỏi thống kê dân số của quý vị – bất kể tuổi tác, giới tính, mối quan hệ với quý vị, hoặc tình trạng công dân / nhập cư."
   },
   "components.FAQ.entries.whatTypesOfQuestions.question": {
     "english": "What information is the Census Bureau collecting?",
@@ -265,7 +265,7 @@
   },
   "components.FAQ.entries.whatTypesOfQuestions.answer": {
     "english": "You can see all the questions here [Sample Survey](/samplecensus).\nYou will be asked to give basic information about each individual living or staying with you. The questions on Informational Census Questionnaire include:\n-   The total number of people living at your address\n-   If you own or rent your home\n-   Each person’s name, gender, and race/ethnicity\n\nNO QUESTIONS ABOUT CITIZENSHIP OR IMMIGRATION STATUS ARE INCLUDED IN THE CENSUS",
-    "translation": "Quý vị có thể xem tất cả các câu hỏi trong [bản câu hỏi mẫu](/samplecensus).\nBản câu hỏi thống kê dân số sẽ hỏi thông tin cơ bản về mỗi người sống ở với quý vị. Bản câu hỏi thông tin thống kê dân số bao gồm các câu hỏi như:\n-   Tổng số người cư trú ở địa chỉ của quý vị\n-   Quý vị có sở hữu hoặc thuê nhà của quý vị\n-   Tên họ, giới tính, và chủng tộc / dân tộc của mỗi người\n\nTHỐNG KÊ DÂN SỐ KHÔNG CÓ HỎI GÌ VỀ TÌNH TRẠNG CÔNG DÂN HOẶC NHẬP CƯ"
+    "translation": "Quý vị có thể xem tất cả các câu hỏi trong [bản câu hỏi mẫu](/samplecensus).\nBản câu hỏi thống kê dân số sẽ hỏi thông tin cơ bản về mỗi người sống hoặc cư ngụ với quý vị. Bản câu hỏi thông tin thống kê dân số bao gồm các câu hỏi như:\n-   Tổng số người cư trú ở địa chỉ của quý vị\n-   Quý vị có sở hữu hoặc thuê nhà của quý vị\n-   Tên họ, giới tính, và chủng tộc / dân tộc của mỗi người\n\nTHỐNG KÊ DÂN SỐ KHÔNG CÓ HỎI GÌ VỀ TÌNH TRẠNG CÔNG DÂN HOẶC NHẬP CƯ"
   },
   "components.FAQ.entries.whoCountsAsHousehold.question": {
     "english": "Who counts as a “household?”",
@@ -273,7 +273,7 @@
   },
   "components.FAQ.entries.whoCountsAsHousehold.answer": {
     "english": "A household consists of **all** the people - *both related family members and any unrelated people* - who live and sleep in the same “home”. Don’t forget to include renters (including students), foster children, wards, or employees.",
-    "translation": "Một hộ gia đình bao gồm **tất cả** những người – *cả họ hàng cả người khác* – cư trú và ngủ trong cùng “nhà ở”. Xin đừng quên phải tính những người thuê nhà (bao gồm sinh viên), con được chính phủ trả tiền nhờ nuôi, trẻ tạm nuôi, hoặc nhân viên."
+    "translation": "Một hộ gia đình bao gồm **tất cả** những người – *cả họ hàng cả người khác* – sống và ngủ đêm trong cùng “nhà ở”. Xin đừng quên phải tính những người thuê nhà (bao gồm sinh viên), con được chính phủ trả tiền nhờ nuôi, trẻ tạm nuôi, hoặc nhân viên."
   },
   "components.FAQ.entries.lostCensusId.question": {
     "english": "I don’t have or lost my 12-digit code census. Can I still complete the census?",
@@ -305,7 +305,7 @@
   },
   "components.FAQ.entries.isCensusSafe.answer": {
     "english": "The Census Bureau is required by law to protect and keep your information confidential. Your responses can **only** be used by the U.S. Census Bureau to produce statistics. \n\nLearn more about your protection under Title 13 of the U.S. Code to keep your information confidential.",
-    "translation": "Luật liên bang bắt Cục Thống Kê Dân Số phải bảo mật thông tin của quý vị. Cục Thống Kê Dân Số Hoa Kỳ **chỉ** có phép sử dụng các lời trả lời của quý vị để đưa ra số liệu thống kê. \n\nTìm hiểu thế nào Điều 13 của Bộ Luật Hoa Kỳ bảo mật thông tin của quý vị."
+    "translation": "Luật pháp yêu cầu Cục Thống Kê Dân Số phải bảo vệ mọi thông tin của quý vị. Cục Thống Kê Dân Số **chỉ** được sử dụng các câu trả lời của quý vị cho mục đích thống kê. \n\nTìm hiểu thế nào Tiêu đề 13 của Bộ Luật Hoa Kỳ bảo mật thông tin của quý vị."
   },
   "components.FAQ.entries.canOtherAgenciesAccess.question": {
     "english": "Can another government agency access my census information?",
@@ -385,7 +385,7 @@
   },
   "components.SampleCensus.primary_question.1": {
     "english": "How many people were living or staying in this house, apartment, or mobile home on April 1, 2020?",
-    "translation": "Có bao nhiêu người sống hoặc ở trong căn nhà, căn hộ, hay nhà lưu động này vào ngày 1 tháng Tư năm 2020?"
+    "translation": "Có bao nhiêu người sống hoặc cư ngụ trong căn nhà, căn hộ, hay nhà lưu động này vào ngày 1 tháng Tư năm 2020?"
   },
   "components.SampleCensus.secondary_information.1": {
     "english": "Number of people=[|Enter number here|]",
@@ -473,11 +473,11 @@
   },
   "components.SampleCensus.explanation.1": {
     "english": "Include _everyone_ living and sleeping in your home on your census questionnaire — regardless of age, gender, relationship to you, or citizenship/immigration status. Don’t forget to include renters (including students), foster children, wards, or employees.\n\nThe Constitution ensures equal representation for all by empowering the people of America through the census process: the counting of everyone living in The United States every ten years.  Your participation ensure your community is represented fully at all levels of governments and receives their fair share of census-guided funding, through programs like Student Loans, SNAP, Medi-Cal, WIC, Housing Vouchers, School Breakfast and Lunch Programs, Special Education, Career Services and Training, Senior Nutrition, and community and transportation development programs.",
-    "translation": "Tính _mọi người_ sống và ngủ trong nhà của quý vị trong bản câu hỏi thống kê dân số của quý vị – bất kể tuổi tác, giới tính, mối quan hệ với quý vị, hoặc tình trạng công dân / nhập cư. Đừng quên tính người thuê nhà (bao gồm cả sinh viên), con được chính phủ trả tiền nhờ nuôi, trẻ tạm nuôi, hoặc nhân viên.\n\nHiến pháp đảm bảo sự đại diện bình đẳng cho tất cả mọi người bằng cách trao quyền cho người dân Mỹ thông qua quá trình thống kê dân số: đếm tất cả mọi người sống ở Hoa Kỳ cứ mười năm một lần. Sự tham gia của quý vị đảm bảo rằng cộng đồng của quý vị được đại diện đầy đủ ở tất cả các cấp chính quyền và nhận được phần tài trợ theo thống kê dân số, thông qua các chương trình như cho vay sinh viên, SNAP, Medi-Cal, WIC, trợ cấp thuê nhà, chương trình ăn sáng và ăn trưa ở trường, giáo dục đặc biệt, dịch vụ và đào tạo nghề nghiệp, dinh dưỡng cho người cao tuổi, và các chương trình phát triển cộng đồng và giao thông."
+    "translation": "Tính _mọi người_ sống và ngủ đêm trong nhà của quý vị trong bản câu hỏi thống kê dân số của quý vị – bất kể tuổi tác, giới tính, mối quan hệ với quý vị, hoặc tình trạng công dân / nhập cư. Đừng quên tính người thuê nhà (bao gồm cả sinh viên), con được chính phủ trả tiền nhờ nuôi, trẻ tạm nuôi, hoặc nhân viên.\n\nHiến pháp đảm bảo sự đại diện bình đẳng cho tất cả mọi người bằng cách trao quyền cho người dân Mỹ thông qua quá trình thống kê dân số: đếm tất cả mọi người sống ở Hoa Kỳ cứ mười năm một lần. Sự tham gia của quý vị đảm bảo rằng cộng đồng của quý vị được đại diện đầy đủ ở tất cả các cấp chính quyền và nhận được phần tài trợ theo thống kê dân số, thông qua các chương trình như cho vay sinh viên, SNAP, Medi-Cal, WIC, trợ cấp thuê nhà, chương trình ăn sáng và ăn trưa ở trường, giáo dục đặc biệt, dịch vụ và đào tạo nghề nghiệp, dinh dưỡng cho người cao tuổi, và các chương trình phát triển cộng đồng và giao thông."
   },
   "components.SampleCensus.explanation.2": {
     "english": "The Census Bureau’s goal is to count people once, and only once in the right place according to where they live on Census Day. This question ensures that _everyone_ living at an address is counted, including infants and children under 5, who are one of the largest undercounted groups.  \n\nHelp ensure your child or grandchild’s early childhood education program or school meal program is fully funded by including them in your household.",
-    "translation": "Cục Thống Kê Dân Số nhằm mục đích đếm mỗi người chỉ một lần ở đúng nơi sống vào Ngày Thống Kê Dân Số. Câu hỏi này đảm bảo rằng _mọi người_ sống tại một địa chỉ được tính, bao gồm trẻ sơ sinh và trẻ em dưới 5 tuổi, là một trong những nhóm lớn nhất bị tính thiếu.\n\nGiúp đảm bảo rằng chương trình giáo dục mầm non cho con hoặc cháu của quý vị được tài trợ đầy đủ bằng cách tính chúng nó trong hộ gia đình của quý vị."
+    "translation": "Mục đích của Cục Thống Kê Dân Số là đếm mỗi người chỉ một lần ở đúng nơi sống vào Ngày Thống Kê Dân Số. Câu hỏi này đảm bảo rằng _mọi người_ sống tại một địa chỉ được tính, bao gồm trẻ sơ sinh và trẻ em dưới 5 tuổi, là một trong những nhóm lớn nhất bị tính thiếu.\n\nGiúp đảm bảo rằng chương trình giáo dục mầm non cho con hoặc cháu của quý vị được tài trợ đầy đủ bằng cách tính chúng nó trong hộ gia đình của quý vị."
   },
   "components.SampleCensus.explanation.3": {
     "english": "The Census Bureau asks about whether a home is owned or rented to create statistics about homeownership and renters. Homeownership rates serve as an indicator of a community’s economic strength.  \n\nThe Federal Government, as well as State and Local Governments and businesses, use this information to make planning decisions that can bring new businesses, hospitals, or housing to your neighborhood.",
@@ -489,11 +489,11 @@
   },
   "components.SampleCensus.explanation.5": {
     "english": "The Census Bureau asks for names to ensure everyone in the house is counted. This helps you make sure you have included everyone living and sleeping in your home.  It is easy to skip someone by accident, especially in large households.",
-    "translation": "Cục Thống Kê Dân Số yêu cầu các tên gọi để đảm bảo mọi người trong nhà đều được tính. Điều này giúp quý vị đảm bảo rằng quý vị đã tính tất cả mọi người sống và ngủ trong nhà của quý vị. Thật dễ bỏ qua một ai đó một cách tình cờ, đặc biệt là trong các hộ gia đình lớn."
+    "translation": "Cục Thống Kê Dân Số yêu cầu các tên gọi để đảm bảo mọi người trong nhà đều được tính. Điều này giúp quý vị đảm bảo rằng quý vị đã tính tất cả mọi người sống và ngủ đêm trong nhà của quý vị. Thật dễ bỏ qua một ai đó một cách tình cờ, đặc biệt là trong các hộ gia đình lớn."
   },
   "components.SampleCensus.explanation.6": {
     "english": "The Census Bureau asks about the gender of each person for statistical purposes.  The State and Federal government use this information in planning and funding programs, and evaluating programs and policies to ensure they fairly and equitably serve the needs of both men and women.",
-    "translation": "Cục Thống Kê Dân Số hỏi về giới tính của mỗi người cho mục đích thống kê. Các chính phủ tiểu bang và liên bang sử dụng thông tin này trong các chương trình lập kế hoạch và tài trợ, và trong việc đánh giá các chương trình và chính sách để đảm bảo chúng phục vụ công bằng và công bằng cho nhu cầu của cả nam và nữ."
+    "translation": "Cục Thống Kê Dân Số hỏi về giới tính của mỗi người cho mục đích thống kê. Các chính phủ tiểu bang và liên bang sử dụng thông tin này trong các chương trình lập kế hoạch và tài trợ, và trong việc đánh giá các chương trình và chính sách để đảm bảo chúng phục vụ công bằng và bình đẳng cho nhu cầu của cả nam và nữ."
   },
   "components.SampleCensus.explanation.7": {
     "english": "The Census Bureau asks about age and date of birth to understand the size and characteristics of different age groups in your neighborhood.  Local, state, tribal, and federal agencies use age information to plan and fund government programs that provide assistance or services for specific age groups, such as children, working-age adults, women of childbearing age, and elders.",
@@ -521,7 +521,7 @@
   },
   "components.SampleCensus.explanation.nonhohh.1": {
     "english": "The Census Bureau asks for names to ensure everyone in the house is counted. This helps you make sure you have included everyone living and sleeping in your home.  It is easy to skip someone by accident, especially in large households.",
-    "translation": "Cục Thống Kê Dân Số yêu cầu các tên gọi để đảm bảo mọi người trong nhà đều được tính. Điều này giúp quý vị đảm bảo rằng quý vị đã tính tất cả mọi người sống và ngủ trong nhà của quý vị. Thật dễ bỏ qua một ai đó một cách tình cờ, đặc biệt là trong các hộ gia đình lớn."
+    "translation": "Cục Thống Kê Dân Số yêu cầu các tên gọi để đảm bảo mọi người trong nhà đều được tính. Điều này giúp quý vị đảm bảo rằng quý vị đã tính tất cả mọi người sống và ngủ đêm trong nhà của quý vị. Thật dễ bỏ qua một ai đó một cách tình cờ, đặc biệt là trong các hộ gia đình lớn."
   },
   "components.SampleCensus.primary_question.nonhohh.2": {
     "english": "Does this person usually live or stay somewhere else?",
@@ -557,7 +557,7 @@
   },
   "components.SampleCensus.explanation.nonhohh.4": {
     "english": "The Census Bureau asks about the gender of each person for statistical purposes.  The State and Federal government use this information in planning and funding programs, and evaluating programs and policies to ensure they fairly and equitably serve the needs of both men and women.",
-    "translation": "Cục Thống Kê Dân Số hỏi về giới tính của mỗi người cho mục đích thống kê. Các chính phủ tiểu bang và liên bang sử dụng thông tin này trong các chương trình lập kế hoạch và tài trợ, và trong việc đánh giá các chương trình và chính sách để đảm bảo chúng phục vụ công bằng và công bằng cho nhu cầu của cả nam và nữ."
+    "translation": "Cục Thống Kê Dân Số hỏi về giới tính của mỗi người cho mục đích thống kê. Các chính phủ tiểu bang và liên bang sử dụng thông tin này trong các chương trình lập kế hoạch và tài trợ, và trong việc đánh giá các chương trình và chính sách để đảm bảo chúng phục vụ công bằng và bình đẳng cho nhu cầu của cả nam và nữ."
   },
   "components.SampleCensus.primary_question.nonhohh.5": {
     "english": "What is this person’s age and what is this person’s date of birth?",
@@ -661,7 +661,7 @@
   },
   "components.SampleCensus.explanation.preliminary.1": {
     "english": "Starting in March 2020, the U.S. Census Bureau will mail letters to every household in the United States inviting them to respond to the Census survey. Every household should receive a letter requesting that they complete a census form online, by mail, or phone by *Census Day on April 1, 2020*. If you lose or do not receive your letter, you can still fill out the survey by entering your address.",
-    "translation": "Bắt đầu từ tháng Ba năm 2020, Cục Thống Kê Dân Số sẽ gửi thư cho mọi hộ gia đình ở khắp Hoa Kỳ mời họ trả lời bản câu hỏi Thống Kê Dân Số. Mỗi hộ gia đình sẽ nhận thư yêu cầu điền đơn thống kê dân số trên mạng, qua thư, hoặc qua điện thoại trước *Ngày Thống Kê Dân Số tức ngày 1 tháng Tư năm 2020*. Nếu quý vị mất hoặc không nhận được bức thư này, quý vị vẫn có thể trả lời bản câu hỏi miễn là ghi địa chỉ của quý vị."
+    "translation": "Bắt đầu từ tháng Ba năm 2020, Cục Thống Kê Dân Số sẽ gửi thư cho mọi hộ gia đình ở khắp Hoa Kỳ mời họ trả lời bản câu hỏi Thống Kê Dân Số. Mỗi hộ gia đình sẽ nhận thư yêu cầu điền đơn thống kê dân số trên mạng, qua thư, hoặc qua điện thoại trước *Ngày Thống Kê Dân Số tức ngày 1 tháng Tư năm 2020*. Nếu quý vị mất hoặc không nhận được lá thư này, quý vị vẫn có thể trả lời bản câu hỏi miễn là ghi địa chỉ của quý vị."
   },
   "components.SampleCensus.primary_question.preliminary.2": {
     "english": "(If you have 12-digit code) Are you completing the 2020 Census Questionnaire for the address below?",
