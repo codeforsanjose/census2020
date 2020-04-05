@@ -133,7 +133,7 @@
   },
   "components.Home.carousel.messages.3": {
     "english": "Answer online, by phone, or by mail!",
-    "translation": "Trả lời trực tuyến, qua điện thoại hoặc qua thư!"
+    "translation": "Trả lời trên mạng, qua điện thoại hoặc qua thư!"
   },
   "components.Home.carousel.messages.4": {
     "english": "Your participation affects our congressional representation!",
@@ -193,11 +193,11 @@
   },
   "components.FAQ.entries.otherLanguages.answer": {
     "english": "Yes. The online survey is available in English and 12 other languages (Spanish, Chinese, Vietnamese, Korean, Russian, Arabic, Tagalog, Polish, French, Haitian Creole, Portuguese, Japanese)  Print and video language guides will be available in 59 Non-English languages, including American Sign Language, Braille, and large print. \n\nContact the U.S. Census Bureau at (855) 562-2020.",
-    "translation": "Có. Bản câu hỏi trực tuyến có sẵn bằng tiếng Anh và 12 ngôn ngữ khác (Tây Ban Nha, Trung Quốc, Việt Nam, Hàn Quốc, Nga, Ả Rập, Tagalog, Ba Lan, Pháp, Creole Haiti, Bồ Đào Nha, Nhật Bản). Hướng dẫn ngôn ngữ in và video sẽ có sẵn bằng tiếng Anh và 59 ngôn ngữ khác, kể cả Ngôn ngữ ký hiệu của Mỹ, chữ nổi và chữ in lớn. Liên hệ Cục Thống Kê Dân Số Hoa Kỳ ở số (855) 562-2020."
+    "translation": "Có. Bản câu hỏi trên mạng có sẵn bằng tiếng Anh và 12 ngôn ngữ khác (Tây Ban Nha, Trung Quốc, Việt Nam, Hàn Quốc, Nga, Ả Rập, Tagalog, Ba Lan, Pháp, Creole Haiti, Bồ Đào Nha, Nhật Bản). Hướng dẫn ngôn ngữ in và video sẽ có sẵn bằng tiếng Anh và 59 ngôn ngữ khác, kể cả Ngôn ngữ ký hiệu của Mỹ, chữ nổi và chữ in lớn. Liên hệ Cục Thống Kê Dân Số Hoa Kỳ ở số (855) 562-2020."
   },
   "components.FAQ.entries.howToAvoidScams.question": {
     "english": "How can I avoid scams or report suspected fraud?",
-    "translation": "Làm thế nào tôi có thể tránh lừa đảo trực tuyến?"
+    "translation": "Làm thế nào tôi có thể tránh lừa đảo trên mạng?"
   },
   "components.FAQ.entries.howToAvoidScams.answer": {
     "english": "- Census workers will **NEVER** ask for your Social Security Number, bank account or credit card number! \n- Census workers will **NEVER** ask you for money or a donation or contact you on behalf of a political party.\n \nIf you are in doubt about a visitor or suspect fraud, call the U.S. Census Bureau at (855) 562-2020.",
@@ -209,7 +209,7 @@
   },
   "components.FAQ.entries.homeless.answer": {
     "english": "Yes, you do!  If you or your family is living in a non-traditional home or do not have a usual residence (including if you are experiencing homelessness), you should still answer the census survey. \n\nIf you take it online, choose the option for “did not receive a 12-digit code” and follow the prompts. Or, you can call and complete the census by phone. See \"How do I get Counted!\" below.",
-    "translation": "Có tính chứ! Nếu quý vị hoặc gia đình của quý vị đang ở một nhà ở bất thường hoặc không có nơi ở cố định (kể cả tình trạng vô gia cư), quý vị vẫn nên trả lời thống kê dân số. \n\nNếu quý vị trả lời trực tuyến, xin vui lòng chọn “không có Mã ID của Thông Kê Dân Số” và điều theo hướng dẫn. Thay thế, quý vị có thể gọi chúng tôi và trả lời qua điện thoại. Xem “Làm thế nào tôi có thể trả lời thống kê dân số?” bên dưới."
+    "translation": "Có tính chứ! Nếu quý vị hoặc gia đình của quý vị đang ở một nhà ở bất thường hoặc không có nơi ở cố định (kể cả tình trạng vô gia cư), quý vị vẫn nên trả lời thống kê dân số. \n\nNếu quý vị trả lời trên mạng, xin vui lòng chọn “không có Mã ID của Thông Kê Dân Số” và điều theo hướng dẫn. Thay thế, quý vị có thể gọi chúng tôi và trả lời qua điện thoại. Xem “Làm thế nào tôi có thể trả lời thống kê dân số?” bên dưới."
   },
   "email.messages.confirmation.greeting": {
     "english": "Hi {name}",
@@ -277,11 +277,11 @@
   },
   "components.FAQ.entries.lostCensusId.question": {
     "english": "I don’t have or lost my 12-digit code census. Can I still complete the census?",
-    "translation": "Tôi không có hoặc mất mã 12 con số của thống kê dân số. Tôi vẫn có thể trả lời thống kê dân số chứ?"
+    "translation": "Tôi không có hoặc mất mã ID của thống kê dân số gồm 12 chữ số. Tôi vẫn có thể trả lời thống kê dân số chứ?"
   },
   "components.FAQ.entries.lostCensusId.answer": {
     "english": "Yes. If you did not receive a 12-digit code census code or misplaced it, you can still complete the online census survey by using your mailing address. If you do not have a residential address, you can still complete the census online **or** call and complete the census by phone.  See \"How do I get Counted!\" below.",
-    "translation": "Có. Nếu quý vị không nhận được hoặc mất mã 12 con số của thống kê dân số, quý vị vẫn có thể điền bản câu hỏi thống kê dân số trực tuyến dùng địa chỉ bưu điện của mình. Nếu quý vị không có địa chỉ nhà ở, quý vị vẫn có thể trả lời thống kê dân số trực tuyến **hoặc** qua điện thoại. Xem “Làm thế nào tôi có thể trả lời thống kê dân số?” bên dưới."
+    "translation": "Có. Nếu quý vị không nhận được hoặc mất mã ID của thống kê dân số gồm 12 chữ số, quý vị vẫn có thể điền bản câu hỏi thống kê dân số trên mạng dùng địa chỉ bưu điện của mình. Nếu quý vị không có địa chỉ nhà ở, quý vị vẫn có thể trả lời thống kê dân số trên mạng **hoặc** qua điện thoại. Xem “Làm thế nào tôi có thể trả lời thống kê dân số?” bên dưới."
   },
   "components.FAQ.entries.whatHappensIfNoResponse.question": {
     "english": "Why should I respond?",
@@ -297,7 +297,7 @@
   },
   "components.FAQ.entries.whatHappensIfNoResponseAtAll.answer": {
     "english": "Ultimately, fewer dollars will be allocated to programs that you or your family might rely on, such as student loans, SNAP, Medi-Cal, WIC, housing vouchers, school breakfast and lunch programs, special education, career services and training, senior nutrition, and a number of community and transportation development programs.\n\nMore immediately, if your household fails to respond online or by telephone, the U.S. Census Bureau will mail you a printed questionnaire, in English and Spanish, for you to return by mail. \n\nIf you don’t respond to the census by the end of April, a census worker will visit your home to ask you all the same survey questions that will appear in the online version of the Census. \n\nDo your part to make sure everyone is counted in your household!",
-    "translation": "Cuối cùng, các chương trình quý vị hoặc gia đình của quý vị dựa vào sẽ nhận ít tiền hơn, chẳng hạn cho vay sinh viên, SNAP, Medi-Cal, WIC, trợ cấp thuê nhà, các chương trình ăn sáng và ăn trưa ở trường, giáo dục đặc biệt, dịch vụ và đào tạo nghề nghiệp, dinh dưỡng cho người cao tuổi, và nhiều chương trình phát triển cộng đồng và giao thông.\n\nTrong thời gian ngắn, nếu hộ gia đình của quý vị không trả lời thống kê dân số trực tuyến hoặc qua điện thoại, Cục Thống Kê Dân Số sẽ gửi quý vị một bản câu hỏi in trên giấy bằng tiếng Anh và tiếng Tây Ban Nha để quý vị trả lại qua thư. \n\nNếu quý vị không trả lời thống kê dân số tính đến cuối tháng Tư, Cục Thống Kê Dân Số Hoa Kỳ sẽ gửi một nhân viên tới nhà của quý vị để hỏi quý vị mỗi câu hỏi đã có sẵn trong bản câu hỏi trực tuyến. \n\nHãy bắt tay chắc chắn rằng mọi người trong hộ gia đình của quý vị được tính."
+    "translation": "Cuối cùng, các chương trình quý vị hoặc gia đình của quý vị dựa vào sẽ nhận ít tiền hơn, chẳng hạn cho vay sinh viên, SNAP, Medi-Cal, WIC, trợ cấp thuê nhà, các chương trình ăn sáng và ăn trưa ở trường, giáo dục đặc biệt, dịch vụ và đào tạo nghề nghiệp, dinh dưỡng cho người cao tuổi, và nhiều chương trình phát triển cộng đồng và giao thông.\n\nTrong thời gian ngắn, nếu hộ gia đình của quý vị không trả lời thống kê dân số trên mạng hoặc qua điện thoại, Cục Thống Kê Dân Số sẽ gửi quý vị một bản câu hỏi in trên giấy bằng tiếng Anh và tiếng Tây Ban Nha để quý vị trả lại qua thư. \n\nNếu quý vị không trả lời thống kê dân số tính đến cuối tháng Tư, Cục Thống Kê Dân Số Hoa Kỳ sẽ gửi một nhân viên tới nhà của quý vị để hỏi quý vị mỗi câu hỏi đã có sẵn trong bản câu hỏi trên mạng. \n\nHãy bắt tay chắc chắn rằng mọi người trong hộ gia đình của quý vị được tính."
   },
   "components.FAQ.entries.isCensusSafe.question": {
     "english": "Is the Census safe?",
@@ -625,11 +625,11 @@
   },
   "components.Home.factoids.1.text": {
     "english": "Get the answers to all your questions about why to take the census and how the information will be used.",
-    "translation": "Nhận câu trả lời cho tất cả các câu hỏi của quý vị về lý do tại sao phải trả lời thống kê dân số và làm thế nào thông tin sẽ được sử dụng."
+    "translation": "Giải đáp mọi thắc mắc của quý vị về lý do tại sao phải trả lời thống kê dân số và làm thế nào thông tin sẽ được sử dụng."
   },
   "components.Home.factoids.2.text": {
     "english": "Learn more about the census questions, and who should be answering the questionnaire.",
-    "translation": "Tìm hiểu thêm về các câu hỏi thống kê dân số và ai sẽ trả lời bản câu hỏi."
+    "translation": "Tìm hiểu thêm về các câu hỏi thống kê dân số và ai nên trả lời bản câu hỏi."
   },
   "components.Home.factoids.1.cta": {
     "english": "VIEW ALL FAQs",
@@ -641,51 +641,51 @@
   },
   "components.Home.top_reasons.item.5": {
     "english": "Representation at all levels of government.",
-    "translation": "Lập kế hoạch ứng phó khẩn cấp"
+    "translation": "Đại diện ở tất cả mọi cấp chính quyền."
   },
   "components.SampleCensus.preliminary_button": {
     "english": "Before you begin",
-    "translation": "Trước khi bắt đầu"
+    "translation": "Trước khi quý vị bắt đầu"
   },
   "components.SampleCensus.preliminary_description": {
     "english": "Prior to filling out the census online, you will be asked to enter your Census code, or otherwise identify your household.",
-    "translation": "Đây là văn bản mặc định"
+    "translation": "Trước khi trả lời thống kê dân số trên mạng, quý vị phải nhập mã ID của Thống Kê Dân Số hoặc cung cấp thông tin nào đó để nhận rõ hộ gia đình của quý vị."
   },
   "components.SampleCensus.primary_question.preliminary.1": {
     "english": "Please enter the 12-digit Census ID found in the materials we mailed to you or left at your door.",
-    "translation": "Đây là một giữ chỗ"
+    "translation": "Vui lòng nhập mã ID của Thống Kê Dân Số (_Census ID_) gồm 12 chữ số có ghi trong các tài liệu mà chúng tôi đã gửi cho quý vị hoặc để lại ở cửa nhà quý vị."
   },
   "components.SampleCensus.secondary_information.preliminary.1": {
     "english": "[||] - [||] - [||] - [||]\nIf you do not have a Census ID, click here.",
-    "translation": "Đây là một giữ chỗ"
+    "translation": "[||] - [||] - [||] - [||]\nNếu quý vị không có mã ID của Thống Kê Dân Số (_Census ID_), nhấn chuột vào đây."
   },
   "components.SampleCensus.explanation.preliminary.1": {
     "english": "Starting in March 2020, the U.S. Census Bureau will mail letters to every household in the United States inviting them to respond to the Census survey. Every household should receive a letter requesting that they complete a census form online, by mail, or phone by *Census Day on April 1, 2020*. If you lose or do not receive your letter, you can still fill out the survey by entering your address.",
-    "translation": "Đây là một giữ chỗ"
+    "translation": "Bắt đầu từ tháng Ba năm 2020, Cục Thống Kê Dân Số sẽ gửi thư cho mọi hộ gia đình ở khắp Hoa Kỳ mời họ trả lời bản câu hỏi Thống Kê Dân Số. Mỗi hộ gia đình sẽ nhận thư yêu cầu điền đơn thống kê dân số trên mạng, qua thư, hoặc qua điện thoại trước *Ngày Thống Kê Dân Số tức ngày 1 tháng Tư năm 2020*. Nếu quý vị mất hoặc không nhận được bức thư này, quý vị vẫn có thể trả lời bản câu hỏi miễn là ghi địa chỉ của quý vị."
   },
   "components.SampleCensus.primary_question.preliminary.2": {
     "english": "(If you have 12-digit code) Are you completing the 2020 Census Questionnaire for the address below?",
-    "translation": "Đây là một giữ chỗ"
+    "translation": "(Nếu quý vị có mã gồm 12 chữ số) Quý vị có phải trả lời bản câu hỏi Thống Kê Dân Số 2020 đối với địa chỉ bên dưới không?"
   },
   "components.SampleCensus.secondary_information.preliminary.2": {
     "english": "*Mark ONE box*\n\n- [ ] Yes\n- [ ] No",
-    "translation": "Đây là một giữ chỗ"
+    "translation": "*Đánh dấu vào MỘT ô*\n\n- [ ] Có\n- [ ] Không"
   },
   "components.SampleCensus.explanation.preliminary.2": {
     "english": "Your home address should appear on the screen.",
-    "translation": "Đây là một giữ chỗ"
+    "translation": "Địa chỉ nhà của quý vị sẽ xuất hiện trên màn hình."
   },
   "components.SampleCensus.primary_question.preliminary.3": {
     "english": "(If you do not have 12-digit code) Please provide a city and state, or ZIP code where you will be living on April 1, 2020.  Also, Describe the physical location in the space provided.",
-    "translation": "Đây là một giữ chỗ"
+    "translation": "(Nếu quý vị không có mã gồm 12 chữ số) Vui lòng cung cấp thành phố và tiểu bang, hoặc mã ZIP, của nơi quý vị sẽ ở vào ngày 1 tháng Tư năm 2020. Ngoài ra, hãy miêu tả địa điểm trong khoảng trống được cung cấp."
   },
   "components.SampleCensus.secondary_information.preliminary.3": {
     "english": "City [||]  State[||]  ZIP Code [||]\n\n[||] \n\n**Please provide as much information as possible.**\nFor example:\n-   A location description such as “the apartment over the gas station” or “the brick house with the screened porch on the northeast corner of Farm Road and HC 46”\n-   A name of a park, street intersection or shelter, if you will be experiencing homelessness on April 2, 2020, as well as the name of the city and state. For example, “Friendship Park, Anywhere, PA”\n",
-    "translation": "Đây là một giữ chỗ"
+    "translation": "Thành phố [||]  Tiểu bang[||]  Mã ZIP [||]\n\n[||] \n\n**Vui lòng cung cấp càng thêm thông tin càng tốt.**\nVí dụ:\n-   Lời miêu tả địa điểm như “khu chung cư bên cạnh cây xăng” hoặc “nhà gạch có mái đằng trước có lưới ở góc đông bắc của Farm Road và HC 46”\n-   Tên công viên, góc đường, hoặc nơi trú ngụ, nếu quý vị sẽ ở tình trạng vô gia cư vào ngày 2 tháng Tư năm 2020, cùng với tên thành phố và tiểu bang. Ví dụ: “Friendship Park, Anywhere, PA”\n"
   },
   "components.SampleCensus.explanation.preliminary.3": {
     "english": "For individuals and families, who did not receive a 12-digit code, living in non-traditional homes or do not have a usual residence (including those experiencing homelessness), this option allows individuals and families to be counted by self-reporting.",
-    "translation": "Đây là một giữ chỗ"
+    "translation": "Đối với những người và gia đình không nhận mã gồm 12 chữ số mà sống ở một nhà ở bất thường hoặc không có nơi ở cố định (kể cả tình trạng vô gia cư), ô này cho phép họ được tính bằng cách tự khai."
   },
   "components.SampleCensus.nonHohh_button": {
     "english": "Someone else will answer the census for me",
